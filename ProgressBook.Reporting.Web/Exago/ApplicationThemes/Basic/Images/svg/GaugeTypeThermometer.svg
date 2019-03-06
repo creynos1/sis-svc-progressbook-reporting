@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    GaugeTypeThermometer
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#D7D7D7" d="M16 19.07V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v11.07a8 8 0 1 1-8 0z"/>
+    <path fill="#E85D61" d="M18 20.341V11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9.341a6 6 0 1 1-4 0z"/>
+    <path fill="#666666" fill-rule="nonzero" d="M29.225 15.04l-3.976-2.623a.5.5 0 0 1 0-.834l3.976-2.623a.5.5 0 0 1 .775.418v5.244a.5.5 0 0 1-.775.418z"/>
+  </g>
+</svg>

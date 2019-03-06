@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeEmailGroupSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <g fill-opacity=".5" transform="translate(5)">
+      <path d="M1.998 5h2.004C5.106 5 6 5.894 6 7.005H0C0 5.898.898 5 1.998 5z"/>
+      <circle cx="3" cy="2" r="2"/>
+    </g>
+    <g fill-opacity=".7" transform="translate(0 2)">
+      <path d="M1.998 5h2.004L4 10H0V7.005C0 5.898.898 5 1.998 5z"/>
+      <circle cx="3" cy="2" r="2"/>
+    </g>
+    <path d="M4 7h8v5H4V7zm1 2v2h6V9l-3 1.5L5 9zm0-1l3 1.5L11 8H5z"/>
+  </g>
+</svg>

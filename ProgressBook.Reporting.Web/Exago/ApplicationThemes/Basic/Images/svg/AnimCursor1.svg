@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <title>
+    AnimCursor1
+  </title>
+  <defs>
+    <polygon id="b" points="15.487 8.865 3 2 6.64 15.776 9.366 11.668 12.63 15.845 14.104 14.693 10.841 10.516"/>
+    <filter id="a" width="180.1%" height="172.2%" x="-40%" y="-28.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="black" filter="url(#a)" xlink:href="#b"/>
+    <use fill="#363B3E" xlink:href="#b"/>
+  </g>
+</svg>

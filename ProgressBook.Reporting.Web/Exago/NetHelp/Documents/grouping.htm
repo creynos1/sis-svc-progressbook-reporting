@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Grouping</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="expressview.htm" /><link rel="next" href="managingdata.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="efc70792-fafd-483c-bd6f-ea74d0920882">
+<h2>Grouping</h2>
+<p>Groups collect a set of data rows, based on a common value, into a column 
+called a group column. This allows you to identify rows with common factors. You 
+can perform summary calculations on grouped data, such as counting all the rows 
+in each group, or adding up the values for a data field in each group. You can 
+also make charts to visualize the data in each group, and compare groups to each 
+other.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/custom.GroupDemo.png" alt="" /></p>
+<p class="Caption">Grouping data in an ExpressView</p><a class="_D2HAnchor" name="makingagroup.htm" id="makingagroup.htm"></a>
+<p class="MidTopic">Making a group</p>
+<p>To turn a data column into a group column use <img src="../Media/custom.RadialButtonBlue.png" alt="" /> radial&gt;<strong>up</strong>. Doing 
+this will organize the other columns into groups. Each row in the data column is 
+a unique group of the rows in the other columns. The group column has a new 
+color to distinguish it from the data rows. Remember to turn on <strong>Live 
+Data </strong>to see your actual data and verify that this is the desired 
+grouping.</p>
+<p>To ungroup a column, use <img src="../Media/custom.RadialButtonBlue.png" alt="" /> 
+radial&gt;<strong>left</strong>. This turns the group column back into a data 
+column.</p>
+<p>Groups can be created inside other groups. These are called <em>nested</em> 
+groups. To make a nested group, add another group to an ExpressView which 
+already has one. Additional levels of nesting can be made as needed.</p>
+<p class="Aside"><strong>Changing group level</strong></p>
+<p>If you have two or more levels of grouping, you may decide that they are 
+nested improperly. For example, if you had Products grouped by Orders, then you 
+add another grouping on Employees, you may end up with Products grouped by 
+Employees grouped by Orders.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/custom.GroupNestWrong.png" alt="" /></p>
+<p class="Caption">One possible data grouping</p>
+<p>However, it makes more sense to have Orders grouped by Employees instead, 
+since Employees have multiple Orders, but Orders does not have multiple 
+Employees. To move the Employees group up one level, use <img src="../Media/custom.RadialButtonBlue.png" alt="" /> radial&gt;<strong>up </strong>on the 
+group column.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/custom.GroupNestRight.png" alt="" /></p>
+<p style="TEXT-ALIGN: center"><em>Changing the data grouping</em></p><span id="related-topics"></span><a class="_D2HAnchor" name="summarizinggroupdata.htm" id="summarizinggroupdata.htm"></a>
+<p class="MidTopic">Summarizing group data</p>
+<p>Each group has a footer that contains summary calculations, or 
+<em>aggregates</em>, for each column. There is also a report footer, which 
+contains summaries for the entire ExpressView. You can choose one of several 
+calculations for each column.</p>
+<p>To change the calculation for a column, click a footer and select one of the 
+following options:</p>
+<p><span class="Option">Sum</span></p>
+<p class="Indent">Totals the data values in the group. Only available for numeric 
+fields.</p>
+<p><span class="Option">Min</span></p>
+<p class="Indent">Shows the smallest data value, or first value alphabetically, or 
+earliest date in the group.</p>
+<p><span class="Option">Max</span></p>
+<p class="Indent">Shows the largest data value, or last value alphabetically, or 
+latest date in the group.</p>
+<p><span class="Option">Count</span></p>
+<p class="Indent">Counts the number of values in the group.</p>
+<p><span class="Option">Distinct Count</span></p>
+<p class="Indent">Counts the number of distinct values in the group.</p>
+<p><span class="Option">Avg</span></p>
+<p class="Indent">Takes the average, or <em>arithmetic mean</em>, of the values in 
+the group. Only available for numeric fields.</p>
+<p><span class="Option">None</span></p>
+<p class="Indent">Show no summary calculation.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.expressview_choose_agg.png" alt="" /> </p>
+<p class="Caption">Choosing an aggregate</p>
+<p class="Aside"><strong>Hiding data rows</strong></p>
+<p>If you only want to see the summary calculations, you can hide the data rows, 
+for each group, or for the entire ExpressView. This does not remove the data or 
+alter the summaries; it only hides the rows from view.</p>
+<p>Click the header for each group to toggle whether its rows are shown or 
+hidden.</p>
+<p>To hide or show all the rows in the ExpressView:</p>
+<ol>
+  <li class="list_123">
+  <p>Click the <strong>Group Expand/Collapse Options </strong><img src="../Media/GroupStateMenu.png" alt="" /> icon.</p>
+  </li><li class="list_123">
+  <p>Click <img src="../Media/GroupStateMenuCollapseAll.png" alt="" /> <strong>Hide 
+  All Group Content </strong>to hide all the rows, or <img src="../Media/GroupStateMenuExpandAll.png" alt="" /> <strong>Show All Group 
+  Content </strong>to show all the rows.</p></li></ol>
+<p>If you have nested groups, this hides all but the top level groups.</p>
+<p>To remove all data rows from the report and only show summary data, deselect 
+<strong>Include Detail Rows</strong>. This may improve the performance for 
+reports that do not depend on the detail values.</p><span id="related-topics"></span><span id="related-topics"></span></body></html>

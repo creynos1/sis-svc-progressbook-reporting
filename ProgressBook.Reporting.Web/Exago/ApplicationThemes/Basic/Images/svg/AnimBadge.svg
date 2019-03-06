@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
+  <title>
+    AnimBadge
+  </title>
+  <defs>
+    <path id="b" d="M21.965 24.633h2.82v2.039h-2.82v3.187h-2.149v-3.187h-2.828v-2.04h2.828v-3.054h2.149v3.055zM31.535 31h-2.258v-8.703l-2.695.836v-1.836l4.711-1.688h.242V31z"/>
+    <filter id="a" width="106.9%" height="117.6%" x="-3.4%" y="-4.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-10 -10)">
+    <circle cx="25.5" cy="25.5" r="15.5" fill="#6896ED"/>
+    <circle cx="25.5" cy="25.5" r="26.5" stroke="#6896ED" stroke-width="2"/>
+    <use fill="black" filter="url(#a)" xlink:href="#b"/>
+    <use fill="#FFFFFF" xlink:href="#b"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <title>
+    RadialMenuRemove
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#FFFFFF" stroke="#6896ED" d="M39.043 60.96l-19.8 19.798c-16.987-16.987-16.987-44.53 0-61.518l19.8 19.8c-6.054 6.052-6.054 15.866 0 21.92z"/>
+    <polygon fill="#6896ED" points="24.003 50 29.003 45 26.003 42 21.003 47 16.003 42 13.003 45 18.003 50 13.003 55 16.003 58 21.003 53 26.003 58 29.003 55"/>
+  </g>
+</svg>

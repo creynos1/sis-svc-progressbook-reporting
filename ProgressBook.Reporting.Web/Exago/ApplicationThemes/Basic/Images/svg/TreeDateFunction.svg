@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeDateFunction
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="#808080"/>
+    <rect width="10" height="7" x="1" y="4" fill="#FFFFFF"/>
+    <rect width="2" height="2" x="2" y="5" fill="#B3B3B3"/>
+    <rect width="2" height="2" x="5" y="5" fill="#C1C1C1"/>
+    <rect width="2" height="2" x="8" y="5" fill="#6896ED"/>
+    <rect width="2" height="2" x="8" y="8" fill="#C1C1C1"/>
+    <rect width="2" height="2" x="5" y="8" fill="#B3B3B3"/>
+    <rect width="2" height="2" x="2" y="8" fill="#C1C1C1"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    ParametersMenuSelected
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <rect width="11" height="2" x="9" y="6" fill="#6896ED"/>
+    <rect width="11" height="2" x="4" y="11" fill="#6896ED"/>
+    <rect width="4" height="2" x="4" y="16" fill="#6896ED"/>
+    <rect width="8" height="2" x="12" y="16" fill="#6896ED"/>
+    <path fill="#6896ED" fill-rule="nonzero" d="M7 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-7 7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </g>
+</svg>

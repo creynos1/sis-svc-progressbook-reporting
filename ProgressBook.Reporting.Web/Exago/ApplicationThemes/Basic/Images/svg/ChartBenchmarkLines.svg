@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    ChartBenchmarkLines
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#808080" points="1 1 1 15 15 15 15 14 2 14 2 1"/>
+    <path fill="#B3B3B3" d="M3 9h3v4H3V9zm4-3h3v7H7V6zm4-4h3v11h-3V2z"/>
+    <rect width="16" height="1" y="4" fill="#56ADFA"/>
+  </g>
+</svg>

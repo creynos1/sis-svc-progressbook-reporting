@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    StyleBold
+  </title>
+  <g fill="#808080" fill-rule="evenodd" font-size="15" font-family="TimesNewRomanPS-BoldMT, Times New Roman" font-weight="bold">
+    <text>
+      <tspan x="3" y="13">B</tspan>
+    </text>
+    <text>
+      <tspan x="3" y="13">B</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+body {
+  overflow: hidden;
+}
+.popup {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+.item-input {
+  text-align: right;
+}
+.item-input select {
+  /* Hack to get select options to align right */
+  direction: rtl;
+}

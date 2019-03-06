@@ -1,0 +1,139 @@
+.wrRadialMenuContainer {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  z-index: 900;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  opacity: 0.9;
+}
+.wrRadialMenuTarget {
+  position: absolute;
+  transition: transform 0.2s linear;
+  font-size: 0;
+}
+.wrRadialMenuTargetImage {
+  position: absolute;
+  z-index: 1;
+  transition: filter 0.2s linear, filter 0.2s linear;
+}
+.wrRadialMenuTargetShadow {
+  z-index: 0;
+}
+.wrRadialMenuTargetImageDimmed {
+  filter: brightness(0.7);
+}
+.wrRadialMenuTopTarget {
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuTopTarget .wrRadialMenuTargetImage {
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuTopTarget .wrRadialMenuTargetShadow {
+  height: 100%;
+  width: 100%;
+}
+.wrRadialMenuBottomTarget {
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuBottomTarget .wrRadialMenuTargetImage {
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuBottomTarget .wrRadialMenuTargetShadow {
+  height: 100%;
+  width: 100%;
+}
+.wrRadialMenuLeftTarget {
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuLeftTarget .wrRadialMenuTargetImage {
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuLeftTarget .wrRadialMenuTargetShadow {
+  height: 100%;
+  width: 100%;
+}
+.wrRadialMenuRightTarget {
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuRightTarget .wrRadialMenuTargetImage {
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+.wrRadialMenuRightTarget .wrRadialMenuTargetShadow {
+  height: 100%;
+  width: 100%;
+}
+.wrRadialMenuRightTargetHighlighted {
+  transform: translateX(6px) scale(1.05);
+}
+.wrRadialMenuTopTargetHighlighted {
+  transform: translateY(-6px) scale(1.05);
+}
+.wrRadialMenuLeftTargetHighlighted {
+  transform: translateX(-6px) scale(1.05);
+}
+.wrRadialMenuBottomTargetHighlighted {
+  transform: translateY(6px) scale(1.05);
+}
+.wrRadialMenuCenterOval {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: transform 0.2s linear;
+  transform-origin: center;
+}
+.wrRadialMenuTargetLabel {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  position: absolute;
+  padding: 0.2em 0.75em;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+  white-space: nowrap;
+}
+.wrRadialMenuTopTargetLabel {
+  top: -2.25em;
+}
+.wrRadialMenuBottomTargetLabel {
+  top: calc(100% + .75em);
+}
+.wrRadialMenuLeftTargetLabel {
+  top: calc(50% - .7em);
+}
+.wrRadialMenuRightTargetLabel {
+  top: calc(50% - .7em);
+  left: calc(100% + .75em);
+}

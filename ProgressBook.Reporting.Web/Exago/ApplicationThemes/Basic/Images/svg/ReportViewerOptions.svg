@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    ReportViewerOptions
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M0 6s2.135-5 6-5c3.804 0 6 5 6 5s-2.135 5-6 5c-3.868 0-6-5-6-5zm3 0a3 3 0 1 0 6 0 3 3 0 0 0-6 0zm3 1.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+  </g>
+</svg>

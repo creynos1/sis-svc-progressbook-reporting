@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <title>
+    ChartVisualizationEditPlaceholder
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="38" height="48" x="6" y="1" fill="#808080"/>
+    <rect width="34" height="44" x="8" y="3" fill="#FFFFFF"/>
+    <polygon fill="#B3B3B3" points="31 26 31 18 26 18 26 10 19 10 19 22 14 22 14 41 20 41 25 41 30 41 36 41 36 26"/>
+    <path fill="#FFFFFF" d="M16 24h3v15h-3V24zm5-12h3v27h-3V12zm5 8h3v19h-3V20zm5 8h3v11h-3V28z"/>
+  </g>
+</svg>

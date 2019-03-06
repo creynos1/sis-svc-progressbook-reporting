@@ -1,0 +1,3801 @@
+.wrTabContent .wrTabInnerContent.wrGettingStarted {
+  overflow: auto;
+}
+.wrTabDisabled {
+  display: none;
+}
+.wrFloatClearDiv {
+  clear: both;
+}
+.wrDataFields {
+  top: 28px;
+  bottom: 0;
+}
+.wrHelpContainer {
+  border: solid 1px #e6e6e6;
+  overflow: hidden;
+}
+.wrUserPreferenceTabDescription {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  right: 5px;
+}
+.wrUserPreferenceTabContent {
+  position: absolute;
+  top: 25px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+.wrUserPreferencesTutorialsTabContent {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #777777;
+}
+.wrUserPrefTutorialsRow {
+  margin-bottom: 8px;
+}
+.wrUserPrefTutorialsEVTipsResetHourglass {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.wrUserPrefTutorialsEVTipsResetBtn {
+  color: #6896ed;
+}
+.wrUserPrefTutorialsEVTipsResetBtn:active {
+  color: #3563BA;
+}
+.wrUserPrefTutorialsEVTipsResetMsg {
+  color: #A0A0A0;
+  font-style: italic;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrUserPrefTutorialsEVTipsResetUndo {
+  color: #A0A0A0;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrUserPrefTutorialsEVTipsResetUndo:active {
+  color: #6D6D6D;
+}
+.wrUserPrefTutorialsEVTipsResetBtn,
+.wrUserPrefTutorialsEVTipsResetUndo {
+  display: inline;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+.wrUserPrefTutorialsTipsResetDisabled {
+  pointer-events: none;
+  filter: grayscale(100%);
+  text-decoration: none;
+}
+.wrEdge .wrUserPrefTutorialsTipsResetDisabled {
+  filter: none;
+}
+.wrStartupReportsLeftPane {
+  width: 20%;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+}
+.wrDialogLeftPane {
+  width: 20%;
+}
+.wrDialogRightPane {
+  overflow: hidden;
+}
+.wrReportNameNameLbl {
+  position: relative;
+}
+.wrReportNameTb {
+  top: 24px;
+}
+.wrReportNameFolderLbl {
+  top: 56px;
+}
+.wrReportNameReportsCtrl {
+  top: 70px;
+  bottom: 0;
+}
+.wrDescriptionInputWrapper {
+  top: 15px;
+  bottom: 0;
+}
+.wrDescriptionWrapperNoFilter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrDescriptionWrapperWithFilter {
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  right: 51%;
+}
+.wrFilterDescriptionWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  left: 51%;
+  right: 0;
+}
+.wrDescriptionInput {
+  position: absolute;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  resize: none;
+  border: 1px solid #d7d7d7;
+}
+.wrCategoryInfoBtn {
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  cursor: pointer;
+}
+.wrCategoryInfoBtn.wrDisabledText {
+  cursor: default;
+}
+.wrDesignGroupSelect {
+  top: 14px;
+}
+.wrDesignGroupHeaderInfo {
+  top: 30px;
+}
+.wrCategoriesSelectWrapper {
+  top: 0;
+  right: 18px;
+}
+.wrCategoriesSelectWrapperFull {
+  top: 0;
+  right: 0;
+}
+.wrCategoriesSelectFormulaBtn {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  cursor: pointer;
+}
+.wrBreakSelectWrapperWithFormulaButton {
+  top: 0;
+  right: 22px;
+}
+.wrBreakSelectWrapperFull {
+  top: 0;
+  right: 0;
+}
+.wrBreakSelectFormulaBtn {
+  position: absolute;
+  right: 0;
+  height: 16px;
+  width: 16px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Formula.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrBreakSelectFormulaBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/Formula.png");
+}
+.wrColumnSelectWrapper {
+  top: 0;
+  right: 19px;
+}
+.wrColumnSelectWrapperFull {
+  top: 0;
+  right: 0;
+}
+.wrColumnSelectFormulaBtn {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.wrColumnSelectFormulaBtn:hover {
+  background-color: #F4F6F9;
+  border: solid 1px #a2b3cc;
+}
+.wrColumnSelectFormulaBtn:active {
+  background-color: #D8D8D8;
+  border: solid 1px #989898;
+  box-shadow: 0 0 1px 0 #595959 inset;
+}
+.wrDesignGroupBreakSelect {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+}
+.wrCellImageIframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+.wrCellImageFile {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  height: 18px;
+  opacity: 0;
+  z-index: 9999;
+  cursor: pointer;
+  width: 100px;
+  height: 20px;
+}
+.wrCellImageBrowseBtn {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  z-index: 1;
+}
+.wrCellImageBrowseBtn {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  z-index: 1;
+}
+.wrFileUploadInput {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* must be right-justified due to IE Browse button being on right */
+  zoom: 1;
+  opacity: 0;
+  font-size: 96pt;
+  /* makes size of file upload input very large in order to more or less guarantee that it will take up all of its container (e.g. full width of menu item) */
+}
+.wrPictureUploadCtrl {
+  overflow: hidden;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 22px;
+}
+.wrUploadiframe {
+  width: 0;
+  height: 0;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrCategoriesLeftPane {
+  width: 30%;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+}
+.wrSplitterDataFieldsLeftPane {
+  width: 190px;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  /* IE9 causes vertical scrollbar with 'Add' image button positioned at bottom */
+}
+.wrStandardFiltersGridDiv,
+.wrGroupFiltersGridDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+}
+.wrStandardFiltersGridDiv {
+  bottom: 93px;
+}
+.wrGroupFiltersGridDiv {
+  bottom: 70px;
+}
+.wrFormulaFilterAmbiguousWarning {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AlertSmall.svg");
+  background-size: 12px 12px;
+  width: 12px;
+  height: 12px;
+  cursor: default;
+}
+.wrNoSVG .wrFormulaFilterAmbiguousWarning {
+  background-image: url("../#ApplicationThemeFolder#/Images/AlertSmall.png");
+}
+.wrFormulaFilterAmbiguousWarningRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.wrStandardFiltersEditArea,
+.wrGroupFiltersEditArea {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+  background-color: #ffffff;
+}
+.wrStandardFiltersEditArea {
+  height: 93px;
+}
+.wrGroupFiltersEditArea {
+  height: 82px;
+}
+.wrReportFiltersDialogTabContainer .wrTabStripInnerContainer {
+  justify-content: center;
+}
+.wrReportFiltersDialogTabContainer .wrTabItemUnderline {
+  background-color: #6896ed;
+}
+.wrFiltersTabHelpBtn {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  width: 18px;
+  height: 18px;
+}
+.wrReportFiltersTopNForeachGroupDD .wrSearchDDImage {
+  top: 4px;
+}
+.wrReportFiltersTopNText {
+  font-size: 12px;
+  color: #808080;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  padding: 1px 2px 1px 2px;
+}
+.wrReportFilterNInput {
+  height: 14px;
+  width: 14px;
+}
+.wrReportFiltersTopNMainDiv {
+  width: calc(40% + 150px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wrReportFiltersTopNLabelRow {
+  float: left;
+  border: 30px;
+}
+.wrReportFiltersTopNInput {
+  display: flex;
+  justify-content: center;
+}
+.wrReportFiltersTopNFilterBody {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.wrReportFiltersTopNMainDiv .wrEditableListDeleteButtonContainer > img {
+  position: relative;
+  border: 1px solid #D5D5D5;
+  border-radius: 2px;
+  padding: 2px 2px 2px 2px;
+  top: 1px;
+  left: -5px;
+}
+.wrReportFiltersTopNMainDiv #AddGroupBtn {
+  width: 90px;
+  left: 16%;
+  margin-left: 0;
+}
+.wrReportFiltersTopNMainDiv #TopNForEachGroupContainer > div {
+  line-height: 20px;
+}
+.wrReportFiltersTopNMainDiv .wrCheckbox {
+  top: -2px;
+  margin-right: 10px;
+}
+.wrReportFiltersTopNBodyItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+.wrReportFiltersTopNBodyForItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+  width: 40%;
+}
+.wrReportFiltersTopNBodyValueItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+  width: 50%;
+}
+.wrReportFiltersTopNFilterDescription {
+  justify-content: center;
+  font-size: 11px;
+  color: #808080;
+  border-radius: 2px;
+  padding: 4px 0px 4px 6px;
+  margin-top: 0px;
+  vertical-align: middle;
+  line-height: 16px;
+}
+.wrReportFiltersTopNFilterForeachDiv {
+  top: 10px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.wrReportFiltersTopNForeachGroupEditableList {
+  display: flex;
+  flex-direction: row;
+}
+.wrReportFiltersTopNForeachGroupDD {
+  width: 100%;
+  min-width: 100px;
+  color: #808080;
+}
+.wrReportFiltersTopNLabel {
+  font-size: 13px;
+  color: #606060;
+  margin-right: 10px;
+  width: 70px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+.wrReportFiltersTopNForEachDD {
+  width: 78%;
+}
+.wrDialogContentLeftColumn {
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 7px;
+  width: auto;
+}
+.wrReportFiltersTypeSwitch {
+  top: -5px;
+  right: 5px;
+}
+.wrFiltersSelect {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  height: 18px;
+}
+.wrFiltersOperatorDD {
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+.wrFiltersAndOrDD {
+  position: absolute;
+  top: 23px;
+}
+.wrFiltersGroupWithCB {
+  position: absolute;
+  top: 43px;
+}
+.wrFiltersPromptCB {
+  position: absolute;
+  top: 63px;
+}
+.wrFiltersHelpBtn {
+  position: absolute;
+  bottom: 23px;
+  right: 0;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.wrDialogContentRightColumn {
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  right: 7px;
+}
+/* Special sizing to accomodate summary div */
+.wrDialogFilterSplitter {
+  bottom: 65px;
+}
+.wrFilterSummaryP {
+  margin: 0;
+}
+.wrDialogFiltersSummaryDiv {
+  position: absolute;
+  height: 43px;
+  bottom: 0;
+  right: 5px;
+  left: 5px;
+  /*background-color:green;*/
+  right: 0;
+  padding: 2px;
+  overflow: auto;
+  border: solid 1px #d7d7d7;
+}
+.wrDialogFiltersSummaryLbl {
+  position: absolute;
+  left: 5px;
+  bottom: 45px;
+  font-weight: bold;
+  /*	right:0; */
+}
+.wrFiltersOperatorSelect {
+  position: relative;
+  width: 100%;
+}
+.wrFiltersEditCtrl2 {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  font-style: italic;
+}
+.wrEditCtrlHourglass {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 1px;
+  top: 50%;
+  margin-top: -8px;
+  z-index: 1;
+  background: white;
+  display: none;
+}
+[data-loading] .wrEditCtrlHourglass {
+  display: block;
+}
+.wrEditCtrl2FiltersAnd {
+  position: relative;
+  vertical-align: middle;
+  color: #6896ed;
+}
+.wrEditCtrl2EditCtrl {
+  position: relative;
+  top: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.wrFiltersOperatorDiv {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+}
+.wrFiltersAndOrDiv {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+}
+.wrFiltersGroupDiv {
+  position: absolute;
+  top: 44px;
+}
+.wrFiltersPromptDiv {
+  position: absolute;
+  top: 64px;
+}
+.wrFiltersEditAreaContent {
+  position: relative;
+}
+.wrFiltersGroupField {
+  font-weight: bold;
+}
+.wrFiltersEditAreaColumnTop {
+  top: 5px;
+  left: 0;
+}
+.wrFiltersForEachDiv {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.wrFiltersIgnoreOtherGroupsContainer {
+  position: absolute;
+  top: 58px;
+  font-size: 8pt;
+}
+.wrFiltersIgnoreOtherGroupsCB {
+  margin-left: 0;
+}
+.wrEditCtrlContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.wrEditCtrlDiv {
+  position: relative;
+  width: calc(100% - 2px);
+  height: 16px;
+  background-color: #FFFFFF;
+  border: solid 1px #d7d7d7;
+  font-size: 0;
+}
+.wrDialogFormSideBySideDiv .wrEditCtrlDiv input {
+  font-size: 8pt;
+}
+.wrEditCtrlDivNoBorder {
+  border: 0;
+}
+.wrEditCtrlInputDivBtns0,
+.wrEditCtrlInputDivBtns1,
+.wrEditCtrlInputDivBtns2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.wrEditCtrlInputDivBtns0 {
+  right: 0;
+}
+.wrEditCtrlInputDivBtns1 {
+  right: 16px;
+}
+.wrEditCtrlInputDivBtns2 {
+  right: 32px;
+}
+.wrEditCtrlInput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 2px;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  color: #808080;
+}
+.wrEditCtrlInput:focus {
+  border: none;
+}
+.wrEditCtrlImgBtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+}
+.wrEditCtrlSearchSettingBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SearchBy.svg");
+  background-size: 12px 12px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-right: 1px solid #d7d7d7;
+  width: 18px;
+  height: 18px;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
+  border-right: 0px;
+}
+.wrNoSVG .wrEditCtrlSearchSettingBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/SearchBy.png");
+}
+.wrEditCtrlSearchSettingBtn:hover {
+  background-color: #d7d7d7;
+}
+.wrFilterValueGridContainer .wrEditCtrlSearchSettingBtn {
+  border: none;
+  border-right: 1px solid #d7d7d7;
+  box-sizing: content-box;
+}
+.wrHideValueSearchSettings .wrEditCtrlSearchSettingBtn {
+  display: none;
+}
+.wrEditCtrlDateBtn1 {
+  position: absolute;
+  right: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.wrFilterEditCtrlDisabled .wrEditCtrlDateBtn1 {
+  cursor: default;
+  filter: brightness(1.5);
+}
+.wrFilterEditCtrlDisabled input[type="text"]:disabled {
+  background-color: #FFFFFF;
+  color: #AAAAAA;
+  cursor: default;
+}
+.wrFilterEditCtrlDisabled .wrEditCtrlSearchSettingBtn {
+  display: none;
+}
+[id$='TextTbl'] .wrEditCtrlDateBtn1,
+[id$='NumericTbl'] .wrEditCtrlDateBtn1 {
+  border-left: none;
+}
+.wrFiltersEditCtrlWrapper {
+  height: 18px;
+}
+.wrFiltersOneOfWrapper {
+  top: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+.wrFiltersRelativeFloatRight {
+  margin-top: 5px;
+  position: relative;
+}
+.wrFiltersRelative {
+  position: relative;
+}
+.wrFiltersEditCtrl {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  /* for the Between Label.  Should not affect other elements */
+}
+.wrFiltersMobileEditCtrlDiv {
+  position: relative;
+  width: 100%;
+  height: 16px;
+}
+.wrFiltersMobilePromptCtrlDiv {
+  width: 100%;
+  padding-left: 5px;
+  text-align: left;
+}
+.wrParametersEditCtrlDiv {
+  position: relative;
+  width: 100%;
+  height: 16px;
+}
+.wrParametersPromptCtrlDiv {
+  width: 100%;
+  padding-left: 5px;
+  text-align: left;
+}
+.wrOptionsLeftMargin {
+  margin-left: 20px;
+}
+.wrOptionsContentDiv {
+  position: static;
+  margin-left: 25px;
+  margin-right: 5px;
+}
+.wrOptionsTopBoundDiv {
+  margin-top: 5px;
+  left: 0px;
+  /* inherits position relative.  reset left to 0 keeps alignment consistent with the flow */
+}
+.wrOptionsTopUnboundDiv {
+  margin-top: 25px;
+}
+.wrOptionsWarningMessage {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+.wrCustomOptionsFieldSet {
+  position: relative;
+  height: auto;
+}
+.wrCustomOptionsTopItem {
+  position: relative;
+  display: block;
+  margin-bottom: 2px;
+  margin-left: 0;
+}
+.wrCustomOptionsTextInput {
+  width: 100%;
+}
+.wrCustomOptionsBottomItem {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: 0;
+}
+.wrCustomOptionsNumericEditDiv {
+  margin-top: 2px;
+  width: 75px;
+  display: inline-block;
+}
+.wrBoundItem {
+  margin-left: 2px;
+}
+.wrUnboundItem {
+  margin-left: 20px;
+}
+.wrAdminDiscoveryPreviewOnly {
+  top: 6px;
+  position: relative;
+  display: inline-block;
+}
+.wrAdminDiscoveryPreviewOnlyLbl {
+  bottom: 2px;
+  position: inherit;
+}
+.wrDialogFiltersMainSplitterDisplay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.wrFiltersGroupDD {
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+.wrDialogTemplatesDDContainer {
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-family: Roboto;
+  font-size: 12px;
+}
+.wrReportTemplatesLbl {
+  margin-bottom: 4px;
+}
+.wrTemplateUploadOrLbl {
+  padding: 8px;
+}
+.wrTemplatesUploadContainer {
+  height: 28px;
+}
+.wrTemplateUploadBtn {
+  height: 28px;
+  line-height: 26px;
+}
+.wrTemplateUploadBtn > span {
+  padding: 0 8px;
+  font-weight: normal;
+  font-size: 12px;
+}
+.wrTemplateUploadBtn_hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+.wrTemplateUploadBtn_active {
+  filter: brightness(90%);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.wrTemplateUploadCtrl {
+  position: relative;
+  top: -28px;
+  left: 0;
+  right: 0;
+  height: 28px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrDialogTemplatesDD {
+  position: relative;
+  width: 60%;
+  box-sizing: border-box;
+  height: 28px;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+}
+.wrDialogTemplatesGridContainer {
+  position: absolute;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+  border: 1px solid #d7d7d7;
+}
+.wrReportTemplatesReportFieldDDNoFields select {
+  pointer-events: none;
+  color: #777;
+  filter: brightness(160%);
+  background-color: #999;
+}
+.wrTemplatesGridAllowEditHeader {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DropDownArrow.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: right 3px center;
+  padding-right: 8px;
+  cursor: pointer;
+}
+.wrNoSVG .wrTemplatesGridAllowEditHeader {
+  background-image: url("../#ApplicationThemeFolder#/Images/DropDownArrow.png");
+}
+.wrTemplatesGridAllowEditHeader:hover {
+  text-decoration: underline;
+}
+.wrTemplatesGridAllowEditHeader:active {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.formulaAreaEdit {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.formulaAreaDropZone {
+  background-color: #FFFFFF;
+  height: 25px;
+  top: 0px;
+  bottom: 0px;
+  border: solid 1px #d7d7d7;
+}
+.wrDialogLabel {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  margin-left: 0px;
+  top: 5px;
+  position: absolute;
+}
+.wrListContentContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrListContentLeftPane {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 5px;
+}
+.wrListContentRightPane {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrListContentSelectContainer {
+  position: relative;
+  padding: 0 30px 0 0;
+  height: 100%;
+}
+.wrListContentSelectItem {
+  font-size: 10pt;
+  padding-left: 4px;
+}
+.wrDataFormatContainer {
+  top: 16px;
+}
+.wrDataFormatContainer .wrTrNd span {
+  padding-right: 10px;
+}
+.wrDataFormatDecimalSymbolLbl {
+  margin-left: 20px;
+}
+.wrDataFormatSymbol {
+  width: 20px;
+  margin-left: 5px;
+}
+.wrDataFormatDateInputLbl {
+  position: absolute;
+  top: 0;
+}
+.wrDataFormatDateInput {
+  top: 16px;
+}
+.wrDataFormatDateSelectContainer {
+  top: 42px;
+}
+.wrDataFormatDateSelect {
+  height: 100%;
+}
+.wrCellFormatBorderCell {
+  /*text-align:center;
+    vertical-align:middle;
+    margin:auto; */
+  padding: 8px;
+}
+.wrCellFormatBorderBox {
+  width: 100%;
+  height: 30px;
+  border: solid 1px #e6e6e6;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #FFFFFF;
+}
+.wrCellFormatBorderWidth {
+  width: 85px;
+  margin-top: 2px;
+}
+/* FIX?: Wanted to put these in common as .wrWizardLbl/Container but then they get
+ * Over-ridden by other classes (since common sits near the top of the CSS stack.)
+ * Right solution to leave here but make single classes?
+*/
+.wrScheduleReportLbl {
+  top: 10px;
+  left: 10px;
+}
+.wrScheduleReportContainer {
+  top: 35px;
+}
+.wrScheduleReportContainer .wrTabWizardButtonStrip {
+  right: 10px;
+  bottom: 5px;
+}
+.wrTabInnerContent[data-tabtitle="RecurrenceTab"] {
+  top: 10px;
+}
+.wrNewReportContainer {
+  position: absolute;
+  top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrExecuteProgressTopContainer {
+  width: 100%;
+  height: 50px;
+}
+.wrExecuteProgressBottomContainer {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+}
+.wrExecuteProgressBottomContainer_NoTop {
+  margin-top: 30px;
+}
+.wrExecuteProgressPcnt {
+  position: relative;
+  height: 20px;
+  border: solid 1px #d7d7d7;
+}
+.wrProgressBarContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+.wrProgressBarPcntBar {
+  position: relative;
+  height: 100%;
+  width: 0;
+  background-color: #a9d4ff;
+  overflow: hidden;
+}
+.wrProgressBarPcntBar_Active {
+  transform: translate(0%, 0px);
+}
+.wrProgressBarPcntBar_ActiveAnim {
+  transition: all 200ms ease;
+}
+.wrProgressBarPeg {
+  position: absolute;
+  right: 0;
+  width: 0px;
+  height: 100%;
+  box-shadow: 0 0 40px 25px #FFFFFF;
+  opacity: 0.5;
+}
+.wrReportFoldersLbl {
+  top: 10px;
+}
+.wrReportFoldersTbImg {
+  margin-right: 7px;
+}
+.wrReportFoldersReportsCtrl {
+  top: 69px;
+  bottom: 0;
+}
+.wrLinkedReportNameTb {
+  height: 14px;
+  width: calc(100% - 19px);
+}
+.wrLinkedReportNameTbWrapper {
+  top: 20px;
+  right: 0;
+  font-size: 0;
+}
+.wrLinkedReportDeleteBtn {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+.wrLinkedReportReportsContainer {
+  top: 40px;
+}
+.wrLinkedReportFormulaEditorSplitter {
+  top: 18px;
+}
+.wrLinkedReportFieldsTopLabel {
+  top: 10px;
+}
+.wrLinkedReportFieldsMainDiv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrLinkedReportFromCategoryObjectWrapper,
+.wrLinkedReportToCategoryObjectWrapper {
+  position: absolute;
+  right: 50%;
+  top: 40px;
+  left: 0;
+  text-align: center;
+}
+.wrLinkedReportFromCategoryObjectWrapper {
+  left: 0;
+  right: 50%;
+}
+.wrLinkedReportToCategoryObjectWrapper {
+  left: 50%;
+  right: 0;
+}
+.wrLinkedReportFieldsGridContainer {
+  position: absolute;
+  top: 65px;
+  bottom: 40px;
+}
+.wrLinkedReportFieldsAddButton {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.wrLinkedReportDialogContentPaddingDiv {
+  margin-top: 13px;
+}
+.wrLinkedReportFieldInfoLbl {
+  top: 13px;
+  position: absolute;
+}
+.wrLinkedReportFromFieldLbl,
+.wrLinkedReportToFieldLbl {
+  top: 36px;
+  position: absolute;
+  text-align: center;
+}
+.wrLinkedReportFieldsParentContainer,
+.wrLinkedReportFieldsChildContainer {
+  top: 54px;
+  position: absolute;
+  bottom: 35px;
+}
+.wrLinkedReportFieldsParentContainer,
+.wrLinkedReportFromFieldLbl {
+  left: 5%;
+  width: 35%;
+}
+.wrLinkedReportFieldsChildContainer,
+.wrLinkedReportToFieldLbl {
+  width: 35%;
+  right: 5%;
+}
+.wrReportErrorsContainer {
+  background-color: #FFFFFF;
+  color: #000000;
+  overflow: auto;
+}
+.wrReportErrorsMsg {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 3px 0;
+}
+.wrReportErrorsError {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  margin: 3px 0 0 0;
+}
+/* ScheduleNameCtrl starts here */
+.wrScheduleNameInput {
+  top: 15px;
+}
+.wrScheduleNameExportTypeWrapper {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+.wrScheduleNamePasswordWrapper {
+  margin-left: 10px;
+}
+.wrScheduleNamePasswordLbl {
+  margin-left: 10px;
+}
+.wrScheduleNamePassword {
+  width: 100px;
+}
+.wrScheduleDateTime {
+  top: 4px;
+}
+.wrScheduleRecurrenceContainer {
+  border-right: solid 1px #e6e6e6;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.wrScheduleRecurrenceNumericEdit {
+  top: 5px;
+}
+.wrScheduleRecurrenceWeeklyCheckbox {
+  margin-left: 15px;
+}
+.wrScheduleRangeContainer {
+  padding-left: 15px;
+}
+.wrScheduleBatchMainDiv {
+  top: 16px;
+}
+.wrScheduleBatchTable {
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.wrScheduleBatchTable td {
+  padding: 0;
+}
+.wrScheduleBatchTableColumn {
+  width: 100px;
+}
+.wrScheduleBatchDataFields {
+  height: 300px;
+}
+.wrScheduleBatchEmail {
+  top: 10px;
+}
+.wrScheduleBatchInput {
+  height: 20px;
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+/* overrides top from wrDialogMainDiv */
+.wrScheduleRecipientsMainDiv {
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.wrScheduleEmailOrArchiveDiv {
+  margin: 6px 0;
+}
+.wrScheduleIncludeReportAttachmentDiv {
+  display: inline-block;
+}
+.wrScheduleRecipientsTable {
+  display: flex;
+  font-size: 13px;
+}
+.wrScheduleRecipientsRowItem {
+  height: 26px;
+  box-sizing: border-box;
+  margin: 7px 0;
+  display: flex;
+  align-items: center;
+}
+.wrScheduleRecipientsCol1 {
+  padding-right: 1.5em;
+  flex-grow: 0;
+}
+.wrScheduleRecipientsCol1 .wrScheduleRecipientsRowItem {
+  padding-left: 0;
+  font-size: inherit;
+}
+.wrScheduleRecipientsCol2 {
+  flex-grow: 1;
+}
+.wrScheduleRecipientsCol2 .wrScheduleRecipientsRowItem {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+}
+.wrScheduleRecipientsBody {
+  position: absolute;
+}
+.wrScheduleRecipientsLowerContainer {
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.wrScheduleRecipientsBodyInput {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 3px;
+  flex-grow: 1;
+}
+.wrEmailSelectEmailTreeWrapper {
+  top: 0;
+  bottom: 105px;
+}
+.wrEmailSelectAddButton {
+  bottom: 83px;
+}
+.wrEmailSelectEmailInputWrapper {
+  height: 75px;
+  top: auto;
+  bottom: 0;
+}
+.wrEmailSelectEmailInput {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  height: 100%;
+  width: 100%;
+}
+.wrScheduleManagerGridWrapper {
+  top: 47px;
+  bottom: 13px;
+}
+.wrScheduleManagerButtonsWrapper {
+  position: relative;
+  top: 13px;
+}
+.wrScheduleManagerButtonsWrapper .wrImageButton {
+  vertical-align: middle;
+}
+.wrScheduleManagerButtonsWrapper .wrFlatInput {
+  vertical-align: middle;
+  position: relative;
+  width: 200px;
+  margin-right: 10px;
+}
+.wrWidgetWizardFitToCellContainer {
+  padding-top: 1em;
+}
+.wrDialogChartWizardDiv {
+  bottom: 6px;
+}
+.wrDialogChartWizardDiv .wrTabInnerContent2 {
+  overflow: auto;
+}
+.wrChartWizardChartType,
+.wrMapWizardInitialViewDD {
+  width: 150px;
+}
+.wrChartTypeChooserContextMenuItem {
+  margin-left: 10px;
+  margin-bottom: 4px;
+  font-size: 8pt;
+}
+.wrChartWizardIs3DContainer {
+  margin: 7px 0;
+}
+.wrChartWizardChartTypeCategoryButton {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  filter: grayscale(0.9) brightness(75%);
+}
+.wrChartWizardChartTypeCategoryButton:not(.wrChartWizardChartTypeButtonSelected):hover {
+  filter: grayscale(0);
+}
+.wrChartWizardChartTypeCategoryButton:active {
+  background-color: rgba(104, 150, 237, 0.15);
+  filter: none;
+}
+.wrChartWizardChartTypeButtonSelected {
+  border: 2px solid #6896ed;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  filter: grayscale(0) brightness(100%);
+}
+#GaugeTypeCtrlContainer .wrChartWizardChartTypeCategoryButton {
+  filter: none;
+}
+#GaugeTypeCtrlContainer .wrChartWizardChartTypeCategoryButton:not(.wrChartWizardChartTypeButtonSelected):hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+#GaugeTypeCtrlContainer .wrChartWizardChartTypeCategoryButton:not(.wrChartWizardChartTypeButtonSelected):active {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.wrMapWizardShowLegendCheckboxContainer {
+  width: 140px;
+}
+.wrChartWizardTopContainerPadding,
+.wrMapWizardTopContainerPadding {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+.wrChartWizardLabelFontDD {
+  width: 280px;
+}
+.wrMapWizardTopContainer {
+  position: absolute;
+  top: 0;
+  height: 295px;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: none;
+}
+.wrMapWizardLastTierFormatContainer {
+  position: absolute;
+  top: 100px;
+}
+.wrMapWizardLocationsGridContainer {
+  position: relative;
+  height: 83px;
+  top: 5px;
+}
+.wrMapWizardDataGridContainer {
+  position: relative;
+  height: 71px;
+  top: 1.2em;
+}
+.wrFF .wrMapWizardDataGridContainer {
+  height: 67px;
+}
+.wrIE10 .wrMapWizardLocationsGridContainer,
+.wrIE11 .wrMapWizardLocationsGridContainer {
+  height: 68px;
+}
+.wrIE10 .wrMapWizardDataGridContainer,
+.wrIE11 .wrMapWizardDataGridContainer {
+  height: 63px;
+}
+.wrChartWizardBottomContainer,
+.wrMapWizardBottomContainer {
+  position: absolute;
+  top: 240px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+}
+.wrChartWizardBelowGrid {
+  position: absolute;
+  top: 102px;
+  width: 100%;
+}
+.wrChartWizardGridContainer {
+  position: relative;
+  height: 38px;
+}
+.wrChartWizardGridContainerThreeFields {
+  position: relative;
+  height: 52px;
+}
+.wrChartWizardGridContainerFiveFields {
+  position: relative;
+  height: 86px;
+}
+.wrChartWizardBenchmarkLinesButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartBenchmarkLines.svg");
+  background-size: 16px 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: top;
+  height: 16px;
+  width: 16px;
+  top: 2px;
+  float: left;
+  margin-right: 3px;
+}
+.wrNoSVG .wrChartWizardBenchmarkLinesButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartBenchmarkLines.png");
+}
+.wrJoinsGridAdvancedWithCartesian {
+  bottom: 64px;
+}
+.wrJoinsGridAdvancedWithoutCartesian {
+  bottom: 35px;
+  border: 1px solid #d7d7d7;
+}
+.wrJoinsAdvancedContainer {
+  top: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wrJoinsCartesianContainer {
+  position: relative;
+  top: auto;
+  width: 100%;
+}
+.wrJoinsGridAdvancedLine {
+  margin: 5px 5px 3px 5px;
+  width: auto;
+}
+.wrJoinsCartesianLbl {
+  margin-left: 8px;
+}
+.wrReportDebugDialogMainDiv {
+  margin-top: 28px;
+}
+.wrReportDebugTextInput {
+  width: 400px;
+  margin-bottom: 1em;
+}
+.wrReportDebugPasswordTb {
+  top: 14px;
+}
+.wrReportDebugTicketIdLbl {
+  top: 46px;
+}
+.wrReportDebugTicketIdTb {
+  top: 60px;
+}
+.wrReportDebugDescriptionLbl {
+  top: 90px;
+}
+.wrReportDebugContactEmailTb {
+  top: 104px;
+}
+.wrReportDebugDescriptionInputWrapper {
+  top: 105px;
+  bottom: 0;
+}
+.wrTextInputGridItemContainer {
+  position: relative;
+  width: 100%;
+  height: 16px;
+}
+.wrTextInputGridItem {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+}
+.wrJoinEditAddContainer {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  flex-grow: 1;
+}
+.wrJoinEditAddBtn {
+  position: absolute;
+  right: 0;
+  bottom: 86px;
+}
+.wrReportJoinsRecreateBtn {
+  margin-left: auto;
+}
+.wrJoinEditSummaryHeader {
+  margin: 8px 0 4px 0;
+}
+.wrJoinEditSummarySelect {
+  height: 26px;
+  max-width: 188px;
+  padding-right: 20px;
+  border-radius: 2px;
+  color: #808080;
+}
+.wrJoinEditSummaryDiv {
+  height: 70px;
+  border: 1px solid #DFDFDF;
+  overflow: auto;
+}
+.wrJoinEditSummary {
+  margin: 6px;
+  font-size: 12px;
+}
+.wrJoinEditEntitySelectContainer {
+  display: inline;
+  margin-right: 15px;
+}
+.wrJoinEditLbl {
+  padding-left: 14px;
+  padding-right: 6px;
+  color: #6D6D6D;
+  font-size: 12px;
+  font-weight: bold;
+}
+.wrJoinEditEntitySelect {
+  height: 26px;
+  width: 0;
+  max-width: 188px;
+  padding-right: 20px;
+  border-radius: 2px;
+  flex-grow: 1;
+}
+.wrJoinEditGridContainer {
+  position: relative;
+  height: calc(100% - 115px);
+}
+.wrJoinEditGridRowNumberContainer {
+  width: 10px;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrJoinEditGridRowNumber {
+  height: 17px;
+  text-align: right;
+  color: #6D6D6D;
+  font-size: 11px;
+  font-weight: bold;
+}
+.wrJoinEditGrid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: left 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrJoinEditGrid.wrJoinEditGridVisibleNumbers {
+  left: 15px;
+}
+.wrConditionalNoAttribute {
+  /* IE8 bug prevents filter from working properly with fixed row heights; use image instead */
+  background-image: url('Images/SuppressRow.gif') !important;
+  background-repeat: repeat !important;
+}
+.wrConditionalParameterBtnCell {
+  width: 20px;
+  text-align: right;
+}
+.wrConditionalParameterSelect {
+  width: 100%;
+  border: none;
+}
+.wrShadingContainer {
+  width: 230px;
+  height: 210px;
+}
+.wrDataDropdownSelect {
+  white-space: nowrap;
+}
+.wrColorThemeChooserSelectContainer,
+.wrColorThemeChooserColorsContainer {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrChartAppearanceCustomColorsList {
+  margin-top: 5px;
+}
+/* Hide the delete button if the row shading color input is the only one left in the list */
+.wrChartAppearanceCustomColorsList .wrCustomColorsContainer:only-child .wrChartAppearanceCustomColorDeleteButton {
+  display: none;
+}
+.wrChartAppearanceCustomColorsAddBtn {
+  background-color: #F5F5F5;
+  border: 1px solid #D5D5D5;
+  border-radius: 2px;
+  height: 16px;
+  width: 48px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AddItem.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  left: 15px;
+  margin-bottom: 10px;
+}
+.wrNoSVG .wrChartAppearanceCustomColorsAddBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/AddItem.png");
+}
+.wrChartAppearanceCustomColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  vertical-align: top;
+}
+.wrNoSVG .wrChartAppearanceCustomColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrColorThemeChooserSpacer {
+  margin-left: 20px;
+}
+.wrThemeNameSelectColorsWrapper {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  padding-top: 6px;
+}
+.wrChrome .wrThemeNameSelectColorsWrapper {
+  top: 2px;
+}
+.wrThemeNameSelectColorsWrapperCompact {
+  position: absolute;
+  top: 0;
+  left: 158px;
+}
+.wrIE .wrThemeNameSelectColorsWrapperCompact {
+  top: 1px;
+}
+.wrSafari .wrThemeNameSelectColorsWrapperCompact {
+  top: 2px;
+}
+.wrChrome .wrThemeNameSelectColorsWrapperCompact {
+  top: 1px;
+}
+.wrColorThemeChooserBeginColorPickerCompact {
+  /* Stub for client modification */
+  clear: both;
+}
+.wrColorThemeChooserEndColorPickerCompact {
+  position: relative;
+  right: -23px;
+}
+.wrColorThemeChooserDiv {
+  width: 292px;
+}
+.wrColorThemeChooserDivCompact {
+  padding: 8px;
+  max-width: 300px;
+}
+.wrThemeNameSelectColorsWrapper .wrModernColorChooserContainer {
+  display: block;
+  margin-right: 5px;
+}
+.wrColorThemeChooserDivCompact .wrThemeNameSelectColorsWrapperCompact {
+  position: static;
+}
+.wrColorThemeChooserDivCompact .wrColorThemeChooserBeginColorPickerCompact {
+  float: none;
+  display: inline-block;
+  margin-right: 4px;
+}
+.wrColorThemeChooserDivCompact .wrColorThemeChooserEndColorPickerCompact {
+  float: none;
+  position: static;
+  display: inline-block;
+}
+.wrColorThemeChooserDivCompact .wrDDButton {
+  position: static;
+}
+.wrColorThemeChooserDivCompact .wrCPInputContainer {
+  display: none;
+}
+.wrColorThemeChooserDivCompact .wrColorThemeChooserSelectContainer {
+  vertical-align: top;
+  margin-right: 4px;
+}
+.wrParameterValueReportTitle {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 10pt;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #d6d6d6;
+}
+.wrParameterValueEditCtrlContainer {
+  position: relative;
+  width: 100%;
+  height: 16px;
+}
+.wrParameterValueGridContainer {
+  position: relative;
+  border: 0px solid #000000;
+}
+.wrParameterValueGridTable {
+  border: 1px solid #d7d7d7;
+  width: inherit;
+}
+.wrParameterValueGridHeader {
+  /*display:none;*/
+}
+.wrFilterValueReportTitle {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 10pt;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #cccccc;
+}
+.wrFilterValueGridContainer {
+  position: relative;
+  border: 0px solid #000000;
+}
+.wrFilterValueGridTable {
+  border: 1px solid #d7d7d7;
+  width: inherit;
+}
+.wrFilterValueGridHeader {
+  /*display:none;*/
+}
+.wrFilterValueEditCtrlContainer {
+  position: relative;
+  width: 100%;
+}
+.wrFilterValueCtrlContainer {
+  position: relative;
+}
+.wrFilterValueTopContainer {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+.wrFilterValueTopContainer .wrEditCtrlSearchSettingBtn {
+  border: none;
+  border-right: 1px solid #d7d7d7;
+}
+.wrFilterValueBottomContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 16px;
+  flex-direction: row;
+  background-color: #FFFFFF;
+}
+.wrFilterValueMultiContainer {
+  border: solid 1px #d7d7d7;
+}
+.wrFilterValueMultiAddBtnContainer {
+  position: relative;
+  height: 10px;
+  background: #E9EDF1;
+  text-align: center;
+}
+.wrFilterValueMultiAddBtn {
+  position: relative;
+  top: -1px;
+  background: url('Images/ArrowDown.png') no-repeat no-repeat center center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.wrFilterValueMultiAddBtn:hover {
+  border: 1px solid #d7d7d7;
+}
+.wrFilterValueMultiAddBtn:active {
+  border: 1px solid #c5c5c5;
+}
+.wrFilterValueMultiArea {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 16px;
+  background-color: #FFFFFF;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  line-height: 16px;
+  padding-left: 3px;
+}
+.wrFilterValueMultiEditImgBtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.wrFilterValueMultiDropDown {
+  max-height: 160px;
+}
+.wrFilterValueMultiDropDownItem {
+  position: relative;
+  height: 20px;
+  width: 100%;
+}
+.wrFilterValueMultiDropDownItemValue {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  right: 16px;
+  overflow: hidden;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  line-height: 20px;
+}
+.wrFilterValueMultiDropDownItemDeleteBtn {
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+.wrEditDropDownContainer {
+  min-height: 80px;
+  max-height: 190px;
+  width: 100%;
+}
+.wrEditDropDownLoadingDiv {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+}
+.wrEditDropDownItem {
+  position: relative;
+  padding-left: 2px;
+  height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  line-height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+}
+.wrEditDropDownItem:hover {
+  background-color: #EFEFEF;
+}
+.wrDynamicSortsGridContainer {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrDynamicFiltersMainArea {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.wrDynamicFilterGridArea {
+  position: relative;
+  flex-grow: 1;
+}
+.wrDynamicFilterEditArea {
+  position: relative;
+  flex-shrink: 1;
+  padding: 10px 0 0 10px;
+  overflow: auto;
+}
+.wrDynamicFilterEditSection {
+  float: left;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDynamicFilterDD {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.wrDynamicFilterSpacer1 {
+  clear: both;
+  width: 0;
+  height: 19px;
+}
+.wrDynamicFilterSpacer2 {
+  clear: both;
+  width: 0;
+  height: 22px;
+}
+.wrDynamicFilterTitleFieldInput {
+  position: relative;
+  width: 200px;
+}
+.wrDynamicFilterValueFieldInput {
+  position: relative;
+  width: 200px;
+}
+.wrDynamicFilterBreakFieldInput {
+  position: relative;
+  width: 200px;
+  height: 20px;
+}
+.wrDynamicFilterEditFormatBtn {
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormatCells.svg");
+  background-size: 16px 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: top;
+  height: 16px;
+  width: 16px;
+  top: 2px;
+  float: left;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.wrNoSVG .wrDynamicFilterEditFormatBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormatCells.png");
+}
+.wrDynamicFilterEditFormatBtn:hover {
+  background-color: #F4F6F9;
+  border: solid 1px #a2b3cc;
+}
+.wrDynamicFilterEditFormatBtn:active {
+  background-color: #D8D8D8;
+  border: solid 1px #989898;
+  box-shadow: 0 0 1px 0 #595959 inset;
+}
+.wrCodeEditorWrapper {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+.wrCodeEditorCodeLabel {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  right: 0px;
+  height: 20px;
+}
+.wrCodeEditorTestWrapper {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  height: 20px;
+}
+.wrCodeEditorTestBtn {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+}
+.wrCodeEditorLanguageWrapper {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  height: 20px;
+  width: 48%;
+}
+.wrCodeEditorLanguageLabelWrapper {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100px;
+}
+.wrCodeEditorLanguageDDWrapper {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.wrCodeEditorReferencesWrapper {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  height: 20px;
+  right: 30px;
+}
+.wrCodeEditorReferencesLabelWrapper {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.wrCodeEditorReferencesInputWrapper {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.wrCodeEditorInputInnerWrapper {
+  position: absolute;
+  right: 2px;
+  top: 0px;
+  bottom: 4px;
+  left: 2px;
+}
+.wrCodeEditorNamespacesWrapper {
+  position: absolute;
+  top: 38px;
+  height: 20px;
+  left: 10px;
+  right: 10px;
+}
+.wrCodeEditorInput {
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  padding: 0;
+  padding-left: 2px;
+  border-width: 0px;
+  overflow: visible;
+  border: 1px solid #e6e6e6;
+}
+.wrCodeEditorInput:focus {
+  background-color: #EAFCFE;
+  border: 1px solid #d7d7d7;
+}
+.wrCodeEditorInput:hover {
+  border: 1px solid #d7d7d7;
+}
+.wrCodeEditorTextAreaWrapper {
+  position: absolute;
+  top: 86px;
+  bottom: 5px;
+  left: 0px;
+  right: 10px;
+}
+.wrAdminContentTextArea {
+  width: 100%;
+  height: 100%;
+}
+.wrSliderLabel {
+  position: absolute;
+  padding: 0;
+  overflow: hidden;
+}
+.wrSliderHorz {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+}
+.wrSliderHorz .wrSliderLabel {
+  top: 20px;
+  bottom: 0;
+}
+.wrSliderHorz .wrSliderLabelSingle {
+  left: 6px;
+  right: 6px;
+}
+.wrSliderHorz .wrSliderLabelStart {
+  left: 6px;
+  width: 40%;
+}
+.wrSliderHorz .wrSliderLabelEnd {
+  right: 6px;
+  width: 40%;
+}
+.wrSliderVert {
+  position: absolute;
+  height: 100%;
+  width: 20px;
+}
+.wrSliderVert .wrSliderLabel {
+  display: flex;
+  align-items: center;
+}
+.wrSliderVert .wrSliderLabelSingle {
+  top: 6px;
+  bottom: 6px;
+}
+.wrSliderVert .wrSliderLabelStart {
+  top: 6px;
+  height: 40%;
+}
+.wrSliderVert .wrSliderLabelEnd {
+  bottom: 6px;
+  height: 40%;
+}
+.wrSliderLabelInput {
+  position: absolute;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.wrSliderHorz .wrSliderLabelStart .wrSliderLabelInput {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.wrSliderHorz .wrSliderLabelEnd .wrSliderLabelInput {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: right;
+}
+.wrSliderVert .wrSliderLabelStart .wrSliderLabelInput {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.wrSliderVert .wrSliderLabelEnd .wrSliderLabelInput {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrSliderBar {
+  position: absolute;
+  cursor: pointer;
+}
+.wrSliderHorz .wrSliderBar {
+  left: 3px;
+  right: 3px;
+  top: 0;
+  bottom: 0;
+}
+.wrSliderVert .wrSliderBar {
+  left: 0;
+  right: 0;
+  top: 3px;
+  bottom: 3px;
+}
+.wrSliderLine {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 2px;
+  background: #d1dff9;
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.wrSliderHorz .wrSliderLine {
+  top: 6px;
+  left: 6px;
+  /*half of slider handle */
+  right: 6px;
+  /*half of slider handle */
+  height: 6px;
+}
+.wrSliderVert .wrSliderLine {
+  top: 6px;
+  /*half of slider handle */
+  bottom: 6px;
+  /*half of slider handle */
+  left: 6px;
+  width: 6px;
+}
+.wrSliderLineFill {
+  position: absolute;
+  background: rgba(104, 150, 237, 0.65);
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.wrSliderHorz .wrSliderLineFill {
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.wrSliderVert .wrSliderLineFill {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.wrSliderHandle {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: #6896ed;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.wrSliderHorz .wrSliderHandle {
+  top: 2px;
+  left: 0;
+}
+.wrSliderVert .wrSliderHandle {
+  top: 0;
+  left: 2px;
+}
+.wrSliderHandle:hover {
+  background: #618bda;
+}
+.wrSliderHandle_Active {
+  background: #5d84ce;
+}
+.wrSliderHandle_Active:hover {
+  background: #5d84ce;
+}
+.wrFilterWidgetArea {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrMultiSelectFilterWidgetVert {
+  flex-direction: column;
+}
+.wrFilterWidgetMsg {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+}
+.wrSingleSelectFilterWidgetItem {
+  width: calc(100% - 1px);
+  height: 100%;
+}
+.wrMultiSelectFilterWidgetResizeCursor * {
+  cursor: ns-resize;
+}
+.wrMultiSelectFilterWidgetResizeBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 5px;
+  cursor: ns-resize;
+}
+.wrMultiSelectFilterWidgetResizeBar:hover {
+  background-color: #D6E7EE;
+}
+.wrMultiSelectFilterWidgetResizeBar:active {
+  background-color: #666666;
+}
+.wrMultiSelectFilterWidgetItem {
+  font-size: 0;
+  padding: 1px 8px;
+}
+.wrMultiSelectFilterWidgetItemFloat {
+  flex: 0 0 auto;
+}
+.wrStyleTbMainArea {
+  clear: both;
+  width: 227px;
+  height: 93px;
+  padding: 6px 12px;
+}
+.wrStyleTbMainArea .wrExpressViewFormatFontFamilyContainer {
+  flex-grow: 1;
+}
+.wrStyleTbMainArea .wrExpressViewFormatFontFamilyContainer .wrDDContainer {
+  height: 26px;
+  width: 100%;
+}
+.wrStyleTbMainArea .wrExpressViewFormatStylingUnderlineContainer {
+  margin-right: 0;
+}
+.wrStyleTbMainArea .wrExpressViewFormatStylingHorizontalAlignContainer,
+.wrStyleTbMainArea .wrExpressViewFormatVerticalAlignBtnContainer {
+  margin-right: 6px;
+}
+.wrStyleTbMainArea .wrExpressViewToolbarSeparator {
+  margin-top: 4px;
+}
+.wrStyleTbMainArea .wrTbImgSel.wrWrapTextCheckBox {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVWrapTextSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrStyleTbMainArea .wrTbImgSel.wrWrapTextCheckBox {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVWrapTextSelected.png");
+}
+.wrWrapTextCheckBox {
+  height: 24px;
+  width: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVWrapText.svg");
+  background-size: 24px 24px;
+  box-shadow: inset 0 0 0 1px #d7d7d7;
+  border-radius: 3px;
+}
+.wrNoSVG .wrWrapTextCheckBox {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVWrapText.png");
+}
+.wrStyleTbExtraArea {
+  clear: both;
+}
+.wrStyleTbExtraArea select {
+  height: 26px;
+  border-radius: 3px;
+  color: #777777;
+  padding-left: 6px;
+  padding-right: 20px;
+  width: 100%;
+  margin-top: 0;
+}
+.wrStyleTbSection {
+  height: 44px;
+  background-color: #ffffff;
+  margin: 0;
+}
+.wrStyleTbExtraArea .wrStyleTbSection {
+  height: 31px;
+  margin-top: 1px;
+  border-bottom: 1px solid #d7d7d7;
+  margin-left: 6px;
+}
+.wrStyleTbExtraArea .wrStyleTbSection.wrStyleTbFilterSection {
+  margin-left: 0;
+}
+.wrStyleTbFilterSection {
+  width: 18px;
+}
+.wrStyleTbSectionLine {
+  height: 22px;
+}
+.wrStyleTbScopeLbl {
+  margin-top: 3px;
+  margin-left: 18px;
+  margin-right: 4px;
+  float: left;
+}
+.wrIE10 .wrStyleTbScopeLbl,
+.wrIE11 .wrStyleTbScopeLbl {
+  margin-left: 26px;
+}
+.wrStyleTbScopeDD {
+  width: 220px;
+  margin-top: 2px;
+  margin-left: 0;
+}
+.wrStyleTbImg {
+  top: 2px;
+}
+.wrStyleFontName {
+  position: relative;
+  width: 147px;
+  overflow: hidden;
+}
+.wrStyleFontContainer {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+}
+.wrStyleFontSize {
+  position: relative;
+  top: 2px;
+  width: 42px;
+}
+.wrStyleForegroundColorContainer {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.wrStyleForegroundColor {
+  width: 16px;
+  height: 16px;
+}
+.wrStyleBackgroundColorContainer {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.wrStyleBackgroundColor {
+  width: 16px;
+  height: 16px;
+}
+.wrFormatButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormatCells.svg");
+  background-size: 16px 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: top;
+  height: 16px;
+  width: 16px;
+  top: 2px;
+  float: left;
+  margin-right: 3px;
+}
+.wrNoSVG .wrFormatButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormatCells.png");
+}
+.wrFormatButtonContainer {
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 20px;
+  border: 1px solid transparent;
+}
+.wrFormatButtonContainer.wrBlockDisplay {
+  display: block;
+  margin-top: 12px;
+  padding-left: 0;
+}
+.wrFormatButtonContainer.wrDisabledText {
+  cursor: default;
+}
+.wrFormatButtonContainer span {
+  display: inline-block;
+  margin-top: 3px;
+}
+.wrFormatButtonContainer:hover {
+  background: #eeeeee;
+}
+.wrFormatButtonContainer:hover.wrDisabledText {
+  background: initial;
+}
+.wrFormatButtonContainer:active {
+  background: #D8D8D8;
+}
+.wrFormatButtonContainer:active.wrDisabledText {
+  background: initial;
+}
+.wrGaugeWizardTopContainer {
+  position: absolute;
+  top: 0;
+  height: 318px;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: none;
+}
+.wrGaugeWizardDataBoundaryDataDropDownContainer {
+  width: 40%;
+}
+.wrGaugeWizardColorPicker {
+  display: block;
+}
+.wrGaugeWizardNumericEdit {
+  float: left;
+}
+.wrGaugeWizardColorByRB {
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+.wrGaugeWizardColorBoundaryDataDropDown {
+  width: 40%;
+  position: relative;
+  top: -1px;
+  left: 4px;
+}
+.wrGaugeWizardColorBoundaryNumericEdit {
+  position: relative;
+  left: 10px;
+}
+.wrChartTypeChooserDisabledItemOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+.wrChartTypeChooserDisabledItemTextOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -0.5em;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.wrReportContextEmailItem,
+.wrReportContextEmailItem .wrPopupMenuItem {
+  cursor: default;
+}
+.wrReportContextEmailItem {
+  padding: 7px;
+}
+.wrReportContextMenuEmailAddressInput {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  width: calc(100% - 16px);
+  min-width: 239px;
+  display: block;
+  margin-bottom: 6px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 12px;
+  outline: none;
+}
+.wrReportContextMenuEmailAddressInput:focus {
+  border-color: #666666;
+}
+.wrReportContextMenuEmailExportButtons {
+  display: flex;
+  align-items: center;
+}
+.wrReportContextMenuEmailExportButton {
+  height: 28px;
+  border: 1px solid #d7d7d7;
+  background: white;
+  margin-left: 6px;
+  color: #666666;
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrReportContextMenuEmailExportButton[data-disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+.wrReportContextMenuEmailExportButton:hover {
+  color: white;
+  border-color: transparent;
+}
+.wrReportContextMenuEmailExportButton[data-exporttype=excel]:hover {
+  background: #46c189;
+}
+.wrReportContextMenuEmailExportButton[data-exporttype=pdf]:hover {
+  background: #ED6868;
+}
+.wrReportContextMenuEmailExportButton[data-exporttype=rtf]:hover {
+  background: #9768ED;
+}
+.wrReportContextMenuEmailExportButton[data-exporttype=csv]:hover {
+  background: #6896ED;
+}
+.wrReportContextMenuEmailExportButton[data-disabled]:hover {
+  background: white;
+  color: #666666;
+  border: 1px solid #d7d7d7;
+}
+.wrReportContextMenuEmailExecuteAs {
+  font-weight: bold;
+  margin: 0 3px;
+}
+.wrExportSelectContainer {
+  display: inline-block;
+  border: none;
+  font-size: 0;
+}
+.wrUpdateCacheInViewerIcon {
+  height: 25px;
+  width: 25px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CacheValid.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrNoSVG .wrUpdateCacheInViewerIcon {
+  background-image: url("../#ApplicationThemeFolder#/Images/CacheValid.png");
+}
+.wrUpdateCacheInViewerInvalidIcon {
+  height: 25px;
+  width: 25px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CacheInvalid.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrNoSVG .wrUpdateCacheInViewerInvalidIcon {
+  background-image: url("../#ApplicationThemeFolder#/Images/CacheInvalid.png");
+}
+.wrUpdateCacheInViewerUpdatingIcon {
+  height: 25px;
+  width: 25px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CacheUpdating.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrNoSVG .wrUpdateCacheInViewerUpdatingIcon {
+  background-image: url("../#ApplicationThemeFolder#/Images/CacheUpdating.png");
+}
+.wrExecuteInViewerButton {
+  font-size: 11px;
+  font-style: italic;
+  min-height: unset;
+  min-height: auto;
+  height: 18px;
+  margin-bottom: 6px;
+  width: 100%;
+}
+.wrExportTypeDropdown {
+  height: 16px;
+  font-size: 0;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+}
+.wrExportButton {
+  display: inline-block;
+  height: 100%;
+  padding: 0 6px;
+  font-style: italic;
+  color: #808080;
+  font-size: 11px;
+  vertical-align: top;
+  border: none;
+  border-right: 1px solid #d7d7d7;
+  line-height: 1px;
+  min-height: 0;
+  min-width: calc(100% - 18px);
+  border-radius: 0;
+  margin: 0;
+}
+.wrExportButton.wrRippleButton[data-disabled] {
+  border: none;
+}
+.wrExportButton.wrRippleButton:hover:not([data-disabled]) {
+  box-shadow: none;
+}
+.wrExportDropdownButton {
+  display: inline-block;
+  height: 100%;
+  width: 18px;
+  background-color: #f3f3f3;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DropDownArrow.svg");
+  background-size: 12px 12px;
+  vertical-align: top;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrNoSVG .wrExportDropdownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/DropDownArrow.png");
+}
+.wrExportDropdownButton[data-disabled] {
+  background-color: white;
+  opacity: 0.5;
+  cursor: default;
+}
+.wrDsgnTbExecuteContainer.wrExportSelectOneButton {
+  padding-top: 13px;
+  height: auto;
+}
+.wrExportTypeDropdownSmall {
+  border: none;
+}
+.wrExportTypeDropdownSmall .wrExportButton {
+  display: none;
+}
+.wrExportSelectLeftContainer {
+  display: inline-block;
+}
+.wrExportSelectRightContainer {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrColumnInfoContainer {
+  overflow: visible;
+}
+.wrColumnInfoLabelLbl {
+  vertical-align: top;
+}
+.wrColumnInfoLabelText {
+  width: 196px;
+}
+.wrColumnInfoSortLbl {
+  vertical-align: top;
+  margin-right: 8px;
+}
+.wrColumnInfoSortSelect {
+  position: relative;
+  width: 200px;
+  height: 16px;
+  display: inline-block;
+}
+.wrColumnWidthLabel {
+  vertical-align: middle;
+  font-size: 12px;
+}
+.wrColumnWidthInput {
+  width: 55px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.wrRowHeightAutoHeight {
+  margin-left: 33px;
+}
+.wrRowHeightLabel {
+  vertical-align: top;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.wrRowHeightInput {
+  width: 55px;
+  margin-left: 5px;
+}
+.wrDebugModeWarning {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 10pt;
+  font-family: Roboto, Arial, sans-serif;
+  padding: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.wrJoinsVisualizerJoinsToList {
+  margin-top: 1em;
+  padding-left: 0;
+  list-style-type: none;
+}
+.wrJoinsVisualizerJoinsToList li {
+  margin-bottom: 0.5em;
+}
+.wrJoinsVisualizerJoinsToListDataObjectName {
+  font-weight: bold;
+}
+.wrNestedDataFieldsDisableCover {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrNestedDataFieldsSearchButton {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.wrNestedDataFieldsSearchButton:hover {
+  opacity: 1;
+}
+.wrNestedDataFieldsSearchBoxClearButton {
+  cursor: pointer;
+  position: absolute;
+  right: 21px;
+  top: 11px;
+  opacity: 0.8;
+}
+.wrNestedDataFieldsSearchBoxClearButton:active {
+  filter: brightness(80%);
+}
+.wrNestedDataFieldsSearchBoxClearButton:hover {
+  opacity: 1;
+}
+.wrNestedDataFieldsSearchBoxContainer {
+  position: relative;
+  margin-top: 1px;
+  font-size: 0;
+  padding: 0 10px;
+}
+.wrNestedDataFieldsSearchInputContainer {
+  margin-bottom: 6px;
+  position: relative;
+}
+.wrNestedDataFieldsSearchInputFocusUnderline {
+  background-color: #6896ed;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrNestedDataFieldsSearchBox:focus + .wrNestedDataFieldsSearchInputFocusUnderline {
+  width: 100%;
+}
+.wrNestedDataFieldsSearchBox {
+  font-size: 12px;
+  color: #545454;
+  padding: 8px 32px 8px 22px;
+  height: 16px;
+  width: calc(100% - 54px);
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/DataFieldSearch.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  transition: background-image 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrNoSVG .wrNestedDataFieldsSearchBox {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DataFieldSearch.png");
+}
+.wrNestedDataFieldsSearchBox:focus {
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/DataFieldSearchActive.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrNestedDataFieldsSearchBox:focus {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DataFieldSearchActive.png");
+}
+.wrNestedDataFieldsTree {
+  top: 89px;
+  right: 10px;
+  left: 3px;
+}
+.wrNestedDataFieldsTreeNoSearch {
+  top: 61px;
+}
+.wrNestedDataFieldsTreeDataField {
+  font-style: italic;
+  position: relative;
+}
+.wrNestedDataFieldsFilterButtonsContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 6px;
+}
+.wrNestedDataFieldsFilterButtonSeparator {
+  height: 24px;
+  width: 4.9%;
+  position: relative;
+}
+.wrNestedDataFieldsFilterButtonSeparator > div {
+  height: 12px;
+  width: 1px;
+  background-color: #d5d5d5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -6px;
+}
+.wrNestedDataFieldsFilterButton {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  border-radius: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+.wrNestedDataFieldsFilterButton:hover {
+  background-color: #f7f7f7;
+}
+.wrNestedDataFieldsFilterButton:active {
+  background-color: #e9e9e9;
+  transition: none;
+}
+.wrNestedDataFieldsFilterButtonText {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeText.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonText {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeText.png");
+}
+.wrNestedDataFieldsFilterButtonText.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeTextSelected.svg");
+  background-size: 12px 12px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonText.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeTextSelected.png");
+}
+.wrNestedDataFieldsFilterButtonNumeric {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeNumeric.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonNumeric {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeNumeric.png");
+}
+.wrNestedDataFieldsFilterButtonNumeric.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeNumericSelected.svg");
+  background-size: 12px 12px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonNumeric.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeNumericSelected.png");
+}
+.wrNestedDataFieldsFilterButtonDate {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeDate.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonDate {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeDate.png");
+}
+.wrNestedDataFieldsFilterButtonDate.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeDateSelected.svg");
+  background-size: 12px 12px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonDate.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeDateSelected.png");
+}
+.wrNestedDataFieldsFilterButtonOther {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeOther.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonOther {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeOther.png");
+}
+.wrNestedDataFieldsFilterButtonOther.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterButtonTypeOtherSelected.svg");
+  background-size: 12px 12px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrNestedDataFieldsFilterButtonOther.wrNestedDataFieldsFilterButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterButtonTypeOtherSelected.png");
+}
+.wrModernScrollbarClipContainer {
+  height: 100%;
+}
+.wrModernScrollbar {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  width: 6px;
+  height: 20px;
+  background: #000000;
+  opacity: 0.4;
+  border-radius: 1px;
+}
+.wrModernScrollbar.wrLight {
+  background: #ffffff;
+  opacity: 1;
+}
+.wrModernScrollbarHover {
+  opacity: 0.5;
+}
+.wrModernScrollbarHover.wrLight {
+  opacity: 0.8;
+}
+.wrModernScrollbarDragging {
+  opacity: 0.6;
+}
+.wrModernScrollbarDragging.wrLight {
+  opacity: 0.9;
+}
+.wrModernScrollbarContentContainerWithScroll {
+  padding-right: 10px;
+  overflow-x: hidden;
+}
+.wrDynamicScrollBarVerticalBar {
+  background: black;
+  border-radius: 1px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.wrDynamicScrollBarHorizontalBar {
+  background: black;
+  border-radius: 1px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.wrDynamicScrollBarVerticalBarGroove {
+  background: #D3D3D3;
+  opacity: 0.2;
+  width: 8px;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  border-radius: 1px;
+}
+.wrDynamicScrollBarHorizontalBarGroove {
+  background: #D3D3D3;
+  opacity: 0.2;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 1px;
+}
+.wrFilterValuesDialogMainDiv {
+  overflow: auto;
+}
+.wrEditableListContentContainer {
+  display: inline-block;
+}
+.wrEditableListDeleteButtonContainer {
+  position: relative;
+}
+.wrEditableListDeleteButtonContainer > img {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.wrEditableListColumn {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.wrEditableListColumn:last-child {
+  margin-right: 0;
+}
+.wrEditableListDeleteButtonColumn {
+  vertical-align: top;
+}
+.wrReportEventGridParentContainer {
+  border: 1px solid #d7d7d7;
+}
+@keyframes wrHourglassAnimation {
+  from {
+    transform: scale(0) rotate(0);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1) rotate(1deg);
+    opacity: 0;
+  }
+}
+.wrHourglass {
+  background: none;
+  position: relative;
+  background: white;
+  border-radius: 15.6%;
+}
+.wrHourglassRing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation: wrHourglassAnimation 1.5s ease-out infinite;
+  border: 10px solid;
+  transform: scale(0);
+  opacity: 0.8;
+  border-radius: 50%;
+}
+.wrHourglassSmall > .wrHourglassRing {
+  opacity: 1;
+  border-width: 5px;
+}
+.wrHourglassRing1 {
+  border-color: #6896ed;
+}
+.wrHourglassRing2 {
+  animation-delay: 0.75s;
+  border-color: #7fa4ea;
+}
+.wrVersionContainer {
+  text-align: left;
+  font-style: normal;
+}
+.wrVersionContainer p {
+  margin: 0;
+}
+.wrVersionContainer .wrVersionString {
+  font-size: 0.85em;
+  margin-bottom: 1em;
+}
+.wrSortFormulaPlaceholderText {
+  font-style: italic;
+}
+.wrModernColorChooserContainer {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.wrModernColorChooserContainer.wrModernColorChooserContainerIconBtn {
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+}
+.wrModernColorChooserCustomIcon {
+  height: 22px;
+  width: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+.wrModernColorChooserContainerSmall.wrModernColorChooserContainerIconBtn {
+  width: 17px;
+  height: 17px;
+}
+.wrModernColorChooserContainerSmall.wrModernColorChooserContainerIconBtn .wrModernColorChooserFontColorButtonText {
+  font-size: 13px;
+  line-height: 12px;
+  padding: 0px 4px 8px 3px;
+}
+.wrModernColorChooserContainerSmall.wrModernColorChooserContainerIconBtn .wrModernColorChooserFontColorButtonColorBlock {
+  width: 17px;
+  height: 5px;
+}
+.wrModernColorChooserContainerSmall.wrModernColorChooserContainerIconBtn .wrModernColorChooserCustomIcon {
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  padding-left: 3px;
+  padding-top: 0px;
+}
+.wrModernColorChooserContainer[data-focus] {
+  border-color: #666666;
+}
+.wrModernColorChooserColorDisplay {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  right: 3px;
+  left: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+.wrModernColorChooserContainer[data-focus] .wrModernColorChooserColorDisplay {
+  border-color: #666666;
+}
+.wrModernColorChooserDeleteButton {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/RemoveColor.svg");
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-size 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrNoSVG .wrModernColorChooserDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/RemoveColor.png");
+}
+.wrModernColorChooserDeleteButton:hover {
+  display: block;
+  background-size: 14px;
+}
+.wrModernColorChooserDeleteButton:active {
+  background-size: 12px;
+}
+.wrModernColorChooserDeleteButton:focus {
+  outline: none;
+}
+.wrModernColorChooserContainer:hover .wrModernColorChooserDeleteButton {
+  display: block;
+}
+.wrModernColorChooserPopupContainer {
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrModernColorChooserFontColorButton {
+  box-sizing: border-box;
+  border-color: #D7D7D7;
+}
+.wrModernColorChooserFontColorButtonText {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0 9px 7px 7px;
+}
+.wrModernColorChooserFontColorButtonColorBlock {
+  height: 7px;
+  width: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: -1px;
+  left: -1px;
+  right: 0;
+}
+.wrRightPane {
+  position: absolute;
+  height: 100%;
+  width: inherit;
+  min-width: 300px;
+  left: 0;
+}
+.wrRightPaneBody .wrTabStripOuterContainer {
+  height: 28px;
+  text-align: center;
+  padding-bottom: 3px;
+}
+.wrRightPaneButtonDiv {
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(215, 215, 215, 0.7), 0 2px 3px rgba(0, 0, 0, 0.04);
+}
+.wrRightPaneBody {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrRightPaneBodyWithButtons {
+  top: 65px;
+  margin-top: 10px;
+}
+.wrRightPaneBodyInsetTitle {
+  top: 30px;
+}
+.wrRightPaneTitleImageDiv {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+.wrRightPaneButton {
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #777777;
+  font-family: Roboto;
+  font-size: 12px;
+  flex-grow: 1;
+  width: 1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  min-width: unset;
+}
+.wrRightPaneButton.wrRightPaneSubButton[data-open]::after {
+  display: none;
+}
+.wrRightPanePlaceHolder {
+  opacity: 0.7;
+  font-size: 13px;
+  color: #808080;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.wrRightPaneButton[data-open]::after {
+  content: "";
+  background-color: #6896ED;
+  height: 2px;
+  position: absolute;
+  bottom: 1px;
+  left: 7px;
+  right: 7px;
+  border-radius: 2px;
+}
+.wrIE .wrRightPaneButton::after,
+.wrEdge .wrRightPaneButton::after {
+  /* HACK to get button underlines to not be janky in IE and Edge */
+  bottom: 1px;
+  content: "-";
+  overflow: hidden;
+  color: transparent;
+}
+[data-nopixelwidth] .wrRightPaneSubButton {
+  width: initial;
+}
+.wrRightPaneSubButton {
+  height: 24px;
+}
+.wrRightPaneSubButton[data-open] {
+  color: #ffffff;
+  background-color: #6896ED;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.wrRightPaneTabSep {
+  height: 45%;
+  width: 1px;
+  flex-shrink: 0;
+  background-color: #D5D5D5;
+}
+.wrRightPaneTabSepFull {
+  height: 45%;
+  width: 1px;
+  flex-shrink: 0;
+  background-color: #D5D5D5;
+  height: 100%;
+}
+.wrRightPaneCtrlTitleDiv {
+  height: 34px;
+  width: calc(100% - 6px);
+  position: relative;
+  left: -1px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 37px;
+  vertical-align: middle;
+  background-color: #6896ED;
+  padding-left: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.wrRightPaneTitleDiv {
+  height: 37px;
+  width: 100%;
+  color: #6896ED;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 37px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: inset 1px -1px 0 0 #D5D5D5, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+/* Used to move a div up to the top */
+.wrMoveToTop {
+  top: 0px;
+}
+.wrDragElementPrecise {
+  background-color: #8668ed;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-family: RobotoMono;
+  font-weight: normal;
+  border: none;
+  overflow: visible;
+  margin-top: -10px;
+  cursor: default;
+}
+.wrDragElementPrecise:after {
+  content: '';
+  position: absolute;
+  right: -14px;
+  top: -12px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #626262;
+  transform: rotate(45deg);
+}
+.wrDragElementNoCursor {
+  cursor: none;
+}
+.wrDropZoneCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.wrColorPaletteContainer {
+  height: 28px;
+  width: 100%;
+  margin-top: 6px;
+  display: flex;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.wrColorPaletteBlock {
+  flex: 0 1 auto;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrColorList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrColorList > .wrModernColorChooserContainer {
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.wrColorListAddBtn {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  order: 99999;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AddItem.svg");
+  background-size: 14px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrNoSVG .wrColorListAddBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/AddItem.png");
+}
+.wrColorListAddBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wrColorListAddBtn:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrModernColorChooserPopupContainer .colour-input {
+  color: #666;
+}
+.wrContainerSpaceBetween2Elements {
+  display: flex;
+  justify-content: space-between;
+}
+.wrContainerSpaceBetween2Elements > div,
+.wrContainerSpaceBetween2Elements > select {
+  width: calc(50% - 6px);
+}
+.wrInputWithAdjacentLabelContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 6px;
+}
+.wrInputWithAdjacentLabelContainer .wrAdjacentLabelContainer {
+  box-sizing: border-box;
+  height: 28px;
+  border: 1px solid #D7D7D7;
+  border-radius: 3px 0 0 3px;
+  background-color: #F5F5F5;
+  color: #777777;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 14px;
+  min-width: 0;
+  padding: 6px;
+  white-space: nowrap;
+}
+.wrInputWithAdjacentLabelContainer .wrInputWithAdjacentLabel {
+  height: 28px;
+  flex-grow: 1;
+  border-left: none;
+  box-sizing: border-box;
+  width: unset;
+  border-radius: 0 3px 3px 0;
+  padding: 6px 8px;
+}
+.wrInputWithAdjacentLabelContainer .wrInputWithAdjacentLabel.wrNumericEdit1 {
+  border: 1px solid #D7D7D7;
+  border-left: none;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  color: #777777;
+  font-family: Roboto;
+}
+.wrInputWithAdjacentLabelContainer .wrInputWithAdjacentLabel.wrNumericEdit1 .wrNumericEditTextBox1 {
+  padding: 6px 0 0 7px;
+}
+.wrInputWithAdjacentLabelContainer .wrInputWithAdjacentLabel.wrNumericEdit1 .wrNumericEditArrowUp {
+  top: 1px;
+}
+.wrInputWithAdjacentLabelContainer .wrInputWithAdjacentLabel.wrNumericEdit1 .wrNumericEditArrowDown {
+  bottom: 1px;
+}
+.wrTutorialSkipDialog {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  font-weight: bold;
+}
+.wrTutorialSkipDialogCheckboxes {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.wrTutorialSkipDialogCheckboxes .wrCustomCheckbox {
+  margin-top: 8px;
+  font-weight: normal;
+}
+.wrTutorialDisableInlineContainer {
+  display: flex;
+  justify-content: center;
+  color: #777777;
+  padding: 6px;
+  margin-top: 8px;
+  border-radius: 3px;
+  background-color: white;
+}
+.wrTipContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  margin: 10px;
+  opacity: 0;
+  z-index: 4;
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  font-family: Roboto, Arial, sans-serif;
+}
+.wrTipMainContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  pointer-events: auto;
+  animation-duration: 0.6s;
+}
+.wrTipAnimationContainer {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  opacity: 0;
+  border-radius: 3px;
+  border: 10px solid rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrTipCaret {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  margin-top: -5px;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  opacity: 1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s steps(1, end), top 0.6s cubic-bezier(0.22, 0.61, 0.36, 1), left 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-duration: 0.6s;
+}
+@keyframes wrTipCaretFadeOutAndIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.wrTipCloseButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  margin: 8px;
+  opacity: 0.5;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TooltipCloseButton.svg");
+  background-size: 12px 12px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.wrNoSVG .wrTipCloseButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/TooltipCloseButton.png");
+}
+.wrTipCloseButton:hover {
+  opacity: 0.75;
+}
+.wrTipCloseButton:active {
+  opacity: 0.85;
+}
+.wrTipTitleContainer {
+  position: relative;
+  margin-right: 14px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.wrTipTitle {
+  margin-bottom: 6px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+}
+.wrTipMessageContainer {
+  position: relative;
+  margin-bottom: 8px;
+  overflow: hidden;
+  min-height: 0px;
+  transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), min-height 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), height 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrTipMessage {
+  display: block;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 15px;
+  user-select: none;
+  transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), height 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrTipControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+.wrTipButton {
+  height: 22px;
+  width: 65px;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  text-shadow: 0.5px 1px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.1s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  border: 0;
+  padding: 0;
+}
+.wrTipPrevButton {
+  background-color: #454545;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+.wrTipNextButton {
+  background-color: #6896ed;
+  box-shadow: inset 0 -1px 0 0 rgba(25, 43, 77, 0.3);
+  animation-duration: 0.6s;
+}
+.wrTipStepIndicator {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 22px;
+  transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@keyframes wrAnimationWiggle {
+  0%,
+  100% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  20% {
+    transform: scale(1.1, 1.1) rotate(0deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1, 1.1) rotate(3deg) skew(-3deg);
+  }
+  45%,
+  65%,
+  85% {
+    transform: scale(1.1, 1.1) rotate(0deg) skew(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale(1.1, 1.1) rotate(-3deg) skew(3deg);
+  }
+  35%,
+  55%,
+  75%,
+  95% {
+    transform: scale(1.1, 1.1) rotate(0deg) skew(3deg);
+  }
+}
+#fusioncharts-tooltip-element {
+  pointer-events: auto !important;
+}
+.wrNdqErrorTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  color: #b4b4b4;
+  user-select: none;
+  pointer-events: none;
+}
+.wrNdqErrorDetail {
+  padding: 6px;
+  font-size: 14px;
+}

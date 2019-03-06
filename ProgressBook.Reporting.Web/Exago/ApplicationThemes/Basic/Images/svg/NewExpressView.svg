@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    NewExpressView
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" fill-rule="nonzero" d="M7.382 3.14L9.64.852A.5.5 0 0 0 9.284 0H5.377a.5.5 0 0 0-.433.25L2.055 5.248a.5.5 0 0 0 .433.75h2.837a.5.5 0 0 1 .468.677l-1.839 4.84a.2.2 0 0 0 .334.207l6.395-6.89a.5.5 0 0 0-.366-.84h-2.58a.5.5 0 0 1-.355-.851z"/>
+  </g>
+</svg>

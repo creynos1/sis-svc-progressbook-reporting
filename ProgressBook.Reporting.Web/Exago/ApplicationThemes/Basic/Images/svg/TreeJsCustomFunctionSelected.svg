@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeJsCustomFunctionSelected
+  </title>
+  <path fill="#FFFFFF" fill-rule="evenodd" d="M0 1.002C0 .45.456 0 1.002 0h9.996C11.55 0 12 .456 12 1.002v9.996C12 11.55 11.544 12 10.998 12H1.002A1.007 1.007 0 0 1 0 10.998V1.002zM4 6v1h1v3h1V6H4zM2 9v1h1V9H2zm1 1v1h2v-1H3zm4-2h1V7H7v1zm1-2v1h3V6H8zm2 3V8H8v1h2zm1 1V9h-1v1h1zm-4 0v1h3v-1H7z"/>
+</svg>

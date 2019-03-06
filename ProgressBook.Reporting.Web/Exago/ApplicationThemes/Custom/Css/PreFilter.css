@@ -1,0 +1,16 @@
+
+/* Remove bottom dropdown in Exago Prefilter Multiselect control */
+.wrFilterValueBottomContainer {
+	pointer-events: none;
+}
+.wrFilterValueMultiEditImgBtn {
+	display: none;
+}
+
+/* Remove center horizontal bar in Exago Multiselect control */
+.wrFilterValueMultiAddBtnContainer {
+    display: none;
+}
+.wrFilterValueBottomContainer {   /* Analytics Hub for some reason has a missing bottom border on this control. */
+    border-bottom: 1px solid #d7d7d7;
+}

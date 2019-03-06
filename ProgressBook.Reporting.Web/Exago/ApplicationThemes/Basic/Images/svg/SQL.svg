@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <title>
+    SQL
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#D4D4D4" points="2 1 8 1 11 4 11 13 2 13"/>
+    <polygon fill="#FFFFFF" points="8 2.5 9.5 4 8 4"/>
+    <polygon fill="#FFFFFF" points="7 2 7 5 10 5 10 12 3 12 3 2"/>
+    <path fill="#808080" d="M11 8v4h2v1h-3V8h1zM6 8h3v5H8v1H7v-1H6V8zm1 1h1v3H7V9zM2 8h3v5H2V8zm1 1h2v1H3V9zm-1 2h2v1H2v-1z"/>
+  </g>
+</svg>

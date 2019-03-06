@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <title>
+    AnimDonutChart
+  </title>
+  <defs>
+    <linearGradient id="a" x1="0%" y1="91.486%" y2="91.486%">
+      <stop offset="0%" stop-color="#68EDC2"/>
+      <stop offset="100%" stop-color="#6896ED"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" fill-rule="evenodd" d="M58.809 11.079A26.879 26.879 0 0 1 64 27a26.879 26.879 0 0 1-5.191 15.921l-9.412-9.41A13.94 13.94 0 0 0 51 27c0-2.35-.58-4.565-1.603-6.51l9.412-9.411zM55.49 7.325l-9.201 9.201A13.947 13.947 0 0 0 37 13c-7.732 0-14 6.268-14 14s6.268 14 14 14c3.565 0 6.818-1.332 9.29-3.526l9.2 9.2A26.906 26.906 0 0 1 37 54c-14.912 0-27-12.088-27-27S22.088 0 37 0c7.155 0 13.66 2.783 18.49 7.325z" transform="translate(-10)"/>
+</svg>

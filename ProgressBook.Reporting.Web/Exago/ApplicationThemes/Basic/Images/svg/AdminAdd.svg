@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <title>
+    AdminAdd
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="26" height="26"/>
+    <path fill="#777777" d="M16 10h10v6H16v10h-6V16H0v-6h10V0h6v10z"/>
+  </g>
+</svg>

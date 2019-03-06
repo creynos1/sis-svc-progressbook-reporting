@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    RefreshSmall
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <path fill="#777777" d="M9.143 2.857l1.003-1.003a.5.5 0 0 1 .854.353V5.5a.5.5 0 0 1-.5.5H7.207a.5.5 0 0 1-.353-.854l.842-.842A2.5 2.5 0 1 0 7 7.5l1.25 1.562a4.5 4.5 0 1 1 .893-6.205z"/>
+  </g>
+</svg>

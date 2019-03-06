@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    AdminDiscoverySmall
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <path fill="#666666" d="M7.172 8.586l1.414-1.414 2.535 2.535a1 1 0 1 1-1.414 1.414L7.172 8.586z"/>
+    <path fill="#777777" d="M5.5 10a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+  </g>
+</svg>

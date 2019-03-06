@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeSpline
+  </title>
+  <defs>
+    <path id="a" d="M5 33a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm8-14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm14 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm8-19a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#6896ED" stroke-width="2" d="M5 31s-.654-14 8-14 4.185 11 14 11c9.815 0 8-19 8-19"/>
+    <use fill="#FFFFFF" xlink:href="#a"/>
+    <path stroke="#6896ED" d="M5 33.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm8-14a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm14 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm8-19a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+  </g>
+</svg>

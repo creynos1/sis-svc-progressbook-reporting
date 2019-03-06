@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    NoMove
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="none" rx="2"/>
+    <path fill="#DA7A7A" d="M4.707 8.708a3 3 0 0 0 4.001-4.001l-4.001 4zM3.292 7.293l4.001-4a3 3 0 0 0-4.001 4.001zM6 11A5 5 0 1 1 6 1a5 5 0 0 1 0 10z"/>
+  </g>
+</svg>

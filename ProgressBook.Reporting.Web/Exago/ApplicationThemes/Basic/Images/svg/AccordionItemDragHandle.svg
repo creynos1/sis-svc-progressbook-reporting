@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4" height="14" viewBox="0 0 4 14">
+  <title>
+    AccordionItemDragHandle
+  </title>
+  <path fill="#8B8B8B" fill-rule="evenodd" d="M1.997 3c.55 0 .997-.448.997-1s-.447-1-.997-1A.998.998 0 0 0 1 2c0 .552.446 1 .997 1zm0 5c.55 0 .997-.448.997-1s-.447-1-.997-1A.998.998 0 0 0 1 7c0 .552.446 1 .997 1zm0 5c.55 0 .997-.448.997-1s-.447-1-.997-1A.998.998 0 0 0 1 12c0 .552.446 1 .997 1z"/>
+</svg>

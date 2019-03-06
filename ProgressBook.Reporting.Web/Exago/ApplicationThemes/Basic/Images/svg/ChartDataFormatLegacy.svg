@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <title>
+    ChartDataFormatLegacy
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#6896ed" points="70 115 66 115 71 125 76 115 72 115 72 23 98 23 98 115 94 115 99 125 104 115 100 115 100 23 126 23 126 115 122 115 127 125 132 115 128 115 128 23 128 23 154 23 154 21 44 21 44 23 70 23"/>
+    <rect width="23" height="86" x="44" y="26" fill="#C1C1C1"/>
+    <rect width="23" height="10" x="44" y="26" fill="#808080"/>
+    <rect width="20" height="86" x="75" y="26" fill="#C1C1C1"/>
+    <rect width="20" height="10" x="75" y="26" fill="#808080"/>
+    <rect width="20" height="86" x="103" y="26" fill="#C1C1C1"/>
+    <rect width="20" height="10" x="103" y="26" fill="#808080"/>
+    <rect width="23" height="86" x="131" y="26" fill="#C1C1C1"/>
+    <rect width="23" height="10" x="131" y="26" fill="#808080"/>
+  </g>
+</svg>

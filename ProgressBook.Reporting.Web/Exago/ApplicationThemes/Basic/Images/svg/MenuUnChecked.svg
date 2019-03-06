@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    MenuUnChecked
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <rect width="11" height="11" x=".5" y=".5" stroke="#777777" stroke-opacity=".3" rx="2"/>
+  </g>
+</svg>

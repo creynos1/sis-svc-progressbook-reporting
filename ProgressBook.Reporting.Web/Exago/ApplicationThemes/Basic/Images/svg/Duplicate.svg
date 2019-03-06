@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    Duplicate
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="none" rx="2"/>
+    <rect width="6" height="6" x="1.5" y="1.5" stroke="#777777" rx=".5"/>
+    <rect width="7" height="7" x="4" y="4" fill="#777777" rx=".5"/>
+  </g>
+</svg>

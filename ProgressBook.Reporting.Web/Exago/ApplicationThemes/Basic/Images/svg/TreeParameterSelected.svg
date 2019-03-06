@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeParameterSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path fill-opacity=".5" d="M5 1h2v10H5V1zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3-9h2v10H9V1zm1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1 1h2v10H1V1zm1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+    <path d="M2 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 1a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-4 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </g>
+</svg>

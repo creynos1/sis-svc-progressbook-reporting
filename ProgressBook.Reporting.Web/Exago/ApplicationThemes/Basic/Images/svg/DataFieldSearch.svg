@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    DataFieldSearch
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <path fill="#777777" fill-opacity=".5" d="M5.119 10.243A5.12 5.12 0 0 1 0 5.12 5.12 5.12 0 0 1 5.119 0a5.12 5.12 0 0 1 4.373 7.784l2.215 2.205a.993.993 0 0 1-.003 1.412l-.302.3a1.002 1.002 0 0 1-1.418.004L7.772 9.502c-.774.47-1.682.74-2.653.74zM8.288 5.12a3.17 3.17 0 1 0-6.34-.001 3.17 3.17 0 0 0 6.34.001z"/>
+  </g>
+</svg>

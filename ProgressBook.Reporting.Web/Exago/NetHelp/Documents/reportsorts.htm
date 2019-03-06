@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Sorts</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="reportcategories.htm" /><link rel="next" href="reportfilters.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="981c9126-876e-4e2b-8a30-adea7ea10000">
+<h2>Sorts</h2>
+<p>Sorting is the process of ordering your data rows by a certain sequence. For 
+each available data category, you can choose which data field should be used to 
+sort the rows. Fields can be sorted in ascending or descending direction. The 
+way in which rows are sorted depends on the type of value in the field:</p>
+<p><span class="Option">Numeric</span></p>
+<p class="Indent">Asc <img alt="" src="../Media/custom.arrow_fore.png" /> <em>Lower 
+values     Higher values <img alt="" src="../Media/custom.arrow_back.png" /></em> Desc</p>
+<p><span class="Option">Date</span></p>
+<p class="Indent">Asc <img alt="" src="../Media/custom.arrow_fore.png" /> <em>Past     Future 
+</em><img alt="" src="../Media/custom.arrow_back.png" /> Desc</p>
+<p><span class="Option">Text</span></p>
+<p class="Indent">Asc <img alt="" src="../Media/custom.arrow_fore.png" /> <em>A     Z 
+</em><img alt="" src="../Media/custom.arrow_back.png" /> Desc</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/custom.DepartmentsUnsorted.png" alt="" />     <img src="../Media/custom.DepartmentsSorted.png" alt="" /></p>
+<p class="Caption">Sorting a category by Department</p>
+<p>A report can have multiple sorts. This can be useful when you want your 
+highest precedence sort to affect a data field where the values for multiple 
+rows may be the same.</p>
+<p>For example, imagine a large company with many employees. There could be 
+multiple people with the last name Buchanan. With only a sort on LastName, you 
+do not know how all the people with the last name Buchanan will be ordered 
+amongst themselves. If this matters, then you can add a second sort on, say, the 
+FirstName field, so that people with the same last names will be ordered by 
+their first names.</p>
+<p class="Aside"><strong>Adding sorts</strong></p>
+<p>In the Sorts window, add data fields to sort. The precedence of the sorts 
+starts with the highest row and moves down the list. Drag the rows up or down to 
+change the precedence.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportwizard_drag_sort_field.png" alt="" /></p>
+<p class="Caption">Dragging a field to the Sort By pane</p>
+<p class="Aside"><strong>Relationship between sorts and groups</strong></p>
+<p>Sorts are a prerequisite for making groups. Here's why.</p>
+<p>Sorting puts data in order so that data rows which share common values for 
+the sort field are next to each other. This is essentially what grouping does as 
+well. Grouping simply takes those common values, pulls them out of the rows, and 
+makes sections for each group of rows which share that value. Sorts tell the 
+report how you want to your data to be grouped.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/custom.DepartmentsSorted.png" alt="" />     <img src="../Media/custom.DepartmentsGrouped.png" alt="" /></p>
+<p class="Caption">Grouping a category by the Department sort</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Set the sort 
+precedence so that nested groups are in order of their grouping level. The 
+outermost group should have the highest precedence, with the next levels 
+following in order. If the precedence is set incorrectly, it could result in 
+inconsistent data groups.</p>
+<p class="Aside"><strong>Sort formulas (advanced users)</strong></p>
+<p>You can sort by a formula instead of a data field. This allows you to have 
+finer and more specific control over your groups.</p>
+<p>If you do not have a single data field as a unique key, you can use a sort 
+formula to sort on a concatenation of two fields instead. For example, 
+EmployeeId plus TerritoryId fields:</p>
+<p class="Indent"><span class="Code">={EmployeeTerritories.EmployeeId} &amp; 
+{EmployeeTerritories.TerritoryId}</span></p>
+<p>Or if your sort field would generate too many groups, you can sort on a piece 
+of the field instead. For example, you could group on only the month and year 
+component of a date field.</p>
+<p class="Indent"><span class="Code">=Date(Year({Employees.HireDate}),Month({Employees.HireDate}),1)</span></p>
+<p>To add a sort formula, click <img src="../Media/Add2.png" alt="" /> <strong>Add 
+Formula</strong>, then use the <a class="topic-link" href="formulas.htm">formula 
+editor</a> to make a composite field to sort on.</p>
+<p class="Aside"><strong>Sorting by aggregates (advanced users)</strong></p>
+<p>You may want to sort groups by the summary, or <em>aggregate</em>, 
+calculation of each group. You can do this using <a class="topic-link" href="reportfilters.htm#topbottom.htm">Top/Bottom filters</a>.</p>
+<p>Top/Bottom filters look for the highest or lowest values in a set, and then 
+put those values in order. You can supply any arbitrary cell in the report in 
+the Top/Bottom filter. So if you set the number of displayed values to 
+"infinity", then no values are excluded, but the ordering still takes 
+effect.</p>
+<p>To sort by a summary calculation:</p>
+<ol>
+  <li class="list_123">
+  <p>Ensure that your report has the appropriate aggregate formula in a group 
+  footer cell. The cell should return a numeric value in the report output, 
+  which you want to sort the groups by.</p>
+  </li><li class="list_123">
+  <p>From the <img src="../Media/ReportOptions.png" alt="" /><strong> Report Options 
+  </strong>menu, click <strong><img src="../Media/Filter.png" alt="" /> Filters.</strong> 
+  Then click the <strong>Top/Bottom </strong>tab.</p>
+  </li><li class="list_123">
+  <p>Select the <strong>Limit the report to the top or bottom values of a 
+  defined dataset</strong> check box.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Top/Bottom </strong>list, select <strong>Bottom 
+  </strong>to sort in ascending order, or <strong>Top </strong>to sort in 
+  descending order.</p>
+  </li><li class="list_123">
+  <p>In the <strong>#</strong> field, type <span class="Code">2147483647</span>.</p>
+  <p><strong>Why this number?</strong> We cannot enter "infinity", so instead we 
+  want to enter an arbitrarily large number like 99999. This is the largest 
+  number that can fit without causing a report error.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Value </strong>list, select the group footer cell with the 
+  aggregate formula.</p>
+  </li><li class="list_123">
+  <p>If there is a <strong>For Each </strong>group, click <img src="../Media/DropdownDelete.png" alt="" /> to remove it.</p></li></ol>
+<p>Keep in mind that this is not a <em>Sort </em>from the sort menu. You cannot 
+use this to make nested groups. This only affects the order in which a group of 
+data is shown in the output. Because this is technically a <em>Filter</em>, this 
+has precedence over the report sorts.</p><span id="related-topics"></span></body></html>

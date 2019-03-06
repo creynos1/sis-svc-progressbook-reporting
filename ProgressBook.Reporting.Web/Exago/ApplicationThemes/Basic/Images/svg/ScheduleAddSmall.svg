@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    ScheduleAddSmall
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="none" rx="2"/>
+    <circle cx="6" cy="6" r="5" fill="#777777"/>
+    <path fill="#FFFFFF" d="M6 2v4l3.124 2.499A4 4 0 1 1 6 2z"/>
+  </g>
+</svg>

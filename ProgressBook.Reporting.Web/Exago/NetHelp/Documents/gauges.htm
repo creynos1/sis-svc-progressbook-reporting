@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Gauges</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="charts.htm" /><link rel="next" href="geocharts.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="e2ebc086-2b64-45d0-843d-b48dcb15d2e2">
+<h2>Gauges</h2>
+<p>A gauge is a visualization that shows a linear quantity as a percentage of a 
+total. Gauges are often used to visualize occupancy or progress.</p>
+<p>To add a gauge to a report, select the report cell where you want the gauge 
+to appear. Then click the <img alt="" src="../Media/Gauge.png" /> <strong>Gauge Wizard</strong> icon. Proceed 
+through the <a class="topic-link" href="gauges.htm#appearance1.htm">Appearance</a> 
+and <a class="topic-link" href="gauges.htm#data1.htm">Data</a> pages, then click 
+<strong>Finish</strong> when you are done.</p>
+<p>To edit a gauge, double-click it, or select it and click the <img alt="" src="../Media/Gauge.png" /> <strong>Gauge Wizard </strong>icon to reopen the 
+wizard.</p><a class="_D2HAnchor" name="appearance1.htm" id="appearance1.htm"></a>
+<p class="MidTopic">Appearance</p>
+<p>There are four types of gauges available:</p>
+<div class="textAlignCenter">
+<table style="WIDTH: 100%">
+  <colgroup>
+  <col />
+  <col />
+  <col />
+  <col /></colgroup>
+  <tbody>
+  <tr>
+    <td>
+      <p style="TEXT-ALIGN: center"><img alt="" src="../Media/GaugeTypeAngular.png" /> </p>
+      <p style="TEXT-ALIGN: center"><em>Angular</em></p></td>
+    <td>
+      <p style="TEXT-ALIGN: center"><img alt="" src="../Media/GaugeTypeLinear.png" /> </p>
+      <p style="TEXT-ALIGN: center"><em>Linear</em></p></td>
+    <td>
+      <p style="TEXT-ALIGN: center"><img alt="" src="../Media/GaugeTypeBulb.png" /> </p>
+      <p style="TEXT-ALIGN: center"><em>Bulb</em></p></td>
+    <td>
+      <p style="TEXT-ALIGN: center"><img alt="" src="../Media/GaugeTypeThermometer.png" /> </p>
+      <p style="TEXT-ALIGN: center"><em>Thermometer</em></p></td></tr>
+  <tr>
+    <td style="WIDTH: 25%">
+      <p style="TEXT-ALIGN: center">Arc shaped scale with colored ranges. 
+      Rotating pointer to value.</p></td>
+    <td style="WIDTH: 25%">
+      <p style="TEXT-ALIGN: center">Horizontal scale with colored ranges. 
+      Sliding pointer to value.</p></td>
+    <td style="WIDTH: 25%">
+      <p style="TEXT-ALIGN: center">Single circle calls out current range by its 
+      color. Value shown below.</p></td>
+    <td style="WIDTH: 25%">
+      <p style="TEXT-ALIGN: center">Vertical scale. Fill level indicates the 
+      value.</p></td></tr></tbody></table></div>
+<p>Select a gauge type, then set its size by specifying fixed <strong>Height 
+</strong>and <strong>Width </strong>dimensions, or select the <strong>Fit to 
+Cell </strong>check box to have the gauge scale to the size of the report cell. 
+(Note: Angular gauges have a minimum width of 120px).</p><span id="related-topics"></span><a class="_D2HAnchor" name="data1.htm" id="data1.htm"></a>
+<p class="MidTopic">Data</p>
+<p>Gauges are a linear scale that is usually divided into ranges, each 
+representing a category of meaning. In the <strong>Data </strong>page, set the 
+data point and data ranges of the scale. Ranges can be fixed or based on dynamic 
+data values.</p>
+<p class="Aside">Value and Range</p>
+<p>Select a cell from the list to set the gauge data value.</p>
+<p>To set the range, choose one of the following range types:</p>
+<ul>
+  <li class="list_bullets">
+  <p>To use a <em>fixed </em>range, select the <strong>Static Value 
+  </strong>check box. Then enter the min and max values for the range, as whole 
+  numbers.</p>
+  </li><li class="list_bullets">
+  <p>To use a <em>dynamic </em>range, select the <strong>Cell Value 
+  </strong>check box. Then select the cells to supply the min and max values for 
+  the range.</p>
+  </li><li class="list_bullets">
+  <p>To use a <em>partially dynamic </em>range, select the <strong>Cell Value 
+  </strong>check box. Select the cell to supply the dynamic endpoint value. Then 
+  for the fixed endpoint, select a report cell containing a fixed numeric value, 
+  as written with a <span style="TEXT-DECORATION: underline">preceding equal 
+  sign</span> (=). For example: <span class="Code">=100</span>.</p>
+  <p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.numeric_cell_select.png" /></p>
+  <p class="Caption">Selecting a fixed numeric cell</p></li></ul>
+<p class="Aside">Color Ranges</p>
+<p>Colors are used to classify and distinguish ranges of data. Ranges are set by 
+percentage, fixed values, or dynamic values. A Bulb gauge must have two or more 
+ranges in order to be meaningful. Thermometer gauges have only one color.</p>
+<p>To add color ranges to a gauge:</p>
+<ol>
+  <li class="list_123">
+  <p>Click <img alt="" src="../Media/Add2.png" /><strong> Add</strong> for 
+  each range to add.</p>
+  </li><li class="list_123">
+  <p>Choose how to set the ranges:</p>
+  <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Each value is the 
+  upper endpoint for that range, which starts from the end of the previous one. 
+  Fixed values must be whole numbers in ascending order. Values cannot exceed 
+  the max value of the gauge. The last range's upper endpoint is the end of the 
+  gauge. Ranges will not overlap.</p>
+  <ul>
+    <li class="list_bullets">
+    <p>To use <em>percentage </em>ranges, select the <strong>Percentage 
+    </strong>check box. Then enter a value for each range.</p>
+    <p>Percentage ranges are fixed proportions on the gauge, irrespective of the 
+    total range or data value.</p>
+    </li><li class="list_bullets">
+    <p>To use <em>fixed</em> ranges, select the <strong>Static Value 
+    </strong>check box. Then enter a value for each range.</p>
+    </li><li class="list_bullets">
+    <p>To use <em>dynamic </em>ranges, select the <strong>Cell Value 
+    </strong>check box. Then, for each range, select a cell to supply the 
+    value.</p>
+    <p>Dynamic ranges are ordered by value, not by the specified order.</p>
+    </li><li class="list_bullets">
+    <p>To use <em>partially dynamic </em>ranges, select the <strong>Cell Value 
+    </strong>check box. For each dynamic range, select a cell to supply the 
+    value. For each fixed range, select a report cell containing a fixed numeric 
+    value, as written with a <span style="TEXT-DECORATION: underline">preceding 
+    equal sign</span> (=). For example: <span class="Code">=100</span>.</p></li></ul>
+  </li><li class="list_123">
+  <p>For each range, enter a color code or use the color 
+  picker to select a color.<br /></p></li></ol><span id="related-topics"></span><span id="related-topics"></span></body></html>

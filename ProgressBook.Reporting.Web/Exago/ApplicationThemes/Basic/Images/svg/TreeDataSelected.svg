@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeDataSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M0 1.002C0 .45.456 0 1.002 0h9.996C11.55 0 12 .456 12 1.002v9.996C12 11.55 11.544 12 10.998 12H1.002A1.007 1.007 0 0 1 0 10.998V1.002zM1 2v9h10V2H1z"/>
+    <rect width="10" height="9" x="1" y="2" fill-opacity=".25"/>
+    <path d="M4 3h3v3H4V3zm1 1h1v1H5V4zM3 7h3v3H3V7zm1 1h1v1H4V8z"/>
+    <rect width="1" height="3" x="2" y="3"/>
+    <rect width="1" height="3" x="8" y="3"/>
+    <rect width="1" height="3" x="7" y="7"/>
+    <rect width="1" height="3" x="9" y="7"/>
+  </g>
+</svg>

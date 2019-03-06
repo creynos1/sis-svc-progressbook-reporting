@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeSparkColumn
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="10" height="34" x="6" y="3" fill="#6896ED" fill-opacity=".2" rx="2"/>
+    <rect width="4" height="34" x="30" y="3" fill="#6896ED" fill-opacity=".2" rx="2"/>
+    <rect width="4" height="9" x="18" y="28" fill="#DA7A7A" rx="2"/>
+    <rect width="4" height="31" x="24" y="6" fill="#6DEF9D" rx="2"/>
+    <rect width="4" height="21" x="30" y="16" fill="#6896ED" rx="2"/>
+    <rect width="4" height="20" x="12" y="17" fill="#6896ED" rx="2"/>
+    <rect width="4" height="23" x="6" y="14" fill="#6896ED" rx="2"/>
+  </g>
+</svg>

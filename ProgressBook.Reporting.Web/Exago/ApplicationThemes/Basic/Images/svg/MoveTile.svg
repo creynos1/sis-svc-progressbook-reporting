@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    MoveTile
+  </title>
+  <path fill="#474F61" fill-rule="evenodd" d="M13 17h3l-4 4-4-4h3v-4H7v3l-4-4 4-4v3h4V7H8l4-4 4 4h-3v4h4V8l4 4-4 4v-3h-4v4z"/>
+</svg>

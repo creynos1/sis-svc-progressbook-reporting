@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    MenuImage
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M7.429 10h3.321a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25h-9.5a.25.25 0 0 0-.25.25v7l2.566-4.49a.5.5 0 0 1 .868 0L7.43 10zM.5 1h11a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-9A.5.5 0 0 1 .5 1zm8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+  </g>
+</svg>

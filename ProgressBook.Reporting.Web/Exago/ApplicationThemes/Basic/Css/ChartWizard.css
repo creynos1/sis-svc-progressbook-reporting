@@ -1,0 +1,451 @@
+.wrChartWizardPromptText {
+  font-size: 12pt;
+  margin-top: 8pt;
+  margin-bottom: 18pt;
+}
+.wrChartDataFormatList {
+  list-style: none;
+  padding-left: 0;
+  font-size: 12pt;
+}
+.wrChartDataFormatList > li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.wrFlatRadioButton {
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+.wrFlatRadioButton + label {
+  display: inline-block;
+  margin-left: -2em;
+  line-height: 1.5em;
+}
+.wrFlatRadioButton + label > span {
+  display: inline-block;
+  width: 0.875em;
+  height: 0.875em;
+  margin: 0.25em 0.5em 0.25em 0.25em;
+  border: 0.0625em solid #c0c0c0;
+  border-radius: 0.25em;
+  background: #f0f0f0;
+  vertical-align: bottom;
+  transition: background 0.1s ease-out;
+}
+.wrFlatRadioButton + label > span > span {
+  display: block;
+  opacity: 0;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0.125em;
+  border: 0.0625em solid transparent;
+  border-radius: 0.125em;
+  background: #99cc66;
+  transition: opacity 0.2s ease-out;
+}
+.wrFlatRadioButton:checked + label > span > span {
+  opacity: 1;
+}
+.wrFlatRadioButton + label:hover > span,
+.wrFlatRadioButton:hover + label > span {
+  background: #e6e6e6;
+}
+.wrChartWizardAlignDataLabelsContainer {
+  margin-bottom: 1em;
+}
+.wrChartWidgetPreviewContainer {
+  position: static;
+  height: calc(100% - 2em);
+}
+.wrChartWizardPreviewBottomContainer {
+  font-size: 10pt;
+}
+.wrChartWizardPreviewBottomContainer input[type='radio'] {
+  margin-top: 0.4em;
+}
+.wrChartWizardSizeAndPreviewRadioLabel {
+  margin-right: 1em;
+}
+.wrChartSelectDataDeleteButton {
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+}
+.wrChartWizardSeriesItemsSideBySide {
+  display: inline-block;
+  float: none;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 0;
+}
+.wrChartWizardChartTypeImage {
+  float: left;
+  margin: 10px 0;
+  display: block;
+  cursor: pointer;
+  height: 50px;
+  width: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  filter: grayscale(0.9) brightness(75%);
+  transition: all 50ms ease-in-out;
+}
+.wrMain:not(.wrEdge) .wrChartWizardChartTypeImage {
+  border-radius: 4px;
+}
+.wrChartWizardChartTypeImage:not(.wrChartWizardChartTypeImageSelected):hover {
+  filter: grayscale(0);
+}
+.wrChartWizardChartTypeImage:not(.wrChartWizardChartTypeImageSelected):active {
+  background-color: rgba(104, 150, 237, 0.15);
+  filter: none;
+}
+.wrChartWizardChartTypeImageSelected {
+  border: 2px solid #6896ed;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  filter: grayscale(0);
+}
+.wrChartWizardSizeAndPreviewNumericEdit {
+  top: 3px;
+  margin-right: 1em;
+}
+.wrChartDataFormatDescription {
+  white-space: normal;
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.5em;
+}
+.wrChartDataFormatButtonContainer {
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+  top: 2px;
+}
+.wrChartDataFormatButtonFigure {
+  display: inline-block;
+  height: 150px;
+  width: 200px;
+  margin: 0;
+  margin-right: 20px;
+}
+.wrChartDataFormatButtonFigure:last-child {
+  margin-right: 0;
+}
+.wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonFigure {
+  height: 90px;
+  width: 120px;
+}
+.wrChartDataFormatButton:hover {
+  outline: 1px solid #919191;
+}
+.wrChartDataFormatButton:active {
+  filter: brightness(90%);
+  background-color: #ffffff;
+}
+.wrChartDataFormatButton {
+  height: 150px;
+  width: 200px;
+  background-size: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-bottom: 0.75em;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.wrChartDataFormatButtonImageSelected {
+  outline: 2px solid #919191;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.wrChartDataFormatButtonImageSelected:hover {
+  outline: 2px solid #919191;
+}
+.wrChartDataFormatButtonCaption {
+  display: inline-block;
+}
+.wrChartDataFormatButtonCaption > p {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wrChartDataFormatButtonCaption > p:first-child {
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+.wrChartDataFormatButtonContainerSmall .wrChartDataFormatButton {
+  height: 90px;
+  width: 120px;
+}
+.wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonCaption > p:first-child {
+  white-space: normal;
+  height: 3em;
+}
+.wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonSeriesInColumns {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartDataFormatSeriesInColumnsSmall.svg");
+  background-size: 120px 90px;
+}
+.wrNoSVG .wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonSeriesInColumns {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartDataFormatSeriesInColumnsSmall.png");
+}
+.wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonPointsInCells {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartDataFormatPointsInCellsSmall.svg");
+  background-size: 120px 90px;
+}
+.wrNoSVG .wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonPointsInCells {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartDataFormatPointsInCellsSmall.png");
+}
+.wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonLegacy {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartDataFormatLegacySmall.svg");
+  background-size: 120px 90px;
+}
+.wrNoSVG .wrChartDataFormatButtonContainerSmall .wrChartDataFormatButtonLegacy {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartDataFormatLegacySmall.png");
+}
+.wrChartWizardSizeAndPreviewNumericContainer {
+  display: inline-block;
+  font-size: 8pt;
+}
+.wrChartWizardSizeAndPreviewNumericContainer label {
+  position: relative;
+  top: -2px;
+}
+.wrChartWizardPreviewBottomContainer label {
+  position: relative;
+  top: -2px;
+}
+.wrChartWizardAttributeChooserContainer {
+  margin-top: 6px;
+}
+.wrChartWizardAttributeChooserContainer > select,
+.wrChartWizardAttributeChooserContainer > input,
+.wrChartWizardAttributeChooserContainer > div {
+  vertical-align: middle;
+}
+.wrChartWizardAttributeChooserContainer > select {
+  vertical-align: middle;
+  width: 175px;
+}
+.wrChartWizardAttributeChooserContainer > input {
+  vertical-align: middle;
+  width: 171px;
+}
+.wrChartAppearanceBooleanChooserSelect {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.wrChartAppearanceStringChooserSelect {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.wrChartAppearanceNumberChooserNumericEdit {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.wrChartAppearanceColorChooserColorPicker {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.wrChartWizardAttributeNameContainer {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-width: 100px;
+}
+.wrChartWizardIs3DContainer {
+  margin-top: 4px;
+}
+.wrChartWizardUseScrollContainer {
+  margin-top: 4px;
+}
+.wrChartDataDropdownSelect {
+  width: 226px;
+}
+.wrChartDataDropdownSelectHalfWidth {
+  width: 113px;
+}
+.wrChartWizardDataLayoutButtonContainer {
+  text-align: right;
+}
+.wrChartWizardDataLayoutButtonContainer .wrImageButton {
+  position: relative;
+  top: -10px;
+}
+.wrChartDataFormatCtrlContainer {
+  position: absolute;
+  top: 46px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  overflow: auto;
+}
+.wrChartWizardTypeLineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeLine.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeLineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeLine.png");
+}
+.wrChartWizardTypeZoomLineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeZoomLine.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeZoomLineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeZoomLine.png");
+}
+.wrChartWizardTypeSpcButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSPC.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeSpcButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSPC.png");
+}
+.wrChartWizardTypeSplineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSpline.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeSplineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSpline.png");
+}
+.wrChartWizardTypeAreaButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeArea.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeAreaButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeArea.png");
+}
+.wrChartWizardTypeSplineAreaButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSplineArea.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeSplineAreaButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSplineArea.png");
+}
+.wrChartWizardTypeSparkLineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSparkLine.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeSparkLineButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSparkLine.png");
+}
+.wrChartWizardTypeBarButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeBar.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeBarButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeBar.png");
+}
+.wrChartWizardTypeStackBarButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackBar.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeStackBarButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackBar.png");
+}
+.wrChartWizardTypeStackBar100Button {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackBar100.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeStackBar100Button {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackBar100.png");
+}
+.wrChartWizardTypeColumnButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeColumn.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeColumnButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeColumn.png");
+}
+.wrChartWizardTypeStackColumnButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackColumn.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeStackColumnButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackColumn.png");
+}
+.wrChartWizardTypeStackColumn100Button {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackColumn100.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeStackColumn100Button {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackColumn100.png");
+}
+.wrChartWizardTypeParetoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypePareto.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeParetoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypePareto.png");
+}
+.wrChartWizardTypeSparkColumnButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSparkColumn.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeSparkColumnButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSparkColumn.png");
+}
+.wrChartWizardTypePieButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypePie.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypePieButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypePie.png");
+}
+.wrChartWizardTypeDoughnutButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeDonut.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeDoughnutButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeDonut.png");
+}
+.wrChartWizardTypePyramidButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypePyramid.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypePyramidButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypePyramid.png");
+}
+.wrChartWizardTypeFunnelButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeFunnel.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeFunnelButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeFunnel.png");
+}
+.wrChartWizardTypeScatterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeScatter.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeScatterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeScatter.png");
+}
+.wrChartWizardTypeZoomScatterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeZoomScatter.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeZoomScatterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeZoomScatter.png");
+}
+.wrChartWizardTypeBubbleButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeBubble.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeBubbleButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeBubble.png");
+}
+.wrChartWizardTypeCombinationButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeCombination.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrChartWizardTypeCombinationButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeCombination.png");
+}
+.fusioncharts-container > div {
+  z-index: -1 !important;
+}

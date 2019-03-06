@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeRoleSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M4.33 7h2.34C7.955 7 9 7.894 9 9.005V12H2V9.005C2 7.898 3.048 7 4.33 7zm.335 1C3.749 8 3 8.539 3 9.203V11h5V9.203C8 8.536 7.255 8 6.335 8h-1.67zM5.5 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0-1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+  </g>
+</svg>

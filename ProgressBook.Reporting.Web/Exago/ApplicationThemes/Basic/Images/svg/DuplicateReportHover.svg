@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
+  <title>
+    DuplicateReportHover
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <polygon fill-opacity=".5" points="19 20 17.5 20 16 20 16 18 17 18 17 3 7 3 7 4 5 4 5 2.5 5 1 19 1 19 2.5"/>
+    <path d="M2 4h14v19H2V4zm2 2h10v15H4V6z"/>
+  </g>
+</svg>

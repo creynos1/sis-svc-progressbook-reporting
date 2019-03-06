@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    CrossTabWizard
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="13" height="11" x="1" y="2" fill="#808080"/>
+    <rect width="11" height="9" x="2" y="3" fill="#FFFFFF"/>
+    <polygon fill="#808080" points="7 7 7 4 6 4 6 7 3 7 3 8 6 8 6 11 7 11 7 8 12 8 12 7"/>
+    <path fill="#B3B3B3" d="M5 5V4H4v1H3v1h1v1h1V6h1V5H5zm0 4V8H4v1H3v1h1v1h1v-1h1V9H5zm4-4V4H8v1H7v1h1v1h1V6h1v1h1V6h1V5h-1V4h-1v1H9zm0 4V8H8v1H7v1h1v1h1v-1h1v1h1v-1h1V9h-1V8h-1v1H9z"/>
+  </g>
+</svg>

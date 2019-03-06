@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Charts</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="crosstabs.htm" /><link rel="next" href="gauges.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="e2910b64-2a33-4cba-bec9-5a909115f6a0">
+<h2>Charts</h2>
+<p>Charts illustrate report data in order to visualize trends and 
+patterns. Each data field on a chart is a <em>series </em>of data, which have a 
+common association and are connected in some way. A chart with one data field is 
+a single-series chart, which is useful for comparing data values to each other. 
+A chart with multiple data fields is a multi-series chart, which is useful for 
+comparing trends.</p>
+<p>Before creating a chart, make sure that your data is laid out on the report. 
+These cells can be suppressed so that they are not visible in the output. Charts 
+are interactive in the <a class="topic-link" href="reportviewer.htm">Report 
+Viewer</a> and <a class="topic-link" href="dashboarddesigner.htm">Dashboard</a> 
+Viewer, but will appear as static images in PDF, Word, and Excel files. CSV 
+files cannot show charts.</p>
+<p>To insert a chart into a report, select a Group Footer or Report Footer cell 
+and click the <strong>Chart Wizard </strong><img alt="" src="../Media/Chart.png" /> icon. Progress through the <a class="topic-link" href="charts.htm#type.htm">Type</a>, <a class="topic-link" href="charts.htm#data.htm">Data</a>, and <a class="topic-link" href="charts.htm#appearance.htm">Appearance</a> pages, then click 
+<strong>Finish</strong> when done.<br /></p><a class="_D2HAnchor" name="type.htm" id="type.htm"></a>
+<p class="MidTopic">Type</p>
+<p>The <strong>Type </strong>page lays out the available chart types. There are 
+five categories of charts which comprise several related chart types:</p>
+<div class="textAlignCenter">
+<table style="WIDTH: 100%">
+  <colgroup>
+  <col />
+  <col />
+  <col />
+  <col />
+  <col /></colgroup>
+  <tbody>
+  <tr>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><img alt="" src="../Media/ChartTypeLine.png" /></strong></p>
+      <p style="TEXT-ALIGN: center"><strong><em>Line</em></strong></p>
+      <p style="TEXT-ALIGN: center">Show trends over time</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><img alt="" src="../Media/ChartTypeColumn.png" /></strong></p>
+      <p style="TEXT-ALIGN: center"><strong><em>Bar/Column</em></strong></p>
+      <p style="TEXT-ALIGN: center">Compare values between groups</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><img alt="" src="../Media/ChartTypePie.png" /></strong></p>
+      <p style="TEXT-ALIGN: center"><strong><em>Pie</em></strong></p>
+      <p style="TEXT-ALIGN: center">Compare portions of a whole</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><img alt="" src="../Media/ChartTypeScatter.png" /></strong></p>
+      <p style="TEXT-ALIGN: center"><strong><em>Scatter</em></strong></p>
+      <p style="TEXT-ALIGN: center">Show a relationship between groups</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><img alt="" src="../Media/ChartTypeCombination.png" /></strong></p>
+      <p style="TEXT-ALIGN: center"><strong><em>Combination</em></strong></p>
+      <p style="TEXT-ALIGN: center">Several charts combined into one</p></td></tr>
+  <tr>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Spline</em></strong></p>
+      <p style="TEXT-ALIGN: center">Line chart with interpolated curves</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Stack</em></strong></p>
+      <p style="TEXT-ALIGN: center">Compare portions of groups</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Doughnut</em></strong></p>
+      <p style="TEXT-ALIGN: center">Pie chart with a center cutout</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Zoom Scatter</em></strong></p>
+      <p style="TEXT-ALIGN: center">Zoom into clusters of points</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p> </p></td></tr>
+  <tr>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Area</em></strong></p>
+      <p style="TEXT-ALIGN: center">Show cumulative totals for trends over 
+      time</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>100% 
+      </em><em>Stack</em></strong></p>
+      <p style="TEXT-ALIGN: center">Compare percentages of groups</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Pyramid</em></strong></p>
+      <p style="TEXT-ALIGN: center">Compare portions of a hierarchy</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Bubble</em></strong></p>
+      <p style="TEXT-ALIGN: center">Show multiple relationships between 
+      groups</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p> </p></td></tr>
+  <tr>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Spline Area</em></strong></p>
+      <p style="TEXT-ALIGN: center">Area chart with interpolated curves</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Pareto</em></strong></p>
+      <p style="TEXT-ALIGN: center">Show frequency of values and cumulative 
+      total</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Funnel</em></strong></p>
+      <p style="TEXT-ALIGN: center">Show a value reducing over time</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td></tr>
+  <tr>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Spark Line</em></strong></p>
+      <p style="TEXT-ALIGN: center">Simply show a trend over time</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Spark Column</em></strong></p>
+      <p style="TEXT-ALIGN: center">Simply compare a metric over time</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td></tr>
+  <tr>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Zoom Line</em></strong></p>
+      <p style="TEXT-ALIGN: center">Zoom into line segments</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><em></em> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><em></em> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td></tr>
+  <tr>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"><strong><em>Statistical Process 
+      Control</em></strong></p>
+      <p style="TEXT-ALIGN: center">Show when a process exceeds limits</p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td>
+    <td style="WIDTH: 20%; VERTICAL-ALIGN: top; TEXT-ALIGN: center">
+      <p style="TEXT-ALIGN: center"> </p></td></tr></tbody></table></div>
+<p>Click a chart icon to select that type, then proceed to the 
+<strong>Data</strong> page. Chart types have different requirements, so if you 
+return to this page and change the type, be prepared to clarify the following 
+pages as well.</p><span id="related-topics"></span><a class="_D2HAnchor" name="data.htm" id="data.htm"></a>
+<p class="MidTopic">Data</p>
+<p>Specify which cells to use as chart data. You can change how data is 
+translated into points by changing the <strong>Data Layout</strong>. You can 
+also choose a <strong>Sort Order</strong>, as well as <strong>Upper</strong> and 
+<strong>Lower</strong> boundaries for the data and axes, if applicable.</p>
+<p>Add series to the chart by selecting a data field containing numeric values 
+from the <strong>Series Values </strong>list. Some charts may require you to 
+select a data field to label the X-Axis. Some charts may ask for two or three 
+data fields per series. The data axis is drawn automatically when the chart is 
+generated.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Data is on the 
+Y-Axis; this may not always be the vertical axis. Labels are on the X-Axis; this 
+may not always be the horizontal axis. Scatter charts have no labels axis, but 
+have X and Y data axes.</p>
+<p>For multi-series charts, you can add additional series by clicking the 
+<strong><img src="../Media/Add2.png" alt="" /> Add Series </strong>icon. Enter a 
+<strong>Name</strong> for each series.<br /></p>
+<p class="Aside"><strong>Data Layout (advanced users)</strong></p>
+<p>The data layout types allow you to select from a few different ways to build 
+a chart.</p>
+<p><strong class="Option">Column Based Chart</strong></p>
+<p>The default layout, column based charts are used for two situations:</p>
+<ol>
+  <li class="list_123">
+  <p>Mapping data fields to X and Y axes, across common rows</p>
+  <p><strong>Example</strong>: Each <span class="Code">OrderDetails.Total</span> 
+  for each <span class="Code">Orders.OrderDate</span></p>
+  <p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.chart_col1.png" /> </p>
+  <p class="Caption">Column based line chart for Sales per Date</p>
+  </li><li class="list_123">
+  <p>Mapping group aggregates against a sort field or category</p>
+  <p><strong>Example</strong>: The aggregate sum of <span class="Code">OrderDetails.Total</span> for each <span class="Code">Employee</span></p>
+  <p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.chart_col2.png" /> </p>
+  <p class="Caption">Column based pie chart for Sales per Employee</p></li></ol>
+<p><strong class="Option">Row Based Chart</strong></p>
+<p>Row based charts are multi-dimensional. They are used for visualizing nested 
+groups, or in other words, some grouped data per an outer group, per another 
+outer group.</p>
+<p class="Indent"><strong>Example</strong>: The aggregate sum of <span class="Code">OrderDetails.Total</span> for each <span class="Code">Month(Orders.OrderDate)</span> for each <span class="Code">Employee</span></p>
+<p class="Indent" style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.chart_row.png" /> </p>
+<p class="Caption">Row based bar chart for Sales per Month per Employee</p>
+<p><strong class="Option">Cell Based Chart</strong></p>
+<p>Use this layout to build charts statically, from non-dynamic data. Enter 
+coordinates onto the report grid manually.</p>
+<p>Data points must be formatted as formulas, with a leading equal sign 
+(=):</p>
+<p class="Indent">Number: <span class="Code">=42</span></p>
+<p class="Indent">Text: <span class="Code">="February 24th"</span></p>
+<p class="Indent">Data field: <span class="Code">={Employees.EmployeeName}</span></p>
+<p class="Indent">Formula: <span class="Code">=Month{Orders.OrderDate}</span></p>
+<p class="Indent">Math: <span class="Code">={Orders.UnitPrice} * 
+2.43</span><br /></p><span id="related-topics"></span><a class="_D2HAnchor" name="appearance.htm" id="appearance.htm"></a>
+<p class="MidTopic">Appearance</p>
+<p>Customize how the chart looks, and add some additional features, such as axes 
+and benchmark lines.</p>
+<p class="Aside">Colors</p>
+<p>Select a color theme to apply to the chart. Use a custom theme by selecting 
+the <strong>Linear Range </strong>or <strong>Custom Colors</strong> options. For 
+some chart types you can select <strong>Use 3D Style </strong>to give the chart 
+a three-dimensional look. For SPC and combination charts you 
+can choose whether to <strong>Allow Scrolling</strong> left or right in the 
+chart output.</p>
+<p class="Aside">Labels</p>
+<p>You can optionally add labels to different parts of the chart. Some labels 
+are only available for some chart types.</p>
+<ul>
+  <li class="list">
+  <p><span class="Option">Chart Title</span></p>
+  </li><li class="list">
+  <p><span class="Option">X-Axis Title</span> for line charts—except spark 
+  and SPC—and bar and scatter charts.</p>
+  </li><li class="list">
+  <p><span class="Option">Y-Axis Title</span> for line charts—except spark and 
+  SPC—and bar and scatter charts.</p>
+  </li><li class="list">
+  <p><span class="Option">Point Labels</span> can be the series, labels, 
+  values, or percentages; options are based on the chart type. Not 
+  available for scatter or spark charts.</p>
+  </li><li class="list">
+  <p><span class="Option">Legend Position</span> adjacent to the chart, or 
+  hidden. Available for pie and stack charts, or any chart—except spark—using 
+  the Row Based layout.</p>
+  </li><li class="list">
+  <p><span class="Option">Label Font</span> of point labels</p></li></ul>
+<p class="Aside">Number Format / Chart Axes</p>
+<p>For charts with no axes, or which only support one Y-axis, the <strong>Number 
+Format</strong> window lets you choose how the axis values and point labels are 
+formatted. See <a class="topic-link" href="cellformat.htm#number.htm">Number 
+Format</a> for more information.</p>
+<p>Line charts—except zoom and spark—and combination charts support up to two 
+Y-axes. For these charts, the <strong>Chart Axes</strong> window lets you add a 
+second Y-axis, label and format axes, and assign each series to an axis. The 
+following options are available:</p>
+<ul>
+  <li class="list">
+  <p><span class="Option">X-Axis Title</span></p>
+  </li><li class="list">
+  <p><span class="Option">Y-Axis Formatting</span> and title for each Y-Axis. 
+  Click <img alt="" src="../Media/Add2.png" /> <strong>Add Y Axis</strong> to 
+  add a second Y-Axis. Then assign each series to an axis.</p>
+  </li><li class="list">
+  <p><span class="Option">Y-Axis Assignment</span> matches each series' color and 
+  point label formatting with its assigned axis. Axes and their assigned series 
+  can be toggled on and off in the chart output.</p></li></ul>
+<p class="Aside">Benchmark Lines</p>
+<p>Benchmarks are horizontal lines at locations on a chart that are used to call 
+out certain types of values, such as ranges, limits, and averages. Benchmarks 
+are not available for spark or pie charts. To add a benchmark line, click <img alt="" src="../Media/Add2.png" /> <strong>New</strong>. Then specify its 
+location and appearance using the following options:</p>
+<ul>
+  <li class="list">
+  <p><span class="Option">Line Type</span> and <span class="Option">Value</span> 
+  determine the location of the benchmark. This can be a static location 
+  or derived from a calculation on the series data. The following line 
+  types are available:</p>
+  <ul>
+    <li class="list_bullets">
+    <p><strong>Static</strong> point specified in the <span class="Option">Value</span> field</p>
+    </li><li class="list_bullets">
+    <p><strong>Minimum</strong> value in the series</p>
+    </li><li class="list_bullets">
+    <p><strong>Maximum</strong> value in the series</p>
+    </li><li class="list_bullets">
+    <p><strong>Mean</strong>, or <em>average</em>, of the series</p>
+    </li><li class="list_bullets">
+    <p><strong>Median</strong>, or <em>midpoint</em>, of the series</p>
+    </li><li class="list_bullets">
+    <p><strong>Standard Deviation</strong> of the series, as given by the 
+    <span class="Option">Value</span> formula:</p>
+    <p><span class="Code">μ + nσ</span></p>
+    <p>You can set how many (<span class="Code">n</span>) standard deviations 
+    (<span class="Code">σ</span>) from the mean (<span class="Code">μ</span>), 
+    and in what direction (<span class="Code">+/-</span>), the line is drawn.</p>
+    <p>Use <strong>Population</strong> for a full data set. Use 
+    <strong>Sample</strong> for a portion of a larger set.</p>
+    </li><li class="list">
+    <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip<br /></strong>Statistical 
+    Process Control charts have benchmark lines at the mean and at +3 and 
+    -3 standard deviations from the mean by default. These cannot be removed, 
+    but you can change their formulas and appearances if desired.</p></li></ul>
+  </li><li class="list">
+  <p><span class="Option">Label</span> for the line</p>
+  </li><li class="list">
+  <p><span class="Option">Color</span> of the line, selected using the picker or 
+  by entering a color value</p>
+  </li><li class="list">
+  <p><span class="Option">Style</span> of the line, either <strong>Solid</strong> 
+  or <strong>Dashed</strong></p></li></ul>
+<p class="Aside">Conditional Colors</p>
+<p>Bars, columns, segments of pie charts, points in line and scatter charts, and 
+bubbles in bubble charts can change color conditionally, depending on a formula. 
+To add a conditional formula, click <img alt="" src="../Media/Add2.png" /> <strong>Add</strong>. Choose a color by using the 
+color picker, or enter a color value. Then click the Formula <img alt="" src="../Media/Formula.png" /> icon to open the <a class="topic-link" href="formulas.htm">Formula Editor</a> and set the condition.</p>
+<p>There are additional parameters available when making chart conditional 
+formulas that allow you to set the condition for coloring points based on the 
+point data. The following parameters are available depending on the type of 
+chart and data layout:</p>
+<ul>
+  <li class="list">
+  <p><span class="Code">@data_label@</span> - the value of the point's 
+  <strong>Data Label</strong> field, or <strong>Y Value</strong> field for 
+  scatter and bubble charts</p>
+  </li><li class="list">
+  <p><span class="Code">@data_value@</span> - the value of the point's 
+  <strong>Data Value</strong> field, or <strong>X Value</strong> field for 
+  scatter and bubble charts</p>
+  </li><li class="list">
+  <p><span class="Code">@series_label@</span> - the value of the point's 
+  <strong>Series Label</strong> field for charts using the Row Based layout</p>
+  </li><li class="list">
+  <p><span class="Code">@bubble_size@</span> - the value of the point's 
+  <strong>Bubble Size</strong> field for bubble charts</p>
+  </li><li class="list">
+  <p><span class="Code">@bubble_label@</span> - the value of the point's 
+  <strong>Bubble Label</strong> field for bubble charts</p></li></ul>
+<p>Conditional formulas must evaluate to True or False, to determine 
+whether the condition has been met and the color. See <a class="topic-link" href="cellformat.htm#conditional.htm">Conditional Formulas</a> for more 
+information.</p>
+<p class="Aside">Other Features</p>
+<p>Other features are miscellaneous attributes that affect the 
+appearance of the chart. To add an attribute, select it from the list, click 
+<img alt="" src="../Media/Add2.png" /> <strong>Add Attribute</strong>, then 
+set its value. The following attributes are available:</p>
+<ul>
+  <li class="list">
+  <p><span class="Option">Font color</span> affects the color of all text in the 
+  chart</p>
+  </li><li class="list">
+  <p><span class="Option">Background opacity</span> is the transparency of the 
+  chart, from 0 (transparent) to 100 (opaque)</p>
+  </li><li class="list">
+  <p><span class="Option">Font size</span> affects the size of axis and point 
+  labels</p>
+  </li><li class="list">
+  <p><span class="Option">Background color</span></p>
+  </li><li class="list">
+  <p><span class="Option">Title alignment</span> is the horizontal alignment of 
+  the chart title</p>
+  </li><li class="list">
+  <p><span class="Option">Title font size</span></p>
+  </li><li class="list">
+  <p><span class="Option">Title on top</span> sets whether the title is above or 
+  below the chart</p>
+  </li><li class="list">
+  <p><span class="Option">Show border</span> adds a thin gray border around the 
+  chart</p>
+  </li><li class="list">
+  <p><span class="Option">Subtitle</span> is additional text below the chart 
+  title</p>
+  </li><li class="list">
+  <p><span class="Option">Subtitle font size</span></p></li></ul>
+<p><strong>Advanced Features </strong>are recommended for advanced users. Ask 
+your administrator for available features.</p><span id="related-topics"></span><span id="related-topics"></span></body></html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    NewReport
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="14" x="2" y="1" fill="#B3B3B3"/>
+    <rect width="10" height="12" x="3" y="2" fill="#FFFFFF"/>
+    <polygon fill="#808080" points="9 7 9 5 7 5 7 7 5 7 5 9 7 9 7 11 9 11 9 9 11 9 11 7"/>
+  </g>
+</svg>

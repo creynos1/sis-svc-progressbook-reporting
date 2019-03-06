@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    Join
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" fill-rule="nonzero" d="M8 6v2.45a.25.25 0 0 0 .415.187l3.37-2.949a.25.25 0 0 0 0-.376l-3.37-2.95A.25.25 0 0 0 8 2.552V5H4.965A3.5 3.5 0 0 0 1.5 2H0v1h1.333C2.746 3 4 4.12 4 5.5S2.746 8 1.333 8H0v1h1.5a3.5 3.5 0 0 0 3.465-3H8z"/>
+  </g>
+</svg>

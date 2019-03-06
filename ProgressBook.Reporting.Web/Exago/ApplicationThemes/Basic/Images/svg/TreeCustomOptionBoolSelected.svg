@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeCustomOptionBoolSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M6 11A5 5 0 1 1 6 1a5 5 0 0 1 0 10zm0-1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+    <path d="M6 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+    <circle cx="6" cy="6" r="2" fill-opacity=".5"/>
+  </g>
+</svg>

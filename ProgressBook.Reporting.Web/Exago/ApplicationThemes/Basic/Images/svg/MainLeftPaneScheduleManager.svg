@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    MainLeftPaneScheduleManager
+  </title>
+  <path fill="#777777" fill-rule="evenodd" d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18zm0-3a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm-1-5.468V8a1 1 0 0 1 2 0v3.52a1 1 0 0 0 .375.78l1.297 1.037a.95.95 0 0 1 .078 1.413l-.104.104a1 1 0 0 1-1.348.061L11.36 13.3a1 1 0 0 1-.36-.768z"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeVBCustomFunction
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="#808080"/>
+    <path fill="#FFFFFF" d="M1 6h1V2H1v4zm2 0h1V4H3v2zm1-4v2h1V2H4zM2 7h1V6H2v1zm5-3.008h2v-.984H7v.984zm2 1.016H7v.984h2v-.984zM10 6H9v1H6V2h3v1h1v1H9v1h1v1z"/>
+    <polygon fill="#FFFFFF" points="8 11 11 9.5 8 8 8 9 1 9 1 10 8 10"/>
+  </g>
+</svg>

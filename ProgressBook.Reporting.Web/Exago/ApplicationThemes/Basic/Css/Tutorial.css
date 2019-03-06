@@ -1,0 +1,2568 @@
+.wrEVTutorialCaption {
+  width: 280px;
+  font-size: 12px;
+  color: #777777;
+  text-align: center;
+}
+.wrEVTutorialSkip {
+  display: none;
+  position: absolute;
+  height: 24px;
+  width: 90px;
+  bottom: -42px;
+  left: calc(50% - 45px);
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  font-style: italic;
+  color: #888888;
+  background-color: #FAFAFA;
+  box-shadow: #FAFAFA 0 0 4px 0;
+  cursor: pointer;
+}
+.wrEVTutorialSkip:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+.wrEVTutorialContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+}
+.wrEVContextAwareTipContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+/*
+ *	ExpressView Tutorial dialog animation
+ */
+.wrEVTutorialTemplate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrEVTutorialDialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrEVTutorialSupertitle {
+  font-size: 14px;
+  font-style: italic;
+  color: #C1C1C1;
+}
+.wrEVTutorialTitle {
+  font-size: 24px;
+  font-style: italic;
+  color: #6896ed;
+}
+.wrEVTutorialAnimation {
+  position: relative;
+  display: flex;
+  width: 280px;
+  height: 150px;
+  margin: 8px;
+  overflow: hidden;
+}
+.wrEVTutAnimDataPane {
+  width: 80px;
+  height: 100%;
+}
+.wrEVTutAnimDataCategory {
+  width: 56px;
+  height: 6px;
+  margin-top: 8px;
+  background-color: #BBBBBB;
+  border-radius: 3px;
+}
+.wrEVTutAnimDataCategory:nth-child(2) {
+  width: 52px;
+  animation: wrEVTutAnimDataCategory 10s 1s infinite;
+}
+.wrEVTutAnimDataCategory:nth-child(4) {
+  width: 39px;
+}
+.wrEVTutAnimDataFields {
+  height: 0px;
+  overflow: hidden;
+  animation: wrEVTutAnimDataFields 10s 1s infinite;
+}
+.wrEVTutAnimDataFieldContainer {
+  display: flex;
+  margin-top: 8px;
+}
+.wrEVTutAnimDataFieldContainer:nth-child(2) > .wrEVTutAnimDataField {
+  width: 30px;
+}
+.wrEVTutAnimDataFieldContainer:nth-child(3) {
+  animation: wrEVTutAnimDataFieldDragged 10s 1s infinite;
+}
+.wrEVTutAnimDataFieldContainer:nth-child(4) > .wrEVTutAnimDataField {
+  width: 33px;
+}
+.wrEVTutAnimDataFieldContainer:nth-child(5) > .wrEVTutAnimDataField {
+  width: 28px;
+}
+.wrEVTutAnimDataFieldCircle {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #D7D7D7;
+  margin: 0 4px;
+}
+.wrEVTutAnimDataField {
+  width: 36px;
+  height: 6px;
+  background-color: #D7D7D7;
+  border-radius: 3px;
+}
+.wrEVTutAnimCanvas {
+  position: static;
+  width: 200px;
+  height: 100%;
+}
+.wrEVTutAnimCanvas .wrExpressViewScrollingContainer {
+  position: relative;
+  width: 69px;
+  margin: 28px 69px;
+  padding: 0;
+  opacity: 0;
+  animation: wrEVTutorialTableContainerAnimation 10s 1s infinite;
+}
+.wrEVTutAnimCanvas .wrExpressViewDetailHeaderCell {
+  width: 61px;
+  height: 16px;
+  line-height: 15px;
+  box-shadow: inset 0 -1px 0 0 #D7D7D7;
+}
+.wrEVTutAnimCanvas .wrExpressViewDetailHeaderCell .wrExpressViewDetailHeaderCellRadialMenuButton {
+  width: 17px;
+  height: 14px;
+}
+.wrEVTutAnimCanvas .wrExpressViewDetailHeaderCell .wrEVTutAnimAbstractText {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  transform-origin: left;
+}
+.wrEVTutAnimCanvas .wrExpressViewTable {
+  width: 69px;
+  box-shadow: inset 0 -1px 0 0 #D7D7D7;
+  animation: wrEVTutorialTableAnimation 10s 1s infinite;
+}
+.wrEVTutAnimCanvas .wrExpressViewCellContent {
+  height: 7px;
+}
+.wrEVTutAnimCanvas .wrExpressViewCellContent .wrEVTutAnimAbstractText {
+  margin-top: 2px;
+  transform-origin: left;
+}
+.wrEVTutAnimCanvas tr:nth-child(2) .wrEVTutAnimAbstractText {
+  width: 15px;
+}
+.wrEVTutAnimCanvas tr:nth-child(3) .wrEVTutAnimAbstractText {
+  width: 22px;
+}
+.wrEVTutAnimCanvas tr:nth-child(5) .wrEVTutAnimAbstractText {
+  width: 17px;
+}
+.wrEVTutAnimCanvas tr:nth-child(7) .wrEVTutAnimAbstractText {
+  width: 13px;
+}
+.wrFF .wrEVTutAnimCanvas .wrExpressViewDetailHeaderCell .wrExpressViewDetailHeaderCellRadialMenuButton {
+  width: 18px;
+  margin-top: -5px;
+}
+.wrEVTutAnimAbstractText {
+  width: 20px;
+  height: 2px;
+  background-color: #D6D6D6;
+}
+.wrEVTutAnimCursorContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(160px, 60px);
+  z-index: 3;
+  opacity: 0;
+  transform-origin: top left;
+  animation: wrEVTutorialCursorContainerAnimation 10s 1s infinite;
+}
+.wrEVTutAnimCursor {
+  width: 18px;
+  height: 20px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimCursor1.svg");
+  background-size: 20px 18px;
+}
+.wrNoSVG .wrEVTutAnimCursor {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimCursor1.svg");
+}
+.wrEVTutAnimCursorClick {
+  position: absolute;
+}
+.wrEVTutAnimCursorField {
+  position: absolute;
+  top: -23px;
+  left: -25px;
+  width: 55px;
+  height: 10px;
+  z-index: -1;
+  animation: wrEVTutorialCursorFieldAnimation 10s 1s infinite;
+}
+@keyframes wrEVTutorialCursorContainerAnimation {
+  0% {
+    transform: translate(160px, 60px) scale(1);
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  20% {
+    transform: translate(10px, 24px) scale(1);
+  }
+  22%,
+  24%,
+  30% {
+    transform: translate(10px, 24px) scale(1);
+  }
+  21%,
+  23% {
+    transform: translate(10px, 24px) scale(0.93);
+  }
+  44% {
+    transform: translate(26px, 65px) scale(1);
+  }
+  46%,
+  48% {
+    transform: translate(26px, 65px) scale(0.93);
+  }
+  68% {
+    transform: translate(160px, 60px) scale(0.93);
+  }
+  70%,
+  74% {
+    transform: translate(160px, 60px) scale(1);
+    opacity: 1;
+  }
+  84% {
+    opacity: 0;
+  }
+  90%,
+  100% {
+    transform: translate(270px, 63px) scale(1);
+  }
+}
+@keyframes wrEVTutAnimDataCategory {
+  0%,
+  20% {
+    filter: brightness(100%);
+  }
+  21%,
+  100% {
+    filter: brightness(80%);
+  }
+}
+@keyframes wrEVTutAnimDataFields {
+  0%,
+  24% {
+    height: 0px;
+  }
+  28%,
+  98% {
+    height: 86px;
+  }
+}
+@keyframes wrEVTutAnimDataFieldDragged {
+  0%,
+  45% {
+    filter: brightness(100%);
+  }
+  46%,
+  100% {
+    filter: brightness(80%);
+  }
+}
+@keyframes wrEVTutorialCursorFieldAnimation {
+  0%,
+  47%,
+  70%,
+  100% {
+    opacity: 0;
+  }
+  49%,
+  68% {
+    opacity: 1;
+  }
+}
+@keyframes wrEVTutorialTableContainerAnimation {
+  0%,
+  68% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  70%,
+  98% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes wrEVTutorialTableAnimation {
+  0%,
+  69% {
+    margin-top: -76px;
+  }
+  75%,
+  98% {
+    margin-top: 0;
+  }
+}
+/*
+ *	ExpressView Tutorial animation #1
+ *		Data Fields Pane
+ */
+.wrEVTutAnim1 {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.wrEVTutAnim1 .wrEVTutAnimDataPane {
+  padding: 6px;
+}
+.wrEVTutAnim1 .wrEVTutAnimCursorContainer {
+  animation: wrEVTutAnim1_CursorContainerAnimation 10s 1s infinite;
+}
+.wrEVTutAnim1 .wrEVTutAnimCanvas .wrExpressViewScrollingContainer {
+  margin: 50px 32px;
+}
+@keyframes wrEVTutAnim1_CursorContainerAnimation {
+  0% {
+    transform: translate(160px, 80px) scale(1);
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  20% {
+    transform: translate(20px, 30px) scale(1);
+  }
+  22%,
+  24%,
+  30% {
+    transform: translate(20px, 30px) scale(1);
+  }
+  21%,
+  23% {
+    transform: translate(20px, 30px) scale(0.93);
+  }
+  44% {
+    transform: translate(30px, 70px) scale(1);
+  }
+  46%,
+  48% {
+    transform: translate(30px, 70px) scale(0.93);
+  }
+  68% {
+    transform: translate(130px, 70px) scale(0.93);
+  }
+  70%,
+  74% {
+    transform: translate(130px, 70px) scale(1);
+    opacity: 1;
+  }
+  84% {
+    opacity: 0;
+  }
+  90%,
+  100% {
+    transform: translate(180px, 80px) scale(1);
+  }
+}
+/*
+ *	ExpressView Tutorial animation #2
+ *		Sample/Live Data
+ */
+.wrEVTutAnim2 {
+  width: 200px;
+  height: 200px;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas {
+  position: relative;
+  top: 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrEVTutAnim2 .wrExpressViewScrollingContainer {
+  margin-top: 70px;
+  opacity: 1;
+  animation: none;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas .wrExpressViewScrollingContainer {
+  animation: wrEVTutAnim2_TableContainer 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas .wrExpressViewTable {
+  animation: none;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas .wrExpressViewDetailHeaderCell .wrEVTutAnimAbstractText {
+  width: 26px;
+  animation: wrEVTutAnim2_Text0 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr .wrEVTutAnimAbstractText {
+  width: 24px;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr:nth-child(1) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim2_Text1 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr:nth-child(2) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim2_Text2 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr:nth-child(3) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim2_Text3 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr:nth-child(4) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim2_Text4 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr:nth-child(5) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim2_Text5 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr:nth-child(6) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim2_Text6 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimCanvas tr:nth-child(7) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim2_Text7 10s infinite;
+}
+.wrEVTutAnim2 .wrEVTutAnimSampleBtn {
+  position: absolute;
+  top: 14px;
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimLiveModeOff.svg");
+  background-size: 48px 48px;
+  animation: wrEVTutAnim2_SampleBtn 10s infinite;
+}
+.wrNoSVG .wrEVTutAnim2 .wrEVTutAnimSampleBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimLiveModeOff.svg");
+}
+.wrEVTutAnim2 .wrEVTutAnimLiveBtn {
+  position: absolute;
+  top: 14px;
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimLiveModeOn.svg");
+  background-size: 48px 48px;
+  animation: wrEVTutAnim2_LiveBtn 10s infinite;
+}
+.wrNoSVG .wrEVTutAnim2 .wrEVTutAnimLiveBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimLiveModeOn.svg");
+}
+@keyframes wrEVTutAnim2_SampleBtn {
+  0%,
+  10% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  20%,
+  97% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+}
+@keyframes wrEVTutAnim2_LiveBtn {
+  0%,
+  10%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5, 0.5) rotate(0.5turn);
+  }
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  95% {
+    opacity: 1;
+    transform: scale(1, 1) rotate(0turn);
+  }
+  24%,
+  34%,
+  44%,
+  54%,
+  64% {
+    opacity: 1;
+    transform: scale(0.8, 0.8) rotate(0turn);
+  }
+}
+/* 
+@keyframes wrEVTutAnim2_TableContainer {
+	0%, 20%, 30.1%, 40.1%, 50.1%, 60.1% { box-shadow: 0 0 0 0 rgba(104, 150, 237, 0.8); }
+	25%, 35%, 45%, 55%, 65% { box-shadow: 0 0 10px 10px rgba(104, 150, 237, 0); }
+	27%, 37%, 47%, 57%, 67%, 30%, 40%, 50%, 60%, 70% { box-shadow: 0 0 10px 5px rgba(104, 150, 237, 0); }
+} 
+*/
+@keyframes wrEVTutAnim2_Text0 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  22%,
+  32%,
+  42%,
+  52%,
+  62% {
+    transform: scaleX(1);
+  }
+  27%,
+  37%,
+  47%,
+  57%,
+  67% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim2_Text1 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61% {
+    transform: scaleX(1);
+  }
+  26%,
+  36%,
+  46%,
+  56%,
+  66% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim2_Text2 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60% {
+    transform: scaleX(1);
+  }
+  25%,
+  35%,
+  45%,
+  55%,
+  65% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes wrEVTutAnim2_Text3 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  20%,
+  29%,
+  39%,
+  49%,
+  59% {
+    transform: scaleX(1);
+  }
+  24%,
+  34%,
+  44%,
+  54%,
+  64% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim2_Text4 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60% {
+    transform: scaleX(1);
+  }
+  25%,
+  35%,
+  45%,
+  55%,
+  65% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes wrEVTutAnim2_Text5 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61% {
+    transform: scaleX(1);
+  }
+  26%,
+  36%,
+  46%,
+  56%,
+  66% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes wrEVTutAnim2_Text6 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  22%,
+  32%,
+  42%,
+  52%,
+  62% {
+    transform: scaleX(1);
+  }
+  25%,
+  35%,
+  45%,
+  55%,
+  65% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim2_Text7 {
+  0%,
+  15% {
+    filter: brightness(1);
+  }
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  0%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61% {
+    transform: scaleX(1);
+  }
+  27%,
+  37%,
+  47%,
+  57%,
+  67% {
+    transform: scaleX(0.5);
+  }
+  75%,
+  95% {
+    transform: scaleX(1.2);
+  }
+}
+/*
+ *	ExpressView Tutorial animation #3
+ *  Save and Export
+ */
+.wrEVTutAnim3 {
+  width: 200px;
+  height: 200px;
+  background: #efefef;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.wrEVTutAnim3 .wrEVTutFlexContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrEVTutAnim3 .wrEVTutFileContainer {
+  animation: wrEVTutAnim3_FileContainer 10s 1s infinite;
+  visibility: hidden;
+}
+.wrEVTutAnim3 .wrEVTutFolderContainer {
+  animation: wrEVTutAnim3_FolderContainer 10s 1s infinite;
+}
+.wrEVTutAnim3 .wrEVTutColumn {
+  animation: wrEVTutAnim3_Column 10s 1s infinite;
+  animation-fill-mode: both;
+  width: 77px;
+  height: 88px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimEV1Col.svg");
+  background-size: 77px 88px;
+  z-index: 1;
+}
+.wrNoSVG .wrEVTutAnim3 .wrEVTutColumn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimEV1Col.svg");
+}
+.wrEVTutAnim3 .wrEVTutFile {
+  animation: wrEVTutAnim3_File 10s 1s infinite;
+  animation-fill-mode: both;
+  width: 69px;
+  height: 84px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimFile.svg");
+  background-size: 69px 84px;
+}
+.wrNoSVG .wrEVTutAnim3 .wrEVTutFile {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimFile.svg");
+}
+.wrEVTutAnim3 .wrEVTutFolder {
+  animation: wrEVTutAnim3_Folder 10s 1s infinite;
+  animation-fill-mode: both;
+  width: 40px;
+  height: 36px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimFolder.svg");
+  background-size: 40px 36px;
+  z-index: 0;
+}
+.wrNoSVG .wrEVTutAnim3 .wrEVTutFolder {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimFolder.svg");
+}
+.wrEVTutAnim3 .wrEVTutBadge {
+  animation: wrEVTutAnim3_Badge 10s 1s infinite;
+  animation-fill-mode: both;
+  width: 31px;
+  height: 31px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimBadge.svg");
+  background-size: 31px 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -13px;
+  right: -25px;
+  transform: scale(0);
+  opacity: 0;
+}
+.wrNoSVG .wrEVTutAnim3 .wrEVTutBadge {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimBadge.svg");
+}
+.wrEVTutAnim3 .wrEVTutPulse {
+  animation: wrEVTutAnim3_Pulse 10s 1s infinite;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 9px;
+  left: 46px;
+  border-radius: 50%;
+  border: 2px solid #6896ed;
+  background: #6896ed;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.wrEVTutAnim3 .wrEVTutPulseRing {
+  animation: wrEVTutAnim3_PulseRing 10s 1s infinite;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 9px;
+  left: 46px;
+  border-radius: 50%;
+  border: 4px solid #6896ed;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.wrIE11 .wrEVTutAnim3 .wrEVTutFolder {
+  animation: none;
+}
+@keyframes wrEVTutAnim3_FolderContainer {
+  0% {
+    z-index: 0;
+  }
+  20% {
+    z-index: 0;
+  }
+  30% {
+    z-index: 1;
+  }
+}
+@keyframes wrEVTutAnim3_Column {
+  0% {
+    animation-timing-function: linear;
+  }
+  10% {
+    transform: rotateY(90deg);
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes wrEVTutAnim3_FileContainer {
+  0% {
+    visibility: hidden;
+    transform: rotateY(-90deg);
+    z-index: 1;
+    animation-timing-function: linear;
+  }
+  10% {
+    visibility: visible;
+    transform: rotateY(0);
+    transform: rotateY(-90deg);
+    z-index: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    transform: rotateY(0);
+    z-index: 1;
+  }
+  25% {
+    transform: translateY(-80px) translateZ(-600px);
+    animation-timing-function: linear;
+  }
+  30% {
+    transform: translateY(-120px) translateZ(-1800px);
+    z-index: 1;
+    opacity: 1;
+  }
+  40% {
+    z-index: 0;
+    transform: translateY(-20px) translateZ(-1800px);
+    opacity: 0;
+    animation-timing-function: linear;
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes wrEVTutAnim3_Folder {
+  0% {
+    visibility: hidden;
+  }
+  10% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: hidden;
+  }
+  30% {
+    visibility: visible;
+  }
+  40% {
+    transform: rotate(0);
+  }
+}
+@keyframes wrEVTutAnim3_Badge {
+  40% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  45% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes wrEVTutAnim3_Pulse {
+  39% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  55% {
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes wrEVTutAnim3_PulseRing {
+  41% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  46% {
+    opacity: 0.3;
+  }
+  55% {
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/*
+ *	ExpressView Tutorial animation #4
+ * 		Refresh
+ */
+.wrEVTutAnim4 {
+  width: 200px;
+  height: 200px;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas {
+  position: relative;
+  top: 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrEVTutAnim4 .wrExpressViewScrollingContainer {
+  margin-top: 70px;
+  opacity: 1;
+  animation: wrEVTutAnim4_TableContainer 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas .wrExpressViewTable {
+  animation: none;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas .wrExpressViewDetailHeaderCell .wrEVTutAnimAbstractText {
+  width: 26px;
+  filter: brightness(0.6);
+  transform: scaleX(1.3);
+  animation: wrEVTutAnim4_Text0 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr .wrEVTutAnimAbstractText {
+  width: 24px;
+  filter: brightness(0.6);
+  transform: scaleX(1.3);
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr:nth-child(1) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim4_Text1 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr:nth-child(2) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim4_Text2 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr:nth-child(3) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim4_Text3 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr:nth-child(4) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim4_Text4 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr:nth-child(5) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim4_Text5 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr:nth-child(6) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim4_Text6 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimCanvas tr:nth-child(7) .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim4_Text7 10s infinite;
+}
+.wrEVTutAnim4 .wrEVTutAnimRefresh {
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 16px);
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+  transform: scale(0.5, 0.5) rotate(0turn);
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimRefresh.svg");
+  background-size: 32px 32px;
+  animation: wrEVTutAnim4_Refresh cubic-bezier(0, 0, 0.74, 0.99) 10s infinite;
+}
+.wrNoSVG .wrEVTutAnim4 .wrEVTutAnimRefresh {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimRefresh.svg");
+}
+@keyframes wrEVTutAnim4_Refresh {
+  25%,
+  70% {
+    opacity: 1;
+  }
+  0%,
+  10%,
+  75% {
+    opacity: 0;
+  }
+  0%,
+  20% {
+    transform: scale(1, 1) rotate(0turn);
+  }
+  70%,
+  100% {
+    transform: scale(1, 1) rotate(6turn);
+  }
+}
+@keyframes wrEVTutAnim4_TableContainer {
+  25%,
+  70% {
+    transform: translateY(0px);
+  }
+  0%,
+  5%,
+  90%,
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes wrEVTutAnim4_Text0 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  22%,
+  32%,
+  42%,
+  52%,
+  62% {
+    transform: scaleX(1);
+  }
+  27%,
+  37%,
+  47%,
+  57%,
+  67% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  12%,
+  75%,
+  100% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim4_Text1 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  21%,
+  31%,
+  41%,
+  51%,
+  61% {
+    transform: scaleX(1);
+  }
+  26%,
+  36%,
+  46%,
+  56%,
+  66% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  11%,
+  75%,
+  100% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim4_Text2 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  20%,
+  30%,
+  40%,
+  50%,
+  60% {
+    transform: scaleX(1);
+  }
+  25%,
+  35%,
+  45%,
+  55%,
+  65% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  10%,
+  75%,
+  100% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes wrEVTutAnim4_Text3 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  20%,
+  29%,
+  39%,
+  49%,
+  59% {
+    transform: scaleX(1);
+  }
+  24%,
+  34%,
+  44%,
+  54%,
+  64% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  9%,
+  75%,
+  100% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim4_Text4 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  20%,
+  30%,
+  40%,
+  50%,
+  60% {
+    transform: scaleX(1);
+  }
+  25%,
+  35%,
+  45%,
+  55%,
+  65% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  10%,
+  75%,
+  100% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes wrEVTutAnim4_Text5 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  21%,
+  31%,
+  41%,
+  51%,
+  61% {
+    transform: scaleX(1);
+  }
+  26%,
+  36%,
+  46%,
+  56%,
+  66% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  11%,
+  75%,
+  100% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes wrEVTutAnim4_Text6 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  22%,
+  32%,
+  42%,
+  52%,
+  62% {
+    transform: scaleX(1);
+  }
+  25%,
+  35%,
+  45%,
+  55%,
+  65% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  12%,
+  75%,
+  100% {
+    transform: scaleX(1.3);
+  }
+}
+@keyframes wrEVTutAnim4_Text7 {
+  20%,
+  70% {
+    filter: brightness(0.8);
+  }
+  80%,
+  95% {
+    filter: brightness(0.6);
+  }
+  21%,
+  31%,
+  41%,
+  51%,
+  61% {
+    transform: scaleX(1);
+  }
+  27%,
+  37%,
+  47%,
+  57%,
+  67% {
+    transform: scaleX(0.5);
+  }
+  0%,
+  12%,
+  75%,
+  100% {
+    transform: scaleX(1.2);
+  }
+}
+/*
+ *	ExpressView Tutorial animation #5
+ *		Add Chart
+ */
+.wrEVTutAnim5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.wrEVTutAnim5 .wrExpressViewChartDesignPane {
+  position: relative;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: wrEVTutAnim5_ChartDesignPane 7s 1s infinite;
+}
+.wrEVTutAnim5 .wrEVTutAnimCanvas {
+  position: relative;
+  top: unset;
+  display: flex;
+}
+.wrEVTutAnim5 .wrExpressViewScrollingContainer {
+  margin: auto;
+  opacity: 1;
+  animation: none;
+}
+.wrEVTutAnim5 .wrEVTutAnimCanvas .wrExpressViewTable {
+  animation: none;
+}
+.wrEVTutAnimChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 110px;
+  height: 60px;
+}
+.wrEVTutAnimChartBar {
+  width: 14px;
+  background-color: magenta;
+  height: 100%;
+  transform-origin: bottom;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.wrEVTutAnimChartBar:nth-child(1) {
+  background: linear-gradient(to right, #68EDC2, #68DFC9);
+  animation: wrEVTutAnim5_ChartBar1 7s cubic-bezier(0.46, 0.49, 0.46, 0.8) 1s infinite;
+}
+.wrEVTutAnimChartBar:nth-child(2) {
+  background: linear-gradient(to right, #68DFC9, #68D0D0);
+  animation: wrEVTutAnim5_ChartBar2 7s cubic-bezier(0.46, 0.49, 0.46, 0.8) 1s infinite;
+}
+.wrEVTutAnimChartBar:nth-child(3) {
+  background: linear-gradient(to right, #68D0D0, #68C2D8);
+  animation: wrEVTutAnim5_ChartBar3 7s cubic-bezier(0.46, 0.49, 0.46, 0.8) 1s infinite;
+}
+.wrEVTutAnimChartBar:nth-child(4) {
+  background: linear-gradient(to right, #68C2D8, #68B3DF);
+  animation: wrEVTutAnim5_ChartBar4 7s cubic-bezier(0.46, 0.49, 0.46, 0.8) 1s infinite;
+}
+.wrEVTutAnimChartBar:nth-child(5) {
+  background: linear-gradient(to right, #68B3DF, #68A5E6);
+  animation: wrEVTutAnim5_ChartBar5 7s cubic-bezier(0.46, 0.49, 0.46, 0.8) 1s infinite;
+}
+.wrEVTutAnimChartBar:nth-child(6) {
+  background: linear-gradient(to right, #68A5E6, #6896ED);
+  animation: wrEVTutAnim5_ChartBar6 7s cubic-bezier(0.46, 0.49, 0.46, 0.8) 1s infinite;
+}
+@keyframes wrEVTutAnim5_ChartDesignPane {
+  0%,
+  80%,
+  100% {
+    height: 0px;
+  }
+  10%,
+  70% {
+    height: 140px;
+  }
+}
+@keyframes wrEVTutAnim5_ChartBar1 {
+  0%,
+  13%,
+  67%,
+  100% {
+    transform: scaleY(0);
+  }
+  20%,
+  60% {
+    transform: scaleY(0.2);
+  }
+  40% {
+    transform: scaleY(0.3);
+  }
+}
+@keyframes wrEVTutAnim5_ChartBar2 {
+  0%,
+  13%,
+  67%,
+  100% {
+    transform: scaleY(0);
+  }
+  20%,
+  60% {
+    transform: scaleY(0.3);
+  }
+  40% {
+    transform: scaleY(0.2);
+  }
+}
+@keyframes wrEVTutAnim5_ChartBar3 {
+  0%,
+  13%,
+  67%,
+  100% {
+    transform: scaleY(0);
+  }
+  20%,
+  60% {
+    transform: scaleY(1);
+  }
+  40% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes wrEVTutAnim5_ChartBar4 {
+  0%,
+  13%,
+  67%,
+  100% {
+    transform: scaleY(0);
+  }
+  20%,
+  60% {
+    transform: scaleY(0.4);
+  }
+  40% {
+    transform: scaleY(0.3);
+  }
+}
+@keyframes wrEVTutAnim5_ChartBar5 {
+  0%,
+  13%,
+  67%,
+  100% {
+    transform: scaleY(0);
+  }
+  20%,
+  60% {
+    transform: scaleY(0.6);
+  }
+  40% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes wrEVTutAnim5_ChartBar6 {
+  0%,
+  13%,
+  67%,
+  100% {
+    transform: scaleY(0);
+  }
+  20%,
+  60% {
+    transform: scaleY(0.15);
+  }
+  40% {
+    transform: scaleY(0.3);
+  }
+}
+/*
+ *	ExpressView Tutorial animation #6
+ *  Selected Cell
+ */
+.wrEVTutAnim6 {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.wrEVTutAnim6 .wrEVTutAnimCanvas {
+  position: relative;
+  top: unset;
+  display: flex;
+}
+.wrEVTutAnim6 .wrExpressViewScrollingContainer {
+  margin: auto;
+  opacity: 1;
+  animation: none;
+}
+.wrEVTutAnim6 .wrEVTutAnimCanvas .wrExpressViewTable {
+  animation: none;
+}
+.wrEVTutAnim6 .wrEVTutRightPane {
+  background: white;
+  border-left: 1px solid #d7d7d7;
+  width: 106px;
+  height: 100%;
+  margin-left: auto;
+}
+.wrEVTutAnim6 .wrEVTutRightPaneTabBoxContainer {
+  display: flex;
+  justify-content: center;
+  margin: 6px;
+}
+.wrEVTutAnim6 .wrEVTutRightPaneTabBoxContainer:nth-child(2) .wrEVTutRightPaneTabBox {
+  margin: 0;
+  width: 100%;
+  height: 6px;
+}
+.wrEVTutAnim6 .wrEVTutRightPaneTabBox {
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background: #d7d7d7;
+  margin-right: 2px;
+}
+.wrEVTutAnim6 .wrEVTutRightPaneTabBoxSelected {
+  background: #6896ed;
+}
+.wrEVTutAnim6 .wrEVTutRightPaneTabBox:last-child {
+  margin-right: 0;
+}
+.wrEVTutAnim6 .wrEVTutAnimAccordionHeader {
+  width: 56px;
+  height: 6px;
+  margin: 8px auto auto;
+  background-color: #BBBBBB;
+  border-radius: 3px;
+}
+.wrEVTutAnim6 .wrEVTutAnimAccordionHeader:nth-child(2) {
+  margin: 0;
+}
+.wrEVTutAnim6 .wrEVTutAnimAccordionItemContainer {
+  margin: 0 8px;
+}
+.wrEVTutAnim6 .wrEVTutAnimAccordionItem {
+  width: 36px;
+  height: 6px;
+  margin: 4px 6px;
+  background-color: #D7D7D7;
+  border-radius: 3px;
+}
+.wrEVTutAnim6 .wrEVTutAnimAccordionItem:nth-child(1) {
+  width: 30px;
+  animation: wrEVTutAnim6_AccordionItem1 10s infinite;
+}
+.wrEVTutAnim6 .wrEVTutAnimAccordionItem:nth-child(2) {
+  width: 28px;
+  animation: wrEVTutAnim6_AccordionItem2 10s infinite;
+}
+.wrEVTutAnim6 .wrEVTutAnimCursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transform-origin: top left;
+  animation: wrEVTutAnim6_CursorAnimation 10s infinite;
+}
+.wrEVTutAnim6 .wrExpressViewFormatSelectionHighlight {
+  height: 74px;
+  width: 65px;
+  opacity: 0;
+  animation: wrEVTutAnim6_FormatSelection 10s infinite;
+}
+.wrEVTutAnim6 .wrExpressViewTable .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim6_DetailRows 10s infinite;
+}
+@keyframes wrEVTutAnim6_CursorAnimation {
+  0% {
+    transform: translate(140px, 140px) scale(1);
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  20%,
+  24%,
+  30% {
+    transform: translate(60px, 100px) scale(1);
+  }
+  22% {
+    transform: translate(60px, 100px) scale(0.93);
+  }
+  44%,
+  48%,
+  60% {
+    transform: translate(150px, 44px) scale(1);
+  }
+  46% {
+    transform: translate(150px, 44px) scale(0.93);
+  }
+  64%,
+  68%,
+  100% {
+    transform: translate(150px, 55px) scale(1);
+  }
+  66% {
+    transform: translate(150px, 55px) scale(0.93);
+  }
+}
+@keyframes wrEVTutAnim6_FormatSelection {
+  0%,
+  21%,
+  100% {
+    opacity: 0;
+  }
+  22%,
+  97% {
+    opacity: 1;
+  }
+}
+@keyframes wrEVTutAnim6_AccordionItem1 {
+  0%,
+  45%,
+  100% {
+    filter: brightness(100%);
+  }
+  46%,
+  95% {
+    filter: brightness(80%);
+  }
+}
+@keyframes wrEVTutAnim6_AccordionItem2 {
+  0%,
+  65%,
+  100% {
+    filter: brightness(100%);
+  }
+  66%,
+  95% {
+    filter: brightness(80%);
+  }
+}
+@keyframes wrEVTutAnim6_DetailRows {
+  0%,
+  45%,
+  100% {
+    filter: brightness(100%);
+    margin-left: 0;
+  }
+  46% {
+    filter: brightness(60%);
+  }
+  65% {
+    margin-left: 0;
+  }
+  66% {
+    margin-left: 16px;
+  }
+  95% {
+    filter: brightness(60%);
+    margin-left: 16px;
+  }
+}
+/*
+ *	ExpressView Tutorial animation #7
+ *  Style
+ */
+.wrEVTutAnim7 {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.wrEVTutAnim7 .wrEVTutAnimCanvas {
+  position: relative;
+  top: unset;
+  display: flex;
+}
+.wrEVTutAnim7 .wrExpressViewScrollingContainer {
+  margin: auto;
+  opacity: 1;
+  overflow: hidden;
+  animation: none;
+}
+.wrEVTutAnim7 .wrEVTutAnimCanvas .wrExpressViewTable {
+  animation: none;
+}
+.wrEVTutAnim7 .wrEVTutRightPane {
+  background: white;
+  border-left: 1px solid #d7d7d7;
+  width: 106px;
+  height: 100%;
+  margin-left: auto;
+}
+.wrEVTutAnim7 .wrEVTutRightPaneTabBoxContainer {
+  display: flex;
+  justify-content: center;
+  margin: 6px;
+}
+.wrEVTutAnim7 .wrEVTutRightPaneTabBox {
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background: #d7d7d7;
+  margin-right: 2px;
+}
+.wrEVTutAnim7 .wrEVTutRightPaneTabBoxSelected {
+  background: #6896ed;
+}
+.wrEVTutAnim7 .wrEVTutRightPaneTabBox:last-child {
+  margin-right: 0;
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionHeader {
+  width: 56px;
+  height: 6px;
+  margin: 8px auto auto;
+  background-color: #BBBBBB;
+  border-radius: 3px;
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionItemContainer {
+  margin: 0 8px;
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionItem {
+  height: 6px;
+  margin: 6px;
+  border-radius: 3px;
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionItem:nth-child(1) {
+  background: linear-gradient(to right, #A4C2F5 0%, #A4C2F5 20%, #86ACF1 20%, #86ACF1 40%, #6896ED 40%, #6896ED 60%, #5478BD 60%, #5478BD 80%, #405A8D 80%, #405A8D 100%);
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionItem:nth-child(2) {
+  background: linear-gradient(to right, #8AD7BB 0%, #8AD7BB 20%, #62CBA5 20%, #62CBA5 40%, #3ABF8F 40%, #3ABF8F 60%, #2E9973 60%, #2E9973 80%, #227357 80%, #227357 100%);
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionItem:nth-child(3) {
+  background: linear-gradient(to right, #CDA9FA 0%, #CDA9FA 20%, #BD8DF8 20%, #BD8DF8 40%, #AD71F6 40%, #AD71F6 60%, #8B5BC4 60%, #8B5BC4 80%, #694592 80%, #694592 100%);
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionItem:nth-child(4) {
+  background: linear-gradient(to right, #F7A6A6 0%, #F7A6A6 20%, #F38888 20%, #F38888 40%, #EF6A6A 40%, #EF6A6A 60%, #BF5454 60%, #BF5454 80%, #8F3E3E 80%, #8F3E3E 100%);
+}
+.wrEVTutAnim7 .wrEVTutAnimAccordionItem:nth-child(5) {
+  background: linear-gradient(to right, #E5E5E5 0%, #E5E5E5 20%, #CBCBCB 20%, #CBCBCB 40%, #7D7D7D 40%, #7D7D7D 60%, #494949 60%, #494949 80%, #000000 80%, #000000 100%);
+}
+.wrEVTutAnim7 .wrEVTutAnimCursor {
+  position: absolute;
+  z-index: 3;
+  transform-origin: top left;
+  animation: wrEVTutAnim7_CursorAnimation 5s infinite;
+}
+.wrEVTutAnim7 .wrExpressViewDetailHeaderCell {
+  width: 63px;
+  border-radius: 2px;
+  animation: wrEVTutAnim7_HeaderCell 5s infinite;
+}
+.wrEVTutAnim7 .wrExpressViewDetailHeaderCell .wrEVTutAnimAbstractText {
+  animation: wrEVTutAnim7_HeaderText 5s infinite;
+}
+.wrEVTutAnim7 .wrExpressViewDetailHeaderCellRadialMenuButton {
+  animation: wrEVTutAnim7_RadialMenuButton 5s infinite;
+}
+.wrEVTutAnim7 .wrExpressViewTable tr:nth-child(2n) {
+  animation: wrEVTutAnim7_DetailRow 5s infinite;
+}
+@keyframes wrEVTutAnim7_CursorAnimation {
+  0% {
+    transform: translate(140px, 140px) scale(1);
+    opacity: 0;
+  }
+  4%,
+  90% {
+    opacity: 1;
+  }
+  23%,
+  29%,
+  50% {
+    transform: translate(155px, 46px) scale(1);
+  }
+  26% {
+    transform: translate(155px, 46px) scale(0.93);
+  }
+  63%,
+  69% {
+    transform: translate(155px, 58px) scale(1);
+  }
+  66% {
+    transform: translate(155px, 58px) scale(0.93);
+  }
+  100% {
+    transform: translate(155px, 58px) scale(1);
+    opacity: 0;
+  }
+}
+@keyframes wrEVTutAnim7_HeaderCell {
+  0%,
+  24% {
+    background-color: #FFFFFF;
+  }
+  28%,
+  64% {
+    background-color: #3ABF8F;
+  }
+  68%,
+  90% {
+    background-color: #AD71F6;
+  }
+}
+@keyframes wrEVTutAnim7_HeaderText {
+  0%,
+  24% {
+    background-color: #D6D6D6;
+  }
+  28%,
+  64% {
+    background-color: #FFFFFF;
+  }
+  68%,
+  90% {
+    background-color: #FFFFFF;
+  }
+}
+@keyframes wrEVTutAnim7_RadialMenuButton {
+  0%,
+  24% {
+    filter: grayscale(0%) brightness(100%);
+  }
+  28%,
+  64% {
+    filter: grayscale(100%) brightness(200%);
+  }
+  68%,
+  90% {
+    filter: grayscale(100%) brightness(200%);
+  }
+}
+@keyframes wrEVTutAnim7_DetailText {
+  0%,
+  24% {
+    background-color: #D6D6D6;
+  }
+  28%,
+  64% {
+    background-color: #39BE8E;
+  }
+  68%,
+  90% {
+    background-color: #AD71F6;
+  }
+}
+@keyframes wrEVTutAnim7_DetailRow {
+  0%,
+  24% {
+    background-color: #f1f1f1;
+  }
+  28%,
+  64% {
+    background-color: #D8F2E9;
+  }
+  68%,
+  90% {
+    background-color: #EFE3FD;
+  }
+}
+/*
+ *	ExpressView Tutorial animation #8
+ *	Sorts
+ */
+.wrEVTutAnim8 {
+  background: #efefef;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.wrEVTutAnim8 .wrEVTutRightPane {
+  background: white;
+  border-left: 1px solid #d7d7d7;
+  width: 66px;
+  height: 100%;
+  margin-left: auto;
+}
+.wrEVTutAnim8 .wrEVTutRightPaneTabBoxContainer {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0 16px 0;
+}
+.wrEVTutAnim8 .wrEVTutRightPaneTabBox {
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background: #d7d7d7;
+  margin-right: 2px;
+}
+.wrEVTutAnim8 .wrEVTutRightPaneTabBoxSelected {
+  background: #6896ed;
+}
+.wrEVTutAnim8 .wrEVTutRightPaneTabBox:last-child {
+  margin-right: 0;
+}
+.wrEVTutAnim8 .wrEVTutFilterColumns {
+  height: 88px;
+  width: 114px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimEV2Col.svg");
+  background-size: 114px 88px;
+  margin-right: 10px;
+}
+.wrNoSVG .wrEVTutAnim8 .wrEVTutFilterColumns {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimEV2Col.svg");
+}
+.wrEVTutAnim8 .wrEVTutFilterCursor {
+  top: 0;
+  height: 18px;
+  width: 18px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimCursor1.svg");
+  background-size: 18px 18px;
+  align-self: flex-start;
+  animation: wrEVTutAnim8_Cursor 5s 1s infinite;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+.wrNoSVG .wrEVTutAnim8 .wrEVTutFilterCursor {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimCursor1.svg");
+}
+.wrEVTutAnim8 .wrEVTutSort {
+  border: 1px solid #bdbdbd;
+  background: white;
+  border-radius: 3px;
+  height: 12px;
+  width: 53px;
+  margin: auto;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.wrEVTutAnim8 .wrEVTutSort1 {
+  animation: wrEVTutAnim8_Sort1 5s 1s infinite;
+  z-index: 2;
+}
+.wrEVTutAnim8 .wrEVTutSort2 {
+  animation: wrEVTutAnim8_Sort2 5s 1s infinite;
+}
+.wrEVTutAnim8 .wrEVTutSortButton {
+  height: 100%;
+  width: 10px;
+  border-left: 1px solid #bdbdbd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrEVTutAnim8 .wrEVTutSortButton:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 2px;
+  background: #bdbdbd;
+}
+.wrEVTutAnim8 .wrEVTutSort1 :first-child:after {
+  background: #6896ed;
+}
+.wrEVTutAnim8 .wrEVTutSort2 :nth-child(2):after {
+  background: #6896ed;
+}
+@keyframes wrEVTutAnim8_Cursor {
+  0% {
+    transform: translate(150px, 110px);
+  }
+  20% {
+    transform: translate(155px, 32px);
+  }
+  30% {
+    transform: translate(155px, 32px);
+  }
+  50% {
+    transform: translate(155px, 48px);
+  }
+  70%,
+  100% {
+    transform: translate(150px, 110px);
+  }
+}
+@keyframes wrEVTutAnim8_Sort1 {
+  0% {
+    border-color: #bdbdbd;
+  }
+  20% {
+    border-color: #bdbdbd;
+  }
+  30% {
+    border-color: #6896ed;
+    transform: translateY(0);
+  }
+  50% {
+    border-color: #6896ed;
+    transform: translateY(16px);
+  }
+  70%,
+  100% {
+    border-color: #bdbdbd;
+    transform: translateY(16px);
+  }
+}
+@keyframes wrEVTutAnim8_Sort2 {
+  30% {
+    transform: translateY(0);
+  }
+  50%,
+  100% {
+    transform: translateY(-16px);
+  }
+}
+/*
+ *	ExpressView Tutorial animation #9
+ *  Filters
+ */
+.wrEVTutAnim9 {
+  position: absolute;
+  background: #efefef;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.wrEVTutAnim9 .wrEVTutRightPane {
+  background: white;
+  border-left: 1px solid #d7d7d7;
+  width: 66px;
+  height: 100%;
+  margin-left: auto;
+}
+.wrEVTutAnim9 .wrEVTutRightPaneTabBoxContainer {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0 9px 0;
+}
+.wrEVTutAnim9 .wrEVTutRightPaneTabBox {
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background: #d7d7d7;
+  margin-right: 2px;
+}
+.wrEVTutAnim9 .wrEVTutRightPaneTabBoxSelected {
+  background: #6896ed;
+}
+.wrEVTutAnim9 .wrEVTutRightPaneTabBox:last-child {
+  margin-right: 0;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox {
+  background: #e9e9e9;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 56px;
+  margin: auto;
+}
+.wrEVTutAnim9 .wrEVTutFilterTitle {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+.wrEVTutAnim9 .wrEVTutFilterTitleWord {
+  height: 2px;
+  background-color: #777777;
+  margin-right: 2px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox1 .wrEVTutFilterTitleWord:nth-child(1) {
+  width: 18px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox1 .wrEVTutFilterTitleWord:nth-child(2) {
+  width: 5px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox1 .wrEVTutFilterTitleWord:nth-child(3) {
+  width: 10px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox1 .wrEVTutFilterInput1 .wrEVTutFilterInputText {
+  width: 12px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox1 .wrEVTutFilterInput2 .wrEVTutFilterInputText {
+  width: 22px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 {
+  margin-top: 4px;
+  max-height: 14px;
+  border: 1px solid #6896ed;
+  background-color: white;
+  overflow: hidden;
+  opacity: 0;
+  animation: wrEVTutAnim9_FilterBox2 10s 1s infinite;
+  animation-fill-mode: both;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterTitle {
+  animation: wrEVTutAnim9_FilterContent1 10s 1s infinite;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterTitleWord:nth-child(1) {
+  width: 22px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterTitleWord:nth-child(2) {
+  width: 3px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterTitleWord:nth-child(3) {
+  width: 8px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterInput1 {
+  animation: wrEVTutAnim9_FilterContent2 10s 1s infinite;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterInput1 .wrEVTutFilterInputText {
+  width: 34px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterInput2 {
+  animation: wrEVTutAnim9_FilterContent3 10s 1s infinite;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 .wrEVTutFilterInput2 .wrEVTutFilterInputText {
+  width: 24px;
+}
+.wrEVTutAnim9 .wrEVTutFilterBox2 > * {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.wrEVTutAnim9 .wrEVTutFilterInput {
+  box-sizing: border-box;
+  height: 9px;
+  width: 48px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+.wrEVTutAnim9 .wrEVTutFilterInput1 {
+  margin-top: 5px;
+}
+.wrEVTutAnim9 .wrEVTutFilterInput2 {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.wrEVTutAnim9 .wrEVTutFilterInputText {
+  height: 1px;
+  background-color: rgba(119, 119, 119, 0.6);
+}
+.wrEVTutAnim9 .wrEVTutFilterColumns {
+  height: 88px;
+  width: 114px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimEV2Col.svg");
+  background-size: 114px 88px;
+  margin-left: 10px;
+}
+.wrNoSVG .wrEVTutAnim9 .wrEVTutFilterColumns {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimEV2Col.svg");
+}
+.wrEVTutAnim9 .wrEVTutFilterCursor {
+  position: absolute;
+  top: 0;
+  height: 18px;
+  width: 18px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimCursor1.svg");
+  background-size: 18px 18px;
+  align-self: flex-start;
+  animation: wrEVTutAnim9_Cursor 10s 1s infinite;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+.wrNoSVG .wrEVTutAnim9 .wrEVTutFilterCursor {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimCursor1.svg");
+}
+.wrEVTutAnim9 .wrEVTutFilterDragTitle {
+  position: absolute;
+  top: 0;
+  height: 10px;
+  width: 52px;
+  border-radius: 1px;
+  background: #6896ed;
+  box-shadow: 0 1px 3px 0 rgba(33, 72, 144, 0.3);
+  align-self: flex-start;
+  animation: wrEVTutAnim9_DragTitle 10s 1s infinite;
+  animation-fill-mode: both;
+  transform: translate(70px, 58px);
+  z-index: 1;
+}
+@keyframes wrEVTutAnim9_Cursor {
+  0% {
+    transform: translate(150px, 110px);
+  }
+  10% {
+    transform: translate(100px, 65px);
+  }
+  20%,
+  30% {
+    transform: translate(171px, 71px);
+  }
+  40%,
+  100% {
+    transform: translate(145px, 120px);
+  }
+}
+@keyframes wrEVTutAnim9_FilterBox2 {
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    background-color: white;
+    border-color: #6896ed;
+  }
+  30% {
+    background-color: #e9e9e9;
+    border-color: #bdbdbd;
+    opacity: 1;
+    max-height: 14px;
+  }
+  40%,
+  100% {
+    max-height: 40px;
+    background-color: #e9e9e9;
+    border-color: #bdbdbd;
+    opacity: 1;
+  }
+}
+@keyframes wrEVTutAnim9_DragTitle {
+  0% {
+    opacity: 0;
+    animation-timing-function: step-end;
+  }
+  8% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translate(70px, 58px);
+  }
+  20% {
+    transform: translate(141px, 64px);
+    opacity: 1;
+  }
+  30%,
+  100% {
+    opacity: 0;
+    transform: translate(141px, 64px);
+  }
+}
+@keyframes wrEVTutAnim9_FilterContent1 {
+  0%,
+  30% {
+    transform: scaleX(0);
+  }
+  40%,
+  100% {
+    transform: none;
+  }
+}
+@keyframes wrEVTutAnim9_FilterContent2 {
+  0%,
+  32% {
+    transform: scaleX(0);
+  }
+  40%,
+  100% {
+    transform: none;
+  }
+}
+@keyframes wrEVTutAnim9_FilterContent3 {
+  0%,
+  34% {
+    transform: scaleX(0);
+  }
+  40%,
+  100% {
+    transform: none;
+  }
+}
+/*
+ *	ExpressView Tutorial animation #10
+ *  Charts Pane
+ */
+.wrEVTutAnim10 {
+  position: relative;
+  background: #efefef;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.wrEVTutAnim10 .wrEVTutRightPane {
+  background: white;
+  border-left: 1px solid #d7d7d7;
+  width: 66px;
+  height: 100%;
+  margin-left: auto;
+}
+.wrEVTutAnim10 .wrEVTutRightPaneTabBoxContainer {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0 16px 0;
+}
+.wrEVTutAnim10 .wrEVTutRightPaneTabBox {
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background: #d7d7d7;
+  margin-right: 2px;
+}
+.wrEVTutAnim10 .wrEVTutRightPaneTabBoxSelected {
+  background: #6896ed;
+}
+.wrEVTutAnim10 .wrEVTutRightPaneTabBox:last-child {
+  margin-right: 0;
+}
+.wrEVTutAnim10 .wrEVTutFilterColumns {
+  height: 88px;
+  width: 114px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimEV2Col.svg");
+  background-size: 114px 88px;
+  margin-left: 10px;
+  margin-top: 70px;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutFilterColumns {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimEV2Col.svg");
+}
+.wrEVTutAnim10 .wrEVTutFilterCursor {
+  position: absolute;
+  top: 0;
+  height: 18px;
+  width: 18px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimCursor1.svg");
+  background-size: 18px 18px;
+  align-self: flex-start;
+  animation: wrEVTutAnim10_Cursor 10s 1s infinite;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutFilterCursor {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimCursor1.svg");
+}
+.wrEVTutAnim10 .wrEVTutChartType {
+  height: 28px;
+  width: 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 4px;
+  filter: grayscale(1);
+}
+.wrEVTutAnim10 .wrEVTutChartType1 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimChartIconActive.svg");
+  background-size: 28px 28px;
+  filter: none;
+  animation: wrEVTutAnim10_ChartType1 10s 1s infinite;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutChartType1 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimChartIconActive.svg");
+}
+.wrEVTutAnim10 .wrEVTutChartType2 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimLineIconActive.svg");
+  background-size: 28px 28px;
+  animation: wrEVTutAnim10_ChartType2 10s 1s infinite;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutChartType2 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimLineIconActive.svg");
+}
+.wrEVTutAnim10 .wrEVTutChartType3 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimDonutIconActive.svg");
+  background-size: 28px 28px;
+  animation: wrEVTutAnim10_ChartType3 10s 1s infinite;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutChartType3 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimDonutIconActive.svg");
+}
+.wrEVTutAnim10 .wrEVTutChartPane {
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 67px;
+  height: 68px;
+  border-bottom: 1px solid #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrEVTutAnim10 .wrEVTutChartPreview {
+  position: absolute;
+}
+.wrEVTutAnim10 .wrEVTutChartPreviewBar {
+  opacity: 1;
+  height: 38px;
+  width: 92px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimBarChart.svg");
+  background-size: 92px 38px;
+  animation: wrEVTutAnim10_ChartPreview1 10s 1s infinite;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutChartPreviewBar {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimBarChart.svg");
+}
+.wrEVTutAnim10 .wrEVTutChartPreviewLine {
+  opacity: 0;
+  height: 40px;
+  width: 90px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimLineChart.svg");
+  background-size: 90px 40px;
+  animation: wrEVTutAnim10_ChartPreview2 10s 1s infinite;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutChartPreviewLine {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimLineChart.svg");
+}
+.wrEVTutAnim10 .wrEVTutChartPreviewDonut {
+  opacity: 0;
+  height: 54px;
+  width: 54px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/AnimDonutChart.svg");
+  background-size: 54px 54px;
+  animation: wrEVTutAnim10_ChartPreview3 10s 1s infinite;
+}
+.wrNoSVG .wrEVTutAnim10 .wrEVTutChartPreviewDonut {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AnimDonutChart.svg");
+}
+.wrIE11 .wrEVTutAnim10 .wrEVTutChartPreview {
+  top: 15px;
+  left: 22px;
+}
+.wrIE11 .wrEVTutAnim10 .wrEVTutChartPreviewDonut {
+  top: 8px;
+  left: 40px;
+}
+@keyframes wrEVTutAnim10_Cursor {
+  0% {
+    transform: translate(172px, 45px);
+  }
+  10%,
+  30% {
+    transform: translate(172px, 74px);
+  }
+  40%,
+  60% {
+    transform: translate(172px, 103px);
+  }
+  90% {
+    transform: translate(150px, 150px);
+  }
+}
+@keyframes wrEVTutAnim10_ChartType1 {
+  0%,
+  10% {
+    filter: none;
+  }
+  12%,
+  90% {
+    filter: grayscale(1);
+  }
+}
+@keyframes wrEVTutAnim10_ChartType2 {
+  0%,
+  10% {
+    filter: grayscale(1);
+  }
+  12%,
+  30% {
+    filter: none;
+  }
+  40%,
+  60% {
+    filter: grayscale(1);
+  }
+}
+@keyframes wrEVTutAnim10_ChartType3 {
+  0%,
+  40% {
+    filter: grayscale(1);
+  }
+  42%,
+  90% {
+    filter: none;
+  }
+}
+@keyframes wrEVTutAnim10_ChartPreview1 {
+  0%,
+  5% {
+    opacity: 1;
+  }
+  12%,
+  90% {
+    opacity: 0;
+  }
+}
+@keyframes wrEVTutAnim10_ChartPreview2 {
+  0%,
+  5% {
+    opacity: 0;
+  }
+  12%,
+  35% {
+    opacity: 1;
+  }
+  42%,
+  90% {
+    opacity: 0;
+  }
+}
+@keyframes wrEVTutAnim10_ChartPreview3 {
+  0%,
+  35% {
+    opacity: 0;
+  }
+  42%,
+  90% {
+    opacity: 1;
+  }
+}
+/*
+ *	ExpressView Tutorial animation #11
+ */

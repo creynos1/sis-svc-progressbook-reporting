@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    GaugeTypeBulb
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="10" cy="23" r="7" fill="#E85D61"/>
+    <circle cx="20" cy="23" r="7" fill="#E5D08F"/>
+    <circle cx="30" cy="23" r="7" fill="#00D995"/>
+    <path fill="#666666" fill-rule="nonzero" d="M25.775 15.04l3.976-2.623a.5.5 0 0 0 0-.834L25.775 8.96a.5.5 0 0 0-.775.418v5.244a.5.5 0 0 0 .775.418z"/>
+    <path fill="#666666" fill-rule="nonzero" d="M14.225 15.04l-3.976-2.623a.5.5 0 0 1 0-.834l3.976-2.623a.5.5 0 0 1 .775.418v5.244a.5.5 0 0 1-.775.418z"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    ExpressViewRefresh
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="#777777" d="M17.425 7.575l1.158-1.158c.783-.783 1.417-.53 1.417.589v3.991A.996.996 0 0 1 18.997 12h-3.991c-1.108 0-1.372-.634-.59-1.417L16 9a5 5 0 1 0 0 6h2.326a7 7 0 1 1-.902-7.425z"/>
+  </g>
+</svg>

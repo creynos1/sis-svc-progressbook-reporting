@@ -1,0 +1,146 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Web", "ProgressBook.Reporting.Web\ProgressBook.Reporting.Web.csproj", "{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Data", "ProgressBook.Reporting.Data\ProgressBook.Reporting.Data.csproj", "{153EB093-30E8-420D-89A9-4AF8D05AA71B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.ExagoIntegration", "ProgressBook.Reporting.ExagoIntegration\ProgressBook.Reporting.ExagoIntegration.csproj", "{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Client", "ProgressBook.Reporting.Client\ProgressBook.Reporting.Client.csproj", "{470B4DF3-7D47-482D-B8D3-D747F63BFEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Client.Tests", "ProgressBook.Reporting.Client.Tests\ProgressBook.Reporting.Client.Tests.csproj", "{E01B65B7-2C5A-47EC-88B6-CA058690D7D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.SharedModels", "ProgressBook.Reporting.SharedModels\ProgressBook.Reporting.SharedModels.csproj", "{3A7D1332-3498-4553-911B-48E9616FAD15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Builds", "ProgressBook.Reporting.Builds\ProgressBook.Reporting.Builds.csproj", "{E115A3DE-1B41-49E3-BD44-98910FF62C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.ExagoScheduler.Common", "ProgressBook.Reporting.ExagoScheduler.Common\ProgressBook.Reporting.ExagoScheduler.Common.csproj", "{2C366F2D-7425-45ED-A19D-6BE888F6CABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.ExagoScheduler.Config", "ProgressBook.Reporting.ExagoScheduler.Config\ProgressBook.Reporting.ExagoScheduler.Config.csproj", "{5E7D7D48-00F6-4759-97CF-3CBF88418FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.ExagoScheduler.Setup", "ProgressBook.Reporting.ExagoScheduler.Setup\ProgressBook.Reporting.ExagoScheduler.Setup.csproj", "{292694EC-0D20-4D3E-802B-5ED89D1A5D26}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E7D7D48-00F6-4759-97CF-3CBF88418FED} = {5E7D7D48-00F6-4759-97CF-3CBF88418FED}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{4A1E238B-4517-450F-B3F2-1D55D6364405}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\ExagoSetup.dll = Dependencies\ExagoSetup.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution ITems", "Solution ITems", "{3117E806-176C-494C-AEC5-E6E82FAC7B23}"
+	ProjectSection(SolutionItems) = preProject
+		GatherItemsForDrop.ps1 = GatherItemsForDrop.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugIntegration|Any CPU = DebugIntegration|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{153EB093-30E8-420D-89A9-4AF8D05AA71B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153EB093-30E8-420D-89A9-4AF8D05AA71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153EB093-30E8-420D-89A9-4AF8D05AA71B}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{153EB093-30E8-420D-89A9-4AF8D05AA71B}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{153EB093-30E8-420D-89A9-4AF8D05AA71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153EB093-30E8-420D-89A9-4AF8D05AA71B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470B4DF3-7D47-482D-B8D3-D747F63BFEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470B4DF3-7D47-482D-B8D3-D747F63BFEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470B4DF3-7D47-482D-B8D3-D747F63BFEA3}.DebugIntegration|Any CPU.ActiveCfg = DebugIntegration|Any CPU
+		{470B4DF3-7D47-482D-B8D3-D747F63BFEA3}.DebugIntegration|Any CPU.Build.0 = DebugIntegration|Any CPU
+		{470B4DF3-7D47-482D-B8D3-D747F63BFEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470B4DF3-7D47-482D-B8D3-D747F63BFEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E01B65B7-2C5A-47EC-88B6-CA058690D7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E01B65B7-2C5A-47EC-88B6-CA058690D7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E01B65B7-2C5A-47EC-88B6-CA058690D7D9}.DebugIntegration|Any CPU.ActiveCfg = DebugIntegration|Any CPU
+		{E01B65B7-2C5A-47EC-88B6-CA058690D7D9}.DebugIntegration|Any CPU.Build.0 = DebugIntegration|Any CPU
+		{E01B65B7-2C5A-47EC-88B6-CA058690D7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E01B65B7-2C5A-47EC-88B6-CA058690D7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A7D1332-3498-4553-911B-48E9616FAD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A7D1332-3498-4553-911B-48E9616FAD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A7D1332-3498-4553-911B-48E9616FAD15}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A7D1332-3498-4553-911B-48E9616FAD15}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{3A7D1332-3498-4553-911B-48E9616FAD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A7D1332-3498-4553-911B-48E9616FAD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E115A3DE-1B41-49E3-BD44-98910FF62C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E115A3DE-1B41-49E3-BD44-98910FF62C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E115A3DE-1B41-49E3-BD44-98910FF62C32}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{E115A3DE-1B41-49E3-BD44-98910FF62C32}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{E115A3DE-1B41-49E3-BD44-98910FF62C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E115A3DE-1B41-49E3-BD44-98910FF62C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C366F2D-7425-45ED-A19D-6BE888F6CABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C366F2D-7425-45ED-A19D-6BE888F6CABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C366F2D-7425-45ED-A19D-6BE888F6CABD}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C366F2D-7425-45ED-A19D-6BE888F6CABD}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{2C366F2D-7425-45ED-A19D-6BE888F6CABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C366F2D-7425-45ED-A19D-6BE888F6CABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7D7D48-00F6-4759-97CF-3CBF88418FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7D7D48-00F6-4759-97CF-3CBF88418FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7D7D48-00F6-4759-97CF-3CBF88418FED}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7D7D48-00F6-4759-97CF-3CBF88418FED}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{5E7D7D48-00F6-4759-97CF-3CBF88418FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7D7D48-00F6-4759-97CF-3CBF88418FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292694EC-0D20-4D3E-802B-5ED89D1A5D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292694EC-0D20-4D3E-802B-5ED89D1A5D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292694EC-0D20-4D3E-802B-5ED89D1A5D26}.DebugIntegration|Any CPU.ActiveCfg = Debug|Any CPU
+		{292694EC-0D20-4D3E-802B-5ED89D1A5D26}.DebugIntegration|Any CPU.Build.0 = Debug|Any CPU
+		{292694EC-0D20-4D3E-802B-5ED89D1A5D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292694EC-0D20-4D3E-802B-5ED89D1A5D26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/softwareanswersprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ProgressBook.Reporting.Data\\ProgressBook.Reporting.Data.csproj
+		SccProjectName1 = ProgressBook.Reporting.Data
+		SccLocalPath1 = ProgressBook.Reporting.Data
+		SccProjectUniqueName2 = ProgressBook.Reporting.ExagoIntegration\\ProgressBook.Reporting.ExagoIntegration.csproj
+		SccProjectName2 = ProgressBook.Reporting.ExagoIntegration
+		SccLocalPath2 = ProgressBook.Reporting.ExagoIntegration
+		SccProjectUniqueName3 = ProgressBook.Reporting.Web\\ProgressBook.Reporting.Web.csproj
+		SccProjectName3 = ProgressBook.Reporting.Web
+		SccLocalPath3 = ProgressBook.Reporting.Web
+		SccProjectUniqueName4 = ProgressBook.Reporting.SharedModels\\ProgressBook.Reporting.SharedModels.csproj
+		SccProjectName4 = ProgressBook.Reporting.SharedModels
+		SccLocalPath4 = ProgressBook.Reporting.SharedModels
+		SccProjectUniqueName5 = ProgressBook.Reporting.Client\\ProgressBook.Reporting.Client.csproj
+		SccProjectName5 = ProgressBook.Reporting.Client
+		SccLocalPath5 = ProgressBook.Reporting.Client
+		SccProjectUniqueName6 = ProgressBook.Reporting.Client.Tests\\ProgressBook.Reporting.Client.Tests.csproj
+		SccProjectName6 = ProgressBook.Reporting.Client.Tests
+		SccLocalPath6 = ProgressBook.Reporting.Client.Tests
+		SccProjectUniqueName7 = ProgressBook.Reporting.Builds\\ProgressBook.Reporting.Builds.csproj
+		SccProjectName7 = ProgressBook.Reporting.Builds
+		SccLocalPath7 = ProgressBook.Reporting.Builds
+		SccProjectUniqueName8 = ProgressBook.Reporting.ExagoScheduler.Common\\ProgressBook.Reporting.ExagoScheduler.Common.csproj
+		SccProjectName8 = ProgressBook.Reporting.ExagoScheduler.Common
+		SccLocalPath8 = ProgressBook.Reporting.ExagoScheduler.Common
+		SccProjectUniqueName9 = ProgressBook.Reporting.ExagoScheduler.Config\\ProgressBook.Reporting.ExagoScheduler.Config.csproj
+		SccProjectName9 = ProgressBook.Reporting.ExagoScheduler.Config
+		SccLocalPath9 = ProgressBook.Reporting.ExagoScheduler.Config
+		SccProjectUniqueName10 = ProgressBook.Reporting.ExagoScheduler.Setup\\ProgressBook.Reporting.ExagoScheduler.Setup.csproj
+		SccProjectName10 = ProgressBook.Reporting.ExagoScheduler.Setup
+		SccLocalPath10 = ProgressBook.Reporting.ExagoScheduler.Setup
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="40" viewBox="0 0 92 40">
+  <title>
+    AnimBarChart
+  </title>
+  <defs>
+    <linearGradient id="a" x1="0%" y1="91.486%" y2="91.486%">
+      <stop offset="0%" stop-color="#68EDC2"/>
+      <stop offset="100%" stop-color="#6896ED"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2 29h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2zm16-7h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2zM34 2h8a2 2 0 0 1 2 2v34a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm16 20h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2zm16-10h8a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2zm16 20h8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z"/>
+</svg>

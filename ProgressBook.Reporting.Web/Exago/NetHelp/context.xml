@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from url=(0016)http://localhost -->
+<context>
+  <item url="Documents/expressview.htm#abouttheradialmenu.htm">
+    <id>441</id>
+  </item>
+  <item url="Documents/actionevents.htm">
+    <id>30</id>
+  </item>
+  <item url="Documents/categoriestab.htm#addingcategories.htm">
+    <id>387</id>
+  </item>
+  <item url="Documents/layouttab.htm#addingdataadvancedandexpressreports.htm">
+    <id>317</id>
+  </item>
+  <item url="Documents/addingreports.htm">
+    <id>504</id>
+  </item>
+  <item url="Documents/joins.htm#advancedjoins.htm">
+    <id>542</id>
+  </item>
+  <item url="Documents/googlemaps.htm#appearance2.htm">
+    <id>136</id>
+  </item>
+  <item url="Documents/gauges.htm#appearance1.htm">
+    <id>435</id>
+  </item>
+  <item url="Documents/charts.htm#appearance.htm">
+    <id>124</id>
+  </item>
+  <item url="Documents/cellformat.htm#border.htm">
+    <id>395</id>
+  </item>
+  <item url="Documents/parameters.htm#builtinparameters.htm">
+    <id>559</id>
+  </item>
+  <item url="Documents/reportcategories.htm">
+    <id>13</id>
+  </item>
+  <item url="Documents/categoriestab.htm">
+    <id>5</id>
+  </item>
+  <item url="Documents/cellformat.htm">
+    <id>21</id>
+  </item>
+  <item url="Documents/reportdesigner.htm#cells.htm">
+    <id>320</id>
+  </item>
+  <item url="Documents/chainedreports.htm#chainedreportoptions.htm">
+    <id>260</id>
+  </item>
+  <item url="Documents/chainedreports.htm">
+    <id>36</id>
+  </item>
+  <item url="Documents/charts.htm">
+    <id>25</id>
+  </item>
+  <item url="Documents/chainedreports.htm#collatingreports.htm">
+    <id>261</id>
+  </item>
+  <item url="Documents/cellformat.htm#conditional.htm">
+    <id>396</id>
+  </item>
+  <item url="Documents/crosstabs.htm">
+    <id>314</id>
+  </item>
+  <item url="Documents/reportviewer.htm#customizingreportoutput.htm">
+    <id>382</id>
+  </item>
+  <item url="Documents/dashboarddesigner.htm">
+    <id>32</id>
+  </item>
+  <item url="Documents/dashboardviewer.htm">
+    <id>498</id>
+  </item>
+  <item url="Documents/googlemaps.htm#data3.htm">
+    <id>135</id>
+  </item>
+  <item url="Documents/geocharts.htm#data2.htm">
+    <id>132</id>
+  </item>
+  <item url="Documents/gauges.htm#data1.htm">
+    <id>436</id>
+  </item>
+  <item url="Documents/charts.htm#data.htm">
+    <id>123</id>
+  </item>
+  <item url="Documents/datapane.htm">
+    <id>451</id>
+  </item>
+  <item url="Documents/reportdescription.htm">
+    <id>12</id>
+  </item>
+  <item url="Documents/drilldowns.htm">
+    <id>29</id>
+  </item>
+  <item url="Documents/sections.htm#dynamic.htm">
+    <id>467</id>
+  </item>
+  <item url="Documents/scheduler.htm#emailingpersonalizedreports.htm">
+    <id>307</id>
+  </item>
+  <item url="Documents/troubleshooting.htm#errors.htm">
+    <id>428</id>
+  </item>
+  <item url="Documents/events.htm">
+    <id>20</id>
+  </item>
+  <item url="Documents/executioncaching.htm">
+    <id>301</id>
+  </item>
+  <item url="Documents/exporting.htm">
+    <id>452</id>
+  </item>
+  <item url="Documents/expressview.htm">
+    <id>1</id>
+  </item>
+  <item url="Documents/expressviewvisualizations.htm">
+    <id>522</id>
+  </item>
+  <item url="Documents/troubleshooting.htm#faqs.htm">
+    <id>427</id>
+  </item>
+  <item url="Documents/drilldowns.htm#fields.htm">
+    <id>481</id>
+  </item>
+  <item url="Documents/managingdata.htm#filtering.htm">
+    <id>448</id>
+  </item>
+  <item url="Documents/reportfilters.htm">
+    <id>15</id>
+  </item>
+  <item url="Documents/filterstab.htm">
+    <id>7</id>
+  </item>
+  <item url="Documents/addingreports.htm#filtersandparameters1.htm">
+    <id>527</id>
+  </item>
+  <item url="Documents/managingdata.htm#formatting.htm">
+    <id>446</id>
+  </item>
+  <item url="Documents/formulacolumns.htm">
+    <id>550</id>
+  </item>
+  <item url="Documents/formulas.htm">
+    <id>22</id>
+  </item>
+  <item url="Documents/gauges.htm">
+    <id>26</id>
+  </item>
+  <item url="Documents/generaloptions.htm">
+    <id>16</id>
+  </item>
+  <item url="Documents/geocharts.htm">
+    <id>27</id>
+  </item>
+  <item url="Documents/home.htm#gettingstarted.htm">
+    <id>414</id>
+  </item>
+  <item url="Documents/googlemaps.htm">
+    <id>28</id>
+  </item>
+  <item url="Documents/dashboarddesigner.htm#gridandtiles.htm">
+    <id>503</id>
+  </item>
+  <item url="Documents/reportfilters.htm#groupminmax.htm">
+    <id>338</id>
+  </item>
+  <item url="Documents/grouping.htm">
+    <id>442</id>
+  </item>
+  <item url="Documents/reportfilters.htm#groupingfilterstogether.htm">
+    <id>296</id>
+  </item>
+  <item url="Documents/home.htm">
+    <id>0</id>
+  </item>
+  <item url="Documents/home.htm#howtousethehelp.htm">
+    <id>99</id>
+  </item>
+  <item url="Documents/dashboardviewer.htm#interactingwithdashboards.htm">
+    <id>521</id>
+  </item>
+  <item url="Documents/reportviewer.htm#interactingwithreports.htm">
+    <id>104</id>
+  </item>
+  <item url="Documents/interactivefilters.htm">
+    <id>529</id>
+  </item>
+  <item url="Documents/joins.htm#jointypes.htm">
+    <id>472</id>
+  </item>
+  <item url="Documents/joins.htm">
+    <id>19</id>
+  </item>
+  <item url="Documents/layouttab.htm">
+    <id>8</id>
+  </item>
+  <item url="Documents/googlemaps.htm#locations1.htm">
+    <id>134</id>
+  </item>
+  <item url="Documents/geocharts.htm#locations.htm">
+    <id>131</id>
+  </item>
+  <item url="Documents/chainedreports.htm#makingachainedreport.htm">
+    <id>247</id>
+  </item>
+  <item url="Documents/grouping.htm#makingagroup.htm">
+    <id>443</id>
+  </item>
+  <item url="Documents/scheduler.htm#makingaschedule.htm">
+    <id>277</id>
+  </item>
+  <item url="Documents/expressview.htm#makinganexpressview.htm">
+    <id>267</id>
+  </item>
+  <item url="Documents/template.htm#makingtemplates.htm">
+    <id>416</id>
+  </item>
+  <item url="Documents/managingdata.htm">
+    <id>445</id>
+  </item>
+  <item url="Documents/dashboarddesigner.htm#managingtiles.htm">
+    <id>526</id>
+  </item>
+  <item url="Documents/formulas.htm#manuallytypingformulas.htm">
+    <id>492</id>
+  </item>
+  <item url="Documents/joins.htm#modifyingjoins.htm">
+    <id>474</id>
+  </item>
+  <item url="Documents/nametab.htm">
+    <id>4</id>
+  </item>
+  <item url="Documents/home.htm#navigatinghelplinks.htm">
+    <id>415</id>
+  </item>
+  <item url="Documents/cellformat.htm#number.htm">
+    <id>394</id>
+  </item>
+  <item url="Documents/optionstab.htm">
+    <id>9</id>
+  </item>
+  <item url="Documents/parameters.htm">
+    <id>555</id>
+  </item>
+  <item url="Documents/chainedreports.htm#promptingfiltersandparameters.htm">
+    <id>259</id>
+  </item>
+  <item url="Documents/parameters.htm#promptingparameters.htm">
+    <id>560</id>
+  </item>
+  <item url="Documents/joins.htm#relationshiptypes.htm">
+    <id>473</id>
+  </item>
+  <item url="Documents/reportrename.htm">
+    <id>11</id>
+  </item>
+  <item url="Documents/reportdesigner.htm">
+    <id>10</id>
+  </item>
+  <item url="Documents/addingreports.htm#reportsettings.htm">
+    <id>534</id>
+  </item>
+  <item url="Documents/reportviewer.htm">
+    <id>2</id>
+  </item>
+  <item url="Documents/reportvieweroptions.htm">
+    <id>17</id>
+  </item>
+  <item url="Documents/reportwizard.htm">
+    <id>3</id>
+  </item>
+  <item url="Documents/scheduler.htm">
+    <id>37</id>
+  </item>
+  <item url="Documents/sectionshading.htm">
+    <id>24</id>
+  </item>
+  <item url="Documents/sections.htm">
+    <id>23</id>
+  </item>
+  <item url="Documents/googlemaps.htm#sizeandpreview1.htm">
+    <id>137</id>
+  </item>
+  <item url="Documents/managingdata.htm#sorting.htm">
+    <id>447</id>
+  </item>
+  <item url="Documents/reportsorts.htm">
+    <id>14</id>
+  </item>
+  <item url="Documents/sortstab.htm">
+    <id>6</id>
+  </item>
+  <item url="Documents/categoriestab.htm#sqlcategoriesadvancedusers.htm">
+    <id>547</id>
+  </item>
+  <item url="Documents/reportfilters.htm#standard.htm">
+    <id>337</id>
+  </item>
+  <item url="Documents/sections.htm#static.htm">
+    <id>466</id>
+  </item>
+  <item url="Documents/styling.htm">
+    <id>450</id>
+  </item>
+  <item url="Documents/layouttab.htm#stylingthereportexpressreports.htm">
+    <id>318</id>
+  </item>
+  <item url="Documents/grouping.htm#summarizinggroupdata.htm">
+    <id>444</id>
+  </item>
+  <item url="Documents/reportcategories.htm#suppressingduplicatesadvancedusers.htm">
+    <id>463</id>
+  </item>
+  <item url="Documents/template.htm">
+    <id>18</id>
+  </item>
+  <item url="Documents/reportdesigner.htm#toolbar.htm">
+    <id>401</id>
+  </item>
+  <item url="Documents/reportfilters.htm#topbottom.htm">
+    <id>339</id>
+  </item>
+  <item url="Documents/troubleshooting.htm">
+    <id>420</id>
+  </item>
+  <item url="Documents/expressview.htm#tutorials.htm">
+    <id>565</id>
+  </item>
+  <item url="Documents/geocharts.htm#type1.htm">
+    <id>130</id>
+  </item>
+  <item url="Documents/charts.htm#type.htm">
+    <id>122</id>
+  </item>
+  <item url="Documents/formulas.htm#typesoffunctions.htm">
+    <id>493</id>
+  </item>
+  <item url="Documents/formulas.htm#usingfunctions.htm">
+    <id>491</id>
+  </item>
+  <item url="Documents/parameters.htm#usingparameters.htm">
+    <id>558</id>
+  </item>
+  <item url="Documents/reportwizard.htm#usingthereportwizard.htm">
+    <id>293</id>
+  </item>
+  <item url="Documents/scheduler.htm#viewingschedules.htm">
+    <id>283</id>
+  </item>
+  <item url="Documents/visualizations.htm">
+    <id>449</id>
+  </item>
+  <item url="Documents/layouttab.htm#whatarecrosstabs.htm">
+    <id>319</id>
+  </item>
+  <item url="Documents/home.htm#whyamihere.htm">
+    <id>204</id>
+  </item>
+</context>

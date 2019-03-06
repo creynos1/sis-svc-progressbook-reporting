@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    BurgerMenuSelected
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <path fill="#FFFFFF" d="M1 1h10a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 4h10a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 4h10a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z"/>
+  </g>
+</svg>

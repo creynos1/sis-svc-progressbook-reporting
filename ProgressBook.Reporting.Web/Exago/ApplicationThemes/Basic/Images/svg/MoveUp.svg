@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    MoveUp
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M8.222 10L6.874 7.573a1 1 0 0 0-1.748 0L3.778 10H2.7a1 1 0 0 1-.875-1.486l3.3-5.94a1 1 0 0 1 1.75 0l3.3 5.94A1 1 0 0 1 9.3 10H8.222z"/>
+  </g>
+</svg>

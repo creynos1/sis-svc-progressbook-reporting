@@ -1,0 +1,518 @@
+exago * ::-webkit-scrollbar-thumb {
+  background-color: #888888;
+}
+exago * ::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
+exago * ::-webkit-scrollbar-thumb:active {
+  background-color: #444444;
+}
+exago * ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #F5F5F5;
+}
+exago * ::-webkit-scrollbar-corner {
+  background-color: #F5F5F5;
+}
+exago * ::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+}
+.wrMain {
+  color: #666666;
+}
+table {
+  position: relative;
+}
+.wrMainLeftPane {
+  width: 250px;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  z-index: 2;
+}
+.wrMainTabContentContainer {
+  border: none;
+  margin-bottom: 0;
+  margin-right: 0;
+  top: 0;
+}
+.wrMainTabContentContainer .wrTabInnerContent {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: visible;
+}
+#WebAdminCtrl_MainSplitter_MainTabCtrl_TabContentContainer {
+  top: 35px;
+}
+.wrMainTabContentContainer .wrTabInnerContentOverflow {
+  overflow: auto;
+}
+.wrMainRightPane {
+  border: none;
+  padding: 0;
+  border-left: 1px solid #d5d5d5;
+  background-color: #ffffff;
+}
+#wrWebReportsContainer {
+  font-family: Roboto, Arial, sans-serif;
+}
+.wrMainReportsContainer {
+  position: absolute;
+  top: 0;
+  bottom: 122px;
+  left: 0;
+  right: 0;
+}
+.wrMainReportsContainer .wrTree {
+  top: 62px;
+  right: 10px;
+  left: 3px;
+}
+.wrMainReportsContainer .wrTrSearchBoxClearButton {
+  top: 11px;
+  right: 20px;
+  display: none;
+}
+.wrMainReportsContainer .wrTrSearchBoxSearchButton {
+  top: 10px;
+  right: 36px;
+}
+.wrMainReportsContainer .wrTrSearchBoxModeButton {
+  right: 2px;
+  height: 24px;
+  width: 12px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SearchOptions.svg");
+  background-size: 12px 24px;
+}
+.wrNoSVG .wrMainReportsContainer .wrTrSearchBoxModeButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SearchOptions.png");
+}
+.wrMainReportsContainer .wrTrSearchBoxModeButton:hover,
+.wrMainReportsContainer .wrTrSearchBoxModeButton:active {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SearchOptionsActive.svg");
+  background-size: 12px 24px;
+  background-color: transparent;
+}
+.wrNoSVG .wrMainReportsContainer .wrTrSearchBoxModeButton:hover,
+.wrNoSVG .wrMainReportsContainer .wrTrSearchBoxModeButton:active {
+  background-image: url("../#ApplicationThemeFolder#/Images/SearchOptionsActive.png");
+}
+.wrMainReportsContainer .wrTrSearchBoxContainer {
+  right: 10px;
+  left: 10px;
+  top: 1px;
+}
+.wrMainReportsContainer .wrTrSearchInputContainer {
+  margin-right: 41px;
+  width: auto;
+}
+.wrTrHeader {
+  position: absolute;
+  right: 10px;
+  left: 12px;
+  top: 43px;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 600;
+}
+.wrTreeDragHandle {
+  height: 1px;
+  background-color: #D7D7D7;
+  border: 6px solid #FFFFFF;
+  cursor: ns-resize;
+}
+.wrTreeDragHandle:active {
+  background-color: #989898;
+}
+.wrMainReportsTreeHeaderLbl {
+  position: absolute;
+}
+.wrMainReportsTreeTextButton {
+  position: absolute;
+  right: 0;
+  color: #6896ED;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  outline: none;
+}
+.wrMainReportsTreeTextButton:hover {
+  text-decoration: underline;
+}
+.wrMainReportsTreeTextButton:active {
+  filter: brightness(75%);
+}
+.wrMainReportDescriptionContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 92px;
+  padding: 7px;
+  margin: 10px;
+  background-color: Transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Roboto, Arial, sans-serif;
+}
+.wrMainReportDescriptionHeader {
+  font-size: 13px;
+  padding-bottom: 5px;
+  word-wrap: break-word;
+  color: #9d9d9d;
+  font-style: italic;
+}
+.wrMainReportDescriptionContent {
+  font-size: 12px;
+  padding-top: 5px;
+  word-wrap: break-word;
+  color: #545454;
+}
+.wrMainTbContainer {
+  overflow: hidden;
+  padding-left: 4.8%;
+  padding-right: 4.8%;
+  margin-top: 7px;
+  text-align: justify;
+  height: 34px;
+}
+.wrMainTbContainer:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+.wrMainTbButton {
+  height: 19px;
+  width: 19px;
+  display: inline-block;
+}
+.wrMainTbManageFoldersButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ManageFolders.svg");
+  background-size: 19px 19px;
+}
+.wrNoSVG .wrMainTbManageFoldersButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ManageFolders.png");
+}
+.wrMainTbManageFoldersButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ManageFoldersHover.svg");
+  background-size: 19px 19px;
+}
+.wrNoSVG .wrMainTbManageFoldersButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/ManageFoldersHover.png");
+}
+.wrMainReportSearchInput {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  vertical-align: top;
+  margin-left: 8px;
+  width: 150px;
+}
+.wrMainReportSearchImg {
+  display: inline-block;
+  margin: 8px 0 0 0;
+  padding: 1px 1px 0 1px;
+}
+.wrMainReportSearchClearImg {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 1px 1px 0 1px;
+}
+.wrMainEmailTbContainer {
+  float: left;
+  height: 31px;
+  margin-top: 5px;
+  margin-right: 4px;
+}
+.wrMainReportsContainer .wrTrSearchBox {
+  height: 16px;
+  padding: 8px 14px 8px 22px;
+  width: calc(100% - 56px);
+  border-bottom: 1px solid #d5d5d5;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/DataFieldSearch.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  transition: background-image 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  text-overflow: ellipsis;
+}
+.wrNoSVG .wrMainReportsContainer .wrTrSearchBox {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DataFieldSearch.svg");
+}
+.wrMainReportsContainer .wrTrSearchBox:focus {
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/svg/DataFieldSearchActive.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrMainReportsContainer .wrTrSearchBox:focus {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DataFieldSearchActive.svg");
+}
+.wrMainReportsContainer .wrTrSearchBox.wrTrSearchBoxWithButton {
+  width: calc(100% - 72px);
+  padding-right: 32px;
+}
+.wrMainTabStripOuterContainer .wrDynamicTabItem {
+  border-radius: 0;
+  margin-right: 0;
+  line-height: 34px;
+  height: 34px;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.wrMainTabStripOuterContainer {
+  height: 34px;
+  background-color: #ffffff;
+  padding-right: 58px;
+}
+#wrWebReportsContainer > .wrMaterialSplitter > .wrVerticalSplitterBar {
+  top: 35px;
+}
+#wrWebReportsContainer > .wrMaterialSplitter > .wrVerticalSplitterBar > .wrVerticalSplitterBarInner {
+  display: none;
+}
+#WebReportsCtrl_MainSplitter_SplitterContainer {
+  top: 35px;
+  left: 36px;
+  visibility: hidden;
+}
+#WebReportsCtrl_MainSplitter_SplitterContainer.wrMainSplitterContainerNoLeftPanelMenu {
+  left: 0;
+  box-shadow: none;
+}
+#WebReportsCtrl_MainSplitter_SplitterContainer.wrMainSplitterContainerNoTabs {
+  top: 0;
+}
+#WebReportsCtrl_MainSplitter_SplitterContainer.wrMainSpitterContainerThinLeftMenu {
+  left: 13px;
+}
+.wrWebReportsMainTabStrip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background: #ffffff;
+  z-index: 13;
+}
+.wrMainLeftPaneToolbar + .wrWebReportsMainTabStrip {
+  left: 36px;
+}
+.wrMainLeftPaneToolbarThin + .wrWebReportsMainTabStrip {
+  left: 13px;
+}
+.wrMainLeftPaneToolbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 36px;
+  background-color: #f8f8f8;
+  box-shadow: inset -1px 0 0 0 #d5d5d5;
+  font-size: 0;
+}
+.wrMainLeftPaneToolbarThin {
+  width: 13px;
+}
+.wrMainLeftPaneLogo {
+  height: 33px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid transparent;
+  border-right: none;
+  overflow: hidden;
+  position: relative;
+  left: -1px;
+  z-index: 2;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneLogo.svg");
+  background-size: 24px 24px;
+  display: none;
+}
+.wrNoSVG .wrMainLeftPaneLogo {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneLogo.png");
+}
+.wrMainLeftPaneTabButton {
+  height: 34px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid transparent;
+  border-right: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrMainLeftPaneSelectedTabButton {
+  background-color: #ffffff;
+  border: 1px solid #d5d5d5;
+  border-right: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: 34px;
+  width: 36px;
+  left: 0;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* Used so the shadow from the pane doesn't show over the tab button */
+  z-index: 1;
+  position: absolute;
+}
+.wrMainLeftPaneTabContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wrMainLeftPaneTabButtonNewReport {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneNewReport.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrMainLeftPaneTabButtonNewReport {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneNewReport.png");
+}
+.wrMainLeftPaneTabButtonNewReport[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneNewReportSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrMainLeftPaneTabButtonNewReport[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneNewReportSelected.png");
+}
+.wrMainLeftPaneTabButtonDataFields {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneDataFields.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrMainLeftPaneTabButtonDataFields {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneDataFields.png");
+}
+.wrMainLeftPaneTabButtonDataFields[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneDataFieldsSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrMainLeftPaneTabButtonDataFields[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneDataFieldsSelected.png");
+}
+.wrMainLeftPaneTabButtonDataFields[data-disabled] {
+  background-color: transparent;
+  cursor: default;
+  opacity: 0.3;
+}
+.wrMainLeftPaneTabButtonViewReports {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneViewReports.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrMainLeftPaneTabButtonViewReports {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneViewReports.png");
+}
+.wrMainLeftPaneTabButtonViewReports[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneViewReportsSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrMainLeftPaneTabButtonViewReports[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneViewReportsSelected.png");
+}
+.wrMainLeftPaneTabButtonScheduleManager {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneScheduleManager.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrMainLeftPaneTabButtonScheduleManager {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneScheduleManager.png");
+}
+.wrMainLeftPaneExpandButton {
+  height: 36px;
+  width: 12px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainLeftPaneSplitter.svg");
+  background-size: 12px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+}
+.wrNoSVG .wrMainLeftPaneExpandButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainLeftPaneSplitter.png");
+}
+.wrMainLeftPaneExpandButton:hover {
+  background-color: #e4e4e4;
+}
+.wrMainLeftPaneExpandButton:active {
+  background-color: #d4d4d4;
+}
+.wrMainDataFieldsContainer {
+  overflow: hidden;
+}
+.wrMainLeftPaneDataFieldsCtrl {
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background: #ffffff;
+}
+.wrMainLeftPaneDataFieldsCtrl .wrTrHeader {
+  top: 70px;
+}
+.wrMainLeftPaneDataFieldsCtrl .wrTrHeader.wrNestedDataFieldsTreeHeaderNoSearch {
+  top: 40px;
+}
+.wrMainDataFieldsContainer[data-hasmessage] > .wrMainLeftPaneDataFieldsCtrl {
+  top: 68px;
+}
+.wrMainLeftPaneDataFieldsCaption {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  border-radius: 3px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DataFieldsReadOnly.svg");
+  background-size: 36px 36px;
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8b8b8b;
+  padding: 10px;
+  padding-right: 50px;
+}
+.wrNoSVG .wrMainLeftPaneDataFieldsCaption {
+  background-image: url("../#ApplicationThemeFolder#/Images/DataFieldsReadOnly.png");
+}
+.wrMainLeftPaneDataFieldsStrong {
+  font-weight: bold;
+}
+.wrPrimaryStrongText {
+  font-weight: bold;
+  color: #777777;
+}
+.wrPrimaryItalicText {
+  font-weight: normal;
+  font-style: italic;
+  color: #6896ed;
+}
+.wrModernTextInput {
+  width: calc(100% - 14px);
+  padding: 6px;
+  border-radius: 3px;
+  cursor: text;
+  transition: border-color 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrModernTextInput:hover {
+  border-color: #c5c5c5;
+}
+.wrModernTextInput:focus {
+  border-color: #666666;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeSQL
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#D4D4D4" points="1 0 7 0 10 3 10 11 1 11"/>
+    <polygon fill="#FFFFFF" points="7 1.5 8.5 3 7 3"/>
+    <polygon fill="#FFFFFF" points="2 1 6 1 6 4 9 4 9 10 2 10"/>
+    <path fill="#808080" d="M10 6v4h2v1H9V6h1zM5 6h3v5H7v1H6v-1H5V6zm1 1h1v3H6V7zM1 6h3v5H1V6zm1 1h2v1H2V7zM1 9h2v1H1V9z"/>
+  </g>
+</svg>

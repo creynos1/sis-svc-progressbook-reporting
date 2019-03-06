@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    Download
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <rect width="10" height="2" x="1" y="9" fill="#777777" rx="1"/>
+    <path fill="#777777" d="M5 3V1a1 1 0 1 1 2 0v2h1.96a.5.5 0 0 1 .39.812l-2.96 3.7a.5.5 0 0 1-.78 0l-2.96-3.7A.5.5 0 0 1 3.04 3H5z"/>
+  </g>
+</svg>

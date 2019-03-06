@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    CollapseNode
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <path fill="#777777" fill-rule="nonzero" d="M3.126 3c-1.102 0-1.455.717-.79 1.598l3.067 4.074c.33.438.866.436 1.195 0l3.068-4.074C10.33 3.715 9.97 3 8.876 3h-5.75z"/>
+  </g>
+</svg>

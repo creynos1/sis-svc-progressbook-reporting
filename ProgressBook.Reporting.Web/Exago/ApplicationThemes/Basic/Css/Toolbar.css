@@ -1,0 +1,160 @@
+.wrTbContainer {
+  /* needed for overflow, and so that container doesn't grow taller if now enough width to container container */
+  position: relative;
+  cursor: default;
+  overflow: auto;
+}
+.wrWidgetTbImg {
+  height: 16px;
+  width: 16px;
+}
+.wrTbUnderlineDD {
+  height: 18px;
+  width: 10px;
+  display: inline-block;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DropDownArrow.svg");
+  background-size: 9px 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: -4px;
+  top: 2px;
+}
+.wrNoSVG .wrTbUnderlineDD {
+  background-image: url("../#ApplicationThemeFolder#/Images/DropDownArrow.png");
+}
+.wrTbImg {
+  border: solid 1px transparent;
+  cursor: pointer;
+  vertical-align: top;
+  position: relative;
+}
+.wrTbImg.disabled {
+  cursor: default;
+  vertical-align: top;
+  position: relative;
+}
+.wrTbImg:focus {
+  border: solid 1px #666666;
+}
+.wrTbImg2 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.wrTbImg:hover {
+  background-color: #eeeeee;
+}
+.wrTbImg.disabled:hover {
+  background-color: transparent;
+  border: solid 1px transparent;
+}
+.wrTbImg:active {
+  background: #D8D8D8;
+  border: solid 1px #989898;
+  box-shadow: 0 0 1px 0 #595959 inset;
+}
+.wrTbImg.disabled:active {
+  background: none;
+  border: solid 1px transparent;
+  box-shadow: none;
+}
+/* Needed to style the upload image button since it cannot receive the CSS hover event */
+/*.wrTbImg */
+.hover {
+  background: #eeeeee;
+}
+/*.wrTbImg */
+.active {
+  background: #D8D8D8;
+  border: solid 1px #989898;
+  box-shadow: 0 0 1px 0 #595959 inset;
+}
+.wrTbImgDropDown {
+  height: 25px;
+  width: 10px;
+}
+.wrTbImgDropDownSmall {
+  height: 16px;
+  width: 9px;
+}
+.wrTbImgSel {
+  border: solid 1px #aeaeae;
+  background-color: #EEEEEE;
+}
+.wrTbImgSel:hover {
+  border: solid 1px #8198ba;
+}
+.wrTbImgSel.wrImageOnlyButton {
+  border: none;
+  background-color: transparent;
+}
+.wrTbImgSel.wrImageOnlyButton:hover {
+  border: none;
+}
+.wrTbSection {
+  float: left;
+  border-right: solid 1px #d7d7d7;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: default;
+  margin-right: 5px;
+}
+.wrTbSection:last-child {
+  margin-right: 0;
+  border-right: none;
+}
+.wrTbSectionLine {
+  position: relative;
+}
+.wrTbGroupSpacer {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  height: 9px;
+  width: 1px;
+  background-color: #000000;
+  border-left: solid 1px #d7d7d7;
+  border-right: solid 1px #d7d7d7;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+/* v2016.1-style buttons */
+.wrImageOnlyButton {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+[disabled].wrImageOnlyButton,
+[data-disabled].wrImageOnlyButton,
+.disabled.wrImageOnlyButton {
+  cursor: default;
+}
+.wrMainLeftPaneToolbar .wrImageOnlyButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wrMainLeftPaneToolbar .wrImageOnlyButton[data-selected]:hover,
+.wrMainLeftPaneToolbar .wrImageOnlyButton[data-disabled]:hover {
+  background-color: transparent;
+}
+.wrImageOnlyButton:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+[disabled].wrImageOnlyButton:active,
+[data-disabled].wrImageOnlyButton:active,
+.disabled.wrImageOnlyButton:active {
+  background-color: transparent;
+}
+.wrTextOnlyButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+}
+.wrTextOnlyButton:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrTextOnlyButton.disabled:active {
+  background-color: transparent;
+}
