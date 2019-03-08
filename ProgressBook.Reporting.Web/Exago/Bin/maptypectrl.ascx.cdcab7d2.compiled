@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MapTypeCtrl.ascx" hash="d4fa39267" filehash="cded71d1ce68505e" flags="110000" assembly="WebReportsUI" type="ASP.maptypectrl_ascx">
+  <filedeps>
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/ColorThemeChooserCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/MapTypeCtrl.ascx" />
+    <filedep name="/ModernColorChooser.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

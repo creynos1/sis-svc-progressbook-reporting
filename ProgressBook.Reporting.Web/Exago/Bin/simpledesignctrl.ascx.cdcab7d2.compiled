@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SimpleDesignCtrl.ascx" hash="d4fa39267" filehash="8882552f3b30ce76" flags="110000" assembly="WebReportsUI" type="ASP.simpledesignctrl_ascx">
+  <filedeps>
+    <filedep name="/ColorChooserCtrl.ascx" />
+    <filedep name="/CrossTabDesignCtrl.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/EditCtrl.ascx" />
+    <filedep name="/ExportSelectCtrl.ascx" />
+    <filedep name="/FileUploadCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/ListContentCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportCategoriesCtrl.ascx" />
+    <filedep name="/ReportCategoriesGridCtrl.ascx" />
+    <filedep name="/ReportCategoriesTreeCtrl.ascx" />
+    <filedep name="/ReportDescriptionCtrl.ascx" />
+    <filedep name="/ReportFiltersEditCtrl.ascx" />
+    <filedep name="/ReportFiltersStandardTabCtrl.ascx" />
+    <filedep name="/ReportNameCtrl.ascx" />
+    <filedep name="/ReportsCtrl.ascx" />
+    <filedep name="/ReportSortsCtrl.ascx" />
+    <filedep name="/SimpleCategoriesCtrl.ascx" />
+    <filedep name="/SimpleDesignCtrl.ascx" />
+    <filedep name="/SimpleDesignToolbarCtrl.ascx" />
+    <filedep name="/SimpleFiltersCtrl.ascx" />
+    <filedep name="/SimpleInfoCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedGroupItemCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPageFooterItemCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPageHeaderItemCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPreviewCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedToolbarCtrl.ascx" />
+    <filedep name="/SimpleLayoutCrossTabCtrl.ascx" />
+    <filedep name="/SimpleLayoutCtrl.ascx" />
+    <filedep name="/SimpleOptionsCtrl.ascx" />
+    <filedep name="/SimpleSortsCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

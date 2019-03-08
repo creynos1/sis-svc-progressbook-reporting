@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportDebugPackageCtrl.ascx" hash="d4fa39267" filehash="1dd5c8a3dd8b" flags="110000" assembly="WebReportsUI" type="ASP.reportdebugpackagectrl_ascx">
+  <filedeps>
+    <filedep name="/ReportDebugPackageCtrl.ascx" />
+  </filedeps>
+</preserve>

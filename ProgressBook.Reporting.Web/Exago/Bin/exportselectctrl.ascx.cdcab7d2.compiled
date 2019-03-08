@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ExportSelectCtrl.ascx" hash="d4fa39267" filehash="e53405bfdf12d115" flags="110000" assembly="WebReportsUI" type="ASP.exportselectctrl_ascx">
+  <filedeps>
+    <filedep name="/ExportSelectCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+  </filedeps>
+</preserve>

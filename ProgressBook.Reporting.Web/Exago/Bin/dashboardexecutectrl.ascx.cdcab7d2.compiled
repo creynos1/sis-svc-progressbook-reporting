@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DashboardExecuteCtrl.ascx" hash="d4fa39267" filehash="2ada21d90ec8875d" flags="110000" assembly="WebReportsUI" type="ASP.dashboardexecutectrl_ascx">
+  <filedeps>
+    <filedep name="/CustomCheckboxCtrl.ascx" />
+    <filedep name="/DashboardDesignCtrl.ascx" />
+    <filedep name="/DashboardExecuteCtrl.ascx" />
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/EditCtrl.ascx" />
+    <filedep name="/ExportSelectCtrl.ascx" />
+    <filedep name="/ExpressViewExportSettingsCtrl.ascx" />
+    <filedep name="/ExpressViewReportInfoCtrl.ascx" />
+    <filedep name="/ExpressViewVizMenuCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/ModernColorChooser.ascx" />
+    <filedep name="/NestedDataFieldsCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportFiltersEditCtrl.ascx" />
+    <filedep name="/ReportsCtrl.ascx" />
+    <filedep name="/SearchableDropDownCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+    <filedep name="/VerticalTabCtrl.ascx" />
+  </filedeps>
+</preserve>

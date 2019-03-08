@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportEventCtrl.ascx" hash="d4fa39267" filehash="f9b3f2bc811f72a3" flags="110000" assembly="WebReportsUI" type="ASP.reporteventctrl_ascx">
+  <filedeps>
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/ReportEventCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChainedReportsCtrl.ascx" hash="d4fa39267" filehash="1bfb4acc5cd6e569" flags="110000" assembly="WebReportsUI" type="ASP.chainedreportsctrl_ascx">
+  <filedeps>
+    <filedep name="/ChainedReportsCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportsCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

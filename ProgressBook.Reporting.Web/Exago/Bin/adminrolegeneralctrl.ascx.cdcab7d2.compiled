@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminRoleGeneralCtrl.ascx" hash="d4fa39267" filehash="e9122b85240c7259" flags="110000" assembly="WebReportsUI" type="ASP.adminrolegeneralctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCheckableTextInputCtrl.ascx" />
+    <filedep name="/AdminRoleGeneralCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/AdminWrappedPasswordCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

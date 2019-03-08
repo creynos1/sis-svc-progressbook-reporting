@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/LinkedActionCtrl.ascx" hash="d4fa39267" filehash="f9b3db09a5cd2cf3" flags="110000" assembly="WebReportsUI" type="ASP.linkedactionctrl_ascx">
+  <filedeps>
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/LinkedActionCtrl.ascx" />
+  </filedeps>
+</preserve>

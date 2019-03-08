@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GoogleMapCtrl.ascx" hash="d4fa39267" filehash="6623d41610a7d562" flags="110000" assembly="WebReportsUI" type="ASP.googlemapctrl_ascx">
+  <filedeps>
+    <filedep name="/ColorThemeChooserCtrl.ascx" />
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/GoogleMapAppearanceCtrl.ascx" />
+    <filedep name="/GoogleMapCtrl.ascx" />
+    <filedep name="/GoogleMapDataCtrl.ascx" />
+    <filedep name="/GoogleMapLocationGridCtrl.ascx" />
+    <filedep name="/GoogleMapLocationsCtrl.ascx" />
+    <filedep name="/GoogleMapSizeAndPreviewCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/ModernColorChooser.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+    <filedep name="/WidgetPreviewCtrl.ascx" />
+  </filedeps>
+</preserve>

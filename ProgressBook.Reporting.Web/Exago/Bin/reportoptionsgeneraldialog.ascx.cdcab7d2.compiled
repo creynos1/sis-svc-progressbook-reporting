@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportOptionsGeneralDialog.ascx" hash="d4fa39267" filehash="a63fe268e4131132" flags="110000" assembly="WebReportsUI" type="ASP.reportoptionsgeneraldialog_ascx">
+  <filedeps>
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/ReportOptionsGeneralDialog.ascx" />
+  </filedeps>
+</preserve>

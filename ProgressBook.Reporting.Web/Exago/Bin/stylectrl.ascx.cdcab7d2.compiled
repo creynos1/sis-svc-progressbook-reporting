@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/StyleCtrl.ascx" hash="d4fa39267" filehash="2d7769376e19a8ed" flags="110000" assembly="WebReportsUI" type="ASP.stylectrl_ascx">
+  <filedeps>
+    <filedep name="/ColorChooserCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/ModernColorChooser.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/StyleCtrl.ascx" />
+  </filedeps>
+</preserve>

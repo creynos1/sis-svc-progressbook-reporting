@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/WebReportsCtrl.ascx" hash="d4fa39267" filehash="d2622bdf3943b674" flags="110000" assembly="WebReportsUI" type="ASP.webreportsctrl_ascx">
+  <filedeps>
+    <filedep name="/ExportSelectCtrl.ascx" />
+    <filedep name="/FileUploadCtrl.ascx" />
+    <filedep name="/GettingStartedCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportsCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+    <filedep name="/WebReportsCtrl.ascx" />
+  </filedeps>
+</preserve>

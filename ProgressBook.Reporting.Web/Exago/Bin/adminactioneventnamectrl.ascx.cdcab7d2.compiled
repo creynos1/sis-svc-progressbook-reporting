@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminActionEventNameCtrl.ascx" hash="d4fa39267" filehash="7026df30bd893d8c" flags="110000" assembly="WebReportsUI" type="ASP.adminactioneventnamectrl_ascx">
+  <filedeps>
+    <filedep name="/AdminActionEventNameCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

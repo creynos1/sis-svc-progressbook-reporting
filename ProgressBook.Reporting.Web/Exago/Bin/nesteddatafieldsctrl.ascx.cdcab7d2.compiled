@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/NestedDataFieldsCtrl.ascx" hash="d4fa39267" filehash="c6041873e12eb4e7" flags="110000" assembly="WebReportsUI" type="ASP.nesteddatafieldsctrl_ascx">
+  <filedeps>
+    <filedep name="/NestedDataFieldsCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

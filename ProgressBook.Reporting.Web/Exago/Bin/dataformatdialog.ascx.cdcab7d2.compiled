@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DataFormatDialog.ascx" hash="d4fa39267" filehash="b6007cbf2bbdab0f" flags="110000" assembly="WebReportsUI" type="ASP.dataformatdialog_ascx">
+  <filedeps>
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/DataFormatCtrl.ascx" />
+    <filedep name="/DataFormatDialog.ascx" />
+    <filedep name="/ListContentCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

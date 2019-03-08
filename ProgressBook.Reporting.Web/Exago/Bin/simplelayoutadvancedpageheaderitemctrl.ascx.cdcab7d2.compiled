@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SimpleLayoutAdvancedPageHeaderItemCtrl.ascx" hash="d4fa39267" filehash="154eaf107e608a5d" flags="110000" assembly="WebReportsUI" type="ASP.simplelayoutadvancedpageheaderitemctrl_ascx">
+  <filedeps>
+    <filedep name="/FileUploadCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPageHeaderItemCtrl.ascx" />
+  </filedeps>
+</preserve>

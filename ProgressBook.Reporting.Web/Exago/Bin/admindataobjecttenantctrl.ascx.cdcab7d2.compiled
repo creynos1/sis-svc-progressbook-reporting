@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminDataObjectTenantCtrl.ascx" hash="d4fa39267" filehash="c005b5b71ca19b6c" flags="110000" assembly="WebReportsUI" type="ASP.admindataobjecttenantctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminDataObjectTenantCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

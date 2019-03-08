@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminRoleMainCtrl.ascx" hash="d4fa39267" filehash="856707cc62d1906c" flags="110000" assembly="WebReportsUI" type="ASP.adminrolemainctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminRoleMainCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminGeneralMasterCtrl.ascx" hash="d4fa39267" filehash="5eca438398203d5a" flags="110000" assembly="WebReportsUI" type="ASP.admingeneralmasterctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCheckableTextInputCtrl.ascx" />
+    <filedep name="/AdminGeneralCultureCtrl.ascx" />
+    <filedep name="/AdminGeneralDatabaseCtrl.ascx" />
+    <filedep name="/AdminGeneralFeatureCtrl.ascx" />
+    <filedep name="/AdminGeneralFilterCtrl.ascx" />
+    <filedep name="/AdminGeneralMainCtrl.ascx" />
+    <filedep name="/AdminGeneralMasterCtrl.ascx" />
+    <filedep name="/AdminGeneralOtherCtrl.ascx" />
+    <filedep name="/AdminGeneralProgrammableObjectCtrl.ascx" />
+    <filedep name="/AdminGeneralRemoteExecutionCtrl.ascx" />
+    <filedep name="/AdminGeneralUserCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/AdminWrappedPasswordCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

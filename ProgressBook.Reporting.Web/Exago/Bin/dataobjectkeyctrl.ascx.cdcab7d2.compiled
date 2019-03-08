@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DataObjectKeyCtrl.ascx" hash="d4fa39267" filehash="f0c944004b18feed" flags="110000" assembly="WebReportsUI" type="ASP.dataobjectkeyctrl_ascx">
+  <filedeps>
+    <filedep name="/DataObjectKeyCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

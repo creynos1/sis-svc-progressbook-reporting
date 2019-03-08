@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GoogleMapDataCtrl.ascx" hash="d4fa39267" filehash="d36f89a769531439" flags="110000" assembly="WebReportsUI" type="ASP.googlemapdatactrl_ascx">
+  <filedeps>
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/GoogleMapDataCtrl.ascx" />
+  </filedeps>
+</preserve>

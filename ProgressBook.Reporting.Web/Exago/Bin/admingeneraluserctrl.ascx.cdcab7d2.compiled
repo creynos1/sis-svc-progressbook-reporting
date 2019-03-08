@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminGeneralUserCtrl.ascx" hash="d4fa39267" filehash="f631e7db9227a878" flags="110000" assembly="WebReportsUI" type="ASP.admingeneraluserctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminGeneralUserCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

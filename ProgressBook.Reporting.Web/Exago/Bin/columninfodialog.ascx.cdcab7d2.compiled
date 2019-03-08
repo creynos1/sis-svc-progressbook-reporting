@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ColumnInfoDialog.ascx" hash="d4fa39267" filehash="cbc29d51eba1d57d" flags="110000" assembly="WebReportsUI" type="ASP.columninfodialog_ascx">
+  <filedeps>
+    <filedep name="/ColumnInfoDialog.ascx" />
+    <filedep name="/ColumnSelectCtrl.ascx" />
+  </filedeps>
+</preserve>

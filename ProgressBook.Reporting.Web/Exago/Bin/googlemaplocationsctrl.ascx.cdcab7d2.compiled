@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GoogleMapLocationsCtrl.ascx" hash="d4fa39267" filehash="ecadb480c67cee2b" flags="110000" assembly="WebReportsUI" type="ASP.googlemaplocationsctrl_ascx">
+  <filedeps>
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/GoogleMapLocationGridCtrl.ascx" />
+    <filedep name="/GoogleMapLocationsCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

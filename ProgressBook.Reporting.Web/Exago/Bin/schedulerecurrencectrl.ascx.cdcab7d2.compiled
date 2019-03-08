@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ScheduleRecurrenceCtrl.ascx" hash="d4fa39267" filehash="271124c22666f8ed" flags="110000" assembly="WebReportsUI" type="ASP.schedulerecurrencectrl_ascx">
+  <filedeps>
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/ScheduleRecurrenceCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/RowHeightDialog.ascx" hash="d4fa39267" filehash="59c00098354584a5" flags="110000" assembly="WebReportsUI" type="ASP.rowheightdialog_ascx">
+  <filedeps>
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/RowHeightDialog.ascx" />
+  </filedeps>
+</preserve>

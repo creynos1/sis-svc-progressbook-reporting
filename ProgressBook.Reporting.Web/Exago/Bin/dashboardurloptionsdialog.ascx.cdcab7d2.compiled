@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DashboardUrlOptionsDialog.ascx" hash="d4fa39267" filehash="ffffe6343c5c96cb" flags="110000" assembly="WebReportsUI" type="ASP.dashboardurloptionsdialog_ascx">
+  <filedeps>
+    <filedep name="/DashboardUrlOptionsDialog.ascx" />
+  </filedeps>
+</preserve>

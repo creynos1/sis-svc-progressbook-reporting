@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CrossTabDesignCtrl.ascx" hash="d4fa39267" filehash="342004e382d5b4ca" flags="110000" assembly="WebReportsUI" type="ASP.crosstabdesignctrl_ascx">
+  <filedeps>
+    <filedep name="/CrossTabDesignCtrl.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>
