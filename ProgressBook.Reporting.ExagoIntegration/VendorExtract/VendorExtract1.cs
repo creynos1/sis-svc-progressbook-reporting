@@ -9,7 +9,7 @@
 // The following connection settings were used to generate this file:
 //     Configuration file:     "ProgressBook.Reporting.Web\Web.config"
 //     Connection String Name: "StudentInformation"
-//     Connection String:      "Data Source=SAPC052;Initial Catalog=DASL_HTFX;User Id=dasldev;password=**zapped**;"
+//     Connection String:      "Data Source=SAPC042;Initial Catalog=MAJR;User Id=pbadmin;password=**zapped**;"
 // ------------------------------------------------------------------------------------------------
 // Database Edition       : Developer Edition (64-bit)
 // Database Engine Edition: Enterprise
@@ -166,10 +166,15 @@ namespace ProgressBook.Reporting.ExagoIntegration.VendorExtract
 
         public User()
         {
+            UserId = System.Guid.NewGuid();
             IsGroup = false;
             IsPrivileged = false;
             IsSecurityFaulted = false;
             LegalNotice = false;
+            MasterRoles = 1;
+            IsFixed = 0;
+            IsActive = true;
+            DateModified = System.DateTime.Now;
             IsEnabled = true;
             IsSessionReuseEnabled = false;
             UserTypeId = 1;

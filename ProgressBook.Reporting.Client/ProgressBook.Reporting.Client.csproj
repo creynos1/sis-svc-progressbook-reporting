@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProgressBook.Reporting.Client</RootNamespace>
     <AssemblyName>ProgressBook.Reporting.Client</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -64,20 +64,23 @@
       <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pipelines.Sockets.Unofficial.1.0.9\lib\net472\Pipelines.Sockets.Unofficial.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Shared.Cache.Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Cache.Redis.1.0.0.18\lib\net471\ProgressBook.Shared.Cache.Redis.dll</HintPath>
+      <HintPath>..\packages\ProgressBook.Shared.Cache.Redis.1.0.0.19\lib\net472\ProgressBook.Shared.Cache.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security, Version=0.1.1.23, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.1.1.23-pre\lib\net471\ProgressBook.Shared.Security.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security, Version=0.2.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.7\lib\net472\ProgressBook.Shared.Security.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security.Data, Version=0.1.1.23, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.1.1.23-pre\lib\net471\ProgressBook.Shared.Security.Data.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security.Data, Version=0.2.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.7\lib\net472\ProgressBook.Shared.Security.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security.Infrastructure, Version=0.1.1.23, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.1.1.23-pre\lib\net471\ProgressBook.Shared.Security.Infrastructure.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security.Infrastructure, Version=0.2.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.7\lib\net472\ProgressBook.Shared.Security.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Shared.Utilities, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Utilities.1.1.0.0\lib\net452\ProgressBook.Shared.Utilities.dll</HintPath>
@@ -90,37 +93,66 @@
     <Reference Include="ProgressBook.Shared.Utilities.Logging, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Utilities.Logging.1.0.0.1\lib\net452\ProgressBook.Shared.Utilities.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Security.Data.CentralAdmin, Version=0.1.1.23, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.1.1.23-pre\lib\net471\Security.Data.CentralAdmin.dll</HintPath>
+    <Reference Include="Security.Data.CentralAdmin, Version=0.2.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.7\lib\net472\Security.Data.CentralAdmin.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.Common.Lite, Version=18.3.0.16, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Framework.Common.Lite.18.3.0.16\lib\net471\SoftwareAnswers.Common.Lite.dll</HintPath>
+    <Reference Include="SoftwareAnswers.Common.Lite, Version=19.0.0.94, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Client.CentralAdmin.19.0.0.94\lib\net472\SoftwareAnswers.Common.Lite.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.CentralAdmin.Models, Version=18.3.0.16, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Client.CentralAdmin.18.3.0.16\lib\net471\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.CentralAdmin.Models, Version=19.0.0.94, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Client.CentralAdmin.19.0.0.94\lib\net472\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Client, Version=18.3.0.16, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Client.18.3.0.16\lib\net471\SoftwareAnswers.ProgressBook.IdentityServer.Client.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Client, Version=19.0.0.94, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Client.19.0.0.94\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Client.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Client.CentralAdmin, Version=18.3.0.16, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Client.CentralAdmin.18.3.0.16\lib\net471\SoftwareAnswers.ProgressBook.IdentityServer.Client.CentralAdmin.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Client.CentralAdmin, Version=19.0.0.94, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Client.CentralAdmin.19.0.0.94\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Client.CentralAdmin.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=18.3.0.16, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Client.18.3.0.16\lib\net471\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.0.0.94, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Shared.19.0.0.94\lib\netstandard2.0\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
     </Reference>
-    <Reference Include="StackExchange.Redis, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StackExchange.Redis.1.2.6\lib\net46\StackExchange.Redis.dll</HintPath>
+    <Reference Include="StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.2.0.519\lib\net472\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    <Reference Include="System.Diagnostics.PerformanceCounter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.PerformanceCounter.4.5.0\lib\net461\System.Diagnostics.PerformanceCounter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.4.5.3\lib\netstandard2.0\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Threading.Channels, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.4.5.0\lib\netstandard2.0\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -128,9 +160,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.4.36.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.4.36\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.8.21.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.8.21\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

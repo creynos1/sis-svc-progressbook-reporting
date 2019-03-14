@@ -9,7 +9,7 @@
 // The following connection settings were used to generate this file:
 //     Configuration file:     "ProgressBook.Reporting.Web\Web.config"
 //     Connection String Name: "StudentInformation"
-//     Connection String:      "Data Source=SAPC052;Initial Catalog=DASL_HTFX;User Id=dasldev;password=**zapped**;"
+//     Connection String:      "Data Source=SAPC042;Initial Catalog=MAJR;User Id=pbadmin;password=**zapped**;"
 // ------------------------------------------------------------------------------------------------
 // Database Edition       : Developer Edition (64-bit)
 // Database Engine Edition: Enterprise
@@ -134,6 +134,8 @@ namespace ProgressBook.Reporting.Client.Data
         public string Name { get; set; } // Name (length: 255)
         public System.Guid? DistrictId { get; set; } // DistrictId
         public System.Guid? UserId { get; set; } // UserId
+        public bool? NestedPath { get; set; } // NestedPath
+        public bool? NestedDisplay { get; set; } // NestedDisplay
         public int IsSystemLevel { get; set; } // IsSystemLevel
         public int IsDistrictLevel { get; set; } // IsDistrictLevel
         public int IsUserLevel { get; set; } // IsUserLevel
@@ -181,6 +183,8 @@ namespace ProgressBook.Reporting.Client.Data
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("varchar").IsOptional().IsUnicode(false).HasMaxLength(255);
             Property(x => x.DistrictId).HasColumnName(@"DistrictId").HasColumnType("uniqueidentifier").IsOptional();
             Property(x => x.UserId).HasColumnName(@"UserId").HasColumnType("uniqueidentifier").IsOptional();
+            Property(x => x.NestedPath).HasColumnName(@"NestedPath").HasColumnType("bit").IsOptional();
+            Property(x => x.NestedDisplay).HasColumnName(@"NestedDisplay").HasColumnType("bit").IsOptional();
             Property(x => x.IsSystemLevel).HasColumnName(@"IsSystemLevel").HasColumnType("int").IsRequired();
             Property(x => x.IsDistrictLevel).HasColumnName(@"IsDistrictLevel").HasColumnType("int").IsRequired();
             Property(x => x.IsUserLevel).HasColumnName(@"IsUserLevel").HasColumnType("int").IsRequired();
