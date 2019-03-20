@@ -16,11 +16,13 @@ namespace ProgressBook.Reporting.Client.Tests
         [Fact]
         public async void GetReportAsFile_DownloadPDF()
         {
-            using (var reportingClient = new ReportingClient(new SharedSingleTokenMessageHandler(new TokenMessageHandlerOptions
-            {
-                ClientIdentifier = "ProgressBook.ReportingClient",
-                Scopes = "reporting"
-            })))
+            using (var reportingClient = new ReportingClient(
+                new SharedSingleTokenMessageHandler(new TokenMessageHandlerOptions
+                {
+                    ClientIdentifier = "ProgressBook.ReportingClient",
+                    Scopes = "reporting"
+                })
+                ))
             {
                 var parameters = new Dictionary<string, string>();
                 parameters.Add("StartDate", "04/17/2017");

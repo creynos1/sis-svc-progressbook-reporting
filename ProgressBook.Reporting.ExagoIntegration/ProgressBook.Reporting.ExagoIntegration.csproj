@@ -51,11 +51,11 @@
     <Reference Include="Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2, processorArchitecture=MSIL">
       <HintPath>..\packages\Pipelines.Sockets.Unofficial.1.0.9\lib\net472\Pipelines.Sockets.Unofficial.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Master.Connections, Version=18.0.0.48, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Master.Connections.18.0.0.48\lib\net471\ProgressBook.Master.Connections.dll</HintPath>
+    <Reference Include="ProgressBook.Master.Connections, Version=18.9.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Master.Connections.18.9.0.14\lib\net471\ProgressBook.Master.Connections.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Master.Data, Version=18.0.0.48, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Master.Data.18.0.0.48\lib\net471\ProgressBook.Master.Data.dll</HintPath>
+    <Reference Include="ProgressBook.Master.Data, Version=18.9.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Master.Data.18.9.0.14\lib\net471\ProgressBook.Master.Data.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Shared.Cache.Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Cache.Redis.1.0.0.19\lib\net472\ProgressBook.Shared.Cache.Redis.dll</HintPath>
@@ -80,8 +80,8 @@
     <Reference Include="Security.Data.CentralAdmin, Version=0.2.0.7, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.7\lib\net472\Security.Data.CentralAdmin.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.0.0.94, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Shared.19.0.0.94\lib\netstandard2.0\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Shared.19.0.0.95\lib\netstandard2.0\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
       <HintPath>..\packages\StackExchange.Redis.2.0.519\lib\net472\StackExchange.Redis.dll</HintPath>

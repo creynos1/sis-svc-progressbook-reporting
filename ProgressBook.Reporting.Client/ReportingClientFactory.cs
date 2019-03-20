@@ -10,23 +10,23 @@ namespace ProgressBook.Reporting.Client
 {
     public interface IReportingClientFactory
     {
-        IReportingClient CreateReportingClientWithTokenMessageHandler(TokenMessageHandlerBase handler);
-        IReportingClient CreateReportingClientUserSessionMessageHandler();
+        IReportingClient CreateReportingClientWithTokenMessageHandler(CurrentUserSubjectTokenMessageHandler handler);
+        IReportingClient CreateReportingClientUserTokenMessageHandler();
     }
 
     public class ReportingClientFactory : IReportingClientFactory
     {
         public static readonly ReportingClientFactory Instance = new ReportingClientFactory();
 
-        public IReportingClient CreateReportingClientWithTokenMessageHandler(TokenMessageHandlerBase handler)
+        public IReportingClient CreateReportingClientWithTokenMessageHandler(CurrentUserSubjectTokenMessageHandler handler)
         {
             return new ReportingClient(handler);
         }
 
-        public IReportingClient CreateReportingClientUserSessionMessageHandler()
+        public IReportingClient CreateReportingClientUserTokenMessageHandler()
         {
             return new ReportingClient(
-                new UserSessionTokenMessageHandler(new TokenMessageHandlerOptions
+                new CurrentUserSubjectTokenMessageHandler(new CurrentUserSubjectTokenMessageHandlerOptions
                 {
                     ClientIdentifier = "ProgressBook.ReportingClient",
                     Scopes = "reporting"
