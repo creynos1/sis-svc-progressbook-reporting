@@ -202,8 +202,8 @@
     <Reference Include="ProgressBook.CentralAdmin.Security.DataProtection, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.CentralAdmin.Security.DataProtection.19.0.0.96\lib\net461\ProgressBook.CentralAdmin.Security.DataProtection.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Framework.Core, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Framework.Core.19.0.0.96\lib\netstandard2.0\ProgressBook.Framework.Core.dll</HintPath>
+    <Reference Include="ProgressBook.Framework.Core, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.0.0.95\lib\net472\ProgressBook.Framework.Core.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Infrastructure.Data, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Infrastructure.Data.1.0.7\lib\netstandard2.0\ProgressBook.Infrastructure.Data.dll</HintPath>
@@ -252,11 +252,11 @@
     <Reference Include="SoftwareAnswers.Common, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Framework.Common.19.0.0.95\lib\net472\SoftwareAnswers.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.Common.Lite, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Framework.Common.Lite.19.0.0.96\lib\netstandard2.0\SoftwareAnswers.Common.Lite.dll</HintPath>
+    <Reference Include="SoftwareAnswers.Common.Lite, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.0.0.95\lib\net472\SoftwareAnswers.Common.Lite.dll</HintPath>
     </Reference>
     <Reference Include="SoftwareAnswers.ProgressBook.CentralAdmin.Models, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.95\lib\net472\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
+      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.0.0.95\lib\net472\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
     </Reference>
     <Reference Include="SoftwareAnswers.ProgressBook.Framework, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.0.0.95\lib\net472\SoftwareAnswers.ProgressBook.Framework.dll</HintPath>
@@ -267,8 +267,8 @@
     <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Core, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.95\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Core.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Shared.19.0.0.96\lib\netstandard2.0\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.0.0.95, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.0.0.95\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
       <HintPath>..\packages\StackExchange.Redis.2.0.519\lib\net472\StackExchange.Redis.dll</HintPath>
