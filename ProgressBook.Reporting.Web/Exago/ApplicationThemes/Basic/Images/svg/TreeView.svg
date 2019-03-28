@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeView
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="#808080"/>
+    <rect width="10" height="8" x="1" y="3" fill="#FFFFFF"/>
+    <path fill="#808080" d="M2.016 6.917a.224.224 0 0 0 0 .166C2.714 8.806 4.233 10 5.996 10s3.283-1.194 3.98-2.917a.224.224 0 0 0 0-.166C9.28 5.194 7.76 4 5.997 4s-3.282 1.194-3.98 2.917z"/>
+    <path fill="#FFFFFF" d="M6 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+    <path fill="#808080" d="M6 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </g>
+</svg>

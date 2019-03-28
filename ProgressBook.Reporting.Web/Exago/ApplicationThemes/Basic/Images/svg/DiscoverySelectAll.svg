@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    DiscoverySelectAll
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="10" height="10" fill="#6896ED" fill-opacity=".5" rx="2"/>
+    <rect width="10" height="10" x="2" y="2" fill="#6896ED" rx="2"/>
+    <path fill="#FFFFFF" d="M5.44 6.822a.656.656 0 0 0-.879.015l-.371.356a.63.63 0 0 0-.034.866L5.708 9.82a.48.48 0 0 0 .766-.02l3.401-4.385a.596.596 0 0 0-.105-.835l-.6-.46a.57.57 0 0 0-.821.131L6.107 7.42l-.667-.597z"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+﻿<parameters>
+  <setParameter name="Application Path" value="__ApplicationPath__" />
+  <setParameter name="ProgressBook" value="__ProgressBook__" />
+  <setParameter name="StudentInformation" value="__StudentInformation__" />
+  <setParameter name="PbMasterContext" value="__PbMasterContext__" />
+  
+  <setParameter name="QuickReports" value="__QuickReports__" />
+  <setParameter name="DistrictTemplate" value="__DistrictTemplate__" />
+  
+  <setParameter name="SchedulerHost" value="__SchedulerHost__" />
+</parameters>

@@ -1,0 +1,5 @@
+﻿<ParameterExtensions xmlns="http://software-answers.com/ProgressBook/WebDeploy">
+
+  <ParameterExtension ParameterName="UploadEnabled"
+                      XslFile="1_0_1_UploadEnabled.xslt" />
+</ParameterExtensions>

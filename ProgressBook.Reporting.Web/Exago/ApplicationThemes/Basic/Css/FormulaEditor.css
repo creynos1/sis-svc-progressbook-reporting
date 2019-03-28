@@ -1,0 +1,446 @@
+.wrFormulaPopover {
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 325px;
+  border: 1px solid #6896ed;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+.wrFormulaPopover.wrFunctionDragHoverStyling .wrFormulaPopoverBody {
+  border: 2px solid #6896ed;
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.wrFormulaPopover.wrFunctionDragHoverStyling .wrFormulaPopoverBody .wrFormulaEditorEditModeTextArea,
+.wrFormulaPopover.wrFunctionDragHoverStyling .wrFormulaPopoverBody .CodeMirror {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.wrFormulaPopover .wrFormulaEditorArea {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+}
+.wrFormulaPopoverHeader {
+  position: relative;
+  height: 26px;
+  background-color: #6896ed;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 26px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(8, 27, 64, 0.2);
+  user-select: none;
+  border-radius: 2px;
+  border: 1px solid #6896ed;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrFormulaPopoverHeader > .wrExpressViewEditDetailHeaderInput {
+  margin-left: 0;
+  padding-left: 0;
+}
+.wrFormulaPopoverHeaderBtn {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+}
+.wrFormulaPopoverApplyBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormulaBuilderApply.svg");
+  background-size: 24px 24px;
+  right: 25px;
+}
+.wrNoSVG .wrFormulaPopoverApplyBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormulaBuilderApply.png");
+}
+.wrFormulaPopoverToolbarSeparator {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 14px;
+  position: absolute;
+  border-radius: 2px;
+  right: 24px;
+  top: 6px;
+}
+.wrFormulaPopoverCancelBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormulaBuilderCancel.svg");
+  background-size: 24px 24px;
+  right: 0;
+}
+.wrNoSVG .wrFormulaPopoverCancelBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormulaBuilderCancel.png");
+}
+.wrFormulaPopoverHeaderArrow {
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg);
+  background: #6896ed;
+  position: absolute;
+  top: 38px;
+  z-index: -1;
+}
+.wrFormulaPopoverHeaderArrow.wrFormulaPopoverArrowWhite {
+  background-color: #FFFFFF;
+  border: 1px solid #6896ed;
+}
+.wrFormulaPopoverTitleEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormulaBuilderEdit.svg");
+  background-size: 12px 12px;
+  height: 12px;
+  width: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .5;
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer;
+  margin-bottom: -1px;
+}
+.wrNoSVG .wrFormulaPopoverTitleEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormulaBuilderEdit.png");
+}
+.wrFormulaPopoverTitleEdit:hover {
+  opacity: .8;
+}
+.wrFormulaPopoverBody {
+  position: relative;
+  height: calc(100% - 32px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+  cursor: text;
+  border: 2px solid #FFFFFF;
+}
+.wrFormulaPopoverResizer {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #6896ED;
+  opacity: .5;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 2px;
+  bottom: -2px;
+  cursor: pointer;
+  cursor: nwse-resize;
+  z-index: 900;
+}
+.wrFormulaEditorFunctionTreeDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 85px;
+}
+.wrFormulaEditorInfoAreaDiv {
+  position: absolute;
+  left: 10px;
+  right: 5px;
+  height: 45px;
+  bottom: 5px;
+  border: solid 1px #e6e6e6;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrFormulaEditorInfoConditionalChartFormatAreaDiv {
+  left: 0px;
+  right: 0px;
+}
+.wrFormulaEditorInfoArea {
+  height: 100%;
+  width: 100%;
+  font-size: 8pt;
+  color: inherit;
+  border: none;
+  background-color: Transparent;
+  resize: none;
+  padding: 0px;
+}
+.wrFormulaEditorInfoArea:focus {
+  border: none;
+}
+.wrFormulaEditorInstructions {
+  white-space: normal;
+  margin-bottom: 10px;
+}
+.wrFormulaEditorEditModeTextArea {
+  font-family: courier;
+  height: 100%;
+  width: 100%;
+  font-size: 10pt;
+  color: inherit;
+  border-width: 0;
+  background-color: Transparent;
+  overflow: auto;
+}
+.wrSafari .wrFormulaEditorEditModeTextArea {
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.wrChrome .wrFormulaEditorEditModeTextArea {
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.wrFormulaEditorOpAddBtn {
+  margin-left: 5px;
+  margin-bottom: 55px;
+}
+.wrFormulaEditorSplitter {
+  position: relative;
+  font-family: Roboto, Arial, sans-serif;
+  flex-grow: 1;
+}
+.wrFormulaEditorSplitterNoInstructions {
+  top: 0;
+}
+.wrFormulaEditorArea {
+  background-color: transparent;
+  font-size: 10pt;
+  line-height: 20px;
+  position: relative;
+  margin-top: 16px;
+}
+.wrFormulaEditorAreaWithFullUI {
+  top: auto;
+  height: 100px;
+  border: solid 1px #d7d7d7;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: border-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrFormulaEditorAreaWithFullUI[data-focused],
+.wrFormulaEditorAreaWithFullUI:hover {
+  border-color: #999999;
+}
+.wrFormulaEditorAreaOnDragHover {
+  border-color: #6896ed;
+}
+.wrFormulaEditorCellValueBtn {
+  left: auto;
+  right: 0;
+}
+.wrFormulaCompletionListPopup {
+  position: fixed;
+  z-index: 900;
+  overflow: hidden;
+  top: 10px;
+  left: 10px;
+  background: #626262;
+  border-radius: 3px;
+  padding: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 500px;
+}
+.wrFormulaCompletionList {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  max-height: 238px;
+}
+.wrFormulaCompletionListItem {
+  color: #eeeeee;
+  font-style: italic;
+  font-family: RobotoMono, monospace;
+  font-size: 11px;
+  padding: 1px 4px;
+  cursor: pointer;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  padding-left: 18px;
+  background-size: 8px;
+  white-space: nowrap;
+}
+.wrFormulaCompletionListItemDate {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CompletionDate.svg");
+  background-size: 8px 8px;
+}
+.wrNoSVG .wrFormulaCompletionListItemDate {
+  background-image: url("../#ApplicationThemeFolder#/Images/CompletionDate.png");
+}
+.wrFormulaCompletionListItemText {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CompletionText.svg");
+  background-size: 8px 8px;
+}
+.wrNoSVG .wrFormulaCompletionListItemText {
+  background-image: url("../#ApplicationThemeFolder#/Images/CompletionText.png");
+}
+.wrFormulaCompletionListItemNumeric {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CompletionNumeric.svg");
+  background-size: 8px 8px;
+}
+.wrNoSVG .wrFormulaCompletionListItemNumeric {
+  background-image: url("../#ApplicationThemeFolder#/Images/CompletionNumeric.png");
+}
+.wrFormulaCompletionListItemOther {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CompletionOther.svg");
+  background-size: 8px 8px;
+}
+.wrNoSVG .wrFormulaCompletionListItemOther {
+  background-image: url("../#ApplicationThemeFolder#/Images/CompletionOther.png");
+}
+.wrFormulaCompletionListItemFunction {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CompletionFunction.svg");
+  background-size: 8px 8px;
+}
+.wrNoSVG .wrFormulaCompletionListItemFunction {
+  background-image: url("../#ApplicationThemeFolder#/Images/CompletionFunction.png");
+}
+.wrFormulaCompletionListItemParameter {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CompletionParameter.svg");
+  background-size: 8px 8px;
+}
+.wrNoSVG .wrFormulaCompletionListItemParameter {
+  background-image: url("../#ApplicationThemeFolder#/Images/CompletionParameter.png");
+}
+.wrFormulaCompletionListItem:hover {
+  background-color: #727272;
+}
+.wrFormulaCompletionListItem[data-selected] {
+  background-color: #6896ed;
+}
+.wrFormulaCompletionDetailPopup {
+  position: fixed;
+  z-index: 900;
+  border: 1px solid #6896ed;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.9);
+  min-width: 100px;
+  max-width: 394px;
+  color: #808080;
+  font-size: 11px;
+  font-style: italic;
+  font-family: Roboto;
+  padding: 4px;
+  line-height: 1.36em;
+}
+.wrFormulaCompletionDetailItemName {
+  font-weight: bold;
+  color: #6896ed;
+}
+.wrFormulaCompletionDetailSectionTitle {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 4px;
+}
+.wrFormulaCompletionDetailSectionContent {
+  font-style: italic;
+  margin-left: 8px;
+}
+.wrFormulaCompletionDetailExampleExplanation {
+  margin-top: 6px;
+}
+.wrFormulaCompletionMatchSubstring {
+  background-color: rgba(104, 150, 237, 0.4);
+  border-radius: 2px;
+  color: #ffffff;
+}
+.wrFormulaCompletionArgumentHelpPopup {
+  position: fixed;
+  z-index: 900;
+  border: 1px solid #6896ed;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.9);
+  min-width: 100px;
+  max-width: 500px;
+  color: #808080;
+  font-size: 11px;
+  font-style: italic;
+  font-family: Roboto;
+  padding: 4px;
+  padding-right: 6px;
+  line-height: 1.36em;
+}
+.wrFormulaCompletionArgumentHelpFunctionDescription {
+  margin-left: 4px;
+  margin-top: 2px;
+}
+.wrFormulaCompletionArgumentHelpArgumentDescription {
+  margin-top: 6px;
+}
+.wrFormulaCompletionDetailCurrentParameter {
+  font-weight: bold;
+}
+.wrFormulaCompletionListItemSubText {
+  font-size: .8em;
+  opacity: .8;
+}
+.wrFormulaEditorArgumentPlaceholder {
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  color: #b1b1b1;
+  font-style: italic;
+  padding: 0 9px;
+  position: relative;
+  top: 1px;
+  display: inline;
+  font-weight: normal;
+  font-size: 12px;
+  min-width: 85px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrFormulaEditorArgumentPlaceholder:hover {
+  border-color: #83a9ef;
+  color: #909090;
+}
+.wrFormulaEditorArgumentPlaceholder:active {
+  border-color: #336bd6;
+}
+.wrFormulaEditorArgumentPlaceholder.selected {
+  border-color: #336bd6;
+  color: white;
+  background: #83a9ef;
+}
+.wrFormulaEditorInsertionCaret {
+  position: absolute;
+  height: 20px;
+  z-index: 999;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrFormulaEditorInsertionCaretBottomArrow {
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+.wrFormulaEditorInsertionCaretTopArrow {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+}
+.wrFormulaEditorCtrlContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}

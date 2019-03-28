@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    GaugeTypeLinear
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#E85D61" d="M7 13h7v17H7a2 2 0 0 1-2-2V15a2 2 0 0 1 2-2z"/>
+    <rect width="8" height="17" x="14" y="13" fill="#E5D08F"/>
+    <path fill="#00D995" d="M22 13h11a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H22V13z"/>
+    <path fill="#666666" fill-rule="nonzero" d="M24.793 9.717l2.756 5.73a.5.5 0 0 0 .901 0l2.756-5.73a.5.5 0 0 0-.45-.717h-5.512a.5.5 0 0 0-.45.717z"/>
+  </g>
+</svg>

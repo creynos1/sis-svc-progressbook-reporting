@@ -1,0 +1,936 @@
+.wrAdminMainLeftPaneTop {
+  margin-top: 20px;
+  text-align: center;
+}
+.wrAdminMainLeftPane {
+  width: 270px;
+  padding: 0;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.wrAdminConfigFnDD {
+  position: relative;
+  width: 153px;
+  margin-bottom: 10px;
+}
+.wrAdminConfigOtherFnDD {
+  position: relative;
+  width: 100%;
+  font-size: 8pt;
+}
+.wrAdminMainCompanyLogo {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MainCompanyLogoAdmin.svg");
+  background-size: 160px 42px;
+  height: 42px;
+  width: 160px;
+}
+.wrNoSVG .wrAdminMainCompanyLogo {
+  background-image: url("../#ApplicationThemeFolder#/Images/MainCompanyLogoAdmin.png");
+}
+.wrAdminTreeContainer {
+  position: absolute;
+  top: 186px;
+  bottom: 12px;
+  left: 10px;
+  right: 10px;
+}
+.wrMainTrNd {
+  font-size: 10pt;
+}
+.wrMainAdminTbContainer {
+  height: 34px;
+  margin-top: 6px;
+  font-size: 0;
+}
+.wrMainAdminTbContainer .wrTbImg {
+  margin-right: 6px;
+}
+.wrMainAdminTbButton {
+  height: 26px;
+  width: 26px;
+  margin-right: 16px;
+}
+.wrMainAdminTbButton:last-child {
+  margin-right: 0;
+}
+.wrMainAdminTbButtonAdd {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminAdd.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonAdd {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminAdd.png");
+}
+.wrMainAdminTbButtonAdd:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminAddHover.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonAdd:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminAddHover.png");
+}
+.wrMainAdminTbButtonOpen {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminOpen.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonOpen {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminOpen.png");
+}
+.wrMainAdminTbButtonOpen:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminOpenHover.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonOpen:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminOpenHover.png");
+}
+.wrMainAdminTbButtonDelete {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminDelete.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonDelete {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminDelete.png");
+}
+.wrMainAdminTbButtonDelete:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminDeleteHover.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonDelete:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminDeleteHover.png");
+}
+.wrMainAdminTbButtonDiscovery {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminDiscoveryLarge.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonDiscovery {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminDiscoveryLarge.png");
+}
+.wrMainAdminTbButtonDiscovery:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AdminDiscoveryLargeHover.svg");
+  background-size: 26px 26px;
+}
+.wrNoSVG .wrMainAdminTbButtonDiscovery:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/AdminDiscoveryLargeHover.png");
+}
+.wrAdminItemCloseBtn,
+.wrAdminItemSaveBtn,
+.wrAdminTableItemCloseBtn {
+  border: solid 1px transparent;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  z-index: 2;
+  /* so he shows above the table */
+  cursor: pointer;
+}
+.wrAdminItemSaveBtn {
+  top: 4px;
+  right: 25px;
+  height: 12px;
+}
+.wrAdminTableItemCloseBtn {
+  right: 5px;
+  top: 3px;
+}
+.wrAdminMasterWrapper {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 40px;
+}
+.wrAdminObjectNameWrapper {
+  width: 200px;
+}
+.wrAdminObjectMetadataStringWrapper {
+  position: absolute;
+}
+.wrAdminObjectMetadataImage {
+  float: right;
+  height: 14px;
+}
+.wrAdminObjectMetadataImageWrapper {
+  position: relative;
+}
+.wrAdminObjectTreeContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.wrAdminDiscoveryObjectResponseContainer {
+  flex-grow: 1;
+  position: relative;
+}
+.wrAdminDiscoveryBottomButtonbarDiv {
+  margin-bottom: 10px;
+}
+/*12/2014: The next two classes are based on wrDashboardNewInstructionsContainer and wrDashboardNewInstructionsLbl */
+.wrAdminDiscoveryObjectNewInstructionsContainer {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 75%;
+  height: 50%;
+  background-color: #ffffff;
+  opacity: .8;
+  z-index: 1;
+  display: table;
+}
+.wrAdminDiscoveryObjectTreeContainer {
+  flex-grow: 1;
+  z-index: 1;
+  position: relative;
+}
+.wrAdminDiscoveryObjectNewInstructionsLbl {
+  position: relative;
+  display: table-cell;
+  font-size: 10pt;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.wrAdminDiscoveryToolbarImgBtn {
+  margin-right: 10px;
+}
+.wrAdminDiscoveryResponseTitle {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16pt;
+}
+.wrAdminDiscoverySectionTitleLabel {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.wrAdminDiscoverySectionItem {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.wrColumnMetadataEditArea {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+  background-color: #ffffff;
+  height: 184px;
+}
+.wrColumnMetadataTreeDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 50px;
+}
+.wrColumnMetadataGridDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+  bottom: 185px;
+}
+.wrColumnMetadataCreateBtn {
+  position: absolute;
+  left: 70px;
+  bottom: 0;
+}
+.wrColumnMetadataReadSchemaBtn {
+  position: absolute;
+  right: 0;
+  bottom: 26px;
+}
+.wrColumnMetadataAddNewBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.wrColumnMetadataInput {
+  font-size: 8pt;
+  height: 12px;
+  display: block;
+  width: 200px;
+  padding-right: 16px;
+}
+.wrColumnMetadataCustomContainer {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.wrColumnMetadataAliasContainer {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.wrDialogContentRightTopColumn div {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.wrColumnMetadataDescriptionInputContainer {
+  position: relative;
+}
+.wrColumnMetadataSortAndGroupByValueContainer {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.wrColumnMetadataFormulaInputContainer {
+  position: relative;
+}
+.wrColumnMetadataFormulaButton {
+  height: 16px;
+  width: 16px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Formula.svg");
+  background-size: 16px 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wrNoSVG .wrColumnMetadataFormulaButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/Formula.png");
+}
+.wrColumnMetadataEditRightColumn {
+  overflow-y: auto;
+}
+.wrColumnMetadataSelect {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  height: 18px;
+  display: block;
+}
+.wrMetadataNewColumn {
+  width: 200px;
+}
+.wrColumnMetadataEditLabel {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+.wrAdminJoinNameLeftContainer,
+.wrAdminJoinNameRightContainer {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  bottom: 0px;
+  overflow: auto;
+}
+.wrAdminJoinNameLeftContainer {
+  left: 0;
+}
+.wrAdminJoinNameRightContainer {
+  right: 0;
+}
+.wrAdminJoinNameTreeContainer {
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrAdminJoinNameLabelContainer {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  font-size: 8pt;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.wrTableAddButton {
+  bottom: 5px;
+}
+.wrCustomSQLObjectCBContainer {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.wrConfigFNSelect {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  margin: 8px;
+  width: 200px;
+}
+.wrAdminObjectButton {
+  float: right;
+  margin: auto 5px;
+}
+.wrAdminMenuOkButton {
+  position: absolute;
+  /* left:0px; */
+  bottom: 0;
+}
+.wrAdminGridHeader {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  cursor: default;
+  border-top: solid 1px #FFFFFF;
+  border-bottom: solid 1px #000000;
+  border-left: solid 1px #FFFFFF;
+  border-right: solid 1px #000000;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.wrAdminHeaderRow,
+.wrAdminHeaderNoTableRow {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.wrAdminHeaderCell {
+  padding-left: 0;
+}
+.wrAdminHeaderRow:nth-child(n+2) .wrAdminHeaderCell {
+  display: inline-block;
+  padding-top: 2em;
+}
+.wrAdminHeaderNoTableRow {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.wrAdminTableCell .wrNumericEdit1 {
+  min-width: 118px;
+}
+.wrAdminRoleCell {
+  width: 15%;
+  text-align: center;
+}
+.wrAdminWrappedInputInnerDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 2px;
+  border: none;
+  /* right is set in the code-behind so that it can be changed for e.g. CheckableTextInputCtrl.  It defaults to 5PX */
+}
+.wrAdminWrappedPwdInnerDiv {
+  right: 5px;
+}
+.wrAdminContentTextArea {
+  width: 100%;
+  height: 100%;
+}
+.wrAdminCustomFunctionTextAreaInnerDiv {
+  position: absolute;
+  left: 0;
+  right: 2px;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+.wrAdminCustomFunctionTextAreaDiv {
+  position: absolute;
+  height: 100px;
+  bottom: 20px;
+  left: 75px;
+  right: 10px;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.wrAdminCustomFunctionTextArea {
+  width: 100%;
+  height: 100%;
+}
+.wrAdminCheckableTextInput {
+  width: calc(100% - 12px);
+  padding: 1px 17px 0 0;
+  display: inline;
+}
+.wrAdminOkBtnDiv {
+  flex-grow: 0;
+  flex-shrink: 0;
+  z-index: 1;
+  background: white;
+  box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+}
+.wrAdminOkBtn {
+  margin-left: 8px;
+}
+.wrAdminFullWidthDD {
+  min-width: 120px;
+}
+.AdminMasterOuter {
+  flex-grow: 1;
+  overflow: auto;
+}
+.AdminMasterInner {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 20px;
+}
+.AdminMasterOuter tr:not(.wrAdminGridHeader):not(.wrAdminHeaderRow):hover td:first-child {
+  background-color: #f4f4f4;
+}
+.AdminMasterOuter tr:not(.wrAdminGridHeader):not(.wrAdminHeaderRow):hover td.wrAdminRoleMainLeftCell:first-child {
+  background-color: transparent;
+}
+.wrAdminNameLbl,
+.wrAdminNameCtrl {
+  position: absolute;
+  top: 20px;
+}
+.wrAdminAbsoluteWrappedInputCtrl {
+  left: 0;
+  right: 0;
+}
+.wrAdminTypeLbl,
+.wrAdminTypeCtrl {
+  position: absolute;
+  top: 44px;
+}
+.wrAdminConnLbl,
+.wrAdminConnCtrl {
+  position: absolute;
+  top: 68px;
+}
+.wrAdminObjectContainerAndButtonWrapper {
+  position: relative;
+  height: 16px;
+}
+.wrAdminObjectContainerWrapper,
+.wrAdminObjectContainerWrapper2,
+.wrAdminObjectButtonWrapper,
+.wrAdminObjectContainerNoButtonWrapper,
+.wrAdminObjectButtonWrapper2,
+.wrAdminSourceDDWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.wrAdminSourceDDWrapper {
+  left: 0;
+}
+.wrAdminObjectContainerWrapper {
+  right: 20px;
+  left: 0;
+  top: -1px;
+}
+.wrAdminObjectContainerNoButtonWrapper {
+  right: 0;
+  left: 0;
+}
+.wrAdminTitleContainerAndFloaterWrapper {
+  position: relative;
+  height: 16px;
+}
+.wrAdminTitleFloater {
+  height: 14px;
+  float: right;
+  margin-left: 4px;
+}
+.wrAdminTitleFloater > img,
+.wrAdminTitleFloater > select {
+  vertical-align: middle;
+}
+.wrAdminTitleFloaterDD {
+  height: 16px;
+}
+.wrAdminObjectButtonWrapper {
+  right: 0;
+  line-height: 16px;
+}
+.wrAdminObjectButtonWrapper > img {
+  vertical-align: middle;
+}
+.wrAdminObjectContainerWrapper2 {
+  right: 40px;
+  left: 0;
+}
+.wrAdminObjectButtonWrapper2 {
+  right: 20px;
+}
+.wrAdminObjectMetadataWrapper {
+  right: 0;
+  border: 1px solid #d7d7d7;
+}
+.wrRoleFolderReportsCtrl {
+  top: 0;
+  bottom: 0;
+}
+.wrRoleFolderFolderNameCell {
+  text-align: left;
+}
+.wrAdminItemTable {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wrAdminRoleGridDiv {
+  position: absolute;
+  top: 18px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+.wrAdminCustomFunctionCategoryOuterWrapper {
+  position: relative;
+  height: 16px;
+  width: 100%;
+}
+.wrAdminCustomFunctionCategoryInnerWrapper,
+.wrAdminCustomFunctionCategoryInnerWrapperOther {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.wrAdminCustomFunctionCategoryInnerWrapper {
+  right: 0;
+}
+.wrAdminCustomFunctionCategoryInnerWrapperOther {
+  right: 200px;
+}
+.wrAdminCustomFunctionCodeAreaWrapper {
+  top: 175px;
+}
+.wrAdminCustomFunctionCodeAreaWrapperOther {
+  top: 207px;
+}
+.wrAdminCustomFilterFunctionCodeAreaWrapper {
+  top: 162px;
+}
+.wrAdminCustomFunctionCodeAreaWrapper,
+.wrAdminCustomFunctionCodeAreaWrapperOther,
+.wrAdminCustomFilterFunctionCodeAreaWrapper,
+.wrAdminServerEventCodeAreaWrapper,
+.wrAdminDateFunctionCodeAreaWrapper {
+  position: absolute;
+  bottom: 60px;
+  left: 15px;
+  right: 15px;
+  padding: 5px;
+}
+.wrAdminCustomFunctionCodeLabel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30px;
+  top: 0;
+}
+.wrAdminCustomFunctionCodeTextAreaWrapper {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  top: 15px;
+}
+.wrAdminServerEventCodeEditorCodeAreaWrapper {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 40px;
+  bottom: 0;
+}
+.wrCustomOptionListItemsCtrlDiv {
+  height: 250px;
+}
+.wrMapTermsInnerDiv {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.wrMapTermsAcceptInput {
+  margin-top: 10px;
+}
+.wrMapTermsSignatureInput {
+  margin-top: 10px;
+}
+.wrAdminUploadImageButtonContainer {
+  position: relative;
+  height: 20px;
+}
+.wrAdminUploadImageButton {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+.wrAdminUploadImageButtonCtrl {
+  overflow: hidden;
+  top: 3px;
+  left: 5px;
+  width: 116px;
+  height: 20px;
+  position: absolute;
+}
+.wrAdminUploadImagePreviewContainer {
+  margin-top: 20px;
+}
+.wrAdminDefaultFontDD {
+  width: 280px;
+}
+.wrAdminGeneralMasterTable {
+  width: 100%;
+  position: relative;
+  top: -4px;
+}
+.wrAdminRoleItemListContainer {
+  position: relative;
+  margin-bottom: 10px;
+  height: 200px;
+}
+.wrMainTabContentContainer {
+  background: #f8f8f8;
+}
+.wrMainTabContentContainer .wrTabInnerContent {
+  background: #f8f8f8;
+}
+.wrMainTabStripOuterContainer {
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding-right: 58px;
+}
+.wrDynamicTabItem {
+  background-color: #ffffff;
+}
+.wrDynamicTabItemSelected {
+  background-color: #ffffff;
+}
+.wrMainRightPane {
+  box-shadow: none;
+}
+.wrAdminTableCell:nth-child(2) {
+  padding: 5px 0 5px 0;
+}
+.wrAdminObjectMetadataText {
+  line-height: 17px;
+}
+.wrAdminDiscoveryMainContainer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 0;
+  margin: 30px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.wrAdminDiscoveryObjectAndResponse {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 5000px;
+}
+.wrMaterialSplitter > .wrVerticalSplitterBar > .wrVerticalSplitterBarInner {
+  top: 110px;
+}
+.wrAdminMainCompanyLogoCaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #828282;
+}
+.wrConnectionStringShiftDivRight {
+  margin-left: 15px;
+}
+.wrConnectionStringHidden {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ConnectionStringVisible.svg");
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrNoSVG .wrConnectionStringHidden {
+  background-image: url("../#ApplicationThemeFolder#/Images/ConnectionStringVisible.png");
+}
+.wrConnectionStringVisible {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ConnectionStringHidden.svg");
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrNoSVG .wrConnectionStringVisible {
+  background-image: url("../#ApplicationThemeFolder#/Images/ConnectionStringHidden.png");
+}
+.wrAdminAddArgumentButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AddBtn.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  padding-left: 18px;
+  float: right;
+}
+.wrNoSVG .wrAdminAddArgumentButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AddBtn.png");
+}
+.wrAdminFunctionArgumentListHeader {
+  width: 940px;
+  max-width: calc(95% - 20px);
+  margin: auto;
+  font-size: 0;
+  margin-bottom: 6px;
+  padding-left: 20px;
+}
+.wrAdminFunctionArgumentListHeaderColumn1 {
+  width: calc(20% - 63px);
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+}
+.wrAdminFunctionArgumentListHeaderColumn2 {
+  width: calc(80% - 63px);
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+}
+.wrAdminFunctionArgumentListHeaderColumn3 {
+  width: 76px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+.wrAdminFunctionArgumentListHeaderColumn4 {
+  width: 50px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+}
+.wrAdminFunctionArgumentList {
+  width: 960px;
+  max-width: 95%;
+  font-size: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.wrAdminFunctionArgumentList:empty {
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+}
+.wrAdminFunctionNoArgumentsPlaceholder {
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+}
+.wrAdminFunctionArgumentNameItem {
+  width: calc(20% - 63px);
+  height: 26px;
+  display: inline-block;
+  vertical-align: top;
+}
+.wrAdminFunctionArgumentNameItem input {
+  width: calc(90%);
+  border: none;
+  color: #545454;
+}
+.wrAdminFunctionArgumentDescItem {
+  width: calc(80% - 63px);
+  height: 26px;
+  display: inline-block;
+  vertical-align: top;
+}
+.wrAdminFunctionArgumentDescItem input {
+  width: calc(90%);
+  border: none;
+  color: #545454;
+}
+.wrAdminFunctionArgumentOptionalItem {
+  width: 76px;
+  height: 26px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 0;
+}
+.wrAdminFunctionArgumentDeleteItem {
+  width: 50px;
+  height: 26px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.wrAdminFunctionArgumentDeleteItem button {
+  height: 14px;
+  width: 14px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DeleteItem.svg");
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+.wrNoSVG .wrAdminFunctionArgumentDeleteItem button {
+  background-image: url("../#ApplicationThemeFolder#/Images/DeleteItem.png");
+}
+.wrAdminFunctionArgumentButtonFooter {
+  width: 960px;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 6px;
+}
+.wrAdminFunctionArgumentButtonFooter .wrCustomCheckbox {
+  font-size: 13px;
+  display: none;
+}
+#AdminFunctionCheckbox {
+  display: none;
+  vertical-align: top;
+}
+.wrAdminFunctionArgumentList .wrListItem {
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  margin-bottom: 6px;
+}
+.wrAdminFunctionArgumentList .wrListItemDragHandle {
+  border: none;
+}
+.wrAdminCustomFunctionEditArgumentsButton {
+  font-size: 11px;
+}
+.wrAdminGenerateRestKeyCell {
+  position: relative;
+}
+.wrAdminGenerateRestKeyCell .wrTextInput {
+  font-family: monospace;
+  box-sizing: border-box;
+  padding-right: 100px;
+}
+.wrAdminGenerateRestKey {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20px;
+  background: transparent;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  color: #444444;
+  cursor: pointer;
+}
+.wrAdminHeaderWarning {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 3px 0;
+  padding: 1px;
+  background: #ed6868;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  width: 36.5%;
+}
+.wrAdminConsole .wrTabInnerContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.wrAdminRoleObjectsFooter {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

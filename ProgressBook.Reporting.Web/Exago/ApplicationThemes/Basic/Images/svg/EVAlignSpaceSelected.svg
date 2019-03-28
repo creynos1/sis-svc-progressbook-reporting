@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    EVAlignSpaceSelected
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24" fill="none"/>
+    <path fill="#FFFFFF" d="M11 10h2v5h-2v-5zM4 7h16v2H4V7zm0 9h16v2H4v-2z"/>
+  </g>
+</svg>

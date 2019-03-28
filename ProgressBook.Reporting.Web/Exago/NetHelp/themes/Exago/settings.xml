@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from url=(0016)http://localhost -->
+<settings>
+  <theme>
+    <name>Exago</name>
+    <predefined>false</predefined>
+    <baseTheme>Tabs</baseTheme>
+    <baseVersion>1.11.7</baseVersion>
+  </theme>
+  <pageHeader>
+    <visible>false</visible>
+  </pageHeader>
+  <topic>
+    <applyStylesheet>true</applyStylesheet>
+  </topic>
+  <toc>
+    <icons>
+      <leaf>ui-icon ui-icon-empty</leaf>
+      <collapsed>ui-icon ui-icon-triangle-1-e</collapsed>
+      <expanded>ui-icon ui-icon-triangle-1-s</expanded>
+    </icons>
+  </toc>
+  <general>
+    <favicon>images/d2h-favicon.ico</favicon>
+  </general>
+</settings>

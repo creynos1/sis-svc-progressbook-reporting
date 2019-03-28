@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Geocharts</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="gauges.htm" /><link rel="next" href="googlemaps.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="6ac6aa56-cee2-4972-bf12-2a15eb0906f1">
+<h2>Geocharts</h2>
+<p>Geocharts are interactive maps that plot data per geographic area. Geocharts 
+use <em>data highlighting</em>, whereby data color-codes areas in varying levels 
+of intensity. Highlighting can affect multiple levels of granularity, to 
+allow for drilling down into regions.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.geochart_country_view.png" />     <img alt="" src="../Media/screen.geochart_city_view.png" /></p>
+<p class="Caption">A geochart viewed at the country level and the city 
+level</p>
+<p>To add a geochart to a report, select the report cell where you want the 
+geochart to appear. Then click the <img alt="" src="../Media/Map.png" /> <strong>Geochart Wizard</strong> icon. Proceed 
+through the <a class="topic-link" href="geocharts.htm#type1.htm">Type</a>, <a class="topic-link" href="geocharts.htm#locations.htm">Locations</a>, and <a class="topic-link" href="geocharts.htm#data2.htm">Data</a> pages, then click 
+<strong>Finish</strong> when you are done.</p>
+<p>To edit a geochart, double-click it, or select it and click the <img alt="" src="../Media/Map.png" /> <strong>Geochart Wizard</strong> icon to reopen the 
+wizard.</p><a class="_D2HAnchor" name="type1.htm" id="type1.htm"></a>
+<p class="MidTopic">Type</p>
+<p>Choose a <strong>Base Map</strong> from the list. This selection determines 
+the initial, maximum view level of the geochart. Data from outside this region 
+is not shown on the map.</p>
+<p>Set the size of the geochart by specifying fixed <strong>Height </strong>and 
+<strong>Width </strong>dimensions, or select the <strong>Fit to Cell 
+</strong>check box to have the geochart scale to the size of the report 
+cell.</p>
+<p>From the <strong>Colors </strong>list, determine the color range to use for 
+highlighting. Do one of the following:</p>
+<ul>
+  <li class="list_bullets">
+  <p>Select a theme. For most themes, lighter highlight colors represent lesser 
+  values, and darker colors represent greater values.</p>
+  </li><li class="list_bullets">
+  <p>Choose <strong>Linear Range</strong> and select a custom color range. 
+  The highlight trends towards the first color for lesser values, and towards 
+  the second color for greater values.</p>
+  <p>If you only want to differentiate values by marker size, choose the same 
+  color for both ends of the range.</p></li></ul>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Areas with no data 
+are colored gray.</p>
+<p>Select the <strong>Show Legend</strong> check box to show an explicit scale 
+for the color levels.<br /></p><span id="related-topics"></span><a class="_D2HAnchor" name="locations.htm" id="locations.htm"></a>
+<p class="MidTopic">Locations</p>
+<p>Geocharts support up to three levels of granularity:</p>
+<p><span class="Option">Country</span></p>
+<p class="Indent">Highest level. Select a data cell with country names if the 
+<strong>Base Map</strong> and data comprises multiple countries.</p>
+<p class="Indent">This level is required if your <strong>Region </strong>or 
+<strong>City </strong>names may be ambiguous between countries. For 
+example, "Vancouver" is ambiguous between "Vancouver, British Colombia", and 
+"Vancouver, Washington".</p>
+<p><span class="Option">Region</span></p>
+<p class="Indent">Middle level. This is for country subdivisions such as States, 
+Provinces, or Districts.</p>
+<p class="Indent">This level is required if your <strong>City </strong>names may 
+be ambiguous between regions. For example, "Portland" is ambiguous between 
+"Portland, Oregon" and "Portland, Maine".</p>
+<p><span class="Option">City</span></p>
+<p class="Indent">Lowest level. Geocharts have no boundary data for cities, so 
+they are shown as circular markers.</p>
+<p>In the <strong>Show last location type as</strong> list, choose how to 
+demarcate the areas at lowest level in your geochart. If country or region is 
+the lowest level, select either circular <strong>Markers </strong>or geographic 
+<strong>Regions</strong>. If city is the lowest level, you must select 
+<strong>Markers</strong>.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.geochart_regions.png" />     <img alt="" src="../Media/screen.geochart_markers.png" /></p>
+<p> </p>
+<p class="Caption">Regions versus Markers</p>
+<p class="Aside">Naming scheme</p>
+<p>Geographic naming schemes must be consistent within each level. Countries can 
+be named by either their country code abbreviation, English name, or regional 
+name. But do not mix schemes or the application may not interpret the data 
+correctly.</p>
+<p>For example, pick one of the following schemes:</p>
+<ul>
+  <li class="list_bullets">
+  <p><span class="Code">Germany    | Italy  | United 
+  States</span></p>
+  </li><li class="list_bullets">
+  <p><span class="Code">Deutchland | Italia | United States</span></p>
+  </li><li class="list_bullets">
+  <p><span class="Code">DEU        | 
+  ITA    | USA</span></p>
+  </li><li class="list_bullets">
+  <p><span class="Code">DE         
+  | IT     | US</span></p></li></ul>
+<p>Follow similar rules for regions. Cities should be identified by their full 
+names.</p><span id="related-topics"></span><a class="_D2HAnchor" name="data2.htm" id="data2.htm"></a>
+<p class="MidTopic">Data</p>
+<p>Values can be supplied for highlighting and marker size. Each dimension could 
+represent the same data aggregation, two different aggregations of a data set, 
+or two distinct data sets. Data values should be in a Detail or Group 
+section.</p>
+<p><strong>Color of Locations</strong> must be set.</p>
+<p><strong>Size of Markers</strong> is optional. If this is not set and the 
+geochart uses markers, Size of Markers uses the Color of Locations field. 
+If the geochart does not use markers, this field is ignored.</p>
+<p>For each data dimension to use:<br /></p>
+<ol>
+  <li class="list_123">
+  <p>Select a cell to supply the <strong>Data Values</strong>.</p>
+  </li><li class="list_123">
+  <p>In the <strong>Data Labels</strong> field, enter a label that will prefix 
+  each value when a user hovers over a location.</p>
+  </li><li class="list_123">
+  <p>Choose which aggregate method to use from the <strong>Aggregate 
+  Type</strong> list.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Display Format</strong> list, choose how the data 
+  values are formatted in the legend and hover popup.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Decimal Places</strong> list, choose a number of decimal 
+  places to round the data values.</p></li></ol>
+<p>To use <em>fixed-size </em>markers instead of dynamic size:<br /></p>
+<ol>
+  <li class="list_123">
+  <p>Select a report cell containing a fixed numeric value, as written with a 
+  <span style="TEXT-DECORATION: underline">preceding equal sign</span> (=). For 
+  example: <span class="Code">=10</span>.</p>
+  <p>Use a value appropriate for the values in the data set.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Aggregate Type </strong>list, select 
+  <strong>Avg</strong>.</p></li></ol><span id="related-topics"></span><span id="related-topics"></span></body></html>

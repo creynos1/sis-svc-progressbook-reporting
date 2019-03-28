@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeXMLSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M0 6.179V4.881l3.32-2.33v1.525L1.007 5.514 3.32 7.006v1.516L0 6.18z"/>
+    <polygon points="3.941 9.346 6.757 1.728 7.647 1.728 4.824 9.346"/>
+    <polygon points="8.676 8.522 8.676 7.006 10.989 5.526 8.676 4.058 8.676 2.551 11.996 4.884 11.996 6.174"/>
+  </g>
+</svg>

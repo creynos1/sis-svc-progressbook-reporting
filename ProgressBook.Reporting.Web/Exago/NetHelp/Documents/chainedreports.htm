@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Chained Reports</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="interactivefilters.htm" /><link rel="next" href="scheduler.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="790f757d-c2e0-4489-840f-78a809cd529c">
+<h1>Chained Reports</h1>
+<p>Chained Reports combine multiple reports into a single multi-page document. 
+They are a convenient way to bundle related reports into a format suitable for 
+printing or sending to a mailing list.</p>
+<p>For example, you could combine a report on total monthly sales over time, 
+product sales for the month, and a report highlighting this month's top selling 
+employee. And you could schedule it to be emailed regularly at the end of every 
+month.</p>
+<p>A benefit of Chained Reports is that, unless you want to use collation, they 
+do not need to have anything in common. You could chain entirely disparate 
+reports together without a problem.</p><a class="_D2HAnchor" name="makingachainedreport.htm" id="makingachainedreport.htm"></a>
+<p class="MidTopic">Making a Chained Report</p>
+<p>A Chained Report is basically a list of reports, and making a Chained Report 
+is as simple as making a list.</p>
+<p>To make a Chained Report:</p>
+<ol>
+  <li class="list_123">
+  <p>Click the <strong>New Report <img src="../Media/MainLeftPaneNewReport.png" alt="" /> 
+  </strong>icon and select <img src="../Media/NewChainedReportItem.png" alt="" /> <strong>Chained Report</strong>. 
+  Enter a name for the Chained Report and select a folder where it should live. 
+  It does not have to be in the same folder as the reports that it contains.</p>
+  <p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>A report name 
+  cannot contain the following characters:<br />\ / : * ? " &lt; &gt; |</p>
+  </li><li class="list_123">
+  <p>On the Reports page, add the reports to include in the Chained Report. 
+  Supported report types are Advanced Reports, Express Reports, Crosstab 
+  Reports, and ExpressViews.</p>
+  <p>The order of the reports in the list is the order they will appear in the 
+  output. Click the Up <img src="../Media/MoveGridRowUp.png" alt="" /> or Down <img src="../Media/MoveGridRowDown.png" alt="" /> arrows to move a report up or down in the 
+  list. Click the Delete icon <img src="../Media/DeleteItem.png" alt="" /> to remove a 
+  report from the list.</p>
+  </li><li class="list_123">
+  <p>Click the <strong>Save <img src="../Media/ExpressSave.png" alt="" /> </strong>icon 
+  to save the Chained Report.</p></li></ol>
+<p class="Aside"><strong>Note about export types</strong></p>
+<p>If one of the reports cannot export to a certain file type, then the Chained 
+Report cannot export to that type. All of the reports must share at least one 
+export type, or else the Chained Report will have no compatible type to run as. 
+Supported types are PDF, Word (RTF), CSV, and Excel (XLS).</p>
+<p class="Aside"><strong>Reports with templates</strong></p>
+<p><a class="topic-link" href="template.htm">Template reports</a> can be added to 
+a Chained Report. The Chained Report must be exported to the same file type as 
+the template. Multiple templates of the same file type can be chained together, 
+with the exception of Microsoft Word based templates.</p><span id="related-topics"></span><a class="_D2HAnchor" name="promptingfiltersandparameters.htm" id="promptingfiltersandparameters.htm"></a>
+<p class="MidTopic">Prompting filters and parameters</p>
+<p>If one or more reports has prompting filters or parameters, then you can set 
+rules for what should happen when the Chained Report is run.</p>
+<p>To edit a report's prompting options:</p>
+<ol>
+  <li class="list_123">
+  <p>On the Reports page, click the <strong>Report Options <img src="../Media/Edit.png" alt="" /> </strong>icon.</p>
+  </li><li class="list_123">
+  <p>For each prompting filter and parameter, the following options are 
+  available:</p>
+  <p><span class="Option">Common Prompt</span></p>
+  <p class="Indent">All reports which contain this filter field or parameter will 
+  use the specified value. In the <strong>Data (Prompt Text or Value) 
+  </strong>field, enter the text to prompt the user for a value.</p>
+  <p><span class="Option">Report Prompt</span></p>
+  <p class="Indent">Only this report will use the specified value. In the 
+  <strong>Data (Prompt Text or Value) </strong>field, enter the text to prompt 
+  the user for a value.</p>
+  <p><span class="Option">Assign Value</span></p>
+  <p class="Indent">The Chained Report will not prompt for a value for this filter 
+  or parameter. In the <strong>Data (Prompt Text or Value)</strong> field, enter 
+  the value to use.</p></li></ol>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Values for prompting 
+filters and parameters cannot be set when scheduling a Chained Report. If a 
+Chained Report is intended to be scheduled, use the <strong>Assign Value 
+</strong>option to specify values.</p><span id="related-topics"></span><a class="_D2HAnchor" name="chainedreportoptions.htm" id="chainedreportoptions.htm"></a>
+<p class="MidTopic">Chained Report options</p>
+<p>The Options page contains the following options:</p>
+<p><strong>Default Export Type</strong></p>
+<p class="Indent">Select the file type to which the Chained Report will export by 
+default. Available types are limited by report export restrictions, and by the 
+<strong>Allowed Export Types </strong>option. HTML is not supported.</p>
+<p class="Indent"><span class="Option">Default</span></p>
+<blockquote>
+  <p class="Indent">Uses the environment's default export type.</p></blockquote>
+<p><strong>Allowed Export Types</strong></p>
+<p class="Indent">Select which file types the Chained Report is allowed to export 
+to. You must select at least one type.</p>
+<p><strong>No Data Qualified Action</strong></p>
+<p class="Indent">If a report has no data, choose what to display:</p>
+<p class="Indent"><span class="Option">Show Placeholder</span></p>
+<blockquote>
+  <p class="Indent">Show the report without any data in it.</p></blockquote>
+<p class="Indent"><span class="Option">Skip Report</span></p>
+<blockquote>
+  <p class="Indent">Show nothing, and move on to the next report.</p></blockquote>
+<p><strong>Collate Reports on</strong></p>
+<p class="Indent">Select whether to collate the Chained Report, and which data 
+field to use. This option is disabled if the reports have no common data fields. 
+See <a class="topic-link" href="chainedreports.htm#collatingreports.htm">Collating 
+reports</a>.</p>
+<p><strong>Page break after each report</strong><br /></p>
+<p class="Indent">Select whether to start a new page after every report. This only 
+affects PDF and RTF files.</p><span id="related-topics"></span><a class="_D2HAnchor" name="collatingreports.htm" id="collatingreports.htm"></a>
+<p class="MidTopic">Collating reports</p>
+<p>Collation breaks up the reports in the Chained Report by a specified <a class="topic-link" href="sortstab.htm">sort field</a>, and then groups together 
+the reports by each instance of the sort. Essentially, this turns a sort field 
+into a common grouping for the reports, working in much the same way a <a class="topic-link" href="sections.htm">group section</a> would. This can allow you 
+to use individual reports as pieces in a composite report.</p>
+<p class="Aside"><strong>Order of reports in a collated Chained 
+Report</strong></p>
+<p class="Indent">Report 1, filtered by group 1</p>
+<p class="Indent">Report 2, filtered by group 1</p>
+<p class="Indent">Report 1, filtered by group 2</p>
+<p class="Indent">Report 2, filtered by group 2</p>
+<p class="Indent">    and so on.</p>
+<p>Some common uses for Chained Report collation include:</p>
+<ul>
+  <li class="list_bullets">
+  <p>Grouping disparate reports by order number, or employee number, or 
+  something else in common</p>
+  </li><li class="list_bullets">
+  <p>Combining mostly identical reports, only with different filters or joins, 
+  into a composite report</p>
+  </li><li class="list_bullets">
+  <p>Making a composite report with multiples of a feature which normal reports 
+  can only have one of, such as a detail section</p></li></ul>
+<p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>Collation is 
+recommended for advanced users only.</p><span id="related-topics"></span><span id="related-topics"></span></body></html>

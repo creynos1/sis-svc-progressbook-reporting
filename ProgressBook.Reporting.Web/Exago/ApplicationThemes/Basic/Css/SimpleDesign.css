@@ -1,0 +1,350 @@
+.wrSimpleDesignTabInnerContentOverride {
+  top: 0;
+}
+.wrSimpleDesignContentCorrect {
+  top: 10px;
+}
+.wrExpressReportContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrSimpleTab {
+  width: 100%;
+  height: 100%;
+}
+.wrSimpleDsgnTbContainer {
+  position: absolute;
+  height: 30px;
+  right: 0;
+  z-index: 2;
+  top: 2px;
+}
+.wrSimpleDsgnTbSection {
+  border: none;
+  float: right;
+  margin-right: 1px;
+  padding-top: 3px;
+}
+.wrSimpleDsgnTbSection .wrTbImg {
+  vertical-align: middle;
+}
+.wrSimpleDsgnTbSection .wrSimpleDsgnExportSelectContainer {
+  vertical-align: middle;
+}
+.wrSimpleLayoutMultiTbContainer {
+  position: relative;
+  top: 3px;
+  height: auto;
+  overflow: auto;
+}
+.wrSimpleLayoutTbSection {
+  margin-top: 2px;
+}
+.wrSimpleLayoutAddBlankColumnBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.wrSimpleLayoutBlankColumnLbl {
+  font-style: italic;
+}
+.wrSimpleLayoutOptionFirstBox {
+  position: relative;
+  float: left;
+}
+.wrSimpleLayoutOptionOtherBox {
+  margin-left: 20px;
+  position: relative;
+  float: left;
+}
+.wrSimpleLayoutOptionColSpan {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 42px;
+}
+.wrSimpleLayoutPopup {
+  z-index: 1;
+}
+.wrSimpleDesignTopContainer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  border: none;
+}
+.wrSimpleDesignBottomContainer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+}
+.wrSimpleInfoTopContainer {
+  height: 70%;
+}
+.wrSimpleLayoutTopContainer {
+  height: 50%;
+}
+.wrSimpleLayoutGroupList {
+  position: relative;
+  float: left;
+  height: 100%;
+}
+.wrSimpleLayoutGroupListBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wrSimpleLayoutGroupContent {
+  position: relative;
+  float: left;
+  height: 100%;
+  margin-left: 10px;
+}
+.wrSimpleLayoutPreviewField {
+  border: 1px solid #c5c5c5;
+  top: 30px;
+}
+.wrSimpleLayoutPreviewArea {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.wrSimpleLayoutPreviewGrid {
+  background-color: #efefef;
+  text-align: center;
+  border: none;
+}
+.wrSimpleLayoutPreviewTable {
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid #d7d7d7;
+}
+.wrSimpleLayoutPreviewEditCell {
+  cursor: url(Images/Edit.cur), default;
+  cursor: url(Images/Edit.cur) 8 24, default;
+  /* For browsers supporting hotspot */
+}
+.wrSimpleLayoutFontName {
+  position: relative;
+  top: 2px;
+  width: 130px;
+  overflow: hidden;
+}
+.wrSimpleLayoutForegroundColorContainer {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.wrSimpleLayoutForegroundColor {
+  width: 16px;
+  height: 16px;
+}
+.wrSimpleLayoutBackgroundColorContainer {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.wrSimpleLayoutBackgroundColor {
+  width: 16px;
+  height: 16px;
+}
+.wrSimpleLayoutOptionsShadingContainer {
+  position: relative;
+  height: 200px;
+}
+.wrSimpleLayoutTbImg {
+  top: 2px;
+}
+.wrSimpleLayoutFontSize {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 42px;
+}
+.wrSimpleLayoutThemeLbl {
+  margin-top: 4px;
+  font-size: 8pt;
+}
+.wrSimpleLayoutThemeInput {
+  margin-left: 5px;
+  width: 110px;
+  height: 19px;
+  font-size: 8pt;
+}
+.wrSimpleOptionsShadingContainer {
+  position: relative;
+  height: 200px;
+}
+.wrStandardLayoutGridContainer {
+  bottom: 100px;
+}
+.wrStandardLayoutGridContainerNoGroup {
+  bottom: 50px;
+}
+.wrStandardLayoutOptionsContainer {
+  top: auto;
+  height: 99px;
+}
+.wrStandardLayoutOptionsFieldSet {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.wrStandardLayoutOptionsContainerNoGroup {
+  top: auto;
+  height: 49px;
+}
+.wrStandardLayoutGroupContainer {
+  height: 46px;
+  border: solid 1px #e6e6e6;
+  margin-bottom: 5px;
+  overflow: auto;
+  background-color: #fbfbfb;
+}
+.wrStandardLayoutGroupContainerNoActiveGroups {
+  line-height: 46px;
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+}
+.wrStandardLayoutGroupItemContainer {
+  margin-right: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrStandardLayoutGroupCheckbox {
+  float: left;
+}
+.wrStandardLayoutGroupItemLabel {
+  cursor: pointer;
+  border-bottom: 1px dotted #989898;
+}
+.wrStandardLayoutGroupItemLabel:hover {
+  border-bottom: 1px dotted #444;
+}
+.wrStandardLayoutGroupItemContent {
+  float: left;
+  position: relative;
+}
+.wrStandardLayoutGroupItemDetail {
+  position: relative;
+  margin: 10px;
+}
+.wrStandardLayoutGroupHeaderFormula {
+  border: 1px solid transparent;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormulaDisabled.svg");
+  background-size: 16px 16px;
+  background-position: center center;
+  position: relative;
+  vertical-align: top;
+  height: 16px;
+  width: 16px;
+  top: 2px;
+}
+.wrNoSVG .wrStandardLayoutGroupHeaderFormula {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormulaDisabled.png");
+}
+.wrStandardLayoutGroupHeaderFormula_Enabled {
+  cursor: pointer;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Formula.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrStandardLayoutGroupHeaderFormula_Enabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/Formula.png");
+}
+.wrStandardLayoutGroupHeaderFormula_Enabled:hover {
+  background-color: #F4F6F9;
+  border: 1px solid #a2b3cc;
+}
+.wrStandardLayoutGroupHeaderFormula_Enabled:active {
+  background-color: #D8D8D8;
+  border: 1px solid #989898;
+}
+.wrStandardLayoutFormulaBtn {
+  position: relative;
+  top: 2px;
+}
+.wrStandardLayoutUploadContainer {
+  position: relative;
+  height: 20px;
+}
+.wrIE10 .wrStandardLayoutUploadContainer,
+.wrIE11 .wrStandardLayoutUploadContainer {
+  margin-bottom: 13px;
+}
+.wrChrome .wrStandardLayoutUploadContainer,
+.wrSafari .wrStandardLayoutUploadContainer {
+  margin-bottom: 8px;
+}
+.wrFF .wrStandardLayoutUploadContainer {
+  margin-bottom: 10px;
+}
+.wrStandardLayoutUploadBtn {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+.wrStandardLayoutUploadCtrl {
+  overflow: hidden;
+  top: 3px;
+  left: 5px;
+  width: 116px;
+  height: 20px;
+  position: absolute;
+}
+.wrStandardLayoutUploadPreviewContainer {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000000;
+}
+.wrStandardLayoutUploadPreview {
+  width: 100px;
+  height: 100px;
+}
+.wrStandardLayoutGroupHeaderData {
+  max-width: 220px;
+}
+.wrSimpleDesignInstructions {
+  top: 10px;
+}
+.wrSimpleDesignerPaddingDiv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+}
+.wrSimpleDsgnExportSelectContainer {
+  display: inline-block;
+}
+.wrSimpleDsgnExportSelectContainer .wrExecuteInViewerButton {
+  width: auto;
+  vertical-align: top;
+  margin: 0;
+  margin-right: 6px;
+}
+.wrSimpleDsgnExportSelectContainer .wrExportTypeDropdown {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}

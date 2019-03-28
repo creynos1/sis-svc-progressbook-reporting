@@ -1,0 +1,136 @@
+{
+  "FormatTheme": null,
+  "GroupHeaderFormats": [
+    {
+      "FontFamily": "Arial",
+      "FontSize": 9,
+      "FontColor": "#545454",
+      "BackgroundColor": "#ffffff",
+      "Weight": 1,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "GroupFooterFormats": [
+    [
+      {
+        "FontFamily": "Arial",
+        "FontSize": 9,
+        "FontColor": "#545454",
+        "BackgroundColor": "#ffffff",
+        "Weight": 0,
+        "Underline": 0,
+        "HorizontalAlign": 1,
+        "VerticalAlign": 1,
+        "WrapText": true,
+        "UniformBorder": true,
+        "BorderFormatting": {
+          "TopColor": "#ededed",
+          "TopWeight": 0,
+          "LeftColor": "#ededed",
+          "LeftWeight": 0,
+          "BottomColor": "#ededed",
+          "BottomWeight": 0,
+          "RightColor": "#ededed",
+          "RightWeight": 0
+        }
+      }
+    ]
+  ],
+  "ColumnHeaderFormats": [
+    {
+      "FontFamily": "Arial",
+      "FontSize": 9,
+      "FontColor": "#545454",
+      "BackgroundColor": "#ffffff",
+      "Weight": 1,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "DetailFormats": [
+    {
+      "FontFamily": "Arial",
+      "FontSize": 10,
+      "FontColor": "#545454",
+      "BackgroundColor": "#ffffff",
+      "Weight": 0,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "ReportFooterFormats": [
+    {
+      "FontFamily": "Arial",
+      "FontSize": 9,
+      "FontColor": "#545454",
+      "BackgroundColor": "#FFFFFF",
+      "Weight": 0,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "RowShading": [
+    "#F1F1F1",
+    "#ffffff"
+  ],
+  "GroupColors": [
+    "#6896ed",
+    "#68edbd",
+    "#ede668",
+    "#ed8168",
+    "#bc68ed"
+  ]
+}

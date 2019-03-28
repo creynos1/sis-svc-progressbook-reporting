@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>TreeReportUnlockSelected</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#FFFFFF">
+            <rect fill-opacity="0" x="0" y="0" width="12" height="12"></rect>
+            <path d="M9,2.99686968 C9,1.34739093 7.65685425,0 6,0 C4.34651712,0 3,1.34174426 3,2.99686968 L3,5 L2,5 L2,10 L10,10 L10,5 L9,5 L9,2.99686968 Z M7,5.00313032 L5,5.00313032 L5,2.99686968 C5,2.44829165 5.44910825,2 6,2 C6.55022012,2 7,2.44989534 7,2.99686968 L7,5.00313032 Z M3,3 L5,3 L5,5 L3,5 L3,3 Z"></path>
+        </g>
+    </g>
+</svg>

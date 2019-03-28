@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from url=(0016)http://localhost -->
+<keywords>
+  <keyword>
+    <text>About the radial menu</text>
+    <link url="Documents/expressview.htm#abouttheradialmenu.htm">About the radial menu</link>
+  </keyword>
+  <keyword>
+    <text>Action Events</text>
+    <link url="Documents/actionevents.htm">Action Events</link>
+  </keyword>
+  <keyword>
+    <text>Adding categories</text>
+    <link url="Documents/categoriestab.htm#addingcategories.htm">Adding categories</link>
+  </keyword>
+  <keyword>
+    <text>Adding data (Advanced and Express Reports)</text>
+    <link url="Documents/layouttab.htm#addingdataadvancedandexpressreports.htm">Adding data (Advanced and Express Reports)</link>
+  </keyword>
+  <keyword>
+    <text>Adding Reports</text>
+    <link url="Documents/addingreports.htm">Adding Reports</link>
+  </keyword>
+  <keyword>
+    <text>Advanced Joins</text>
+    <link url="Documents/joins.htm#advancedjoins.htm">Advanced Joins</link>
+  </keyword>
+  <keyword>
+    <text>Appearance</text>
+    <link url="Documents/charts.htm#appearance.htm">Appearance</link>
+    <link url="Documents/gauges.htm#appearance1.htm">Appearance</link>
+    <link url="Documents/googlemaps.htm#appearance2.htm">Appearance</link>
+  </keyword>
+  <keyword>
+    <text>Border</text>
+    <link url="Documents/cellformat.htm#border.htm">Border</link>
+  </keyword>
+  <keyword>
+    <text>Categories</text>
+    <link url="Documents/categoriestab.htm">Categories</link>
+    <link url="Documents/reportcategories.htm">Categories</link>
+  </keyword>
+  <keyword>
+    <text>Cell Format</text>
+    <link url="Documents/cellformat.htm">Cell Format</link>
+  </keyword>
+  <keyword>
+    <text>Cells</text>
+    <link url="Documents/reportdesigner.htm#cells.htm">Cells</link>
+  </keyword>
+  <keyword>
+    <text>Chained Report options</text>
+    <link url="Documents/chainedreports.htm#chainedreportoptions.htm">Chained Report options</link>
+  </keyword>
+  <keyword>
+    <text>Chained Reports</text>
+    <link url="Documents/chainedreports.htm">Chained Reports</link>
+  </keyword>
+  <keyword>
+    <text>Charts</text>
+    <link url="Documents/charts.htm">Charts</link>
+  </keyword>
+  <keyword>
+    <text>Collating reports</text>
+    <link url="Documents/chainedreports.htm#collatingreports.htm">Collating reports</link>
+  </keyword>
+  <keyword>
+    <text>Conditional</text>
+    <link url="Documents/cellformat.htm#conditional.htm">Conditional</link>
+  </keyword>
+  <keyword>
+    <text>Crosstabs</text>
+    <link url="Documents/crosstabs.htm">Crosstabs</link>
+  </keyword>
+  <keyword>
+    <text>Customizing report output</text>
+    <link url="Documents/reportviewer.htm#customizingreportoutput.htm">Customizing report output</link>
+  </keyword>
+  <keyword>
+    <text>Dashboard Designer</text>
+    <link url="Documents/dashboarddesigner.htm">Dashboard Designer</link>
+  </keyword>
+  <keyword>
+    <text>Dashboard Viewer</text>
+    <link url="Documents/dashboardviewer.htm">Dashboard Viewer</link>
+  </keyword>
+  <keyword>
+    <text>Data</text>
+    <link url="Documents/charts.htm#data.htm">Data</link>
+    <link url="Documents/gauges.htm#data1.htm">Data</link>
+    <link url="Documents/geocharts.htm#data2.htm">Data</link>
+    <link url="Documents/googlemaps.htm#data3.htm">Data</link>
+  </keyword>
+  <keyword>
+    <text>Data Pane</text>
+    <link url="Documents/datapane.htm">Data Pane</link>
+  </keyword>
+  <keyword>
+    <text>Description</text>
+    <link url="Documents/reportdescription.htm">Description</link>
+  </keyword>
+  <keyword>
+    <text>Drilldowns</text>
+    <link url="Documents/drilldowns.htm">Drilldowns</link>
+  </keyword>
+  <keyword>
+    <text>Dynamic</text>
+    <link url="Documents/sections.htm#dynamic.htm">Dynamic</link>
+  </keyword>
+  <keyword>
+    <text>Emailing personalized reports</text>
+    <link url="Documents/scheduler.htm#emailingpersonalizedreports.htm">Emailing personalized reports</link>
+  </keyword>
+  <keyword>
+    <text>Errors</text>
+    <link url="Documents/troubleshooting.htm#errors.htm">Errors</link>
+  </keyword>
+  <keyword>
+    <text>Events</text>
+    <link url="Documents/events.htm">Events</link>
+  </keyword>
+  <keyword>
+    <text>Execution Caching</text>
+    <link url="Documents/executioncaching.htm">Execution Caching</link>
+  </keyword>
+  <keyword>
+    <text>Exporting</text>
+    <link url="Documents/exporting.htm">Exporting</link>
+  </keyword>
+  <keyword>
+    <text>ExpressView</text>
+    <link url="Documents/expressview.htm">ExpressView</link>
+  </keyword>
+  <keyword>
+    <text>ExpressView Visualizations</text>
+    <link url="Documents/expressviewvisualizations.htm">ExpressView Visualizations</link>
+  </keyword>
+  <keyword>
+    <text>FAQs</text>
+    <link url="Documents/troubleshooting.htm#faqs.htm">FAQs</link>
+  </keyword>
+  <keyword>
+    <text>Fields</text>
+    <link url="Documents/drilldowns.htm#fields.htm">Fields</link>
+  </keyword>
+  <keyword>
+    <text>Filtering</text>
+    <link url="Documents/managingdata.htm#filtering.htm">Filtering</link>
+  </keyword>
+  <keyword>
+    <text>Filters</text>
+    <link url="Documents/filterstab.htm">Filters</link>
+    <link url="Documents/reportfilters.htm">Filters</link>
+  </keyword>
+  <keyword>
+    <text>Filters and Parameters</text>
+    <link url="Documents/addingreports.htm#filtersandparameters1.htm">Filters and Parameters</link>
+  </keyword>
+  <keyword>
+    <text>Formatting</text>
+    <link url="Documents/managingdata.htm#formatting.htm">Formatting</link>
+  </keyword>
+  <keyword>
+    <text>Formula Columns</text>
+    <link url="Documents/formulacolumns.htm">Formula Columns</link>
+  </keyword>
+  <keyword>
+    <text>Formulas</text>
+    <link url="Documents/formulas.htm">Formulas</link>
+  </keyword>
+  <keyword>
+    <text>Gauges</text>
+    <link url="Documents/gauges.htm">Gauges</link>
+  </keyword>
+  <keyword>
+    <text>General Options</text>
+    <link url="Documents/generaloptions.htm">General Options</link>
+  </keyword>
+  <keyword>
+    <text>Geocharts</text>
+    <link url="Documents/geocharts.htm">Geocharts</link>
+  </keyword>
+  <keyword>
+    <text>Getting started</text>
+    <link url="Documents/home.htm#gettingstarted.htm">Getting started</link>
+  </keyword>
+  <keyword>
+    <text>Google Maps</text>
+    <link url="Documents/googlemaps.htm">Google Maps</link>
+  </keyword>
+  <keyword>
+    <text>Grid and tiles</text>
+    <link url="Documents/dashboarddesigner.htm#gridandtiles.htm">Grid and tiles</link>
+  </keyword>
+  <keyword>
+    <text>Group Min/Max</text>
+    <link url="Documents/reportfilters.htm#groupminmax.htm">Group Min/Max</link>
+  </keyword>
+  <keyword>
+    <text>Grouping</text>
+    <link url="Documents/grouping.htm">Grouping</link>
+  </keyword>
+  <keyword>
+    <text>Grouping filters together</text>
+    <link url="Documents/reportfilters.htm#groupingfilterstogether.htm">Grouping filters together</link>
+  </keyword>
+  <keyword>
+    <text>Home</text>
+    <link url="Documents/home.htm">Home</link>
+  </keyword>
+  <keyword>
+    <text>How to use the help</text>
+    <link url="Documents/home.htm#howtousethehelp.htm">How to use the help</link>
+  </keyword>
+  <keyword>
+    <text>Interacting with dashboards</text>
+    <link url="Documents/dashboardviewer.htm#interactingwithdashboards.htm">Interacting with dashboards</link>
+  </keyword>
+  <keyword>
+    <text>Interacting with reports</text>
+    <link url="Documents/reportviewer.htm#interactingwithreports.htm">Interacting with reports</link>
+  </keyword>
+  <keyword>
+    <text>Interactive Filters</text>
+    <link url="Documents/interactivefilters.htm">Interactive Filters</link>
+  </keyword>
+  <keyword>
+    <text>Join Types</text>
+    <link url="Documents/joins.htm#jointypes.htm">Join Types</link>
+  </keyword>
+  <keyword>
+    <text>Joins</text>
+    <link url="Documents/joins.htm">Joins</link>
+  </keyword>
+  <keyword>
+    <text>Layout</text>
+    <link url="Documents/layouttab.htm">Layout</link>
+  </keyword>
+  <keyword>
+    <text>Locations</text>
+    <link url="Documents/geocharts.htm#locations.htm">Locations</link>
+    <link url="Documents/googlemaps.htm#locations1.htm">Locations</link>
+  </keyword>
+  <keyword>
+    <text>Making a Chained Report</text>
+    <link url="Documents/chainedreports.htm#makingachainedreport.htm">Making a Chained Report</link>
+  </keyword>
+  <keyword>
+    <text>Making a group</text>
+    <link url="Documents/grouping.htm#makingagroup.htm">Making a group</link>
+  </keyword>
+  <keyword>
+    <text>Making a schedule</text>
+    <link url="Documents/scheduler.htm#makingaschedule.htm">Making a schedule</link>
+  </keyword>
+  <keyword>
+    <text>Making an ExpressView</text>
+    <link url="Documents/expressview.htm#makinganexpressview.htm">Making an ExpressView</link>
+  </keyword>
+  <keyword>
+    <text>Making templates</text>
+    <link url="Documents/template.htm#makingtemplates.htm">Making templates</link>
+  </keyword>
+  <keyword>
+    <text>Managing Data</text>
+    <link url="Documents/managingdata.htm">Managing Data</link>
+  </keyword>
+  <keyword>
+    <text>Managing tiles</text>
+    <link url="Documents/dashboarddesigner.htm#managingtiles.htm">Managing tiles</link>
+  </keyword>
+  <keyword>
+    <text>Manually typing formulas</text>
+    <link url="Documents/formulas.htm#manuallytypingformulas.htm">Manually typing formulas</link>
+  </keyword>
+  <keyword>
+    <text>Modifying Joins</text>
+    <link url="Documents/joins.htm#modifyingjoins.htm">Modifying Joins</link>
+  </keyword>
+  <keyword>
+    <text>Name</text>
+    <link url="Documents/nametab.htm">Name</link>
+  </keyword>
+  <keyword>
+    <text>Navigating help links</text>
+    <link url="Documents/home.htm#navigatinghelplinks.htm">Navigating help links</link>
+  </keyword>
+  <keyword>
+    <text>Number</text>
+    <link url="Documents/cellformat.htm#number.htm">Number</link>
+  </keyword>
+  <keyword>
+    <text>Options</text>
+    <link url="Documents/optionstab.htm">Options</link>
+  </keyword>
+  <keyword>
+    <text>Prompting filters and parameters</text>
+    <link url="Documents/chainedreports.htm#promptingfiltersandparameters.htm">Prompting filters and parameters</link>
+  </keyword>
+  <keyword>
+    <text>Relationship Types</text>
+    <link url="Documents/joins.htm#relationshiptypes.htm">Relationship Types</link>
+  </keyword>
+  <keyword>
+    <text>Rename</text>
+    <link url="Documents/reportrename.htm">Rename</link>
+  </keyword>
+  <keyword>
+    <text>Report Designer</text>
+    <link url="Documents/reportdesigner.htm">Report Designer</link>
+  </keyword>
+  <keyword>
+    <text>Report Settings</text>
+    <link url="Documents/addingreports.htm#reportsettings.htm">Report Settings</link>
+  </keyword>
+  <keyword>
+    <text>Report Viewer</text>
+    <link url="Documents/reportviewer.htm">Report Viewer</link>
+  </keyword>
+  <keyword>
+    <text>Report Viewer Options</text>
+    <link url="Documents/reportvieweroptions.htm">Report Viewer Options</link>
+  </keyword>
+  <keyword>
+    <text>Report Wizard</text>
+    <link url="Documents/reportwizard.htm">Report Wizard</link>
+  </keyword>
+  <keyword>
+    <text>Scheduler</text>
+    <link url="Documents/scheduler.htm">Scheduler</link>
+  </keyword>
+  <keyword>
+    <text>Section Shading</text>
+    <link url="Documents/sectionshading.htm">Section Shading</link>
+  </keyword>
+  <keyword>
+    <text>Sections</text>
+    <link url="Documents/sections.htm">Sections</link>
+  </keyword>
+  <keyword>
+    <text>Size and Preview</text>
+    <link url="Documents/googlemaps.htm#sizeandpreview1.htm">Size and Preview</link>
+  </keyword>
+  <keyword>
+    <text>Sorting</text>
+    <link url="Documents/managingdata.htm#sorting.htm">Sorting</link>
+  </keyword>
+  <keyword>
+    <text>Sorts</text>
+    <link url="Documents/sortstab.htm">Sorts</link>
+    <link url="Documents/reportsorts.htm">Sorts</link>
+  </keyword>
+  <keyword>
+    <text>SQL categories (advanced users)</text>
+    <link url="Documents/categoriestab.htm#sqlcategoriesadvancedusers.htm">SQL categories (advanced users)</link>
+  </keyword>
+  <keyword>
+    <text>Standard</text>
+    <link url="Documents/reportfilters.htm#standard.htm">Standard</link>
+  </keyword>
+  <keyword>
+    <text>Static</text>
+    <link url="Documents/sections.htm#static.htm">Static</link>
+  </keyword>
+  <keyword>
+    <text>Styling</text>
+    <link url="Documents/styling.htm">Styling</link>
+  </keyword>
+  <keyword>
+    <text>Styling the report (Express Reports)</text>
+    <link url="Documents/layouttab.htm#stylingthereportexpressreports.htm">Styling the report (Express Reports)</link>
+  </keyword>
+  <keyword>
+    <text>Summarizing group data</text>
+    <link url="Documents/grouping.htm#summarizinggroupdata.htm">Summarizing group data</link>
+  </keyword>
+  <keyword>
+    <text>Suppressing duplicates (advanced users)</text>
+    <link url="Documents/reportcategories.htm#suppressingduplicatesadvancedusers.htm">Suppressing duplicates (advanced users)</link>
+  </keyword>
+  <keyword>
+    <text>Template</text>
+    <link url="Documents/template.htm">Template</link>
+  </keyword>
+  <keyword>
+    <text>Toolbar</text>
+    <link url="Documents/reportdesigner.htm#toolbar.htm">Toolbar</link>
+  </keyword>
+  <keyword>
+    <text>Top/Bottom</text>
+    <link url="Documents/reportfilters.htm#topbottom.htm">Top/Bottom</link>
+  </keyword>
+  <keyword>
+    <text>Troubleshooting</text>
+    <link url="Documents/troubleshooting.htm">Troubleshooting</link>
+  </keyword>
+  <keyword>
+    <text>Type</text>
+    <link url="Documents/charts.htm#type.htm">Type</link>
+    <link url="Documents/geocharts.htm#type1.htm">Type</link>
+  </keyword>
+  <keyword>
+    <text>Types of functions</text>
+    <link url="Documents/formulas.htm#typesoffunctions.htm">Types of functions</link>
+  </keyword>
+  <keyword>
+    <text>Using functions</text>
+    <link url="Documents/formulas.htm#usingfunctions.htm">Using functions</link>
+  </keyword>
+  <keyword>
+    <text>Using the Report Wizard</text>
+    <link url="Documents/reportwizard.htm#usingthereportwizard.htm">Using the Report Wizard</link>
+  </keyword>
+  <keyword>
+    <text>Viewing schedules</text>
+    <link url="Documents/scheduler.htm#viewingschedules.htm">Viewing schedules</link>
+  </keyword>
+  <keyword>
+    <text>Visualizations</text>
+    <link url="Documents/visualizations.htm">Visualizations</link>
+  </keyword>
+  <keyword>
+    <text>What are Crosstabs?</text>
+    <link url="Documents/layouttab.htm#whatarecrosstabs.htm">What are Crosstabs?</link>
+  </keyword>
+  <keyword>
+    <text>Why am I here?</text>
+    <link url="Documents/home.htm#whyamihere.htm">Why am I here?</link>
+  </keyword>
+</keywords>

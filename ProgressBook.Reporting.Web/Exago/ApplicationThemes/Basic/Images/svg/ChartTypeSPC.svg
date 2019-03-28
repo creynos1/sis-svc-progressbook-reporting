@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeSPC
+  </title>
+  <defs>
+    <path id="a" d="M5 33a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm8-14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm14 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+    <circle id="b" cx="35" cy="9" r="2"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#DA7A7A" stroke-dasharray="3 3" stroke-linecap="square" d="M3.5 12.5h33m-33 15h33" opacity=".5"/>
+    <path stroke="#6DEF9D" stroke-dasharray="1" stroke-linecap="square" d="M3.5 20.5h33"/>
+    <polyline stroke="#6896ED" stroke-width="2" points="5 31 13 17 27 28 35 9"/>
+    <use fill="#FFFFFF" xlink:href="#a"/>
+    <path stroke="#6896ED" d="M5 33.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm8-14a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm14 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+    <g>
+      <use fill="#FFFFFF" xlink:href="#b"/>
+      <circle cx="35" cy="9" r="2.5" stroke="#DA7A7A"/>
+    </g>
+  </g>
+</svg>

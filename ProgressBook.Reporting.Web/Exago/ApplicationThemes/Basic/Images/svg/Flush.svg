@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    Flush
+  </title>
+  <path fill="#777777" fill-rule="evenodd" d="M6 2V1h4v1h4v2H2V2h4zM3 5h10v9.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V5zm3.5 2a.5.5 0 0 0-.5.5v5a.5.5 0 1 0 1 0v-5a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v5a.5.5 0 1 0 1 0v-5a.5.5 0 0 0-.5-.5z"/>
+</svg>

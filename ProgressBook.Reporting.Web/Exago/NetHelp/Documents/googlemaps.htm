@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Google Maps</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="geocharts.htm" /><link rel="next" href="drilldowns.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="c0fe96dc-9ba8-4120-951a-aef571cd8334">
+<h2>Google Maps</h2>
+<p>Google Maps are interactive maps that plot data per geographic area. Google 
+Maps use <em>data highlighting</em>, whereby data color-codes areas in varying 
+levels of intensity. Highlighting can affect multiple levels of 
+granularity, to allow for drilling down into regions.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.googlemap_state.png" />     <img alt="" src="../Media/screen.googlemap_county.png" /></p>
+<p class="Caption">A Google Map viewed at the state level and the county level</p>
+<p>To add a Google Map to a report, select the report cell where you want the 
+map to appear. Then click the <strong><img alt="" src="../Media/GoogleMaps.png" /> Google Map Wizard</strong> icon. Proceed 
+through the <a class="topic-link" href="googlemaps.htm#locations1.htm">Locations</a>, <a class="topic-link" href="googlemaps.htm#data3.htm">Data</a>, <a class="topic-link" href="googlemaps.htm#appearance2.htm">Appearance</a>, and <a class="topic-link" href="googlemaps.htm#sizeandpreview1.htm">Size and Preview</a> pages, then click 
+<strong>Finish</strong> when you are done.</p>
+<p>To edit a Google Map, double-click it, or select it and click the <img alt="" src="../Media/GoogleMaps.png" /> <strong>Google Map Wizard</strong> icon to 
+reopen the wizard.</p><a class="_D2HAnchor" name="locations1.htm" id="locations1.htm"></a>
+<p class="MidTopic">Locations</p>
+<p>Select the locations to use for data highlighting. Google Maps support up to 
+six levels of granularity of locations. Some location types require data for 
+enclosing types, in order to disambiguate location names. For each location 
+type, select the report cell that contains the location names.</p>
+<p>Use the following chart to determine the required data for different location 
+types. Start at a slice and follow the chart inward to find its required 
+locations.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.gmaps_reqlocations.png" /></p>
+<p class="Caption">Location requirements</p>
+<p>Alternately, you can use latitude and longitude to place drop pins at 
+coordinates on the map.</p>
+<p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>County and Zip Code 
+locations are only available for data based in the United 
+States.<br /></p><span id="related-topics"></span><a class="_D2HAnchor" name="data3.htm" id="data3.htm"></a>
+<p class="MidTopic">Data</p>
+<p>Select the data to highlight each location, and optionally, additional 
+metrics to see in a tooltip when hovering over a location. The <strong>Primary 
+Metric</strong> sets the data highlighting.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.googlemap_hover.png" /></p>
+<p class="Caption">Hover tooltip with three metrics</p>
+<p>To add a metric, click <strong><img src="../Media/Add2.png" alt="" /> Add 
+Metric</strong>.</p>
+<p>To delete a metric, click the Delete <img alt="" src="../Media/DeleteItem.png" /> icon next to the metric to delete. There 
+must be at least one metric.</p>
+<p>For each metric:</p>
+<ol>
+  <li class="list_123">
+  <p>Select the report cell that contains the data for that metric from the 
+  <strong>Metric</strong> list.</p>
+  </li><li class="list_123">
+  <p>Choose how to aggregate the data from the <strong>Agg. Type 
+  </strong>list.</p>
+  </li><li class="list_123">
+  <p>Enter a label for the metric in the <strong>Labels </strong>field. The 
+  label will show in the hover tooltip.</p>
+  </li><li class="list_123">
+  <p>Optional: Click the <strong>Number Format </strong><img alt="" src="../Media/FormatCells.png" /> icon to change how the data values will 
+  show in the hover tooltip. See <a class="topic-link" href="cellformat.htm">Cell 
+  Format</a> for details.</p></li></ol><span id="related-topics"></span><a class="_D2HAnchor" name="appearance2.htm" id="appearance2.htm"></a>
+<p class="MidTopic">Appearance</p>
+<p>In the <strong>Primary Metric Colors </strong>pane, determine the color range 
+to use for highlighting. Do one of the following:</p>
+<ul>
+  <li class="list_bullets">
+  <p>Select a <strong>Theme</strong>. For most themes, lighter highlight colors 
+  represent lesser values, and darker colors represent greater values.</p>
+  </li><li class="list_bullets">
+  <p>Choose <strong>Linear Range</strong> and select a custom color range. 
+  The highlight trends towards the first color for lesser values, and towards 
+  the second color for greater values.</p></li></ul>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Areas with no data 
+are not shaded.</p>
+<p>In the <strong>Metric Levels</strong> pane, you can select which levels of 
+location are highlighted. Clear the check box for a level to prevent 
+highlighting and drilling down into that level of data.</p>
+<p>You can also select whether to <strong>Display Drop Pins</strong> instead of 
+highlighting for the lowest location level available in your data.<br /></p><span id="related-topics"></span><a class="_D2HAnchor" name="sizeandpreview1.htm" id="sizeandpreview1.htm"></a>
+<p class="MidTopic">Size and Preview</p>
+<p style="TEXT-ALIGN: left">Determine the size, initial view, and style of the 
+map.</p>
+<p style="TEXT-ALIGN: left">Set the initial view by panning and zooming the map. 
+Drag in a direction on the map to pan. Click the zoom buttons to zoom in 
+<img alt="" src="../Media/custom.GoogleMapZoomIn.png" /> and out <img alt="" src="../Media/custom.GoogleMapZoomOut.png" />.</p>
+<p>To set the size, either:</p>
+<ul>
+  <li class="list_bullets">
+  <p>Drag the lower-right corner of the map</p>
+  </li><li class="list_bullets">
+  <p>Select the <strong>Set specific size </strong>check box and enter Height 
+  and Width values</p>
+  </li><li class="list_bullets">
+  <p>Select the <strong>Fit map to cell </strong>check box to scale the map to 
+  the size of the cell</p></li></ul>
+<p>Select the style of map from the <strong>Base Map</strong> list.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.googlemap_roadmap.png" />     <img alt="" src="../Media/screen.googlemap_terrainmap.png" /></p>
+<p class="Caption">Road map versus Terrain map<br /></p><span id="related-topics"></span><span id="related-topics"></span></body></html>

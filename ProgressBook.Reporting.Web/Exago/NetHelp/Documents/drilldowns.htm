@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Drilldowns</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="googlemaps.htm" /><link rel="next" href="actionevents.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="6380be0c-0f46-446c-b898-1dec68212fb7">
+<h2>Drilldowns</h2>
+<p>Linked reports allow you to add custom <em>drilldowns</em> to cells or 
+charts. Drilldowns are a means of exploring data points by "drilling 
+down" into their background data.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Drilldowns work in 
+the <a class="topic-link" href="reportviewer.htm">Report Viewer</a> and <a class="topic-link" href="dashboarddesigner.htm">Dashboard</a> Viewer, not in 
+exported reports.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.link_cell.png" />     <img alt="" src="../Media/screen.link_chart.png" /></p>
+<p class="Caption">Drilling down into a cell and a chart</p>
+<p>Drilldowns require you to have a <em>child report</em>, which is an Advanced 
+or Express report that contains the background data for the <em>parent 
+report</em>. You can create a drilldown on a <a class="topic-link" href="sections.htm#dynamic.htm">Dynamic</a> cell or a chart by linking the child 
+report to the parent report cell. Each data value, or each chart series, when 
+clicked, filters the child report by its respective value before opening the 
+resulting report in a window at the cursor.</p>
+<p>Since drilldowns are themselves reports, they can have interactive sorts and 
+filters, dynamic visualizations, they can be exported, and they can even have 
+their own drilldowns.</p>
+<p class="Aside">Default linking</p>
+<p>By default, the data category that corresponds to the linking 
+cell filters the closest joined category on the linked report. See <!--?XML:NAMESPACE PREFIX = "[default] http://www.w3.org/1999/xhtml" NS = "http://www.w3.org/1999/xhtml" /--><a class="topic-link" href="joins.htm">Joins</a> for more information. If there is no 
+join path, then you must set the linked fields manually in the <a class="topic-link" href="drilldowns.htm#fields.htm">Fields</a> page.</p>
+<p>For example, a parent report links an Employees data field to a child report 
+with an Orders category. The two categories are joined on <span class="Code">Orders.EmployeeId &gt;&gt; Employees.Id</span>. For each Employees 
+row, its Employee.Id value filters the linked report down to the Order rows with 
+matching Orders.EmployeeId values.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.link_child.png" />     <img alt="" src="../Media/screen.link_parent_with_child.png" /></p>
+<p class="Caption">Orders linked report filtered by Employee Id</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Filters on the 
+parent report or containing dashboard do not cascade down to linked 
+reports. Linking filters do not cascade down to <em>grand-children</em>, or 
+child reports of the linked report.</p>
+<p class="Aside">Adding linked reports</p>
+<p>To add a linked report drilldown:</p>
+<ol>
+  <li class="list_123">
+  <p>Make an Advanced or Express report that contains the drilldown data. This 
+  will be the linked child report.</p>
+  <p>Linked reports typically open in a small window, so the child report should 
+  be simple and concise. Avoid large fonts, too much static content, or making 
+  it too large in size. You should also set the <a class="topic-link" href="generaloptions.htm">General Option</a> for <strong>No Data Qualify 
+  Display Mode</strong> to <strong>Show Report</strong>, to show an empty 
+  drilldown instead of a popup window for links with no data.</p>
+  </li><li class="list_123">
+  <p>In the parent report, select the cell to link, then click the <strong>Link 
+  Reports</strong> <img alt="" src="../Media/LinkedReport.png" /> icon. The 
+  cell can contain a data field, formula, or a column-based or row-based 
+  chart.</p>
+  </li><li class="list_123">
+  <p>Select the child report. Then click <strong>Okay</strong>.</p>
+  <p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>Because the linked 
+  report is a separate report from the parent, if you move the linked 
+  report to another folder, or remove the linked category, the link will be 
+  lost. You will have to edit the parent report and add it again.</p></li></ol>
+<p>To remove a linked report drilldown:</p>
+<ol>
+  <li class="list_123">
+  <p>Click the link <img alt="" src="../Media/LinkedReportNotice.png" /> icon, or select the cell and click 
+  the <strong>Link Reports</strong> <img alt="" src="../Media/LinkedReport.png" /> icon.</p>
+  </li><li class="list_123">
+  <p>Click the <strong>Remove Link</strong> <img alt="" src="../Media/DeleteItem.png" /> icon.</p>
+  </li><li class="list_123">
+  <p>Click <strong>Okay</strong>.</p></li></ol>
+<p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>Adding a linked 
+report to a cell may override or interfere with any linked <a class="topic-link" href="actionevents.htm">Action Event</a> on the cell. Adding a linked report to 
+a chart may override some aspects of the chart's <a class="topic-link" href="reportviewer.htm#interactingwithreports.htm">basic 
+interactivity</a>.</p><a class="_D2HAnchor" name="fields.htm" id="fields.htm"></a>
+<p class="MidTopic">Fields</p>
+<p>You may want to link on different fields or categories than the default join. 
+The <strong>Fields</strong> page allows you to specify which categories and 
+fields are used to determine the drilldown data.</p>
+<p>The Fields page is suitable for the following situations, among others:</p>
+<ul>
+  <li class="list_bullets">
+  <p>The default join is not the link you want to use</p>
+  <p class="Indent"><strong>Example</strong>: Linking on related fields other 
+  than the Id field, such as "Region"</p>
+  <p class="Indent"><span class="Code">Employees.Region &gt;&gt; 
+  Orders.ShipRegion</span></p>
+  </li><li class="list_bullets">
+  <p>No join exists between the From and To categories</p>
+  <p class="Indent"><strong>Example</strong>: Categories have related fields but 
+  are not joined, such as Orders and Suppliers</p>
+  <p class="Indent"><span class="Code">Orders.ShipCity &gt;&gt; 
+  Suppliers.City</span></p>
+  </li><li class="list_bullets">
+  <p>The From and To categories are the same</p>
+  <p class="Indent"><strong>Example</strong>: Fields are related to other fields 
+  in the category, such as Employee X supervises Employees Y and 
+  Z</p>
+  <p class="Indent"><span class="Code">Employees.Id &gt;&gt; 
+  Employees.ReportsTo</span></p></li></ul>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br /> The 
+<em>From</em> fields from the parent report filter the <em>To</em> fields on the 
+child report.</p>
+<p>To specify the linked fields:</p>
+<ol>
+  <li class="list_123">
+  <p>Select the <strong>From Category</strong> and <strong>To Category</strong> 
+  from their respective lists.</p>
+  </li><li class="list_123">
+  <p>Click <img alt="" src="../Media/Add2.png" /><strong> Add</strong> for 
+  each set of linked fields to add.</p>
+  <p>Use multiple linked fields to show only the drilldown rows that 
+  satisfy <span style="TEXT-DECORATION: underline">all</span> the link 
+  conditions.</p>
+  </li><li class="list_123">
+  <p>For each set of linked fields, select the <strong>From Field</strong> and 
+  <strong>To Field</strong>.</p>
+  </li><li class="list_123">
+  <p>When finished, click <strong>Okay</strong>.</p></li></ol><span id="related-topics"></span><span id="related-topics"></span></body></html>

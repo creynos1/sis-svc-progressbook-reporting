@@ -1,0 +1,43 @@
+{
+"oracle":
+	{
+		"PrimaryKeySql":"SELECT cols.constraint_name AS indexname, cons.owner AS schemaname, cols.table_name AS tablename, cols.column_name AS columnname FROM user_constraints cons JOIN user_cons_columns cols ON cons.constraint_name = cols.constraint_name WHERE cons.constraint_type = 'P'",
+		"ForeignKeySql":"SELECT c.r_owner AS schemaname, c_pk.table_name AS tablename, c_pk_cols.column_name AS columnname, c.owner AS referencedschemaname, a.table_name AS referencedtablename, a.column_name AS referencedcolumnname FROM user_cons_columns a JOIN user_constraints c ON a.owner = c.owner AND a.constraint_name = c.constraint_name JOIN user_constraints c_pk ON c.r_owner = c_pk.owner AND c.r_constraint_name = c_pk.constraint_name JOIN user_cons_columns c_pk_cols ON c_pk_cols.constraint_name = c_pk.constraint_name WHERE c.constraint_type = 'R'",
+		"RowRangeMethodString":"RowNumberNoAlias"
+	},
+"mysql":
+	{
+		"PrimaryKeySql":"SELECT CONSTRAINT_NAME AS indexname, TABLE_SCHEMA as schemaname, TABLE_NAME as tablename, COLUMN_NAME as columnname FROM information_schema.key_column_usage WHERE table_schema = schema() AND CONSTRAINT_NAME = 'PRIMARY'",
+		"ForeignKeySql":"SELECT TABLE_SCHEMA As schemaname, TABLE_NAME as tablename, COLUMN_NAME as columnname, REFERENCED_TABLE_SCHEMA as referencedschemaname, REFERENCED_TABLE_NAME as referencedtablename, REFERENCED_COLUMN_NAME as referencedcolumnname FROM information_schema.key_column_usage WHERE  table_schema = schema() AND CONSTRAINT_NAME Like 'FK%'",
+		"RowRangeMethodString":"LimitOffset"
+	},
+"db2":
+	{
+		"PrimaryKeySql":"SELECT TRIM(tabConst.NAME) AS indexname, TRIM(tabConst.TBCREATOR) AS schemaname, TRIM(tabConst.TBNAME) AS tablename, TRIM(colUse.COLNAME) AS columnname FROM SYSIBM.SYSTABCONST tabConst JOIN SYSIBM.SYSKEYCOLUSE colUse ON tabConst.NAME = colUse.CONSTNAME WHERE CONSTRAINTYP = 'P'",
+		"ForeignKeySql":"SELECT TRIM(sysRels.REFTBCREATOR) AS schemaname, TRIM(sysRels.REFTBNAME) AS tablename, TRIM(sysRels.PKCOLNAMES) AS columnname, TRIM(sysRels.CREATOR) AS referencedschemaname, TRIM(sysRels.TBNAME) AS referencedtablename, TRIM(sysRels.FKCOLNAMES) AS referencedcolumnname FROM SYSIBM.SYSRELS sysRels",
+		"RowRangeMethodString":"RowNumber"
+	},
+"informix":
+	{
+		"PrimaryKeySql":"SELECT scon.constrname AS indexname, TRIM(st.owner) AS schemaname, st.tabname AS tablename, scol.colname AS columnname FROM systables st JOIN sysconstraints scon ON st.tabid = scon.tabid JOIN sysindexes si ON st.tabid = si.tabid JOIN syscolumns scol ON st.tabid = scol.tabid WHERE scon.constrtype ='P' AND scon.idxname = si.idxname AND (scol.colno = si.part1 OR scol.colno = si.part2 OR scol.colno = si.part3 OR scol.colno = si.part4 OR scol.colno = si.part5 OR scol.colno = si.part6 OR scol.colno = si.part7 OR scol.colno = si.part8 OR scol.colno = si.part9 OR scol.colno = si.part10 OR scol.colno = si.part11 OR scol.colno = si.part12 OR scol.colno = si.part13 OR scol.colno = si.part14 OR scol.colno = si.part15 OR scol.colno = si.part16)",
+		"ForeignKeySql":"SELECT TRIM(stb.owner) AS schemaname, stb.tabname AS tablename, scol.colname AS columnname, TRIM(sta.owner) AS referencedschemaname, sta.tabname AS referencedtablename, scolsub.colname AS referencedcolumnname FROM systables sta JOIN sysconstraints sca ON sta.tabid = sca.tabid JOIN sysreferences sr ON sca.constrid = sr.primary AND sca.tabid = sr.ptabid JOIN sysconstraints scb ON sr.constrid = scb.constrid JOIN systables stb ON scb.tabid = stb.tabid JOIN sysindexes si ON stb.tabid = si.tabid AND si.idxname = scb.idxname JOIN syscolumns scol ON si.tabid = scol.tabid JOIN syscolumns scolsub ON sta.tabid = scolsub.tabid JOIN sysindexes sindsub ON sta.tabid = sindsub.tabid AND ( scolsub.colno = sindsub.part1 OR scolsub.colno = sindsub.part2 OR scolsub.colno = sindsub.part3 OR scolsub.colno = sindsub.part4 OR scolsub.colno = sindsub.part5 OR scolsub.colno = sindsub.part6 OR scolsub.colno = sindsub.part7 OR scolsub.colno = sindsub.part8 OR scolsub.colno = sindsub.part9 OR scolsub.colno = sindsub.part10 OR scolsub.colno = sindsub.part11 OR scolsub.colno = sindsub.part12 OR scolsub.colno = sindsub.part13 OR scolsub.colno = sindsub.part14 OR scolsub.colno = sindsub.part15 OR scolsub.colno = sindsub.part16 ) JOIN sysconstraints sconsub ON sindsub.idxname = sconsub.idxname AND sconsub.constrname = sca.constrname WHERE  sca.constrtype = 'P' AND abs(si.part1) = scol.colno",
+		"RowRangeMethodString":"RowNumber"
+	},
+"mssql":
+	{
+		"PrimaryKeySql":"SELECT  i.name AS IndexName, OBJECT_SCHEMA_NAME(ic.OBJECT_ID) as schemaname, OBJECT_NAME(ic.OBJECT_ID) AS tablename, COL_NAME(ic.OBJECT_ID,ic.column_id) AS columnname FROM sys.indexes AS i INNER JOIN sys.index_columns AS ic ON  i.OBJECT_ID = ic.OBJECT_ID AND i.index_id = ic.index_id WHERE   i.is_primary_key = 1",
+		"ForeignKeySql":"SELECT OBJECT_SCHEMA_NAME(f.parent_object_id) schemaname, OBJECT_NAME(f.parent_object_id) tablename, COL_NAME(fc.parent_object_id,fc.parent_column_id) columnname, OBJECT_SCHEMA_NAME(fc.referenced_object_id) referencedschemaname, OBJECT_NAME(fc.referenced_object_id) referencedtablename, COL_NAME(fc.referenced_object_id,fc.referenced_column_id) referencedcolumnname FROM sys.foreign_keys AS f INNER JOIN sys.foreign_key_columns AS fc ON f.OBJECT_ID = fc.constraint_object_id INNER JOIN sys.tables t ON t.OBJECT_ID = fc.referenced_object_id",
+		"RowRangeMethodString":"OffsetFetch"
+	},
+"postgres":
+	{
+		"PrimaryKeySql":"SELECT kcu.constraint_name AS indexname, t.table_schema AS schemaname, t.table_name AS tablename, kcu.column_name AS columnname FROM INFORMATION_SCHEMA.TABLES t JOIN INFORMATION_SCHEMA.TABLE_CONSTRAINTS tc ON tc.table_catalog = t.table_catalog AND tc.table_schema = t.table_schema AND tc.table_name = t.table_name AND tc.constraint_type = 'PRIMARY KEY' JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE kcu ON kcu.table_catalog = tc.table_catalog AND kcu.table_schema = tc.table_schema AND kcu.table_name = tc.table_name AND kcu.constraint_name = tc.constraint_name WHERE t.table_schema NOT IN ('pg_catalog', 'information_schema')",
+		"ForeignKeySql":"SELECT DISTINCT t.table_schema AS schemaname, tc.table_name AS tablename, kcu.column_name AS columnname, ccu.table_schema AS referencedschemaname, ccu.table_name AS referencedtablename, ccu.column_name AS referencedcolumnname FROM INFORMATION_SCHEMA.TABLES t JOIN INFORMATION_SCHEMA.TABLE_CONSTRAINTS tc ON tc.table_catalog = t.table_catalog AND tc.table_schema = t.table_schema AND tc.table_name = t.table_name AND tc.constraint_type = 'FOREIGN KEY' JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE kcu ON kcu.table_catalog = tc.table_catalog AND kcu.table_schema = tc.table_schema AND kcu.table_name = tc.table_name AND kcu.constraint_name = tc.constraint_name JOIN INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE AS ccu ON ccu.constraint_name = tc.constraint_name WHERE t.table_schema NOT IN ('pg_catalog', 'information_schema')",
+		"RowRangeMethodString":"OffsetFetch"
+	},
+"odbc":
+	{
+		"PrimaryKeySql":"SELECT CONSTRAINT_NAME AS indexname, TABLE_SCHEMA as schemaname, TABLE_NAME as tablename, COLUMN_NAME as columnname FROM information_schema.key_column_usage WHERE table_schema = schema() AND CONSTRAINT_NAME = 'PRIMARY'",
+		"ForeignKeySql":"SELECT TABLE_SCHEMA As schemaname, TABLE_NAME as tablename, COLUMN_NAME as columnname, REFERENCED_TABLE_SCHEMA as referencedschemaname, REFERENCED_TABLE_NAME as referencedtablename, REFERENCED_COLUMN_NAME as referencedcolumnname FROM information_schema.key_column_usage WHERE  table_schema = schema() AND CONSTRAINT_NAME Like 'FK%'"
+	}
+}

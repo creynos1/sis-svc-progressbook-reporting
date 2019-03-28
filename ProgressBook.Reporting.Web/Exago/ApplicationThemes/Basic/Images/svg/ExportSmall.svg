@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    ExportSmall
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <rect width="2" height="10" x="1" y="1" fill="#777777" rx="1"/>
+    <path fill="#777777" d="M7 5V2.962a.5.5 0 0 1 .803-.398l3.993 3.038a.5.5 0 0 1 0 .796L7.803 9.436A.5.5 0 0 1 7 9.038V7H5a1 1 0 1 1 0-2h2z"/>
+  </g>
+</svg>

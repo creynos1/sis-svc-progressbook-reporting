@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    CollapseRows
+  </title>
+  <g fill="none" fill-rule="evenodd" transform="translate(-28 -24)">
+    <path fill="#777777" fill-rule="nonzero" d="M31.126 27c-1.102 0-1.455.717-.79 1.598l3.067 4.074c.33.438.866.436 1.195 0l3.068-4.074c.665-.883.305-1.598-.79-1.598h-5.75z"/>
+    <g transform="translate(21 35)">
+      <rect width="16" height="16"/>
+      <path fill="#808080" d="M1 2h14v1H1V2zm2 2h10v1H3V4zM2 6h12v1H2V6zm2 2h8v1H4V8zm-1 2h10v1H3v-1zm2 2h6v1H5v-1z"/>
+    </g>
+  </g>
+</svg>

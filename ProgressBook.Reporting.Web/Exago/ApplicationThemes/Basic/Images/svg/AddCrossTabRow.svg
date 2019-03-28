@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="10" viewBox="0 0 24 10">
+  <title>
+    AddCrossTabRow
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#808080" d="M24 8v2H14V8h10zm0-4v2H14V4h10zm0-4v2H14V0h10z"/>
+    <polygon fill="#51D294" points="6 4 6 0 4 0 4 4 0 4 0 6 4 6 4 10 6 10 6 6 10 6 10 4"/>
+  </g>
+</svg>

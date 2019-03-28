@@ -1,0 +1,18 @@
+.wrMobileColorInputContainerDiv {
+  display: inline-block;
+  height: 28px;
+  width: 68px;
+  text-align: left;
+  border: 1px solid #c8c7cc;
+  margin-left: 1em;
+}
+.wrMobileColorInputContainerDiv div {
+  height: 28px;
+  width: 68px;
+  display: inline-block;
+  cursor: pointer;
+}
+.wrMobileColorInputPickerDiv {
+  position: absolute;
+  z-index: 99999;
+}

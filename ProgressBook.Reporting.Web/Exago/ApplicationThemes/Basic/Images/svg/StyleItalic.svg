@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    StyleItalic
+  </title>
+  <g fill="#808080" fill-rule="evenodd" font-style="italic" font-size="15" font-family="TimesNewRomanPS-ItalicMT, Times New Roman">
+    <text>
+      <tspan x="5" y="13">I</tspan>
+    </text>
+    <text>
+      <tspan x="5" y="13">I</tspan>
+    </text>
+  </g>
+</svg>

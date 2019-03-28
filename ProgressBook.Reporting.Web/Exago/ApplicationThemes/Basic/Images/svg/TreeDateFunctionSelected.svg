@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeDateFunctionSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M0 1.002C0 .45.456 0 1.002 0h9.996C11.55 0 12 .456 12 1.002v9.996C12 11.55 11.544 12 10.998 12H1.002A1.007 1.007 0 0 1 0 10.998V1.002zm1 4v4.995A.992.992 0 0 0 1.995 11h8.01c.54 0 .995-.449.995-1.003V5.003A.992.992 0 0 0 10.005 4h-8.01C1.455 4 1 4.449 1 5.003z"/>
+    <rect width="10" height="7" x="1" y="4" fill-opacity=".25"/>
+    <rect width="2" height="2" x="2" y="5"/>
+    <rect width="2" height="2" x="5" y="5"/>
+    <rect width="2" height="2" x="8" y="5"/>
+    <rect width="2" height="2" x="8" y="8"/>
+    <rect width="2" height="2" x="5" y="8"/>
+    <rect width="2" height="2" x="2" y="8"/>
+  </g>
+</svg>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Language>
+	<!--
+	<element id="GettingStartedContent">
+		<style type="text/css">
+			#wrWelcomeContainerOuter { display: table; position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100% }
+			#wrWelcomeContainerInner { display: table-cell; vertical-align: middle; }
+			#wrWelcomeContent   { margin-left: auto; margin-right: auto; width: 800px; white-space: nowrap; }
+			#wrWelcomeText { display: inline-block; white-space: normal; width:400px; padding: 10px; }
+			#wrWelcomeText h1 { font-size:22pt; font-weight:normal; color:#6896ed; margin-bottom:10px; }
+			#wrWelcomeText h2 { font-size:14pt; font-weight:normal; color:#b3b3b3; margin-top:10px; margin-bottom:10px; }
+			#wrWelcomeText p { font-size:11pt; color:#666666; }
+		</style>
+		<div id="wrWelcomeContainerOuter">
+			<div id="wrWelcomeContainerInner">
+				<div id="wrWelcomeContent">
+					<div id="wrWelcomeText">
+						<h1>Welcome to Exago</h1>
+						<h2>This Getting Started tab is fully customizable.</h2>
+						<p style="margin-top:10px;">
+							You can add static, interactive or embedded content to this tab.
+							Many Exago clients use this area to display custom dashboards,
+							Training and Help content and News and Announcements.
+						</p>
+						<p>Please refer to the Exago Technical Guide for additional information.</p>
+						<button type="button" class="wrGettingStartedButton" style="height: 36px; width: 120px;" onclick="wrAddTabbedContent('ExampleTab', 'ExampleTabName');">
+							See Examples
+						</button>
+					</div>
+					<img alt="Dashboard" src="Config/Images/GettingStartedImg@2x.png" style="height: 250px; width: 360px;" />
+				</div>
+			</div>
+		</div>
+	</element>
+	-->
+
+	<element id="ExampleTabName">Examples</element>
+
+	<element id="ExampleTab">
+		<style type="text/css">
+			#wrExampleContainer { position:absolute; top:0; left:0; right:0; bottom:0; }
+			#wrExampleContent   { display: table; margin: 0 auto; max-width: 700px; }
+			#wrExampleContent h1 { font-size:22pt; font-weight:normal; color:#6896ed; margin-bottom:0; }
+			#wrExampleContent h2 { font-size:14pt; font-weight:normal; color:#b3b3b3; margin-top:20px; margin-bottom:0; }
+			#wrExampleContent p { font-size:11pt; color:#666666; }
+			a.wrExample:link { color:#666666;text-decoration:underline;font-size:8pt;padding-right: 40px; }
+			a.wrExample:visited { color:#666666;text-decoration:underline;font-size:8pt;padding-right: 40px; }
+			a.wrExample:hover { color:#666666;text-decoration:none;font-size:8pt;padding-right: 40px; }
+			.wrExampleDashboardReport { height:190px; width:335px; margin: 4px;}
+			.wrExampleDashboardVideo {margin: 5px;}
+		</style>
+		<div id="wrExampleContainer">
+			<div id="wrExampleContent">
+				<h1>Custom tab content examples</h1>
+				<p style="margin-top:0;">
+					Click the links below to view examples of the types of content that can be added to custom tabs.
+					For detailed information and a complete list of the JavaScript functions Exago provides to assist in customizing this content,
+					consult the <i>Customizing Getting Started Content</i> section of the Exago Technical Guide.
+				</p>
+
+				<a class="wrExample" href="#ReportsExample">
+					<b>ADD REPORTS</b>
+				</a>
+				<a class="wrExample" href="#VideoExample">
+					<b>ADD VIDEOS</b>
+				</a>
+				<a class="wrExample" href="#LinksExample">
+					<b>ADD LINKS</b>
+				</a>
+
+				<h2>
+					<a name="ReportsExample">Create a custom dashboard by adding reports</a>
+				</h2>
+				<p style="margin-top:0;">
+					To load a report use: <i>data-onloadreportname="ReportFolder\\ReportName".</i>
+				</p>
+				<img src="Config/Images/GettingStartedExamplesMap.png" class="wrExampleDashboardReport" alt="Map"/>
+				<img src="Config/Images/GettingStartedExamplesChartA.png" class="wrExampleDashboardReport" alt="ChartA"/>
+				<img src="Config/Images/GettingStartedExamplesChartB.png" class="wrExampleDashboardReport" alt="ChartB"/>
+				<img src="Config/Images/GettingStartedExamplesTable.png" class="wrExampleDashboardReport" alt="Table"/>
+
+				<h2>
+					<a name="VideoExample">Add Videos from external sites or directly with HTML5</a>
+				</h2>
+				<video src="Config/Videos/GettingStartedNavigate.mp4" controls="controls" type="video/mp4" class="wrExampleDashboardVideo" height="200px" width="320px"></video>
+				<video src="Config/Videos/GettingStartedCreateReport.mp4" controls="controls" type="video/mp4" class="wrExampleDashboardVideo" height="200px" width="320px"></video>
+
+				<h2>
+					<a name="LinksExample">Add links that launch reports:</a>
+				</h2>
+				<p style="margin-top:0;">
+					To display buttons or links that execute a report in the specified format when clicked, use <i>wrExecuteReport(string reportFolder\\reportName, string format)</i> where format
+					is "html," "excel," "pdf," "rtf," or "csv."
+				</p>
+			</div>
+		</div>
+	</element>
+	<element id="AdminGettingStartedContent">
+		<style type="text/css">
+			#wrWelcomeContainerOuter { display: table; position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100% }
+			#wrWelcomeContainerOuter a { color: #6896ed; }
+			#wrWelcomeContainerInner { display: table-cell; vertical-align: middle; }
+			#wrWelcomeContent   { margin-left: auto; margin-right: auto; width: 800px; white-space: nowrap; }
+			#wrWelcomeText { display: inline-block; width: 400px; padding: 10px; white-space: normal; }
+		</style>
+		<div id="wrWelcomeContainerOuter">
+			<div id="wrWelcomeContainerInner">
+				<div id="wrWelcomeContent">
+					<div id="wrWelcomeText">
+						<p style="color:#808080; font-size:18pt; text-align:left;">
+							Welcome to the Exago <span style="font-weight:bold; color: #6896ed">Administration Console</span>
+						</p>
+						<p style="color:#b3b3b3; font-size:12pt; font-weight:bold; text-align:left;">
+							This tabbed content is fully customizable.
+						</p>
+						<p style="color:#666666; font-size:11pt; text-align:left;">
+							Begin by adding a data source, data objects, and joins.
+						</p>
+						<p style="color:#666666; font-size:11pt; text-align:left;">
+							Need more information?
+						</p>
+						<p style="color:#666666; font-size:11pt; text-align:left; margin-top:-10px;">
+							Visit our <a href="http://support.exagoinc.com" target="_blank">Support Site</a> or <a href="http://www.exagoinc.com" target="_blank">Home Page</a>
+						</p>
+						<button type="button" class="wrGettingStartedButton" style="height: 36px; width: 100px;" onclick="wrAddTabbedContent('AdminExampleTab', 'AdminExampleTabName');">
+							Get Started
+						</button>
+					</div>
+					<img alt="Getting started image" src="Config/Images/AdminGettingStartedImg@2x.png" style="height: 250px; width: 360px;" />
+				</div>
+			</div>
+		</div>
+	</element>
+
+	<element id="AdminExampleTabName">Examples</element>
+
+	<element id="AdminExampleTab">
+		<style type="text/css">
+			#wrExampleContainer { position:absolute; width:700px; left:50%; margin-left:-350px; }
+			#wrExampleContainer img { border: 1px solid #d5d5d5; }
+			a.example:link { color:#6bd145;text-decoration:underline;font-size:8pt;padding-right: 40px; }
+			a.example:visited { color:#6bd145;text-decoration:underline;font-size:8pt;padding-right: 40px; }
+			a.example:hover { color:#5b2eff;text-decoration:none;font-size:8pt;padding-right: 40px; }
+			.DashboardReport { border:solid #666666 1px; height:200px; width:335px; }
+			#ExampleHeadline { position:absolute; top:10px; left:10px; height:24px; width:700px; }
+			#EampleIntro { position:absolute; top:55px; left:10px; height:20px; width:700px; }
+			#ExampleLinks { position:absolute; top:130px; left:10px; height:25px; width: 700px; }
+			#AdminReportPath { position:absolute; top:290px; left:10px; height:25px; width: 700px; }
+			#AdminGeneralMainImg { position:absolute; top:400px; left:10px; height:25px; width: 300px; }
+			#AdminReportPathImg { position:absolute; top:400px; left:310px; height:25px; width: 300px; }
+			#AdminItemIntro { position:absolute; top:140px; left:10px; height:25px; width: 395px;}
+			#AdminItemIntroImg { position:absolute; top:90px; left:430px; height:25px; width: 300px; }
+		</style>
+		<div id="wrExampleContainer">
+			<div id="ExampleHeadline">
+				<p style="color:#6896ed; font-size:22pt; text-align:left;">
+					Getting Started with the Administration Console
+				</p>
+			</div>
+			<div id="AdminItemIntro">
+				<p style="font-size:12pt; color:#666666; margin-top:8px; margin-bottom:0;">
+					To Add New Items to your Admin Console configuration:
+				</p>
+				<p style="font-size:12pt; color:#666666; margin-top:2px; margin-bottom:0; font-weight:bold;">
+					(1) Select the item type and (2) Click the Plus Button.
+				</p>
+				<p style="font-size:12pt; font-weight:bold; color:#666666; margin-top:12px; margin-bottom:0;">
+					For starters add a Data Source, a few Data Objects and one or two Joins.
+				</p>
+			</div>
+			<div id="AdminItemIntroImg">
+				<img src="Config/Images/AdminAddNewItemImg.png" />
+			</div>
+			<div id="AdminReportPath">
+				<p style="font-size:12pt; color:#666666; margin-top:8px; margin-bottom:0;">
+					You'll need a top-level folder for storing report designs.  Create a folder in your file system (e.g. c:\Reports). The folder
+					needs write permissions for the IIS user (default username is IIS_IUSRS).
+				</p>
+				<p style="font-size:12pt; font-weight:bold; color:#666666; margin-top:12px; margin-bottom:0;">
+					(1) Open General->Main Settings and (2) Add the folder name to the Report Path field.
+				</p>
+			</div>
+			<div id="AdminGeneralMainImg">
+				<img src="Config/Images/AdminGeneralMainImg.png" />
+			</div>
+			<div id="AdminReportPathImg">
+				<img src="Config/Images/AdminReportPathImg.png" />
+			</div>
+		</div>
+	</element>
+</Language>
+

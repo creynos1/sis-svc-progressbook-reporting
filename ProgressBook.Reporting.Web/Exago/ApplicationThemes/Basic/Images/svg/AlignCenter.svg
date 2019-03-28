@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    AlignCenter
+  </title>
+  <path fill="#808080" fill-rule="evenodd" d="M1 2h14v1H1V2zm2 2h10v1H3V4zM2 6h12v1H2V6zm2 2h8v1H4V8zm-1 2h10v1H3v-1zm2 2h6v1H5v-1z"/>
+</svg>

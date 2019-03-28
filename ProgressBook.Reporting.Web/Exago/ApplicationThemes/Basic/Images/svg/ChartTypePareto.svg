@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypePareto
+  </title>
+  <defs>
+    <path id="a" d="M10 32l10-16"/>
+    <path id="b" d="M20 16L30 6"/>
+    <path id="c" d="M10 34a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm10-16a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM30 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="40" height="40"/>
+    <path fill="#6896ED" d="M27 22h6a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V23a1 1 0 0 1 1-1z"/>
+    <path fill="#6896ED" fill-opacity=".75" d="M17 12h6a1 1 0 0 1 1 1v22a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1z"/>
+    <path fill="#6896ED" fill-opacity=".5" d="M7 4h6a1 1 0 0 1 1 1v30a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/>
+    <g stroke-linecap="square">
+      <use fill="#000000" style="mix-blend-mode:color" xlink:href="#a"/>
+      <use stroke="#6896ED" stroke-width="2" xlink:href="#a"/>
+    </g>
+    <g stroke-linecap="square">
+      <use fill="#000000" style="mix-blend-mode:color" xlink:href="#b"/>
+      <use stroke="#6896ED" stroke-width="2" xlink:href="#b"/>
+    </g>
+    <use fill="#FFFFFF" xlink:href="#c"/>
+    <path stroke="#6896ED" d="M10 34.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm10-16a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm10-10a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+  </g>
+</svg>

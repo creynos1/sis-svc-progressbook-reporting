@@ -1,0 +1,317 @@
+.wrGridContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  cursor: default;
+  color: inherit;
+  background-color: #EFEFEF;
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #d7d7d7;
+}
+.wrGridContainer:focus {
+  outline: none;
+}
+.wrGridOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  opacity: .6;
+}
+.wrGridTbl {
+  table-layout: fixed;
+  width: 1px;
+  /* in combination with fixed layout allows column widths < actual contained width */
+  background-color: #FFFFFF;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+.wrGridVariableTbl {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+.wrGridTbl thead th {
+  border-bottom: solid 1px #eaeaea;
+  border-right: solid 1px #eaeaea;
+  font-weight: normal;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: #545454;
+  background-color: #fbfbfb;
+  height: 2em;
+}
+.wrGridVariableTbl thead th:nth-child(n+3):hover {
+  background: #f3f3f3;
+}
+.wrGridVariableTbl thead th:nth-child(n+3):active {
+  background: #dddddd;
+}
+.wrGridTbl td {
+  color: #000000;
+  border-bottom: solid 1px #eaeaea;
+  border-right: solid 1px #eaeaea;
+  padding-left: 3px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  word-wrap: break-word;
+  /* text-overflow:ellipsis; doesn't work well for images in FF */
+}
+.wrGridPlaceholderRow {
+  height: 5px;
+  background-color: #eef7ff;
+}
+.wrGridMoveRow {
+  min-width: 200px;
+  position: fixed;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  opacity: .6;
+  z-index: 999;
+}
+.wrMultiDragTable td {
+  background-repeat: no-repeat;
+}
+.grC {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  background-repeat: no-repeat;
+}
+.grCh {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.grCt {
+  padding-left: 0 !important;
+}
+.grRh {
+  border-bottom: solid 1px #eaeaea;
+  border-right: solid 1px #eaeaea;
+  padding-left: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: #545454;
+  background-color: #fbfbfb;
+}
+.wrGridVariableTbl .grRh:hover {
+  background: #f3f3f3;
+}
+.wrGridVariableTbl .grRh:active {
+  background: #dddddd;
+}
+.grNum {
+  overflow: hidden;
+  border-bottom: solid 1px #eaeaea;
+  border-right: solid 1px #eaeaea;
+  background-color: #fbfbfb;
+  color: #545454;
+}
+.wrGridVariableTbl .grNum:hover {
+  background: #f3f3f3;
+}
+.wrGridVariableTbl .grNum:active {
+  background: #dddddd;
+}
+.grCr * {
+  cursor: col-resize;
+}
+.grCTextEdit {
+  z-index: 999;
+  position: absolute;
+  overflow: auto;
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+  font-family: Roboto, Arial, sans-serif;
+}
+.grRr * {
+  cursor: row-resize;
+}
+.grSel {
+  background-color: #eef7ff;
+  color: inherit;
+  border: solid 1px #d7d7d7;
+}
+.grCellDrag {
+  position: fixed;
+  cursor: default;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.grColDrag {
+  position: absolute;
+  cursor: col-resize;
+  width: 0;
+  border-left: solid 3px #666666;
+  z-index: 999;
+}
+.grRowDrag {
+  position: absolute;
+  cursor: row-resize;
+  height: 0;
+  border-top: solid 3px #666666;
+  z-index: 999;
+}
+.grDD {
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  border-width: 0;
+  margin: 0;
+}
+[data-disabled] > .grDD {
+  background: transparent;
+}
+.grBtn {
+  vertical-align: middle;
+  margin: 0;
+  cursor: pointer;
+}
+.grDeleteItem {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DeleteItem.svg");
+  background-size: 14px 14px;
+  height: 14px;
+  width: 14px;
+}
+.wrNoSVG .grDeleteItem {
+  background-image: url("../#ApplicationThemeFolder#/Images/DeleteItem.png");
+}
+.grMoveGridRowUp {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MoveGridRowUp.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+}
+.wrNoSVG .grMoveGridRowUp {
+  background-image: url("../#ApplicationThemeFolder#/Images/MoveGridRowUp.png");
+}
+.grMoveGridRowDown {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MoveGridRowDown.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+}
+.wrNoSVG .grMoveGridRowDown {
+  background-image: url("../#ApplicationThemeFolder#/Images/MoveGridRowDown.png");
+}
+.grMoveGridRow {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MoveGridRowUpDown.svg");
+  background-size: 7px 16px;
+  height: 16px;
+  width: 7px;
+}
+.wrNoSVG .grMoveGridRow {
+  background-image: url("../#ApplicationThemeFolder#/Images/MoveGridRowUpDown.png");
+}
+.grRowEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Edit.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+}
+.wrNoSVG .grRowEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/Edit.png");
+}
+.grFormula {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Formula.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+}
+.wrNoSVG .grFormula {
+  background-image: url("../#ApplicationThemeFolder#/Images/Formula.png");
+}
+.grEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Edit.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+}
+.wrNoSVG .grEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/Edit.png");
+}
+.grDrag {
+  cursor: pointer;
+}
+.grCb {
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+.grBtnDsbd {
+  opacity: .2;
+  cursor: default;
+}
+.grMouseOver {
+  border-width: 2px;
+  border-color: #d7d7d7;
+}
+exago td .grTextInput {
+  border: none;
+  padding: 0 0 0 1px;
+  font-size: 8pt;
+  width: 100%;
+}
+.grEmbeddedControl {
+  width: 100%;
+  border: none;
+  float: left;
+}
+.grNoWrap {
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+}
+.wrGridSortableHeaderCell {
+  position: relative;
+}
+.wrGridSortableHeaderCell:hover {
+  background-color: #f3f3f3;
+}
+.wrGridSortableHeaderCell:active {
+  background-color: #dddddd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrGridSortDirectionImage {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -3px;
+  display: none;
+}
+.wrGridTbl tr:hover .wrGridSortDirectionImage {
+  display: block;
+}
+.wrGridRowEditSQLBtn {
+  position: relative;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SQL.svg");
+  background-size: 12px 12px;
+  height: 12px;
+  width: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.wrNoSVG .wrGridRowEditSQLBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/SQL.png");
+}

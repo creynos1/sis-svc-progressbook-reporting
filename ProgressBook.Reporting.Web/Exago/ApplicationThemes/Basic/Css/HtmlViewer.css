@@ -1,0 +1,428 @@
+.wrHvEmbeddedReportErrorContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-color: #ffffff;
+}
+.wrHvEmbeddedReportErrorContent {
+  position: relative;
+}
+.wrHvTbContainer {
+  font-family: Roboto, Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-width: 100px;
+  padding: 5px 10px 5px 6px;
+  cursor: default;
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+  border-bottom: 1px solid #d5d5d5;
+}
+.wrHvLinkedReportContainer .wrHvTbContainer {
+  left: 0;
+  padding: 5px 24px 5px 6px;
+}
+.wrHvLeftTbArea {
+  display: inline-block;
+}
+.wrHvRightTbArea {
+  float: right;
+}
+.wrHvTbSection {
+  float: right;
+  margin-left: 10px;
+  font-size: 0;
+}
+.wrHvTbNavSection > .wrHvToolbarButtonContainer {
+  margin-right: 4px;
+}
+.wrHvTbImg {
+  top: 3px;
+  cursor: pointer;
+  vertical-align: top;
+  position: relative;
+  border-radius: 3px;
+}
+.wrHvTbFindImg {
+  margin-right: 2px;
+}
+.wrHvTbLeftSpacer {
+  float: left;
+  height: 100%;
+  width: 3px;
+}
+.wrHvTbSeparator {
+  width: 1px;
+  background-color: #d7d7d7;
+  height: 16px;
+  float: left;
+  position: relative;
+  top: 4px;
+  margin-right: 6px;
+}
+.wrHvTbRowLimitContainer {
+  display: inline-block;
+  font-style: italic;
+}
+.wrHvTbLink {
+  color: #00f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.wrHvTbInput {
+  color: inherit;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+.wrHvTbLabel {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 15px;
+}
+.wrHvTbInputPgNum {
+  width: 20px;
+  text-align: center;
+  height: 16px;
+}
+.wrHvTbLabelOf {
+  margin-left: 2px;
+  margin-right: 4px;
+}
+.wrHvTbLabelPgCnt {
+  font-weight: bold;
+}
+.wrHvTbInputFind {
+  width: 100px;
+  height: 16px;
+}
+.wrHvDisplay {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  right: 0;
+  bottom: 0;
+}
+.wrHvDisplay .wrDockContents {
+  top: 8px;
+}
+.wrHvTbVisible {
+  top: 33px;
+}
+.wrHvProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  border-bottom: solid 1px #d7d7d7;
+  overflow: hidden;
+}
+.wrHvContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrHvScroll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.wrHvScrollSimulatePdf {
+  background-color: #EFEFEF;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.wrHvScrollNoSimulatePdf {
+  background-color: #FFFFFF;
+}
+.wrHvDocument {
+  position: absolute;
+  top: 0;
+  color: #000000;
+  /* default report cell color */
+}
+.wrHvDocument.wrReportColumnsFitWidth > div > table {
+  width: 100%;
+}
+.wrHvDocumentSimulatePdf {
+  left: 50%;
+  color: #000000;
+  /* default report cell color */
+}
+.wrHvDocumentNoSimulatePdf {
+  left: 0;
+}
+.wrHvDocumentNoSimulatePdfWithCollapseRows {
+  left: 10px;
+}
+.wrHvDocumentNoSimulatePdfWithResizer {
+  padding-top: 30px;
+}
+.wrHvSelected {
+  color: #000000 !important;
+  background-color: #ffc1b3 !important;
+}
+.wrHvSelectedActive {
+  background-color: #6896ed !important;
+}
+.wrHvPdfPage {
+  background-color: #FFFFFF;
+  border: solid 1px #d7d7d7;
+  border-top: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#888888');
+  margin-bottom: 10px;
+}
+.wrHvExportContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: solid 1px #d7d7d7;
+}
+.wrHvExportFrame {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.wrHvSelectedCell {
+  position: absolute;
+  z-index: 2;
+}
+.wrHvSelectedCellDecor {
+  outline: 2px dotted #ffd800;
+  box-shadow: 0 0 1px 2px #b7dbff;
+}
+.wrHvLinkedReportContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+.wrHvColumnResizeContainer {
+  position: absolute;
+  top: 1px;
+  height: 22px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.wrHvColumnResizeContainer_Active {
+  opacity: 1.0;
+  filter: none;
+}
+.wrHvColumnResizeContainer:hover {
+  opacity: 1.0;
+  filter: none;
+}
+.wrHvColumnResizer {
+  position: relative;
+  float: left;
+  height: 100%;
+}
+.wrHvColumnResizerSortContainer {
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  height: 6px;
+  width: 8px;
+  background-repeat: no-repeat;
+}
+.wrHvColumnResizerSortAscending {
+  bottom: 2px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SortAscending.svg");
+  background-size: 8px 6px;
+}
+.wrNoSVG .wrHvColumnResizerSortAscending {
+  background-image: url("../#ApplicationThemeFolder#/Images/SortAscending.png");
+}
+.wrHvColumnResizerSortDescending {
+  bottom: 2px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SortDescending.svg");
+  background-size: 8px 6px;
+}
+.wrNoSVG .wrHvColumnResizerSortDescending {
+  background-image: url("../#ApplicationThemeFolder#/Images/SortDescending.png");
+}
+.wrHvColumnHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.wrHvColumnHeaderStyle {
+  background-color: #E6E5E5;
+  border-color: #FFFFFF #d7d7d7 #e6e6e6 #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+.wrHvColumnHeaderLabel {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  color: #595959;
+  display: inline-block;
+  vertical-align: top;
+}
+.wrHvColumnHeaderSortable:hover {
+  background-color: #D6D6D6;
+}
+.wrHvColumnResizeBar {
+  position: absolute;
+  background-color: #666666;
+  width: 2px;
+  height: 100px;
+}
+.wrHvDockItemSingleSelect {
+  position: relative;
+  height: 20px;
+}
+.wrHvDockItemMultiSelect {
+  min-height: 25px;
+  max-height: 80px;
+  overflow: auto;
+}
+.wrHvDockItemMultiSelect .wrCustomCheckbox > #CustomCheckboxLabel {
+  font-size: 10pt;
+}
+.wrDockHorz .wrHvDockItemMultiSelect {
+  height: 60px;
+}
+.wrHvDockItemSlider {
+  position: relative;
+  height: 40px;
+}
+.wrDockVert .wrHvDockSortGroup {
+  max-height: 1000px;
+}
+.wrDockVert .wrHvDockColumnGroup {
+  max-height: 1000px;
+}
+.wrHvDockSortItem {
+  position: relative;
+  margin-bottom: 3px;
+}
+.wrHvDockSortUpItemIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 22px;
+  opacity: .4;
+}
+.wrHvDockSortDownItemIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: .4;
+}
+.wrHvDockSortItemSel {
+  opacity: 1;
+}
+.wrHvDockSortItemTitle {
+  margin-left: 5px;
+  margin-right: 44px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  word-wrap: break-word;
+}
+.wrHvDockColumnItem {
+  position: relative;
+  margin-bottom: 6px;
+}
+.wrHvDockColumnItemVisible {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wrHvDockColumnItemTitle {
+  margin-left: 5px;
+  margin-right: 44px;
+  font-family: Roboto, Arial, sans-serif;
+  word-wrap: break-word;
+  font-size: 10pt;
+}
+.wrHvDockColumnItemTitleLabel {
+  cursor: pointer;
+}
+.wrHvChartOptionsButton {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg id="Capa_1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" style="enable-background:new 0 0 48.352 48.352" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="48.352px" viewBox="0 0 48.352 48.352" width="48.352px" version="1.1" y="0px" x="0px" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><g id="g3"><g id="g5" fill="#4d4d4d"><g id="g7" fill="#4d4d4d"><circle id="circle9" cy="24.176" cx="24.178" r="4.167"/><path id="path11" d="m47.369 20.046l-5.824-1.092c-0.354-1.178-0.818-2.308-1.393-3.371l3.37-4.927c0.312-0.456 0.247-1.142-0.144-1.532l-4.155-4.156c-0.391-0.391-1.076-0.454-1.53-0.143l-4.93 3.372c-1.094-0.59-2.259-1.063-3.474-1.42l-1.086-5.794c-0.102-0.543-0.63-0.983-1.184-0.983h-5.876c-0.553 0-1.082 0.44-1.185 0.983l-1.098 5.851c-1.165 0.356-2.282 0.82-3.334 1.392l-4.866-3.329c-0.456-0.312-1.142-0.248-1.532 0.143l-4.156 4.156c-0.391 0.391-0.454 1.076-0.143 1.532l3.35 4.896c-0.564 1.052-1.021 2.168-1.371 3.331l-5.824 1.091c-0.542 0.103-0.982 0.632-0.982 1.185v5.876c0 0.553 0.44 1.082 0.982 1.186l5.82 1.091c0.355 1.188 0.823 2.328 1.401 3.399l-3.312 4.842c-0.312 0.456-0.248 1.142 0.143 1.531l4.155 4.155c0.391 0.392 1.076 0.454 1.532 0.145l4.84-3.313c1.041 0.563 2.146 1.021 3.299 1.375l1.097 5.853c0.103 0.543 0.632 0.981 1.185 0.981h5.877c0.554 0 1.081-0.438 1.185-0.981l1.087-5.795c1.2-0.354 2.354-0.821 3.438-1.401l4.901 3.354c0.456 0.312 1.142 0.248 1.532-0.145l4.153-4.153c0.393-0.392 0.455-1.075 0.145-1.532l-3.335-4.873c0.589-1.084 1.062-2.237 1.423-3.44l5.819-1.091c0.541-0.104 0.98-0.633 0.98-1.186v-5.876c0.004-0.555-0.437-1.084-0.98-1.187zm-23.191 14.215c-5.568 0-10.083-4.515-10.083-10.086 0-5.567 4.515-10.083 10.083-10.083 5.57 0 10.086 4.516 10.086 10.083 0 5.571-4.518 10.086-10.086 10.086z"/></g></g></g></svg>');
+  background-repeat: no-repeat;
+  background-position: center left;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+}
+.wrHvCollapseHeader {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  bottom: 0;
+  width: 12px;
+}
+.wrHvOpenHeaderButton,
+.wrHvCollapseHeaderButton {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin-top: -50%;
+}
+.wrHvOpenHeaderButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/OpenRows.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrHvOpenHeaderButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/OpenRows.png");
+}
+.wrHvCollapseHeaderButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CollapseRows.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrHvCollapseHeaderButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/CollapseRows.png");
+}
+.wrHvExportSelectContainer {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-size: 0;
+  top: 3px;
+}
+.wrHvToolbarButtonContainer {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrDoubleUnderline {
+  display: inline-block;
+  border-bottom: double 0.3em;
+}

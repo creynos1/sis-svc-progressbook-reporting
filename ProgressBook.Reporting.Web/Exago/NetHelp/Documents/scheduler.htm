@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Scheduler</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="chainedreports.htm" /><link rel="next" href="troubleshooting.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="65098f5a-1454-472b-a1dc-533db66594d0">
+<h1>Scheduler</h1>
+<p>The scheduler allows you to run reports regularly at specified times. This 
+can be useful for reports which are based on periods of time, such as weekly 
+sales reports or quarterly earnings reports.</p><a class="_D2HAnchor" name="makingaschedule.htm" id="makingaschedule.htm"></a>
+<p class="MidTopic">Making a schedule</p>
+<p>Schedules are created and edited with the Schedule Report Wizard, which is a 
+tool designed to streamline schedule creation.</p>
+<p>To schedule a report:</p>
+<ol>
+  <li class="list_123">
+  <p>Click the <strong>Menu </strong><img alt="" src="../Media/screen.report_tree_menu.png" /> icon and select <img src="../Media/ScheduleAddSmall.png" alt="" /> <strong>Schedule 
+Report</strong>.</p>
+  </li><li class="list_123">
+  <p>Enter a <strong>Name </strong>for the schedule.</p>
+  </li><li class="list_123">
+  <p>Choose which file type to save the report as.</p>
+  </li><li class="list_123">
+  <p>Optional: For PDF or Excel, enter a <strong>Password </strong>to secure the 
+  report.</p>
+  </li><li class="list_123">
+  <p>Select a date and time for the schedule, and choose how often it should 
+  run:</p>
+  <ol>
+    <li class="list_abc">
+    <p>In the <strong>Schedule Time </strong>field, enter a time for when the 
+    schedule should run.</p>
+    </li><li class="list_abc">
+    <p>Optional: To run the schedule as soon as it is created, select the 
+    <strong>Execute Immediately </strong>check box. This schedule cannot be 
+    given a recurrence pattern. Go to step 6.</p>
+    </li><li class="list_abc">
+    <p>Optional: To run the schedule multiple times per day, select the 
+    <strong>Repeat Every </strong>check box and enter a time for how often it 
+    should repeat.</p>
+    </li><li class="list_abc">
+    <p>Optional: To run the schedule on more than one day, choose a 
+    <strong>Recurrence Pattern </strong>from the available options:</p>
+    <p><span class="Option">Daily</span></p>
+    <p class="Indent">The schedule will repeat every day, every weekday, or every 
+    number of days. Enter a number of days for how often the schedule should 
+    repeat, or select <strong>Every weekday </strong>to run it every Mon, Tues, 
+    Wed, Thurs, and Fri.</p>
+    <p><span class="Option">Weekly</span></p>
+    <p class="Indent">The schedule will repeat every week, or every number of 
+    weeks, on one or more days. Enter a number of weeks for how often the 
+    schedule should repeat, and select one or more days when it should run.</p>
+    <p><span class="Option">Monthly</span></p>
+    <p class="Indent">The schedule will repeat every month, or every number of 
+    months, on a certain day. Enter a day for when the schedule should run, and 
+    a number of months for how often it should repeat.</p>
+    <p><span class="Option">Yearly</span></p>
+    <p class="Indent">The schedule will repeat every year on a certain day. Enter 
+    a day for when the schedule should run.</p>
+    </li><li class="list_abc">
+    <p>Optional: If you have entered a recurrence pattern, enter a date for when 
+    the schedule should <strong>Start</strong>. </p></li></ol>
+  </li><li class="list_123">
+  <p>Optional: To add filters to the report click the <strong>Filters 
+  </strong>tab. If the report already has filters you can set their values here. 
+  See <a class="topic-link" href="reportfilters.htm">Filters</a> for 
+  instructions.</p>
+  <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Chained Reports do 
+  not support schedule filters.</p>
+  </li><li class="list_123">
+  <p>Optional: To email this schedule to addresses from a database, see <a class="topic-link" href="scheduler.htm#emailingpersonalizedreports.htm">Emailing 
+  personalized reports</a>.</p>
+  </li><li class="list_123">
+  <p>Click the <strong>Recipients </strong>tab. To send the report to a list of 
+  email addresses, select the <strong>Email Reports </strong>check box and fill 
+  out the following fields:</p>
+  <ol>
+    <li class="list_abc">
+    <p>Enter the recipients' email addresses in the <strong>To</strong>, 
+    <strong>Cc</strong>, and <strong>Bcc </strong>fields.</p>
+    </li><li class="list_abc">
+    <p>Optional: Enter an email subject in the <strong>Subject</strong> 
+    field.</p>
+    </li><li class="list_abc">
+    <p>Optional: Enter an email message in the large text field.</p></li></ol>
+  <p>If you do not want to email the report, clear the <strong>Email 
+  Reports</strong> check box. The report will be saved to disk instead. You may 
+  have to ask your administrator for the file location.</p>
+  </li><li class="list_123">
+  <p>Optional: If this is a batch schedule, an <strong>Attach Report Output to 
+  Email </strong>check box is available. Clear this check box if you want to use 
+  this report to send alerts, and you do not want to email the report 
+itself.</p>
+  </li><li class="list_123">
+  <p>Click <strong>Finish</strong> to save the schedule.</p></li></ol>
+<p>Schedules can be edited after they are created. See <a class="topic-link" href="scheduler.htm#viewingschedules.htm">Viewing schedules</a> for more 
+information.</p><span id="related-topics"></span><a class="_D2HAnchor" name="viewingschedules.htm" id="viewingschedules.htm"></a>
+<p class="MidTopic">Viewing schedules</p>
+<p>To see the schedules that have been created click the <strong>Schedule 
+Manager <img src="../Media/MainLeftPaneScheduleManager.png" alt="" /> </strong>icon. Each 
+schedule is on a row with its most recent and forthcoming run times, and a 
+status indicating its condition:</p>
+<p><span class="Option">Ready</span></p>
+<p class="Indent">The schedule will run on its next run time.</p>
+<p><span class="Option">Running</span></p>
+<p class="Indent">The schedule is currently running.</p>
+<p><span class="Option">Transmitting</span></p>
+<p class="Indent">The scheduled event has finished running, and the report is 
+being sent to the user.</p>
+<p><span class="Option">Completed</span></p>
+<p class="Indent">The schedule has completed its final event, and will not run 
+again. It will be removed from the list when the cache is flushed.</p>
+<p><span class="Option">Deleted</span></p>
+<p class="Indent">The schedule has been deleted, and will be removed from the list 
+when the cache is flushed.</p>
+<p><span class="Option">Abended</span></p>
+<p class="Indent">The last run failed due to an error. The schedule will not run 
+again.</p>
+<p><span class="Option">User Aborted</span></p>
+<p class="Indent">The schedule is running, but it was requested to be canceled. It 
+will be marked as Deleted.</p>
+<p>Scheduled events which have passed are copied to an archive row, so that 
+there is a log of previous run times. Such events are labeled <span class="Code">(archive)</span>. Deleting these rows will not affect the main 
+schedule.</p>
+<p>Schedules which are associated with a cached report are labeled <span class="Code">(cache)</span>. See <a class="topic-link" href="executioncaching.htm">Execution Caching</a> for more information.</p>
+<p>Completed and canceled schedules and archives may be periodically removed 
+from the list. Click <img src="../Media/Flush.png" alt="" /> <strong>Flush 
+</strong>to remove them immediately.</p>
+<p class="Aside"><strong>Managing schedules</strong></p>
+<p>To edit an existing schedule click the <strong>Edit <img src="../Media/Edit.png" alt="" /> </strong>icon. Changes to the recurrence pattern will 
+affect all forthcoming run times. You can reuse or reset deleted or completed 
+schedules by editing them. This will set their status to Ready.</p>
+<p>To delete a schedule click the <strong>Delete <img src="../Media/DeleteItem.png" alt="" /> </strong>icon. This sets its status to Deleted. 
+If the schedule is already marked as Deleted, this removes the schedule from the 
+list.</p><span id="related-topics"></span><a class="_D2HAnchor" name="emailingpersonalizedreports.htm" id="emailingpersonalizedreports.htm"></a>
+<p class="MidTopic">Emailing personalized reports</p>
+<p>Batch scheduling allows you to send personalized versions of reports to a 
+list of email addresses. The addresses must be defined in a data category, the 
+unique key of which is used as a blanket filter for the report. Each recipient 
+receives a customized version, filtered by their unique key.</p>
+<p>For example, if you wanted to send out a customized sales review, or a 
+pre-filled tax form, or even a set of customized forms for each employee, batch 
+scheduling allows you use one report for every person. This also has the benefit 
+of only needing to run the report once. So you are not making repeated calls to 
+the database, which could be slow and system-intensive.</p>
+<p class="Warning"><strong><img alt="" src="../Media/custom.warning.png" /> WARNING</strong><br />Batch emailing 
+should only be used as instructed by your administrator. If you are unsure about 
+how to proceed, do not create a batch schedule. Ask your administrator for 
+assistance.</p>
+<p>Batch scheduling requires you to have access to a data category with a column 
+of email addresses, that must be added in the report <a class="topic-link" href="reportcategories.htm">Categories</a> menu. The category does not have to 
+be in the body of the report.</p>
+<p>To make a batch schedule:</p>
+<ol>
+  <li class="list_123">
+  <p>In the Schedule Report Wizard, click the <strong>Batch </strong>tab.</p>
+  </li><li class="list_123">
+  <p>Select the <strong>Run as Batch Report </strong>check box.</p>
+  </li><li class="list_123">
+  <p>Optional: In the <strong>To</strong> and <strong>Cc</strong> fields, enter 
+  addresses to send a summary email for each completed execution.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Batch Email Field </strong>list, select the data field 
+  containing the email addresses for this schedule.</p>
+  </li><li class="list_123">
+  <p>Optional: Click the <strong>Recipients</strong> tab to enter a subject and 
+  message for the batch email.</p>
+  <p>You can reference data values from the email address data row in the 
+  message body. Type the parameter <span class="Code">@batch_<em>column</em>@</span>, where <em>column</em> is the name 
+  of a data field in the address category. The value of the field replaces the 
+  parameter text in the message output.</p>
+  <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />The 
+  <strong>To</strong>, <strong>Cc</strong>, and <strong>Bcc</strong> fields are 
+  unavailable when using Batch.</p></li></ol><span id="related-topics"></span><span id="related-topics"></span></body></html>

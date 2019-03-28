@@ -1,0 +1,262 @@
+.wrVisualizationDsgnTabInnerContentOverride {
+  top: 5px;
+}
+.wrVisualizationDesignToolbarContainer {
+  height: 48px;
+}
+.wrVisualizationDesignToolbarOptionsImg {
+  top: 12px;
+}
+.wrVisualizationDesignBottomToolbarContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  height: 28px;
+  display: none;
+}
+.wrVisualizationDesignVisualizationSizeButton {
+  width: 40px;
+  height: 20px;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.wrVisualizationDesignVisualizationSizeButton:hover {
+  border: 1px solid #888888;
+}
+.wrVisualizationDesignDockContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrVisualizationDesignContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+.wrVisualizationDesignVisualizationRenderContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrVisualizationDesignDataFieldsContainer {
+  height: 300px;
+}
+.wrVisualizationDesignPlaceholderOuterContainer {
+  height: 140px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -50px;
+  top: 50%;
+  position: absolute;
+}
+.wrVisualizationDesignPlaceholder {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.wrVisualizationDesignPlaceholder img {
+  height: 50px;
+  width: 50px;
+}
+.wrVisualizationDesignPlaceholder p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  margin-top: 0;
+}
+.wrVisualizationDesignLinkText {
+  color: #5b2eff;
+  font-weight: bold;
+}
+.wrVisualizationEditMainDropTargetOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: .8;
+}
+.wrVisualizationEditMainDropTargetOverlayHover {
+  background-color: #eef7ff;
+}
+.wrVisualizationEditMainDropTargetContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.wrVisualizationEditMainDropTargetContainer p {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+.wrVisualizationEditMainDropTargetInstructions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  top: 50%;
+  margin-top: -50px;
+}
+.wrVisualizationEditDropTargetContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.wrVisualizationEditDropTarget {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  position: relative;
+}
+.wrVisualizationEditDropTargetHover {
+  background: #eef7ff;
+}
+.wrVisualizationEditDropTarget p {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+.wrVisualizationEditDropTargetInnerContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  top: 50%;
+  margin-top: -50px;
+}
+.wrJoinsVisualizerContainer {
+  font-family: Roboto, Arial, sans-serif;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 10pt;
+}
+.wrJoinsVisualizerOverlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .75;
+}
+.wrJoinsVisualizerContainerClickToCloseText {
+  text-align: right;
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+.wrDataModelDataField {
+  margin: 0;
+  margin-bottom: 8px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.wrDataModelDeleteDataFieldButton {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+.wrDataModelDataFieldsContainer {
+  margin-left: 4px;
+}
+.wrDataModelDataFieldLabel {
+  font-weight: bold;
+  font-size: 8pt;
+  font-family: Roboto, Arial, sans-serif;
+}
+.wrDataModelGroupByContainer {
+  float: left;
+  font-size: 8pt;
+  font-family: Roboto, Arial, sans-serif;
+}
+.wrDataModelAggTypeSelect {
+  float: left;
+  font-size: 8pt;
+}
+.wrKeywordContainer {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrKeywordInnerContainer {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrKeywordResultsContainer {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 3em;
+}
+.wrKeywordSuggestionContainer {
+  color: #444444;
+  font-size: 12pt;
+  font-family: Roboto, Arial, sans-serif;
+  float: left;
+  width: 350px;
+  cursor: pointer;
+}
+.wrKeywordCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.wrKeywordSuggestionList {
+  float: left;
+}
+.wrKeywordSuggestionList li {
+  cursor: pointer;
+}
+.wrKeywordSuggestionImage {
+  height: 64px;
+  width: 64px;
+  float: left;
+}
+.wrHoverText {
+  cursor: pointer;
+}
+.wrHoverText:hover {
+  text-decoration: underline;
+}

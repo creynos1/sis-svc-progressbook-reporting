@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeInformixSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M9 4H8v2h1V4zm3 0h-1v2h1V4zm-1 3V6H9v1h2zM9 7H8v2h1V7zm2 2h1V7h-1v2z"/>
+    <polygon points="5 7 7 7 7 6 5 6 5 5 7 5 7 4 4 4 4 9 5 9"/>
+    <polygon points="2 5 3 5 3 4 0 4 0 5 1 5 1 8 0 8 0 9 3 9 3 8 2 8"/>
+  </g>
+</svg>

@@ -1,0 +1,394 @@
+.wrDialogMasterContainer {
+  position: absolute;
+  border: solid 1px #d7d7d7;
+  filter: none;
+  opacity: 1.0;
+  z-index: 20;
+}
+.wrDialogMasterContainerCentered {
+  position: absolute;
+  border: solid 1px #d7d7d7;
+  opacity: 1.0;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  top: 50%;
+  height: 90%;
+  margin-top: -45%;
+}
+@media (min-width: 960px) {
+  .wrDialogMasterContainerCentered {
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+  }
+}
+@media (min-height: 540px) {
+  .wrDialogMasterContainerCentered {
+    top: 50%;
+    height: 70%;
+    margin-top: -35%;
+  }
+}
+.wrDialogMasterContainerCentered2 {
+  position: absolute;
+  border: solid 1px #d7d7d7;
+  opacity: 1.0;
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+  top: 50%;
+  height: 96%;
+  margin-top: -48%;
+}
+.wrDialogMasterContainerCentered3 {
+  position: absolute;
+  border: solid 1px #d7d7d7;
+  opacity: 1.0;
+  left: 50%;
+  width: 96%;
+  margin-left: -48%;
+  top: 50%;
+  height: 80%;
+  margin-top: -40%;
+}
+.wrDialogMasterContainerCentered4 {
+  position: absolute;
+  border: solid 1px #d7d7d7;
+  opacity: 1.0;
+  left: 50%;
+  width: 60%;
+  margin-left: -30%;
+  top: 30%;
+  height: 45%;
+  margin-top: -22%;
+}
+.wrDialogMasterContainerCentered5 {
+  position: absolute;
+  border: solid 1px #d7d7d7;
+  opacity: 1.0;
+  left: 50%;
+  width: 96%;
+  margin-left: -48%;
+  top: 50%;
+  height: 96%;
+  margin-top: -48%;
+}
+.wrDialogMasterContainerMaxSize {
+  position: absolute;
+  border: solid 1px #d7d7d7;
+  opacity: 1.0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+@keyframes overlay-fade-in {
+  from {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+.wrModalOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: default;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation-name: overlay-fade-in;
+  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrTopModalOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: default;
+  overflow: auto;
+  background-color: transparent;
+}
+.wriFrameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  filter: chroma(color=#FFFFFF);
+}
+/* GD IE allows stuff to go on underneath if we set color: transparent.  So we need to using this opacity trick to create modality */
+.wrTransparentOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: default;
+  background-color: #ffffff;
+  opacity: 0;
+  z-index: 2;
+  /* so that alert messages appear over tab container */
+  /* background-color:transparent; */
+}
+.wrDialogMainDiv,
+.wrDialogMainDivNoOverflow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+}
+.wrDialogMainDiv {
+  overflow: hidden;
+}
+.wrDialogMainDivCentered {
+  width: 404px;
+  margin: auto;
+  overflow: hidden;
+}
+.wrDialogScrollDiv {
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  padding: 5px;
+}
+.wrDialogOkCancelBar {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.wrIE10 .wrDialogOkCancelBar,
+.wrIE11 .wrDialogOkCancelBar {
+  bottom: 6px;
+}
+.wrDialogScrollingContent {
+  width: 580px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.wrDialogContentContainer {
+  flex-grow: 1;
+  order: 2;
+  position: relative;
+  margin: 0 30px;
+  overflow-y: auto;
+}
+.wrDialogAlertContentContainer {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #777777;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wrDialogAlertExceptionContentContainer {
+  overflow: hidden;
+}
+.wrDialogAlertInnerContent {
+  overflow-wrap: break-word;
+  margin: auto;
+  width: 100%;
+}
+.wrDialogAlertExceptionContentContainer {
+  align-items: stretch;
+}
+.wrDialogAlertExceptionContentContainer .wrDialogAlertInnerContent {
+  margin: 0;
+}
+.wrDialogAlertContentContainer textarea {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+  background: white;
+  padding: .5em;
+  resize: none;
+}
+.wrDialogHeader {
+  height: 36px;
+  background-size: 36px 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 0;
+  flex-shrink: 0;
+  order: 1;
+  margin-bottom: 10px;
+}
+.wrDialogDragBar {
+  cursor: move;
+  order: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.wrDialogDragBar:before {
+  content: "";
+  height: 6px;
+  background-color: #6896ED;
+  display: none;
+}
+.wrDialogDragBar.wrDialogDragBarSmall:before {
+  display: block;
+}
+.wrDialogDragBarSmall {
+  height: 12px;
+  top: -4px;
+}
+.wrMobileDevice .wrDialogDragBarSmall {
+  height: 16px;
+}
+.wrDialogCloseBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DialogCloseButton.svg");
+  background-size: 12px 12px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.wrNoSVG .wrDialogCloseBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/DialogCloseButton.png");
+}
+.wrDialogCloseBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wrDialogCloseBtn:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrDialogCloseBtnSmall {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  border: 1px solid transparent;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DialogCloseButton.svg");
+  background-size: 9px 9px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+}
+.wrNoSVG .wrDialogCloseBtnSmall {
+  background-image: url("../#ApplicationThemeFolder#/Images/DialogCloseButton.png");
+}
+.wrDialogCloseBtnSmall:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wrDialogCloseBtnSmall:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrDialogRightBar {
+  position: absolute;
+  top: 8px;
+  width: 4px;
+  right: 0;
+  bottom: 8px;
+  background-color: transparent;
+  cursor: e-resize;
+}
+.wrDialogBottomBar {
+  position: absolute;
+  left: 8px;
+  bottom: 0;
+  right: 8px;
+  height: 4px;
+  background-color: transparent;
+  cursor: n-resize;
+}
+.wrDialogCorner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  cursor: se-resize;
+}
+.wrMobileDevice .wrDialogCorner {
+  bottom: -5px;
+  right: -5px;
+  height: 25px;
+  width: 25px;
+}
+.wrDialogTitle {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: move;
+  color: #545454;
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 24px;
+  margin-bottom: 15px;
+  color: #6896ED;
+}
+.wrDialogTitleContent {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.wrMainCacheOptionsCtrl {
+  position: relative;
+}
+@keyframes dialog-attention {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #6896ed;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+.wrModernDialog {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  animation: dialog-attention 0.25s step-start 0s 2 normal backwards running;
+  background-clip: content-box;
+}
+.wrModernDialog::before {
+  content: "";
+  height: 4px;
+  background-color: #6896ED;
+  flex-shrink: 0;
+}

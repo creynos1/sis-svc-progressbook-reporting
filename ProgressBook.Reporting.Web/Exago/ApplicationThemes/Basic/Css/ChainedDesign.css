@@ -1,0 +1,73 @@
+.wrChainedDesignTabInnerContentOverride {
+  top: 0;
+}
+.wrChainedDesignContentCorrect {
+  top: 10px;
+}
+.wrChainedDsgnTbContainer {
+  position: absolute;
+  height: 30px;
+  right: 0;
+  z-index: 2;
+  top: 2px;
+}
+.wrChainedDsgnTbSection {
+  border: none;
+  float: right;
+  margin-right: 1px;
+  padding-top: 2px;
+}
+.wrChainedDsgnTbSection .wrExportTypeDropdown {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.wrChainedDsgnTbSection .wrTbImg {
+  vertical-align: middle;
+}
+.wrChainedDsgnExportSelectContainer {
+  display: inline-block;
+}
+.wrChainedDesignTopContainer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  border: none;
+}
+.wrChainedDesignBottomContainer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+}
+.wrChainedInfoTopContainer {
+  height: 70%;
+}
+.wrChainedReportOptionsTabContainer {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrChainedReportsSplitterContainer {
+  position: absolute;
+  top: 24px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+.wrChainedReportOptionsTabHeader {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 15px;
+}

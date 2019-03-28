@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeZoomScatter
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <rect width="20" height="34" x="10" y="3" fill-opacity=".15" rx="2"/>
+    <polygon fill-opacity=".5" points="35 15 38 21 32 21" transform="rotate(90 35 18)"/>
+    <polygon fill-opacity=".5" points="5 15 8 21 2 21" transform="matrix(0 1 1 0 -13 13)"/>
+    <circle cx="11.5" cy="27.5" r="5.5"/>
+    <rect width="10" height="10" x="14.571" y="9.071" fill-opacity=".5" rx="1" transform="rotate(45 19.571 14.071)"/>
+    <path fill-opacity=".75" d="M26.052 22.379c.248-.488.65-.488.898 0l4.947 9.737c.248.488.005.884-.548.884h-9.696c-.55 0-.796-.396-.548-.884l4.947-9.737z"/>
+  </g>
+</svg>

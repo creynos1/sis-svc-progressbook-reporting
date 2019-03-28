@@ -1,0 +1,95 @@
+.wrSplitterContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  cursor: default;
+  outline: none;
+}
+.wrSplitterPane {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  overflow: hidden;
+}
+.wrVerticalSplitterBar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1px;
+  width: 8px;
+  cursor: ew-resize;
+  /* the following prevents selection and default dragging in FF/Webkit */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 11;
+}
+.wrVerticalSplitterBar:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  cursor: ew-resize;
+}
+.wrMaterialSplitter > .wrVerticalSplitterBar:hover {
+  background-color: initial;
+  cursor: ew-resize;
+}
+.wrVerticalSplitterBarInner {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  text-align: center;
+}
+.wrVerticalSplitterBar > .wrVerticalSplitterBarInner > img {
+  padding-left: 3px;
+  padding-right: 2px;
+}
+.wrMaterialSplitter > .wrVerticalSplitterBar > .wrVerticalSplitterBarInner {
+  top: 78px;
+  left: -10px;
+}
+.wrVerticalSplitterDragBar {
+  position: fixed;
+  cursor: ew-resize;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wrHorizontalSplitterBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1px;
+  height: 10px;
+  cursor: ns-resize;
+  /* the following prevents selection and default dragging in FF/Webkit */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrHorizontalSplitterBar:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  cursor: ns-resize;
+}
+.wrHorizontalSplitterBarInner {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  height: 100%;
+}
+.wrHorizontalSplitterBar > .wrHorizontalSplitterBarInner > img {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  vertical-align: top;
+}
+.wrHorizontalSplitterDragBar {
+  position: fixed;
+  cursor: ns-resize;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: .7;
+}

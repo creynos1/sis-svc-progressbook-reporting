@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    InsertRowBefore
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <rect width="12" height="2" fill="#777777" fill-opacity=".5" rx="1"/>
+    <path fill="#777777" d="M7 6h2a1 1 0 1 1 0 2H7v2a1 1 0 0 1-2 0V8H3a1 1 0 1 1 0-2h2V4a1 1 0 1 1 2 0v2z"/>
+  </g>
+</svg>

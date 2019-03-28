@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from url=(0016)http://localhost -->
+<settings>
+  <general>
+    <rightToLeft>false</rightToLeft>
+    <favicon>
+    </favicon>
+  </general>
+  <theme>
+    <predefined>false</predefined>
+    <name>Exago</name>
+  </theme>
+  <splitter>
+    <strings>
+      <sideShowTooltip>Show side panel</sideShowTooltip>
+      <sideHideTooltip>Hide side panel</sideHideTooltip>
+    </strings>
+  </splitter>
+  <topic>
+    <strings>
+      <notfoundText>Topic not found</notfoundText>
+      <notfoundTitle>Topic not found</notfoundTitle>
+    </strings>
+    <collapsibleSections>
+      <expandAll>
+        <label>Expand All</label>
+      </expandAll>
+      <collapseAll>
+        <label>Collapse All</label>
+      </collapseAll>
+    </collapsibleSections>
+    <spinner>
+      <messageText>Loading...</messageText>
+    </spinner>
+    <applyStylesheet>false</applyStylesheet>
+    <breadcrumbs>
+      <visible>false</visible>
+    </breadcrumbs>
+  </topic>
+  <toc>
+    <label>Contents</label>
+  </toc>
+  <index>
+    <label>Index</label>
+    <strings>
+      <filterTooltip>Filter keywords</filterTooltip>
+      <notfound>No keywords found.</notfound>
+      <found>#{count} keyword(s) found.</found>
+      <more>More...</more>
+    </strings>
+    <hideEmpty>true</hideEmpty>
+  </index>
+  <search>
+    <label>Search</label>
+    <strings>
+      <filterTooltip>Search topics</filterTooltip>
+      <helpMessage>You can use logical operations: #{and}, #{or}, #{not}.</helpMessage>
+      <loading>Loading search engine...</loading>
+      <loaderror>Error: Search engine failed to load.</loaderror>
+      <disabled>Search is disabled.</disabled>
+      <notfound>No topics found.</notfound>
+      <found>#{count} topic(s) found.</found>
+      <correcting>Did you mean: #{query}</correcting>
+      <queryModified>Original search #{query} has been changed because it did not produce results.</queryModified>
+      <more>More...</more>
+    </strings>
+    <buttons>
+      <go>
+        <label>Search</label>
+      </go>
+      <help>
+        <label>Help</label>
+        <icon>
+        </icon>
+      </help>
+      <highlight>
+        <label>Highlight</label>
+      </highlight>
+    </buttons>
+    <operators>
+      <and>AND</and>
+      <or>OR</or>
+      <not>NOT</not>
+    </operators>
+  </search>
+  <contextSensitive>
+    <strings>
+      <title>Topics for "#{key}": "#{value}"</title>
+      <notfound>No topics found.</notfound>
+      <notsupported>The key "#{key}" is not supported.</notsupported>
+    </strings>
+  </contextSensitive>
+  <buttons>
+    <poweredBy>
+      <label>
+      </label>
+      <click>
+      </click>
+      <icon>
+      </icon>
+    </poweredBy>
+    <prev>
+      <label>Previous</label>
+    </prev>
+    <next>
+      <label>Next</label>
+    </next>
+    <home>
+      <label>Home</label>
+    </home>
+    <print>
+      <label>Print</label>
+      <icon>
+      </icon>
+    </print>
+    <email>
+      <label>Email</label>
+      <icon>
+      </icon>
+    </email>
+    <twitter>
+      <label>Twitter</label>
+      <icon>
+      </icon>
+    </twitter>
+    <facebook>
+      <label>Facebook</label>
+      <icon>
+      </icon>
+    </facebook>
+  </buttons>
+  <accessibility>
+    <toc>
+      <closedBook>Closed book without topic</closedBook>
+      <openBook>Open book without topic</openBook>
+      <closedBookTopic>Closed book with topic</closedBookTopic>
+      <openBookTopic>Open book with topic</openBookTopic>
+      <topic>Topic</topic>
+    </toc>
+    <collapsibleSections>
+      <collapsed>Click to expand</collapsed>
+      <expanded>Click to collapse</expanded>
+    </collapsibleSections>
+    <akLinksMenuHeader>#{count} topics found</akLinksMenuHeader>
+  </accessibility>
+  <toolbars>
+    <topicTop>
+      <content>prev, next | home</content>
+    </topicTop>
+  </toolbars>
+</settings>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>
+      v0.1.0.14
+      - fix issue with Description not being returned
+      - remove ".wrx" suffix in DisplayName
+      
+      v0.1.0.9
+      - prevent .tt file from being packaged up in nuget package
+      
+      v0.1.0.8
+      - update AdHocReportService.GetAdHocReports to optionally return user report stats
+      - added GetRecent and GetFavorites methdos to AdHocReportService
+      - added UserReportAttributeService which contains method for tracking report execution and setting/unsetting favorite reports
+      
+      v0.1.0.7
+      - added AdHocReportService.RunAdHocReport method
+
+      v0.1.0.6
+      - update GetAdHocReports method to not return "internal" reports
+
+      v0.1.0.5
+      - refactored, removed dependency on existing ReportEntityManager / ReportEntityDbContext
+
+      v0.1.0.4
+      - rolled back ReportEntityManager / ReportEntityDbContext (hey, we tried)
+
+      v0.1.0.3
+      - Added AdHocReportServiceFactory and IAdHocReportService
+      - AdHocReportService is now disposable and accepts dependencies as constructor arguments
+    </releaseNotes>
+    <copyright>Copyright © 1997-2017 Software Answers, Inc.</copyright>
+  </metadata>
+</package>

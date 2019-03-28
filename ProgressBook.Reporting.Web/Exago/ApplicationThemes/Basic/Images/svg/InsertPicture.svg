@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    InsertPicture
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="11" x="2" y="3" fill="#808080"/>
+    <path fill="#FFFFFF" d="M10 13h3V4H3v5.5L5 7l5 6zm-1.5 0H3v-2l2-2.5L8.5 13z"/>
+    <polygon fill="#B8B8B8" points="8.33 11 10 9 13 12.6 13.006 13 12 13 10 10.5 9 11.8"/>
+    <path fill="#B8B8B8" d="M10.5 8.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </g>
+</svg>

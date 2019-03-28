@@ -1,0 +1,3525 @@
+.wrExpressViewTabInnerContentOverride {
+  top: 0;
+}
+.wrExpressViewTabTitle {
+  font-size: 10pt;
+  margin-top: 0;
+}
+.wrExpressViewTopBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 33px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d7d7d7;
+  padding-left: 6px;
+  z-index: 11;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.wrExpressViewRowLimitContainer {
+  height: 24px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+.wrExpressViewTextBlock {
+  margin-top: 4.5px;
+  height: 24px;
+  display: inline-block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 9pt;
+  line-height: 24px;
+}
+.wrExpressViewRowLimitLabel {
+  display: inline-block;
+}
+.wrExpressViewRowLimitLink {
+  color: #00f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.wrVerticalTabStripContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  border-right: 1px solid #d7d7d7;
+}
+.wrVerticalTabButton {
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: block;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: #ffffff;
+}
+.wrVerticalTabButton:hover {
+  background: #f3f3f3;
+}
+.wrVerticalTabButton:active {
+  background: #dddddd;
+}
+.wrVerticalTabButtonSelected {
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7;
+  width: 51px;
+}
+.wrVerticalTabButtonSelected:first-child {
+  border-top: 1px solid transparent;
+}
+.wrVerticalTabContentContainer {
+  position: absolute;
+  left: 51px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+}
+.wrExpressViewTable {
+  font-family: Roboto, Arial, sans-serif;
+  color: #5a5a5a;
+  font-size: 10pt;
+  border-spacing: 2px 0;
+  background-color: #ffffff;
+  position: relative;
+  table-layout: fixed;
+  border-bottom: 1px solid #e9e9e9;
+  overflow: hidden;
+}
+.wrExpressViewTableNoGroupFooter {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.wrExpressViewTable tr:nth-child(2n) {
+  background-color: #f1f1f1;
+}
+.wrExpressViewTable td {
+  padding: 2px 4px;
+  word-wrap: break-word;
+}
+.wrExpressViewToolbarButtonsMenuItem {
+  font-size: 0;
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrExpressViewToolbarButtonsMenuItemText {
+  font-size: 12px;
+}
+.wrExpressViewLeftToolbarButton {
+  height: 24px;
+  width: 24px;
+  margin-right: 6px;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  transition: background-color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrIE10 .wrExpressViewLeftToolbarButton,
+.wrIE11 .wrExpressViewLeftToolbarButton,
+.wrEdge .wrExpressViewLeftToolbarButton {
+  border-radius: 0;
+}
+.wrExpressViewLeftToolbarButton:hover {
+  background-color: #f4f4f4;
+  transition: none;
+}
+.wrExpressViewLeftToolbarButton[data-disabled]:hover {
+  background-color: transparent;
+}
+.wrExpressViewLeftToolbarButton:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrExpressViewLeftToolbarButton[data-disabled]:active {
+  background-color: transparent;
+}
+.wrExpressViewLeftToolbarButton.disabled:active {
+  background-color: transparent;
+}
+.wrExpressViewExportButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Export.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewExportButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/Export.png");
+}
+.wrExpressViewExportButtonDisabled {
+  cursor: default;
+  opacity: .5;
+}
+.wrExpressViewExportButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewChartToggleButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ShowViz.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewChartToggleButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ShowViz.png");
+}
+.wrExpressViewChartToggleButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ShowVizActive.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewChartToggleButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/ShowVizActive.png");
+}
+.wrExpressViewChartToggleButtonSelected:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ShowVizRemove.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewChartToggleButtonSelected:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/ShowVizRemove.png");
+}
+.wrExpressViewChartToggleButtonDisabled {
+  cursor: default;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ShowVizDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewChartToggleButtonDisabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/ShowVizDisabled.png");
+}
+.wrExpressViewChartToggleButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewFormulaToggleButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVFormula.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormulaToggleButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVFormula.png");
+}
+.wrExpressViewFormulaToggleButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVFormulaActive.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormulaToggleButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVFormulaActive.png");
+}
+.wrExpressViewFormulaToggleButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewSaveButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewSave.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewSaveButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewSave.png");
+}
+.wrExpressViewCollapsedToolbarButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVCollapsedGroup.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewCollapsedToolbarButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVCollapsedGroup.png");
+}
+.wrExpressViewPagingNavButtons {
+  display: inline;
+}
+.wrExpressViewGroupStateButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/GroupStateMenu.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewGroupStateButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/GroupStateMenu.png");
+}
+.wrExpressViewGroupStateButtonDisabled {
+  cursor: default;
+  opacity: .5;
+}
+.wrExpressViewGroupStateButtonDisabled:active {
+  cursor: default;
+  background-color: transparent;
+}
+.wrExpressViewRefreshButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewRefresh.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewRefreshButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewRefresh.png");
+}
+.wrExpressViewRefreshButtonDisabled {
+  cursor: default;
+  opacity: .5;
+}
+.wrExpressViewRefreshButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewUndoButtonDisabled {
+  opacity: .4;
+  cursor: default;
+}
+.wrExpressViewUndoButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewRedoButtonDisabled {
+  opacity: .4;
+  cursor: default;
+}
+.wrExpressViewRedoButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewLiveDataButton {
+  height: 24px;
+  border-radius: 2px;
+  margin-right: 6px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrExpressViewLiveDataButton:hover {
+  background-color: #f4f4f4;
+  transition: none;
+}
+.wrExpressViewLiveDataButton[data-disabled]:hover {
+  background-color: transparent;
+}
+.wrExpressViewLiveDataButton:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrExpressViewLiveDataButton > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/LiveModeOff.svg");
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrNoSVG .wrExpressViewLiveDataButton > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/LiveModeOff.png");
+}
+.wrExpressViewLiveDataButtonOn > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/LiveModeOn.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewLiveDataButtonOn > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/LiveModeOn.png");
+}
+.wrExpressViewLiveDataButtonDisabled {
+  cursor: default;
+}
+.wrExpressViewLiveDataButtonDisabled > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/LiveModeDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewLiveDataButtonDisabled > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/LiveModeDisabled.png");
+}
+.wrExpressViewLiveDataButton > span {
+  vertical-align: middle;
+  font-family: Roboto;
+  font-size: 11px;
+  color: #777777;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.wrExpressViewLiveDataButtonOn > span {
+  color: #6896ed;
+}
+.wrExpressViewLiveDataButton[data-disabled] > span {
+  color: #c1c1c1;
+}
+.wrExpressViewUndoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewUndo.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewUndoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewUndo.png");
+}
+.wrExpressViewRedoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewRedo.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewRedoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewRedo.png");
+}
+.wrExpressViewToolbarSeparator {
+  width: 1px;
+  background-color: #d7d7d7;
+  height: 16px;
+  float: left;
+  position: relative;
+  margin-right: 6px;
+}
+.wrNotification {
+  padding: 4px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-style: italic;
+  font-size: 11px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.wrNotificationBlockContainer {
+  text-align: right;
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrNotificationContainer {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 4px;
+  z-index: 10;
+  overflow: hidden;
+  max-width: 375px;
+  text-align: center;
+}
+.wrSafari .wrNotificationContainer {
+  width: 250px;
+}
+.wrExpressViewReportTitleInput {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  height: 29px;
+  padding-left: 12px;
+  border: none;
+  width: calc(100% - 187px);
+}
+.wrExpressViewReportTitleInput:focus {
+  border: none;
+}
+.wrExpressViewTopToolbarRightButton {
+  height: 33px;
+  width: 59px;
+  border: none;
+  border-left: 1px solid #d7d7d7;
+  border-bottom-color: white;
+  float: right;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0;
+}
+.wrExpressViewChartButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrExpressViewChartButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizMenu.png");
+}
+.wrExpressViewChartButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewChartButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizMenuSelected.png");
+}
+.wrExpressViewChartButtonDisabled {
+  cursor: default;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizMenuDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewChartButtonDisabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizMenuDisabled.png");
+}
+.wrExpressViewChartButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewFilterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrExpressViewFilterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterMenu.png");
+}
+.wrExpressViewFilterButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFilterButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterMenuSelected.png");
+}
+.wrExpressViewFilterButtonDisabled {
+  cursor: default;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterMenuDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFilterButtonDisabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterMenuDisabled.png");
+}
+.wrExpressViewFilterButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewSortsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SortsMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrExpressViewSortsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SortsMenu.png");
+}
+.wrExpressViewSortsButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SortsMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewSortsButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/SortsMenuSelected.png");
+}
+.wrExpressViewSortsButtonDisabled {
+  cursor: default;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SortsMenuDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewSortsButtonDisabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/SortsMenuDisabled.png");
+}
+.wrExpressViewSortsButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewFormatButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormatMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrExpressViewFormatButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormatMenu.png");
+}
+.wrExpressViewFormatButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormatMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormatMenuSelected.png");
+}
+.wrExpressViewFormatButtonDisabled {
+  cursor: default;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormatMenuDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatButtonDisabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormatMenuDisabled.png");
+}
+.wrExpressViewFormatButtonDisabled:active {
+  background-color: transparent;
+}
+.wrExpressViewSelectedCellButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SelectedCellMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrExpressViewSelectedCellButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SelectedCellMenu.png");
+}
+.wrExpressViewSelectedCellButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SelectedCellMenuSelected.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrExpressViewSelectedCellButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/SelectedCellMenuSelected.png");
+}
+.wrExpressViewSelectedCellButtonDisabled {
+  cursor: default;
+  height: 34px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SelectedCellMenuDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewSelectedCellButtonDisabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/SelectedCellMenuDisabled.png");
+}
+.wrExpressViewSelectedCellPlaceHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrExpressViewSelectedCellPlaceHolderImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MissingCellStyle.svg");
+  background-size: 48px 48px;
+  height: 48px;
+  width: 48px;
+}
+.wrNoSVG .wrExpressViewSelectedCellPlaceHolderImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/MissingCellStyle.png");
+}
+.wrExpressViewSelectedCellPlaceHolderText {
+  color: rgba(119, 119, 119, 0.75);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 14px;
+  text-align: center;
+  width: 100%;
+}
+.wrExpressViewSettingsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SettingsMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrExpressViewSettingsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SettingsMenu.png");
+}
+.wrExpressViewSettingsButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SettingsMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewSettingsButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/SettingsMenuSelected.png");
+}
+.wrExpressViewDesignCanvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrExpressViewDesignCanvasDragTarget {
+  position: fixed;
+  z-index: 11;
+  border: 2px solid #6896ed;
+}
+.wrExpressViewDesignCanvasDragTarget.wrCursorGrabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.wrExpressViewCanvasInstructionsContainer {
+  font-style: italic;
+  font-size: 24px;
+  height: 180px;
+  width: 317px;
+  color: #b4b4b4;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -158.5px;
+  text-align: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+[data-small] .wrExpressViewCanvasInstructionsContainer {
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -84px;
+}
+[data-small] .wrExpressViewCanvasInstructionsContainer img {
+  display: none;
+}
+.wrExpressViewCanvasInstructions {
+  display: inline-block;
+  width: 159px;
+  margin-left: 10px;
+  text-align: center;
+}
+[data-small] .wrExpressViewCanvasInstructions {
+  vertical-align: middle;
+  width: auto;
+}
+.wrExpressViewCanvasInstructionsDescription {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1em;
+}
+[data-small] .wrExpressViewCanvasInstructionsDescription {
+  display: none;
+}
+.wrExpressViewTableAndHeadersContainer {
+  position: relative;
+  margin: auto;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.wrExpressViewScrollingContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  overflow-x: visible;
+  font-size: 0;
+  padding-top: 10px;
+  padding-left: 2px;
+}
+.wrExpressViewScrollBar {
+  position: absolute;
+  background-color: #9a9a9a;
+}
+.wrExpressViewScrollBarHover {
+  background-color: #898989;
+}
+.wrExpressViewScrollBarActive {
+  background-color: #707070;
+}
+.wrExpressViewVerticalScrollBar {
+  right: 0;
+  width: 12px;
+  height: 100px;
+  z-index: 8;
+}
+.wrExpressViewHorizontalScrollBar {
+  bottom: 0;
+  width: 100px;
+  height: 12px;
+  z-index: 8;
+}
+.wrExpressViewDetailHeaderRow {
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+.wrExpressViewDetailHeaderRow:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.wrExpressViewDetailHeaderRowContentContainer {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  bottom: 0;
+  right: 22px;
+  padding-left: 1px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0;
+  cursor: pointer;
+}
+.wrExpressViewDetailHeaderCell:last-child,
+.wrExpressViewDragColumnDetailHeader {
+  border-right: 2px solid #ffffff;
+}
+.wrExpressViewDetailHeaderCell {
+  height: 24px;
+  display: inline-block;
+  background-color: white;
+  line-height: 24px;
+  font-weight: bold;
+  padding-right: 6px;
+  cursor: pointer;
+  font-size: 0;
+  position: relative;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+}
+.wrExpressViewDetailHeaderCellText {
+  vertical-align: middle;
+  font-size: 12px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.wrExpressViewDetailHeaderCellRadialMenuButton {
+  vertical-align: middle;
+  margin-right: 6px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  transition: background-color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrExpressViewDetailHeaderCellRadialMenuButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wrExpressViewColumnHeaderColorBlock {
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  cursor: default;
+}
+.wrExpressViewDetailPlaceholderCell {
+  background-color: white;
+}
+.wrExpressViewDetailHeaderPlaceholderCell {
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  font-weight: bold;
+  padding-right: 6px;
+  cursor: pointer;
+  font-size: 0;
+  position: relative;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+  vertical-align: bottom;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 2px solid white;
+}
+.wrExpressViewDetailHeaderPlaceholderCell:last-child {
+  border-right: 2px solid #ffffff;
+}
+.wrExpressViewGroupHeaderRow {
+  font-size: 12px;
+  font-weight: bold;
+  height: 24px;
+  background-color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-left-radius: 3px;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+}
+.wrExpressViewGroupHeaderRow:first-child,
+.wrExpressViewGroupFooterRow + .wrExpressViewGroupHeaderRow {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.wrExpressViewGroupHeaderRowContentContainer {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  bottom: 0;
+  right: 0;
+  padding-left: 1px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0;
+  cursor: pointer;
+}
+.wrExpressViewGroupHeaderRowContentContainerNoRadialMenu {
+  left: 8px;
+}
+.wrExpressViewFloatingGroupHeaderRow > .wrExpressViewGroupHeaderRowContentContainer {
+  cursor: default;
+}
+.wrExpressViewGroupFooterRow {
+  font-size: 12px;
+  height: 24px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 3px;
+}
+.wrExpressViewGroupFooterRowEndOfSection {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.wrExpressViewReportFooterOnlyReport .wrExpressViewReportFooter {
+  margin-top: 0;
+  padding-top: 5px;
+  border-radius: 0;
+}
+.wrExpressViewReportFooterOnlyReport .wrExpressViewReportFooter .wrExpressViewReportFooterTitle {
+  display: none;
+}
+.wrExpressViewReportFooterOnlyReport .wrExpressViewDetailHeaderCell {
+  box-shadow: none;
+}
+.wrExpressViewGroupFooterRow + .wrExpressViewGroupHeaderRow {
+  margin-top: 24px;
+}
+.wrExpressViewGroupFooterColorBlockContainer {
+  height: 100%;
+  display: inline-block;
+}
+.wrExpressViewGroupFooterColorBlock {
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+.wrExpressViewGroupHeaderColorBlock {
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+.wrExpressViewGroupFooterCell {
+  border-right: 2px solid #f7f7f7;
+  height: 23px;
+  display: inline-block;
+  background-color: white;
+  line-height: 24px;
+  padding-right: 6px;
+  padding-left: 6px;
+  position: relative;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  vertical-align: top;
+}
+.wrExpressViewGroupFooterCell:last-child {
+  border-right-color: #ffffff;
+}
+.wrExpressViewReportFooterCell {
+  border-right: 2px solid #f7f7f7;
+  height: 23px;
+  display: inline-block;
+  background-color: white;
+  line-height: 24px;
+  padding-right: 6px;
+  padding-left: 6px;
+  position: relative;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  vertical-align: top;
+}
+.wrExpressViewReportFooterCell:last-child {
+  border-right-color: #ffffff;
+}
+.wrExpressViewFooterCellDropDownArrow {
+  display: none;
+  position: absolute;
+  right: 4px;
+  top: 7px;
+}
+.wrExpressViewGroupFooterCell:hover {
+  background-color: #f1f1f1;
+}
+.wrExpressViewFooterCellDropDownActive {
+  background-color: #f1f1f1;
+}
+.wrExpressViewGroupFooterCell:active {
+  background-color: #e2e2e2;
+}
+.wrExpressViewGroupFooterCell:hover > .wrExpressViewFooterCellDropDownArrow {
+  display: block;
+}
+.wrExpressViewReportFooterCell:hover {
+  background-color: #f1f1f1;
+}
+.wrExpressViewReportFooterCell:active {
+  background-color: #e2e2e2;
+}
+.wrExpressViewReportFooterCellDisabled {
+  pointer-events: none;
+}
+.wrExpressViewReportFooterCell:hover > .wrExpressViewFooterCellDropDownArrow {
+  display: block;
+}
+.wrExpressViewFooterCellDropDownActive > .wrExpressViewFooterCellDropDownArrow {
+  display: block;
+}
+.wrExpressViewDragColumnGroupFooterCell {
+  border-left: 2px solid #f7f7f7;
+  border-top: 1px solid #f7f7f7;
+}
+.wrExpressViewDragColumnReportFooterCell {
+  border-left: 2px solid #f7f7f7;
+  border-top: 1px solid #f7f7f7;
+}
+.wrExpressViewFooterAggregateNameText {
+  font-weight: bold;
+  vertical-align: middle;
+}
+.wrExpressViewFooterAggregateValueText {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+}
+.wrExpressViewGroupHeaderCellRadialMenuButton {
+  vertical-align: middle;
+  margin-right: 6px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  transition: background-color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrExpressViewGroupHeaderCellRadialMenuButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wrExpressViewGroupHeaderCellText {
+  font-size: 12px;
+  vertical-align: middle;
+}
+.wrExpressViewFloatingDetailHeaderRow {
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.15);
+  left: 2px;
+}
+.wrExpressViewFloatingGroupHeaderRow {
+  font-size: 12px;
+  font-weight: bold;
+  height: 24px;
+  background-color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-left-radius: 3px;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 100%;
+  left: 2px;
+}
+.wrExpressViewSearchContainer {
+  position: absolute;
+  right: 12px;
+  height: 34px;
+  width: 229px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 0;
+  z-index: 10;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+  padding-right: 6px;
+  border-bottom-left-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.wrExpressViewSearchButton {
+  display: none;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ReportSearch.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 33px;
+  width: 36px;
+  float: right;
+}
+.wrNoSVG .wrExpressViewSearchButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ReportSearch.png");
+}
+.wrExpressViewSearchInput {
+  box-sizing: border-box;
+  height: 33px;
+  width: 180px;
+  left: 0;
+  border: none;
+  padding-left: 6px;
+}
+.wrExpressViewSearchInput:focus {
+  border: none;
+}
+.wrExpressViewSearchInput::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.wrExpressViewSearchInputNoMatches {
+  background-color: rgba(244, 67, 54, 0.53);
+}
+.wrExpressViewSearchSeekButton {
+  width: 25px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: stretch;
+}
+.wrExpressViewSearchUpButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SearchUp.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrExpressViewSearchUpButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SearchUp.png");
+}
+.wrExpressViewSearchDownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SearchDown.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrExpressViewSearchDownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SearchDown.png");
+}
+.wrExpressViewPagingContainer {
+  height: 100%;
+  float: right;
+  position: relative;
+  font-size: 0;
+  font-weight: bold;
+  color: #777777;
+  line-height: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: max-width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  max-width: 0;
+}
+.wrExpressViewPagingContainerOpen {
+  max-width: 180px;
+}
+.wrExpressViewPagingButton {
+  top: 0;
+  height: 33px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrExpressViewPageHomeButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageHome.svg");
+  background-size: 16px 16px;
+  display: inline-block;
+}
+.wrNoSVG .wrExpressViewPageHomeButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageHome.png");
+}
+.wrExpressViewPageHomeButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageHomeHover.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrExpressViewPageHomeButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageHomeHover.png");
+}
+.wrExpressViewPageUpButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageUp.svg");
+  background-size: 16px 16px;
+  display: inline-block;
+}
+.wrNoSVG .wrExpressViewPageUpButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageUp.png");
+}
+.wrExpressViewPageUpButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageUpHover.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrExpressViewPageUpButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageUpHover.png");
+}
+.wrExpressViewPageDownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageDown.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrExpressViewPageDownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageDown.png");
+}
+.wrExpressViewPageDownButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageDownHover.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrExpressViewPageDownButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageDownHover.png");
+}
+.wrExpressViewPageEndButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageEnd.svg");
+  background-size: 16px 16px;
+  margin-right: 5px;
+}
+.wrNoSVG .wrExpressViewPageEndButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageEnd.png");
+}
+.wrExpressViewPageEndButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageEndhOVER.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrExpressViewPageEndButton:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageEndhOVER.png");
+}
+.wrExpressViewPagingOutOfContainer {
+  height: 36px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.wrExpressViewPagingPageNumberInput {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 7px;
+  margin-right: 3px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  height: 14px;
+  width: 1em;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: right;
+  font-weight: inherit;
+  font-size: 14px;
+  color: inherit;
+  cursor: default;
+  -moz-appearance: textfield;
+  transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+/* In IE and FF, having the number input too small causes vertical scrolling in the input itself */
+.wrFF .wrExpressViewPagingPageNumberInput,
+.wrIE .wrExpressViewPagingPageNumberInput {
+  height: 18px;
+  margin-top: 5px;
+}
+.wrFF .wrExpressViewPagingPageNumberInput {
+  margin-top: 6px;
+}
+.wrExpressViewPagingPageNumberInput:hover {
+  color: #6896ed;
+  border-color: #6896ed;
+}
+.wrExpressViewPagingPageNumberInput:focus {
+  cursor: text;
+}
+.wrExpressViewPagingPageNumberInput::-webkit-outer-spin-button,
+.wrExpressViewPagingPageNumberInput::-webkit-inner-spin-button {
+  display: none;
+}
+.wrExpressViewPagingLeftContainer {
+  display: inline-block;
+  vertical-align: top;
+  height: 33px;
+}
+.wrExpressViewPagingRightContainer {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: top;
+}
+.wrExpressViewCellContent {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrExpressViewClickableDetailColumn .wrExpressViewTable {
+  cursor: pointer;
+}
+.wrExpressViewCellImage {
+  max-width: 100%;
+}
+.wrExpressViewFooterCellContent {
+  font-weight: bold;
+}
+.wrExpressViewEmptyText {
+  font-style: italic;
+}
+.wrExpressViewBackgroundHourglass {
+  float: right;
+  margin-top: 6px;
+  margin-right: 6px;
+  height: 22px;
+  width: 22px;
+  position: relative;
+}
+.wrExpressViewSearchMatchText {
+  background-color: #fec976;
+}
+.wrExpressViewSearchMatchTextCurrentSelection {
+  background-color: #fea076;
+}
+.wrExpressViewColumnDragHandle {
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: col-resize;
+}
+.wrExpressViewColumnResizeBar {
+  width: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #666666;
+  opacity: .8;
+  z-index: 5;
+}
+.wrExpressViewReportInfoLabel {
+  display: block;
+  font-size: 13px;
+}
+.wrExpressViewReportInfoNameInput {
+  display: block;
+  margin: 4px 0 10px 8px;
+  width: calc(100% - 26px);
+}
+.wrExpressViewReportInfoDescriptionInput {
+  display: block;
+  height: 4em;
+  width: calc(100% - 26px);
+  min-height: 2em;
+  margin: 4px 0 10px 8px;
+  font-family: Roboto, Arial, sans-serif;
+  resize: none;
+}
+.wrExpressViewReportInfoMenuItem {
+  width: 280px;
+  padding: 10px;
+  margin-top: -3px;
+  resize: horizontal;
+}
+.wrExpressViewExportSettingsMenuItem {
+  width: 280px;
+  padding: 10px;
+  margin-top: -3px;
+}
+.wrExpressViewExportSettingsMenuItemInnerContainer select {
+  font-size: 12px;
+  color: #545454;
+}
+.wrExpressViewExportSettingsMenuItemInnerContainer fieldset:last-child {
+  padding-bottom: 40px;
+}
+.wrExpressViewReportInfoErrorText {
+  color: red;
+  margin-top: 1px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 14px;
+  padding: 6px;
+}
+.wrExpressViewFilterContainer .wrExpressViewReportInfoErrorText {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+}
+.wrExpressViewInfoHourglass {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.wrExpressViewInfoSuccessIndicator {
+  height: 14px;
+  width: 14px;
+  margin: 1px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.wrExpressViewReportInfoFolderTree {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+.wrExpressViewReportInfoFolderContainer {
+  margin-bottom: 10px;
+}
+.wrExpressViewReportInfoFolder {
+  margin-top: 0;
+}
+.wrExpressViewDropDownPopup {
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 12px;
+  padding: 6px 0;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.wrExpressViewDropDownItem {
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 5px 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrExpressViewDropDownItem:hover {
+  background-color: #f1f1f1;
+}
+.wrExpressViewDropDownAggType {
+  font-weight: bold;
+}
+.wrExpressViewDropDownAggValue {
+  font-style: italic;
+}
+.wrExpressViewReportFooter {
+  background-color: #ffffff;
+  margin: 24px 0;
+  border-left: 8px solid #5a5a5a;
+  padding: 10px;
+  padding-right: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.wrExpressViewReportFooterNoGroups {
+  border: none;
+  padding-left: 5px;
+}
+.wrExpressViewReportFooterTitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.wrExpressViewReportTotalsContainer {
+  position: relative;
+}
+.wrExpressViewReportTotalsContainerNoGroups {
+  margin-left: -3px;
+}
+.wrExpressViewReportFooterFirstCellDropDownActiveBorder {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  border-right: 2px solid transparent;
+}
+.wrExpressViewTopBarRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.wrExpressViewToolbarMenu {
+  position: absolute;
+  background-color: #ffffff;
+  right: 0;
+  bottom: 0;
+  min-width: 301px;
+  width: 301px;
+  border-left: 1px solid #d7d7d7;
+  z-index: 11;
+}
+.wrExpressViewToolbarMenuTitle {
+  font-size: 16px;
+  color: #6896ed;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 10px 10px 0;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 250px;
+  font-weight: bold;
+}
+.wrExpressViewFiltersMenuFiltersList {
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.wrExpressViewFiltersMenuFiltersList > .wrAccordionGroupItemContainer {
+  width: 90%;
+}
+.wrExpressViewFiltersMenuFiltersList > .wrAccordionGroupTitle {
+  margin-top: 12px;
+}
+.wrExpressViewFilterTitleField {
+  font-weight: bold;
+  font-style: italic;
+}
+.wrExpressViewFiltersMenuFiltersAllList {
+  position: relative;
+}
+.wrExpressViewFiltersMenuFiltersAllList[data-empty] {
+  margin-bottom: 10px;
+}
+.wrExpressViewFiltersMenuFiltersAnyList {
+  position: relative;
+}
+.wrExpressViewFiltersMenuFiltersListDescriptionAll {
+  font-weight: bold;
+  color: #6896ED;
+}
+.wrExpressViewFiltersMenuFiltersListDescriptionAny {
+  font-weight: bold;
+  color: #6896ED;
+}
+.wrExpressViewToolbarMenuButtonSeparator {
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #dcdcdc;
+  vertical-align: middle;
+}
+.wrExpressViewFilterItem {
+  position: relative;
+  padding: 6px;
+  color: #808080;
+}
+.wrExpressViewFiltersMenuEditCtrlContainer {
+  position: relative;
+}
+.wrExpressViewFiltersMenuEditCtrlContainer > .wrFiltersOneOfWrapper {
+  position: static;
+  margin-top: 6px;
+}
+.wrExpressViewFiltersMenuEditCtrlContainer > .wrFiltersOneOfWrapper > .wrReportFiltersListBox {
+  background-color: #FFFFFF;
+}
+.wrExpressViewFiltersMenuEditCtrlContainer .wrFiltersEditCtrlWrapper {
+  position: static;
+  height: 45px;
+}
+.wrExpressViewFiltersMenuEditCtrlContainer .wrEditCtrlSearchSettingBtn {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.wrExpressViewFiltersMenuEditCtrlContainer .wrEditCtrlDiv {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.wrExpressViewFiltersButtonContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 95%;
+  height: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.wrExpressViewFiltersMenuExpandAllButton {
+  font-style: italic;
+  font-size: 11px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  color: #808080;
+  padding: 2px 5px;
+  vertical-align: middle;
+  line-height: normal;
+}
+.wrExpressViewFiltersApplyButton {
+  font-style: italic;
+  font-size: 11px;
+  border-radius: 3px;
+  background-color: #6896ed;
+  color: #ffffff;
+  padding: 2px 5px;
+  vertical-align: middle;
+  transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  line-height: normal;
+  z-index: 1;
+}
+.wrExpressViewFiltersApplyButton:active {
+  background-color: #4c79ce;
+}
+.wrExpressViewSettingsMenu {
+  top: 0;
+  width: inherit;
+}
+.wrExpressViewSortsMenu {
+  top: 0;
+  width: inherit;
+}
+.wrExpressViewFormatMenu {
+  top: 0;
+  width: inherit;
+}
+.wrExpressViewSortsMenuSortDirectionButton {
+  height: 26px;
+  border-left: 1px solid #d7d7d7;
+  color: #979797;
+  font-style: italic;
+  float: right;
+  min-width: 45px;
+}
+.wrExpressViewSortsMenuSortDirectionButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+[data-direction='ascending'] .wrExpressViewSortsMenuAscendingButton {
+  color: #6896ed;
+  font-weight: bold;
+}
+[data-direction='descending'] .wrExpressViewSortsMenuDescendingButton {
+  color: #6896ed;
+  font-weight: bold;
+}
+.wrExpressViewSortsMenuSortsList {
+  position: absolute;
+  margin: 10px 16px 0;
+  top: 30px;
+  bottom: 29px;
+  left: 0;
+  right: 0;
+}
+.wrExpressViewDetailHeaderSortIndicator {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  font-size: 10px;
+  color: #808080;
+}
+.wrExpressViewDetailHeaderSortIndicator > img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.wrExpressViewSortsInstructionsContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 30px;
+  text-align: center;
+  margin: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrExpressViewSortsInstructionsContainer > img {
+  width: 48px;
+}
+.wrExpressViewSortsInstructions {
+  margin-top: 4px;
+  width: 180px;
+}
+.wrExpressViewLiveDataToggleSwitch {
+  position: absolute;
+  left: calc(50% - 9px);
+  top: calc(50% - 4.5px);
+}
+.wrExpressViewSettingsMenuFieldset > legend {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 13px;
+}
+.wrExpressViewExportSettingsItem:not(:last-child) {
+  margin-bottom: 8px;
+}
+.wrExpressViewExportSettingsAllowedExportTypesItem > div {
+  display: inline-block;
+}
+.wrExpressViewExportSettingsAllowedExportTypesItem > :first-child {
+  width: 144px;
+  vertical-align: top;
+  white-space: normal;
+}
+.wrExpressViewExportSettingsAllowedExportTypesItem > :nth-child(2) {
+  width: 130px;
+  white-space: normal;
+}
+.wrExpressViewExportSettingsAllowedExportTypesItem .wrCustomCheckbox {
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.wrExpressViewExportSettingsAllowedExportTypesItem .wrCustomCheckbox:nth-child(2n+1) {
+  width: 58px;
+}
+.wrExpressViewPopupMenuButtonStrip {
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+.wrExpressViewSortItemSortText {
+  text-overflow: ellipsis;
+  width: calc(100% - 90px);
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.wrExpressViewColumnInsertionBar {
+  position: fixed;
+  width: 2px;
+  background: #6896ed;
+  z-index: 9;
+}
+.wrExpressViewStandardFilterTabContent {
+  position: absolute;
+  top: 8px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+}
+.wrExpressViewContentContainer {
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 20px;
+}
+.wrExpressViewFilterContainer {
+  top: 30px;
+}
+.wrExpressViewTopBarLeft {
+  display: flex;
+  align-items: center;
+}
+.wrExpressViewRightPanel {
+  top: 33px;
+}
+.wrExpressViewRightPaneButtonDiv {
+  display: flex;
+  width: 302px;
+  height: 34px;
+  align-items: center;
+}
+.wrExpressViewRightPanel .wrTabText {
+  color: #8B8B8B;
+  font-size: 12px;
+}
+.wrExpressViewRightPanel .wrTabContent {
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+.wrExpressViewRightPanel .wrTabItemUnderline {
+  background-color: #6896ed;
+}
+.wrExpressViewRightPanel .wrTabStripOuterContainer {
+  height: 28px;
+  text-align: center;
+  padding-bottom: 3px;
+}
+.wrExpressViewRightPanel .wrTabStripInnerContainer {
+  height: inherit;
+  justify-content: center;
+}
+.wrExpressViewRightPanel .wrStaticTabItem {
+  padding: 0;
+  top: 8px;
+  margin-bottom: 2px;
+}
+.wrExpressViewTopNContentContainer {
+  text-align: center;
+  padding-top: 10px;
+}
+.wrExpressViewTopNFilterDescription {
+  font-size: 11px;
+  color: #808080;
+  border-radius: 2px;
+  padding: 4px 6px 4px 6px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.wrExpressViewTopNFilterDescription .wrCustomCheckboxBox {
+  bottom: 2px;
+}
+.wrExpressViewTopNLabel {
+  font-size: 12px;
+  font-weight: bold;
+  color: #777777;
+}
+.wrExpressViewTopNFilterDD {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  color: #808080;
+  font-size: 12px;
+  height: 28px;
+  padding: 6px;
+}
+.wrExpressViewTopBottomFilterDD {
+  width: 100px;
+  margin-left: 4px;
+}
+.wrExpressViewAggTypeFilterDD {
+  width: 100px;
+}
+.wrExpressViewAggTypeFilterDDDisabled {
+  color: #c3c3c3;
+}
+.wrExpressViewTopNFilterNumInput {
+  font-size: 12px;
+  color: #808080;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  height: 14px;
+  width: 34px;
+  padding: 6px;
+  text-align: center;
+}
+.wrExpressViewFilterFieldDD {
+  width: 260px;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  color: #808080;
+  font-size: 12px;
+  height: 28px;
+  top: 4px;
+}
+.wrExpressViewGroupDD {
+  width: 171px;
+  color: #808080;
+  height: 28px;
+}
+.wrExpressViewTopNPanelRow1 {
+  text-align: center;
+  height: auto;
+  position: relative;
+  padding: 6px 0 10px 0;
+}
+.wrExpressViewTopNPanelRow2 {
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 6px 0 10px 0;
+  text-align: center;
+}
+.wrExpressViewTopNPanelRow2 > .wrSearchDDDropDown {
+  min-width: 252px;
+}
+.wrExpressViewTopNPanelRow3 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#TopNForEachGroupContainer {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+#TopNForEachGroupContainer > div {
+  line-height: 27px;
+  width: 100%;
+}
+.wrExpressViewTopNSummary {
+  width: 85%;
+  color: #777777;
+  font-size: 12px;
+  line-height: 19px;
+  font-style: italic;
+  text-align: left;
+  padding: 6px;
+  background-color: #F5F5F5;
+  border-radius: 2px;
+}
+.wrExpressViewTopNSummaryField {
+  font-weight: bold;
+  cursor: help;
+}
+.wrExpressViewTopNConfigErrorIcon {
+  cursor: help;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+.wrExpressViewRightPanel .wrEditableListDeleteButtonContainer > img {
+  position: relative;
+  border: 1px solid #D5D5D5;
+  border-radius: 2px;
+  padding: 5px;
+  top: 2px;
+  left: -5px;
+}
+#AddGroupBtn {
+  border: none;
+  width: 87px;
+  height: 18px;
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-left: 22px;
+}
+#AddGroupBtn > span {
+  font-size: 12px;
+  font-style: italic;
+  color: #808080;
+  letter-spacing: 0;
+  padding: 2px 0 2px 0;
+  font-weight: normal;
+  left: 3px;
+}
+#AddGroupBtn > img {
+  right: 3px;
+  height: 10px;
+  width: 10px;
+}
+.wrDDContainer.wrExpressViewFilterFieldDD {
+  float: none;
+}
+.wrExpressViewFilterFieldDD .wrDDSelect {
+  position: relative;
+  width: inherit;
+  font-size: 12px;
+  height: 18px;
+  color: #808080;
+  border-radius: 2px;
+}
+.wrExpressViewChartMenu {
+  top: inherit;
+  width: inherit;
+}
+.wrExpressViewChartMenu .wrExpressViewContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrExpressViewChartMenu .wrRightPane {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrExpressViewChartMenu .wrTabText {
+  width: 79px;
+}
+.wrChartTypeDescription {
+  width: calc(100% - 20px);
+  height: 18px;
+  background-color: transparent;
+  box-shadow: inset 0 -1px 0 #dfdfdf;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  color: #8b8b8b;
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 2px;
+  padding-bottom: 6px;
+}
+.wrChartTypeTopDescription {
+  margin-top: 0px;
+}
+.wrExpressViewChartTypeButton {
+  padding: 11px 8px 11px 8px;
+  height: 50px;
+  width: calc(100% / 4 - 5.75px);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  background-color: transparent;
+  vertical-align: top;
+  filter: grayscale(0.9) brightness(75%);
+  border: 2px solid transparent;
+  transition: all 50ms ease-in-out;
+}
+.wrExpressViewChartTypeButton:hover {
+  filter: grayscale(0);
+}
+.wrExpressViewChartTypeButton:active {
+  background-color: rgba(104, 150, 237, 0.15);
+  filter: none;
+}
+.wrExpressViewChartTypeSelected {
+  border: 2px solid #6896ed;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  filter: grayscale(0);
+}
+.wrExpressViewChartTypeBar {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeBar.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeBar {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeBar.png");
+}
+.wrExpressViewChartTypeStackBar {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackBar.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeStackBar {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackBar.png");
+}
+.wrExpressViewChartTypeStackBar100 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackBar100.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeStackBar100 {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackBar100.png");
+}
+.wrExpressViewChartTypePareto {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypePareto.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypePareto {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypePareto.png");
+}
+.wrExpressViewChartTypeColumn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeColumn.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeColumn {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeColumn.png");
+}
+.wrExpressViewChartTypeStackColumn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackColumn.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeStackColumn {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackColumn.png");
+}
+.wrExpressViewChartTypeStackColumn100 {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeStackColumn100.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeStackColumn100 {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeStackColumn100.png");
+}
+.wrExpressViewChartTypeSparkColumn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSparkColumn.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeSparkColumn {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSparkColumn.png");
+}
+.wrExpressViewChartTypePie {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypePie.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypePie {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypePie.png");
+}
+.wrExpressViewChartTypeDonut {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeDonut.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeDonut {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeDonut.png");
+}
+.wrExpressViewChartTypePyramid {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypePyramid.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypePyramid {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypePyramid.png");
+}
+.wrExpressViewChartTypeFunnel {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeFunnel.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeFunnel {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeFunnel.png");
+}
+.wrExpressViewChartTypeLine {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeLine.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeLine {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeLine.png");
+}
+.wrExpressViewChartTypeZoomLine {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeZoomLine.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeZoomLine {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeZoomLine.png");
+}
+.wrExpressViewChartTypeSpline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSpline.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeSpline {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSpline.png");
+}
+.wrExpressViewChartTypeArea {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeArea.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeArea {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeArea.png");
+}
+.wrExpressViewChartTypeSplineArea {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSplineArea.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeSplineArea {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSplineArea.png");
+}
+.wrExpressViewChartTypeSparkLine {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeSparkLine.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeSparkLine {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeSparkLine.png");
+}
+.wrExpressViewChartTypeScatter {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeScatter.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeScatter {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeScatter.png");
+}
+.wrExpressViewChartTypeZoomScatter {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeZoomScatter.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeZoomScatter {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeZoomScatter.png");
+}
+.wrExpressViewChartTypeBubble {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeBubble.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeBubble {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeBubble.png");
+}
+.wrExpressViewChartTypeEmpty {
+  width: calc(100% / 4 - 5.75px);
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+.wrExpressViewChartTypeGauge {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeGauge.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeGauge {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeGauge.png");
+}
+.wrExpressViewChartTypeKPI {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ChartTypeKPI.svg");
+  background-size: 40px 40px;
+}
+.wrNoSVG .wrExpressViewChartTypeKPI {
+  background-image: url("../#ApplicationThemeFolder#/Images/ChartTypeKPI.png");
+}
+.wrExpressViewChartTypeDescriptionHover {
+  color: #6896ed;
+}
+.wrExpressViewVizTypeButtonRow {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0;
+  width: 95%;
+}
+.wrExpressViewChartContainer {
+  top: 30px;
+}
+.wrExpressViewChartContainer .wrTabContent {
+  overflow: auto;
+  top: 32px;
+}
+.wrChartDesignPaneResizeBar {
+  position: absolute;
+  height: 6px;
+  width: inherit;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  cursor: s-resize;
+}
+.wrExpressViewChartRenderContainer {
+  padding: 10px 10px 25px 10px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrExpressViewVizErrorContainer {
+  display: table;
+  height: 100%;
+  width: 100%;
+  font-style: italic;
+}
+.wrExpressViewVizInnerErrorContainer {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+.wrExpressViewChartLayoutButton {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  bottom: 10px;
+}
+.wrExpressViewChartLayoutTopButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizTop.svg");
+  background-size: 15px 15px;
+  right: 50px;
+}
+.wrNoSVG .wrExpressViewChartLayoutTopButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizTop.png");
+}
+.wrExpressViewChartLayoutBottomButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizBottom.svg");
+  background-size: 15px 15px;
+  right: 30px;
+}
+.wrNoSVG .wrExpressViewChartLayoutBottomButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizBottom.png");
+}
+.wrExpressViewChartLayoutFullButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizFull.svg");
+  background-size: 15px 15px;
+  right: 10px;
+}
+.wrNoSVG .wrExpressViewChartLayoutFullButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizFull.png");
+}
+.wrExpressViewChartLayoutTopButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizTopSelected.svg");
+  background-size: 15px 15px;
+  cursor: default;
+}
+.wrNoSVG .wrExpressViewChartLayoutTopButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizTopSelected.png");
+}
+.wrExpressViewChartLayoutTopButton[data-selected]:active {
+  background-color: transparent;
+}
+.wrExpressViewChartLayoutBottomButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizBottomSelected.svg");
+  background-size: 15px 15px;
+  cursor: default;
+}
+.wrNoSVG .wrExpressViewChartLayoutBottomButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizBottomSelected.png");
+}
+.wrExpressViewChartLayoutBottomButton[data-selected]:active {
+  background-color: transparent;
+}
+.wrExpressViewChartLayoutFullButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/VizFullSelected.svg");
+  background-size: 15px 15px;
+  cursor: default;
+}
+.wrNoSVG .wrExpressViewChartLayoutFullButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/VizFullSelected.png");
+}
+.wrExpressViewChartLayoutFullButton[data-selected]:active {
+  background-color: transparent;
+}
+.wrExpressViewDesignPaneContainer {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #EFEFEF;
+}
+.wrExpressViewDesignPane {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: top 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), bottom 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), height 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrExpressViewChartDesignPane {
+  z-index: 8;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+.wrExpressViewChartDataTabInstructions {
+  font-size: 12px;
+  font-style: italic;
+  color: #777777;
+  min-height: 26px;
+  width: calc(100% - 26px);
+  padding: 4px;
+  background: #F7F7F7;
+  border-radius: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrExpressViewChartDataLabelsContainer {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.wrExpressViewChartSearchDDAddBtnContainer {
+  text-align: left;
+  margin-left: 5px;
+}
+.wrExpressViewVizAddBtn > img {
+  height: 8px;
+  width: 8px;
+}
+.wrExpressViewChartDataLbl {
+  font-size: 12px;
+  color: #777777;
+  font-weight: bold;
+  height: 15px;
+  width: calc(100% - 20px);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 13px;
+}
+.wrExpressViewVizAppearanceSpaceAboveContainer {
+  margin-top: 15px;
+}
+.wrExpressViewChartLabelsSearchDD {
+  width: calc(100% - 20px);
+  text-align: left;
+  margin: auto;
+  float: none;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  height: 28px;
+  margin-top: 5px;
+  position: relative;
+}
+.wrExpressViewChartLabelsSearchDD .wrSearchDDImage.wrSearchDDDropDownImgTwoInputs {
+  top: 29px;
+}
+.wrExpressViewChartSearchDDAddBtn {
+  background-color: #F5F5F5;
+  border: 1px solid #D5D5D5;
+  border-radius: 2px;
+  height: 16px;
+  width: 48px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DesignerAddHover.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  left: 15px;
+}
+.wrNoSVG .wrExpressViewChartSearchDDAddBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/DesignerAddHover.png");
+}
+.wrValuesSearchDDAddBtnContainer {
+  top: 18px;
+}
+.wrExpressViewChartDataValuesContainer {
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+.wrExpressViewChartValuesSearchDD {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  float: none;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  height: 53px;
+  font-size: 0;
+}
+.wrExpressViewDesignCanvasShadow {
+  pointer-events: none;
+  position: absolute;
+}
+.wrExpressViewDesignCanvasTopShadow {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), transparent);
+  z-index: 0;
+}
+.wrExpressViewDesignCanvasBottomShadow {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(0, rgba(0, 0, 0, 0.05), transparent);
+  z-index: 7;
+}
+.wrExpressViewDesignCanvasLeftShadow {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05), transparent);
+  z-index: 7;
+}
+.wrExpressViewDesignCanvasRightShadow {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.05), transparent);
+  z-index: 7;
+}
+.wrExpressViewChartMsg {
+  font-size: 12px;
+  font-style: italic;
+  color: #777777;
+  padding: 4px 4px 4px 4px;
+  border-radius: 2px;
+  width: calc(100% - 26px);
+  margin: auto;
+  margin-top: 5px;
+  text-align: left;
+}
+.wrExpressViewChartEmptyListMsg {
+  font-style: italic;
+}
+.wrExpressViewVizDropZone {
+  position: absolute;
+  height: calc(100% - 5px);
+  width: calc(50% - 3px);
+  margin: auto;
+  bottom: -1px;
+  top: 0px;
+  border: 2px solid transparent;
+}
+.wrExpressViewVizDropZoneHovered {
+  border: 2px solid #6896ED;
+}
+.wrExpressViewVizDropZoneText {
+  background: #555555;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  height: 37px;
+  width: 136px;
+  margin: auto;
+  line-height: 37px;
+  opacity: 0;
+  transition: all .4s linear;
+}
+.wrExpressViewVizErrMsg {
+  background: #555555;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-size: 12px;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 14px;
+  width: 355px;
+  z-index: 1;
+  padding: 4px 8px 4px 8px;
+  margin: auto;
+  opacity: 0;
+  transition: all .4s linear;
+}
+.wrExpressViewVizErrMsgDisabled {
+  color: #c3c3c3;
+}
+.wrExpressViewVizErrMsgTriangle {
+  height: 11px;
+  width: 11px;
+  transform: rotate(45deg);
+  background: #555555;
+  margin: auto;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity .4s linear;
+}
+.wrExpressViewChartDropZone {
+  font-size: 13px;
+  color: #BCBCBC;
+  background: #F5F5F5;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.wrExpressViewChartValuesListContainer .wrEditableListColumn {
+  width: calc(100% - 20px);
+}
+.wrExpressViewChartValuesListContainer [data-listcontent] {
+  width: 100%;
+}
+.wrExpressViewVizAppearanceTabContent {
+  left: 0;
+  top: -1px !important;
+}
+.wrExpressViewRightPaneAccordianItemContainer {
+  font-size: 13px;
+  padding-left: 6px;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  color: #808080;
+}
+.wrKPIValueDisplayContainer {
+  margin-bottom: 10px;
+}
+.wrExpressViewRightPaneAccordianItemInputLabel {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+.wrExpressViewRightPaneAccordianItemContainerBlockInput {
+  display: block;
+  height: 18px;
+  font-size: 13px;
+  width: calc(100% - 9px);
+  padding-left: 6px;
+  border-radius: 2px;
+  color: #545454;
+}
+.wrExpressViewTextFontColorSizeContainer {
+  display: flex;
+}
+.wrExpressViewTextFontColorSizeContainer .wrExpressViewVizFontDD {
+  box-sizing: border-box;
+  height: 28px;
+  width: 186px;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  margin-right: 6px;
+}
+.wrExpressViewTextFontColorSizeContainer .wrModernColorChooserContainer {
+  margin-right: 6px;
+}
+.wrExpressViewTextFontColorSizeContainer .wrNumericEdit1 {
+  box-sizing: border-box;
+  height: 28px;
+  width: 54px;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  color: #777777;
+  font-family: Roboto;
+}
+.wrExpressViewTextFontColorSizeContainer .wrNumericEdit1 .wrNumericEditTextBox1 {
+  padding: 6px 0 0 7px;
+}
+.wrExpressViewTextFontColorSizeContainer .wrNumericEdit1 .wrNumericEditArrowUp {
+  top: 1px;
+}
+.wrExpressViewTextFontColorSizeContainer .wrNumericEdit1 .wrNumericEditArrowDown {
+  bottom: 1px;
+}
+.wrExpressViewRightPanelFloatingInputGroup {
+  display: inline-block;
+}
+.wrExpressViewSettingsMenuContentContainer {
+  top: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrExpressviewSaveReportInfoButton {
+  display: block;
+  margin: 0 auto;
+}
+.wrExpressViewRightPaneBlockInputDiv {
+  display: flex;
+}
+.wrExpressViewRightPaneBlockInputDiv:nth-last-child(n+2) {
+  margin-bottom: 4px;
+}
+.wrExpressViewAppearanceLinearRangeContainer {
+  position: relative;
+}
+.wrExpressViewLinearRangeBeginChooser {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrExpressViewLinearRangeEndChooser {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrExpressViewVizAppearanceTabContent .wrDDContainer {
+  float: none;
+  height: 22px;
+  border-radius: 2px;
+}
+.wrExpressViewVizAppearanceTabContent .wrDDInput {
+  line-height: 20px;
+}
+.wrExpressViewVizAppearanceTabContent .wrDDButton {
+  top: -1px;
+  right: -1px;
+}
+.wrExpressViewAppearanceCustomColorContainer {
+  margin-bottom: 4px;
+}
+.wrExpressViewAppearanceCustomColorPicker {
+  float: none;
+  vertical-align: middle;
+}
+.wrExpressViewAppearanceCustomColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  vertical-align: top;
+}
+.wrNoSVG .wrExpressViewAppearanceCustomColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrExpressViewAppearanceCustomColorDeleteButton[disabled] {
+  cursor: default;
+}
+.wrModernColorChooserContainer[data-focus] + .wrExpressViewAppearanceCustomColorDeleteButton {
+  border-color: #666666;
+}
+/* Hide the delete button if the custom color input is the only one left in the list */
+.wrExpressViewAppearanceCustomColorsList .wrExpressViewAppearanceCustomColorContainer:only-child .wrExpressViewAppearanceCustomColorDeleteButton {
+  display: none;
+}
+.wrExpressViewVizTitlePositionSelect {
+  font-size: 8pt;
+}
+.wrExpressViewChartDataScatterSeriesContainer {
+  margin: auto;
+  top: 45px;
+  text-align: center;
+}
+.wrExpressViewChartScatterSeriesSearchDD {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  float: none;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  height: 26px;
+  vertical-align: middle;
+}
+.wrExpressViewVizAddBtn {
+  border: none;
+  color: #A4A4A4;
+  font-style: italic;
+  line-height: 23px;
+}
+.wrExpressViewVizAddBtn.wrImageButton:hover {
+  color: #6896ed;
+  box-shadow: none;
+}
+.wrExpressViewVizAddBtn .wrImageButtonInput {
+  font-weight: normal;
+  font-size: 12px;
+  color: #777777;
+}
+.wrExpressViewVizAddBtn .wrImageButtonInput:hover {
+  color: #6896ed;
+}
+.wrExpressViewChartScatterSeriesAddBtnContainer {
+  position: relative;
+  top: 35px;
+  text-align: center;
+  width: calc(100% - 15px);
+}
+.wrExpressViewChartScatterSeriesRemoveBtnContainer {
+  height: 30px;
+  margin-top: 8px;
+  text-align: center;
+}
+.wrExpressViewChartScatterSeriesAddBtnContainer > div {
+  border: none;
+  font-size: 13px;
+  color: #6896ed;
+  font-style: italic;
+}
+.wrExpressViewChartScatterSeriesListContainer {
+  margin-top: 15px;
+  width: 100%;
+}
+.wrExpressViewChartScatterSeriesListContainer .wrEditableListColumn {
+  width: calc(100% - 15px);
+}
+.wrExpressViewChartScatterSeriesListContainer [data-listcontent] {
+  width: 100%;
+}
+.wrExpressViewChartDataScatterSeriesLbl {
+  font-size: 13px;
+  color: #6896ed;
+  margin: auto;
+}
+.wrExpressViewChartDataScatterSeriesSeriesSearchDDContainer {
+  margin-left: 18px;
+  display: flex;
+}
+.wrExpressViewChartDataScatterSeriesXSearchDDContainer,
+.wrExpressViewChartDataScatterSeriesYSearchDDContainer {
+  margin-top: 5px;
+  margin-left: 18px;
+  display: flex;
+}
+.wrExpressViewChartDataScatterSeriesSeriesSearchDDContainer .wrExpressViewChartScatterSeriesSearchDD,
+.wrExpressViewChartDataScatterSeriesXSearchDDContainer .wrExpressViewChartScatterSeriesSearchDD,
+.wrExpressViewChartDataScatterSeriesYSearchDDContainer .wrExpressViewChartScatterSeriesSearchDD {
+  right: 0;
+  left: 6px;
+}
+.wrExpressViewChartScatterSeriesSearchDD .wrSearchDDImage {
+  top: 6px;
+}
+.wrExpressViewFiltersMenu {
+  top: inherit;
+  width: inherit;
+}
+.wrExpressViewFiltersMenu .wrRightPane {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrExpressViewFiltersMenu .wrSearchDDImage {
+  top: 8px;
+}
+.wrExpressViewChartDataScatterSeriesSeriesInput {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #808080;
+  font-style: italic;
+  width: 100%;
+  padding-left: 9px;
+  height: 22px;
+  margin-left: 6px;
+}
+.wrExpressViewScatterDropZone {
+  border-radius: 2px;
+  border: 1px solid #D7D7D7;
+  padding-left: 5px;
+  font-size: 13px;
+  color: #808080;
+  height: 24px;
+}
+.wrExpressViewChartDataScatterSeriesSeriesSearchDDContainer .wrExpressViewScatterDropZone,
+.wrExpressViewChartDataScatterSeriesYSearchDDContainer .wrExpressViewScatterDropZone,
+.wrExpressViewChartDataScatterSeriesXSearchDDContainer .wrExpressViewScatterDropZone {
+  width: 100%;
+  margin-left: 6px;
+}
+.wrExpressViewChartDataScatterSeriesYSearchDDContainer.wrScatterSearchDDContainerDropZone {
+  top: 10px;
+}
+.wrExpressViewChartDataScatterSeriesXSearchDDContainer.wrScatterSearchDDContainerDropZone {
+  top: 5px;
+}
+.wrExpressViewScatterDropZoneMsg {
+  background: #FFFFFF;
+  border-radius: 2px;
+  font-size: 11px;
+  color: #BBBBBB;
+  font-style: italic;
+  height: 24px;
+  line-height: 24px;
+}
+.wrExpressViewScatterSeriesBtnDivider {
+  width: 1px;
+  height: 24px;
+  background-color: #D5D5D5;
+  display: inline-block;
+  bottom: 0px;
+  position: relative;
+}
+.wrExpressViewVizAppearanceAccordionContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.wrExpressViewScatterAutoInputMsg {
+  background: #F7F7F7;
+  border: 1px solid #F7F7F7;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #808080;
+  font-style: italic;
+  padding: 5px 20px 5px 20px;
+  transition: opacity .7s linear;
+  opacity: 0;
+  display: none;
+}
+.wrExpressViewRightPaneFieldSet {
+  border: none;
+  font-size: 0;
+  margin-left: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  margin-right: 13px;
+}
+.wrExpressViewRightPaneFieldSet:last-child {
+  margin-bottom: 0;
+}
+.wrExpressViewRightPaneFieldSet > legend {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 6px;
+}
+.wrExpressViewRightPaneFieldSetContent {
+  font-size: 13px;
+}
+.wrExpressViewRightPaneBottomMargin {
+  height: 16px;
+}
+.wrExpressViewRightPanelHalfWidthParentContainer {
+  font-size: 0;
+}
+.wrExpressViewRightPanelHalfWidthContainer {
+  width: calc(50% - 4.5px);
+  margin-right: 9px;
+}
+.wrExpressViewRightPanelHalfWidthContainer:last-child {
+  margin-right: 0;
+}
+.wrExpressViewRightPaneFieldSetContent .wrNumericEdit1 {
+  width: calc(100% - 2px);
+  height: 22px;
+  border-radius: 2px;
+}
+.wrExpressViewRightPaneFieldSetContent .wrNumericEditTextBox1 {
+  height: 18px;
+  padding-left: 6px;
+}
+.wrExpressViewRightPaneFieldSetContent .wrNumericEditArrowUp {
+  top: 0;
+}
+.wrExpressViewRightPaneFieldSetContent .wrNumericEditArrowDown {
+  bottom: 0;
+}
+.wrExpressViewRightPaneFieldSet select {
+  height: 24px;
+  border-radius: 2px;
+  color: #808080;
+  padding-left: 6px;
+  padding-right: 20px;
+  width: 100%;
+}
+.wrExpressViewVizAppearanceAxisLabelsContainer {
+  margin-top: 0;
+}
+.wrExpressViewVizAppearanceSubtitleContainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.wrExpressViewVizAppearanceDataContainer select,
+.wrExpressViewVizAppearanceStylingContainer select {
+  height: 28px;
+  border-radius: 2px;
+  color: #808080;
+  padding-left: 6px;
+  padding-right: 20px;
+  width: 100%;
+}
+.wrExpressViewFormatThemeColorPalette {
+  margin-top: 6px;
+}
+.wrExpressViewRightPaneFieldSet .wrDDContainer {
+  height: 22px;
+}
+.wrExpressViewRightPaneSelect {
+  height: 24px;
+  border-radius: 3px;
+  color: #808080;
+  padding-left: 6px;
+  padding-right: 20px;
+  width: 100%;
+}
+.wrExpressViewRightPanelNumberFormatLeft {
+  display: inline-block;
+  width: 178px;
+  margin-right: 6px;
+}
+.wrExpressViewRightPanelNumberFormatLeft .wrInputWithAdjacentLabelContainer {
+  margin-bottom: 13px;
+}
+.wrExpressViewNumberFormatColumnItem {
+  margin-bottom: 15px;
+}
+.wrExpressViewNumberFormatColumnItem .wrCustomCheckbox > label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrExpressViewVizScrollDisplayContainer {
+  color: #777777;
+  font-family: Roboto;
+  font-size: 12px;
+}
+.wrExpressViewNumberFormatContainer {
+  color: #777777;
+  font-family: Roboto;
+  font-size: 12px;
+}
+.wrExpressViewNumberFormatContainer.wrHideThousandsSepInputs .wrExpressViewVizUseThousandsSepLabelContainer,
+.wrExpressViewNumberFormatContainer.wrHideThousandsSepInputs .wrExpressViewVizThousandsSeparatorSymbol {
+  display: none;
+}
+.wrExpressViewNumberFormatContainer.wrHideThousandsSepInputs .wrExpressViewVizUseCurrencySymbolContainer {
+  margin-top: 18px;
+}
+.wrExpressViewRightPanelNumberFormatRight {
+  display: inline-block;
+  width: 42px;
+  text-align: center;
+  vertical-align: top;
+}
+.wrExpressViewRightPanelNumberFormatRight .wrExpressViewNumberFormatColumnItem {
+  height: 28px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 6px;
+  color: #777777;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 2px;
+}
+.wrExpressViewAttentionText {
+  color: #6896ed;
+}
+.wrExpressViewCheckboxContainer {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.wrExpressViewAppearanceFontFamilyContainer {
+  margin-right: 9px;
+  flex-grow: 1;
+}
+.wrExpressViewAppearanceFontSizeContainer {
+  width: 50px;
+}
+.wrExpressViewAppearanceFontSizeContainer label {
+  text-align: center;
+}
+.wrExpressViewFormatStylingContainer {
+  font-size: 0;
+}
+.wrExpressViewFontStylingContainer .wrDDContainer {
+  width: 100%;
+}
+.wrExpressViewFontSizeFamilyContainer {
+  display: flex;
+}
+.wrExpressViewFormatBorderStylingContainer {
+  font-size: 0;
+}
+.wrExpressViewVizTitleColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+  vertical-align: top;
+}
+.wrExpressViewConditionalChartPointsInfoContainer {
+  font-size: 0;
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), bottom 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
+}
+.wrExpressViewConditionalChartPointsInfoContainerInitial {
+  bottom: -20px;
+  opacity: 0;
+}
+.wrExpressViewConditionalChartPointsWarning {
+  vertical-align: middle;
+  margin-left: 6px;
+  opacity: 0.3;
+}
+.wrExpressViewConditionalChartPointsNotice {
+  font-size: 12px;
+  font-style: italic;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 0 7px;
+  padding-left: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #666666;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 8px 8px;
+  background-position-x: 5px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+}
+.wrNoSVG .wrExpressViewConditionalChartPointsNotice {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrExpressViewConditionalChartPointsNotice:hover {
+  background-color: #ececec;
+}
+.wrExpressViewConditionalChartPointsNotice:active {
+  background-color: #dedede;
+  transition: none;
+}
+.wrExpressViewFormatSelectionHighlight {
+  background-color: rgba(104, 150, 237, 0.2);
+  border: 2px solid #6896ed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
+}
+.ExpressViewFormatMenuContentContainer {
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 40px;
+  background-color: #ffffff;
+}
+.wrExpressViewMenuTabAccordionContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px);
+}
+.wrExpressViewFormatFontFamilyContainer {
+  display: inline-block;
+  margin-right: 9px;
+}
+.wrExpressViewFormatFontSizeContainer {
+  display: inline-block;
+  width: 50px;
+  margin-right: 9px;
+}
+.wrExpressViewFormatFontSizeContainer label {
+  text-align: center;
+}
+.wrExpressViewFormatMenu .wrDDContainer {
+  float: none;
+  height: 22px;
+  border-radius: 2px;
+  width: 100%;
+}
+.wrExpressViewFormatMenu .wrDDInput {
+  line-height: 20px;
+}
+.wrExpressViewFormatStylingFontColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+  vertical-align: top;
+  width: calc(50% - 5px);
+}
+.wrExpressViewFormatStylingBackgroundColorContainer {
+  display: inline-block;
+  width: calc(50% - 5px);
+  vertical-align: top;
+}
+.wrExpressViewFormatUnderlineSelect {
+  font-size: 8pt;
+}
+.wrExpressViewFormatStylingFontWeightContainer {
+  display: inline-block;
+  width: calc(57% - 5px);
+  margin-right: 9px;
+  vertical-align: top;
+}
+.wrExpressViewFormatStylingUnderlineContainer {
+  display: inline-block;
+  width: calc(43% - 5px);
+}
+.wrExpressViewFormatUnderlineBoldLbl {
+  font-weight: bold;
+}
+.wrExpressViewFormatUnderlineItalicLbl {
+  font-style: italic;
+}
+.wrExpressViewFormatUnderlineBoldItalicLbl {
+  font-weight: bold;
+  font-style: italic;
+}
+.wrExpressViewFormatUnderlineBtnContainer {
+  box-shadow: inset 0 0 0 1px #d7d7d7;
+  border-radius: 3px;
+}
+.wrExpressViewFormatUnderlineBtn {
+  height: 24px;
+  width: calc(100% / 3);
+  padding: 5px 10px 5px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrExpressViewFormatNoUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationNormal.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatNoUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationNormal.png");
+}
+.wrExpressViewFormatNoUnderline.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationNormalSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+  border-radius: 3px 0 0 3px;
+}
+.wrNoSVG .wrExpressViewFormatNoUnderline.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationNormalSelected.png");
+}
+.wrExpressViewFormatSingleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationUnderline.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatSingleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationUnderline.png");
+}
+.wrExpressViewFormatSingleUnderline.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationUnderlineSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrExpressViewFormatSingleUnderline.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationUnderlineSelected.png");
+}
+.wrExpressViewFormatDoubleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationDoubleUnderline.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatDoubleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationDoubleUnderline.png");
+}
+.wrExpressViewFormatDoubleUnderline.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationDoubleUnderlineSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+  border-radius: 0 3px 3px 0;
+}
+.wrNoSVG .wrExpressViewFormatDoubleUnderline.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationDoubleUnderlineSelected.png");
+}
+.wrExpressViewFormatStylingHorizontalAlignContainer {
+  width: calc(57% - 5px);
+  display: inline-block;
+  margin-right: 9px;
+  vertical-align: top;
+}
+.wrExpressViewFormatHorizontalAlignBtnContainer {
+  box-shadow: inset 0 0 0 1px #d7d7d7;
+  border-radius: 3px;
+}
+.wrExpressViewFormatHorizontalAlignBtn {
+  height: 24px;
+  width: calc(100% / 4);
+  padding: 7px 9px 6px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrExpressViewFormatLeftAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignLeft.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatLeftAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignLeft.png");
+}
+.wrExpressViewFormatLeftAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignLeftSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+  border-radius: 3px 0 0 3px;
+}
+.wrNoSVG .wrExpressViewFormatLeftAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignLeftSelected.png");
+}
+.wrExpressViewFormatCenterAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignCenter.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatCenterAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignCenter.png");
+}
+.wrExpressViewFormatCenterAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignCenterSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrExpressViewFormatCenterAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignCenterSelected.png");
+}
+.wrExpressViewFormatRightAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignRight.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatRightAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignRight.png");
+}
+.wrExpressViewFormatRightAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignRightSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrExpressViewFormatRightAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignRightSelected.png");
+}
+.wrExpressViewFormatJustify {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignJustify.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatJustify {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignJustify.png");
+}
+.wrExpressViewFormatJustify.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignJustifySelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+  border-radius: 0 3px 3px 0;
+}
+.wrNoSVG .wrExpressViewFormatJustify.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignJustifySelected.png");
+}
+.wrExpressViewFormatStylingVerticalAlignContainer {
+  width: calc(43% - 5px);
+  display: inline-block;
+  vertical-align: top;
+}
+.wrExpressViewFormatVerticalAlignBtnContainer {
+  box-shadow: inset 0 0 0 1px #d7d7d7;
+  border-radius: 3px;
+}
+.wrExpressViewFormatVerticalAlignBtn {
+  height: 24px;
+  width: calc(100% / 3);
+  padding: 7px 9px 6px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrExpressViewFormatTopAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignTop.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatTopAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignTop.png");
+}
+.wrExpressViewFormatTopAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignTopSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+  border-radius: 3px 0 0 3px;
+}
+.wrNoSVG .wrExpressViewFormatTopAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignTopSelected.png");
+}
+.wrExpressViewFormatMiddleAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignMiddle.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatMiddleAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignMiddle.png");
+}
+.wrExpressViewFormatMiddleAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignMiddleSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrExpressViewFormatMiddleAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignMiddleSelected.png");
+}
+.wrExpressViewFormatBottomAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignBottom.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrExpressViewFormatBottomAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignBottom.png");
+}
+.wrExpressViewFormatBottomAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignBottomSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+  border-radius: 0 3px 3px 0;
+}
+.wrNoSVG .wrExpressViewFormatBottomAlign.wrExpressViewFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignBottomSelected.png");
+}
+.wrExpressViewFormatStylingWrapTextContainer {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.wrExpressViewFormatStylingUniformBorderContainer {
+  margin-bottom: 6px;
+}
+.ExpressViewFormatStylingBorderImgContainer {
+  display: inline-block;
+  margin-right: 10px;
+}
+.wrExpressViewFormatStylingBorderColorContainer {
+  display: inline-block;
+  width: calc(100% - 93px);
+  margin-right: 9px;
+  max-width: 198px;
+}
+.wrExpressViewFormatStylingBorderWeightContainer {
+  display: inline-block;
+  width: 50px;
+}
+.wrExpressViewFormatNegativeColorContainer {
+  align-items: center;
+}
+.wrExpressViewFormatNegativeColorContainer > div {
+  vertical-align: top;
+}
+.wrExpressViewFormatNegativeColorContainer > .wrModernColorChooserContainer {
+  margin-top: 4px;
+}
+.wrExpressViewFormatRowShadingColorPicker {
+  float: none;
+  vertical-align: middle;
+}
+.wrExpressViewFormatGroupColorPicker {
+  float: none;
+  vertical-align: middle;
+}
+.wrExpressViewFormatGroupColorAddBtn {
+  display: inline;
+  width: 28px;
+  height: 28px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AddItem.svg");
+  background-size: 14px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrNoSVG .wrExpressViewFormatGroupColorAddBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/AddItem.png");
+}
+.wrExpressViewFormatGroupColorAddBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wrExpressViewFormatGroupColorAddBtn:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrExpressViewFormatDetailHeaderEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormulaBuilderEdit.svg");
+  background-size: 12px 12px;
+  background-color: #6896ed;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  right: 25px;
+  top: 3px;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrNoSVG .wrExpressViewFormatDetailHeaderEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormulaBuilderEdit.png");
+}
+.wrExpressViewEditDetailHeaderInput {
+  margin-left: 24px;
+  padding-left: 6px;
+  border: none;
+}
+.wrExpressViewEditDetailHeaderInput:focus {
+  border: none;
+}
+.wrExpressViewEditDetailHeaderInput::-ms-clear {
+  display: none;
+}
+@keyframes wrHourglassContainerKF {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+.wrExpressViewHourglassContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: wrHourglassContainerKF;
+  animation-duration: .25s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  z-index: 30;
+}
+.wrExpressViewHyperlinkText {
+  color: inherit;
+  text-decoration: inherit;
+}
+.wrExpressViewGroupStateMenu {
+  padding: 6px 0;
+}
+.wrExpressViewGroupStateMenu .wrPopupMenuItemText {
+  font-style: normal;
+}
+.wrExpressViewGroupStateMenu .wrPopupMenuSep {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.wrFormulaTabFunctionDrag {
+  height: 12px;
+  border-radius: 42px;
+  background-color: #77A0EF;
+  color: #FFFFFF;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.1);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 5px 10px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  display: inline-block;
+  min-width: 0;
+  transition: background-color 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  /*slow fade-out*/
+  cursor: grab;
+  cursor: -webkit-grab;
+  border: none;
+}
+.wrFormulaTabFunctionDrag:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  /*quick fade-in*/
+  background-color: #5E87D5;
+}
+.wrFormulaTabFunctionDrag.wrFormulaInsertionPointer {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  overflow: visible;
+}
+.wrFormulaTabFunctionDrag.wrFormulaInsertionPointer:after {
+  content: '';
+  position: absolute;
+  right: -14px;
+  top: -12px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #626262;
+  transform: rotate(45deg);
+}
+.wrFormulaTabFunctionDrag.wrTrDrag {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.wrExpressViewFormulaToolTip {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  height: 16px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding: 3px 6px;
+  pointer-events: none;
+}
+.wrExpressViewFormulaDescriptionContainer {
+  box-shadow: inset 1px 1px 0 0 #D5D5D5;
+  width: calc(102%);
+}
+.wrExpressViewFormulaAccordionContainer {
+  user-select: none;
+  display: block;
+  cursor: pointer;
+}
+.wrExpressViewFormulaPaneDescriptionContainer {
+  background-color: #000000;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: absolute;
+  right: 15px;
+  z-index: 12;
+  text-align: center;
+  max-width: 250px;
+  border-radius: 2px;
+  padding: 12px;
+}
+.wrFormulaPaneDescriptionArrow {
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg);
+  background-color: #000000;
+  position: absolute;
+  right: -8px;
+  border-radius: 2px;
+  z-index: 11;
+}
+.wrFormulaPaneDescriptionNameContainer {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  font-family: Roboto;
+  color: #FFFFFF;
+  z-index: 12;
+}
+.wrFormulaPaneDescriptionSummaryContainer,
+.wrFormulaPaneDescriptionExampleText {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: Roboto;
+  position: relative;
+  z-index: 12;
+  text-align: left;
+}
+.wrFormulaPaneDescriptionHorzSepBar {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 12;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: calc(100% - 8px);
+  margin-left: 4px;
+}
+.wrFormulaPaneDescriptionExampleContainer {
+  margin-top: 12px;
+}
+.wrFormulaPaneDescriptionExampleHeaderContainer .wrFormulaPaneDescriptionHorzSepBar {
+  display: inline-block;
+  left: 0;
+  width: calc(31%);
+  vertical-align: middle;
+}
+.wrFormulaPaneDescriptionExampleLbl {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.wrFormulaPaneDescriptionExampleExplanationText {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 12px;
+  margin-top: 12px;
+  text-align: left;
+}
+.wrFormulaDescriptionName {
+  color: #AFC7D8;
+}
+.wrFormulaDescriptionParens {
+  color: #9C89AA;
+}
+.wrFormulaDescriptionArgument {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-style: italic;
+}

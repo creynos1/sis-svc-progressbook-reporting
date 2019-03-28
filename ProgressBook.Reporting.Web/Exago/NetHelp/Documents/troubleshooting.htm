@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Troubleshooting</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="scheduler.htm" /><link rel="next" href="#" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="4f1c01b8-44de-44d8-8ea0-4a1f6c2c7faf">
+<h1>Troubleshooting</h1><a class="_D2HAnchor" name="faqs.htm" id="faqs.htm"></a>
+<p class="MidTopic">FAQs</p>
+<p><span class="Option">Why is a feature or button missing?</span></p>
+<p>This feature is unavailable in your environment. Contact your administrator 
+for more information.</p>
+<p><span class="Option">Why are there so many tabs with the same name?</span></p>
+<p>Each time you run a report, it opens a new instance of the Report Viewer. It 
+is safe to close the tabs you are not using.</p>
+<p><span class="Option">Why can't I edit a report?</span></p>
+<p>This report is locked, or it belongs to someone else. Make a duplicate 
+instead.</p>
+<p><span class="Option">Why can't I run a report?</span></p>
+<p>The Report Viewer is disabled. From the <a class="topic-link" href="generaloptions.htm">General Options</a> menu, see if you can enable it for 
+the report. If this does not work, then you have to export the report 
+instead.</p>
+<p><span class="Option">I downloaded a report, but I could not view or run the 
+file. Why?</span></p>
+<p>If you clicked <strong>Download</strong>, then you downloaded the report 
+"definition". You cannot view or run this file on your desktop. 
+<strong>Export</strong> the report instead.</p>
+<p><span class="Option">Why are some data fields not in the Sorts or Filters 
+menu?</span></p>
+<p>These data fields are unsortable or unfilterable. Try to find a substitute 
+field.</p>
+<p><span class="Option">Why are there so many repeated or blank rows?</span></p>
+<p>There is a one-to-many join between two or more categories in the report. 
+There are multiple rows joined to each data field, but you will not see the data 
+in those rows if you do not have a field from that category on the report. See 
+<a class="topic-link" href="reportcategories.htm#suppressingduplicatesadvancedusers.htm">Suppressing 
+duplicates</a> for more information.</p>
+<p><span class="Option">Why do I have a bunch of junk after my data?</span></p>
+<p>The report has multiple one-to-many relationships, and there is a sort on a 
+field without associated data for a number of rows. The report does not know how 
+to sort these rows, so it puts them all at the bottom. You can suppress these 
+rows by setting <em>Must </em>constraints in the <a class="topic-link" href="joins.htm">Joins</a> menu.</p>
+<p><span class="Option">What are #E0FFE0 and similar patterns?</span></p>
+<p>The six letter and number patterns that start with a pound sign (#) are 
+called color codes. This code is one of the ways that computers represent 
+different colors. For example, white is #FFFFFF, black is #000000, teal is 
+#008080, and so on. Wherever you see a color code or color field, there is 
+a picker that lets you visually select a color from a palette - this 
+way you don't have to worry about the codes themselves. However, matching codes 
+is a good way to match colors in different reports or in different parts of 
+a report.<br class="Option" /></p><span id="related-topics"></span><a class="_D2HAnchor" name="errors.htm" id="errors.htm"></a>
+<p class="MidTopic">Errors</p>
+<p><span class="Option">An error has occurred. Please contact your 
+administrator.</span></p>
+<p>This message shows when the application is unable to determine the cause of 
+an error. Save your work, then try to replicate the circumstances that led to 
+the error message. Then let your administrator know what happened.</p>
+<p><span class="Option">No Data Qualified for this Report</span></p>
+<p>The report was not able to return any data. Either there are too many 
+conflicting filters, or the chosen fields have no data. If you still want to see 
+the report with no data, open the <a class="topic-link" href="generaloptions.htm">General Options</a> menu, then from the <strong>No 
+Data Qualify Display Mode</strong> list select <strong>Show Report</strong>.</p>
+<p><span class="Option">Session has timed out; browser page will need to be 
+reloaded or browser restarted</span></p>
+<p>There was an error with the web server or with your internet connection. You 
+may have to refresh the page, or log out and log in again.</p>
+<p><span class="Option">Report has Abended</span></p>
+<p>The report is trying to use an invalid <a class="topic-link" href="executioncaching.htm">data cache</a>. To refresh the cache, edit the 
+report, then click the refresh <img src="../Media/CacheInvalid.png" alt="" /> 
+icon.</p>
+<p><span class="Option">This report contains errors. Please review the errors, and 
+click Okay to continue editing, and Cancel to close.</span></p>
+<p>There are problems with this report. The file may have been corrupted, or the 
+administrative settings may have changed unexpectedly. Contact your 
+administrator, then try to recreate the report.</p>
+<p><span class="Option">There are errors with this report, which prevents it from 
+being executed or scheduled. Please edit report to view and fix 
+errors.</span></p>
+<p>The Chained Report is missing component reports. They may have been renamed, 
+moved, or deleted. Try to locate the missing reports, then re-add them to the 
+Chained Report.</p>
+<p><span class="Option">Invalid template bookmark: Name; paragraphs, tables, and 
+other Word objects cannot be contained within bookmark content that is mapped to 
+a data field. Please see user guide for information on Word document 
+templates.</span></p>
+<p>You are trying to use two or more different Word based templates in the same 
+Chained Report, which is not supported.</p>
+<p><span class="Option">ERROR: / #VALUE!</span></p>
+<p>There are problems with the formula in this cell. Check for errors such as 
+missing parentheses, improper value types, or missing arguments. The <a class="topic-link" href="formulas.htm">Formula Editor</a> is helpful for 
+determining formula errors.</p><span id="related-topics"></span><span id="related-topics"></span></body></html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    ArrowCollapse
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <path fill="#777777" fill-rule="nonzero" d="M2.578 4.794l3.018 4.15a.5.5 0 0 0 .808 0l3.018-4.15A.5.5 0 0 0 9.018 4H8.51a1 1 0 0 0-.808.412L6.206 6.467a.25.25 0 0 1-.407-.003l-1.435-2.04A1 1 0 0 0 3.546 4h-.564a.5.5 0 0 0-.404.794z"/>
+  </g>
+</svg>

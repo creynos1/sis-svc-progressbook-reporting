@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeActiveRole
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <path d="M4.33 7h2.34C7.955 7 9 7.894 9 9.005V12H2V9.005C2 7.898 3.048 7 4.33 7z"/>
+    <circle cx="5.5" cy="3.5" r="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeFunnel
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <path fill-opacity=".5" d="M17.5 29L6 6h28L22.5 29h-5z"/>
+    <path fill-opacity=".5" d="M14 22L6 6h28l-8 16H14z"/>
+    <path d="M10 14L6 6h28l-4 8H10z"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    AddFolder
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="none" rx="2"/>
+    <path fill="#777777" d="M11 7.5a1.5 1.5 0 0 0-3 0V8h-.5A1.5 1.5 0 0 0 6 9.5v.5H2a1 1 0 0 1-1-1V5h10v2.5zM1.5 1h2.293a.5.5 0 0 1 .353.146L5 2h5a1 1 0 0 1 1 1v1H1V1.5a.5.5 0 0 1 .5-.5zM10 9h1.5a.5.5 0 1 1 0 1H10v1.5a.5.5 0 1 1-1 0V10H7.5a.5.5 0 0 1 0-1H9V7.5a.5.5 0 0 1 1 0V9z"/>
+  </g>
+</svg>

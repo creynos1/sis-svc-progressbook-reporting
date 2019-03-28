@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Report Viewer</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="exporting.htm" /><link rel="next" href="reportwizard.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="3a29ece7-8f58-4427-87e1-904cadaa6d35">
+<h1>Report Viewer</h1>
+<p>When you run an Advanced Report, Express Report, or Crosstab Report, the 
+output is shown in a paged, interactive format called the Report Viewer. The 
+viewer shows you the report populated by all of its data. You can page through 
+the data and search for specific items. You can also make some additional 
+adjustments to the report, such as styling cells or changing column sorts.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportviewer.png" alt="" /></p>
+<p class="Caption">The interactive Report Viewer</p>
+<p>To run a report in the Report Viewer:</p>
+<ul>
+  <li class="list_bullets">
+  <p>If you are in the <a class="topic-link" href="reportdesigner.htm">Report 
+  Designer</a>, click <strong>Run Report</strong>.</p>
+  <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />The <strong>Run 
+  Report</strong> button also saves the report.</p>
+  </li><li class="list_bullets">
+  <p>If you are in the folder tree, click the <strong>Run <img alt="" src="../Media/screen.run_report.png" /> </strong>icon, or click the <strong>Menu 
+  </strong><img alt="" src="../Media/screen.report_tree_menu.png" /> icon and 
+  select <img src="../Media/RunReportSmall.png" alt="" /> <strong>Run 
+  Report</strong>.</p></li></ul>
+<p>The Report Viewer opens in a new tab, indicated by the viewer <img alt="" src="../Media/TabInteractiveSelected.png" /> icon. This tab represents an 
+instance of the report output as you have just run it. If you go back and edit 
+the report, you need to run it again to see the changes. This will open another 
+viewer tab, and you can go back and close the old one.</p>
+<p>Page through the report by using the navigation icons <img src="../Media/PageHome.png" alt="" /> <img src="../Media/PageUp.png" alt="" /> <img src="../Media/PageDown.png" alt="" /> <img src="../Media/PageEnd.png" alt="" />. Search 
+through the report output by typing into the <strong>Find </strong>field.</p>
+<p>If you want to save the output, you can export from the Report Viewer to a 
+PDF, RTF, CSV, or Excel file.</p>
+<p class="Aside"><img alt="" src="../Media/AlertToolbarMedium.png" /> Truncated 
+results displayed</p>
+<p>This icon and message indicates that the report has only returned a 
+<em>partial data set</em>. There are fewer detail rows than the full set, and 
+aggregate formulas and visualizations apply only to the data that was returned 
+to the report.</p>
+<p>To get more data, click the icon and select either:</p>
+<ul>
+  <li class="list_bullets"><strong>Generate +<em>number</em> </strong>to get 
+  the next <em>number</em> of data rows and add them to the existing report. 
+  </li><li class="list_bullets"><strong>Generate All</strong> to get the full data set. 
+  </li></ul><a class="_D2HAnchor" name="interactingwithreports.htm" id="interactingwithreports.htm"></a>
+<p class="MidTopic">Interacting with reports</p>
+<p>There are a number of ways to interact with reports in the Report Viewer. 
+Your available options depend on how the report was designed and the type of 
+content in it.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />If your environment 
+has <a class="topic-link" href="actionevents.htm">Action Events</a>, you may have 
+access to more interactive features than are listed in this section.</p>
+<p class="Aside"><strong>Drilling into data</strong></p>
+<p>Some reports allow you to <em>drill down</em> into cells or charts to see 
+some additional data related to the field you selected. If a cell or chart has a 
+drilldown, you can click on one of the values to drill down into the related 
+data.</p>
+<p>Drilldowns are actually other reports that you can interact with or even 
+export to a file. Drilldowns may even have drilldowns of their own!</p>
+<p style="TEXT-ALIGN: center"> <img src="../Media/screen.reportviewer_drilldown.png" alt="" />     <img src="../Media/screen.reportviewer_chart_drilldown.png" alt="" /></p>
+<p class="Caption">Drilling down into a data cell and a chart</p>
+<p class="Aside"><strong>Expanding hidden data</strong></p>
+<p>Some reports have hidden data that can be seen by expanding certain rows. 
+Expandable rows are indicated by an arrow icon <img src="../Media/OpenRows.png" alt="" />. Click on the icon to expand the row. Click the 
+icon again to collapse it. Right-click the icon to open a menu to do the 
+following:</p>
+<p><span class="Option">Expand / Collapse</span></p>
+<p class="Indent">Expand or collapse the outer group</p>
+<p><span class="Option">Expand / Collapse Group</span></p>
+<p class="Indent">Expand or collapse the group and any inner groups</p>
+<p><span class="Option">Expand / Collapse All</span></p>
+<p class="Indent">Expand or collapse all outer and inner groups on the report</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportviewer_expand_menu.png" alt="" />     <img src="../Media/screen.reportviewer_expanded_row.png" alt="" /></p>
+<p class="Caption">Expanding a data row</p>
+<p class="Aside"><strong>Chart features</strong></p>
+<p>Charts have a number of interactive features depending on the type of chart. 
+For example, line charts and bar charts allow you to hide series, multi-axis 
+charts allow you to turn axes on or off, and pie charts allow you to rotate the 
+chart and pull out slices. Charts can also show some additional information if 
+you hover over a point or series.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportviewer_toggle_chart_series.gif" alt="" /></p>
+<p class="Caption">Toggling a chart series on or off</p>
+<p class="Aside"><strong>Drilling into maps</strong></p>
+<p>On a Google Map, use the mouse wheel or click the <strong>Zoom in 
+</strong><img src="../Media/custom.GoogleMapZoomIn.png" alt="" /> and <strong>Zoom 
+out</strong> <img src="../Media/custom.GoogleMapZoomOut.png" alt="" /> icons to 
+change your view level. Drag the map to move the view in that direction. 
+Double-click on a highlighted region to drill down into the location data.</p>
+<p>On a geochart, click on a highlighted region to drill down into the region. 
+Click <strong>[Back]</strong> to return to the previous view.</p><span id="related-topics"></span><a class="_D2HAnchor" name="customizingreportoutput.htm" id="customizingreportoutput.htm"></a>
+<p class="MidTopic">Customizing report output</p>
+<p>In the Report Viewer you can make changes to the style, formatting, and data 
+of the report. These changes can be saved to the original report, to a new copy 
+of the report, or as a <em>user report</em>, by clicking the <strong>Save 
+changes</strong> <img src="../Media/Save.png" alt="" /> icon.</p>
+<p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>If you make any 
+changes, you must save them before closing the Report Viewer or you will lose 
+them.</p>
+<p class="Aside"><strong>What is a user report?</strong></p>
+<p>A user report is a customized version of a report that is specific to you. 
+User report changes are saved separately from the report design, and will only 
+show when you run the report yourself. These can be useful if you want to make 
+changes to a locked <img src="../Media/TreeReportLock.png" alt="" /> report.</p>
+<p><strong>Note about cookies:</strong> User reports may be stored as browser 
+cookies. Ask your administrator whether this is the case. If so, then user 
+report changes will only apply to your current computer and web browser. 
+Clearing your browser cookies will remove any user report customizations that 
+you have made.</p>
+<p class="Aside"><strong>Styling data cells</strong></p>
+<p>Right-click a cell to open the style menu. Using this menu you can set custom 
+styling for the following: <span class="Option">Font</span>, <span class="Option">Size</span>, <span class="Option">Color</span>, <span class="Option">Background color</span>, <span class="Option">Text 
+decoration</span>, <span class="Option">Alignment</span>, <span class="Option">Word wrap</span>. Styling applies to all cells of the same type in 
+the group; affected cells are outlined by a yellow band.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportviewer_cell_menu.png" alt="" /></p>
+<p class="Caption">Right-clicking a cell to change its styling</p>
+<p>For group cells with dynamic data from fields or formulas, use the 
+Conditional Filter list to apply styling to only the cells that meet a certain 
+condition. For each of the following options, styling applies to the cells of 
+the same type in the group that meet the specified condition:</p>
+<p><span class="Option">Apply to all</span></p>
+<p class="Indent">All cells</p>
+<p><span class="Option">Apply to equal values</span></p>
+<p class="Indent">All cells with the same value as the selected cell</p>
+<p><span class="Option">Apply to unequal values</span></p>
+<p class="Indent">All cells with different values than the selected cell</p>
+<p><span class="Option">Apply to greater values</span></p>
+<p class="Indent">All cells with values greater than the selected cell (larger 
+number, later date, or alphabetically subsequent)</p>
+<p><span class="Option">Apply to greater than or equal values</span></p>
+<p class="Indent">All cells with values greater than or equal to the selected 
+cell</p>
+<p><span class="Option">Apply to lesser values</span></p>
+<p class="Indent">All cells with values less than the selected cell (smaller 
+number, earlier date, or alphabetically preceding)</p>
+<p><span class="Option">Apply to less than or equal values</span></p>
+<p class="Indent">All cells with values less than or equal to the selected 
+cell</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Select a condition 
+before selecting the styling.</p>
+<p class="Aside"><strong>Styling charts</strong></p>
+<p>Right-click a chart to open the chart menu. Using this menu you can swap to a 
+different <span class="Option">Type</span> of chart, change the color <span class="Option">Theme</span>, change the location of the <span class="Option">Legend</span>, and change the <span class="Option">Sort</span> order 
+of the data series.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportviewer_chart_menu.png" alt="" /></p>
+<p class="Caption">Right-clicking a chart to change its type</p>
+<p class="Aside"><strong>Managing data columns</strong></p>
+<p>Each column on the report has a light gray control box at the top of the 
+page. Change the width of the columns by dragging the control left or right. 
+Sort by a column by clicking the control. To hide a column, right-click the 
+control and select <img src="../Media/DeleteItem.png" alt="" /> <strong>Hide Column 
+</strong>from the list.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportviewer_resize_column.png" alt="" />     <img src="../Media/screen.reportviewer_column_menu.png" alt="" /></p>
+<p class="Caption">Resizing a column and right-clicking a column to hide it</p>
+<p class="Aside"><strong>Setting interactive sorts and filters</strong></p>
+<p>Reports can have some additional filters and sorts saved on top of the base 
+report. Click the splitter <img src="../Media/GrabVert.png" alt="" /> icon to open the 
+sidebar to manage interactive sorts and filters.</p>
+<p>Filterable fields can be narrowed down to select values or to a range of 
+values. If a data field is not available to filter, click the <strong>Add 
+Item</strong> <img src="../Media/Add2.png" alt="" /> icon to add a filter for that 
+field. To remove a filter, click the <strong>Delete Item </strong><img src="../Media/DeleteItem.png" alt="" /> icon.</p>
+<p>The order of sorted fields can be swapped between ascending <img src="../Media/SortDescendingButton.png" alt="" /> and descending <img src="../Media/SortAscendingButton.png" alt="" />.</p>
+<p>You can also add conditional filters to hide rows where the cells do not meet 
+a certain condition. To do so, right-click a cell to open the style menu, select 
+a condition from the list, then click the <strong>Filter Values </strong><img src="../Media/EditFilter.png" alt="" /> icon. Conditional filters are shown in the 
+sidebar.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportviewer_conditional_filter.png" alt="" /></p>
+<p class="Caption">Adding a conditional filter<br /></p><span id="related-topics"></span><span id="related-topics"></span></body></html>

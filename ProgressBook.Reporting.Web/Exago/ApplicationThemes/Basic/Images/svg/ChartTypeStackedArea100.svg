@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeStackedArea100
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <polygon points="6 34 6 31 13 22 20 28 27 17 34 29.5 34 34"/>
+    <polygon fill-opacity=".5" points="6 34 6 20.5 13 15 20 18 27 9 34 17 34 34"/>
+    <polygon fill-opacity=".3" points="6 34 6 6 34 6 34 34"/>
+  </g>
+</svg>

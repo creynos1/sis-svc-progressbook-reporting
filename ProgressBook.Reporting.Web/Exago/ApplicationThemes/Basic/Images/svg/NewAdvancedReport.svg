@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    NewAdvancedReport
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M6 11A5 5 0 1 1 6 1a5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  </g>
+</svg>

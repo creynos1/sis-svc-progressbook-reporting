@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    LinkedReportNotice
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="16" height="16" fill="#6896ED"/>
+    <rect width="14" height="14" x="1" y="1" fill="#FFFFFF"/>
+    <polygon fill="#808080" points="5 5 2 5 2 14 11 14 11 5 8 5 8 7 9 7 9 12 4 12 4 7 5 7"/>
+    <polygon fill="#6896ED" points="11 11 14 11 14 2 5 2 5 11 8 11 8 9 7 9 7 4 12 4 12 9 11 9"/>
+  </g>
+</svg>

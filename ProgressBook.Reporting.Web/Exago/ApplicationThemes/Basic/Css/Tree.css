@@ -1,0 +1,386 @@
+.wrTree {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  color: #666666;
+  overflow: auto;
+}
+.wrTreeWithSearch {
+  top: 26px;
+}
+.wrTreeContent {
+  font-size: 0;
+  cursor: default;
+  outline: none;
+  /* removes outline due to using tabindex to allow keydown events on container */
+  height: 100%;
+}
+.wrTrLv {
+  margin-left: 7px;
+}
+.wrTrNd,
+.wrTrNdB,
+.wrTrNdI,
+.wrTrDrag {
+  position: relative;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.wrTrNd {
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 5px;
+}
+.wrTrNd span,
+.wrTrNdB span {
+  vertical-align: middle;
+  line-height: 22px;
+  font-size: 12px;
+}
+/* add left-padding to places where nodes don't have icons */
+.wrTrNd span {
+  padding-left: 10px;
+}
+.wrTrNd img + span,
+.wrTrNd .wrTrEi + span {
+  padding-left: 0;
+}
+.wrTrHighlightContainer {
+  position: relative;
+  display: flex;
+}
+.wrTrHamburgerMenu {
+  flex: 0 0 auto;
+  margin-left: 2px;
+  width: 22px;
+  background-color: #f6f6f6;
+  right: 0;
+  top: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/BurgerMenu.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+.wrNoSVG .wrTrHamburgerMenu {
+  background-image: url("../#ApplicationThemeFolder#/Images/BurgerMenu.png");
+}
+.wrTrHighlightContainer:hover .wrTrHamburgerMenu {
+  display: block;
+}
+.wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrHamburgerMenu {
+  display: block;
+  background-color: #6896ed;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/BurgerMenuSelected.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrHamburgerMenu {
+  background-image: url("../#ApplicationThemeFolder#/Images/BurgerMenuSelected.png");
+}
+.wrTrDefaultExportButton {
+  flex: 0 0 auto;
+  margin-left: 2px;
+  width: 0px;
+  right: 25px;
+  top: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  display: none;
+  background-color: #f6f6f6;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: width 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrDefaultExportButton {
+  display: block;
+  background-color: #6896ed;
+}
+.wrTrNodeTextHighlightContainer {
+  flex: 1 1 auto;
+  border-radius: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrTrNodeTextHighlightContainer[data-rightimg] {
+  padding-right: 16px;
+}
+.wrTrEi + .wrTrNodeTextHighlightContainer {
+  margin-left: 13px;
+}
+.wrTrHighlightContainer:hover .wrTrNodeTextHighlightContainer {
+  background-color: #f6f6f6;
+}
+.wrTrLf[data-disabled='1'] .wrTrHighlightContainer:hover .wrTrNodeTextHighlightContainer {
+  background-color: transparent;
+}
+.wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrNodeTextHighlightContainer {
+  background-color: #6896ed;
+  color: #FFFFFF;
+}
+.wrTrReadOnly {
+  padding-right: 16px;
+}
+.wrTrFolderDragHover {
+  border: 1px solid #7cb2c9;
+  border-radius: 4px;
+  margin-left: 4px;
+  /* Account for the border width */
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-right: 2px;
+}
+.wrTrNdB,
+.wrTrDrag {
+  font-weight: bold;
+}
+.wrTrNdI {
+  font-style: italic;
+}
+.wrTrLf {
+  margin-left: 13px;
+  padding-bottom: 1px;
+  font-style: normal;
+}
+/*.wrTrNd[data-imagename] > .wrTrLv > .wrTrLf {
+	margin-left: 31px;
+}*/
+.wrListBoxTree .wrTrLf {
+  margin-left: 0;
+}
+.wrTrFolder {
+  /* tree flolder */
+  font-weight: normal;
+}
+.wrTrCb {
+  width: 12px;
+  height: 12px;
+  float: left;
+}
+.wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrNodeTextHighlightContainer > .wrTrEi {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ArrowCollapseSelected.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrNodeTextHighlightContainer > .wrTrEi {
+  background-image: url("../#ApplicationThemeFolder#/Images/ArrowCollapseSelected.png");
+}
+.wrTrEi {
+  cursor: pointer;
+  margin-left: 2px;
+  height: 12px;
+  width: 12px;
+  vertical-align: middle;
+  transform: rotate(-90deg);
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ArrowCollapse.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.wrNoSVG .wrTrEi {
+  background-image: url("../#ApplicationThemeFolder#/Images/ArrowCollapse.png");
+}
+.wrTrEiOpen {
+  transform: rotate(0) translate(1px);
+}
+.wrTrI {
+  margin-right: 4px;
+  margin-left: 2px;
+  vertical-align: middle;
+  height: 12px;
+  width: 12px;
+}
+.wrTrLf .wrTrI {
+  margin-left: 8px;
+}
+.wrTrIRight {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.wrTreeItemSelected {
+  color: #ffffff;
+}
+.wrTrAddNodeButton {
+  flex: 0 0 auto;
+  margin-left: 2px;
+  top: 0;
+  right: 0;
+  background-color: #6896ed;
+  cursor: pointer;
+  display: none;
+  width: 20px;
+  border-radius: 2px;
+}
+.wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrAddNodeButton {
+  display: block;
+}
+.wrNestedDataFieldsTree:not([data-includeaddnodebutton]) .wrTreeNodeContainerSelected > .wrTrHighlightContainer > .wrTrAddNodeButton {
+  display: none;
+}
+.wrTrDsbd {
+  color: #c3c3c3;
+}
+.wrTrDrag {
+  position: fixed;
+  height: auto;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  padding: .25em .5em;
+  border-radius: 3px;
+  min-width: 150px;
+  text-align: center;
+  border: 1px solid #545454;
+  pointer-events: none;
+}
+.wrTrDrag.wrFormulaInsertionPointer {
+  cursor: none;
+  overflow: visible;
+}
+.wrTrDrag.wrFormulaInsertionPointer:after {
+  content: '';
+  position: absolute;
+  right: -14px;
+  top: -12px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #626262;
+  transform: rotate(45deg);
+}
+.wrReportsTreeEmptyText {
+  font-size: 10pt;
+  color: #AAAAAA;
+  font-style: italic;
+  font-family: Roboto, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+.wrReportsTreeDragItem img#DragReportImg {
+  vertical-align: middle;
+}
+.wrReportsTreeDragItem img#MoveReportImg {
+  vertical-align: middle;
+}
+.wrReportsTreeDragItem img#NoMoveReportImg {
+  vertical-align: middle;
+}
+.wrReportsTreeDragItem > p > span {
+  font-weight: bold;
+  color: #545454;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+.wrReportsTreeDragItem p {
+  margin: 0;
+}
+.wrTrEdit {
+  position: absolute;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  min-width: 100px;
+  z-index: 999;
+}
+.wrTrSearchBoxContainer {
+  position: absolute;
+  left: 0;
+  right: 19px;
+}
+.wrChrome .wrTrSearchBoxContainer {
+  right: 20px;
+}
+.wrFF .wrTrSearchBoxContainer {
+  right: 18px;
+}
+.wrTrSearchBoxContainerWithSettingsButton {
+  right: 41px;
+}
+.wrChrome .wrTrSearchBoxContainerWithSettingsButton {
+  right: 41px;
+}
+.wrFF .wrTrSearchBoxContainerWithSettingsButton {
+  right: 39px;
+}
+.wrTrSearchBoxClearButton {
+  position: absolute;
+  top: 5px;
+  right: -14px;
+  cursor: pointer;
+}
+.wrTrSearchBoxClearButton:active {
+  filter: brightness(80%);
+}
+.wrTrSearchBoxModeButton {
+  position: absolute;
+  top: 5px;
+  right: -40px;
+  cursor: pointer;
+}
+.wrTrSearchBoxSearchButton {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  cursor: pointer;
+  filter: grayscale(1);
+  opacity: .6;
+  transition: all 50ms ease-in-out;
+}
+.wrTrSearchBoxSearchButton:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.wrTrSearchBox {
+  padding-right: 16px;
+  width: 100%;
+  font-size: 12px;
+}
+.wrTrSearchInputFocusUnderline {
+  background-color: #6896ed;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrTrSearchBox:focus + .wrTrSearchInputFocusUnderline {
+  width: 100%;
+}
+.wrTrSearchInputContainer {
+  position: relative;
+  width: 100%;
+}
+.wrTrActiveImgHover {
+  cursor: pointer;
+}
+.wrTrEmptyFolderChildNode {
+  font-style: italic;
+  display: none;
+}
+.wrTrEmptyFolderChildNode:first-child:last-child {
+  display: block;
+}
+.wrTrNd .wrTrEi + span {
+  margin-left: 4px;
+}
+.wrTrEi + .wrTrI {
+  margin-left: 1px;
+}

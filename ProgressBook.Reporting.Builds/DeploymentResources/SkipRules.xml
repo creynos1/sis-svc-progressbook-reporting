@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SkipRules xmlns="http://software-answers.com/ProgressBook/WebDeploy">
+  <SkipRule Name="SkipWebConfigs" ObjectName="filePath" SkipAction="Update" AbsolutePath="^((?!Views).)*web\.config$" />
+  <SkipRule Name="SkipDeleteCustomFolder" ObjectName="dirPath" SkipAction="Delete" AbsolutePath=".*\\Custom$"/>
+  <SkipRule Name="SkipDeleteCustomSubFolderContents" ObjectName="dirPath" SkipAction="Delete" AbsolutePath=".*\\Custom\\.*"/>
+  <SkipRule Name="SkipUpdateCustomFolderContents" ObjectName="filePath" SkipAction="Update" AbsolutePath=".*\\Custom\\.*"/>
+  <SkipRule Name="SkipDeleteCustomFolderContents" ObjectName="filePath" SkipAction="Delete" AbsolutePath=".*\\Custom\\.*"/>
+</SkipRules>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    ColumnSQLSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path fill-opacity=".5" d="M0 0h6l3 3v8H0V0zm7.5 3L6 1.5V3h1.5zM1 1v9h7V4H5V1H1z"/>
+    <path d="M9 6v4h2v1H8V6h1zM4 6h3v5H6v1H5v-1H4V6zm1 1h1v3H5V7zM0 6h3v5H0V6zm1 1h2v1H1V7zM0 9h2v1H0V9z"/>
+  </g>
+</svg>

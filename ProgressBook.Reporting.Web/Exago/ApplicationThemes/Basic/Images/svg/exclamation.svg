@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    exclamation
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="8" cy="8" r="8" fill="#D76A6A"/>
+    <path fill="#FFFFFF" d="M7 3h2v6H7V3zm0 8h2v2H7v-2z"/>
+  </g>
+</svg>

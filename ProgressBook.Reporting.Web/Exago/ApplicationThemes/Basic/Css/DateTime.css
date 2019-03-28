@@ -1,0 +1,143 @@
+/* Date (calendar) Stuff */
+.wrTimeDropDown {
+  width: 100%;
+  position: relative;
+  top: -1px;
+  left: -1px;
+  height: 17px;
+}
+.wrCalTh {
+  overflow: hidden;
+  color: #6896ed;
+}
+.wrCalTodayButton {
+  background-color: #6896ed;
+  color: #ffffff;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 3px;
+  text-align: center;
+  padding: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrCalNowButton {
+  background-color: #6896ed;
+  color: #ffffff;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 3px;
+  text-align: center;
+  padding: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrCalDayInactive {
+  text-align: center;
+  background-color: #ffffff;
+  color: #AAAAAA;
+  border: 1px solid;
+  border-color: transparent;
+}
+.wrCalDayActive {
+  text-align: center;
+  color: #808080;
+  border: 1px solid;
+  border-color: transparent;
+  background-color: #ffffff;
+}
+.wrCalDayActiveHover,
+.wrCalDayInactiveHover {
+  background-color: #ebebeb;
+  border-color: transparent;
+  border-radius: 4px;
+}
+.wrCalDayToday {
+  background-color: #ffffff;
+  color: #6896ed;
+  font-weight: bold;
+}
+.wrCalDaySelected {
+  background-color: #6896ed;
+  color: #ffffff;
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.wrCalPrev,
+.wrCalNext {
+  position: relative;
+  top: .24em;
+}
+.wrCalYearSelect,
+.wrCalMonthSelect {
+  top: 2px;
+  font-size: inherit;
+  border-color: transparent;
+  background-image: none;
+  padding: 0;
+  font-weight: bold;
+  color: #808080;
+}
+.wrCalYearSelect .wrCalMonthSelect {
+  border: 1px solid transparent;
+}
+.wrCalYearSelect:hover,
+.wrCalMonthSelect:hover {
+  text-decoration: underline;
+}
+.wrDateTimePopup {
+  width: 15em;
+  font-size: 8pt;
+  padding: 3px 10px 10px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  border-radius: 4px;
+  font-family: Roboto, Arial, sans-serif;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+.wrCalHeader {
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-color: transparent;
+  width: 100%;
+  position: relative;
+  top: -1px;
+  left: -1px;
+  text-align: center;
+}
+.wrCalTable {
+  cursor: pointer;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: 4px;
+}
+.wrCalButtonHover {
+  border-color: transparent;
+  background-color: #5c86d7;
+}
+.wrCalNow {
+  left: 2px;
+  top: 1px;
+}
+.wrCalOk {
+  right: 2px;
+  top: 1px;
+  float: right;
+}
+.wrCalSpacer {
+  height: 6px;
+}
+/* Time Stuff */
+.wrClockDDContainer {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 87px;
+  height: 20px;
+  position: relative;
+}

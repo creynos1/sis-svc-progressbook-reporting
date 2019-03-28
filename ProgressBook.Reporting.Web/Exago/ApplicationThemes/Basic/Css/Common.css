@@ -1,0 +1,1136 @@
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto Regular), local(Roboto-Regular), url(Fonts/Roboto-Regular.woff2) format("woff2"), url(Fonts/Roboto-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto Medium), local(Roboto-Medium), url(Fonts/Roboto-Medium.woff2) format("woff2"), url(Fonts/Roboto-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto Bold), local(Roboto-Bold), url(Fonts/Roboto-Bold.woff2) format("woff2"), url(Fonts/Roboto-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto Italic), local(Roboto-Italic), url(Fonts/Roboto-Italic.woff2) format("woff2"), url(Fonts/Roboto-Italic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto Bold Italic), local(Roboto-BoldItalic), url(Fonts/Roboto-BoldItalic.woff2) format("woff2"), url(Fonts/Roboto-BoldItalic.woff) format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoMono;
+  src: local(Roboto Mono), local(RobotoMono-Regular), url(Fonts/RobotoMono-Regular.woff2) format("woff2"), url(Fonts/RobotoMono-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: RobotoMono;
+  src: local(Roboto Mono), local(RobotoMono-Bold), url(Fonts/RobotoMono-Bold.woff2) format("woff2"), url(Fonts/RobotoMono-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@keyframes wrFadeBlinkKF {
+  to {
+    opacity: 0;
+  }
+}
+exago .wrDisplayNone {
+  display: none;
+}
+/*
+   All of the tag styles have been prefixed with a new 'exago' tag to maintain specificity
+   while avoiding collisions with the outer host application when the page is embedded
+   using the JavaScript API.
+*/
+exago input {
+  font-family: inherit;
+  outline: none;
+  padding: 2px 1px 2px 1px;
+  border: 1px solid #d7d7d7;
+}
+exago input:focus {
+  border: 1px solid #666666;
+}
+exago textarea {
+  font-family: inherit;
+  outline: none;
+  padding: 2px 1px 2px 1px;
+  border: 1px solid #d7d7d7;
+}
+exago textarea:focus {
+  border: 1px solid #666666;
+}
+exago select {
+  font-family: inherit;
+  outline: none;
+  /* The following code provides a unified select box look across platforms */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  background: #ffffff;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DropDownArrow.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: right 3px center;
+  padding-left: 2px;
+  padding-right: 13px;
+  border: 1px solid #D7D7D7;
+  color: #545454;
+}
+.wrNoSVG exago select {
+  background-image: url("../#ApplicationThemeFolder#/Images/DropDownArrow.png");
+}
+exago select[size],
+exago select[multiple] {
+  background-image: none;
+}
+.wrDisabledText > select {
+  color: #AAAAAA;
+}
+exago select::-ms-expand {
+  display: none;
+}
+exago select:focus {
+  border-color: #666;
+}
+exago fieldset {
+  padding-left: 7px;
+  border: none;
+  border-top: 1px solid #d7d7d7;
+}
+exago img:focus {
+  outline: 1px dotted #bdbdbd;
+}
+.wrFadeBlink {
+  animation: wrFadeBlinkKF 1.2s ease-in-out infinite alternate;
+}
+.wrPseudoLinkPopupMenuItem {
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  color: #6896ED;
+}
+.wrLine {
+  position: relative;
+  height: 0;
+  width: 100%;
+  border-top: solid 1px #d5d5d5;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #979797;
+  font-style: italic;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #979797;
+  opacity: 1;
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #979797;
+  font-style: italic;
+}
+:placeholder-shown {
+  /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: #979797;
+  font-style: italic;
+}
+.wrDisableSelection {
+  /* prevents selection and default dragging in FF/Webkit */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.wrDragContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: default;
+  z-index: 990;
+  background-image: url('Images/Transparent.gif');
+  background-repeat: repeat;
+}
+.wrDragContainer.wrCursorGrabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.wrMdl {
+  vertical-align: middle;
+}
+.wrCenter {
+  text-align: center;
+}
+.wrTrace {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  min-width: 40px;
+  max-width: 300px;
+  max-height: 195px;
+  overflow: auto;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: solid 2px #FF0000;
+  padding: 1px 2px 1px 1px;
+  z-index: 900;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  cursor: pointer;
+}
+.wrFillContainer,
+.wrCenteredContainerParent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+}
+.wrCenteredContainerParent {
+  height: 100%;
+  /* solves webkit bug */
+}
+.wrCenteredContainer {
+  position: relative;
+  top: 50%;
+  margin: auto;
+}
+.wrCenteredHorzContainer {
+  position: relative;
+  margin: auto;
+}
+.wrButton1 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  border: solid 1px transparent;
+  overflow: visible;
+  color: inherit;
+  height: 18px;
+  width: auto;
+  margin: 0;
+  padding: 1px 6px 2px 6px;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.wrButton1:hover {
+  background-color: #F4F6F9;
+  border: solid 1px #b2c0d5;
+}
+.wrButton1:active {
+  background: #D8D8D8;
+  border: solid 1px #989898;
+  box-shadow: 0 0 1px 0 #595959 inset;
+}
+.wrImageButton {
+  overflow: visible;
+  margin: 0;
+  padding: 1px 5px 0 6px;
+  width: auto;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0;
+  border-radius: 2px;
+  height: 20px;
+}
+.wrImageButton:focus > .wrImageButtonInput {
+  text-decoration: underline;
+}
+.wrImageButton:hover {
+  background-color: #f4f4f4;
+}
+.wrImageButton.wrDisabledText {
+  cursor: default;
+}
+.wrImageButton.wrDisabledText:hover {
+  background-color: transparent;
+}
+.wrImageButton:active {
+  background-color: #D8D8D8;
+}
+.wrImageButtonDisabled {
+  opacity: .6;
+  cursor: default;
+}
+.wrImageButtonDisabled:hover {
+  background-color: transparent;
+  border: solid 1px transparent;
+}
+.wrImageButtonDisabled:active {
+  background-color: transparent;
+  border: solid 1px transparent;
+  box-shadow: none;
+}
+.wrImageButton > img {
+  vertical-align: middle;
+}
+.wrImageButtonInput {
+  position: relative;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  padding: 0px 3px 0px 3px;
+  margin: 0;
+  cursor: inherit;
+  vertical-align: middle;
+}
+.wrIE10 .wrImageButtonInput,
+.wrIE11 .wrImageButtonInput {
+  padding: 1px 3px 1px 3px;
+}
+.wrImageButtonInputLeft {
+  margin-left: 0;
+  margin-right: 2px;
+}
+.wrLabel1,
+.wrLabel1Float {
+  font-size: 8pt;
+}
+.wrLabel2,
+.wrLabel2Float,
+.wrLabel3,
+.wrLegend2 {
+  font-size: 10pt;
+}
+.wrLabel3 {
+  font-weight: bold;
+}
+.wrLabel1Float,
+.wrLabel2Float {
+  float: left;
+}
+.wrLabel1,
+.wrLabel1Float,
+.wrLabel2,
+.wrLabel2Float,
+.wrLabel3 {
+  font-family: Roboto, Arial, sans-serif;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrLabel1Float,
+.wrLabel2Float {
+  position: relative;
+}
+.wrLegend2 {
+  font-family: Roboto, Arial, sans-serif;
+  height: auto;
+  white-space: nowrap;
+}
+.wrLabel2Par {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  margin-top: 0;
+}
+.wrFlowLabel1 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11pt;
+}
+.wrFlowlabel8pt {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  line-height: 10pt;
+}
+.wrRightLabel {
+  float: right;
+}
+.wrInputText {
+  color: inherit;
+}
+.wrBorderedInputText {
+  border: 1px solid #d7d7d7;
+}
+.wrFF .wrInputText {
+  padding-left: 2px;
+}
+.wrSelect1 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+}
+.wrSelect2 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.wrLegend1 {
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  color: #545454;
+}
+.wrInput {
+  height: 14px;
+}
+.wrFullWidthInput {
+  height: 20px;
+}
+.wrFullWidthInputWrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 18px;
+  padding: 0;
+  border: solid 1px #d7d7d7;
+  overflow: hidden;
+}
+.wrFullWidthInput,
+.wrFullWidthSelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrFullWidthInput,
+.wrFullWidthSelect,
+.wrInput {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.wrFullWidth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.wrInputWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.wrFullWidthInputFloat {
+  height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrDialogTreeContainer {
+  top: 12px;
+  bottom: 24px;
+}
+.wrDialogTreeContainer select {
+  bottom: 24px;
+  height: 24px;
+  width: 100%;
+}
+.wrDialogSplitter {
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrDialogGridDiv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+}
+.wrDialogAddButton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wrDialogAddFormulaButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.wrDialogAddSQLButton {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+}
+.wrDialogAddConditionalParameterButton {
+  left: -7px;
+}
+.wrLink {
+  cursor: pointer;
+}
+.wrStrong {
+  font-weight: bold;
+}
+.wrLineBreak {
+  clear: both;
+  width: 0;
+  height: 0;
+}
+.wrLineBreak1 {
+  clear: both;
+  width: 0;
+  height: 8px;
+}
+.wrLineBreak2 {
+  clear: both;
+  width: 0;
+  height: 2px;
+}
+.wrInlineContainer {
+  display: inline-block;
+}
+.wrCheckboxContainer {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrCheckbox {
+  position: relative;
+  top: 1px;
+}
+.wrCheckbox2 {
+  position: relative;
+  top: 1px;
+  height: 12px;
+}
+/*
+	Style for a custom-styled checkbox so we don't have to rely on the default browser
+	checkbox which cannot be styled directly.
+*/
+.wrCustomCheckbox {
+  display: inline-block;
+}
+.wrCustomCheckbox > input {
+  display: none;
+}
+.wrCustomCheckbox > label {
+  user-select: none;
+  line-height: 18px;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+}
+.wrCustomCheckbox > label > span {
+  vertical-align: middle;
+}
+.wrCustomCheckboxBox {
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CheckboxBorder.svg");
+  background-size: 18px 18px;
+  transition: filter 0.1s ease-in-out;
+}
+.wrNoSVG .wrCustomCheckboxBox {
+  background-image: url("../#ApplicationThemeFolder#/Images/CheckboxBorder.png");
+}
+.wrCustomCheckbox[data-groupid] .wrCustomCheckboxBox {
+  border-radius: 9px;
+  background-image: none;
+  border: 1px solid #cbcbcb;
+  height: 14px;
+  width: 14px;
+}
+.wrCustomCheckbox > input:checked + label > .wrCustomCheckboxBox {
+  border-color: #6896ed;
+}
+.wrCustomCheckbox[data-groupid] > input:checked + label > .wrCustomCheckboxBox {
+  border-color: #cbcbcb;
+}
+.wrCustomCheckbox > label:hover > .wrCustomCheckboxBox {
+  filter: brightness(95%);
+}
+.wrCustomCheckbox:active > label > .wrCustomCheckboxBox {
+  filter: brightness(85%);
+}
+.wrCustomCheckboxRipple {
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background-color: #6896ed;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-radius: 2.5px;
+}
+.wrCustomCheckbox[data-groupid] .wrCustomCheckboxRipple {
+  border-radius: 4px;
+  transition: none;
+}
+.wrCustomCheckboxBox img {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 1;
+  pointer-events: none;
+}
+.wrCustomCheckbox[data-groupid] .wrCustomCheckboxBox img {
+  display: none;
+}
+.wrCustomCheckbox.wrCustomCheckboxDisabled > label:hover > .wrCustomCheckboxBox {
+  filter: none;
+}
+.wrCustomCheckbox.wrCustomCheckboxDisabled:active > label > .wrCustomCheckboxBox {
+  filter: none;
+}
+.wrCustomCheckbox.wrCustomCheckboxDisabled .wrCustomCheckboxRipple {
+  background-color: #8B8B8B;
+  opacity: 0.4;
+}
+.wrRippleButton.wrImageButton {
+  font-size: 0;
+}
+.wrRippleButton.wrImageButton.wrRippleButtonBold:hover {
+  background-color: #6896ed;
+}
+.wrRippleButton.wrImageButton:hover {
+  background-color: transparent;
+}
+.wrRippleButton {
+  font-family: Roboto, sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  min-width: 50px;
+  min-height: 24px;
+  font-size: 13px;
+  border: 1px solid #d7d7d7;
+  background: transparent;
+  color: #545454;
+  text-align: center;
+}
+.wrRippleButton:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.wrRippleButtonFlat {
+  font-family: Roboto, sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  min-width: 50px;
+  min-height: 24px;
+  font-size: 13px;
+  border: 1px solid #d7d7d7;
+  background: transparent;
+  color: #545454;
+  text-align: center;
+}
+.wrRippleButtonBold {
+  background: #6896ed;
+  border: 1px solid #6896ed;
+  color: white;
+}
+.wrRippleButton[data-disabled] {
+  background-color: transparent;
+  color: #9a9a9a;
+  cursor: default;
+}
+.wrRippleButton:hover:not([data-disabled]) {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrRippleButtonFlat:hover:not([data-disabled]) {
+  box-shadow: none;
+}
+.wrMenuButtonStrip {
+  height: 54px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 3;
+  flex-shrink: 0;
+}
+.wrSimpleDesignTabInnerContentOverride .wrMenuButtonStrip,
+.wrChainedDesignTabInnerContentOverride .wrMenuButtonStrip {
+  margin: 0 10px;
+}
+.wrMenuButtonStripButton {
+  min-width: 69px;
+  height: 28px;
+  box-shadow: 0 4px 8px 0 rgba(24, 52, 106, 0.2);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 24px;
+}
+.wrMenuButtonStripButton:hover {
+  box-shadow: 0 6px 12px 0 rgba(24, 52, 106, 0.25);
+}
+.wrMenuButtonStripButton:active {
+  box-shadow: 0 4px 8px 0 rgba(24, 52, 106, 0.2);
+}
+.wrMenuButtonStripButton[data-disabled] {
+  box-shadow: none;
+}
+.wrGhostButton {
+  background: white;
+  color: #666666;
+  box-shadow: none;
+  border: 1px solid #d7d7d7;
+  font-style: italic;
+}
+.wrGhostButton:focus {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.wrGhostButton[disabled],
+.wrGhostButton[data-disabled] {
+  color: #cccccc;
+  border-color: #d7d7d7;
+}
+.wrRippleButton.wrGhostButton.wrRippleButtonBold:hover {
+  background-color: white;
+}
+.wrScroll {
+  overflow: auto;
+}
+.wrFloatLeft {
+  float: left;
+}
+.wrPhraseElement {
+  margin-right: 2px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+}
+.wrTable {
+  table-layout: fixed;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrDivTableNoBorder {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+.wrDivTableCell {
+  display: table-cell;
+}
+.wrListBox {
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  clip: rect(3px, 3px, 3px, 3px);
+  margin: 0;
+  border-radius: 3px;
+  padding: 0;
+}
+.wrReportFiltersListBox {
+  width: 100%;
+  height: 62px;
+  padding: 4px 0px 0px 4px;
+  box-sizing: content-box;
+  margin-left: 1px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  clip: rect(3px, 3px, 3px, 3px);
+  border-radius: 3px;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border: 1px solid #d7d7d7;
+  align-content: flex-start;
+}
+.wrReportFiltersListBox:focus {
+  outline: none;
+}
+.wrReportFiltersBoldText {
+  font-weight: bold;
+}
+.wrReportFiltersListBoxOption {
+  min-height: 15px;
+  height: 15px;
+  line-height: 15px;
+  user-select: none;
+  background-color: #FFFFFF;
+  max-height: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.wrReportFiltersListBoxOption[data-selected] {
+  background-color: #EFEFEF;
+}
+.wrListBoxOptionTextDiv {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wrListBoxOptionDeleteBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DeleteItem.svg");
+  background-size: 15px 15px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+}
+.wrNoSVG .wrListBoxOptionDeleteBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/DeleteItem.png");
+}
+.wrNoWrap {
+  white-space: nowrap;
+}
+.wrTableAutoWidth {
+  width: 1px;
+  table-layout: auto;
+}
+.wrBorderBox {
+  box-sizing: border-box;
+}
+.wrFloatInputLbl {
+  top: 1px;
+  margin-right: 3px;
+}
+.wrChartAppearanceLinearRangeFloatInputLbl {
+  top: 3px;
+  margin-right: 3px;
+}
+.wrFloatAfterInput {
+  margin-left: 30px;
+}
+.wrIE10 .wrFloatInputLbl,
+.wrIE11 .wrFloatInputLbl {
+  top: 2px;
+}
+.wrTableCollapse {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.wrSelectOptionGroup {
+  color: inherit;
+  font-weight: bold;
+}
+.wrSelectOptionGroupItem {
+  color: inherit;
+}
+.wrGridCustomInput {
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  padding: 0;
+  border: none;
+}
+.wrGridCustomInput:focus {
+  border: 0;
+}
+.wrDialogForm {
+  font-size: 8pt;
+  font-family: Roboto, Arial, sans-serif;
+  height: auto;
+}
+.wrDialogForm select {
+  font-size: inherit;
+  margin-left: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.wrDialogForm input {
+  font-size: inherit;
+  margin-left: 0;
+}
+.wrDialogFormSideBySideDiv {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+.wrDialogFormSideBySideDiv > label {
+  display: block;
+  margin-bottom: .25em;
+}
+.wrDialogFormFieldSet {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  border: none;
+  border-top: 1px solid #d7d7d7;
+}
+.wrDialogFormFieldSet:last-child {
+  margin-bottom: 0;
+}
+.wrDialogFormInlineFieldset {
+  display: inline-block;
+  vertical-align: top;
+}
+.wrDialogFormFieldSet > legend {
+  color: #666666;
+  font-weight: bold;
+  font-size: 8pt;
+}
+.wrCollapsibleFieldSetCollapsed {
+  height: 1em;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+.wrCollapsibleFieldSet > legend {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom: 1px dotted #444444;
+}
+.wrCollapsibleFieldSet > legend:hover {
+  color: #222;
+}
+.wrDialogFormSymbolTextInput {
+  width: 20px;
+}
+.wrDialogFormTabInnerContent {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  overflow-y: auto;
+}
+.wrDialogFormInstructions {
+  text-align: center;
+  font-size: 10pt;
+  font-family: Roboto, Arial, sans-serif;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrDisabledText {
+  color: #AAAAAA;
+}
+.wrDialogContentPaddingDiv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+}
+.wrFlatInput {
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  outline: none;
+  background-color: transparent;
+}
+.wrFlatInput:focus {
+  border: none;
+  border-bottom: 1px solid #6896ed;
+}
+.wrFlatInput::-ms-clear {
+  height: 0;
+  width: 0;
+}
+.wrInlineCheckbox,
+.wrInlineCheckbox + label {
+  vertical-align: middle;
+}
+.wrInlineCheckbox + label {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline;
+}
+.wrGettingStartedButton {
+  background-color: #6896ed;
+  color: #FFFFFF;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all 100ms ease-out;
+}
+.wrGettingStartedButton:hover {
+  background-color: #5C86D7;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrFloatingButtonGroup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.wrFloatingButton {
+  position: absolute;
+  transform: translateX(-46px);
+  height: 36px;
+  width: 36px;
+  background: white;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.4);
+  border: none;
+  min-width: 0;
+  min-height: 0;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrFloatingButton:hover:not([data-disabled]) {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+[data-executionoff] .wrFloatingButton {
+  display: none;
+}
+.wrFloatingButton[data-visible] {
+  transform: translateX(18px);
+}
+.wrUniqueKeyFieldsContainer {
+  position: absolute;
+  left: 15px;
+  right: 5px;
+  bottom: 5px;
+  font-size: 8pt;
+}
+.wrUniqueKeyFieldsContainer > div {
+  display: inline-block;
+}
+.wrUniqueKeyFieldsContainer .wrInputWrapperDiv {
+  width: 35%;
+  top: 4px;
+}
+.wrReportLevelUniqueKeyFieldsLbl {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.wrGeneralCtrlDiv {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d7d7d7;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-left: 3px solid #777777;
+}
+.wrDataObjectSqlHeader {
+  width: 100%;
+  padding: 5px;
+}
+.wrDataObjectSqlCodeWrapper {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 75px;
+  bottom: 0;
+}
+.wrDataObjectSqlCodeWrapper.wrDataObjectSqlCodeWrapperAboveUniqueKeys {
+  bottom: 25px;
+}
+.wrTableRow {
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+}
+.wrTableLabelCell {
+  font-size: 8pt;
+  width: 35%;
+  padding-left: 10px;
+}
+.wrTextInput {
+  width: calc(100% + 4px);
+  height: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 8pt;
+  background-color: transparent;
+}
+.wrInputWrapperDiv {
+  position: relative;
+  height: 16px;
+  margin: 0;
+  left: 0;
+}
+.wrEditableMenuItem {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #d7d7d7;
+}
+.wrEditableMenuItemContentWrapper {
+  padding-top: 2px;
+  padding-left: 3px;
+}
+.wrEditMark {
+  padding: 0;
+  border: 0;
+}
+.wrTestConnectionCheckmark,
+.wrEditMark {
+  cursor: pointer;
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  right: 0;
+}
+.wrInputDropDown {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/InputDropDown.svg");
+  background-size: 17px 14px;
+  height: 14px;
+  width: 17px;
+}
+.wrNoSVG .wrInputDropDown {
+  background-image: url("../#ApplicationThemeFolder#/Images/InputDropDown.png");
+}
+.wrMenuAddButton,
+.wrTableAddButton {
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+}
+.wrMenuGridContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrElementRipple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  pointer-events: none;
+}

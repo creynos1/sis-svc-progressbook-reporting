@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    DeleteReportSmall
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" fill="none" rx="2"/>
+    <path fill="#777777" d="M7.414 6L9.89 8.475a.5.5 0 0 1 0 .707l-.707.707a.5.5 0 0 1-.707 0L6 7.414 3.525 9.89a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707L4.586 6 2.11 3.525a.5.5 0 0 1 0-.707l.707-.707a.5.5 0 0 1 .707 0L6 4.586 8.475 2.11a.5.5 0 0 1 .707 0l.707.707a.5.5 0 0 1 0 .707L7.414 6z"/>
+  </g>
+</svg>

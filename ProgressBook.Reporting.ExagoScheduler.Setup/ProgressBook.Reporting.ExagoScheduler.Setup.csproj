@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{292694EC-0D20-4D3E-802B-5ED89D1A5D26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgressBook.Reporting.ExagoScheduler.Setup</RootNamespace>
+    <AssemblyName>ProgressBook.Reporting.ExagoScheduler.Setup</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExagoSetup">
+      <HintPath>..\Dependencies\ExagoSetup.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Dependencies\ExagoSetup.dll">
+      <Link>Resources\ExagoSetup.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProgressBook.Reporting.Data\ProgressBook.Reporting.Data.csproj">
+      <Project>{153EB093-30E8-420D-89A9-4AF8D05AA71B}</Project>
+      <Name>ProgressBook.Reporting.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgressBook.Reporting.ExagoIntegration\ProgressBook.Reporting.ExagoIntegration.csproj">
+      <Project>{645CA6BB-2690-4D21-AF74-BAF010CD7E2E}</Project>
+      <Name>ProgressBook.Reporting.ExagoIntegration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgressBook.Reporting.ExagoScheduler.Common\ProgressBook.Reporting.ExagoScheduler.Common.csproj">
+      <Project>{2c366f2d-7425-45ed-a19d-6be888f6cabd}</Project>
+      <Name>ProgressBook.Reporting.ExagoScheduler.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\EntityFramework.dll">
+      <Link>Resources\EntityFramework.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\EntityFramework.SqlServer.dll">
+      <Link>Resources\EntityFramework.SqlServer.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Reporting.Client.dll">
+      <Link>Resources\ProgressBook.Reporting.Client.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Reporting.Data.dll">
+      <Link>Resources\ProgressBook.Reporting.Data.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Reporting.ExagoIntegration.dll">
+      <Link>Resources\ProgressBook.Reporting.ExagoIntegration.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Reporting.SharedModels.dll">
+      <Link>Resources\ProgressBook.Reporting.SharedModels.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\WinSCP.exe">
+      <Link>Resources\WinSCP.exe</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\WinSCPnet.dll">
+      <Link>Resources\WinSCPnet.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoScheduler.Common\bin\Release\ProgressBook.Reporting.ExagoScheduler.Common.dll">
+      <Link>Resources\ProgressBook.Reporting.ExagoScheduler.Common.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoScheduler.Config\bin\Release\ProgressBook.Reporting.ExagoScheduler.Config.exe">
+      <Link>Resources\ProgressBook.Reporting.ExagoScheduler.Config.exe</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Shared.Security.Data.dll">
+      <Link>Resources\ProgressBook.Shared.Security.Data.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Shared.Security.dll">
+      <Link>Resources\ProgressBook.Shared.Security.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Shared.Security.Infrastructure.dll">
+      <Link>Resources\ProgressBook.Shared.Security.Infrastructure.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Shared.Utilities.Data.dll">
+      <Link>Resources\ProgressBook.Shared.Utilities.Data.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Shared.Utilities.dll">
+      <Link>Resources\ProgressBook.Shared.Utilities.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Shared.Utilities.Logging.dll">
+      <Link>Resources\ProgressBook.Shared.Utilities.Logging.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

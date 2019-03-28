@@ -1,0 +1,5163 @@
+.wrDashboardTabInnerContentOverride {
+  top: 0;
+}
+.wrDashboardSplitterFirstPane {
+  width: 216px;
+}
+.wrDashboardSplitterSecondPane {
+  border-left: 1px solid #d7d7d7;
+  transition: margin-left 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTabTitle {
+  font-size: 10pt;
+  margin-top: 0;
+}
+.wrDashboardTile {
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9;
+}
+.wrDashboardTile[data-highlight] {
+  outline: 2px dashed #6896ed;
+  z-index: 10;
+  transition: outline 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTile[data-expanded] {
+  z-index: 12;
+}
+.wrDashboardTileFitAll .wrHvDisplay,
+.wrDashboardTileFitWidth .wrHvDisplay,
+.wrDashboardTileFitNone .wrHvDisplay {
+  left: 0;
+}
+.wrDashboardTileFitAll .wrExpressViewScrollBar.wrExpressViewHorizontalScrollBar {
+  display: none;
+}
+.wrDashboardTileFitAll .wrExpressViewScrollingContainer {
+  overflow-x: hidden;
+}
+.wrDashboardTopBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 33px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d7d7d7;
+  z-index: 10;
+  display: none;
+  align-items: center;
+}
+[data-executionoff] .wrDashboardTopBar {
+  display: flex;
+}
+.wrVerticalTabStripContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  border-right: 1px solid #d7d7d7;
+}
+.wrVerticalTabButton {
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: block;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-color: #ffffff;
+}
+.wrVerticalTabButton:hover {
+  background: #f3f3f3;
+}
+.wrVerticalTabButton:active {
+  background: #dddddd;
+}
+.wrVerticalTabButtonSelected {
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7;
+  width: 51px;
+}
+.wrVerticalTabButtonSelected:first-child {
+  border-top: 1px solid transparent;
+}
+.wrVerticalTabContentContainer {
+  position: absolute;
+  left: 51px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+}
+.wrDashboardTable {
+  font-family: Roboto, Arial, sans-serif;
+  color: #5a5a5a;
+  font-size: 10pt;
+  border-spacing: 2px 0;
+  background-color: #ffffff;
+  position: relative;
+  table-layout: fixed;
+}
+.DashboardTable th {
+  width: 150px;
+  font-weight: normal;
+  height: 2em;
+  vertical-align: bottom;
+  padding-bottom: 2px;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrDashboardTable tr:nth-child(2n) {
+  background-color: #f1f1f1;
+}
+.wrDashboardTable td {
+  padding: 2px 4px;
+  word-wrap: break-word;
+}
+.wrDashboardLeftToolbarButton {
+  height: 24px;
+  width: 24px;
+  margin-right: 6px;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  transition: background-color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardLeftToolbarButton:hover {
+  background-color: #f4f4f4;
+  transition: none;
+}
+.wrDashboardLeftToolbarButton[data-disabled]:hover {
+  background-color: transparent;
+}
+.wrDashboardLeftToolbarButton:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrDashboardLeftToolbarButton[data-disabled]:active {
+  background-color: transparent;
+}
+.wrDashboardLeftToolbarButton.disabled:active {
+  background-color: transparent;
+}
+.wrDashboardSaveButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewSave.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardSaveButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewSave.png");
+}
+.wrDashboardRefreshButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewRefresh.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardRefreshButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewRefresh.png");
+}
+.wrExpressViewRefreshButtonDisabled {
+  cursor: default;
+  opacity: .5;
+}
+.wrDashboardRefreshButtonDisabled:active {
+  background-color: transparent;
+}
+.wrDashboardLiveDataButton > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/LiveModeOff.svg");
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrNoSVG .wrDashboardLiveDataButton > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/LiveModeOff.png");
+}
+.wrDashboardLiveDataButtonOn > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/LiveModeOn.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardLiveDataButtonOn > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/LiveModeOn.png");
+}
+.wrDashboardLiveDataButtonDisabled {
+  cursor: default;
+}
+.wrDashboardLiveDataButtonDisabled > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/LiveModeDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardLiveDataButtonDisabled > div {
+  background-image: url("../#ApplicationThemeFolder#/Images/LiveModeDisabled.png");
+}
+.wrDashboardLiveDataButton > span {
+  vertical-align: middle;
+  font-size: 11px;
+  color: #808080;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.wrDashboardLiveDataButton[data-disabled] > span {
+  color: #c1c1c1;
+}
+.wrDashboardUndoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DashboardUndo.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardUndoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/DashboardUndo.png");
+}
+.wrDashboardRedoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DashboardRedo.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardRedoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/DashboardRedo.png");
+}
+.wrDashboardToolbarSeparator {
+  width: 1px;
+  background-color: #d7d7d7;
+  height: 16px;
+  float: left;
+  position: relative;
+  top: 10px;
+  margin-right: 6px;
+}
+.wrNotification {
+  padding: 4px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-style: italic;
+  font-size: 11px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.wrNotificationBlockContainer {
+  text-align: right;
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrNotificationContainer {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 4px;
+  z-index: 10;
+  overflow: hidden;
+  max-width: 375px;
+  text-align: center;
+}
+.wrSafari .wrNotificationContainer {
+  width: 250px;
+}
+.wrDashboardReportTitleInput {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  height: 29px;
+  padding-left: 12px;
+  border: none;
+  width: calc(100% - 187px);
+}
+.wrDashboardReportTitleInput:focus {
+  border: none;
+}
+.wrDashboardRightPanelButtonDiv {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 301px;
+}
+.wrDashboardTopToolbarRightButton {
+  height: 33px;
+  width: 1px;
+  flex-grow: 1;
+  border: none;
+  border-bottom-color: white;
+  float: right;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0;
+}
+/** The right pane should only be able to be closed in execution mode (not edit mode). */
+[data-executionoff] .wrDashboardTopToolbarRightButton[data-open] {
+  cursor: default;
+}
+/** The right pane should only be able to be closed in execution mode (not edit mode). */
+[data-executionoff] .wrDashboardTopToolbarRightButton[data-open]:active {
+  background-color: transparent;
+}
+.wrDashboardFilterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrDashboardFilterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterMenu.png");
+}
+.wrDashboardFilterButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFilterButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterMenuSelected.png");
+}
+.wrDashboardFilterButtonDisabled {
+  cursor: default;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterMenuDisabled.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFilterButtonDisabled {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterMenuDisabled.png");
+}
+.wrDashboardFilterButtonDisabled:active {
+  background-color: transparent;
+}
+.wrDashboardParameterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ParametersMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrDashboardParameterButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ParametersMenu.png");
+}
+.wrDashboardParameterButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ParametersMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardParameterButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/ParametersMenuSelected.png");
+}
+.wrDashboardParameterButtonDisabled:active {
+  background-color: transparent;
+}
+.wrDashboardFormatButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormatMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrDashboardFormatButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormatMenu.png");
+}
+.wrDashboardFormatButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormatMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormatMenuSelected.png");
+}
+.wrDashboardSnapButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Snap.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardSnapButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/Snap.png");
+}
+.wrDashboardSnapButtonDisabled {
+  opacity: .5;
+}
+.wrDashboardSnapButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SnapActive.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardSnapButtonSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/SnapActive.png");
+}
+.wrDashboardSnapButton:active {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SnapActive.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardSnapButton:active {
+  background-image: url("../#ApplicationThemeFolder#/Images/SnapActive.png");
+}
+.wrDashboardSettingsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SettingsMenu.svg");
+  background-size: 24px 24px;
+  height: 34px;
+}
+.wrNoSVG .wrDashboardSettingsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SettingsMenu.png");
+}
+.wrDashboardSettingsButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SettingsMenuSelected.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardSettingsButton[data-open] {
+  background-image: url("../#ApplicationThemeFolder#/Images/SettingsMenuSelected.png");
+}
+.wrDashboardDesignCanvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+}
+.wrDashboardExpandedTileBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  display: none;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardDesignCanvasDragTarget {
+  position: fixed;
+  z-index: 11;
+  border: 2px solid #6896ed;
+}
+.wrDashboardDesignPaneAreaLoading {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+.wrDashboardCanvasInstructionsContainer {
+  font-style: italic;
+  font-size: 24px;
+  height: 180px;
+  width: 317px;
+  color: #b4b4b4;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -158.5px;
+  text-align: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+[data-small] .wrDashboardCanvasInstructionsContainer {
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -84px;
+}
+[data-small] .wrDashboardCanvasInstructionsContainer img {
+  display: none;
+}
+.wrDashboardCanvasInstructions {
+  display: inline-block;
+  width: 159px;
+  margin-left: 10px;
+  text-align: center;
+}
+[data-small] .wrDashboardCanvasInstructions {
+  vertical-align: middle;
+  width: auto;
+}
+.wrDashboardCanvasInstructionsDescription {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1em;
+}
+[data-small] .wrDashboardCanvasInstructionsDescription {
+  display: none;
+}
+.wrDashboardTableAndHeadersContainer {
+  position: relative;
+  margin: auto;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.wrDashboardScrollingContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  overflow-x: visible;
+  font-size: 0;
+  padding-top: 10px;
+  padding-left: 2px;
+}
+.wrDashboardScrollBar {
+  position: absolute;
+  background-color: #9a9a9a;
+}
+.wrDashboardScrollBarHover {
+  background-color: #898989;
+}
+.wrDashboardScrollBarActive {
+  background-color: #707070;
+}
+.wrDashboardVerticalScrollBar {
+  right: 0;
+  width: 12px;
+  height: 100px;
+  z-index: 8;
+}
+.wrDashboardHorizontalScrollBar {
+  bottom: 0;
+  width: 100px;
+  height: 12px;
+  z-index: 8;
+}
+.wrDashboardDetailHeaderRow {
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrDashboardDetailHeaderRowContentContainer {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  bottom: 0;
+  right: 22px;
+  padding-left: 6px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0;
+  cursor: pointer;
+}
+.wrDashboardDetailHeaderCell:last-child,
+.wrDashboardDragColumnDetailHeader {
+  border-right: 2px solid #ffffff;
+}
+.wrDashboardDetailHeaderCell {
+  height: 24px;
+  display: inline-block;
+  background-color: white;
+  line-height: 24px;
+  font-weight: bold;
+  padding-right: 6px;
+  cursor: pointer;
+  font-size: 0;
+  position: relative;
+}
+.wrDashboardDetailHeaderCellText {
+  vertical-align: middle;
+  font-size: 12px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.wrDashboardDetailHeaderCellRadialMenuButton {
+  vertical-align: middle;
+  margin-right: 6px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.wrDashboardColumnHeaderColorBlock {
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  cursor: default;
+}
+.wrDashboardDetailPlaceholderCell {
+  background-color: white;
+}
+.wrDashboardDetailHeaderPlaceholderCell {
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  font-weight: bold;
+  padding-right: 6px;
+  cursor: pointer;
+  font-size: 0;
+  position: relative;
+  background-color: white;
+  vertical-align: bottom;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 2px solid white;
+}
+.wrDashboardDetailHeaderPlaceholderCell:last-child {
+  border-right: 2px solid #ffffff;
+}
+.wrDashboardGroupHeaderRow {
+  font-size: 12px;
+  font-weight: bold;
+  height: 24px;
+  background-color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrDashboardGroupHeaderRowContentContainer {
+  border-bottom: 1px solid #ededed;
+  position: absolute;
+  top: 0;
+  left: 24px;
+  bottom: 0;
+  right: 0;
+  padding-left: 6px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0;
+  cursor: pointer;
+}
+.wrDashboardGroupHeaderRowContentContainerNoRadialMenu {
+  left: 8px;
+}
+.wrDashboardFloatingGroupHeaderRow > .wrDashboardGroupHeaderRowContentContainer {
+  cursor: default;
+}
+.wrDashboardGroupFooterRow {
+  font-size: 12px;
+  height: 24px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+.wrDashboardGroupFooterRow + .wrDashboardGroupHeaderRow {
+  margin-top: 24px;
+}
+.wrDashboardGroupFooterColorBlockContainer {
+  height: 100%;
+  display: inline-block;
+}
+.wrDashboardGroupFooterColorBlock {
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+.wrDashboardGroupHeaderColorBlock {
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+.wrDashboardGroupFooterCell {
+  border-right: 2px solid #f7f7f7;
+  height: 24px;
+  display: inline-block;
+  background-color: white;
+  line-height: 24px;
+  padding-right: 6px;
+  padding-left: 6px;
+  position: relative;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  vertical-align: top;
+}
+.wrDashboardGroupFooterCell:last-child {
+  border-right-color: #ffffff;
+}
+.wrDashboardReportFooterCell {
+  border-right: 2px solid #f7f7f7;
+  height: 24px;
+  display: inline-block;
+  background-color: white;
+  line-height: 24px;
+  padding-right: 6px;
+  padding-left: 6px;
+  position: relative;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  vertical-align: top;
+}
+.wrDashboardReportFooterCell:last-child {
+  border-right-color: #ffffff;
+}
+.wrDashboardFooterCellDropDownArrow {
+  display: none;
+  position: absolute;
+  right: 4px;
+  top: 7px;
+}
+.wrDashboardGroupFooterCell:hover {
+  background-color: #f1f1f1;
+}
+.wrDashboardFooterCellDropDownActive {
+  background-color: #f1f1f1;
+}
+.wrDashboardGroupFooterCell:active {
+  background-color: #e2e2e2;
+}
+.wrDashboardGroupFooterCell:hover > .wrDashboardFooterCellDropDownArrow {
+  display: block;
+}
+.wrDashboardReportFooterCell:hover {
+  background-color: #f1f1f1;
+}
+.wrDashboardReportFooterCell:active {
+  background-color: #e2e2e2;
+}
+.wrDashboardReportFooterCell:hover > .wrDashboardFooterCellDropDownArrow {
+  display: block;
+}
+.wrDashboardFooterCellDropDownActive > .wrDashboardFooterCellDropDownArrow {
+  display: block;
+}
+.wrDashboardDragColumnGroupFooterCell {
+  border-left: 2px solid #f7f7f7;
+  border-top: 1px solid #f7f7f7;
+}
+.wrDashboardDragColumnReportFooterCell {
+  border-left: 2px solid #f7f7f7;
+  border-top: 1px solid #f7f7f7;
+}
+.wrDashboardFooterAggregateNameText {
+  font-weight: bold;
+  vertical-align: middle;
+}
+.wrDashboardFooterAggregateValueText {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+}
+.wrDashboardGroupHeaderCellRadialMenuButton {
+  vertical-align: middle;
+  margin-right: 6px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.wrDashboardGroupHeaderCellText {
+  font-size: 12px;
+  vertical-align: middle;
+}
+.wrDashboardFloatingDetailHeaderRow {
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+  left: 2px;
+}
+.wrDashboardFloatingGroupHeaderRow {
+  font-size: 12px;
+  font-weight: bold;
+  height: 24px;
+  background-color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  left: 2px;
+}
+.wrDashboardSearchContainer {
+  height: 100%;
+  border-left: 1px solid #d7d7d7;
+  width: 36px;
+  float: right;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: relative;
+  overflow: hidden;
+}
+.wrDashboardSearchButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ReportSearch.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 36px;
+  width: 36px;
+}
+.wrNoSVG .wrDashboardSearchButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ReportSearch.png");
+}
+.wrDashboardSearchInput {
+  height: 100%;
+  width: 180px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  padding-left: 6px;
+}
+.wrDashboardSearchInput:focus {
+  border: none;
+}
+.wrDashboardSearchInput::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.wrDashboardSearchInputNoMatches {
+  background-color: rgba(244, 67, 54, 0.53);
+}
+.wrDashboardSearchUpButton {
+  height: 16px;
+  width: 16px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SearchUp.svg");
+  background-size: 16px 16px;
+  position: absolute;
+  left: 184px;
+  top: 9px;
+}
+.wrNoSVG .wrDashboardSearchUpButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SearchUp.png");
+}
+.wrDashboardSearchDownButton {
+  height: 16px;
+  width: 16px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SearchDown.svg");
+  background-size: 16px 16px;
+  position: absolute;
+  left: 200px;
+  top: 9px;
+}
+.wrNoSVG .wrDashboardSearchDownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SearchDown.png");
+}
+.wrDashboardPagingContainer {
+  height: 100%;
+  float: right;
+  position: relative;
+  font-size: 0;
+  font-weight: bold;
+  color: #777777;
+  line-height: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: max-width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  max-width: 0;
+}
+.wrDashboardPagingContainerOpen {
+  max-width: 180px;
+}
+.wrDashboardPagingLeftBorder {
+  height: 17px;
+  width: 1px;
+  left: 0;
+  background-color: #d7d7d7;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+  margin-right: 6px;
+}
+.wrDashboardPagingButton {
+  top: 0;
+  height: 36px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrDashboardPageHomeButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageHome.svg");
+  background-size: 16px 16px;
+  display: inline-block;
+}
+.wrNoSVG .wrDashboardPageHomeButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageHome.png");
+}
+.wrDashboardPageUpButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageUp.svg");
+  background-size: 16px 16px;
+  display: inline-block;
+}
+.wrNoSVG .wrDashboardPageUpButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageUp.png");
+}
+.wrDashboardPageDownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageDown.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrDashboardPageDownButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageDown.png");
+}
+.wrDashboardPageEndButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/PageEnd.svg");
+  background-size: 16px 16px;
+  margin-right: 5px;
+}
+.wrNoSVG .wrDashboardPageEndButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/PageEnd.png");
+}
+.wrDashboardPagingOutOfContainer {
+  height: 36px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.wrDashboardPagingPageNumberInput {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 7px;
+  margin-right: 3px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  height: 14px;
+  width: 1em;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: right;
+  font-weight: inherit;
+  font-size: 14px;
+  color: inherit;
+  cursor: default;
+  -moz-appearance: textfield;
+  transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+/* In IE and FF, having the number input too small causes verticla scrolling in the input itself */
+.wrFF .wrDashboardPagingPageNumberInput,
+.wrIE .wrDashboardPagingPageNumberInput {
+  height: 18px;
+  margin-top: 5px;
+}
+.wrFF .wrDashboardPagingPageNumberInput {
+  margin-top: 6px;
+}
+.wrDashboardPagingPageNumberInput:hover {
+  color: #6896ed;
+  border-color: #6896ed;
+}
+.wrDashboardPagingPageNumberInput:focus {
+  cursor: text;
+}
+.wrDashboardPagingPageNumberInput::-webkit-outer-spin-button,
+.wrDashboardPagingPageNumberInput::-webkit-inner-spin-button {
+  display: none;
+}
+.wrDashboardPagingLeftContainer {
+  display: inline-block;
+  vertical-align: top;
+}
+.wrDashboardPagingRightContainer {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: top;
+}
+.wrDashboardCellContent {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrDashboardClickableDetailColumn .wrDashboardCellContent {
+  cursor: pointer;
+}
+.wrDashboardCellImage {
+  max-width: 100%;
+}
+.wrDashboardFooterCellContent {
+  font-weight: bold;
+}
+.wrDashboardEmptyText {
+  font-style: italic;
+}
+.wrDashboardBackgroundHourglass {
+  float: right;
+  margin-top: 6px;
+  margin-right: 6px;
+  height: 22px;
+  width: 22px;
+  transition: opacity 1s linear;
+}
+.wrDashboardSearchMatchText {
+  background-color: #fec976;
+}
+.wrDashboardSearchMatchTextCurrentSelection {
+  background-color: #fea076;
+}
+.wrDashboardColumnDragHandle {
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: col-resize;
+}
+.wrDashboardColumnResizeBar {
+  width: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #666666;
+  opacity: .8;
+  z-index: 5;
+}
+.wrDashboardReportInfoLabel {
+  display: block;
+  font-size: 13px;
+}
+.wrDashboardReportInfoNameInput {
+  display: block;
+  margin: 4px 0 10px 8px;
+  width: calc(100% - 26px);
+}
+.wrDashboardReportInfoDescriptionInput {
+  display: block;
+  height: 4em;
+  width: calc(100% - 26px);
+  min-height: 2em;
+  margin: 4px 0 10px 8px;
+  font-family: Roboto, Arial, sans-serif;
+  resize: vertical;
+}
+.wrDashboardReportInfoMenuItem {
+  width: 280px;
+  padding: 10px;
+  margin-top: -3px;
+  resize: horizontal;
+}
+.wrDashboardRunButton {
+  height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 6px;
+  float: left;
+  background: #FFFFFF;
+  color: #6896ed;
+}
+.wrDashboardRunButton:hover {
+  background: #6896ed;
+  color: #FFFFFF;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wrDashboardRunButtonText {
+  padding-right: 8px;
+  padding-left: 8px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.wrDashboardExportSettingsMenuItem {
+  width: 280px;
+  padding: 10px;
+  margin-top: -3px;
+}
+.wrDashboardExportSettingsMenuItemInnerContainer select {
+  font-size: 12px;
+  color: #545454;
+}
+.wrDashboardExportSettingsMenuItemInnerContainer fieldset:last-child {
+  padding-bottom: 40px;
+}
+.wrDashboardReportInfoErrorText {
+  color: red;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+.wrDashboardRightPaneTabContainer .wrDashboardReportInfoErrorText {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+}
+.wrDashboardInfoHourglass {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.wrDashboardInfoSuccessIndicator {
+  height: 14px;
+  width: 14px;
+  margin: 1px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.wrDashboardReportInfoFolderTree {
+  position: relative;
+  max-height: 245px;
+  overflow: auto;
+}
+.wrDashboardReportInfoFolderContainer {
+  margin-bottom: 10px;
+}
+.wrDashboardReportInfoFolder {
+  margin-top: 0;
+  font-size: 13px;
+  color: #808080;
+}
+.wrDashboardDropDownPopup {
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 12px;
+  box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.wrDashboardDropDownItem {
+  white-space: nowrap;
+  cursor: pointer;
+  padding: .3em 8px;
+  margin-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrDashboardDropDownItem:hover {
+  background-color: #f1f1f1;
+}
+.wrDashboardDropDownColorBar {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  display: inline-block;
+  background-color: #5a5a5a;
+}
+.wrDashboardDropDownAggType {
+  font-weight: bold;
+}
+.wrDashboardDropDownAggValue {
+  font-style: italic;
+}
+.wrDashboardReportFooter {
+  background-color: #ffffff;
+  margin: 24px 0;
+  border-left: 8px solid #5a5a5a;
+  padding: 10px;
+  padding-right: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+.wrDashboardReportFooterNoGroups {
+  border: none;
+  padding-left: 5px;
+}
+.wrDashboardReportFooterTitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.wrDashboardReportTotalsContainer {
+  position: relative;
+}
+.wrDashboardReportTotalsContainerNoGroups {
+  margin-left: -3px;
+}
+.wrDashboardReportFooterFirstCellDropDownActiveBorder {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  border-right: 2px solid transparent;
+}
+.wrDashboardFooterCellDropDownActivePreviousSibling {
+  border-right-color: #5a5a5a;
+}
+.wrDashboardToolbarMenu {
+  position: absolute;
+  background-color: #ffffff;
+  right: 0;
+  bottom: 0;
+  top: 33px;
+  min-width: 300px;
+  width: 300px;
+  border-left: 1px solid #d7d7d7;
+  z-index: 10;
+}
+[data-executionon] .wrDashboardToolbarMenu {
+  top: 0;
+}
+.wrDashboardInnerDiv {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: solid;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.wrDashboardToolbarMenuTitle {
+  font-size: 16px;
+  color: #6896ED;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 10px 10px 0;
+  height: 20px;
+  min-width: 250px;
+  font-weight: bold;
+}
+.wrDashboardFiltersMenuFiltersList {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  width: calc(100% - 25px);
+}
+.wrDashboardFiltersMenuFiltersAllList {
+  position: relative;
+}
+.wrDashboardFiltersMenuFiltersAllList[data-empty] {
+  margin-bottom: 10px;
+}
+.wrDashboardFiltersMenuFiltersAnyList {
+  position: relative;
+}
+.wrDashboardFiltersMenuFiltersListDescriptionAll {
+  font-weight: bold;
+}
+.wrDashboardFiltersMenuFiltersListDescriptionAny {
+  font-weight: bold;
+}
+.wrDashboardToolbarMenuButtonSeparator {
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #dcdcdc;
+  vertical-align: middle;
+}
+.wrDashboardFilterItem {
+  position: relative;
+  height: 125px;
+  padding-left: 8px;
+  padding-right: 4px;
+  padding-top: 5px;
+  color: #808080;
+  border: 1px solid #DDDDDD;
+  border-radius: 2px 2px 0 0;
+  background-color: #EEEDED;
+  font-size: 13px;
+}
+.wrDashboardFilterMenuItemStencil .wrAccordionTitleBar {
+  border: 2px dashed #DDDDDD;
+  border-radius: 2px;
+  background-color: #FFFFFF !important;
+  color: #C3C3C3;
+  font-style: italic;
+  box-shadow: none;
+}
+.wrDashboardFilterMenuItemStencil .wrAccordionTitleBar:hover::before {
+  opacity: 0.6;
+}
+.wrDashboardFilterMenuItemStencil .wrAccordionItemOpenArrow {
+  display: none;
+}
+.wrDashboardFilterMenuItemStencil .wrDashboardFilterMenuViewBtn {
+  display: none;
+}
+.wrDashboardFilterMenuItemStencil .wrAccordionContentContainer {
+  display: none;
+}
+.wrDashboardFiltersMenuEditCtrlContainer {
+  position: relative;
+  margin-top: 10px;
+}
+.wrDashboardFiltersMenuEditCtrlContainer .wrEditCtrlDiv {
+  border-radius: 2px;
+}
+.wrDashboardFiltersButtonContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 30px;
+}
+.wrDashboardFiltersMenuExpandAllButton {
+  font-style: italic;
+  font-size: 11px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  color: #808080;
+  padding: 2px 5px;
+  vertical-align: middle;
+}
+.wrDashboardFiltersApplyButton {
+  font-style: italic;
+  font-size: 11px;
+  border-radius: 3px;
+  background-color: #fa7556;
+  color: #ffffff;
+  padding: 2px 5px;
+  vertical-align: middle;
+  transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardFiltersApplyButton:active {
+  background-color: #fda28c;
+}
+.wrDashboardSettingsMenu {
+  top: inherit;
+  width: inherit;
+}
+.wrDashboardFormatMenu {
+  top: inherit;
+  width: inherit;
+}
+.wrDashboardLiveDataToggleSwitch {
+  position: absolute;
+  left: calc(50% - 9px);
+  top: calc(50% - 4.5px);
+}
+.wrDashboardSettingsMenuFieldset > legend {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 13px;
+}
+.wrDashboardExportSettingsItem:not(:last-child) {
+  margin-bottom: 8px;
+}
+.wrDashboardExportSettingsAllowedExportTypesItem > div {
+  display: inline-block;
+}
+.wrDashboardExportSettingsAllowedExportTypesItem > :first-child {
+  width: 144px;
+  vertical-align: top;
+  white-space: normal;
+}
+.wrDashboardExportSettingsAllowedExportTypesItem > :nth-child(2) {
+  width: 130px;
+  white-space: normal;
+}
+.wrDashboardExportSettingsAllowedExportTypesItem .wrCustomCheckbox {
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.wrDashboardExportSettingsAllowedExportTypesItem .wrCustomCheckbox:nth-child(2n+1) {
+  width: 58px;
+}
+.wrDashboardPopupMenuButtonStrip {
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+.wrDashboardColumnInsertionBar {
+  position: fixed;
+  width: 2px;
+  background: #6896ed;
+  z-index: 9;
+}
+.wrDashboardRightPaneTileFormatTabContent {
+  position: absolute;
+  top: 8px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+}
+.wrDashboardContentContainer {
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrDashboardRightPaneTabContainer {
+  top: 30px;
+}
+.wrDashboardRightPanel .wrTabText {
+  color: #8B8B8B;
+  font-size: 12px;
+}
+.wrDashboardRightPanel .wrTabContent {
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+.wrDashboardRightPanel .wrTabItemUnderline {
+  background-color: #FA7556;
+}
+.wrDashboardRightPanel .wrTabStripOuterContainer {
+  height: 28px;
+  text-align: center;
+  padding-bottom: 3px;
+}
+.wrDashboardRightPanel .wrTabStripInnerContainer {
+  height: inherit;
+}
+.wrDashboardRightPanel .wrStaticTabItem {
+  padding: 0;
+  top: 8px;
+  margin-bottom: 2px;
+}
+.wrDashboardTopNContentContainer {
+  text-align: center;
+  padding-top: 10px;
+}
+.wrDashboardTopNFilterDescription {
+  font-size: 11px;
+  color: #808080;
+  border-radius: 2px;
+  padding: 4px 6px 4px 6px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.wrDashboardTopNFilterDescription .wrCustomCheckboxBox {
+  bottom: 2px;
+}
+.wrDashboardTopNLabel {
+  font-size: 13px;
+  color: #606060;
+}
+.wrDashboardTopNFilterDD {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  color: #808080;
+  font-size: 12px;
+  height: 18px;
+}
+.wrDashboardTopBottomFilterDD {
+  width: 68px;
+}
+.wrDashboardAggTypeFilterDD {
+  width: 95px;
+}
+.wrDashboardAggTypeFilterDDDisabled {
+  color: #c3c3c3;
+}
+.wrDashboardTopNFilterNumInput {
+  font-size: 12px;
+  color: #808080;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  height: 14px;
+  width: 14px;
+  padding: 1px 2px 1px 2px;
+}
+.wrDashboardGroupDD {
+  width: 151px;
+  color: #808080;
+}
+.wrDashboardTopNPanelRow1 {
+  text-align: center;
+  height: auto;
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.wrDashboardTopNPanelRow2 {
+  text-align: center;
+  height: auto;
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.wrDashboardTopNPanelRow3 {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.wrDashboardTopNSummary {
+  color: #888888;
+  font-size: 13px;
+  line-height: 19px;
+  font-style: italic;
+  padding: 0 10px;
+}
+.wrDashboardTopNSummaryField {
+  font-weight: bold;
+  cursor: help;
+}
+.wrDashboardTopNConfigErrorIcon {
+  cursor: help;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+.wrDashboardRightPanel .wrEditableListDeleteButtonContainer > img {
+  position: relative;
+  border: 1px solid #D5D5D5;
+  border-radius: 2px;
+  padding: 2px 2px 2px 2px;
+  top: 2px;
+  left: -5px;
+}
+#AddGroupBtn {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  width: 151px;
+  height: 18px;
+  position: relative;
+  left: 16px;
+  vertical-align: middle;
+  line-height: 18px;
+}
+#AddGroupBtn > span {
+  font-size: 12px;
+  color: #808080;
+  letter-spacing: 0;
+  padding: 2px 0 2px 0;
+  font-weight: normal;
+  left: 3px;
+}
+#AddGroupBtn > img {
+  right: 3px;
+  height: 10px;
+  width: 10px;
+}
+.wrDDContainer.wrDashboardFilterFieldDD {
+  float: none;
+}
+.wrDashboardFilterFieldDD .wrDDSelect {
+  position: relative;
+  width: inherit;
+  font-size: 12px;
+  height: 18px;
+  color: #808080;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.wrIE10 .wrDashboardFormatFontDD.wrDDContainerSmallFormat .wrDDSelect,
+.wrIE11 .wrDashboardFormatFontDD.wrDDContainerSmallFormat .wrDDSelect {
+  height: 27px;
+}
+.wrDashboardDesignPaneContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #EFEFEF;
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.05);
+  transition: -webkit-filter 0.25s ease-out, filter 0.25s ease-out;
+}
+[data-executionoff] .wrDashboardDesignPaneContainer {
+  top: 34px;
+}
+.wrDashboardDesignPaneContainer[data-fitType="2"] {
+  overflow: auto;
+}
+.wrDashboardDesignPaneContainer[data-fitType="1"] {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wrDashboardDesignPane {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardRightPaneAccordianItemContainer {
+  font-size: 13px;
+  padding-left: 6px;
+  padding-top: 10px;
+  color: #808080;
+}
+.wrDashboardRightPaneAccordianItemInputLabel {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-style: italic;
+  color: #808080;
+}
+.wrDashboardRightPaneAccordianItemContainerBlockInput {
+  display: block;
+  height: 18px;
+  font-size: 13px;
+  width: calc(100% - 9px);
+  padding-left: 6px;
+  border-radius: 2px;
+  color: #545454;
+}
+.wrDashboardRightPanelFloatingInputGroup {
+  display: inline-block;
+}
+.wrDashboardSettingsMenuContentContainer {
+  top: 29px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardSaveInfoButton {
+  display: block;
+  margin: 0 auto;
+}
+.wrDashboardRightPaneBlockInputDiv {
+  margin-bottom: 5px;
+}
+.wrDashboardRightPaneBlockInputDiv.wrThirdWidthContainer {
+  width: 33%;
+}
+.wrDashboardRightPaneBlockInputDiv:nth-last-child(n+2) {
+  margin-bottom: 4px;
+}
+.wrDashboardAppearanceLinearRangeContainer {
+  position: relative;
+}
+.wrDashboardLinearRangeBeginChooser {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrDashboardLinearRangeEndChooser {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrDashboardVizAppearanceTabContent .wrDDContainer {
+  float: none;
+  height: 22px;
+  border-radius: 2px;
+}
+.wrDashboardVizAppearanceTabContent .wrDDInput {
+  line-height: 20px;
+}
+.wrDashboardVizAppearanceTabContent .wrDDButton {
+  top: -1px;
+  right: -1px;
+}
+.wrDashboardAppearanceCustomColorContainer {
+  margin-bottom: 4px;
+}
+.wrDashboardAppearanceCustomColorPicker {
+  float: none;
+  vertical-align: middle;
+}
+.wrDashboardAppearanceCustomColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  vertical-align: top;
+}
+.wrNoSVG .wrDashboardAppearanceCustomColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrDashboardAppearanceCustomColorDeleteButton[disabled] {
+  cursor: default;
+}
+.wrDashboardAppearanceCustomColorContainer .wrModernColorChooserContainer {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrDashboardAppearanceCustomColorContainer .wrModernColorChooserColorDisplay {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrModernColorChooserContainer[data-focus] + .wrDashboardAppearanceCustomColorDeleteButton {
+  border-color: #666666;
+}
+/* Hide the delete button if the custom color input is the only one left in the list */
+.wrDashboardAppearanceCustomColorsList .wrDashboardAppearanceCustomColorContainer:only-child .wrDashboardAppearanceCustomColorDeleteButton {
+  display: none;
+}
+.wrDashboardFiltersMenu .wrSearchDDImage {
+  top: 15%;
+}
+.wrDashboardRightPaneFieldSet {
+  border: none;
+  font-size: 0;
+  margin-left: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  margin-right: 13px;
+}
+.wrDashboardRightPaneFieldSet:last-child {
+  margin-bottom: 0;
+}
+.wrDashboardRightPaneFieldSet > legend {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 6px;
+  color: #6896ED;
+}
+.wrDashboardRightPaneFieldSetContent {
+  font-size: 13px;
+  margin-left: 7px;
+}
+.wrDashboardTileFormatBorderStylingContainer.wrDashboardRightPaneFieldSetContent {
+  margin-left: 0px;
+}
+.wrDashboardRightPaneBottomMargin {
+  height: 16px;
+}
+.wrDashboardRightPanelHalfWidthParentContainer {
+  font-size: 0;
+}
+.wrDashboardRightPanelHalfWidthContainer {
+  width: calc(50% - 4.5px);
+  margin-right: 9px;
+}
+.wrDashboardRightPanelHalfWidthContainer:last-child {
+  margin-right: 0;
+}
+.wrDashboardRightPaneFieldSet .wrNumericEditArrowDown,
+.wrDashboardRightPaneFieldSetContent .wrNumericEditArrowDown {
+  bottom: 0;
+  margin-right: 2px;
+}
+.wrDashboardRightPaneFieldSet .wrNumericEditArrowUp,
+.wrDashboardRightPaneFieldSetContent .wrNumericEditArrowUp {
+  top: 0;
+  margin-right: 2px;
+}
+.wrDashboardRightPaneFieldSetContent .wrNumericEdit1 {
+  width: calc(100% - 2px);
+  height: 22px;
+  border-radius: 2px;
+}
+.wrDashboardRightPaneFieldSetContent .wrNumericEditTextBox1 {
+  height: 18px;
+  padding-left: 6px;
+}
+.wrDashboardRightPaneFieldSet select {
+  height: 24px;
+  border-radius: 2px;
+  color: #808080;
+  padding-left: 6px;
+  padding-right: 20px;
+  width: 100%;
+}
+.wrDashboardRightPaneSelect {
+  height: 24px;
+  border-radius: 2px;
+  color: #808080;
+  padding-left: 6px;
+  padding-right: 20px;
+  width: 100%;
+}
+.wrDashboardRightPaneFieldSetContent .wrCustomCheckbox {
+  font-size: 12px;
+  margin-right: 25px;
+}
+.wrDashboardRightPanelNumberFormatLeft .wrCustomCheckbox {
+  width: 100%;
+}
+.wrDashboardRightPanelNumberFormatLeft {
+  display: inline-block;
+  width: calc(100% - 48px);
+}
+.wrDashboardNumberFormatColumnItem {
+  margin-bottom: 10px;
+}
+.wrDashboardNumberFormatColumnItem .wrCustomCheckbox > label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrDashboardNumberFormatContainer {
+  font-size: 0;
+}
+.wrDashboardRightPanelNumberFormatRight {
+  display: inline-block;
+  width: 48px;
+  text-align: center;
+  vertical-align: top;
+}
+.wrDashboardRightPanelNumberFormatRight input {
+  width: 46px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 11px;
+}
+.wrDashboardRightPanelNumberFormatLeft > :nth-child(1),
+.wrDashboardRightPanelNumberFormatRight > :nth-child(1) {
+  height: 15px;
+  margin-bottom: 4px;
+}
+.wrDashboardRightPanelNumberFormatLeft > :nth-child(2) {
+  margin-right: 32px;
+}
+.wrDashboardRightPanelNumberFormatLeft > :nth-child(2),
+.wrDashboardRightPanelNumberFormatRight > :nth-child(2) {
+  height: 28px;
+  margin-bottom: 7px;
+}
+.wrDashboardRightPanelNumberFormatLeft > :nth-child(n+3),
+.wrDashboardRightPanelNumberFormatRight > :nth-child(n+3) {
+  height: 26px;
+  margin-bottom: 9px;
+}
+.wrExpressViewNumberFormatContainer > .wrExpressViewRightPaneBlockInputDiv:first-child {
+  margin-bottom: 9px;
+}
+.wrDashboardAttentionText {
+  color: #fa7556;
+}
+.wrDashboardCheckboxContainer {
+  margin-bottom: 10px;
+}
+.wrDashboardAppearanceFontFamilyContainer {
+  display: inline-block;
+  width: calc(100% - 59px);
+  margin-right: 9px;
+}
+.wrDashboardAppearanceFontSizeContainer {
+  display: inline-block;
+  width: 50px;
+}
+.wrDashboardAppearanceFontSizeContainer label {
+  text-align: center;
+}
+.wrDashboardFormatStylingContainer {
+  font-size: 0;
+}
+.wrDashboardFontStylingContainer .wrDDContainer {
+  width: 100%;
+}
+.wrDashboardFormatBorderStylingContainer {
+  font-size: 0;
+}
+.wrDashboardTileFormatBorderStylingContainer .wrDashboardTileUniformBorderShadowCBContainer {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrDashboardFormatSelectionHighlight {
+  background-color: rgba(104, 150, 237, 0.2);
+  border: 2px solid #6896ed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
+}
+.wrDashboardRightMenuPaneFormattingTemplate {
+  width: 100%;
+}
+.DashboardFormatMenuContentContainer {
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: inherit;
+  top: 30px;
+  background-color: #ffffff;
+}
+.wrDashboardFormatMenuAccordionContainer {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardFormatFontFamilyContainer {
+  display: inline-block;
+  width: calc(100% - 59px);
+  margin-right: 9px;
+}
+.wrDashboardFormatFontSizeContainer {
+  display: inline-block;
+  width: 50px;
+}
+.wrDashboardFormatFontSizeContainer label {
+  text-align: center;
+}
+.wrDashboardFormatMenu .wrDDContainer {
+  float: none;
+  height: 22px;
+  border-radius: 2px;
+  width: 100%;
+}
+.wrDashboardFormatMenu .wrDDInput {
+  line-height: 20px;
+}
+.wrDashboardFormatStylingFontColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+  vertical-align: top;
+  width: calc(50% - 5px);
+}
+.wrDashboardFormatStylingBackgroundColorContainer {
+  display: inline-block;
+  width: calc(50% - 5px);
+  vertical-align: top;
+}
+.wrDashboardFormatUnderlineSelect {
+  font-size: 8pt;
+}
+.wrDashboardFormatStylingFontWeightContainer {
+  display: inline-block;
+  width: calc(57% - 5px);
+  margin-right: 9px;
+  vertical-align: top;
+}
+.wrDashboardFormatStylingUnderlineContainer {
+  display: inline-block;
+  width: calc(43% - 5px);
+}
+.wrDashboardFormatUnderlineBoldLbl {
+  font-weight: bold;
+}
+.wrDashboardFormatUnderlineItalicLbl {
+  font-style: italic;
+}
+.wrDashboardFormatUnderlineBoldItalicLbl {
+  font-weight: bold;
+  font-style: italic;
+}
+.wrDashboardFormatUnderlineBtnContainer {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+}
+.wrDashboardFormatUnderlineBtn {
+  height: 24px;
+  width: calc(100% / 3);
+  padding: 5px 10px 5px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrDashboardFormatNoUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationNormal.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatNoUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationNormal.png");
+}
+.wrDashboardFormatNoUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationNormalSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 2px 0 0 2px;
+}
+.wrNoSVG .wrDashboardFormatNoUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationNormalSelected.png");
+}
+.wrDashboardFormatSingleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationUnderline.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatSingleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationUnderline.png");
+}
+.wrDashboardFormatSingleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationUnderlineSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+}
+.wrNoSVG .wrDashboardFormatSingleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationUnderlineSelected.png");
+}
+.wrDashboardFormatDoubleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationDoubleUnderline.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatDoubleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationDoubleUnderline.png");
+}
+.wrDashboardFormatDoubleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationDoubleUnderlineSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 0 2px 2px 0;
+}
+.wrNoSVG .wrDashboardFormatDoubleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationDoubleUnderlineSelected.png");
+}
+.wrDashboardEVTableFormatNoUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationNormalSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 2px 0 0 2px;
+}
+.wrNoSVG .wrDashboardEVTableFormatNoUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationNormalSelected.png");
+}
+.wrDashboardEVTableFormatSingleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationUnderlineSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+}
+.wrNoSVG .wrDashboardEVTableFormatSingleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationUnderlineSelected.png");
+}
+.wrDashboardEVTableFormatDoubleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationDoubleUnderlineSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 0 2px 2px 0;
+}
+.wrNoSVG .wrDashboardEVTableFormatDoubleUnderline.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationDoubleUnderlineSelected.png");
+}
+.wrDashboardFormatStylingHorizontalAlignContainer {
+  width: calc(57% - 5px);
+  display: inline-block;
+  margin-right: 9px;
+  vertical-align: top;
+}
+.wrDashboardFormatHorizontalAlignBtnContainer {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+}
+.wrDashboardFormatHorizontalAlignBtn {
+  height: 24px;
+  width: calc(100% / 4);
+  padding: 7px 9px 6px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrDashboardFormatLeftAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignLeft.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatLeftAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignLeft.png");
+}
+.wrDashboardFormatLeftAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignLeftSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 2px 0 0 2px;
+}
+.wrNoSVG .wrDashboardFormatLeftAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignLeftSelected.png");
+}
+.wrDashboardFormatCenterAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignCenter.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatCenterAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignCenter.png");
+}
+.wrDashboardFormatCenterAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignCenterSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+}
+.wrNoSVG .wrDashboardFormatCenterAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignCenterSelected.png");
+}
+.wrDashboardFormatRightAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignRight.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatRightAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignRight.png");
+}
+.wrDashboardFormatRightAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignRightSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+}
+.wrNoSVG .wrDashboardFormatRightAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignRightSelected.png");
+}
+.wrDashboardFormatJustify {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignJustify.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatJustify {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignJustify.png");
+}
+.wrDashboardFormatJustify.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignJustifySelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 0 2px 2px 0;
+}
+.wrNoSVG .wrDashboardFormatJustify.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignJustifySelected.png");
+}
+.wrDashboardFormatStylingVerticalAlignContainer {
+  width: calc(43% - 5px);
+  display: inline-block;
+  vertical-align: top;
+}
+.wrDashboardFormatVerticalAlignBtnContainer {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+}
+.wrDashboardFormatVerticalAlignBtn {
+  height: 24px;
+  width: calc(100% / 3);
+  padding: 7px 9px 6px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrDashboardFormatTopAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignTop.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatTopAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignTop.png");
+}
+.wrDashboardFormatTopAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignTopSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 2px 0 0 2px;
+}
+.wrNoSVG .wrDashboardFormatTopAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignTopSelected.png");
+}
+.wrDashboardFormatMiddleAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignMiddle.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatMiddleAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignMiddle.png");
+}
+.wrDashboardFormatMiddleAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignMiddleSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+}
+.wrNoSVG .wrDashboardFormatMiddleAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignMiddleSelected.png");
+}
+.wrDashboardFormatBottomAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignBottom.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatBottomAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignBottom.png");
+}
+.wrDashboardFormatBottomAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignBottomSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 0 2px 2px 0;
+}
+.wrNoSVG .wrDashboardFormatBottomAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignBottomSelected.png");
+}
+.wrDashboardFormatSpaceAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignSpace.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardFormatSpaceAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignSpace.png");
+}
+.wrDashboardFormatSpaceAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignSpaceSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 0 2px 2px 0;
+}
+.wrNoSVG .wrDashboardFormatSpaceAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignSpaceSelected.png");
+}
+.wrDashboardEVTableFormatLeftAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignLeftSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ed;
+  border-radius: 2px 0 0 2px;
+}
+.wrNoSVG .wrDashboardEVTableFormatLeftAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignLeftSelected.png");
+}
+.wrDashboardEVTableFormatCenterAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignCenterSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+}
+.wrNoSVG .wrDashboardEVTableFormatCenterAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignCenterSelected.png");
+}
+.wrDashboardEVTableFormatRightAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignRightSelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+}
+.wrNoSVG .wrDashboardEVTableFormatRightAlign.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignRightSelected.png");
+}
+.wrDashboardEVTableFormatJustify.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignJustifySelected.svg");
+  background-size: 24px 24px;
+  background-color: #6896ED;
+  border-radius: 0 2px 2px 0;
+}
+.wrNoSVG .wrDashboardEVTableFormatJustify.wrDashboardFormatBtnSelected {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignJustifySelected.png");
+}
+.wrDashboardFormatStylingWrapTextContainer {
+  margin-top: 10px;
+}
+.wrDashboardFormatStylingUniformBorderContainer {
+  margin-bottom: 6px;
+}
+.wrDashboardTileFormatBorderImgContainer {
+  display: inline-block;
+  margin-right: 10px;
+}
+.wrDashboardTileFormatBorderImgContainer > img {
+  padding-bottom: 3px;
+}
+.wrDashboardTileFormatBorderColorContainer {
+  display: inline-block;
+  width: 60px;
+  margin-right: 9px;
+  width: 52px;
+}
+.wrDashboardTileFormatBorderColorContainer > .wrModernColorChooserContainer {
+  width: 100%;
+}
+.wrDashboardTileFormatBorderWeightContainer {
+  display: inline-block;
+  width: 50px;
+}
+.wrDashboardTileFormatBorderWeightContainer > .wrNumericEdit1 {
+  margin-bottom: 2px;
+}
+.wrExpressViewFormatNegativeColorContainer {
+  align-items: center;
+}
+.wrExpressViewFormatNegativeColorContainer > div {
+  vertical-align: top;
+}
+.wrDashboardFormatRowShadingColorPicker {
+  float: none;
+  vertical-align: middle;
+}
+.wrDashboardFormatRowShadingColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  vertical-align: top;
+}
+.wrNoSVG .wrDashboardFormatRowShadingColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrDashboardFormatRowShadingColorDeleteButton[disabled] {
+  cursor: default;
+}
+.wrDashboardFormatRowShadingColorContainer .wrModernColorChooserContainer {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrDashboardFormatRowShadingColorContainer .wrModernColorChooserColorDisplay {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrModernColorChooserContainer[data-focus] + .wrDashboardFormatRowShadingColorDeleteButton {
+  border-color: #666666;
+}
+/* Hide the delete button if the row shading color input is the only one left in the list */
+.wrDashboardFormatRowShadingColorsList .wrDashboardFormatRowShadingColorContainer:only-child .wrDashboardFormatRowShadingColorDeleteButton {
+  display: none;
+}
+.wrDashboardFormatGroupColorPicker {
+  float: none;
+  vertical-align: middle;
+}
+.wrDashboardFormatGroupColorDeleteButton[disabled] {
+  cursor: default;
+}
+.wrDashboardFormatGroupColorContainer .wrModernColorChooserContainer {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrDashboardFormatGroupColorContainer .wrModernColorChooserColorDisplay {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrModernColorChooserContainer[data-focus] + .wrDashboardFormatGroupColorDeleteButton {
+  border-color: #666666;
+}
+/* Hide the delete button if the row shading color input is the only one left in the list */
+.wrDashboardFormatGroupColorsList .wrDashboardFormatGroupColorContainer:only-child .wrDashboardFormatGroupColorDeleteButton {
+  display: none;
+}
+.wrDashboardFormatDetailHeaderEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FormulaBuilderEdit.svg");
+  background-size: 12px 12px;
+  background-color: #6896ed;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  right: 25px;
+  top: 3px;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrNoSVG .wrDashboardFormatDetailHeaderEdit {
+  background-image: url("../#ApplicationThemeFolder#/Images/FormulaBuilderEdit.png");
+}
+.wrDashboardEditDetailHeaderInput {
+  margin-left: 24px;
+  padding-left: 6px;
+  border: none;
+}
+.wrDashboardEditDetailHeaderInput:focus {
+  border: none;
+}
+.wrDashboardEditDetailHeaderInput::-ms-clear {
+  display: none;
+}
+.wrRippleButton.wrDashboardAddTileButton {
+  color: white;
+  user-select: none;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 6px;
+  padding-right: 10px;
+  padding-left: 26px;
+  width: auto;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ButtonGrab.svg");
+  background-size: 24px 24px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  cursor: -webkit-grab;
+  cursor: grab;
+  transition: all 100ms ease-out;
+}
+.wrNoSVG .wrRippleButton.wrDashboardAddTileButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ButtonGrab.png");
+}
+.wrRippleButton.wrDashboardAddTileButton:hover {
+  background-color: #6896ed;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.wrRippleButton.wrDashboardAddTileButton:active {
+  background-color: #5C86D7;
+  border-color: #5C86D7;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.wrRippleButton.wrDashboardAddTileButton:focus {
+  text-decoration: none;
+}
+.wrRippleButton.wrDashboardAddTileButton.wrDashboardAddTileButtonGrabbed {
+  opacity: 0.3;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ButtonAdd.svg");
+  background-size: 24px 24px;
+  box-shadow: none;
+}
+.wrNoSVG .wrRippleButton.wrDashboardAddTileButton.wrDashboardAddTileButtonGrabbed {
+  background-image: url("../#ApplicationThemeFolder#/Images/ButtonAdd.png");
+}
+.wrDashboardAddTileButton::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1px;
+  right: calc(100% - 24px);
+  bottom: 0;
+  opacity: 0;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ButtonAdd.svg");
+  background-size: 24px 24px;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-color: #6896ed;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrNoSVG .wrDashboardAddTileButton::before {
+  background-image: url("../#ApplicationThemeFolder#/Images/ButtonAdd.png");
+}
+.wrDashboardAddTileButton:hover::before {
+  opacity: 1;
+}
+.wrDashboardAddTileButton:active::before {
+  left: 0;
+  top: -1px;
+  background-color: #5C86D7;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.wrTrDrag.wrDashboardAddTileButtonDragging {
+  min-width: 0;
+  padding-right: 10px;
+  padding-left: 26px;
+  margin-top: 0;
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.5em;
+  background-color: #5C86D7;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ButtonAdd.svg");
+  background-size: 24px 24px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.2);
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.wrNoSVG .wrTrDrag.wrDashboardAddTileButtonDragging {
+  background-image: url("../#ApplicationThemeFolder#/Images/ButtonAdd.png");
+}
+.wrDashboardTileContentText {
+  width: 100%;
+  cursor: text;
+  z-index: 10;
+}
+.wrDashboardTileContentText > span {
+  line-height: normal;
+  min-height: 1em;
+  display: block;
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+}
+.wrDashboardTileContentText > span:empty::before {
+  content: attr(placeholder);
+  color: #D5D5D5;
+}
+.wrDashboardTileContentText > span:empty:focus::before {
+  outline: #D5D5D5 auto 1px;
+  content: "";
+}
+.wrDashboardTextTileWrapText .wrDashboardTileContentText > span {
+  word-wrap: normal;
+  white-space: normal;
+  overflow-x: hidden;
+}
+.wrDashboardDragTileShadow {
+  background-color: #6896ed;
+  opacity: .4;
+  position: absolute;
+}
+.wrDashboardContentBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.wrDashboardContentBody.wrDashboardTextTileWrapText {
+  overflow-y: auto;
+}
+.wrDashboardContentDragCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  cursor: move;
+}
+.wrDashboardDragBorder {
+  position: absolute;
+  z-index: 9;
+  cursor: move;
+}
+.wrDashboardContentDragTopBorder {
+  height: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.wrDashboardContentDragRightBorder {
+  position: absolute;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.wrDashboardContentDragBottomBorder {
+  position: absolute;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrDashboardContentDragLeftBorder {
+  position: absolute;
+  width: 8px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.wrDashboardEmptyTileButtonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  flex-flow: row wrap;
+  max-width: 216px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+.wrDashboardEmptyTileButtonContainer:hover .wrRippleButton {
+  opacity: .6;
+}
+.wrDashboardEmptyTileButtonContainer .wrRippleButton:hover {
+  opacity: 1;
+}
+.wrDashboardEmptyTileButtonBig {
+  margin: 2px 2% 2px 2%;
+  min-width: 30px;
+  padding: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: calc(33% - 15px);
+  font-size: 13px;
+  color: #6896ED;
+  background-color: #FFFFFF;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(17, 44, 95, 0.15);
+  z-index: 1;
+}
+.wrDashboardEmptyTileButtonBig > .wrDashboardEmptyTileButtonText {
+  display: none;
+}
+.wrDashboardEmptyTileButtonBig[elem-size="md"] {
+  margin: 5px;
+  flex: 1 1 100%;
+  min-height: 2.77em;
+}
+.wrDashboardEmptyTileButtonBig[elem-size="md"] > .wrDashboardEmptyTileButtonText {
+  display: inline;
+}
+.wrDashboardEmptyTileButtonSmall {
+  margin: 2px 2% 2px 2%;
+  min-width: 30px;
+  padding: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: calc(33% - 15px);
+  font-size: 13px;
+  color: #6896ED;
+  background-color: #FFFFFF;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(17, 44, 95, 0.15);
+  z-index: 1;
+}
+.wrDashboardEmptyTileButtonSmall > .wrDashboardEmptyTileButtonText {
+  display: none;
+}
+.wrDashboardEmptyTileButtonSmall[elem-size="md"] {
+  margin: 5px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: calc(50% - 10px);
+  min-height: 2.31em;
+}
+.wrDashboardEmptyTileButtonSmall[elem-size="md"] > .wrDashboardEmptyTileButtonText {
+  display: inline;
+}
+.wrDashboardTileDragBorderTop {
+  position: fixed;
+  top: 72px;
+  width: 100%;
+  height: 30px;
+}
+.wrDashboardTileDragBorderLeft {
+  position: fixed;
+  width: 30px;
+  height: 100%;
+}
+.wrDashboardTileDragBorderBottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+.wrDashboardTileDragBorderRight {
+  position: fixed;
+  right: inherit;
+  width: 30px;
+  height: 100%;
+}
+.wrDashboardEmptyTileButtonIcon {
+  vertical-align: middle;
+}
+.wrDashboardEmptyTileButtonText {
+  vertical-align: middle;
+  margin-left: .57em;
+}
+.wrDashboardExistingReportDropZoneBody {
+  width: 100%;
+  height: 75%;
+  border: 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+.wrDashboardExistingReportDropZoneh1 {
+  margin: 7px;
+  color: #808080;
+  font-style: italic;
+  font-size: 1.9em;
+  text-align: center;
+}
+.wrDashboardDropZoneExistingReport {
+  margin-top: 10px;
+  display: none;
+}
+.wrDashboardDropZoneExistingReport[elem-size~="md"] {
+  display: block;
+}
+.wrDashboardReportTreeDropDown {
+  width: 85%;
+}
+.wrDashboardImageAttachedImageText {
+  font-weight: normal;
+  color: #808080;
+  background: #f5f5f5;
+  border-radius: 3px;
+  padding: 7px;
+  margin-top: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrDashboardDropZoneImage {
+  display: none;
+  pointer-events: none;
+}
+.wrDashboardDropZoneImage[elem-size~="lg"] {
+  display: block;
+}
+.wrDashboardImageSettingsTextBody {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #808080;
+  text-align: center;
+  cursor: move;
+}
+.wrDashboardImageSettingsDropZoneFileUploadText {
+  color: #6896ED;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 4px;
+}
+.wrDashboardImageSettingsDropZoneBody {
+  width: 100%;
+  height: 100%;
+  border: 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-style: italic;
+  z-index: 1;
+}
+.wrDashboardImageDropZoneh1 {
+  margin: 7px;
+  color: #808080;
+  font-style: italic;
+  text-align: center;
+  display: none;
+}
+.wrDashboardImageDropZoneh1[elem-size~="md"] {
+  display: block;
+}
+.wrDashboardImageSettingsDropZone {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 50%;
+  width: 92%;
+  border-radius: 6px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrDashboardContentBody .wrDashboardImageSettingsDropZone {
+  height: 75%;
+  cursor: move;
+}
+.wrDashboardImageDropZone {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.wrDashboardImageSettingsDropZone[data-empty] {
+  border: 2px dashed #DEDEDE;
+  background-color: white;
+}
+.wrDashboardImageSettingsDropZone.wrDashboardImageSettingsDropZoneActive {
+  border-color: #6896ed;
+}
+.wrDashboardContentBody > img {
+  user-select: none;
+}
+.wrDashboardTitleBar {
+  position: absolute;
+  height: 20px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.wrDashboardTitleMenuButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 20px;
+  background-color: white;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
+  border-radius: 0px 0px 0px 3px;
+  z-index: 11;
+  border: none;
+  min-height: 30px;
+  min-width: 20px;
+}
+.wrDashboardTitleMenuButton.wrRippleButton:hover:not([data-disabled]) {
+  box-shadow: none;
+}
+.wrDashboardExistingReportDialog {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wrDashboardExistingReportDialog .wrExpressViewReportInfoFolderTree {
+  height: 100%;
+}
+.wrDashboardExistingReportDialog .wrExpressViewReportInfoFolderContainer {
+  height: calc(100% - 96px);
+}
+.wrDashboardExistingReportDialog .wrExpressViewReportInfoLabel {
+  font-size: 13px;
+  padding-top: 10px;
+  color: #808080;
+}
+.wrDashboardExistingReportDialog .wrExpressViewReportInfoErrorText {
+  margin-bottom: 0;
+}
+.wrDashboardTitleMenuButton:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TileMenu.svg");
+  background-size: 30px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+  transform-origin: center;
+  opacity: .3;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrNoSVG .wrDashboardTitleMenuButton:after {
+  background-image: url("../#ApplicationThemeFolder#/Images/TileMenu.png");
+}
+.wrDashboardTitleMenuButton:hover:after {
+  opacity: .30;
+}
+.wrDashboardTileDragHandle {
+  position: absolute;
+  background-color: #9BB9F3;
+  border: solid 2px #6896ED;
+  z-index: 12;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTileLeftDragHandle {
+  width: 2px;
+  height: 10%;
+  top: calc(45% - 2px);
+  left: -3px;
+  border-radius: 2px;
+  cursor: ew-resize;
+}
+.wrDashboardTileLeftDragHandle:hover,
+.wrDashboardTileLeftDragHandle.hover {
+  width: 3px;
+  height: 14%;
+  top: calc(43% - 2px);
+}
+.wrDashboardTileRightDragHandle {
+  width: 2px;
+  height: 10%;
+  top: calc(45% - 2px);
+  right: -3px;
+  border-radius: 2px;
+  cursor: ew-resize;
+}
+.wrDashboardTileRightDragHandle:hover,
+.wrDashboardTileRightDragHandle.hover {
+  width: 3px;
+  height: 14%;
+  top: calc(43% - 2px);
+}
+.wrDashboardTileTopDragHandle {
+  width: 10%;
+  height: 2px;
+  top: -3px;
+  left: calc(45% - 2px);
+  border-radius: 2px;
+  cursor: ns-resize;
+}
+.wrDashboardTileTopDragHandle:hover,
+.wrDashboardTileTopDragHandle.hover {
+  height: 3px;
+  width: 14%;
+  left: calc(43% - 2px);
+}
+.wrDashboardTileBottomDragHandle {
+  width: 10%;
+  height: 2px;
+  bottom: -4px;
+  left: calc(45% - 2px);
+  border-radius: 2px;
+  cursor: ns-resize;
+}
+.wrDashboardTileBottomDragHandle:hover,
+.wrDashboardTileBottomDragHandle.hover {
+  height: 3px;
+  width: 14%;
+  left: calc(43% - 2px);
+}
+.wrDashboardTileTopLeftDragHandle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 12;
+  cursor: nwse-resize;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTileTopLeftDragHandle:hover,
+.wrDashboardTileTopLeftDragHandle.hover {
+  top: -2px;
+  left: -2px;
+}
+.wrDashboardTileTopLeftDragHandle:hover .wrDashboardTileCornerHoriz,
+.wrDashboardTileTopLeftDragHandle.hover .wrDashboardTileCornerHoriz {
+  width: 7px;
+  height: 3px;
+  left: 2px;
+}
+.wrDashboardTileTopLeftDragHandle:hover .wrDashboardTileCornerVert,
+.wrDashboardTileTopLeftDragHandle.hover .wrDashboardTileCornerVert {
+  width: 3px;
+  height: 7px;
+  top: 2px;
+}
+.wrDashboardTileTopRightDragHandle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 12;
+  cursor: nesw-resize;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTileTopRightDragHandle:hover,
+.wrDashboardTileTopRightDragHandle.hover {
+  top: -2px;
+  right: -2px;
+}
+.wrDashboardTileTopRightDragHandle:hover .wrDashboardTileCornerHoriz,
+.wrDashboardTileTopRightDragHandle.hover .wrDashboardTileCornerHoriz {
+  width: 7px;
+  height: 3px;
+  left: 2px;
+}
+.wrDashboardTileTopRightDragHandle:hover .wrDashboardTileCornerVert,
+.wrDashboardTileTopRightDragHandle.hover .wrDashboardTileCornerVert {
+  width: 3px;
+  height: 7px;
+  top: 2px;
+}
+.wrDashboardTileBottomLeftDragHandle {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 12;
+  cursor: nesw-resize;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(270deg);
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTileBottomLeftDragHandle:hover,
+.wrDashboardTileBottomLeftDragHandle.hover {
+  bottom: -2px;
+  left: -2px;
+}
+.wrDashboardTileBottomLeftDragHandle:hover .wrDashboardTileCornerHoriz,
+.wrDashboardTileBottomLeftDragHandle.hover .wrDashboardTileCornerHoriz {
+  width: 7px;
+  height: 3px;
+  left: 2px;
+}
+.wrDashboardTileBottomLeftDragHandle:hover .wrDashboardTileCornerVert,
+.wrDashboardTileBottomLeftDragHandle.hover .wrDashboardTileCornerVert {
+  width: 3px;
+  height: 7px;
+  top: 2px;
+}
+.wrDashboardTileBottomRightDragHandle {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 12;
+  cursor: nwse-resize;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTileBottomRightDragHandle:hover,
+.wrDashboardTileBottomRightDragHandle.hover {
+  bottom: -2px;
+  right: -2px;
+}
+.wrDashboardTileBottomRightDragHandle:hover .wrDashboardTileCornerHoriz,
+.wrDashboardTileBottomRightDragHandle.hover .wrDashboardTileCornerHoriz {
+  width: 7px;
+  height: 3px;
+  left: 2px;
+}
+.wrDashboardTileBottomRightDragHandle:hover .wrDashboardTileCornerVert,
+.wrDashboardTileBottomRightDragHandle.hover .wrDashboardTileCornerVert {
+  width: 3px;
+  height: 7px;
+  top: 2px;
+}
+.wrDashboardTileCornerCorner {
+  width: 4px;
+  height: 4px;
+  top: -4px;
+  left: -4px;
+  cursor: inherit;
+  border-width: 2px 0px 0px 2px;
+  border-top-left-radius: 3px;
+}
+.wrDashboardTileCornerHoriz {
+  width: 4px;
+  height: 2px;
+  top: -4px;
+  left: 0px;
+  cursor: inherit;
+  border-width: 2px 2px 2px 0px;
+}
+.wrDashboardTileCornerVert {
+  width: 2px;
+  height: 4px;
+  top: 0px;
+  left: -4px;
+  cursor: inherit;
+  border-width: 0px 2px 2px 2px;
+}
+.wrDashboardUndoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewUndo.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardUndoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewUndo.png");
+}
+.wrDashboardRedoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpressViewRedo.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardRedoButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpressViewRedo.png");
+}
+.wrDashboardUndoButtonDisabled {
+  opacity: .5;
+  cursor: default;
+}
+.wrDashboardUndoButtonDisabled:active {
+  background-color: transparent;
+}
+.wrDashboardRedoButtonDisabled {
+  opacity: .5;
+  cursor: default;
+}
+.wrDashboardRedoButtonDisabled:active {
+  background-color: transparent;
+}
+.wrDashboardTileEditToolbarButtonContainer {
+  float: right;
+}
+.wrDashboardTileDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 15px 15px;
+  height: 15px;
+  width: 15px;
+  right: 5px;
+  top: 3px;
+  z-index: 1;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.wrNoSVG .wrDashboardTileDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrDashboardTitleMenuTitleInput {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrDashboardTitleMenuTitleInput > span {
+  line-height: normal;
+}
+.wrDashboardTileMenuDragHandle {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TileMenuDrag.svg");
+  background-size: 15px 15px;
+  height: 15px;
+  width: 15px;
+  right: 25px;
+  top: 3px;
+  z-index: 1;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.wrNoSVG .wrDashboardTileMenuDragHandle {
+  background-image: url("../#ApplicationThemeFolder#/Images/TileMenuDrag.png");
+}
+.wrDashboardTileEditButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Options.svg");
+  background-size: 15px 15px;
+  height: 15px;
+  width: 15px;
+  left: 5px;
+  top: 5px;
+  z-index: 1;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.wrNoSVG .wrDashboardTileEditButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/Options.png");
+}
+.wrDashboardSelectedTilePlaceHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardSelectedTilePlaceHolderImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MissingTile.svg");
+  background-size: 48px 48px;
+  height: 48px;
+  width: 48px;
+}
+.wrNoSVG .wrDashboardSelectedTilePlaceHolderImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/MissingTile.png");
+}
+.wrDashboardSelectedTilePlaceHolderMsg {
+  width: 94%;
+}
+.wrDashboardSelectedTilePlaceHolderText {
+  color: rgba(119, 119, 119, 0.75);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 14px;
+  text-align: center;
+  width: 90%;
+}
+.wrDashboardTileUrlOkButton {
+  width: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-style: italic;
+  min-width: 72px;
+  z-index: 1;
+}
+.wrDashboardTileUrlIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.wrDashboardTileUrlIframeOverlay {
+  position: absolute;
+  height: 90%;
+  opacity: 0;
+}
+.wrDashboardTileAdvancedReportOverlay {
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0;
+  cursor: move;
+}
+.wrDashboardTileUrlSettingsLabel {
+  width: 95%;
+  color: #6896ED;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+.wrDashboardTileUrlTextArea {
+  box-sizing: border-box;
+  height: 152px;
+  max-height: 304px;
+  min-height: 76px;
+  width: 95%;
+  border-radius: 2px;
+  padding: 6px;
+  font-size: 12px;
+  resize: vertical;
+  transition: border-color 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardTileUrlTextArea:hover {
+  border-color: #ACACAC;
+}
+.wrDashboardTileUrlTextArea:hover:focus {
+  border-color: #808080;
+}
+.wrDashboardTileEditMenu {
+  top: 0;
+  z-index: 11;
+  transition: right 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardRightPanelToolbarButton {
+  flex-grow: 1;
+  height: 33px;
+  width: 60px;
+  border-left: 1px solid #d7d7d7;
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrDashboardTileEditMenuitem {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.wrDashboardTileUrlInputDiv {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: 5%;
+  text-align: center;
+  width: 90%;
+}
+.wrDashboardTileUrlInputDiv > label {
+  display: block;
+  color: #6896ed;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.wrDashboardTileUrlInputDiv > label > .wrDashboardTileUrlInputLabelSubtitle {
+  font-style: italic;
+  font-weight: normal;
+}
+.wrDashboardTileUrlInputDiv > label > .wrDashboardTileUrlInputLabelSubtitle::before {
+  content: " ";
+}
+.wrDashboardTileUrlInputDiv > input {
+  max-width: 227px;
+  width: 90%;
+  border-radius: 3px;
+  padding: 6px 7px;
+  font-size: 12px;
+  color: #545454;
+  position: relative;
+  z-index: 1;
+  cursor: text;
+}
+.wrDashboardImageItemMenuEditBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/InsertPicture.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  position: absolute;
+  top: 1px;
+  height: 16px;
+  width: 16px;
+  right: 45px;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.wrNoSVG .wrDashboardImageItemMenuEditBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/InsertPicture.png");
+}
+.wrDashboardImageAttachedImage {
+  width: 95%;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.wrDashboardFileUploadInput {
+  height: 10px;
+  width: 12px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  zoom: 1;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 0pt;
+}
+.wrDashboardFilterTileFieldDropZone {
+  font-style: italic;
+  font-size: 13px;
+  width: 100%;
+  color: #b4b4b4;
+  background-color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 12px 0;
+  border: 2px solid transparent;
+}
+.wrDashboardFilterTileFieldDropZoneFilled {
+  font-style: normal;
+  color: #545454;
+  background-color: transparent;
+  padding: 0;
+  font-size: 16px;
+}
+.wrDashboardFilterTileFieldDropZone > img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.wrDashboardFilterTileFieldDropZone > div {
+  display: inline;
+  vertical-align: middle;
+}
+.wrDashboardFilterLevelContainer,
+.wrDashboardFilterInteractivePromptingContainer {
+  display: inline-block;
+  width: calc(100% - 10px);
+  margin-bottom: 3px;
+}
+.wrDashboardFilterLevelContainer {
+  margin-left: 5px;
+}
+.wrDashboardFilterInteractivePromptingContainer,
+.wrDashboardParameterInteractivePromptingContainer {
+  margin-left: 10px;
+}
+.wrDashboardFilterInteractivePromptingContainer {
+  margin-top: 4px;
+}
+.wrDashboardTileFilterItem .wrDashboardFilterValueSelectFieldMsg {
+  margin-left: 0;
+}
+.wrFilterValueInputContainer {
+  min-width: 150px;
+}
+.wrFilterValueInputContainer .wrNumericEdit1 {
+  margin-top: 6px;
+  padding-left: 6px;
+}
+.wrFilterValueInputContainer .wrFiltersEditCtrl2 {
+  position: static;
+  padding-bottom: 5px;
+  height: auto;
+}
+.wrFilterValueInputContainer .wrFiltersOneOfWrapper {
+  position: static;
+}
+.wrFilterValueInputContainer .wrEditCtrlDateBtn1 {
+  height: 27px;
+}
+.wrFilterValueInputContainer .wrNumericEditTextBox1 {
+  padding-left: 6px;
+}
+.wrFilterValueInputContainer .wrDateTimeTextBoxWrapper,
+.wrFilterValueInputContainer .wrDateTimeButton {
+  top: 5px;
+}
+.wrFilterValueInputContainer .wrEditCtrlSearchSettingBtn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border: 1px solid #d7d7d7;
+  border-right: none;
+}
+.wrFilterMenuFilterValueContainer .wrFilterValueInputContainer .wrEditCtrlSearchSettingBtn {
+  position: relative;
+  top: -1px;
+}
+.wrDashboardFilterReportSelectListContainer,
+.wrDashboardParameterReportSelectListContainer {
+  padding-top: 8px;
+  max-height: 95px;
+  overflow-y: auto;
+}
+.wrDashboardFilterReportSelectListContainer .wrCustomCheckbox,
+.wrDashboardParameterReportSelectListContainer .wrCustomCheckbox {
+  margin-bottom: 8px;
+}
+.wrDashboardFilterReportSelectListContainer .wrCustomCheckbox > label > span,
+.wrDashboardParameterReportSelectListContainer .wrCustomCheckbox > label > span {
+  margin-left: 12px;
+  font-size: 12px;
+}
+.wrDashboardFiltersSearchBoxContainer {
+  position: relative;
+  margin-top: 1px;
+  font-size: 0;
+  padding: 0 10px;
+  width: calc(100% - 40px);
+}
+.wrDashboardsFilterButton {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  border-radius: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  flex-grow: 1;
+  color: #8B8B8B;
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.wrDashboardsFilterButton:hover {
+  background-color: #F2F2F2;
+}
+.wrDashboardsFilterButton.wrDashboardFiltersButtonSelected {
+  background-color: #6896ED;
+  color: #FFFFFF;
+}
+.wrDashboardMenuFilterTitleBar {
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+  background-color: #F7F7F7;
+}
+.wrDashboardTile .wrHvEmbeddedReportErrorContainer {
+  display: flex;
+  justify-content: flex-start;
+  z-index: 12;
+  overflow-x: scroll;
+}
+.wrDashboardTile .wrExpressViewSearchContainer {
+  display: none;
+}
+.wrDashboardTile .wrExpressViewConditionalChartPointsInfoContainer {
+  display: none;
+}
+.wrDashboardItemPrettyError {
+  display: flex;
+  align-items: center;
+}
+.wrDashboardAdvancedReportContainer {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.wrDashboardTileRightPaneSettingsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SettingsMenu.svg");
+  background-size: 24px 24px;
+  width: 61px;
+}
+.wrNoSVG .wrDashboardTileRightPaneSettingsButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/SettingsMenu.png");
+}
+.wDashboardTileFormatMenuAccordionContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardTileTitleAttributesContainer {
+  margin-bottom: 8px;
+}
+.wrDashboardTileTitleAttributesContainer .wrCustomCheckbox {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.wrDashboardTileFormatTitleFontFamilyContainer {
+  display: inline-block;
+  width: calc(100% - 59px);
+  margin-right: 9px;
+}
+.wrDashboardFilterMenuViewBtn {
+  height: 14px;
+  width: 14px;
+  border-radius: 2px;
+  background-color: #ADADAD;
+  position: absolute;
+  top: 6px;
+}
+.wrDashboardFilterMenuFirstView {
+  right: 70px;
+}
+.wrDashboardFilterMenuSecondView {
+  right: 50px;
+}
+.wrDashboardFilterMenuThirdView {
+  right: 30px;
+}
+.wrDashboardFilterMenuViewBtn.wrDashboardFilterMenuSelectedView {
+  background-color: #6896ED;
+}
+.wrDashboardTileFormatTitleFontSizeContainer {
+  display: inline-block;
+  width: 50px;
+}
+.wrDashboardTileFormatTitleFontWeightBoldLbl {
+  font-weight: bold;
+}
+.wrDashboardTileFormatTitleFontWeightItalicLbl {
+  font-style: italic;
+}
+.wrDashboardTileFormatTitleFontWeightBoldItalicLbl {
+  font-weight: bold;
+  font-style: italic;
+}
+.wrDashboardTileFormatContentDisplayContainer .wrCustomCheckbox {
+  font-size: 12px;
+  font-style: italic;
+  margin-right: 15px;
+}
+.wrDashboardCanvasHeightEditContainer {
+  margin-right: 12px;
+}
+.wrDashboardCanvasWidthEditContainer,
+.wrDashboardCanvasHeightEditContainer {
+  display: inline-block;
+  width: calc(50% - 6px);
+}
+.wrDashboardFormatContentDisplayContainer .wrDashboardCanvasWidthEditContainer .wrNumericEdit1,
+.wrDashboardFormatContentDisplayContainer .wrDashboardCanvasHeightEditContainer .wrNumericEdit1 {
+  width: 100%;
+}
+.wrDashboardFormatContentDisplayContainer .wrDashboardCanvasWidthEditContainer .wrNumericEdit1 .wrNumericEditTextBoxContainer,
+.wrDashboardFormatContentDisplayContainer .wrDashboardCanvasHeightEditContainer .wrNumericEdit1 .wrNumericEditTextBoxContainer {
+  margin-left: 7px;
+}
+.wrDashboardFormatFontDD {
+  height: 24px;
+  border-radius: 2px;
+  float: none;
+  width: 100%;
+}
+.wrDashboardFormatFontDD .wrDDSelect {
+  height: 26px;
+  cursor: pointer;
+}
+.wrDashboardFormatFontDD .wrDDInputContainer {
+  line-height: 24px;
+}
+.wrDashboardTileFormatTitleColorContainer {
+  display: inline-block;
+  vertical-align: top;
+}
+.wrDashboardTileFormatTitleFontWeightContainer {
+  display: inline-block;
+  width: calc(100% - 135px);
+  margin-right: 9px;
+}
+.wrDashboardTileFormatTitleHorizontalAlignContainer,
+.wrDashboardTileFormatTitleUnderlineContainer,
+.wrDashboardTileFormatTitleVerticalAlignContainer,
+.wrDashboardTileFormatTextWrapContainer {
+  width: calc(50% - 6px);
+  display: inline-block;
+}
+.wrDashboardTileFormatTextWrapContainer {
+  margin-top: 12px;
+}
+.wrDashboardTileFormatTextWrapContainer .wrCustomCheckbox {
+  font-size: 12px;
+}
+.wrDashboardTileFormatTitleHorizontalAlignContainer {
+  margin-right: 12px;
+}
+.wrDashboardTileFormatTitleHorizontalAlignBtnContainer,
+.wrDashboardTileFormatTitleVerticalAlignBtnContainer,
+.wrDashboardTileFormatTitleUnderlineBtnContainer {
+  box-shadow: inset 0 0 0 1px #d7d7d7;
+  border-radius: 3px;
+}
+.wrDashboardTileFormatTileBackgroundColorContainer,
+.wrDashboardTileFormatTitleBackgroundColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+  width: 60px;
+}
+.wrDashboardTileFormatTileBackgroundColorContainer .wrModernColorChooserContainer,
+.wrDashboardTileFormatTitleBackgroundColorContainer .wrModernColorChooserContainer {
+  width: 100%;
+}
+.wrDashboardTileFormatBackgroundColorsContainer .wrCustomCheckbox {
+  margin-top: 22px;
+  vertical-align: top;
+  margin-right: 6px;
+}
+.wrDashboardTileFormatBorderStylingContainer .wrCustomCheckbox {
+  margin-top: 0;
+}
+.wrDashboardTileFormatTileShadowColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+}
+.wrDashboardTileFormatShadowsContainer .wrCustomCheckbox {
+  margin-top: 22px;
+  vertical-align: top;
+  margin-right: 6px;
+}
+.wrDashboardRightPaneMenuTitle {
+  display: none;
+}
+.wrDashboardFormatMenuContentContainer {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: auto;
+}
+.wrDashboardFormatContentDisplayContainer .wrCustomCheckbox {
+  font-size: 12px;
+  font-style: italic;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+.wrDashboardFormatCanvasBackgroundColorContainer,
+.wrDashboardFormatCanvasDefaultTileBackgroundColorContainer,
+.wrDashboardFormatCanvasDefaultTileTitleBackgroundColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+  width: 60px;
+}
+.wrDashboardFormatMenuContentContainer .wrNumericEdit1 {
+  height: 24px;
+  width: 52px;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+}
+.wrDashboardFormatMenuContentContainer .wrNumericEdit1 .wrNumericEditTextBoxContainer {
+  margin-left: 7px;
+}
+.wrDashboardFormatMenuContentContainer .wrNumericEditTextBox1 {
+  font-size: 12px;
+  height: 20px;
+}
+.wrDashboardFormatMenuContentContainer .wrModernColorChooserContainer {
+  width: 100%;
+}
+.wrDashboardDefaultTileShadowColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+  width: calc(100% - 95px);
+}
+.wrDashboardTextTileSettingsFontFamilyContainer {
+  display: inline-block;
+  margin-right: 9px;
+  width: calc(100% - 65px);
+}
+.wrDashboardTextTileSettingsFontSizeContainer {
+  display: inline-block;
+}
+.wrDashboardTextTileSettingsHideFontSize .wrDashboardTextTileSettingsFontSizeContainer {
+  display: none;
+}
+.wrDashboardTextTileSettingsHideFontSize .wrDashboardTextTileSettingsFontFamilyContainer {
+  width: 100%;
+}
+.wrDashboardTextTileSettingsContainer {
+  width: calc(100% - 23px);
+  height: 100%;
+  margin-left: 10px;
+}
+.wrDashboardTextTileSettingsContainer .wrNumericEdit1 {
+  height: 24px;
+  width: 52px;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+}
+.wrDashboardTextTileSettingsContainer .wrNumericEdit1 .wrNumericEditTextBoxContainer {
+  margin-left: 7px;
+}
+.wrDashboardTextTileSettingsContainer .wrNumericEditTextBox1 {
+  font-size: 12px;
+  height: 20px;
+}
+.wrDashboardTileFiltersMenuButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TileNewFilter.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardTileFiltersMenuButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/TileNewFilter.png");
+}
+.wrDashboardTileFilterAddBtnContainer {
+  text-align: center;
+}
+.wrDashboardFilterMenuAddBtn {
+  float: none;
+  user-select: none;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ButtonAdd.svg");
+  background-size: 24px 24px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+  padding-left: 26px;
+  font-size: 12px;
+  font-style: italic;
+}
+.wrNoSVG .wrDashboardFilterMenuAddBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/ButtonAdd.png");
+}
+.wrDashboardFilterOrientationContainer {
+  text-align: center;
+}
+.wrDashboardFilterOrientationContainer .wrCustomCheckbox {
+  width: 95px;
+}
+.wrDashboardFilterOrientationContainer .wrCustomCheckbox {
+  font-size: 12px;
+  margin-right: 15px;
+}
+.wrFilterSliderButton {
+  height: 38px;
+  width: calc((100% / 2) - 8px);
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrFilterSliderButton:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+.wrFilterSingleSelect {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterSingleChoice.svg");
+  background-size: 100% 24px;
+}
+.wrNoSVG .wrFilterSingleSelect {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterSingleChoice.png");
+}
+.wrFilterMultiSelect {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterMultiChoice.svg");
+  background-size: 100% 24px;
+}
+.wrNoSVG .wrFilterMultiSelect {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterMultiChoice.png");
+}
+.wrFilterSingleSlider {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterSingleSlider.svg");
+  background-size: 100% 24px;
+}
+.wrNoSVG .wrFilterSingleSlider {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterSingleSlider.png");
+}
+.wrFilterRangeSlider {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/FilterRangeSlider.svg");
+  background-size: 100% 24px;
+}
+.wrNoSVG .wrFilterRangeSlider {
+  background-image: url("../#ApplicationThemeFolder#/Images/FilterRangeSlider.png");
+}
+.wrDashboardFilterStyleSelected {
+  border: 1px solid #6896ED;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+[data-tabid="ExpressViewFormatMenu"] .wrDashboardTileFormatMenuContentContainer {
+  height: calc(100% - 30px);
+  top: 0;
+}
+.wrDashboardTileFiltersMenuTemplate {
+  width: 100%;
+}
+.wrDashboardTileFiltersMenuFiltersList {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardTileFilterLevelContainer {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 5px;
+}
+.wrDashboardTileFilterLevelContainer > label {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.wrDashboardTileFilterLevelContainer .wrCustomCheckbox {
+  margin-right: 10px;
+}
+.wrDashboardTileFiltersMenuTemplate .wrAccordionContentContainer {
+  border-radius: 2px 2px 0 0;
+  background-color: #FEFEFE;
+  margin-top: -1px;
+}
+.wrDashboardTileExpandedViewContainer {
+  font-size: 12px;
+  color: #808080;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  padding: 6px 0;
+}
+.wrDashboardTileExpandedViewContainer .wrDashboardRightPaneBlockInputDiv > label {
+  font-weight: bold;
+}
+.wrDashboardTileExpandedViewContainer .wrCustomCheckbox {
+  margin-right: 10px;
+}
+.wrDashboardTileFilterFieldNameContainer {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.wrDashboardTileFilterOperatorContainer {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  border-top: 1px solid #DDDDDD;
+  margin-top: -1px;
+}
+.wrDashboardFilterTileOperatorSelect {
+  height: 26px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 25px;
+  color: #8B8B8B;
+  border: none;
+}
+.wrDashboardFilterFormulaValueSelect {
+  height: 26px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 25px;
+  color: #8B8B8B;
+  border-top: none;
+  margin-left: 1px;
+}
+.wrDashboardFilterFieldNameLabel {
+  font-weight: bold;
+}
+.wrFilterValueInputContainer .wrEditCtrlContainer {
+  height: 26px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.wrFilterValueInputContainer.wrDashboardFilterNoFieldSelected .wrEditCtrlContainer {
+  height: 0;
+}
+.wrFilterValueInputContainer.wrDashboardFilterFormulaHideDefaultValue .wrEditCtrlContainer {
+  height: 0;
+}
+.wrFilterValueInputContainer .wrEditCtrlDiv {
+  height: 100%;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.wrFilterValueInputContainer .wrEditCtrlDiv .wrEditCtrlInput {
+  padding-left: 6px;
+}
+.wrFilterValueInputContainer [id$='TextTbl'] .wrEditCtrlDateBtn1 {
+  height: 26px;
+  border-left: none;
+}
+.wrFilterValueInputContainer .wrEditCtrlDateBtn1 > img {
+  margin-top: 5px;
+}
+.wrDashboardFiltersMenuFiltersList .wrDashboardFilterItem {
+  border-radius: 2px 2px 0 0;
+  background-color: #FEFEFE;
+  margin-top: -1px;
+  position: relative;
+  height: auto;
+  padding: 0;
+  color: #808080;
+  border: none;
+}
+.wrDashboardMenuFilterExpandedViewContainer {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.wrDashboardFilterMenuItemStencil .wrDashboardFilterMenuInputsContainer,
+.wrDashboardFilterMenuItemStencil .wrFilterMenuFilterValueContainer {
+  display: none;
+}
+.wrDashboardFilterMenuOperatorContainer {
+  border-bottom: 1px solid #DDDDDD;
+}
+.wrFilterMenuFilterValueContainer .wrFiltersOneOfWrapper .wrInputText {
+  margin-left: 1px;
+}
+.wrDashboardFilterMenuReportListView,
+.wrDashboardFilterMenuPromptingInteractiveView {
+  width: calc(100% - 13px);
+  padding-left: 13px;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.wrDashboardFilterMenuReportListView label:first-child {
+  margin-bottom: 6px;
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+}
+.wrDashboardFilterMenuPromptingInteractiveView > .wrCustomCheckbox {
+  margin-right: 10px;
+}
+.wrDashboardFilterFieldDD {
+  width: 100%;
+  border: 1px solid #dddddd;
+  color: #808080;
+  font-size: 12px;
+  height: 26px;
+}
+.wrDashboardFilterFieldDD:hover {
+  border-color: #bbbbbb;
+}
+.wrDashboardFilterFieldDD .wrSearchDDImage {
+  top: 5px;
+}
+.wrFilterMenuFilterValueContainer {
+  width: 100%;
+  margin-left: -1px;
+}
+.wrDashboardFilterMenuInputsContainer {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.wrFilterMenuFilterValueContainer .wrEditCtrlContainer {
+  height: 26px;
+  width: 100%;
+  margin-left: 1px;
+  padding-bottom: 5px;
+}
+.wrFilterMenuFilterValueContainer .wrEditCtrlDiv {
+  height: 100%;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  margin-top: -1px;
+}
+.wrDashboardToolbarExecuteContainer {
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.wrDashboardFilterValueSelectFieldMsg {
+  font-size: 12px;
+  padding: 6px;
+  border: 1px solid #DDDDDD;
+  margin-left: 1px;
+  width: calc(100% - 14px);
+  text-align: center;
+  display: none;
+  margin-top: -1px;
+  color: #808080;
+}
+.wrDashboardFilterMenuOptionGroupLbl {
+  color: #6896ED;
+}
+.wrDashboardFilterMenuInnerOptionLbl {
+  color: #8B8B8B;
+}
+.wrFilterTileInputTemplate {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.wrDashboardFilterTileAddFieldLbl {
+  color: #6896ED;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+}
+.wrDashboardFilterTileFieldInputContainer {
+  padding: 15px;
+  border: 2px dashed #DDDDDD;
+  left: 10px;
+  right: 10px;
+  top: calc(50% - 50px);
+  position: absolute;
+  border-radius: 6px;
+}
+.wrDashboardFilterTileFieldInputContainer .wrDashboardFilterFieldDD {
+  max-width: 227px;
+}
+.wrDashboardFilterTileDynamicFilterContainer {
+  height: 100%;
+}
+.wrDashboardFilterTileDynamicFilterContainer .wrSliderHorz .wrSliderBar {
+  margin: 4px;
+}
+.wrDashboardFilterTileDynamicFilterContainer .wrSliderLabelInput {
+  position: static;
+}
+.wrDashboardFilterTileSettingsMenuTemplate {
+  width: 100%;
+}
+.wrDashboardFilterTileSettingsMenuAccordionContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardFilterTileSettingsFilterFieldContainer,
+.wrDashboardFilterTileSettingsDefaultValueContainer,
+.wrDashboardFilterTileSettingsCalculateEvery {
+  margin-bottom: 5px;
+}
+.wrDashboardFilterTileSettingsSortContainer {
+  margin-bottom: 10px;
+}
+.wrDashboardFilterTileSettingsFilterFieldContainer .wrDDContainer {
+  top: 0;
+  width: calc(100% - 22px);
+  margin-bottom: -4px;
+}
+.wrDashboardFilterTileSettingsFilterFieldContainer .wrDDContainer .wrSearchDDImage {
+  top: 8px;
+}
+.wrDashboardFilterSettingsDataContainer .wrDashboardRightPaneAccordianItemInputLabel {
+  font-style: normal;
+}
+.wrDashboardFilterSettingsDataContainer .wrDashboardRightPaneAccordianItemInputLabel {
+  font-size: 12px;
+}
+.wrFilterValueInputContainer.wrDashboardFilterNoFieldSelected .wrDashboardFilterSelectFieldMsg {
+  display: block;
+}
+.wrFilterValueInputContainer .wrDashboardFilterFormulaNoDefaultMsg {
+  display: none;
+}
+.wrFilterValueInputContainer.wrDashboardFilterFormulaHideDefaultValue .wrDashboardFilterFormulaNoDefaultMsg {
+  display: block;
+}
+.wrDashboardFilterSettingsDataContainer .wrCustomCheckbox {
+  font-size: 12px;
+  margin-right: 25px;
+}
+.wrDashboardFilterSettingsDataContainer .wrFiltersOneOfWrapper .wrInputText {
+  height: 58px;
+}
+.wrDashboardFilterDataFormatInstructions {
+  font-size: 11px;
+  color: #808080;
+  min-height: 26px;
+  width: calc(100% - 30px);
+  padding: 4px 10px;
+  background: #F7F7F7;
+  border-radius: 2px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  display: table;
+}
+.wrDashboardFilterDataFormatInstructions > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.wrDashboardFilterOperatorLockImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TreeReportLockBlue.svg");
+  background-size: 12px 12px;
+  height: 15px;
+  width: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.wrNoSVG .wrDashboardFilterOperatorLockImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/TreeReportLockBlue.png");
+}
+.wrDashboardFilterOperatorLockImg:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TreeReportLockSelected.svg");
+  background-size: 12px 12px;
+  border-radius: 2px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrDashboardFilterOperatorLockImg:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/TreeReportLockSelected.png");
+}
+.wrDashboardFilterOperatorLockImg.wrFilterOperatorUnLocked {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TreeReportUnlock.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrDashboardFilterOperatorLockImg.wrFilterOperatorUnLocked {
+  background-image: url("../#ApplicationThemeFolder#/Images/TreeReportUnlock.png");
+}
+.wrDashboardFilterOperatorLockImg.wrFilterOperatorUnLocked:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TreeReportUnlockSelected.svg");
+  background-size: 12px 12px;
+  border-radius: 2px;
+  background-color: #6896ed;
+}
+.wrNoSVG .wrDashboardFilterOperatorLockImg.wrFilterOperatorUnLocked:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/TreeReportUnlockSelected.png");
+}
+.wrDashboardFilterOperatorLockImg.wrFilterOperatorDisabled {
+  cursor: default;
+  opacity: .6;
+}
+.wrDashboardFilterOperatorLockImg.wrFilterOperatorDisabled.wrDashboardFilterOperatorLockImg:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TreeReportLockBlue.svg");
+  background-size: 12px 12px;
+  background-color: transparent;
+}
+.wrNoSVG .wrDashboardFilterOperatorLockImg.wrFilterOperatorDisabled.wrDashboardFilterOperatorLockImg:hover {
+  background-image: url("../#ApplicationThemeFolder#/Images/TreeReportLockBlue.png");
+}
+.wrDashboardFilterOperatorLockImg.wrFilterOperatorDisabled.wrDashboardFilterOperatorLockImg:hover.wrFilterOperatorUnLocked {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TreeReportUnlock.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrDashboardFilterOperatorLockImg.wrFilterOperatorDisabled.wrDashboardFilterOperatorLockImg:hover.wrFilterOperatorUnLocked {
+  background-image: url("../#ApplicationThemeFolder#/Images/TreeReportUnlock.png");
+}
+.wrDashboardFilterMenuOperatorExecutionContainer {
+  height: 20px;
+  width: calc(100% - 6px);
+  font-size: 12px;
+  padding-left: 6px;
+  color: #8B8B8B;
+  padding-top: 6px;
+}
+.wrDashboardFilterTileCover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  color: #808080;
+}
+.wrDashboardFilterTileCover .wrDashboardEmptyFilterMsgContainer {
+  display: none;
+  top: 50%;
+  left: calc(50% - 40px);
+  position: absolute;
+}
+.wrDashboardReportTilePagingToolbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0 0 4px 4px;
+  z-index: 10;
+  bottom: 0;
+  left: -1px;
+  width: 100%;
+  max-height: 29px;
+  overflow: hidden;
+  cursor: default;
+  filter: opacity(0.6);
+  transition: filter 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardReportTilePagingToolbar:hover {
+  filter: opacity(1);
+}
+.wrDashboardReportTileFindCtrl {
+  padding: 4px;
+}
+.wrDashboardReportTilePageCtrl {
+  padding: 4px;
+}
+.wrDashboardPagingCtrlTextContainer {
+  display: inline-block;
+}
+.wrDashboardPagingCtrlText {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+}
+.wrDashboardPagingCtrlInputPgNum {
+  width: 20px;
+  text-align: center;
+}
+.wrDashboardExecuteMenuTbImg {
+  vertical-align: middle;
+  cursor: pointer;
+  filter: brightness(150%);
+}
+.wrDashboardExecuteMenuTbImg:hover {
+  filter: brightness(125%);
+}
+.wrDashboardExecuteMenuTbImg:active {
+  filter: brightness(100%);
+}
+.wrDashboardExecuteRefreshButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Refresh.svg");
+  background-size: 16px 16px;
+}
+.wrNoSVG .wrDashboardExecuteRefreshButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/Refresh.png");
+}
+.wrDashboardExecuteFiltersButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Filter.svg");
+  background-size: 16px 16px;
+  transition-delay: .1s;
+}
+.wrNoSVG .wrDashboardExecuteFiltersButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/Filter.png");
+}
+.wrDashboardExecuteParametersButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ParametersMenu.svg");
+  background-size: 16px 16px;
+  transition-delay: .2s;
+}
+.wrNoSVG .wrDashboardExecuteParametersButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/ParametersMenu.png");
+}
+.wrFloatingButtonGroupDragging {
+  opacity: .8;
+}
+.wrDashboardTileParamtersMenuTemplate {
+  width: 100%;
+}
+.wrDashboardParameterLevelContainer {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 5px;
+}
+.wrDashboardParameterLevelContainer > label {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.wrDashboardParameterLevelContainer .wrCustomCheckbox {
+  margin-right: 10px;
+}
+.wrDashboardParameterLevelContainer,
+.wrDashboardParameterInteractivePromptingContainer {
+  display: inline-block;
+  width: calc(100% - 10px);
+  margin-bottom: 3px;
+}
+.wrDashboardTileParametersMenuParametersList {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardTileParameterNameContainer {
+  font-size: 12px;
+  color: #AAAAAA;
+  border: 1px solid #DDDDDD;
+  padding: 6px 7px;
+}
+.wrParameterValueInputContainer {
+  margin-top: -2px;
+}
+.wrParameterValueInputContainer .wrEditCtrlContainer {
+  height: 26px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.wrParameterValueInputContainer .wrEditCtrlDiv {
+  height: 100%;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.wrParameterValueInputContainer .wrEditCtrlDiv .wrEditCtrlInput {
+  padding-left: 6px;
+}
+.wrParameterValueInputContainer [id$='TextTbl'] .wrEditCtrlDateBtn1 {
+  height: 26px;
+  border-left: none;
+}
+.wrParameterValueInputContainer .wrEditCtrlDateBtn1 > img {
+  margin-top: 5px;
+}
+.wrDashboardParameterReportSelectListContainer .wrCustomCheckbox > label > span {
+  margin-left: 12px;
+  font-size: 12px;
+}
+.wrDashboardTileParameterStringEdit {
+  width: calc(100% - 9px);
+  padding-left: 6px;
+  font-size: 8pt;
+  color: #808080;
+  height: 22px;
+}
+.wrDashboardParametersMenuParametersList {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  width: calc(100% - 25px);
+}
+.wrDashboardMenuParameterExpandedViewContainer {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.wrDashboardParameterMenuInteractivePromptingView {
+  width: calc(100% - 13px);
+  padding-left: 13px;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.wrDashboardParameterMenuInteractivePromptingView .wrCustomCheckbox {
+  margin-right: 10px;
+}
+.wrDashboardTileParameterItem {
+  font-size: 13px;
+  color: #808080;
+  margin-top: -1px;
+}
+.wrDashboardParameterMenuReportListView {
+  width: calc(100% - 13px);
+  padding-left: 13px;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.wrDashboardParameterMenuReportListView label:first-child {
+  margin-bottom: 6px;
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+}
+.wrDashboardTextTileSettingsFontSizeContainer .wrNumericEdit1 {
+  height: 24px;
+  width: 52px;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+}
+.wrDashboardTextTileSettingsFontSizeContainer .wrNumericEdit1 .wrNumericEditTextBoxContainer {
+  margin-left: 7px;
+}
+.wrDashboardTextTileSettingsFontSizeContainer .wrNumericEditTextBox1 {
+  font-size: 12px;
+  height: 20px;
+}
+.wrDashboardEmptyFiltersList {
+  margin-bottom: 33px;
+}
+.wrDashboardEmptyFiltersListMsg {
+  width: 100%;
+}
+.wrDashboardEmptyFiltersImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MissingFilter.svg");
+  background-size: 48px 48px;
+  height: 48px;
+  width: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.wrNoSVG .wrDashboardEmptyFiltersImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/MissingFilter.png");
+}
+.wrDashboardEmptyParametersImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/MissingParameter.svg");
+  background-size: 48px 48px;
+  height: 48px;
+  width: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.wrNoSVG .wrDashboardEmptyParametersImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/MissingParameter.png");
+}
+.wrDashboardEmptyParametersMsg {
+  width: 100%;
+}
+.wrDashboardEmptyReportCBList {
+  font-size: 12px;
+  color: #808080;
+  text-align: center;
+  font-style: italic;
+}
+.wrDashboardFilterNumberFormatColumnItem {
+  margin-bottom: 10px;
+}
+.wrDashboardFilterRightPanelNumberFormatLeft {
+  display: inline-block;
+  width: calc(100% - 52px);
+}
+.wrDashboardFilterRightPanelNumberFormatLeft > :nth-child(2) {
+  margin-right: 32px;
+}
+.wrDashboardFilterRightPanelNumberFormatLeft > :nth-child(n+3),
+.wrDashboardFilterRightPanelNumberFormatRight > :nth-child(n+3) {
+  height: 26px;
+  margin-bottom: 9px;
+}
+.wrDashboardFilterRightPanelNumberFormatRight {
+  display: inline-block;
+  width: 48px;
+  text-align: center;
+  vertical-align: top;
+}
+.wrDashboardFilterRightPaneAccordianItemContainerBlockInput {
+  display: block;
+  height: 18px;
+  font-size: 13px;
+  width: calc(100% - 9px);
+  padding-left: 6px;
+  border-radius: 2px;
+  color: #545454;
+}
+.wrDashboardFilterRightPanelNumberFormatRight input {
+  width: 46px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 11px;
+}
+.wrDashboardFilterRightPanelNumberFormatRight > :nth-child(1) {
+  height: 15px;
+  margin-bottom: 4px;
+}
+.wrDashboardFilterNumberFormatContainer .wrCustomCheckbox {
+  font-style: normal;
+}
+.wrDashboardFilterRightPaneBlockInputDiv:nth-last-child(n+2) {
+  margin-bottom: 4px;
+}
+.wrDashboardFilterMenuAddBtnContainer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.wrDashboardFilterTileSelectHorizontalAlignContainer {
+  display: inline-block;
+  width: 45%;
+  margin-right: 9px;
+}
+.wrDashboardFilterTileSelectVerticalAlignContainer {
+  display: inline-block;
+  width: 45%;
+  margin-right: 9px;
+}
+.wrDashboardFilterTileSelectHorizontalAlignBtnContainer,
+.wrDashboardFilterTileSelectVerticalAlignBtnContainer {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  display: flex;
+}
+.wrDashboardTileFitContainer {
+  display: flex;
+  flex-direction: column;
+}
+.wrDashboardTileFitContainer .wrCustomCheckbox {
+  display: block;
+  margin-bottom: 8px;
+}
+.wrDashboardCanvasFitCBContainer {
+  display: inline-block;
+  width: 80px;
+  vertical-align: middle;
+  font-size: 0;
+}
+.wrDashboardCanvasFitCBContainer .wrCustomCheckbox:not(:last-child) {
+  margin-bottom: 8px;
+}
+.wrDashboardTileFitDescriptionContainer {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.wrDashboardCanvasFitDescriptionContainer {
+  display: inline-flex;
+  align-items: center;
+  width: calc(100% - 90px);
+  height: 70px;
+  vertical-align: middle;
+}
+.wrDashboardTileFitDescriptionImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Alert.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.wrNoSVG .wrDashboardTileFitDescriptionImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/Alert.png");
+}
+.wrDashboardTileFitDescriptionText {
+  font-size: 12px;
+  font-style: italic;
+  color: #808080;
+  display: inline-block;
+  width: calc(100% - 34px);
+  margin-left: 10px;
+}
+.wrDashboardRightPanel .wrChartTypeTopDescription {
+  margin-top: 10px;
+}
+.wrDashboardFormatContentDimensionsContainer {
+  margin-top: 10px;
+}
+.wrDashboardReportCBListAdvReport,
+.wrDashboardReportCBListExpressView {
+  margin-left: 22px;
+  margin-bottom: -16px;
+}
+.wrDashboardReportCBListAdvReport {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TabAdvancedReportSelected.svg");
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+}
+.wrNoSVG .wrDashboardReportCBListAdvReport {
+  background-image: url("../#ApplicationThemeFolder#/Images/TabAdvancedReportSelected.png");
+}
+.wrDashboardReportCBListExpressView {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TabExpressViewSelected.svg");
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+}
+.wrNoSVG .wrDashboardReportCBListExpressView {
+  background-image: url("../#ApplicationThemeFolder#/Images/TabExpressViewSelected.png");
+}
+.wrDashboardFilterSettingsReportsContainer .wrCustomCheckbox > label > span {
+  margin-left: 12px;
+}
+.wrDashboardLayoutFitSeparator {
+  width: 1px;
+  background-color: #d7d7d7;
+  height: 70px;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrDashboardAdvReportTileSettingsMenuTemplate {
+  width: 100%;
+  height: 100%;
+  color: #808080;
+}
+.wrDashboardAdvReportTileSettingsMenuTemplate .wrCustomCheckbox {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.wrDashboardAdvReportTileSettingsMenuTemplate .wrDashboardAdvReportTileSettingsReloadContainer .wrDashboardRightPaneAccordianItemInputLabel {
+  font-style: normal;
+}
+.wDashboardReportTileSettingsMenuAccordionContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrDashboardAdvReportTileSettingsReloadContainer .wrNumericEdit1 {
+  height: 24px;
+  width: 50%;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+}
+.wrDashboardAdvReportTileSettingsReloadContainer .wrNumericEdit1 .wrNumericEditTextBoxContainer {
+  margin-left: 7px;
+}
+.wrDashboardAdvReportTileSettingsReloadContainer .wrNumericEditTextBox1 {
+  font-size: 12px;
+  height: 20px;
+}
+.wrDashboardReportTileSelectedReportLbl {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 6px;
+  color: #6896ED;
+  display: block;
+  -webkit-padding-start: 2px;
+}
+.wrDashboardReportSettingsNewReportBtn,
+.wrDashboardEVSettingsNewReportBtn {
+  width: 40px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: #6896ED;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 3px;
+}
+.wrDashboardFilterListLbl {
+  color: #6896ed;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.wrDashboardFilterListLbl > div {
+  display: inline-block;
+}
+.wrDashboardDynamicFilterAccordion {
+  margin-top: 5px;
+}
+.wrDashboardEmptyParametersList {
+  font-size: 13px;
+  color: #808080;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 33px;
+}
+.wrDashboardLockedFilterAccordion .wrDashboardReportCBListAdvReport {
+  margin-left: 0;
+  margin-bottom: -14px;
+}
+.wrDashboardLockedFilterItem {
+  margin-bottom: 3px;
+}
+.wrDashboardFilterLockedReportLbl {
+  margin-left: 17px;
+  font-size: 12px;
+}
+.wrDashboardFilterFieldNameString,
+.wrDashboardTileFilterFieldNameDiv {
+  font-size: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  padding: 6px 0 0 7px;
+  height: 20px;
+  margin-left: -1px;
+  width: 100%;
+  color: #AAAAAA;
+}
+.wrDashboardFilterMenuFieldNameContainer {
+  display: flex;
+}
+.wrDashboardFilterMenuFieldNameContainer .wrDashboardFilterFormulaBtn {
+  display: none;
+}
+.wrDashboardFilterMenuShowFormula[data-open] .wrDashboardFilterMenuOperatorDesignContainer {
+  margin-top: -1px;
+}
+.wrDashboardFilterMenuShowFormula .wrDashboardFilterMenuFieldNameContainer .wrDashboardFilterFieldDD {
+  flex-basis: 1px;
+  flex-grow: 1;
+  border-left: 0;
+}
+.wrDashboardFilterMenuShowFormula .wrDashboardFilterMenuFieldNameContainer .wrDashboardFilterFormulaBtn {
+  display: block;
+  cursor: pointer;
+  background-image: url(Images/svg/Formula.svg);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  padding-top: 23px;
+  padding-bottom: 3px;
+  padding-right: 27px;
+}
+.wrDashboardParametersMenuParametersListAccordionContainer .wrDashboardReportCBListAdvReport {
+  margin-left: 0;
+  margin-bottom: -14px;
+}
+.wrDashboardExpressViewChartRenderContainer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.wrDashboardExpressViewDesignCanvas {
+  width: 100%;
+  height: 100%;
+}
+.wrDashboardDesignPaneContainer .wrExpressViewChartDesignPane {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: none;
+}
+.wrDashboardDesignPaneContainer .wrExpressViewDesignPaneContainer {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+}
+.wrDashboardDesignPaneContainer .wrExpressViewDesignPaneContainer.wrCursorGrabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.wrDashboardDesignPaneContainer .wrExpressViewTabularReportDesignPane {
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+}
+.wrDashboardDesignPaneContainer .wrExpressViewTableAndHeadersContainer {
+  height: 100%;
+  width: 100%;
+}
+.wrDashboardExpressVizPlaceHolderSeparator {
+  width: 1px;
+  height: 30%;
+  background-color: rgba(139, 139, 139, 0.5);
+}
+.wrDashboardExpressViewVizPlaceHolderTitle {
+  color: rgba(128, 128, 128, 0.5);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+.wrDashboardExpressViewVizPlaceHolderText {
+  color: #808080;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+.wrDashboardExpressViewVizPlaceHolder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrDashboardExpressViewVizPlaceHolder > img {
+  width: 72px;
+  height: 60px;
+}
+.wrDashboardExpressViewVizPlaceHolder .wrDashboardExpressViewVizLabelPlaceHolder {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrDashboardExpressViewVizPlaceHolder .wrDashboardExpressViewVizValuePlaceHolder {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrDashboardExpressViewVizPlaceHolder .wrDashboardImageSettingsTextBody {
+  flex-direction: column;
+}
+.wrDashboardContentBody .wrExpressViewVizDropZoneHovered {
+  background-color: rgba(104, 150, 237, 0.15);
+  border-color: transparent;
+}
+.wrDashboardContentBody .wrExpressViewVizInnerErrorContainer {
+  vertical-align: top;
+}
+.wrDashboardExpressViewChartLayoutButton {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 10;
+  transition: opacity 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewChartButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TileModeViz.svg");
+  background-size: 20px 20px;
+  right: 50px;
+}
+.wrNoSVG .wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewChartButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/TileModeViz.png");
+}
+.wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewChartButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TileModeVizSelected.svg");
+  background-size: 20px 20px;
+  cursor: default;
+}
+.wrNoSVG .wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewChartButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/TileModeVizSelected.png");
+}
+.wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewChartButton[data-selected]:active {
+  background-color: transparent;
+}
+.wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewTabularButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TileModeTabular.svg");
+  background-size: 20px 20px;
+  right: 25px;
+}
+.wrNoSVG .wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewTabularButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/TileModeTabular.png");
+}
+.wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewTabularButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TileModeTabularSelected.svg");
+  background-size: 20px 20px;
+  cursor: default;
+}
+.wrNoSVG .wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewTabularButton[data-selected] {
+  background-image: url("../#ApplicationThemeFolder#/Images/TileModeTabularSelected.png");
+}
+.wrDashboardExpressViewChartLayoutButton.wrDashboardExpressViewTabularButton[data-selected]:active {
+  background-color: transparent;
+}
+.wrTabInnerContent[data-executionon] .wrDashboardTile .wrDashboardExpressViewChartLayoutButton {
+  opacity: 0;
+}
+.wrTabInnerContent[data-executionon] .wrDashboardTile:hover .wrDashboardExpressViewChartLayoutButton {
+  opacity: 1;
+}
+.wrDashboardTileFormatTileBackgroundContainer .wrCustomCheckbox,
+.wrDashboardTileFormatTitleBackgroundContainer .wrCustomCheckbox {
+  margin-top: 22px;
+  vertical-align: top;
+  margin-right: 6px;
+}
+.wrDashboardExpressViewReadOnlyImg {
+  height: 12px;
+  width: 12px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AlertSmall.svg");
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.wrNoSVG .wrDashboardExpressViewReadOnlyImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/AlertSmall.png");
+}
+.wrDashboardExpressViewReadOnlyMsg {
+  color: #8B8B8B;
+  font-size: 12px;
+  font-style: italic;
+  margin-left: calc(50% - 100px);
+  margin-bottom: 5px;
+}
+.wrDashboardExpressViewReadOnlyMsg > div {
+  display: inline-block;
+}
+.wrDashboardExpressViewReadOnlySettingsTemplate {
+  width: 100%;
+}
+.wrDashboardExpressViewReadOnlySettingsTemplate .wrNumericEdit1.wrSelect1 {
+  width: 50%;
+}
+.wrDashboardExpressViewReadOnlySettingsTemplate .wrCustomCheckbox {
+  margin-bottom: 8px;
+}
+.wrDashboardEVTileReportsContainer,
+.wrDashboardReportTileReportsContainer {
+  height: 300px;
+  overflow: auto;
+  min-height: 210px;
+}
+.wrDashboardEVTileReportsContainer .wrTree,
+.wrDashboardReportTileReportsContainer .wrTree {
+  position: static;
+}
+.wrDashboardEVTableFormatFontFamilyContainer {
+  display: inline-block;
+  width: calc(100% - 63px);
+  margin-right: 9px;
+}
+.wrDashboardEVTableFormatFontFamilyContainer .wrDDContainer {
+  float: none;
+  height: 22px;
+  border-radius: 2px;
+  width: 100%;
+}
+.wrDashboardEVTableFormatFontSizeContainer {
+  display: inline-block;
+  width: 50px;
+}
+.wrDashboardEVTableFormatFontColorContainer {
+  display: inline-block;
+  margin-right: 9px;
+  vertical-align: top;
+  width: 60px;
+}
+.wrDashboardEVTableFormatBackgroundColorContainer {
+  display: inline-block;
+  vertical-align: top;
+}
+.wrDashboardEVTableFormatContainer .wrModernColorChooserContainer {
+  width: 60px;
+}
+.wrDashboardEVTableFormatUnderlineContainer {
+  display: inline-block;
+  width: calc(43% - 7px);
+  margin-right: 9px;
+}
+.wrDashboardEVTableFormatDecorationContainer {
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+}
+.wrDashboardEVTableFormatDecorationBtn {
+  height: 22px;
+  width: 1px;
+  display: flex;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrDashboardEVTableFormatNoUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationNormal.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardEVTableFormatNoUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationNormal.png");
+}
+.wrDashboardEVTableFormatSingleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationUnderline.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardEVTableFormatSingleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationUnderline.png");
+}
+.wrDashboardEVTableFormatDoubleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DecorationDoubleUnderline.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardEVTableFormatDoubleUnderline {
+  background-image: url("../#ApplicationThemeFolder#/Images/DecorationDoubleUnderline.png");
+}
+.wrDashboardEVTableFormatHorizontalAlignContainer {
+  width: calc(57% - 7px);
+  display: inline-block;
+  vertical-align: top;
+}
+.wrDashboardEVTableFormatLeftAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignLeft.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardEVTableFormatLeftAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignLeft.png");
+}
+.wrDashboardEVTableFormatCenterAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignCenter.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardEVTableFormatCenterAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignCenter.png");
+}
+.wrDashboardEVTableFormatRightAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignRight.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardEVTableFormatRightAlign {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignRight.png");
+}
+.wrDashboardEVTableFormatJustify {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/EVAlignJustify.svg");
+  background-size: 24px 24px;
+}
+.wrNoSVG .wrDashboardEVTableFormatJustify {
+  background-image: url("../#ApplicationThemeFolder#/Images/EVAlignJustify.png");
+}
+.wrDashboardEVTableFormatFontWeightContainer {
+  margin-bottom: 8px;
+}
+.wrDashboardEVTableFormatRowShadingColorContainer .wrModernColorChooserContainer {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrDashboardEVTableFormatRowShadingColorContainer .wrModernColorChooserColorDisplay {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrDashboardEVTableFormatRowShadingColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  vertical-align: top;
+}
+.wrNoSVG .wrDashboardEVTableFormatRowShadingColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrDashboardEVTableFormatRowShadingColorDeleteButton[disabled] {
+  cursor: default;
+}
+.wrModernColorChooserContainer[data-focus] + .wrDashboardEVTableFormatRowShadingColorDeleteButton {
+  border-color: #666666;
+}
+/* Hide the delete button if the row shading color input is the only one left in the list */
+.wrDashboardEVTableFormatRowShadingColorsList .wrDashboardEVTableFormatRowShadingColorContainer:only-child .wrDashboardEVTableFormatRowShadingColorDeleteButton {
+  display: none;
+}
+.wrDashboardEVTableFormatGroupColorContainer .wrModernColorChooserContainer {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrDashboardEVTableFormatGroupColorContainer .wrModernColorChooserColorDisplay {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrDashboardEVTableFormatGroupColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionDeleteItem.svg");
+  background-size: 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  vertical-align: top;
+}
+.wrNoSVG .wrDashboardEVTableFormatGroupColorDeleteButton {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionDeleteItem.png");
+}
+.wrDashboardEVTableFormatGroupColorDeleteButton[disabled] {
+  cursor: default;
+}
+.wrModernColorChooserContainer[data-focus] + .wrDashboardEVTableFormatGroupColorDeleteButton {
+  border-color: #666666;
+}
+/* Hide the delete button if the row shading color input is the only one left in the list */
+.wrDashboardEVTableFormatRowShadingColorsList .wrDashboardEVTableFormatGroupColorContainer:only-child .wrDashboardEVTableFormatGroupColorDeleteButton {
+  display: none;
+}
+.wrDashboardLockedFilterImg {
+  height: 12px;
+  width: 12px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/TreeReportLockBlue.svg");
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-bottom: -2px;
+}
+.wrNoSVG .wrDashboardLockedFilterImg {
+  background-image: url("../#ApplicationThemeFolder#/Images/TreeReportLockBlue.png");
+}
+.wrDashboardExpressViewTileStyleTemplate .wrExpressViewContentContainer {
+  position: static;
+  overflow: hidden;
+}
+.wrDashboardExpressViewTileStyleTemplate .wrExpressViewRightPaneAccordianItemInputLabel {
+  color: #6896ed;
+  font-size: 12px;
+  margin-right: 8px;
+}
+.wrDashboardExpressViewTileStyleTemplate .wrDashboardVizChartAllTitlesContainer,
+.wrDashboardExpressViewTileStyleTemplate .wrDashboardVizChartDataContainer {
+  padding-top: 9px;
+}
+.wrDashboardExpressViewTileStyleTemplate .wrExpressViewAppearanceFontFamilyContainer {
+  vertical-align: top;
+  margin-top: 5px;
+  width: calc(100% - 63px);
+}
+.wrDashboardExpressViewTileStyleTemplate .wrExpressViewRightPaneFieldSetContent {
+  margin-bottom: 3px;
+}
+.wrDashboardExpressViewTileStyleTemplate .wrExpressViewRightPaneFieldSetContent .wrExpressViewRightPaneAccordianItemInputLabel {
+  font-size: 11px;
+  font-style: italic;
+  color: #808080 ;
+}
+.wrDashboardExpressViewTileStyleTemplate .wrExpressViewAppearanceFontSizeContainer {
+  margin-top: 5px;
+}
+.wrDashboardExpressViewTileStyleTemplate .wrDDContainer {
+  width: 100%;
+  height: 22px;
+  border-radius: 2px;
+}
+.wrIE .wrDashboardExpressViewTileStyleTemplate .wrAccordionContentContainer {
+  transition: none;
+}
+.wrDashboardTileEditMenu .wrDashboardVizDataSortListAndLbl {
+  color: #6896ed;
+  font-size: 12px;
+  font-weight: 500;
+}
+.wrDashboardTileEditMenu .wrDashboardVizDataSortListAndLbl .wrExpressViewSortsMenuSortsList {
+  margin-top: 0;
+}
+.wrDashboardTileEditMenu .wrDashboardVizDataSortListAndLbl .wrDashboardVizDataSortLbl {
+  position: absolute;
+  left: 19px;
+  top: 11px;
+}
+.wrDashboardVizAdvancedFiltersBtnContainer {
+  align-self: left;
+  margin-left: 12px;
+}
+.wrDashboardVizAdvancedFiltersBtnContainer > legend {
+  position: absolute;
+  left: 12px;
+}
+.wrDashboardVizAdvancedFiltersBtnContainer .wrDashboardVizAdvancedFiltersBtn {
+  background: #6896ed;
+  color: white;
+  border-color: #6896ed;
+}
+.wrStandardFiltersEditArea input {
+  font-size: 11px;
+}
+.wrRightPaneBody.wrDashboardSettingsTabWithReportTree {
+  overflow-y: hidden;
+}
+.wrDashboardTileFiltersMenuPresetFiltersLbl {
+  color: #6896ed;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.wrDashboardTileFiltersMenuPresetFiltersLbl > div {
+  display: inline-block;
+}
+.wrDashboardTileFormatTitleContainer {
+  padding-bottom: 1px;
+}
+.wrDashboardCanvasTutorialContainer {
+  position: absolute;
+  position: sticky;
+  top: 0;
+  left: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  opacity: 0;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  transition: opacity 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.wrDashboardCanvasTutorialBackground {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  bottom: -15px;
+  right: 0;
+  filter: blur(7px);
+}
+.wrDashboardCanvasTutorialImg {
+  position: relative;
+  align-self: flex-start;
+}
+.wrDashboardCanvasTutorialMsg {
+  position: relative;
+  top: 15px;
+  margin: 10px;
+  color: #B4B4B4;
+  font-size: 18px;
+  font-style: italic;
+}
+.wrDashboardFilterFormulaBtn {
+  cursor: pointer;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Formula.svg");
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+}
+.wrNoSVG .wrDashboardFilterFormulaBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/Formula.png");
+}
+.wrDashboardFilterTileSettingsCalculateEvery,
+.wrDashboardFiltersCalculateEvery {
+  position: relative;
+  min-height: 42px;
+}
+.wrDashboardFiltersCalculateEvery {
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.wrDashboardFiltersCalculateEvery select {
+  padding: 2px 6px;
+  border-radius: 3px;
+}

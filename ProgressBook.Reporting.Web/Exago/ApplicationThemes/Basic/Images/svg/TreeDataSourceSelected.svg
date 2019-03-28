@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeDataSourceSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <rect width="10" height="2" x="1" y="2"/>
+    <rect width="10" height="2" x="1" y="5"/>
+    <rect width="10" height="2" x="1" y="8"/>
+  </g>
+</svg>

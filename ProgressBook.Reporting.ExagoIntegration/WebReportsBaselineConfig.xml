@@ -1,0 +1,982 @@
+<?xml version="1.0" standalone="yes"?>
+<webreports>
+  <general>
+    <datefunctionsloaded>False</datefunctionsloaded>
+    <formulafunctionsloaded>False</formulafunctionsloaded>
+    <versionnumber>2018.1.2.105</versionnumber>
+    <userid>exagoadmin</userid>
+    <password>G6mqJ4s4ar925844Q24U65T69R7x652M</password>
+    <reportpath />
+    <aliasallentities>False</aliasallentities>
+    <allowhomedirect>True</allowhomedirect>
+    <allowhtmloutput>True</allowhtmloutput>
+    <reporttreeshortcut>Run</reporttreeshortcut>
+    <allowexceloutput>True</allowexceloutput>
+    <allowpdfoutput>True</allowpdfoutput>
+    <allowrtfoutput>True</allowrtfoutput>
+    <allowcsvoutput>True</allowcsvoutput>
+    <defaultoutputtype>html</defaultoutputtype>
+    <writelog>True</writelog>
+    <logginglevel>INFO</logginglevel>
+    <customcode />
+    <dateformat />
+    <timeformat />
+    <datetimeformat />
+    <datetimetreatedas>Date</datetimetreatedas>
+    <readfiltervalues>True</readfiltervalues>
+    <dbtimeout>600</dbtimeout>
+    <dbrowlimit>0</dbrowlimit>
+    <dbrowlimitstepsize>0</dbrowlimitstepsize>
+    <visualizationdbrowlimit>0</visualizationdbrowlimit>
+    <calltypeparamname />
+    <columnparamname />
+    <filterparamname />
+    <fullfilterparamname />
+    <sortparamname />
+    <datacategoryparamname />
+    <objectidparamname />
+    <showgrid>True</showgrid>
+    <debugging>False</debugging>
+    <debugextractionpassword />
+    <restkey />
+    <allowearlypagebreak>False</allowearlypagebreak>
+    <showpdftemplate>True</showpdftemplate>
+    <dashboardpromptatexecution>False</dashboardpromptatexecution>
+    <dashboardshowurlitembutton>True</dashboardshowurlitembutton>
+    <showchartwizard>True</showchartwizard>
+    <showmapwizard>False</showmapwizard>
+    <showgooglemapwizard>False</showgooglemapwizard>
+    <showgaugewizard>True</showgaugewizard>
+    <showlinkreport>True</showlinkreport>
+    <showlinkreportfields>True</showlinkreportfields>
+    <showlinkreportformula>False</showlinkreportformula>
+    <linkedreportdisplay>Cursor</linkedreportdisplay>
+    <showlinkaction>False</showlinkaction>
+    <showinsertimage>True</showinsertimage>
+    <expirationdate />
+    <htmlpaging>True</htmlpaging>
+    <windowheight>0</windowheight>
+    <windowwidth>0</windowwidth>
+    <separatorsymbol>,</separatorsymbol>
+    <currencysymbol>$</currencysymbol>
+    <datamapping>False</datamapping>
+    <showjoinfields>True</showjoinfields>
+    <detectjoinedobjects>False</detectjoinedobjects>
+    <enablespecialcartesianprocessing>False</enablespecialcartesianprocessing>
+    <includenotfilternullvalues>False</includenotfilternullvalues>
+    <temppath />
+    <showschedulereports>False</showschedulereports>
+    <showschedulereportsmanager>False</showschedulereportsmanager>
+    <schedulemanagerviewlevel>User</schedulemanagerviewlevel>
+    <cachevisibilitylevel>User</cachevisibilitylevel>
+    <showschedulereportsemail>False</showschedulereportsemail>
+    <executeremotely>False</executeremotely>
+    <executioncache>False</executioncache>
+    <accessdatasourcesremotely>False</accessdatasourcesremotely>
+    <deleteschedulesuponreportdeletion>True</deleteschedulesuponreportdeletion>
+    <scheduleremotinghost />
+    <synchronousremotinghost />
+    <schedulerqueueservice />
+    <reportscheduleemailsubject>Scheduled Ad Hoc Report</reportscheduleemailsubject>
+    <reportscheduleemailbody />
+    <renewsession>True</renewsession>
+    <decimalsymbol>.</decimalsymbol>
+    <passwordrequirement />
+    <maxtempfileage>1440</maxtempfileage>
+    <allowexecutenewfilters>True</allowexecutenewfilters>
+    <externalinterface />
+    <decimalplaces>-1</decimalplaces>
+    <currencydecimalplaces>-1</currencydecimalplaces>
+    <chartcolors />
+    <geochartmapkey />
+    <mapcolors />
+    <googlemapcolors />
+    <googlemapjsapikey />
+    <googlemapgeocodeapikey />
+    <gaugecolors />
+    <showgroupfilters>True</showgroupfilters>
+    <showtopn>True</showtopn>
+    <showjoinswindow>True</showjoinswindow>
+    <showadvancedjoins>True</showadvancedjoins>
+    <showcomplexjoins>False</showcomplexjoins>
+    <showcategoryalias>False</showcategoryalias>
+    <showeventswindow>False</showeventswindow>
+    <onecategorylimit>False</onecategorylimit>
+    <cacheservices>True</cacheservices>
+    <schedulerrecipientwindow />
+    <filterexecutionwindow />
+    <showiedownloadbutton>False</showiedownloadbutton>
+    <allowmultiplesessions>True</allowmultiplesessions>
+    <allowmd5onfips>False</allowmd5onfips>
+    <showschedulenoenddate>True</showschedulenoenddate>
+    <tempurl />
+    <userprefstorage>Cookie</userprefstorage>
+    <userstartupreportoverwritegettingstarted>False</userstartupreportoverwritegettingstarted>
+    <userstartupreportmaxnum>1</userstartupreportmaxnum>
+    <excelexporttarget>v2010</excelexporttarget>
+    <allowdependantfilters>True</allowdependantfilters>
+    <loadimageprefix />
+    <languagefile>en-us,en-us-getting-started,en-us-tooltips</languagefile>
+    <emailscheduledreports>True</emailscheduledreports>
+    <enablebatchreports>False</enablebatchreports>
+    <showscheduledeliverytypeoptions>True</showscheduledeliverytypeoptions>
+    <usesecureremotingchannel>False</usesecureremotingchannel>
+    <showtemplateuploadbutton>True</showtemplateuploadbutton>
+    <usesvgforappicons>True</usesvgforappicons>
+    <showhelp>True</showhelp>
+    <customhelpsource />
+    <showexportsintab>True</showexportsintab>
+    <showhtmltoolbar>Auto</showhtmltoolbar>
+    <enablescheduling>True</enablescheduling>
+    <showfilterdescription>False</showfilterdescription>
+    <defaultFilterExecutionWindow>Standard</defaultFilterExecutionWindow>
+    <changeableFilterExecutionWindow>True</changeableFilterExecutionWindow>
+    <ignoreinaccessiblereportfolders>False</ignoreinaccessiblereportfolders>
+    <showcrosstabreports>True</showcrosstabreports>
+    <showcrosstabwizard>True</showcrosstabwizard>
+    <showdashboardreports>False</showdashboardreports>
+    <showchainedreports>True</showchainedreports>
+    <showexpressviews>True</showexpressviews>
+    <allowexpressviewliveedit>False</allowexpressviewliveedit>
+    <showdashboardnewvisualizationbutton>True</showdashboardnewvisualizationbutton>
+    <expressviewdatafieldsdisplay>AnyPath</expressviewdatafieldsdisplay>
+    <expressviewjoinalgorithm>Standard</expressviewjoinalgorithm>
+    <datafieldssearchmode>OnSubmit</datafieldssearchmode>
+    <usesampledatafordashboardvisualizationdesign>True</usesampledatafordashboardvisualizationdesign>
+    <showexpressreports>True</showexpressreports>
+    <showexpressreportsstylingtoolbar>True</showexpressreportsstylingtoolbar>
+    <showexpressreportsthemes>True</showexpressreportsthemes>
+    <showexpressreportsgrouping>True</showexpressreportsgrouping>
+    <showexpressreportsformulabutton>True</showexpressreportsformulabutton>
+    <showadvancedreports>True</showadvancedreports>
+    <schemaaccesstype>Datasource</schemaaccesstype>
+    <tempcloudservice />
+    <datacloudservice />
+    <showgroupheadersformulabutton>True</showgroupheadersformulabutton>
+    <allowreportcustomsqlobjects>False</allowreportcustomsqlobjects>
+    <excludedatasourcesreportcustomsql />
+    <servertimezoneoffset />
+    <enhancedtooltips>True</enhancedtooltips>
+    <saveonexecute>False</saveonexecute>
+    <saveonfinish>True</saveonfinish>
+    <enablerightclickmenus>True</enablerightclickmenus>
+    <enablereportstreedraganddrop>True</enablereportstreedraganddrop>
+    <showscheduleintradayrecurrence>True</showscheduleintradayrecurrence>
+    <applygeneralformatdecimalplaces>False</applygeneralformatdecimalplaces>
+    <applygeneralcurrencyrightalignment>True</applygeneralcurrencyrightalignment>
+    <showreportuploaddownloadoptions>True</showreportuploaddownloadoptions>
+    <interactivehtml>True</interactivehtml>
+    <allowhtmlinscheduledemails>False</allowhtmlinscheduledemails>
+    <defaultisdockopen>False</defaultisdockopen>
+    <dockplacement>Left</dockplacement>
+    <csstheme>Basic</csstheme>
+    <executesavetodesign>False</executesavetodesign>
+    <userallowuserreports>True</userallowuserreports>
+    <maxnumberofchartpoints>300</maxnumberofchartpoints>
+    <defaultfont>Arial</defaultfont>
+    <defaultfontsize>8</defaultfontsize>
+    <crosstabmaximumfields>5</crosstabmaximumfields>
+    <defaultchartfont>Arial</defaultchartfont>
+    <webfarmsupport>False</webfarmsupport>
+    <silentdashboardrefresh>False</silentdashboardrefresh>
+    <maxjobexecutionminutes>240</maxjobexecutionminutes>
+    <aggregateandgroupindatabase>False</aggregateandgroupindatabase>
+    <showbrowseroutofdatewarning>True</showbrowseroutofdatewarning>
+    <canjointransformobjectsindb>True</canjointransformobjectsindb>
+  </general>
+  <datasource>
+    <id>0</id>
+    <name>StudentInformation</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>1</id>
+    <name>IntegrationAssembly</name>
+    <dbtype>assembly</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>2</id>
+    <name>QuickReports</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>3</id>
+    <name>DistrictDatabase</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <parameter>
+    <id>SchoolId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>SchoolYearId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>DisciplineOffenderId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>DistrictId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>UserId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>ModifiedByUserId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>userId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>StartDate</id>
+    <data_type>date</data_type>
+    <value />
+    <hidden>False</hidden>
+    <prompt_text>Please enter the beginning of the date range the report will use.</prompt_text>
+  </parameter>
+  <parameter>
+    <id>StopDate</id>
+    <data_type>date</data_type>
+    <value />
+    <hidden>False</hidden>
+    <prompt_text>Please enter the end of the date range the report will use.</prompt_text>
+  </parameter>
+  <parameter>
+    <id>DistrictIrn</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>StudentId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <entity>
+    <entity_name>ITC Student Count Report</entity_name>
+    <db_name>proc_StudentCountReport_ITC</db_name>
+    <category>ITC</category>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>dbo</schema>
+    <key>
+      <col_name>DistrictIRN</col_name>
+    </key>
+    <param>
+      <id>StartDate</id>
+    </param>
+    <param>
+      <id>StopDate</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>Student Count Report District Detail</entity_name>
+    <db_name>proc_StudentCountReport_DistrictDetail</db_name>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>dbo</schema>
+    <key>
+      <col_name>SchoolIRN</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>StartDate</id>
+    </param>
+    <param>
+      <id>StopDate</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>Student Count Report Student Detail</entity_name>
+    <db_name>proc_StudentCountReport_StudentDetail</db_name>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>dbo</schema>
+    <key>
+      <col_name>StudentNumber</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>StartDate</id>
+    </param>
+    <param>
+      <id>StopDate</id>
+    </param>
+  </entity>
+  <function>
+    <name>QuarterNumber</name>
+    <description>Returns the fiscal quarter of a date as a number</description>
+    <category>Date</category>
+    <min_args>1</min_args>
+    <max_args>1</max_args>
+    <arguments_json>[{"Name":"inputDate","Required":true,"Description":"A formatted date string, Date value, or DateTime value"}]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>1</available_in>
+    <filter_return_type>Integer</filter_return_type>
+    <weight>101</weight>
+    <language>cs</language>
+    <program_code>DateTime date = DateTime.Parse(args[0].ToString()); int month = date.Month;
+if (month &gt;= 1 &amp;&amp; month &lt;= 3) 
+	return "1";
+if (month &gt;= 4 &amp;&amp; month &lt;= 6) 
+	return "2"; 
+if (month &gt;= 7 &amp;&amp; month &lt;= 9) 
+	return "3"; 
+if (month &gt;= 10 &amp;&amp; month &lt;= 12) 
+	return "4"; 
+return "0";</program_code>
+  </function>
+  <function>
+    <name>QuarterName</name>
+    <description>Returns the fiscal quarter of a date in the typical Q1, ..., Q4 style</description>
+    <category>Date</category>
+    <min_args>1</min_args>
+    <max_args>1</max_args>
+    <arguments_json>[{"Name":"inputDate","Required":true,"Description":"A formatted date string, Date value, or DateTime value"}]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>1</available_in>
+    <filter_return_type>String</filter_return_type>
+    <weight>101</weight>
+    <language>cs</language>
+    <program_code>DateTime date = DateTime.Parse(args[0].ToString()); int month = date.Month;
+if (month &gt;= 1 &amp;&amp; month &lt;= 3) 
+	return "Q1";
+if (month &gt;= 4 &amp;&amp; month &lt;= 6) 
+	return "Q2"; 
+if (month &gt;= 7 &amp;&amp; month &lt;= 9) 
+	return "Q3"; 
+if (month &gt;= 10 &amp;&amp; month &lt;= 12) 
+	return "Q4"; 
+return "0";</program_code>
+  </function>
+  <function>
+    <name>MonthName</name>
+    <description>Returns the name of the month. Function can take a formatted date string, a Date or DateTime value, or an integer value as input</description>
+    <category>Date</category>
+    <min_args>1</min_args>
+    <max_args>1</max_args>
+    <arguments_json>[{"Name":"inputDateOrNumber","Required":true,"Description":"A formatted date string, a Date or DateTime value, or an integer value"}]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>1</available_in>
+    <filter_return_type>String</filter_return_type>
+    <weight>101</weight>
+    <language>cs</language>
+    <program_code>//create return value
+string monthName = "";
+
+//create int to hold month num
+int monthNumber;
+
+//create datetime to hold date
+DateTime myDate;
+
+//see if input is an integer or a date
+bool intCheck = Int32.TryParse(args[0].ToString(), out monthNumber);
+bool dateCheck = DateTime.TryParse(args[0].ToString(), out myDate);
+
+//make appropriate conversion based on input type
+if(intCheck &amp;&amp; monthNumber &gt; 0 &amp;&amp; monthNumber &lt; 13)
+	monthName = System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(monthNumber);
+else if(dateCheck)
+	monthName = System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(myDate.Month);
+else
+	monthName = "Conversion failed. Please check function input.";
+
+//return converted month name or failure message
+return monthName;</program_code>
+    <reference>
+      <name>mscorlib.dll</name>
+    </reference>
+  </function>
+  <function>
+    <name>Today</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>101</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today;</program_code>
+  </function>
+  <function>
+    <name>Tomorrow</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>102</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(1);</program_code>
+  </function>
+  <function>
+    <name>Yesterday</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>103</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(-1);</program_code>
+  </function>
+  <function>
+    <name>TodayPlus7Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>111</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(7);</program_code>
+  </function>
+  <function>
+    <name>TodayPlus30Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>112</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(30);</program_code>
+  </function>
+  <function>
+    <name>TodayPlus60Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>113</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(60);</program_code>
+  </function>
+  <function>
+    <name>TodayPlus90Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>114</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(90);</program_code>
+  </function>
+  <function>
+    <name>TodayMinus7Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>121</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(-7);</program_code>
+  </function>
+  <function>
+    <name>TodayMinus30Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>122</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(-30);</program_code>
+  </function>
+  <function>
+    <name>TodayMinus60Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>123</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(-60);</program_code>
+  </function>
+  <function>
+    <name>TodayMinus90Days</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>124</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(-90);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfCurrentMonth</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>131</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.Today.Month, 1);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfCurrentMonth</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>132</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.Today.Month, 1).AddMonths(1).AddDays(-1);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfLastMonth</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>133</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.Today.Month, 1).AddMonths(-1);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfLastMonth</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>134</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.Today.Month, 1).AddDays(-1);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfNextMonth</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>135</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.Today.Month, 1).AddMonths(1);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfNextMonth</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>136</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.Today.Month, 1).AddMonths(2).AddDays(-1);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfCurrentYear</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>141</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, 1, 1);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfCurrentYear</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>142</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, 12, 31);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfLastYear</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>143</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, 1, 1).AddYears(-1);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfLastYear</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>144</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, 12, 31).AddYears(-1);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfNextYear</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>145</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, 1, 1).AddYears(1);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfNextYear</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>146</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, 12, 31).AddYears(1);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfCurrentQuarter</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>150</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.CurQuarter * 3 + 1, 1);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfCurrentQuarter</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>151</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.CurQuarter * 3 + 1, 1).AddMonths(3).AddDays(-1);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfLastQuarter</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>152</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.CurQuarter * 3 + 1, 1).AddMonths(-3);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfLastQuarter</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>153</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.CurQuarter * 3 + 1, 1).AddDays(-1);</program_code>
+  </function>
+  <function>
+    <name>FirstDayOfNextQuarter</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>154</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.CurQuarter * 3 + 1, 1).AddMonths(3);</program_code>
+  </function>
+  <function>
+    <name>LastDayOfNextQuarter</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>155</weight>
+    <language>cs</language>
+    <program_code>return new DateTime(sessionInfo.Today.Year, sessionInfo.CurQuarter * 3 + 1, 1).AddMonths(6).AddDays(-1);</program_code>
+  </function>
+  <function>
+    <name>MondayOfCurrentWeek</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>160</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(DayOfWeek.Monday - sessionInfo.Today.DayOfWeek);</program_code>
+  </function>
+  <function>
+    <name>MondayOfLastWeek</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>161</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(DayOfWeek.Monday - sessionInfo.Today.DayOfWeek).AddDays(-7);</program_code>
+  </function>
+  <function>
+    <name>MondayOfNextWeek</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>162</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(DayOfWeek.Monday - sessionInfo.Today.DayOfWeek).AddDays(7);</program_code>
+  </function>
+  <function>
+    <name>FridayOfCurrentWeek</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>163</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(DayOfWeek.Friday - sessionInfo.Today.DayOfWeek);</program_code>
+  </function>
+  <function>
+    <name>FridayOfLastWeek</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>164</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(DayOfWeek.Friday - sessionInfo.Today.DayOfWeek).AddDays(-7);</program_code>
+  </function>
+  <function>
+    <name>FridayOfNextWeek</name>
+    <category>Date</category>
+    <min_args>0</min_args>
+    <max_args>0</max_args>
+    <arguments_json>[]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>2</available_in>
+    <filter_return_type>Date</filter_return_type>
+    <weight>165</weight>
+    <language>cs</language>
+    <program_code>return sessionInfo.Today.AddDays(DayOfWeek.Friday - sessionInfo.Today.DayOfWeek).AddDays(7);</program_code>
+  </function>
+  <function>
+    <name>EmisAssessmentValue</name>
+    <category>Other</category>
+    <min_args>1</min_args>
+    <max_args>3</max_args>
+    <available_in>1</available_in>
+    <filter_return_type>String</filter_return_type>
+    <weight>0</weight>
+    <language>CSharp</language>
+    <program_code>
+      // Takes a series of EMIS assessment scores (which may include asterisks ***) and determines the correct value to report.
+      // Parameter args (array of objects) should be defined by caller in order of precedence, highest first. 
+      // These params may be of type string, int? or decimal?.
+      bool anyAsterisks = false;
+      for(int i=0;i &lt; args.Length; i++) {
+        if (args[i] == null) continue;
+        string val = args[i].ToString().Trim();
+        bool hasAsterisks =  val == "***";
+        anyAsterisks = anyAsterisks || hasAsterisks;
+        if (val != "" &amp;&amp; !hasAsterisks) {
+          return val;
+        }
+      }
+      return (anyAsterisks ? "***" : null);
+    </program_code>
+  </function>
+  <role>
+    <id>DynamicRole</id>
+    <active>False</active>
+    <rolegeneral>
+      <reportpath />
+      <dateformat />
+      <timeformat />
+      <datetimeformat />
+      <separatorsymbol />
+      <currencysymbol />
+      <readfiltervalues />
+      <dbtimeout>0</dbtimeout>
+      <showgrid />
+      <showcrosstabreports />
+      <showdashboardreports />
+      <showexpressreports />
+      <showexpressreportsgrouping />
+      <showexpressreportsformulabutton />
+      <showexpressreportsstylingtoolbar />
+      <showexpressreportsthemes />
+      <showstandardreports />
+      <showschedulereports />
+      <showschedulereportsmanager />
+      <schedulemanagerviewlevel />
+      <showschedulereportsemail />
+      <decimalsymbol />
+      <languagefile />
+      <servertimezoneoffset>0</servertimezoneoffset>
+    </rolegeneral>
+    <security>
+      <folders>
+        <include_all>False</include_all>
+        <read_only>False</read_only>
+        <allow_management>False</allow_management>
+      </folders>
+      <dataobjects>
+        <include_all>False</include_all>
+      </dataobjects>
+      <dataobjectrows />
+    </security>
+  </role>
+  <serverevent>
+    <name>DecorateVendorExtracts</name>
+    <id>0</id>
+    <event_type>OnScheduledReportExecuteSuccess</event_type>
+    <datasource_id>1</datasource_id>
+    <func_name>OnScheduledReportExecuteSuccess</func_name>
+  </serverevent>
+  <serverevent>
+    <name>ChangeDbConnectionString</name>
+    <id>1</id>
+    <event_type>OnReportExecuteStart</event_type>
+    <datasource_id>1</datasource_id>
+    <func_name>OnReportExecuteStart</func_name>
+  </serverevent>
+    <serverevent>
+    <name>RemoveBlankFilters</name>
+    <id>2</id>
+    <event_type>None</event_type>
+    <datasource_id>1</datasource_id>
+    <func_name>RemoveBlankFilters</func_name>
+  </serverevent>
+  <serverevent>
+    <name>OnReportExecuteEnd</name>
+    <id>3</id>
+    <event_type>OnReportExecuteEnd</event_type>
+    <datasource_id>1</datasource_id>
+    <func_name>OnReportExecuteEnd</func_name>
+  </serverevent>
+  <customoption>
+    <option_id>Is_Vendor_Extract</option_id>
+    <option_type>Bool</option_type>
+  </customoption>
+</webreports>

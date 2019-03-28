@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Categories</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="nametab.htm" /><link rel="next" href="sortstab.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="ef93af40-2982-49fb-92f9-5325d19d027b">
+<h2>Categories</h2>
+<p>Select which data to use on the report. The left pane shows the data 
+categories you can access. To see the fields in a category, select it, then 
+click the <strong>View Category Fields</strong> <img src="../Media/Information.png" alt="" /> icon.</p>
+<p class="Aside"><strong>What are data categories?</strong></p>
+<p>Data categories are tables of data, which are organized by rows and columns. 
+Columns are also known as <em>data fields. </em>A row of data has entries for 
+one or more columns in the category. When you add a data field onto a report you 
+are seeing the information in one column of data for every row in the 
+category.</p>
+<p>For example, a data category for <em>Employees </em>could have columns for 
+the first and last names of each employee, an identification number, and a home 
+phone number. Each row represents a person, and each column contains a specific 
+type of information such as Last Name or Phone Number.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/custom.TableOfEmployees.png" alt="" /></p>
+<p class="Caption">Example of a data category for employee records</p>
+<p>You add entire categories at a time to a report, but in the report view you 
+select only the columns you want to see. When you add a data field to the report 
+design, even though you only see one column, the rest of the table is still 
+present behind the scenes. You will never lose the connections between items in 
+each row, and you can always add more fields.</p><a class="_D2HAnchor" name="addingcategories.htm" id="addingcategories.htm"></a>
+<p class="MidTopic">Adding categories</p>
+<p>On the Categories page, add data categories to the report. Later on, you can 
+select which fields you actually want to see in the report <a class="topic-link" href="layouttab.htm">layout</a>.</p>
+<p style="TEXT-ALIGN: center"><img src="../Media/screen.reportwizard_drag_category.png" alt="" /></p>
+<p class="Caption">Dragging a category to the Category Name pane</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />As you add 
+categories, unrelated categories will become unavailable. For more information 
+on how categories are related to each other, see <a class="topic-link" href="joins.htm">Joins</a>.</p><span id="related-topics"></span><a class="_D2HAnchor" name="sqlcategoriesadvancedusers.htm" id="sqlcategoriesadvancedusers.htm"></a>
+<p class="MidTopic">SQL categories (advanced users)</p>
+<p>You may have the ability to define a custom data model for the report without 
+needing to use the predefined data categories. For databases which support 
+unique or unusual behaviors that are not supported in the main interface, you 
+can use custom SQL to supplement or bypass the standard Categories, Sorts, 
+Filters, and/or Joins. Only new reports, created with the Report Wizard, can 
+have a custom SQL category. You cannot add a custom SQL category to an existing 
+report.</p>
+<p class="Caution"><img alt="" src="../Media/custom.caution.png" /> <strong>Caution</strong><br />Writing 
+custom SQL requires knowledge of the underlying databases and their 
+relevant SQL query language. It is only recommended for advanced users.</p>
+<p>To add a custom SQL data category, click <img src="../Media/Add2.png" alt="" /> <strong>Add SQL</strong>. From the <strong>Custom 
+SQL Object</strong> window, add the following:</p>
+<ol>
+  <li class="list_123">
+  <p><strong>Object Name</strong> - Unique name for the custom category. It 
+  cannot be the same as an existing category. It cannot contain white space or 
+  the following characters:</p>
+  <p>[ ] { } . , @</p>
+  </li><li class="list_123">
+  <p><strong>Data Source</strong> - Select the data source to retrieve the data 
+  from.</p>
+  <p>Not every data source you can access may support custom SQL categories.</p>
+  </li><li class="list_123">
+  <p>Enter the full SQL statement in the code window. Note that this will be 
+  inserted into a subquery when it is sent to the database for processing.</p>
+  <p>Optional: <strong>Parameters</strong> are system variables that contain 
+  different values depending on factors such as the person running the report. 
+  To include parameters in the SQL statement, select them from the Parameters 
+  list then click Add. Or enter the parameter name surrounded by At Signs 
+  (@).</p>
+  <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />A custom SQL 
+  category can only be the sole category on a report. A report cannot contain 
+  multiple custom SQL categories, or a mix of custom SQL and standard 
+  categories. Therefore, to include multiple tables on a report with custom SQL, 
+  you must retrieve multiple tables and join them in the SQL statement. If field 
+  names conflict, you can alias them in the SQL statement, or else the 
+  application will append a number to the end to preserve uniqueness.</p>
+  <p>Click the <strong>Test </strong><img alt="" src="../Media/Checkmark.png" /> icon to check if the SQL is valid.</p>
+  </li><li class="list_123">
+  <p>When you have finished writing the SQL, click the <strong>Unique Key 
+  Fields</strong> list and select the unique keys for the category.</p>
+  </li><li class="list_123">
+  <p>Click <strong>Okay</strong> when done. If you have already sorted and 
+  filtered in the SQL statement, you can skip these menus.</p></li></ol>
+<p class="list_123">Once added, you can edit the SQL category by 
+clicking the SQL icon <img alt="" src="../Media/SQL.png" /> next to its 
+name in the Categories window.</p>
+<p style="DISPLAY: inline-block"><a class="topic-link" href="nametab.htm"><img src="../Media/custom.HelpPrevious.png" alt="" /> Name</a></p>
+<p style="FLOAT: right"><a class="topic-link" href="sortstab.htm">Sorts <img src="../Media/custom.HelpNext.png" alt="" /></a></p>
+<div style="CLEAR: both"></div><span id="related-topics"></span><span id="related-topics"></span></body></html>

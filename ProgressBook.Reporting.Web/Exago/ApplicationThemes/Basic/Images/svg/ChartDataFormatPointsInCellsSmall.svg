@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="90" viewBox="0 0 120 90">
+  <title>
+    ChartDataFormatPointsInCellsSmall
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#6896ed" points="62 46 61 46 61 43 59 43 59 46 49 46 49 48 59 48 59 51 61 51 61 48 62 48 62 51 64 51 64 48 67 48 67 51 75 47 67 43 67 46 64 46 64 43 62 43"/>
+    <polygon fill="#C1C1C1" points="48 47 43 44 43 22 8 22 8 69 43 69 43 50"/>
+    <rect width="35" height="9" x="8" y="22" fill="#808080"/>
+    <polygon fill="#C1C1C1" points="112 22 77 22 77 69 112 69"/>
+    <rect width="35" height="9" x="77" y="22" fill="#808080"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    MoveFolderToRoot
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M6 5h4a1 1 0 0 1 0 2H6v1.96a.5.5 0 0 1-.812.39l-3.7-2.96a.5.5 0 0 1 0-.78l3.7-2.96A.5.5 0 0 1 6 3.04V5z"/>
+  </g>
+</svg>

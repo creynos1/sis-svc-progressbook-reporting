@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Execution Caching</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="reportvieweroptions.htm" /><link rel="next" href="template.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="c4f35c47-7f20-4362-b356-15b4e5300aaf">
+<h2>Execution Caching</h2>
+<p>Execution caching allows you to save the data from a report execution, so 
+that reports can be viewed more quickly and with less stress to the database. 
+The frequency and schedule of database updates is customizable for each report. 
+Updates can be scheduled for off-hours in order to better balance system load. 
+Caching can significantly reduce database calls for reports which are accessed 
+frequently. Large or data-intensive reports, which can take a long time to run, 
+especially benefit from caching.</p>
+<p>To set up caching for an Advanced Report:</p>
+<ol>
+  <li class="list_123">
+  <p>From the <img src="../Media/ReportOptions.png" alt="" /> <strong>Report Options 
+  </strong>menu, click <img src="../Media/Options.png" alt="" /> <strong>Options 
+  &gt; <img src="../Media/ExecutionCacheOptions.png" alt="" /> Execution 
+  Caching</strong>.</p>
+  </li><li class="list_123">
+  <p>Select the <strong>Enable execution caching</strong> check box.</p>
+  </li><li class="list_123">
+  <p>Choose which users will be able to see the cached data:</p>
+  <ul>
+    <li class="list_bullets">
+    <p><strong>User</strong> - Only you can see the cached data. When another 
+    user runs the report, it will run against a database instead of the 
+    cache.</p>
+    </li><li class="list_bullets">
+    <p><strong>Company</strong> - All users in your company can see the cached 
+    data. When a user from outside the company runs the report, it will run 
+    against a database instead of the cache.</p>
+    </li><li class="list_bullets">
+    <p><strong>Global</strong> - All users can see the cached data.</p></li></ul>
+  </li><li class="list_123">
+  <p>Choose how often the cache is updated:</p>
+  <ol>
+    <li class="list_abc">
+    <p>Enter a time of day in the <strong>Schedule Time </strong>field, or use 
+    the picker to select a time.</p>
+    </li><li class="list_abc">
+    <p>Optional: To update the cache multiple times per day, select the 
+    <strong>Repeat Every </strong>check box and enter a time for how often it 
+    should repeat.</p>
+    <p>Optional: To repeat until a certain time of day, enter that time in the 
+    <strong>until </strong>field, or use the picker to select a 
+time.</p></li></ol>
+  </li><li class="list_123">
+  <p>Choose which days of the week the cache is updated. Select either:</p>
+  <ul>
+    <li class="list_bullets">
+    <p>To repeat every day or every number of days, click <strong>Every __ 
+    day(s)</strong> and enter a number of days for how often it should 
+    repeat.</p>
+    </li><li class="list_bullets">
+    <p>To repeat every Mon, Tues, Wed, Thurs, and Fri, click <strong>Every 
+    weekday</strong>.</p></li></ul>
+  </li><li class="list_123">
+  <p>Click <strong>Okay</strong>.</p></li></ol>
+<p>When execution caching is enabled for a report, the cache is not created 
+immediately. To run the report, you can manually create the cache by clicking 
+the refresh <img src="../Media/CacheInvalid.png" alt="" /> icon, or you can wait until 
+the first scheduled update completes. The cache can always be updated manually 
+by clicking this icon.</p>
+<p>Cache schedules are visible in the Schedule Manager, with the label <span class="Code">(cache)</span>. Cache schedules can be edited in the Report Designer 
+or the Schedule Manager.</p>
+<p class="list_123" style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.schedulemanager_cache.png" /></p>
+<p class="Caption">A cache schedule visible in the Schedule Manager</p>
+<p class="Aside"><strong>Editing cached reports</strong></p>
+<p>Editing a cached report invalidates its cache. It cannot be run until the 
+cache is updated. A missing or invalid cache is indicated by the message 
+<strong>Cache is invalid</strong><strong> </strong>in the report description and 
+the report menu.</p>
+<p class="list_123" style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.description_cachevalid.png" />      <img alt="" src="../Media/screen.description_cacheinvalid.png" /></p>
+<p class="Caption">Indicators of a valid or invalid cache</p>
+<p>It is recommended that you fully design a report first, so that you can 
+manually verify the output before enabling the cache.</p><span id="related-topics"></span></body></html>

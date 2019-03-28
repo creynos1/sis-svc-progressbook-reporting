@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypePyramid
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <polygon fill-opacity=".5" points="20 6 34 34 6 34"/>
+    <path fill-opacity=".5" d="M26 18l8 16H6l8-16h12z"/>
+    <path d="M30 26l4 8H6l4-8h20z"/>
+  </g>
+</svg>
