@@ -1,0 +1,15 @@
+#LeftDockContents {
+	right: 20px;
+}
+
+#LeftDockResizeBar {
+	width: 20px;
+}
+
+#LeftDockResizeHandle {
+	top: 40%;
+}
+
+#LeftDockResizeHandle > img {
+	width: 16px;
+}
