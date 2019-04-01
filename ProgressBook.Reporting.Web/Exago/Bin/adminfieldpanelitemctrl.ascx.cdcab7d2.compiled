@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminFieldPanelItemCtrl.ascx" hash="d4fa39267" filehash="94d18d7a87f40fb9" flags="110000" assembly="WebReportsUI" type="ASP.adminfieldpanelitemctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminFieldPanelItemCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/FileUploadCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

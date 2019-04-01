@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SimpleLayoutAdvancedPreviewCtrl.ascx" hash="d4fa39267" filehash="3b9213d7349b645e" flags="110000" assembly="WebReportsUI" type="ASP.simplelayoutadvancedpreviewctrl_ascx">
+  <filedeps>
+    <filedep name="/ColorChooserCtrl.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPreviewCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedToolbarCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

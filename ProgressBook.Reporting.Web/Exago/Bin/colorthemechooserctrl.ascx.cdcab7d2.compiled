@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ColorThemeChooserCtrl.ascx" hash="d4fa39267" filehash="c2da94ce1c14070e" flags="110000" assembly="WebReportsUI" type="ASP.colorthemechooserctrl_ascx">
+  <filedeps>
+    <filedep name="/ColorThemeChooserCtrl.ascx" />
+    <filedep name="/ModernColorChooser.ascx" />
+  </filedeps>
+</preserve>

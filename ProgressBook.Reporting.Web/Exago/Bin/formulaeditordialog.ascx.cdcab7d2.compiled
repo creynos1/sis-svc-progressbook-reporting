@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/FormulaEditorDialog.ascx" hash="d4fa39267" filehash="ed6203a6ffe3de36" flags="110000" assembly="WebReportsUI" type="ASP.formulaeditordialog_ascx">
+  <filedeps>
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/FormulaEditorCtrl.ascx" />
+    <filedep name="/FormulaEditorDialog.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

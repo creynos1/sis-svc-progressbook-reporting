@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportCategoriesTreeCtrl.ascx" hash="d4fa39267" filehash="197b74de6e22bcae" flags="110000" assembly="WebReportsUI" type="ASP.reportcategoriestreectrl_ascx">
+  <filedeps>
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportCategoriesTreeCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

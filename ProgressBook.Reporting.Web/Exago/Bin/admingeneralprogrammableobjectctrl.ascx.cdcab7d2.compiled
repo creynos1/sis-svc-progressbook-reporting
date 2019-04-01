@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminGeneralProgrammableObjectCtrl.ascx" hash="d4fa39267" filehash="d0a0840b7e78e196" flags="110000" assembly="WebReportsUI" type="ASP.admingeneralprogrammableobjectctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCheckableTextInputCtrl.ascx" />
+    <filedep name="/AdminGeneralProgrammableObjectCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/AdminWrappedPasswordCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

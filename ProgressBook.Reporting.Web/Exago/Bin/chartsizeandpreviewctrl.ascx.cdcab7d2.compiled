@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChartSizeAndPreviewCtrl.ascx" hash="d4fa39267" filehash="7f34fe691d3dbaf7" flags="110000" assembly="WebReportsUI" type="ASP.chartsizeandpreviewctrl_ascx">
+  <filedeps>
+    <filedep name="/ChartSizeAndPreviewCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/WidgetPreviewCtrl.ascx" />
+  </filedeps>
+</preserve>

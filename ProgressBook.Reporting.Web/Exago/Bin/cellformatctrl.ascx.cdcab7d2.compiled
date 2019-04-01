@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CellFormatCtrl.ascx" hash="d4fa39267" filehash="40bcf15a1b9fec53" flags="110000" assembly="WebReportsUI" type="ASP.cellformatctrl_ascx">
+  <filedeps>
+    <filedep name="/CellFormatCtrl.ascx" />
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/ConditionalAttributeCtrl.ascx" />
+    <filedep name="/DataFormatCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/ListContentCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

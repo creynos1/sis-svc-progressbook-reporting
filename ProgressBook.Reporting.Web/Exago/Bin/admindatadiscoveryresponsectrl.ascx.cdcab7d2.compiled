@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminDataDiscoveryResponseCtrl.ascx" hash="d4fa39267" filehash="11ebceb644fb3725" flags="110000" assembly="WebReportsUI" type="ASP.admindatadiscoveryresponsectrl_ascx">
+  <filedeps>
+    <filedep name="/AdminDataDiscoveryResponseCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

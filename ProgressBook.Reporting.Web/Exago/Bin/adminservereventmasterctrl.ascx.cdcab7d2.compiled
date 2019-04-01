@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminServerEventMasterCtrl.ascx" hash="d4fa39267" filehash="d15df29c647b9a5b" flags="110000" assembly="WebReportsUI" type="ASP.adminservereventmasterctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminEditableMenuItemCtrl.ascx" />
+    <filedep name="/AdminServerEventCtrl.ascx" />
+    <filedep name="/AdminServerEventMasterCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/CodeEditorCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

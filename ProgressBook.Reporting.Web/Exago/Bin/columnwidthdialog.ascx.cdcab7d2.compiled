@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ColumnWidthDialog.ascx" hash="d4fa39267" filehash="35fa6eaf19453151" flags="110000" assembly="WebReportsUI" type="ASP.columnwidthdialog_ascx">
+  <filedeps>
+    <filedep name="/ColumnWidthDialog.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

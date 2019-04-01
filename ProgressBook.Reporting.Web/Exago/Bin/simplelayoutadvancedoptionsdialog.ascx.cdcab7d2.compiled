@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SimpleLayoutAdvancedOptionsDialog.ascx" hash="d4fa39267" filehash="e40b0025922905b3" flags="110000" assembly="WebReportsUI" type="ASP.simplelayoutadvancedoptionsdialog_ascx">
+  <filedeps>
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/SectionShadingCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedOptionsDialog.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GaugeTypeCtrl.ascx" hash="d4fa39267" filehash="44f5846e5318dd36" flags="110000" assembly="WebReportsUI" type="ASP.gaugetypectrl_ascx">
+  <filedeps>
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/GaugeTypeCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

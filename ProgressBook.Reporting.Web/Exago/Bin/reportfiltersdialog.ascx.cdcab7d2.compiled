@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportFiltersDialog.ascx" hash="d4fa39267" filehash="45d4f67c6accc1a6" flags="110000" assembly="WebReportsUI" type="ASP.reportfiltersdialog_ascx">
+  <filedeps>
+    <filedep name="/CustomWindowCtrl.ascx" />
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/EditCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportFiltersDialog.ascx" />
+    <filedep name="/ReportFiltersEditCtrl.ascx" />
+    <filedep name="/ReportFiltersGroupTabCtrl.ascx" />
+    <filedep name="/ReportFiltersStandardTabCtrl.ascx" />
+    <filedep name="/ReportFiltersTopnTabCtrl.ascx" />
+    <filedep name="/SearchableDropDownCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/LinkedReportCtrl.ascx" hash="d4fa39267" filehash="d47d36fb66beac7a" flags="110000" assembly="WebReportsUI" type="ASP.linkedreportctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminEditableMenuItemCtrl.ascx" />
+    <filedep name="/AdminJoinNameCtrl.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/FormulaEditorCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/LinkedReportCtrl.ascx" />
+    <filedep name="/LinkedReportFieldsCtrl.ascx" />
+    <filedep name="/LinkedReportFieldsGridCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportsCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

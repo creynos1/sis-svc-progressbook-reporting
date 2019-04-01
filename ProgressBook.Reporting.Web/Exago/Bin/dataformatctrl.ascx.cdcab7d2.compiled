@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DataFormatCtrl.ascx" hash="d4fa39267" filehash="8d7d0026d05a14e1" flags="110000" assembly="WebReportsUI" type="ASP.dataformatctrl_ascx">
+  <filedeps>
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/DataFormatCtrl.ascx" />
+    <filedep name="/ListContentCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

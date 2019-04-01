@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminMainTreeCtrl.ascx" hash="d4fa39267" filehash="48baf73830ab91b" flags="110000" assembly="WebReportsUI" type="ASP.adminmaintreectrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCheckableTextInputCtrl.ascx" />
+    <filedep name="/AdminGeneralMainCtrl.ascx" />
+    <filedep name="/AdminMainTreeCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GaugeDataCtrl.ascx" hash="d4fa39267" filehash="c33d152c7ea7c129" flags="110000" assembly="WebReportsUI" type="ASP.gaugedatactrl_ascx">
+  <filedeps>
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/GaugeDataCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

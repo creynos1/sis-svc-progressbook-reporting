@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportCategoriesCtrl.ascx" hash="d4fa39267" filehash="b748e9e47c5314d5" flags="110000" assembly="WebReportsUI" type="ASP.reportcategoriesctrl_ascx">
+  <filedeps>
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportCategoriesCtrl.ascx" />
+    <filedep name="/ReportCategoriesGridCtrl.ascx" />
+    <filedep name="/ReportCategoriesTreeCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

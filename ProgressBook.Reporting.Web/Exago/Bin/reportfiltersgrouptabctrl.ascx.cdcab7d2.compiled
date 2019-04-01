@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportFiltersGroupTabCtrl.ascx" hash="d4fa39267" filehash="188bcd516cd33d32" flags="110000" assembly="WebReportsUI" type="ASP.reportfiltersgrouptabctrl_ascx">
+  <filedeps>
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/EditCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportFiltersEditCtrl.ascx" />
+    <filedep name="/ReportFiltersGroupTabCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

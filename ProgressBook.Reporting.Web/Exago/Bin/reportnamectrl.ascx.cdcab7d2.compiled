@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportNameCtrl.ascx" hash="d4fa39267" filehash="9cb6dc3492bed2d3" flags="110000" assembly="WebReportsUI" type="ASP.reportnamectrl_ascx">
+  <filedeps>
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportNameCtrl.ascx" />
+    <filedep name="/ReportsCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

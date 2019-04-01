@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DashboardVizAdvancedFiltersDialog.ascx" hash="d4fa39267" filehash="c6657a6ce82a8fce" flags="110000" assembly="WebReportsUI" type="ASP.dashboardvizadvancedfiltersdialog_ascx">
+  <filedeps>
+    <filedep name="/DashboardVizAdvancedFiltersDialog.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/EditCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportFiltersEditCtrl.ascx" />
+    <filedep name="/ReportFiltersStandardTabCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

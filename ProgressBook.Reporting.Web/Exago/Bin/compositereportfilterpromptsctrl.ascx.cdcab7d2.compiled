@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompositeReportFilterPromptsCtrl.ascx" hash="d4fa39267" filehash="1ba9fb3a63437e49" flags="110000" assembly="WebReportsUI" type="ASP.compositereportfilterpromptsctrl_ascx">
+  <filedeps>
+    <filedep name="/CompositeReportFilterPromptEditCtrl.ascx" />
+    <filedep name="/CompositeReportFilterPromptsCtrl.ascx" />
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/EditCtrl.ascx" />
+    <filedep name="/FilterValueEditCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/TextInputGridItemCtrl.ascx" />
+  </filedeps>
+</preserve>

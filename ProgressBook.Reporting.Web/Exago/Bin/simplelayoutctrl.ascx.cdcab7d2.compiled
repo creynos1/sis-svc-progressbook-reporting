@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SimpleLayoutCtrl.ascx" hash="d4fa39267" filehash="80ec280376a06ac9" flags="110000" assembly="WebReportsUI" type="ASP.simplelayoutctrl_ascx">
+  <filedeps>
+    <filedep name="/ColorChooserCtrl.ascx" />
+    <filedep name="/CrossTabDesignCtrl.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/FileUploadCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedGroupItemCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPageFooterItemCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPageHeaderItemCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedPreviewCtrl.ascx" />
+    <filedep name="/SimpleLayoutAdvancedToolbarCtrl.ascx" />
+    <filedep name="/SimpleLayoutCrossTabCtrl.ascx" />
+    <filedep name="/SimpleLayoutCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

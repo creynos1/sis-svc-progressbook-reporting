@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminCustomOptionListItemsCtrl.ascx" hash="d4fa39267" filehash="d8a5da22cba871f4" flags="110000" assembly="WebReportsUI" type="ASP.admincustomoptionlistitemsctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCustomOptionListItemsCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChainedDesignToolbarCtrl.ascx" hash="d4fa39267" filehash="415174e533ac7af7" flags="110000" assembly="WebReportsUI" type="ASP.chaineddesigntoolbarctrl_ascx">
+  <filedeps>
+    <filedep name="/ChainedDesignToolbarCtrl.ascx" />
+    <filedep name="/ExportSelectCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+  </filedeps>
+</preserve>

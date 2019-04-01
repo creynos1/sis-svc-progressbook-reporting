@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportTemplatesCtrl.ascx" hash="d4fa39267" filehash="bfddf5a84c0fd246" flags="110000" assembly="WebReportsUI" type="ASP.reporttemplatesctrl_ascx">
+  <filedeps>
+    <filedep name="/FileUploadCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ReportTemplatesCtrl.ascx" />
+    <filedep name="/ReportTemplatesGridCtrl.ascx" />
+  </filedeps>
+</preserve>

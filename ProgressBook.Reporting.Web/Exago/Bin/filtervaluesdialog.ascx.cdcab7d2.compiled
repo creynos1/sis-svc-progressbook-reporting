@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/FilterValuesDialog.ascx" hash="d4fa39267" filehash="75a13e8d1732d46c" flags="110000" assembly="WebReportsUI" type="ASP.filtervaluesdialog_ascx">
+  <filedeps>
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/EditCtrl.ascx" />
+    <filedep name="/FilterValueEditCtrl.ascx" />
+    <filedep name="/FilterValuesCtrl.ascx" />
+    <filedep name="/FilterValuesDialog.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

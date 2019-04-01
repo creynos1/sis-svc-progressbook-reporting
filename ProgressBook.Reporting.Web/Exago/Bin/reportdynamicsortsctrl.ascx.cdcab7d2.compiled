@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportDynamicSortsCtrl.ascx" hash="d4fa39267" filehash="c73702428bdda8fb" flags="110000" assembly="WebReportsUI" type="ASP.reportdynamicsortsctrl_ascx">
+  <filedeps>
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/GridCustomInputCtrl.ascx" />
+    <filedep name="/ReportDynamicSortsCtrl.ascx" />
+  </filedeps>
+</preserve>

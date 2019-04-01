@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ConditionalAttributeCtrl.ascx" hash="d4fa39267" filehash="959b63dc2af272d0" flags="110000" assembly="WebReportsUI" type="ASP.conditionalattributectrl_ascx">
+  <filedeps>
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/ConditionalAttributeCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

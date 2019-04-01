@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminRoleMasterCtrl.ascx" hash="d4fa39267" filehash="f4313cc775d8b080" flags="110000" assembly="WebReportsUI" type="ASP.adminrolemasterctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCheckableTextInputCtrl.ascx" />
+    <filedep name="/AdminEditableMenuItemCtrl.ascx" />
+    <filedep name="/AdminRoleFoldersCtrl.ascx" />
+    <filedep name="/AdminRoleGeneralCtrl.ascx" />
+    <filedep name="/AdminRoleMainCtrl.ascx" />
+    <filedep name="/AdminRoleMasterCtrl.ascx" />
+    <filedep name="/AdminRoleObjectsCtrl.ascx" />
+    <filedep name="/AdminRoleRowsCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/AdminWrappedPasswordCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/GridCustomInputCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminCustomFilterFunctionCtrl.ascx" hash="d4fa39267" filehash="ddd701f3d74b12f3" flags="110000" assembly="WebReportsUI" type="ASP.admincustomfilterfunctionctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCustomFilterFunctionCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/CodeEditorCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChartTypeChooserCtrl.ascx" hash="d4fa39267" filehash="71cc43fa914a5178" flags="110000" assembly="WebReportsUI" type="ASP.charttypechooserctrl_ascx">
+  <filedeps>
+    <filedep name="/ChartTypeChooserCtrl.ascx" />
+    <filedep name="/CustomCheckboxCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+  </filedeps>
+</preserve>

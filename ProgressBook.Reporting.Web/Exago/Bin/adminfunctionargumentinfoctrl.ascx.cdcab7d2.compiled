@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminFunctionArgumentInfoCtrl.ascx" hash="d4fa39267" filehash="7b322b4004fbeb69" flags="110000" assembly="WebReportsUI" type="ASP.adminfunctionargumentinfoctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminFunctionArgumentInfoCtrl.ascx" />
+    <filedep name="/CustomCheckboxCtrl.ascx" />
+  </filedeps>
+</preserve>

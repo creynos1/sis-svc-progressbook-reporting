@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CodeEditorDialog.ascx" hash="d4fa39267" filehash="c86c677654696f61" flags="110000" assembly="WebReportsUI" type="ASP.codeeditordialog_ascx">
+  <filedeps>
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/CodeEditorCtrl.ascx" />
+    <filedep name="/CodeEditorDialog.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

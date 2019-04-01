@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ScheduleReportManagerGridCtrl.ascx" hash="d4fa39267" filehash="9a0b17b5e2d13510" flags="110000" assembly="WebReportsUI" type="ASP.schedulereportmanagergridctrl_ascx">
+  <filedeps>
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ScheduleReportManagerGridCtrl.ascx" />
+  </filedeps>
+</preserve>

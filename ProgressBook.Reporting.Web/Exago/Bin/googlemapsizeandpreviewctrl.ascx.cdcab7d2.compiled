@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GoogleMapSizeAndPreviewCtrl.ascx" hash="d4fa39267" filehash="f8d8eab399312a35" flags="110000" assembly="WebReportsUI" type="ASP.googlemapsizeandpreviewctrl_ascx">
+  <filedeps>
+    <filedep name="/GoogleMapSizeAndPreviewCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/WidgetPreviewCtrl.ascx" />
+  </filedeps>
+</preserve>

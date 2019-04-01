@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GridCtrl.ascx" hash="d4fa39267" filehash="ffffcfecba8b6b38" flags="110000" assembly="WebReportsUI" type="ASP.gridctrl_ascx">
+  <filedeps>
+    <filedep name="/GridCtrl.ascx" />
+  </filedeps>
+</preserve>

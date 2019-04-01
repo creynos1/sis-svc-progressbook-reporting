@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminRoleObjectsCtrl.ascx" hash="d4fa39267" filehash="962fa0b86a102d6b" flags="110000" assembly="WebReportsUI" type="ASP.adminroleobjectsctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminRoleObjectsCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

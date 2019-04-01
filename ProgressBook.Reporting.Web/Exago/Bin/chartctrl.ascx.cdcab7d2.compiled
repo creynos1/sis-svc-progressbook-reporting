@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChartCtrl.ascx" hash="d4fa39267" filehash="65e2337ae0e39735" flags="110000" assembly="WebReportsUI" type="ASP.chartctrl_ascx">
+  <filedeps>
+    <filedep name="/ChartAppearanceCtrl.ascx" />
+    <filedep name="/ChartCtrl.ascx" />
+    <filedep name="/ChartDataFormatCtrl.ascx" />
+    <filedep name="/ChartSelectDataCtrl.ascx" />
+    <filedep name="/ChartSizeAndPreviewCtrl.ascx" />
+    <filedep name="/ChartTypeChooserCtrl.ascx" />
+    <filedep name="/ChartTypeCtrl.ascx" />
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/ColorThemeChooserCtrl.ascx" />
+    <filedep name="/CustomCheckboxCtrl.ascx" />
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/ModernColorChooser.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+    <filedep name="/WidgetPreviewCtrl.ascx" />
+  </filedeps>
+</preserve>

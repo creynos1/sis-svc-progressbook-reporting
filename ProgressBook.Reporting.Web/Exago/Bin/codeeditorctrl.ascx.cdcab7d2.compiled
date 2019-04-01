@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CodeEditorCtrl.ascx" hash="d4fa39267" filehash="67bdff392ceff19" flags="110000" assembly="WebReportsUI" type="ASP.codeeditorctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/CodeEditorCtrl.ascx" />
+  </filedeps>
+</preserve>
