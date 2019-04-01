@@ -36,9 +36,9 @@ namespace ProgressBook.Reporting.ExagoIntegration
             return null;
         }
 
-        public static string OnReportExecuteEnd(SessionInfo sessionInfo, bool dataQualified)
+        public static string OnScheduledReportComplete(SessionInfo sessionInfo, WebReports.Api.Scheduler.SchedulerJob schedulerJob)
         {
-            if (!dataQualified)
+            if (sessionInfo.Report.ExecuteDataRowCount == 0)
             {
                 WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
             }
