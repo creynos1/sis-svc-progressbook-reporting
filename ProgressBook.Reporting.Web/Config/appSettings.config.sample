@@ -1,0 +1,11 @@
+﻿ <appSettings>
+    <add key="webpages:Version" value="3.0.0.0" />
+    <add key="webpages:Enabled" value="false" />
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+    <add key="IntegrationPath" value="C:\repos\PB\ProgressBook.Reporting\ProgressBook.Reporting.ExagoIntegration\bin\Debug" />
+    <add key="DbRowLimit" value="300000" />
+    <add key="SchedulerHost" value="tcp://localhost:2001" />
+    <add key="DisableGradeBookIntegration" value="true" />
+    <add key="UploadEnabled" value="true" />
+ </appSettings>
