@@ -17,7 +17,6 @@
 	display: none;
 }
 
-.wrFilterValueBottomContainer {   /* Analytics Hub for some reason has a missing bottom border on this control. */
+.wrFilterValueEditCtrlContainer {   /* Analytics Hub for some reason has a missing bottom border on this control. */
     border-bottom: 1px solid #d7d7d7;
 }
-
