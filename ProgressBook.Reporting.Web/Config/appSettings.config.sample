@@ -3,7 +3,7 @@
     <add key="webpages:Enabled" value="false" />
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
-    <add key="IntegrationPath" value="C:\repos\PB\ProgressBook.Reporting\ProgressBook.Reporting.ExagoIntegration\bin\Debug" />
+    <add key="IntegrationPath" value="C:\ProgramData\Software Answers\Ad Hoc Reports\Integration" />
     <add key="DbRowLimit" value="300000" />
     <add key="SchedulerHost" value="tcp://localhost:2001" />
     <add key="DisableGradeBookIntegration" value="true" />

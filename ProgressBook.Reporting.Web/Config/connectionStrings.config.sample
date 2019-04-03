@@ -3,15 +3,5 @@
 	<add name="StudentInformation" connectionString="Data Source=.;Initial Catalog=CRNT;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
 	<add name="DistrictTemplate" connectionString="Data Source=.;Initial Catalog=districtTemplate;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
 	<add name="PbMasterContext" connectionString="Data Source=.;Initial Catalog=pb_master;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
+    <add name="QuickReports" connectionString="Data Source=.;Initial Catalog=CRNT2;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
 </connectionStrings>
-<!--<connectionStrings>
-	<add name="ProgressBook" connectionString="Data Source=.;Initial Catalog=Central17;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
-	<add name="StudentInformation" connectionString="Data Source=.;Initial Catalog=DASL_meta;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />  
-	<add name="StudentInformation" connectionString="Data Source=.;Initial Catalog=dasl_meta;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />  
-	<add name="StudentInformation" connectionString="Data Source=sapc029;Initial Catalog=DASL_meta;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
-	<add name="PbMasterContext" connectionString="Data Source=.;Initial Catalog=pb_master;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />-->
-<!--<connectionStrings>
-	<add name="ProgressBook" connectionString="Data Source=.;Initial Catalog=Central;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
-	<add name="StudentInformation" connectionString="Data Source=SQL2\MAJR14;Initial Catalog=TCCSA;User Id=webappuser;Password=d@51p@ssw0rd;Application Name=SoftwareAnswers.StudentInformation" providerName="System.Data.SqlClient" />
-	<add name="PbMasterContext" connectionString="Data Source=SQL2\MAJR14;Initial Catalog=pb_master;User Id=pbadmin;Password=pbadmin" providerName="System.Data.SqlClient" />
-</connectionStrings>-->
