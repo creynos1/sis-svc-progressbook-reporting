@@ -988,11 +988,11 @@
     <func_name>RemoveBlankFilters</func_name>
   </serverevent>
   <serverevent>
-    <name>OnReportExecuteEnd</name>
+    <name>OnScheduledReportComplete</name>
     <id>3</id>
-    <event_type>OnReportExecuteEnd</event_type>
+    <event_type>OnScheduledReportComplete</event_type>
     <datasource_id>1</datasource_id>
-    <func_name>OnReportExecuteEnd</func_name>
+    <func_name>OnScheduledReportComplete</func_name>
   </serverevent>
   <customoption>
     <option_id>Is_Vendor_Extract</option_id>
