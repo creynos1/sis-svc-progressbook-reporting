@@ -1,6 +1,5 @@
-
 /* Remove bottom dropdown in Exago Prefilter Multiselect control */
-.wrFilterValueBottomContainer {
+.wrFilterValueMultiAddBtnContainer + .wrFilterValueBottomContainer {
 	pointer-events: none;
 }
 .wrFilterValueMultiEditImgBtn {
