@@ -14,7 +14,7 @@
              friendlyName="StudentInformation Database Information"
              description="Please enter the connection information of the StudentInformation database you would like Reporting to use.">
     <parameterEntry type="XmlFile"
-                    scope="((?&lt;!\\.*))\\connectionStrings.config$"
+                    scope="\\Config\\connectionStrings.config$"
                     match="/connectionStrings/add[@name='StudentInformation']/@connectionString"/>
   </parameter>
 
@@ -24,7 +24,7 @@
              friendlyName="CentralAdmin Database Information"
              description="Please enter the connection information of the CentralAdmin database you would like Reporting to use.">
     <parameterEntry type="XmlFile"
-                    scope="((?&lt;!\\.*))\\connectionStrings.config$"
+                    scope="\\Config\\connectionStrings.config$"
                     match="/connectionStrings/add[@name='ProgressBook']/@connectionString"/>
   </parameter>
 
@@ -34,7 +34,7 @@
            friendlyName="Master Database Information"
            description="Please enter the connection information of the pb_master database you would like Reporting to use.">
     <parameterEntry type="XmlFile"
-                    scope="((?&lt;!\\.*))\\connectionStrings.config$"
+                    scope="\\Config\\connectionStrings.config$"
                     match="/connectionStrings/add[@name='PbMasterContext']/@connectionString"/>
   </parameter>
 
@@ -45,7 +45,7 @@
             friendlyName="StudentInformation Database Information - Read-Only"
             description="Please enter the connection information of the StudentInformation Read-Only database you would like Reporting to use.">
     <parameterEntry type="XmlFile"
-                    scope="((?&lt;!\\.*))\\connectionStrings.config$"
+                    scope="\\Config\\connectionStrings.config$"
                     match="/connectionStrings/add[@name='QuickReports']/@connectionString"/>
   </parameter>
 
@@ -55,7 +55,7 @@
              friendlyName="PB Template Database Information"
              description="Please enter the connection information of the pb_template database you would like Reporting to use.">
     <parameterEntry type="XmlFile"
-                    scope="((?&lt;!\\.*))\\connectionStrings.config$"
+                    scope="\\Config\\connectionStrings.config$"
                     match="/connectionStrings/add[@name='DistrictTemplate']/@connectionString"/>
   </parameter>
 
@@ -64,7 +64,7 @@
              friendlyName="Scheduler Host Address"
              description="Please enter the path to your Scheduler Host.">
     <parameterEntry type="XmlFile"
-                    scope="((?&lt;!\\.*))\\appSettings.config$"
+                    scope="\\Config\\appSettings.config$"
                     match="/appSettings/add[@key='SchedulerHost']/@value"/>
   </parameter>
   <parameter name="UploadEnabled"
@@ -72,7 +72,7 @@
              defaultValue="">
     <parameterValidation type="AllowEmpty" />
     <parameterEntry type="XmlFile"
-                    scope="((?&lt;!\\.*))\\appSettings.config$"
+                    scope="\\Config\\appSettings.config$"
                     match="/appSettings/add[@key='UploadEnabled']/@value">
     </parameterEntry>
   </parameter>
