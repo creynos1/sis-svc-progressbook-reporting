@@ -15,11 +15,14 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
     internal static class Program
     {
         private static readonly string ResourcesNamespace = $"{typeof(Program).Assembly.GetName().Name}.Resources";
-        private const string XmlConfigFileName = "eWebReportsScheduler.xml";
-        private const string ConfigExeFileName = "ProgressBook.Reporting.ExagoScheduler.Config.exe";
-        private const string DefaultSmtpFromName = "ProgressBook Ad Hoc Reports Scheduler";
-        private const string DefaultLogging = "on";
-        private const string DefaultFlushTime = "0";
+        private const string XML_CONFIG_FILE_NAME = "eWebReportsScheduler.xml";
+        private const string CONFIG_EXE_FILE_NAME = "ProgressBook.Reporting.ExagoScheduler.Config.exe";
+        private const string DEFAULT_SMTP_FROM_NAME = "ProgressBook Ad Hoc Reports Scheduler";
+        private const string ENABLE_FTP_SESSION_LOGGING = "false";
+        private const string NUMBER_OF_LOG_DAYS_HISTORY_TO_MAINTAIN = "10";
+        private const string FTP_SESSION_LOG_PATH = @"C:\temp\logs";
+        private const string DEFAULT_LOGGING = "on";
+        private const string DEFAULT_FLUSH_TIME = "0";
 
         /// <summary>
         ///     The main entry point for the application.
@@ -60,7 +63,7 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
 #endif
             try
             {
-                var xmlConfigFilePath = Path.Combine(filePath, XmlConfigFileName);
+                var xmlConfigFilePath = Path.Combine(filePath, XML_CONFIG_FILE_NAME);
                 if (!File.Exists(xmlConfigFilePath))
                 {
                     throw new FileNotFoundException(string.Format("Configuration file not found:\n{0}", xmlConfigFilePath));
@@ -116,18 +119,37 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
 
         private static void DeployConfigExe(string filePath)
         {
-            var exe = GetEmbeddedAssembly(ConfigExeFileName);
-            File.WriteAllBytes(Path.Combine(filePath, ConfigExeFileName), exe);
+            var exe = GetEmbeddedAssembly(CONFIG_EXE_FILE_NAME);
+            File.WriteAllBytes(Path.Combine(filePath, CONFIG_EXE_FILE_NAME), exe);
         }
 
         private static void SetDefaultValues(string configFile)
         {
             XmlDocument xml = new XmlDocument();
             xml.Load(configFile);
-            xml.SelectSingleNode("//smtp_from_name").InnerText = DefaultSmtpFromName;
-            xml.SelectSingleNode("//logging").InnerText = DefaultLogging;
-            xml.SelectSingleNode("//flush_time").InnerText = DefaultFlushTime;
+            xml.SelectSingleNode("//smtp_from_name").InnerText = DEFAULT_SMTP_FROM_NAME;
+            xml.SelectSingleNode("//logging").InnerText = DEFAULT_LOGGING;
+            xml.SelectSingleNode("//flush_time").InnerText = DEFAULT_FLUSH_TIME;
+
+            xml = AddElement(xml, "enable_ftp_session_logging", ENABLE_FTP_SESSION_LOGGING);
+            xml = AddElement(xml, "number_of_log_days_history_to_maintain", NUMBER_OF_LOG_DAYS_HISTORY_TO_MAINTAIN);
+            xml = AddElement(xml, "ftp_session_log_path", FTP_SESSION_LOG_PATH);
+
             xml.Save(configFile);
+        }
+
+        private static XmlDocument AddElement(XmlDocument xml, string elementName, string val)
+        {
+            var rootNode = xml.SelectSingleNode("//eWebReportScheduler");
+
+            if (xml.SelectSingleNode("//" + elementName) == null)
+            {
+                var newElement = xml.CreateElement(elementName);
+                newElement.InnerText = val;
+                rootNode.AppendChild(newElement);
+            }
+
+            return xml;
         }
 
         private static void ResolveEmbeddedAssemblies()

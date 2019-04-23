@@ -3,6 +3,7 @@
     using System;
     using System.Configuration;
     using System.IO;
+    using System.Xml;
 
     public interface IExagoSettings
     {
@@ -11,6 +12,7 @@
         string IntegrationPath { get; }
         string ConfigFileName { get; }
         string ConfigFileFullPath { get; }
+        string SchedulerConfigFileFullPath { get; }
         int DbRowLimit { get; }
         string SchedulerHost { get; }
         string BaseLineConfigFileName { get; }
@@ -44,6 +46,16 @@
         public string ConfigFileName { get; } = "WebReports.xml";
 
         public string ConfigFileFullPath => Path.Combine(ExagoInstallPath, "Config", ConfigFileName);
+
+        public string SchedulerConfigFileFullPath
+        {
+            get
+            {
+                var filePath = AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
+                filePath = filePath.Substring(0, filePath.Length - 32);
+                return Path.Combine(filePath, "eWebReportsScheduler.xml");
+            }
+        }
 
         public int DbRowLimit
         {
@@ -86,7 +98,10 @@
         {
             get
             {
-                var setting = ConfigurationManager.AppSettings["EnableFTPSessionLog"];
+                var xmlConfiguration = new XmlDocument();
+                xmlConfiguration.Load(SchedulerConfigFileFullPath);
+
+                var setting = xmlConfiguration.SelectSingleNode("//enable_ftp_session_logging").InnerText;
 
                 bool value;
                 return !bool.TryParse(setting, out value) ? false : value;
@@ -97,13 +112,25 @@
         {
             get
             {
-                var setting = ConfigurationManager.AppSettings["FTPSessionLogDaysHistory"];
+                var xmlConfiguration = new XmlDocument();
+                xmlConfiguration.Load(SchedulerConfigFileFullPath);
+
+                var setting = xmlConfiguration.SelectSingleNode("//number_of_log_days_history_to_maintain").InnerText;
 
                 int value;
                 return !int.TryParse(setting, out value) ? DEFAULT_FTP_SESSION_LOG_DAYS_HISTORY : value;
             }
         }
 
-        public string FtpSessionLogPath { get; } = ConfigurationManager.AppSettings["FtpSessionLogPath"];
+        public string FtpSessionLogPath
+        {
+            get
+            {
+                var xmlConfiguration = new XmlDocument();
+                xmlConfiguration.Load(SchedulerConfigFileFullPath);
+
+                return xmlConfiguration.SelectSingleNode("//ftp_session_log_path").InnerText;
+            }
+        } 
     }
 }

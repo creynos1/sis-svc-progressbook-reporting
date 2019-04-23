@@ -41,21 +41,6 @@
                 databaseSettings.ConnectionString = _exeConfiguration.ConnectionStrings.ConnectionStrings["StudentInformation"].ConnectionString;
             }
 
-            if (_exeConfiguration.AppSettings.Settings["EnableFtpSessionLog"] != null)
-            {
-                ftpLoggingSettings.EnableFtpSessionLogging = Convert.ToBoolean(_exeConfiguration.AppSettings.Settings["EnableFtpSessionLog"].Value);
-            }
-
-            if (_exeConfiguration.AppSettings.Settings["FtpSessionLogDaysHistory"] != null)
-            {
-                ftpLoggingSettings.NumberofLogDaysHistoryToMaintain = Convert.ToInt16(_exeConfiguration.AppSettings.Settings["FtpSessionLogDaysHistory"].Value);
-            }
-
-            if (_exeConfiguration.AppSettings.Settings["FtpSessionLogPath"] != null)
-            {
-                ftpLoggingSettings.FtpSessionLogPath = _exeConfiguration.AppSettings.Settings["FtpSessionLogPath"].Value;
-            }
-
             // populate email settings
             emailSettings.ServerName = _xmlConfiguration.SelectSingleNode("//smtp_server").InnerText;
             emailSettings.EnableSsl = bool.Parse(_xmlConfiguration.SelectSingleNode("//smtp_enable_ssl").InnerText);
@@ -74,6 +59,11 @@
             advancedSettings.FlushTime = int.Parse(_xmlConfiguration.SelectSingleNode("//flush_time").InnerText);
             advancedSettings.EmailRetryTime = int.Parse(_xmlConfiguration.SelectSingleNode("//email_retry_time").InnerText);
             advancedSettings.StopScheduleOnError = bool.Parse(_xmlConfiguration.SelectSingleNode("//abend_upon_report_error").InnerText);
+
+            // populate ftp logging settings
+            ftpLoggingSettings.EnableFtpSessionLogging = Convert.ToBoolean(_xmlConfiguration.SelectSingleNode("//enable_ftp_session_logging").InnerText);
+            ftpLoggingSettings.NumberofLogDaysHistoryToMaintain = Convert.ToInt16(_xmlConfiguration.SelectSingleNode("//number_of_log_days_history_to_maintain").InnerText);
+            ftpLoggingSettings.FtpSessionLogPath = _xmlConfiguration.SelectSingleNode("//ftp_session_log_path").InnerText;
         }
 
         private void ConfigForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -167,33 +157,6 @@
                 _exeConfiguration.AppSettings.Settings.Add("ServiceName", _serviceName);
             }
 
-            if (_exeConfiguration.AppSettings.Settings["EnableFtpSessionLog"] == null)
-            {
-                _exeConfiguration.AppSettings.Settings.Add("EnableFtpSessionLog", ftpLoggingSettings.EnableFtpSessionLogging.ToString().ToLower());
-            }
-            else
-            {
-                _exeConfiguration.AppSettings.Settings["EnableFtpSessionLog"].Value = ftpLoggingSettings.EnableFtpSessionLogging.ToString().ToLower();
-            }
-
-            if (_exeConfiguration.AppSettings.Settings["FtpSessionLogDaysHistory"] == null)
-            {
-                _exeConfiguration.AppSettings.Settings.Add("FtpSessionLogDaysHistory", ftpLoggingSettings.NumberofLogDaysHistoryToMaintain.ToString());
-            }
-            else
-            {
-                _exeConfiguration.AppSettings.Settings["FtpSessionLogDaysHistory"].Value = ftpLoggingSettings.NumberofLogDaysHistoryToMaintain.ToString();
-            }
-
-            if (_exeConfiguration.AppSettings.Settings["FtpSessionLogPath"] == null)
-            {
-                _exeConfiguration.AppSettings.Settings.Add("FtpSessionLogPath", ftpLoggingSettings.FtpSessionLogPath);
-            }
-            else
-            {
-                _exeConfiguration.AppSettings.Settings["FtpSessionLogPath"].Value = ftpLoggingSettings.FtpSessionLogPath;
-            }
-
             _exeConfiguration.Save();
 
             // save email settings
@@ -214,6 +177,11 @@
             _xmlConfiguration.SelectSingleNode("//flush_time").InnerText = advancedSettings.FlushTime.ToString();
             _xmlConfiguration.SelectSingleNode("//email_retry_time").InnerText = advancedSettings.EmailRetryTime.ToString();
             _xmlConfiguration.SelectSingleNode("//abend_upon_report_error").InnerText = advancedSettings.StopScheduleOnError.ToString().ToLowerInvariant();
+
+            // save ftp logging settings
+            _xmlConfiguration.SelectSingleNode("//enable_ftp_session_logging").InnerText = ftpLoggingSettings.EnableFtpSessionLogging.ToString().ToLowerInvariant();
+            _xmlConfiguration.SelectSingleNode("//number_of_log_days_history_to_maintain").InnerText = ftpLoggingSettings.NumberofLogDaysHistoryToMaintain.ToString();
+            _xmlConfiguration.SelectSingleNode("//ftp_session_log_path").InnerText = ftpLoggingSettings.FtpSessionLogPath;
 
             _xmlConfiguration.Save(_xmlConfigFile);
         }
