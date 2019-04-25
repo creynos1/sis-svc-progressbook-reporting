@@ -31,17 +31,32 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
         public static string OnReportExecuteStart(SessionInfo sessionInfo)
         {
-            TrackManualReportExecution(sessionInfo);
-            ChangeDataSourceConnectionString(sessionInfo, "QuickReports", "StudentInformation");
-            ChangeDistrictDataSource(sessionInfo);
+            try
+            {
+                TrackManualReportExecution(sessionInfo);
+                ChangeDataSourceConnectionString(sessionInfo, "QuickReports", "StudentInformation");
+                ChangeDistrictDataSource(sessionInfo);
+            }
+            catch (Exception ex)
+            {
+                sessionInfo.WriteLog(string.Format("OnReportExecuteStart Error. {0}", ex.ToString()));
+            }
+
             return null;
         }
 
         public static string OnScheduledReportComplete(SessionInfo sessionInfo, WebReports.Api.Scheduler.SchedulerJob schedulerJob)
         {
-            if (sessionInfo.Report.ExecuteDataRowCount == 0)
+            try
             {
-                WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
+                if (sessionInfo.Report.ExecuteDataRowCount == 0)
+                {
+                    WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
+                }
+            }
+            catch (Exception ex)
+            {
+                sessionInfo.WriteLog(string.Format("OnScheduledReportComplete Error. {0}", ex.ToString()));
             }
 
             return null;
@@ -96,35 +111,43 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
         public static bool OnScheduledReportExecuteSuccess(SessionInfo sessionInfo)
         {
-            var vendorExtractCustomOption = sessionInfo.Report.CustomOptionValues.GetCustomOptionValue("Is_Vendor_Extract");
-            if (vendorExtractCustomOption == null)
+            try
             {
-                return false;
-            }
-            if (!bool.Parse(vendorExtractCustomOption.Value))
-            {
-                return false;
-            }
 
-            var status = FTPOutputFile(sessionInfo);
-
-            if (status)
-            {
-                string fileName;
-                switch (sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult)
+                var vendorExtractCustomOption = sessionInfo.Report.CustomOptionValues.GetCustomOptionValue("Is_Vendor_Extract");
+                if (vendorExtractCustomOption == null)
                 {
-                    case wrExecuteReturnValue.Success:
-                        fileName = MoveFileToRepository(sessionInfo);
-                        break;
-                    case wrExecuteReturnValue.NothingQualified:
-                        fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
-                        break;
-                    default:
-                        fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
-                        break;
+                    return false;
+                }
+                if (!bool.Parse(vendorExtractCustomOption.Value))
+                {
+                    return false;
                 }
 
-                UpdateJobScheduleTable(sessionInfo, fileName);
+                var status = FTPOutputFile(sessionInfo);
+
+                if (status)
+                {
+                    string fileName;
+                    switch (sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult)
+                    {
+                        case wrExecuteReturnValue.Success:
+                            fileName = MoveFileToRepository(sessionInfo);
+                            break;
+                        case wrExecuteReturnValue.NothingQualified:
+                            fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
+                            break;
+                        default:
+                            fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
+                            break;
+                    }
+
+                    UpdateJobScheduleTable(sessionInfo, fileName);
+                }
+            }
+            catch (Exception ex)
+            {
+                sessionInfo.WriteLog(string.Format("OnScheduledReportExecuteSuccess Error. {0}", ex.ToString()));
             }
 
             return true;
@@ -141,6 +164,8 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
             if (ftpInfo == null)
             {
+                sessionInfo.WriteLog(string.Format("Cannot FTP the file - No valid Vendor Extracts configured for DistrictId({0}), UserID({1}), and ReportEntitiyId({2}).", user.DistrictId, user.UserId, reportEntity.Id));
+
                 return false;
             }
 
@@ -155,6 +180,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                     SendFileViaFtp(ftpInfo, sessionInfo.Report.DownloadFn, reportEntity.Name, sessionInfo);
                     break;
                 default:
+                    sessionInfo.WriteLog(string.Format("Cannot FTP the file - Unsupported protocol type."));
                     return false;
             }
 
@@ -190,40 +216,9 @@ namespace ProgressBook.Reporting.ExagoIntegration
                     }
             };
 
-            try
-            {
-                var dbContext = new JobSchedulingDbContext("StudentInformation");
-                dbContext.JobSchedulings.Add(jobScheduling);
-                dbContext.SaveChanges();
-            }
-            catch (DbUpdateException ex)
-            {
-                if (ex.Message.Contains("See the inner exception for details"))
-                {
-                    sessionInfo.WriteLog(string.Format("Encountered exception while trying to save JobScheduling data: {0}", ex.InnerException.Message));
-                    throw ex.InnerException;
-                }
-
-                throw;
-            }
-            catch (DbEntityValidationException ex)
-            {
-                var sb = new StringBuilder();
-                sb.AppendLine("The following entity validation errors occured:");
-                foreach (var entityError in ex.EntityValidationErrors)
-                {
-                    foreach (var validationError in entityError.ValidationErrors)
-                    {
-                        sb.AppendFormat("{0}.{1}: {2}\r\n",
-                                        entityError.Entry.Entity,
-                                        validationError.PropertyName,
-                                        validationError.ErrorMessage);
-                    }
-                }
-
-                sessionInfo.WriteLog(string.Format("Encountered exception while trying to save JobScheduling data: {0}", sb.ToString()));
-                throw new Exception(sb.ToString());
-            }
+            var dbContext = new JobSchedulingDbContext("StudentInformation");
+            dbContext.JobSchedulings.Add(jobScheduling);
+            dbContext.SaveChanges();
         }
 
         private static string MoveFileToRepository(SessionInfo sessionInfo)
@@ -241,11 +236,12 @@ namespace ProgressBook.Reporting.ExagoIntegration
             var fileExtension = Path.GetExtension(execution.DownloadName);
             var newFilename = string.Format(newFilenameTemplate, reportUniqueId, DateTime.Now.Ticks, fileExtension);
             string newFilePath = Path.Combine(output_directory, newFilename);
-            if(File.Exists(newFilePath))
+            if (File.Exists(newFilePath))
             {
                 File.Delete(newFilePath);
             }
             File.Move(outputFilePath, newFilePath);
+
             return newFilePath;
         }
 
@@ -257,7 +253,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
             return doc.SelectSingleNode("//report_path").InnerText;
         }
 
-        private static void SendFileViaSftp(DistrictVendorFtpInfo info, string filename, string reportName, SessionInfo sessionInfo)
+        private static void SendFileViaSftp(DistrictVendorFtpInfo info, string originFileName, string reportName, SessionInfo sessionInfo)
         {
             var sessionOptions = new SessionOptions
             {
@@ -276,6 +272,8 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 sessionOptions.SshHostKeyFingerprint = knownHost.Fingerprint;
             }
 
+            var destFileName = BuildFileName(info, originFileName, reportName);
+
             using (var session = new Session())
             {
                 IExagoSettings exagoSettings = new ExagoSettings(new ServerPathResolver());
@@ -290,7 +288,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 {
                     var fingerprint = session.ScanFingerprint(sessionOptions);
                     sessionOptions.SshHostKeyFingerprint = fingerprint;
-                    knownHostsMgr.SshKnownHosts.Add(new SshKnownHost {Host = sessionKey, Fingerprint = fingerprint});
+                    knownHostsMgr.SshKnownHosts.Add(new SshKnownHost { Host = sessionKey, Fingerprint = fingerprint });
                     knownHostsMgr.Save();
                 }
 
@@ -303,8 +301,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                     session.CreateDirectory(info.FtpConnectionInfo.RemoteDirectory);
                 }
 
-                var destFileName = BuildFileName(info, filename, reportName);
-                var result = session.PutFiles(filename, destFileName);
+                var result = session.PutFiles(originFileName, destFileName);
                 result.Check();
             }
         }
@@ -324,7 +321,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
             return string.Format("{0}\\ftp-session-{1}-{2}-{3}.log", exagoSettings.FtpSessionLogPath, DateTime.Now.ToString("MM"), DateTime.Now.ToString("dd"), DateTime.Now.ToString("yyyy"));
         }
 
-        private static void SendFileViaFtp(DistrictVendorFtpInfo info, string filename, string reportName, SessionInfo sessionInfo)
+        private static void SendFileViaFtp(DistrictVendorFtpInfo info, string originFileName, string reportName, SessionInfo sessionInfo)
         {
             var sessionOptions = new SessionOptions
             {
@@ -345,6 +342,8 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 sessionOptions.FtpSecure = FtpSecure.Implicit;
             }
 
+            var destFileName = BuildFileName(info, originFileName, reportName);
+
             using (var session = new Session())
             {
                 IExagoSettings exagoSettings = new ExagoSettings(new ServerPathResolver());
@@ -363,8 +362,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                     session.CreateDirectory(info.FtpConnectionInfo.RemoteDirectory);
                 }
 
-                var destFileName = BuildFileName(info, filename, reportName);
-                var result = session.PutFiles(filename, destFileName);
+                var result = session.PutFiles(originFileName, destFileName);
                 result.Check();
             }
         }
@@ -402,7 +400,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
         {
             byte jobStatus;
 
-            switch(result)
+            switch (result)
             {
                 case wrExecuteReturnValue.Success:
                 case wrExecuteReturnValue.NothingQualified:
