@@ -17,6 +17,7 @@
         string SchedulerHost { get; }
         string BaseLineConfigFileName { get; }
         string ServerEventsTypeName { get; }
+        string OneRosterTypeName { get; }
         string IntegrationAssembly { get; }
         string ReportPathTypeName { get; }
         string SisDataSourceId { get; }
@@ -74,6 +75,8 @@
             "ProgressBook.Reporting.ExagoIntegration.WebReportsBaselineConfig.xml";
 
         public string ServerEventsTypeName { get; } = typeof(ServerEvents).FullName;
+
+        public string OneRosterTypeName { get; } = typeof(OneRosterExtractor).FullName;
 
         public string IntegrationAssembly => Path.Combine(IntegrationPath,
                                                           typeof(ExagoSettings).Assembly.GetName().Name + ".dll");

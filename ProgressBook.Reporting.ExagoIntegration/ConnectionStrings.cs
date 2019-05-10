@@ -9,6 +9,7 @@
         string QuickReports { get; }
         string PbMaster { get; }
         string IntegrationAssembly { get; }
+        string OneRosterIntegrationAssembly { get; }
     }
 
     public class ConnectionStrings : IConnectionStrings
@@ -33,5 +34,8 @@
 
         public string IntegrationAssembly =>
             $@"assembly={_exagoSettings.IntegrationAssembly};class={_exagoSettings.ServerEventsTypeName}";
+
+        public string OneRosterIntegrationAssembly =>
+            $@"assembly={_exagoSettings.IntegrationAssembly};class={_exagoSettings.OneRosterTypeName}";
     }
 }

@@ -51,6 +51,21 @@
     <Reference Include="Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2, processorArchitecture=MSIL">
       <HintPath>..\packages\Pipelines.Sockets.Unofficial.1.0.9\lib\net472\Pipelines.Sockets.Unofficial.dll</HintPath>
     </Reference>
+    <Reference Include="ProgressBook.GradeBook.Assignments, Version=18.2.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.GradeBook.Assignments.18.2.0.15\lib\net471\ProgressBook.GradeBook.Assignments.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgressBook.GradeBook.ClassSchedule, Version=18.2.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.GradeBook.ClassSchedule.18.2.0.15\lib\net471\ProgressBook.GradeBook.ClassSchedule.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgressBook.GradeBook.Common, Version=18.2.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.GradeBook.Common.18.2.0.15\lib\net471\ProgressBook.GradeBook.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgressBook.GradeBook.Data, Version=18.2.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.GradeBook.Data.18.2.0.15\lib\net471\ProgressBook.GradeBook.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgressBook.LmsIntegration.OneRoster, Version=19.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.LmsIntegration.OneRoster.19.0.0.3\lib\net471\ProgressBook.LmsIntegration.OneRoster.dll</HintPath>
+    </Reference>
     <Reference Include="ProgressBook.Master.Connections, Version=18.9.0.14, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Master.Connections.18.9.0.14\lib\net471\ProgressBook.Master.Connections.dll</HintPath>
     </Reference>
@@ -104,6 +119,9 @@
     <Reference Include="System.IO.Pipelines, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.4.5.3\lib\netstandard2.0\System.IO.Pipelines.dll</HintPath>
     </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
@@ -154,6 +172,7 @@
     <Compile Include="ConnectionStrings.cs" />
     <Compile Include="ExagoSettings.cs" />
     <Compile Include="IReportFolderManagement.cs" />
+    <Compile Include="OneRosterExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportFolderManagement.cs" />
     <Compile Include="ReportHelper.cs" />

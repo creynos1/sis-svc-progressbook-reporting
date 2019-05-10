@@ -76,6 +76,9 @@
                 api.DataSources.EnsureDataSourceExists("DistrictDatabase",
                                                        "mssql",
                                                        _connectionStrings.DistrictTemplate);
+                api.DataSources.EnsureDataSourceExists("PbMaster",
+                                       "mssql",
+                                       _connectionStrings.PbMaster);
 
                 using (var districtProfileService = new DistrictProfileService(_connectionStrings.PbMaster))
                 {
@@ -98,6 +101,9 @@
             api.DataSources.EnsureDataSourceExists("IntegrationAssembly",
                                                    "assembly",
                                                    _connectionStrings.IntegrationAssembly);
+            api.DataSources.EnsureDataSourceExists("OneRosterIntegrationAssembly",
+                                       "assembly",
+                                       _connectionStrings.OneRosterIntegrationAssembly);
         }
 
         private void ConfigureMainSettings(Api api)
