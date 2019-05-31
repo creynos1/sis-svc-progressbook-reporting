@@ -194,6 +194,26 @@
       <Link>Resources\ProgressBook.Shared.Utilities.Logging.dll</Link>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.GradeBook.ClassSchedule.dll">
+      <Link>Resources\ProgressBook.GradeBook.ClassSchedule.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.GradeBook.Common.dll">
+      <Link>Resources\ProgressBook.GradeBook.Common.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.GradeBook.Data.dll">
+      <Link>Resources\ProgressBook.GradeBook.Data.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.LmsIntegration.OneRoster.dll">
+      <Link>Resources\ProgressBook.LmsIntegration.OneRoster.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Master.Connections.dll">
+      <Link>Resources\ProgressBook.Master.Connections.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ProgressBook.Reporting.ExagoIntegration\bin\Release\ProgressBook.Master.Data.dll">
+      <Link>Resources\ProgressBook.Master.Data.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
