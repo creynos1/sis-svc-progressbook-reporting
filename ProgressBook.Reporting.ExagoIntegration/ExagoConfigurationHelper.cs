@@ -70,24 +70,21 @@
             api.DataSources.EnsureDataSourceExists("StudentInformation",
                                                    "mssql",
                                                    _connectionStrings.StudentInformation);
+            
+            api.DataSources.EnsureDataSourceExists("DistrictDatabase",
+                                                   "mssql",
+                                                   _connectionStrings.DistrictTemplate);
+            api.DataSources.EnsureDataSourceExists("PbMaster",
+                                   "mssql",
+                                   _connectionStrings.PbMaster);
 
-            if (!_exagoSettings.DisableGradeBookIntegration)
+            using (var districtProfileService = new DistrictProfileService(_connectionStrings.PbMaster))
             {
-                api.DataSources.EnsureDataSourceExists("DistrictDatabase",
-                                                       "mssql",
-                                                       _connectionStrings.DistrictTemplate);
-                api.DataSources.EnsureDataSourceExists("PbMaster",
-                                       "mssql",
-                                       _connectionStrings.PbMaster);
-
-                using (var districtProfileService = new DistrictProfileService(_connectionStrings.PbMaster))
+                foreach (var districtProfile in districtProfileService.GetAllDistricts())
                 {
-                    foreach (var districtProfile in districtProfileService.GetAllDistricts())
-                    {
-                        api.DataSources.EnsureDataSourceExists($"District_{districtProfile.Irn}",
-                                                               "mssql",
-                                                               districtProfile.ConnectionString);
-                    }
+                    api.DataSources.EnsureDataSourceExists($"District_{districtProfile.Irn}",
+                                                           "mssql",
+                                                           districtProfile.ConnectionString);
                 }
             }
 

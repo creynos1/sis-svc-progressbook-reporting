@@ -23,7 +23,6 @@
         string SisDataSourceId { get; }
         string SisReadonlyDataSourceId { get; }
         string GradeBookDataSourceId { get; }
-        bool DisableGradeBookIntegration { get; }
         bool EnableFtpSessionLog { get; }
         int FTPSessionLogDaysHistory { get; }
         string FtpSessionLogPath { get; }
@@ -85,17 +84,6 @@
         public string SisDataSourceId { get; } = "0";
         public string SisReadonlyDataSourceId { get; } = "2";
         public string GradeBookDataSourceId { get; } = "3";
-
-        public bool DisableGradeBookIntegration
-        {
-            get
-            {
-                var setting = ConfigurationManager.AppSettings["DisableGradeBookIntegration"];
-
-                bool value;
-                return !bool.TryParse(setting, out value) ? false : value;
-            }
-        }
 
         public bool EnableFtpSessionLog
         {

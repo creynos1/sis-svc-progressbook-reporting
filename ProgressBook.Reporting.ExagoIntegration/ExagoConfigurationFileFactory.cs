@@ -68,15 +68,12 @@
                 sb.AppendLine(_exagoEntitySerializer.ToXml(viewInfo, _sisEntityDataSourceId));
             }
 
-            if (!_exagoSettings.DisableGradeBookIntegration)
-            {
-                var gradeBookReportViewInfoRepository = new GradeBookReportViewInfoRepository();
-                var gradeBookViewInfoList = gradeBookReportViewInfoRepository.GetGradeBookEntities();
+            var gradeBookReportViewInfoRepository = new GradeBookReportViewInfoRepository();
+            var gradeBookViewInfoList = gradeBookReportViewInfoRepository.GetGradeBookEntities();
 
-                foreach (var viewInfo in gradeBookViewInfoList)
-                {
-                    sb.AppendLine(_exagoEntitySerializer.ToXml(viewInfo, _exagoSettings.GradeBookDataSourceId));
-                }
+            foreach (var viewInfo in gradeBookViewInfoList)
+            {
+                sb.AppendLine(_exagoEntitySerializer.ToXml(viewInfo, _exagoSettings.GradeBookDataSourceId));
             }
 
             frag.InnerXml = sb.ToString();
