@@ -61,7 +61,7 @@
             this.tabs.Name = "tabs";
             this.tabs.Padding = new System.Drawing.Point(10, 5);
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(466, 354);
+            this.tabs.Size = new System.Drawing.Size(466, 420);
             this.tabs.TabIndex = 5;
             // 
             // emailTab
@@ -70,7 +70,7 @@
             this.emailTab.Location = new System.Drawing.Point(4, 28);
             this.emailTab.Name = "emailTab";
             this.emailTab.Padding = new System.Windows.Forms.Padding(3);
-            this.emailTab.Size = new System.Drawing.Size(458, 322);
+            this.emailTab.Size = new System.Drawing.Size(458, 388);
             this.emailTab.TabIndex = 1;
             this.emailTab.Text = "Email";
             this.emailTab.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@
             this.databaseTab.Location = new System.Drawing.Point(4, 28);
             this.databaseTab.Name = "databaseTab";
             this.databaseTab.Padding = new System.Windows.Forms.Padding(3);
-            this.databaseTab.Size = new System.Drawing.Size(458, 322);
+            this.databaseTab.Size = new System.Drawing.Size(458, 388);
             this.databaseTab.TabIndex = 0;
             this.databaseTab.Text = "Database";
             this.databaseTab.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             this.databaseSettings.Name = "databaseSettings";
             this.databaseSettings.Password = "";
             this.databaseSettings.ServerName = "";
-            this.databaseSettings.Size = new System.Drawing.Size(452, 316);
+            this.databaseSettings.Size = new System.Drawing.Size(452, 382);
             this.databaseSettings.TabIndex = 2;
             this.databaseSettings.UserName = "";
             // 
@@ -123,7 +123,7 @@
             this.serviceTab.Location = new System.Drawing.Point(4, 28);
             this.serviceTab.Name = "serviceTab";
             this.serviceTab.Padding = new System.Windows.Forms.Padding(3);
-            this.serviceTab.Size = new System.Drawing.Size(458, 322);
+            this.serviceTab.Size = new System.Drawing.Size(458, 388);
             this.serviceTab.TabIndex = 3;
             this.serviceTab.Text = "Service";
             this.serviceTab.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@
             this.serviceAccountSettings.Name = "serviceAccountSettings";
             this.serviceAccountSettings.ServiceAccount = "";
             this.serviceAccountSettings.ServicePassword = "";
-            this.serviceAccountSettings.Size = new System.Drawing.Size(452, 316);
+            this.serviceAccountSettings.Size = new System.Drawing.Size(452, 382);
             this.serviceAccountSettings.TabIndex = 0;
             // 
             // advancedTab
@@ -145,7 +145,7 @@
             this.advancedTab.Location = new System.Drawing.Point(4, 28);
             this.advancedTab.Name = "advancedTab";
             this.advancedTab.Padding = new System.Windows.Forms.Padding(3);
-            this.advancedTab.Size = new System.Drawing.Size(458, 322);
+            this.advancedTab.Size = new System.Drawing.Size(458, 388);
             this.advancedTab.TabIndex = 2;
             this.advancedTab.Text = "Advanced";
             this.advancedTab.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             this.advancedSettings.Name = "advancedSettings";
             this.advancedSettings.ReportPath = "";
             this.advancedSettings.SimultaneousJobMax = 1;
-            this.advancedSettings.Size = new System.Drawing.Size(452, 316);
+            this.advancedSettings.Size = new System.Drawing.Size(452, 382);
             this.advancedSettings.SleepTime = 15;
             this.advancedSettings.StopScheduleOnError = false;
             this.advancedSettings.TabIndex = 5;
@@ -174,7 +174,7 @@
             this.ftpLoggingTab.Location = new System.Drawing.Point(4, 28);
             this.ftpLoggingTab.Name = "ftpLoggingTab";
             this.ftpLoggingTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ftpLoggingTab.Size = new System.Drawing.Size(458, 322);
+            this.ftpLoggingTab.Size = new System.Drawing.Size(458, 388);
             this.ftpLoggingTab.TabIndex = 4;
             this.ftpLoggingTab.Text = "FTP Logging";
             this.ftpLoggingTab.UseVisualStyleBackColor = true;
@@ -187,7 +187,7 @@
             this.ftpLoggingSettings.Location = new System.Drawing.Point(3, 3);
             this.ftpLoggingSettings.Name = "ftpLoggingSettings";
             this.ftpLoggingSettings.NumberofLogDaysHistoryToMaintain = 10;
-            this.ftpLoggingSettings.Size = new System.Drawing.Size(452, 316);
+            this.ftpLoggingSettings.Size = new System.Drawing.Size(452, 382);
             this.ftpLoggingSettings.TabIndex = 0;
             // 
             // ConfigForm
@@ -195,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(492, 380);
+            this.ClientSize = new System.Drawing.Size(492, 445);
             this.Controls.Add(this.tabs);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

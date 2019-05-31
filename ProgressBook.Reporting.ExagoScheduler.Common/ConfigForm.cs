@@ -40,6 +40,10 @@
             {
                 databaseSettings.ConnectionString = _exeConfiguration.ConnectionStrings.ConnectionStrings["StudentInformation"].ConnectionString;
             }
+            if (_exeConfiguration.ConnectionStrings.ConnectionStrings["PbMasterContext"] != null)
+            {
+                databaseSettings.PbMasterConnectionString = _exeConfiguration.ConnectionStrings.ConnectionStrings["PbMasterContext"].ConnectionString;
+            }
 
             // populate email settings
             emailSettings.ServerName = _xmlConfiguration.SelectSingleNode("//smtp_server").InnerText;
@@ -149,6 +153,15 @@
             {
                 _exeConfiguration.ConnectionStrings.ConnectionStrings["StudentInformation"].ConnectionString = databaseSettings.ConnectionString;
                 _exeConfiguration.ConnectionStrings.ConnectionStrings["StudentInformation"].ProviderName = "System.Data.SqlClient";
+            }
+            if (_exeConfiguration.ConnectionStrings.ConnectionStrings["PbMasterContext"] == null)
+            {
+                _exeConfiguration.ConnectionStrings.ConnectionStrings.Add(new ConnectionStringSettings("PbMasterContext", databaseSettings.PbMasterConnectionString, "System.Data.SqlClient"));
+            }
+            else
+            {
+                _exeConfiguration.ConnectionStrings.ConnectionStrings["PbMasterContext"].ConnectionString = databaseSettings.PbMasterConnectionString;
+                _exeConfiguration.ConnectionStrings.ConnectionStrings["PbMasterContext"].ProviderName = "System.Data.SqlClient";
             }
 
             // save app settings
