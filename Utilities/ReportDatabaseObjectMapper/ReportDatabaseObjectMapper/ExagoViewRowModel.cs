@@ -8,12 +8,13 @@ namespace ViewsExagoDependencies
 {
     class ExagoViewRowModel
     {
-        public string databaseObjectName { get; set; }
-        public string reportName { get; set; }
+        public string DatabaseObjectName { get; set; }
+        public string ReportName { get; set; }
+        public string FolderPath { get; set; }
 
         public List<string> ToList()
         {
-            return new List<string>() {databaseObjectName, reportName};
+            return new List<string>() {DatabaseObjectName, ReportName, FolderPath};
         }
     }
 }

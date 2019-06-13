@@ -22,5 +22,16 @@ namespace ViewsExagoDependencies
                     .ToList();
             }
         }
+
+        public static List<ReportEntity> LookupAllFolders()
+        {
+            using (var conext = new ExagoReportContext())
+            {
+                return conext.ReportEntities
+                    .Where(r => r.DistrictId == null && r.UserId == null && r.Content == null)
+                    .Select(r => r)
+                    .ToList();
+            }
+        }
     }
 }

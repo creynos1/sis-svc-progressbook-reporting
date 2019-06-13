@@ -81,6 +81,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ExagoViewRowModel.cs" />
     <Compile Include="ReportEntity.cs" />
+    <Compile Include="FolderNameParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
