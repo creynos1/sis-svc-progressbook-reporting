@@ -51,6 +51,8 @@
     <Content Include="DeploymentResources\ParameterExtensions.xml" />
     <Content Include="DeploymentResources\Parameters.xml" />
     <Content Include="DeploymentResources\SkipRules.xml" />
+    <Content Include="DeploymentResources\WebConfigTransforms\19_0_0_DelDisableGradeBookIntegrationAppSettings.xslt" />
+    <Content Include="DeploymentResources\WebConfigTransforms\19_0_0_UpdateBindingRedirects.xslt" />
     <Content Include="DeploymentResources\WebConfigTransforms\1_0_1_UploadEnabled.xslt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
