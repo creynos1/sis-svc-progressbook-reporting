@@ -39,6 +39,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{4668FE26-8C52-4B14-9FD3-8FCFEAFB822A}"
 	ProjectSection(SolutionItems) = preProject
 		Utilities\update CoreReports.ReportEntity report filter values to new school year.sql = Utilities\update CoreReports.ReportEntity report filter values to new school year.sql
+		Utilities\UpdateFilterValue.ps1 = Utilities\UpdateFilterValue.ps1
 	EndProjectSection
 EndProject
 Global
