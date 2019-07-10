@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Web", "ProgressBook.Reporting.Web\ProgressBook.Reporting.Web.csproj", "{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}"
 EndProject
@@ -34,6 +34,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution ITems", "Solution ITems", "{3117E806-176C-494C-AEC5-E6E82FAC7B23}"
 	ProjectSection(SolutionItems) = preProject
 		GatherItemsForDrop.ps1 = GatherItemsForDrop.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{4668FE26-8C52-4B14-9FD3-8FCFEAFB822A}"
+	ProjectSection(SolutionItems) = preProject
+		Utilities\update CoreReports.ReportEntity report filter values to new school year.sql = Utilities\update CoreReports.ReportEntity report filter values to new school year.sql
 	EndProjectSection
 EndProject
 Global
@@ -107,40 +112,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 11
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://tfs:8080/tfs/softwareanswersprojects
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ProgressBook.Reporting.Data\\ProgressBook.Reporting.Data.csproj
-		SccProjectName1 = ProgressBook.Reporting.Data
-		SccLocalPath1 = ProgressBook.Reporting.Data
-		SccProjectUniqueName2 = ProgressBook.Reporting.ExagoIntegration\\ProgressBook.Reporting.ExagoIntegration.csproj
-		SccProjectName2 = ProgressBook.Reporting.ExagoIntegration
-		SccLocalPath2 = ProgressBook.Reporting.ExagoIntegration
-		SccProjectUniqueName3 = ProgressBook.Reporting.Web\\ProgressBook.Reporting.Web.csproj
-		SccProjectName3 = ProgressBook.Reporting.Web
-		SccLocalPath3 = ProgressBook.Reporting.Web
-		SccProjectUniqueName4 = ProgressBook.Reporting.SharedModels\\ProgressBook.Reporting.SharedModels.csproj
-		SccProjectName4 = ProgressBook.Reporting.SharedModels
-		SccLocalPath4 = ProgressBook.Reporting.SharedModels
-		SccProjectUniqueName5 = ProgressBook.Reporting.Client\\ProgressBook.Reporting.Client.csproj
-		SccProjectName5 = ProgressBook.Reporting.Client
-		SccLocalPath5 = ProgressBook.Reporting.Client
-		SccProjectUniqueName6 = ProgressBook.Reporting.Client.Tests\\ProgressBook.Reporting.Client.Tests.csproj
-		SccProjectName6 = ProgressBook.Reporting.Client.Tests
-		SccLocalPath6 = ProgressBook.Reporting.Client.Tests
-		SccProjectUniqueName7 = ProgressBook.Reporting.Builds\\ProgressBook.Reporting.Builds.csproj
-		SccProjectName7 = ProgressBook.Reporting.Builds
-		SccLocalPath7 = ProgressBook.Reporting.Builds
-		SccProjectUniqueName8 = ProgressBook.Reporting.ExagoScheduler.Common\\ProgressBook.Reporting.ExagoScheduler.Common.csproj
-		SccProjectName8 = ProgressBook.Reporting.ExagoScheduler.Common
-		SccLocalPath8 = ProgressBook.Reporting.ExagoScheduler.Common
-		SccProjectUniqueName9 = ProgressBook.Reporting.ExagoScheduler.Config\\ProgressBook.Reporting.ExagoScheduler.Config.csproj
-		SccProjectName9 = ProgressBook.Reporting.ExagoScheduler.Config
-		SccLocalPath9 = ProgressBook.Reporting.ExagoScheduler.Config
-		SccProjectUniqueName10 = ProgressBook.Reporting.ExagoScheduler.Setup\\ProgressBook.Reporting.ExagoScheduler.Setup.csproj
-		SccProjectName10 = ProgressBook.Reporting.ExagoScheduler.Setup
-		SccLocalPath10 = ProgressBook.Reporting.ExagoScheduler.Setup
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D8DBCFD-8361-4309-9BEE-6880F2055ADC}
 	EndGlobalSection
 EndGlobal
