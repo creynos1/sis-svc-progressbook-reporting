@@ -187,23 +187,23 @@
     <Reference Include="Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2, processorArchitecture=MSIL">
       <HintPath>..\packages\Pipelines.Sockets.Unofficial.1.0.9\lib\net472\Pipelines.Sockets.Unofficial.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Business.Contracts, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Contracts.19.0.0.96\lib\netstandard2.0\ProgressBook.CentralAdmin.Business.Contracts.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Business.Contracts, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Contracts.19.1.0.1\lib\netstandard2.0\ProgressBook.CentralAdmin.Business.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Business.Services, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Services.19.0.0.96\lib\net461\ProgressBook.CentralAdmin.Business.Services.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Business.Services, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Services.19.1.0.1\lib\net461\ProgressBook.CentralAdmin.Business.Services.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Data.Contracts, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.96\lib\net472\ProgressBook.CentralAdmin.Data.Contracts.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Data.Contracts, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Data.Contracts.19.1.0.1\lib\netstandard2.0\ProgressBook.CentralAdmin.Data.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Data.Services, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Data.Services.19.0.0.96\lib\net461\ProgressBook.CentralAdmin.Data.Services.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Data.Services, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Data.Services.19.1.0.1\lib\net461\ProgressBook.CentralAdmin.Data.Services.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Security.DataProtection, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Security.DataProtection.19.0.0.96\lib\net461\ProgressBook.CentralAdmin.Security.DataProtection.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Security.DataProtection, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Security.DataProtection.19.1.0.1\lib\net461\ProgressBook.CentralAdmin.Security.DataProtection.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Framework.Core, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.96\lib\net472\ProgressBook.Framework.Core.dll</HintPath>
+    <Reference Include="ProgressBook.Framework.Core, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.Core.19.1.0.1\lib\netstandard2.0\ProgressBook.Framework.Core.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Infrastructure.Data, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Infrastructure.Data.1.0.7\lib\netstandard2.0\ProgressBook.Infrastructure.Data.dll</HintPath>
@@ -220,20 +220,20 @@
     <Reference Include="ProgressBook.Master.Data, Version=18.9.0.14, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Master.Data.18.9.0.14\lib\net471\ProgressBook.Master.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Security.Authentication.Owin, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Security.Authentication.Owin.19.0.0.96\lib\net472\ProgressBook.Security.Authentication.Owin.dll</HintPath>
+    <Reference Include="ProgressBook.Security.Authentication.Owin, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Security.Authentication.Owin.19.1.0.1\lib\net472\ProgressBook.Security.Authentication.Owin.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Shared.Cache.Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Cache.Redis.1.0.0.19\lib\net472\ProgressBook.Shared.Cache.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security, Version=0.2.0.12, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.12\lib\net472\ProgressBook.Shared.Security.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security, Version=0.2.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.14\lib\net472\ProgressBook.Shared.Security.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security.Data, Version=0.2.0.12, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.12\lib\net472\ProgressBook.Shared.Security.Data.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security.Data, Version=0.2.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.14\lib\net472\ProgressBook.Shared.Security.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security.Infrastructure, Version=0.2.0.12, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.12\lib\net472\ProgressBook.Shared.Security.Infrastructure.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security.Infrastructure, Version=0.2.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.14\lib\net472\ProgressBook.Shared.Security.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Shared.Utilities, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Utilities.1.1.0.0\lib\net452\ProgressBook.Shared.Utilities.dll</HintPath>
@@ -246,29 +246,29 @@
     <Reference Include="ProgressBook.Shared.Utilities.Logging, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Utilities.Logging.1.0.0.1\lib\net452\ProgressBook.Shared.Utilities.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Security.Data.CentralAdmin, Version=0.2.0.12, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.12\lib\net472\Security.Data.CentralAdmin.dll</HintPath>
+    <Reference Include="Security.Data.CentralAdmin, Version=0.2.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.14\lib\net472\Security.Data.CentralAdmin.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.Common, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Framework.Common.19.0.0.96\lib\net472\SoftwareAnswers.Common.dll</HintPath>
+    <Reference Include="SoftwareAnswers.Common, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.Common.19.1.0.1\lib\net472\SoftwareAnswers.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.Common.Lite, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.96\lib\net472\SoftwareAnswers.Common.Lite.dll</HintPath>
+    <Reference Include="SoftwareAnswers.Common.Lite, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.Common.Lite.19.1.0.1\lib\netstandard2.0\SoftwareAnswers.Common.Lite.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.CentralAdmin.Models, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.96\lib\net472\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.CentralAdmin.Models, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.1.0.1\lib\net472\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.Framework, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.0.0.96\lib\net472\SoftwareAnswers.ProgressBook.Framework.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.Framework, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.1.0.1\lib\net472\SoftwareAnswers.ProgressBook.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Consumer, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.96\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Consumer.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Consumer, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.1.0.1\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Consumer.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Core, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.96\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Core.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Core, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.1.0.1\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Core.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.0.0.96, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.0.0.96\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Shared.19.1.0.1\lib\netstandard2.0\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
       <HintPath>..\packages\StackExchange.Redis.2.0.519\lib\net472\StackExchange.Redis.dll</HintPath>
