@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Language>
 	<Tabs>
-		<element id="GettingStartedTab">Ad Hoc Reports</element>
+		<element id="GettingStartedTab">Report Designer</element>
 		<element id="AdminGettingStartedTab">Getting Started</element>
 		<element id="DescriptionTab">Description</element>
 		<element id="DesignTab">Designer</element>
