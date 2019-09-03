@@ -1,5 +1,10 @@
 ﻿<ParameterExtensions xmlns="http://software-answers.com/ProgressBook/WebDeploy">
-
-  <ParameterExtension ParameterName="UploadEnabled"
-                      XslFile="1_0_1_UploadEnabled.xslt" />
+  <ParameterExtension ParameterName="UploadEnabled" XslFile="1_0_1_UploadEnabled.xslt" />
+  <ParameterExtension ParameterName="StudentInformation" XslFile="19_2_0_UpdateStudentInformationConnectionString.xslt" />
+  <ParameterExtension ParameterName="ProgressBook" XslFile="19_2_0_UpdateProgressBookConnectionString.xslt" />
+  <ParameterExtension ParameterName="PbMasterContext" XslFile="19_2_0_UpdatePbMasterConnectionString.xslt" />
+  <ParameterExtension ParameterName="QuickReports" XslFile="19_2_0_UpdateQuickReportsConnectionString.xslt" />
+  <ParameterExtension ParameterName="DistrictTemplate" XslFile="19_2_0_UpdateDistrictTemplateConnectionString.xslt" />
+  <ParameterExtension ParameterName="SchedulerHost" XslFile="19_2_0_UpdateSchedulerHostSetting.xslt" />
+  <ParameterExtension ParameterName="UploadEnabled" XslFile="19_2_0_UpdateUploadEnabledSetting.xslt" />
 </ParameterExtensions>
