@@ -648,6 +648,11 @@
       <filterable>Default</filterable>
     </column_metadata>
     <column_metadata>
+      <col_name>email</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
       <col_name>familyName</col_name>
       <col_type>string</col_type>
       <filterable>Default</filterable>
