@@ -69,7 +69,7 @@
   </parameter>
   <parameter name="UploadEnabled"
              tags="Hidden"
-             defaultValue="">
+             defaultValue="true">
     <parameterValidation type="AllowEmpty" />
     <parameterEntry type="XmlFile"
                     scope="\\Config\\appSettings.config$"
