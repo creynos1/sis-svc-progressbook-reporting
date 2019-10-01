@@ -36,6 +36,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 TrackManualReportExecution(sessionInfo);
                 ChangeDataSourceConnectionString(sessionInfo, "QuickReports", "StudentInformation");
                 ChangeDistrictDataSource(sessionInfo);
+                RemoveBlankFilters(sessionInfo);
             }
             catch (Exception ex)
             {
