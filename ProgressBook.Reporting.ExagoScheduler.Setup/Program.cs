@@ -18,11 +18,13 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
         private const string XML_CONFIG_FILE_NAME = "eWebReportsScheduler.xml";
         private const string CONFIG_EXE_FILE_NAME = "ProgressBook.Reporting.ExagoScheduler.Config.exe";
         private const string DEFAULT_SMTP_FROM_NAME = "ProgressBook Ad Hoc Reports Scheduler";
+        private const string DEFAULT_EXE_CONFIG_FILE_PATH = "C:\\Program Files\\Exago\\ExagoScheduler\\";
         private const string ENABLE_FTP_SESSION_LOGGING = "false";
         private const string NUMBER_OF_LOG_DAYS_HISTORY_TO_MAINTAIN = "10";
         private const string FTP_SESSION_LOG_PATH = @"C:\temp\logs";
         private const string DEFAULT_LOGGING = "on";
         private const string DEFAULT_FLUSH_TIME = "0";
+        private static XmlDocument Existing_Config = new XmlDocument();
 
         /// <summary>
         ///     The main entry point for the application.
@@ -35,7 +37,18 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            GetExistingConfiguration();
+
             RunSetup();
+        }
+
+        private static void GetExistingConfiguration()
+        {
+            var exeConfigFilePath = Path.Combine(DEFAULT_EXE_CONFIG_FILE_PATH, "eWebReportsScheduler.exe.config");
+            if (File.Exists(exeConfigFilePath))
+            {
+                Existing_Config.Load(exeConfigFilePath);
+            }
         }
 
         private static void RunSetup()
@@ -63,12 +76,19 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
 #endif
             try
             {
+                var exeConfigFilePath = Path.Combine(filePath, "eWebReportsScheduler.exe.config");
+                if (!File.Exists(exeConfigFilePath))
+                {
+                    throw new FileNotFoundException(string.Format("Configuration file not found:\n{0}", exeConfigFilePath));
+                }
+
                 var xmlConfigFilePath = Path.Combine(filePath, XML_CONFIG_FILE_NAME);
                 if (!File.Exists(xmlConfigFilePath))
                 {
                     throw new FileNotFoundException(string.Format("Configuration file not found:\n{0}", xmlConfigFilePath));
                 }
 
+                ReplaceExistingConfiguration(exeConfigFilePath);
                 DeployIntegrationAssemblies();
                 DeployConfigExe(filePath);
                 SetDefaultValues(xmlConfigFilePath);
@@ -85,6 +105,32 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(1);
             }
+        }
+
+        private static void ReplaceExistingConfiguration(string filePath)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(filePath);
+
+            XmlNode connectionStrings = doc.SelectSingleNode("//connectionStrings");
+            if (connectionStrings != null)
+            {
+                doc.SelectSingleNode("configuration").RemoveChild(connectionStrings);
+            }
+
+            XmlNode log4net = doc.SelectSingleNode("//log4net");
+            if (log4net != null)
+            {
+                doc.SelectSingleNode("configuration").RemoveChild(log4net);
+            }
+
+            connectionStrings = doc.ImportNode(Existing_Config.SelectSingleNode("//connectionStrings"), true);
+            doc.SelectSingleNode("configuration").AppendChild(connectionStrings);
+
+            log4net = doc.ImportNode(Existing_Config.SelectSingleNode("//log4net"), true);
+            doc.SelectSingleNode("configuration").AppendChild(log4net);
+
+            doc.Save(filePath);
         }
 
         private static void DeployIntegrationAssemblies()
@@ -164,7 +210,7 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
             AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
             {
                 var resourceName = string.Format("{0}.{1}.dll", ResourcesNamespace, new AssemblyName(args.Name).Name);
-                
+
                 using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
                 {
                     var assemblyData = new Byte[stream.Length];
