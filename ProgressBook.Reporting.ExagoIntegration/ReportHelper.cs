@@ -245,7 +245,21 @@ namespace ProgressBook.Reporting.ExagoIntegration
             exagoRole.General.ShowScheduleReportsEmail = allowReportScheduler;
             exagoRole.General.ShowScheduleReportsManager = allowReportScheduler;
 
+            exagoRole.General.ShowExpressReports = CanCreateResource(context, "AdHocReports.ReportTypes.ExpressReports");
+            exagoRole.General.ShowAdvancedReports = CanCreateResource(context, "AdHocReports.ReportTypes.AdvancedReports");
+            exagoRole.General.ShowExpressViews = CanCreateResource(context, "AdHocReports.ReportTypes.ExpressViews");
+            exagoRole.General.ShowCrosstabReports = CanCreateResource(context, "AdHocReports.ReportTypes.CrosstabReports");
+            exagoRole.General.ShowChainedReports = CanCreateResource(context, "AdHocReports.ReportTypes.ChainedReports");
+
             exagoRole.Activate(true);
+        }
+
+        private bool CanCreateResource(UserContext context, string reportResourceName)
+        {
+            return _authService.IsAllowedSync(context.UserId,
+                                              context.AuthorizationPlaceId,
+                                              reportResourceName,
+                                              Activity.Create);
         }
 
         public void ConfigureDefaultParameters(UserContext context)
