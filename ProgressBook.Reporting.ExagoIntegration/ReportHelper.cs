@@ -352,7 +352,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
         {
             var resourceTreeService = DefaultResourceTreeServiceFactory.Instance.Create();
             var reportTypesResourceTree =
-                resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportTypes.Namespace);
+                resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportFolders.Namespace);
             return reportTypesResourceTree.Children
                                           .OrderBy(x => x.DisplayName)
                                           .ToList();
@@ -362,7 +362,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
         {
             if (resource.Parent != null)
             {
-                if (resource.Parent.ResourceName == Resources.AdHocReports.ReportTypes.Namespace)
+                if (resource.Parent.ResourceName == Resources.AdHocReports.ReportFolders.Namespace)
                 {
                     return resource.DisplayName;
                 }

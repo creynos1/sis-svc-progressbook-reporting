@@ -54,7 +54,7 @@
                                                                     Guid authorizationPlaceId,
                                                                     bool includeStats = false)
         {
-            var resourceNamespace = Resources.AdHocReports.ReportTypes.Namespace;
+            var resourceNamespace = Resources.AdHocReports.ReportFolders.Namespace;
 
             var reportTypeTree = await _authorizationService.GetUserResourceTree(userId,
                                                                                  authorizationPlaceId,
@@ -104,7 +104,7 @@
                                                                             Guid authorizationPlaceId,
                                                                             bool includeStats = false)
         {
-            var resourceNamespace = Resources.AdHocReports.ReportTypes.Namespace;
+            var resourceNamespace = Resources.AdHocReports.ReportFolders.Namespace;
             var reportTypeTree = await _authorizationService.GetUserResourceTree(userId,
                                                                                  authorizationPlaceId,
                                                                                  resourceNamespace);
