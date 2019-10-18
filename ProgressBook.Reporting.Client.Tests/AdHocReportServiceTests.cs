@@ -68,7 +68,7 @@ namespace ProgressBook.Reporting.Client.Tests
                 var roleId = TestHelper.InsertTestRole(placeId, "SomeSuperAwesomeTestRole");
                 var rolePermissionService = Security.Factories.DefaultRolePermissionServiceFactory.Instance.Create();
 
-                var studentReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportTypes.Student.Namespace);
+                var studentReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportFolders.Student.Namespace);
                 rolePermissionService.SetPermissionsSync(roleId,
                     new[]
                     {
@@ -112,8 +112,8 @@ namespace ProgressBook.Reporting.Client.Tests
                 var roleId = TestHelper.InsertTestRole(placeId, "SomeSuperAwesomeTestRole");
                 var rolePermissionService = Security.Factories.DefaultRolePermissionServiceFactory.Instance.Create();
 
-                var emisReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportTypes.EMIS.Namespace);
-                var emisAdminReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportTypes.EMIS.Admin.Namespace);
+                var emisReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportFolders.EMIS.Namespace);
+                var emisAdminReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportFolders.EMIS.Admin.Namespace);
                 rolePermissionService.SetPermissionsSync(roleId,
                         new[]
                         {

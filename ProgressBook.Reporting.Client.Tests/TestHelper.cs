@@ -147,7 +147,7 @@
                 resourceTreeService = Shared.Security.Factories.DefaultResourceTreeServiceFactory.Instance.Create();
 
                 var roleId = InsertTestRole(placeId, "Test - All Report Types " + new Random((int)DateTime.Now.Ticks).Next());
-                var studentReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportTypes.Namespace);
+                var studentReports = resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportFolders.Namespace);
                 rolePermissionService.SetPermissionsSync(roleId,
                     new[]
                     {
