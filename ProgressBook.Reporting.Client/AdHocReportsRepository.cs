@@ -77,15 +77,15 @@ namespace ProgressBook.Reporting.Client
                     SELECT * FROM (                        
 					    SELECT
                             rpt.ReportEntityId,
-                            'AdHocReports.ReportTypes.' + REPLACE(REPLACE(fldr.[Path], ' ',''), '\', '.') AS ResourceName,
+                            'AdHocReports.ReportFolders.' + REPLACE(REPLACE(fldr.[Path], ' ',''), '\', '.') AS ResourceName,
                             REPLACE(rpt.[Path], '.wrx', '') AS Name,
                             REPLACE(rpt.Name, '.wrx', '') AS DisplayName,
 							-- 'BaseSecurityString' finds the SIS security node that this resource is tied to. e.g.-
-							--		AdHocReports.ReportTypes.EMIS uses AdHocReports.ReportTypes.EMIS for security.
-							--		AdHocReports.ReportTypes.EMIS.SomeSubDir.AnotherSubDir uses AdHocReports.ReportTypes.EMIS for security.
+							--		AdHocReports.ReportFolders.EMIS uses AdHocReports.ReportFolders.EMIS for security.
+							--		AdHocReports.ReportFolders.EMIS.SomeSubDir.AnotherSubDir uses AdHocReports.ReportFolders.EMIS for security.
 							-- However, reports under admin behave differently. e.g.-						
-							--		AdHocReports.ReportTypes.EMIS.Admin uses AdHocReports.ReportTypes.EMIS.Admin for security.
-							'AdHocReports.ReportTypes.' + REPLACE(REPLACE(
+							--		AdHocReports.ReportFolders.EMIS.Admin uses AdHocReports.ReportFolders.EMIS.Admin for security.
+							'AdHocReports.ReportFolders.' + REPLACE(REPLACE(
 								case when fldr.[Path] not like '%\ADMIN' and fldr.[Path] not like '%\ADMIN\%' and fldr.[Path] like '%\%' then
 									substring(fldr.[Path], 1, charindex('\', fldr.[Path]) - 1)
 									else fldr.[Path]
@@ -145,7 +145,7 @@ namespace ProgressBook.Reporting.Client
                     SELECT * FROM (    
                         SELECT
                             rpt.ReportEntityId,
-                            'AdHocReports.ReportTypes.' + REPLACE(REPLACE(fldr.[Path], ' ',''), '\', '.') AS ResourceName,
+                            'AdHocReports.ReportFolders.' + REPLACE(REPLACE(fldr.[Path], ' ',''), '\', '.') AS ResourceName,
                             rpt.[Path] AS Name,
                             REPLACE(rpt.Name, '.wrx', '') AS DisplayName,
                             re.Description,

@@ -245,7 +245,21 @@ namespace ProgressBook.Reporting.ExagoIntegration
             exagoRole.General.ShowScheduleReportsEmail = allowReportScheduler;
             exagoRole.General.ShowScheduleReportsManager = allowReportScheduler;
 
+            exagoRole.General.ShowExpressReports = CanCreateResource(context, "AdHocReports.ReportTypes.ExpressReports");
+            exagoRole.General.ShowAdvancedReports = CanCreateResource(context, "AdHocReports.ReportTypes.AdvancedReports");
+            exagoRole.General.ShowExpressViews = CanCreateResource(context, "AdHocReports.ReportTypes.ExpressViews");
+            exagoRole.General.ShowCrosstabReports = CanCreateResource(context, "AdHocReports.ReportTypes.CrosstabReports");
+            exagoRole.General.ShowChainedReports = CanCreateResource(context, "AdHocReports.ReportTypes.ChainedReports");
+
             exagoRole.Activate(true);
+        }
+
+        private bool CanCreateResource(UserContext context, string reportResourceName)
+        {
+            return _authService.IsAllowedSync(context.UserId,
+                                              context.AuthorizationPlaceId,
+                                              reportResourceName,
+                                              Activity.Create);
         }
 
         public void ConfigureDefaultParameters(UserContext context)
@@ -338,7 +352,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
         {
             var resourceTreeService = DefaultResourceTreeServiceFactory.Instance.Create();
             var reportTypesResourceTree =
-                resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportTypes.Namespace);
+                resourceTreeService.GetResourceTreeSync(Resources.AdHocReports.ReportFolders.Namespace);
             return reportTypesResourceTree.Children
                                           .OrderBy(x => x.DisplayName)
                                           .ToList();
@@ -348,7 +362,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
         {
             if (resource.Parent != null)
             {
-                if (resource.Parent.ResourceName == Resources.AdHocReports.ReportTypes.Namespace)
+                if (resource.Parent.ResourceName == Resources.AdHocReports.ReportFolders.Namespace)
                 {
                     return resource.DisplayName;
                 }
