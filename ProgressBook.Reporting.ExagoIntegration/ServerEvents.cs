@@ -36,7 +36,6 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 TrackManualReportExecution(sessionInfo);
                 ChangeDataSourceConnectionString(sessionInfo, "QuickReports", "StudentInformation");
                 ChangeDistrictDataSource(sessionInfo);
-                RemoveBlankFilters(sessionInfo);
             }
             catch (Exception ex)
             {
@@ -386,15 +385,6 @@ namespace ProgressBook.Reporting.ExagoIntegration
             }
 
             return destFile;
-        }
-
-        public static string RemoveBlankFilters(SessionInfo sessionInfo)
-        {
-            ReportFilterCollection filters = sessionInfo.Report.ExecFilters;
-            filters.RemoveAll(x => x.Value.Length == 0);
-
-            // continue execution
-            return null;
         }
 
         private static byte MapExagoReturnValueToJobStatus(wrExecuteReturnValue result)
