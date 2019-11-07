@@ -112,24 +112,31 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
 
-            XmlNode connectionStrings = doc.SelectSingleNode("//connectionStrings");
-            XmlNode existingConnectionStrings = Existing_Config.SelectSingleNode("//connectionStrings");
-            if (connectionStrings != null && existingConnectionStrings != null)
+             XmlNode existingConnectionStrings = Existing_Config.SelectSingleNode("//connectionStrings");
+            if (existingConnectionStrings != null)
             {
-                doc.SelectSingleNode("configuration").RemoveChild(connectionStrings);
-                connectionStrings = doc.ImportNode(existingConnectionStrings, true);
-                doc.SelectSingleNode("configuration").AppendChild(connectionStrings);
+                XmlNode connectionStrings = doc.SelectSingleNode("//connectionStrings");
+                if (connectionStrings != null)
+                {
+                    doc.SelectSingleNode("configuration").RemoveChild(connectionStrings);
+                }
+
+                XmlNode loadedConnectionStrings = doc.ImportNode(existingConnectionStrings, true);
+                doc.SelectSingleNode("configuration").AppendChild(loadedConnectionStrings);
             }
 
-            XmlNode log4net = doc.SelectSingleNode("//log4net");
             XmlNode existingLog4net = Existing_Config.SelectSingleNode("//log4net");
-            if (log4net != null && existingLog4net != null)
+            if (existingLog4net != null)
             {
-                doc.SelectSingleNode("configuration").RemoveChild(log4net);
-                log4net = doc.ImportNode(existingLog4net, true);
-                doc.SelectSingleNode("configuration").AppendChild(log4net);
-            }
+                XmlNode log4net = doc.SelectSingleNode("//log4net");
+                if (log4net != null)
+                {
+                    doc.SelectSingleNode("configuration").RemoveChild(log4net);
+                }
 
+                XmlNode LoadedLog4net = doc.ImportNode(existingLog4net, true);
+                doc.SelectSingleNode("configuration").AppendChild(LoadedLog4net);
+            }
             doc.Save(filePath);
         }
 
