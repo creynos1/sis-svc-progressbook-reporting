@@ -28,6 +28,7 @@
         public DateTime? DateModified { get; set; }
         public Guid? ModifiedBy { get; set; }
         public bool IsInternal { get; set; }
+        public DateTime DateCreated { get; set; }
         
         public ReportEntityType ReportEntityType { get; private set; }
         public ReportEntity Parent { get; set; }
