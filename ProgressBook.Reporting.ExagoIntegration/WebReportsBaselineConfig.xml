@@ -310,6 +310,164 @@
     <hidden>True</hidden>
     <prompt_text />
   </parameter>
+   <parameter>
+    <id>SchoolYear</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text>School Year</prompt_text>
+    <parameter_dropdown>
+      <db_name>SchoolYear</db_name>
+      <sql_stmt>SELECT Description as SchoolYear
+                FROM tblSchoolYear
+	              WHERE SchoolYearId = (SELECT dbo.DefaultDistrictSchoolYearId('@DistrictId@'))
+</sql_stmt>
+      <datasource_id>0</datasource_id>
+      <object_type>sql</object_type>
+      <value_field>SchoolYear</value_field>
+      <display_value_field>SchoolYear</display_value_field>
+      <display_data_type>string</display_data_type>
+      <display_value />
+      <sp_params />
+    </parameter_dropdown>
+  </parameter>
+  <parameter>
+    <id>SchoolName</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>False</hidden>
+    <prompt_text>School Name</prompt_text>
+    <parameter_dropdown>
+      <db_name>SchoolName</db_name>
+      <sql_stmt>SELECT sch.SchoolName
+                FROM tblSchoolConfig sc
+	                JOIN tblSchool sch ON sc.SchoolId = sch.SchoolId
+		                AND sch.IsSchool = 1
+		                AND sc.IsActive = 1
+	                WHERE sch.DistrictId = '@DistrictId@'
+		                AND sc.SchoolYearId =dbo.DefaultDistrictSchoolYearId('@DistrictId@')
+</sql_stmt>
+      <datasource_id>0</datasource_id>
+      <object_type>sql</object_type>
+      <value_field>SchoolName</value_field>
+      <display_value_field>SchoolName</display_value_field>
+      <display_data_type>string</display_data_type>
+      <display_value />
+      <sp_params />
+    </parameter_dropdown>
+  </parameter>
+  <parameter>
+    <id>StudentNumber</id>
+    <data_type>integer</data_type>
+    <hidden>False</hidden>
+    <prompt_text>Student Number</prompt_text>
+    <parameter_dropdown>
+      <db_name>StudentNumber</db_name>
+      <sql_stmt>SELECT s.StudentNumber
+                FROM tblCourseSectionStudent css
+	                JOIN tblCourseSection cs ON css.CourseSectionId = cs.CourseSectionId
+		                AND cs.IsActive = 1
+	                JOIN tblCourse c ON c.CourseId = cs.CourseId
+		                AND c.IsNCAACoreCourse = 1
+		                AND c.IsActive = 1
+	                JOIN tblStudent s ON s.StudentId = css.StudentId
+		                AND s.DistrictId = '@DistrictId@'
+	                JOIN tblStudentAnnual sa ON sa.StudentId = s.StudentId
+		                AND sa.SchoolYearId = (SELECT dbo.DefaultDistrictSchoolYearId('@DistrictId@'))
+	                JOIN tblSchool sch ON sch.SchoolId = sa.SchoolId
+		                AND sch.IsActive = 1
+		                AND sch.SchoolName = '@SchoolName@'
+		</sql_stmt>
+      <datasource_id>0</datasource_id>
+      <object_type>sql</object_type>
+      <value_field>StudentNumber</value_field>
+      <display_value_field>StudentNumber</display_value_field>
+      <display_data_type>integer</display_data_type>
+      <display_value />
+      <sp_params />
+    </parameter_dropdown>
+  </parameter>
+   <entity>
+    <entity_name>NCAA Division I Eligibility</entity_name>
+    <affinity>Global</affinity>
+    <db_name>proc_NCAAEligibility_DivI</db_name>
+    <category>Eligibility</category>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>CoreReports</schema>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>DistrictId</col_name>
+    </key>
+    <key>
+      <col_name>SchoolYear</col_name>
+    </key>
+    <key>
+      <col_name>SchoolName</col_name>
+    </key>
+    <key>
+      <col_name>CourseName</col_name>
+    </key>
+    <key>
+      <col_name>NCAASubjectArea</col_name>
+    </key>
+    <key>
+      <col_name>StudentNumber</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>SchoolYear</id>
+    </param>
+    <param>
+      <id>SchoolName</id>
+    </param>
+    <param>
+      <id>StudentNumber</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>NCAA Division II Eligibility</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>proc_NCAAEligibility_DivII</db_name>
+    <category>Eligibility</category>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>CoreReports</schema>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>DistrictId</col_name>
+    </key>
+    <key>
+      <col_name>SchoolYear</col_name>
+    </key>
+    <key>
+      <col_name>SchoolName</col_name>
+    </key>
+    <key>
+      <col_name>CourseName</col_name>
+    </key>
+    <key>
+      <col_name>NCAASubjectArea</col_name>
+    </key>
+    <key>
+      <col_name>StudentNumber</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>SchoolYear</id>
+    </param>
+    <param>
+      <id>SchoolName</id>
+    </param>
+    <param>
+      <id>StudentNumber</id>
+    </param>
+  </entity>
   <entity>
     <entity_name>ITC Student Count Report</entity_name>
     <db_name>proc_StudentCountReport_ITC</db_name>
