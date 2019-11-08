@@ -28,6 +28,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
         private const byte JobStatusComplete = 6;
         private const byte JobStatusError = 2;
         private const string NoDataStatusMsg = "No data qualified for report";
+        private const string FTPErrorMessage = "An error has occured while trying to FTP this report";
 
         public static string OnReportExecuteStart(SessionInfo sessionInfo)
         {
@@ -47,16 +48,21 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
         public static string OnScheduledReportComplete(SessionInfo sessionInfo, WebReports.Api.Scheduler.SchedulerJob schedulerJob)
         {
+            string fileName = string.Empty;
             try
             {
                 if (sessionInfo.Report.ExecuteDataRowCount == 0)
                 {
-                    WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
+                    fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
+                    UpdateJobScheduleTable(sessionInfo, fileName);
                 }
             }
             catch (Exception ex)
             {
                 sessionInfo.WriteLog(string.Format("OnScheduledReportComplete Error. {0}", ex.ToString()));
+                fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
+                UpdateJobScheduleTable(sessionInfo, fileName);
+
             }
 
             return null;
@@ -111,6 +117,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
         public static bool OnScheduledReportExecuteSuccess(SessionInfo sessionInfo)
         {
+            string fileName = string.Empty;
             try
             {
 
@@ -128,7 +135,6 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
                 if (status)
                 {
-                    string fileName;
                     switch (sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult)
                     {
                         case wrExecuteReturnValue.Success:
@@ -141,8 +147,14 @@ namespace ProgressBook.Reporting.ExagoIntegration
                             fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
                             break;
                     }
-
                     UpdateJobScheduleTable(sessionInfo, fileName);
+
+                }
+                else
+                {
+                    fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, FTPErrorMessage);
+                    UpdateJobScheduleTable(sessionInfo, fileName, true);
+
                 }
             }
             catch (Exception ex)
@@ -187,10 +199,10 @@ namespace ProgressBook.Reporting.ExagoIntegration
             return true;
         }
 
-        private static void UpdateJobScheduleTable(SessionInfo sessionInfo, string fileName)
+        private static void UpdateJobScheduleTable(SessionInfo sessionInfo, string fileName, bool isFTPError = false)
         {
             var job = sessionInfo.ReportSchedulerService.SchedulerJob;
-
+            var jobStatusId = isFTPError ? JobStatusError : MapExagoReturnValueToJobStatus(job.ExecuteResult);
             var user = GetUserFromTenantParameter(sessionInfo.UserId);
             var jobScheduling = new JobScheduling
             {
@@ -199,7 +211,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 JobDeliveryId = JobDeliveryPickup,
                 JobTypeId = JobTypeReport,
                 JobName = job.JobInfo.Name,
-                JobStatusId = MapExagoReturnValueToJobStatus(job.ExecuteResult),
+                JobStatusId = jobStatusId,
                 UserId = user.UserId,
                 SchoolId = user.DistrictId,
                 Parameters = string.Empty,
@@ -213,7 +225,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                             IsRetained = false,
                             ReportId = AdHocReportReportId
                         }
-                    }
+                }
             };
 
             var dbContext = new JobSchedulingDbContext("StudentInformation");
@@ -394,8 +406,10 @@ namespace ProgressBook.Reporting.ExagoIntegration
             switch (result)
             {
                 case wrExecuteReturnValue.Success:
-                case wrExecuteReturnValue.NothingQualified:
                     jobStatus = JobStatusComplete;
+                    break;
+                case wrExecuteReturnValue.NothingQualified:
+                    jobStatus = JobStatusError;
                     break;
                 default:
                     jobStatus = JobStatusError;
