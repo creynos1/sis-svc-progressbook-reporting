@@ -9,10 +9,10 @@ namespace ExagoReportUtility.Objects
 {
     public class InputHelper
     {
-        private readonly string RenameReportFilters = "1). Rename Report Filters";
-        private readonly string RenameReportSorts = "2). Rename Report Sorts";
-        private readonly string RenameReportTitles = "3). Rename Report Titles";
-        private readonly string RenameReportDescriptions = "4). Rename Report Descriptions";
+        private const string RenameReportFilters = "1). Rename Report Filters";
+        private const string RenameReportSorts = "2). Rename Report Sorts";
+        private const string RenameReportTitles = "3). Rename Report Titles";
+        private const string RenameReportDescriptions = "4). Rename Report Descriptions";
         private readonly string[] Selections = new string[4];
         public User User { get; set; }
         public Excel ExcelHelper { get; set; }

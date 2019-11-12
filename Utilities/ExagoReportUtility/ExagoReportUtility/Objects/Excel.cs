@@ -4,7 +4,7 @@ using _Excel = Microsoft.Office.Interop.Excel;
 
 namespace ExagoReportUtility.Objects
 {
-    public class Excel
+    public class Excel : IDisposable
     {
         public string Path { get; set; }
 
@@ -13,8 +13,6 @@ namespace ExagoReportUtility.Objects
         private readonly Worksheet _worksheet;
         public Excel(string path, int sheet)
         {
-            // Inserting this to ensure I type the right path.  Remove 
-            path = "c:\\Repo\\Software Answers Filter and Sort Names.xlsx";
             Path = path;
             try
             {
@@ -54,7 +52,7 @@ namespace ExagoReportUtility.Objects
                 throw;
             }
 
-            
+
         }
 
         public void Dispose()
