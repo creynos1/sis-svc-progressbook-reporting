@@ -45,6 +45,12 @@ namespace ProgressBook.Reporting.ExagoIntegration
             return null;
         }
 
+        public static void RemoveBlankFilters(SessionInfo sessionInfo)
+        {
+            sessionInfo.Report.ExecFilters.RemoveAll(x => x.Value.Length == 0);
+            
+        }
+
         public static string OnScheduledReportComplete(SessionInfo sessionInfo, WebReports.Api.Scheduler.SchedulerJob schedulerJob)
         {
             try
