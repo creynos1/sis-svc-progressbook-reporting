@@ -112,7 +112,7 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
 
-            XmlNode existingConnectionStrings = Existing_Config.SelectSingleNode("//connectionStrings");
+             XmlNode existingConnectionStrings = Existing_Config.SelectSingleNode("//connectionStrings");
             if (existingConnectionStrings != null)
             {
                 XmlNode connectionStrings = doc.SelectSingleNode("//connectionStrings");
@@ -120,7 +120,7 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
                 {
                     doc.SelectSingleNode("configuration").RemoveChild(connectionStrings);
                 }
-                
+
                 XmlNode loadedConnectionStrings = doc.ImportNode(existingConnectionStrings, true);
                 doc.SelectSingleNode("configuration").AppendChild(loadedConnectionStrings);
             }
@@ -137,7 +137,6 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
                 XmlNode LoadedLog4net = doc.ImportNode(existingLog4net, true);
                 doc.SelectSingleNode("configuration").AppendChild(LoadedLog4net);
             }
-
             doc.Save(filePath);
         }
 
