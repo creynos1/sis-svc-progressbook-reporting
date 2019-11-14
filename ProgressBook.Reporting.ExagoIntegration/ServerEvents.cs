@@ -124,11 +124,11 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 var vendorExtractCustomOption = sessionInfo.Report.CustomOptionValues.GetCustomOptionValue("Is_Vendor_Extract");
                 if (vendorExtractCustomOption == null)
                 {
-                    return false;
+                   return false;
                 }
                 if (!bool.Parse(vendorExtractCustomOption.Value))
                 {
-                    return false;
+                   return false;
                 }
 
                 var status = FTPOutputFile(sessionInfo);
@@ -138,7 +138,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                     switch (sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult)
                     {
                         case wrExecuteReturnValue.Success:
-                            fileName = MoveFileToRepository(sessionInfo);
+                            fileName = CopyFileToRepository(sessionInfo);
                             break;
                         case wrExecuteReturnValue.NothingQualified:
                             fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
@@ -162,7 +162,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 sessionInfo.WriteLog(string.Format("OnScheduledReportExecuteSuccess Error. {0}", ex.ToString()));
             }
 
-            return true;
+            return false;
         }
 
         private static bool FTPOutputFile(SessionInfo sessionInfo)
@@ -233,27 +233,18 @@ namespace ProgressBook.Reporting.ExagoIntegration
             dbContext.SaveChanges();
         }
 
-        private static string MoveFileToRepository(SessionInfo sessionInfo)
+        private static string CopyFileToRepository(SessionInfo sessionInfo)
         {
             string output_directory = GetOutputRepository();
             string newFilenameTemplate = "AdHocReport_{0}_{1}{2}";
-
             var scheduler_job = sessionInfo.ReportSchedulerService.SchedulerJob;
             var execution = WebReports.Api.Execute.ExecutionManager.GetExecution(sessionInfo.PageInfo, String.Format(@"{0}\working\temp", Environment.CurrentDirectory), output_directory, scheduler_job.JobId);
-            var file_info = new FileInfo(execution.DownloadFn);
-            var original_extension = file_info.Extension;
-
             string outputFilePath = Path.Combine(String.Format(@"{0}\working\export\", Environment.CurrentDirectory), execution.DownloadName);
             var reportUniqueId = Path.GetFileName(execution.DownloadName).Split('_')[0];
             var fileExtension = Path.GetExtension(execution.DownloadName);
             var newFilename = string.Format(newFilenameTemplate, reportUniqueId, DateTime.Now.Ticks, fileExtension);
             string newFilePath = Path.Combine(output_directory, newFilename);
-            if (File.Exists(newFilePath))
-            {
-                File.Delete(newFilePath);
-            }
-            File.Move(outputFilePath, newFilePath);
-
+            File.Copy(outputFilePath, newFilePath, true);
             return newFilePath;
         }
 
