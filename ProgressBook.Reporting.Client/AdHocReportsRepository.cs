@@ -57,7 +57,8 @@ namespace ProgressBook.Reporting.Client
                         re.Description,
                         re.DateModified,
                         re.ModifiedBy,
-                        rpt.NestedDisplay
+                        rpt.NestedDisplay,
+                        rpt.DateCreated
                     FROM [CoreReports].ReportEntityInfo rpt
                         LEFT JOIN [CoreReports].ReportEntityInfo fldr ON rpt.ParentId = fldr.ReportEntityId
                         INNER JOIN [CoreReports].ReportEntity re ON rpt.ReportEntityId = re.ReportEntityId
@@ -95,7 +96,8 @@ namespace ProgressBook.Reporting.Client
                             re.Description,
                             re.DateModified,
                             re.ModifiedBy,
-                            rpt.NestedDisplay
+                            rpt.NestedDisplay,
+                            rpt.DateCreated
                         FROM [CoreReports].ReportEntityInfo rpt
                             LEFT JOIN [CoreReports].ReportEntityInfo fldr ON rpt.ParentId = fldr.ReportEntityId
                             INNER JOIN [CoreReports].ReportEntity re ON rpt.ReportEntityId = re.ReportEntityId
