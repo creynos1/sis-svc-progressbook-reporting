@@ -10,9 +10,9 @@
         public string Description { get; set; }
         public bool IsInternal { get; set; }
         public bool NestedDisplay { get; set; }
+        public DateTime? DateCreated { get; set; }
         public DateTime? DateModified { get; set; }
         public Guid? ModifiedBy { get; set; }
-        public DateTime? DateCreated { get; set; }
 
         public UserReportStats UserReportStats { get; set; }
     }
