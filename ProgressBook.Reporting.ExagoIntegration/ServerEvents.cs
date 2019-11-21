@@ -50,6 +50,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
         {
             sessionInfo.Report.ExecFilters.RemoveAll(x => x.Value.Length == 0);
         }
+
         public static string OnScheduledReportComplete(SessionInfo sessionInfo, WebReports.Api.Scheduler.SchedulerJob schedulerJob)
         {
             string fileName = string.Empty;
