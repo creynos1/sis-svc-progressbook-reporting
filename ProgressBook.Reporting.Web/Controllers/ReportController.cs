@@ -66,9 +66,18 @@ namespace ProgressBook.Reporting.Web.Controllers
 
                 if (data == null || data.Length == 0)
                 {
-                    throw new Exception(
-                        "Unable to merge report data with template. Verify report template contains valid bookmarks.");
+                    if (report.IsTemplateOutput)
+                    {
+                        throw new Exception(
+                           $"Unable to merge {report.Name} report data with template. Verify report template contains valid bookmarks.");
+                    }
+                    else
+                    {
+                        throw new Exception(
+                            $"No data returned for {report.Name} report");
+                    }
                 }
+
 
                 var contentType = helper.GetExportContentType(model.ExportType);
                 var fileExtension = helper.GetExportFileExtension(model.ExportType);
