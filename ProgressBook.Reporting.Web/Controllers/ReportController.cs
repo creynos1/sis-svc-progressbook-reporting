@@ -47,7 +47,7 @@ namespace ProgressBook.Reporting.Web.Controllers
                                               _authorizedSchoolService);
 
                 helper.ConfigureDefaultParameters(model.UserContext);
-                
+
                 var report = helper.ConfigureReport(model);
                 var reportUrl = Url.Content("~/Exago").TrimEnd('/') + "/" + helper.GetAdHocReportingUrl();
 
@@ -66,16 +66,8 @@ namespace ProgressBook.Reporting.Web.Controllers
 
                 if (data == null || data.Length == 0)
                 {
-                    if (report.IsTemplateOutput)
-                    {
-                        throw new Exception(
-                           $"Unable to merge {report.Name} report data with template. Verify report template contains valid bookmarks.");
-                    }
-                    else
-                    {
                         throw new Exception(
                             $"No data returned for {report.Name} report");
-                    }
                 }
 
 
