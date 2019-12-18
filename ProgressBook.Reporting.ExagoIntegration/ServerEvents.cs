@@ -53,21 +53,17 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
         public static string OnScheduledReportComplete(SessionInfo sessionInfo, WebReports.Api.Scheduler.SchedulerJob schedulerJob)
         {
-            string fileName = string.Empty;
             try
             {
                 if (sessionInfo.Report.ExecuteDataRowCount == 0)
                 {
-                    fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
-                    UpdateJobScheduleTable(sessionInfo, fileName);
+                    WriteErrorFile(sessionInfo, NoDataStatusMsg);
                 }
             }
             catch (Exception ex)
             {
                 sessionInfo.WriteLog(string.Format("OnScheduledReportComplete Error. {0}", ex.ToString()));
-                fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
-                UpdateJobScheduleTable(sessionInfo, fileName);
-
+                WriteErrorFile(sessionInfo, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
             }
 
             return null;
@@ -122,18 +118,16 @@ namespace ProgressBook.Reporting.ExagoIntegration
 
         public static bool OnScheduledReportExecuteSuccess(SessionInfo sessionInfo)
         {
-            string fileName = string.Empty;
             try
             {
-
                 var vendorExtractCustomOption = sessionInfo.Report.CustomOptionValues.GetCustomOptionValue("Is_Vendor_Extract");
                 if (vendorExtractCustomOption == null)
                 {
-                   return false;
+                    return false;
                 }
                 if (!bool.Parse(vendorExtractCustomOption.Value))
                 {
-                   return false;
+                    return false;
                 }
 
                 var status = FTPOutputFile(sessionInfo);
@@ -143,28 +137,26 @@ namespace ProgressBook.Reporting.ExagoIntegration
                     switch (sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult)
                     {
                         case wrExecuteReturnValue.Success:
-                            fileName = CopyFileToRepository(sessionInfo);
+                            CopyFileToRepository(sessionInfo);
                             break;
                         case wrExecuteReturnValue.NothingQualified:
-                            fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, NoDataStatusMsg);
+                            WriteErrorFile(sessionInfo, NoDataStatusMsg);
                             break;
                         default:
-                            fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
+                            WriteErrorFile(sessionInfo, sessionInfo.ReportSchedulerService.SchedulerJob.ExecuteResult.ToString());
                             break;
                     }
-                    UpdateJobScheduleTable(sessionInfo, fileName);
 
                 }
                 else
                 {
-                    fileName = WriteErrorFile(sessionInfo.ReportSchedulerService.SchedulerJob.ReportName, FTPErrorMessage);
-                    UpdateJobScheduleTable(sessionInfo, fileName, true);
-
+                    WriteErrorFile(sessionInfo, FTPErrorMessage);
                 }
             }
             catch (Exception ex)
             {
                 sessionInfo.WriteLog(string.Format("OnScheduledReportExecuteSuccess Error. {0}", ex.ToString()));
+                WriteErrorFile(sessionInfo, FTPErrorMessage);
             }
 
             return false;
@@ -238,7 +230,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
             dbContext.SaveChanges();
         }
 
-        private static string CopyFileToRepository(SessionInfo sessionInfo)
+        private static void CopyFileToRepository(SessionInfo sessionInfo)
         {
             string output_directory = GetOutputRepository();
             string newFilenameTemplate = "AdHocReport_{0}_{1}{2}";
@@ -250,7 +242,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
             var newFilename = string.Format(newFilenameTemplate, reportUniqueId, DateTime.Now.Ticks, fileExtension);
             string newFilePath = Path.Combine(output_directory, newFilename);
             File.Copy(outputFilePath, newFilePath, true);
-            return newFilePath;
+            UpdateJobScheduleTable(sessionInfo, newFilePath);
         }
 
         private static string GetOutputRepository()
@@ -434,10 +426,10 @@ namespace ProgressBook.Reporting.ExagoIntegration
             return new FileInfo(fileName).Length;
         }
 
-        private static string WriteErrorFile(string reportName, string statusMsg)
+        private static void WriteErrorFile(SessionInfo sessionInfo, string statusMsg)
         {
-            var destFileName = Path.Combine(GetOutputRepository(), string.Format("AdHocReport_NoData_{0}.html", Guid.NewGuid()));
-
+            var fileName = Path.Combine(GetOutputRepository(), string.Format("AdHocReport_NoData_{0}.html", Guid.NewGuid()));
+            string reportName = sessionInfo.ReportSchedulerService.SchedulerJob.ReportName;
             var sb = new StringBuilder();
             sb.AppendLine("<!DOCTYPE html>");
             sb.AppendLine("<html>");
@@ -453,11 +445,12 @@ namespace ProgressBook.Reporting.ExagoIntegration
             sb.AppendFormat("<p>{0}</p>", statusMsg);
             sb.AppendLine("</body>");
             sb.AppendLine("</html>");
-
-            File.WriteAllText(destFileName, sb.ToString());
-
-            return destFileName;
+            File.WriteAllText(fileName, sb.ToString());
+            bool isFTPError = (statusMsg == FTPErrorMessage ? true : false);
+            UpdateJobScheduleTable(sessionInfo, fileName, isFTPError);
         }
+
+
 
         private class AdHocReportUser
         {
