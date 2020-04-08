@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <SkipRules xmlns="http://software-answers.com/ProgressBook/WebDeploy">
   <!-- explicity define these files because of the nested Exago website -->
-  <SkipRule Name="SkipAppSettingsConfig" ObjectName="filePath" SkipAction="Update" AbsolutePath=".*\\Config\\appSettings.config$" />
-  <SkipRule Name="SkipConnectionStringsConfig" ObjectName="filePath" SkipAction="Update" AbsolutePath=".*\\Config\\connectionStrings.config$" />
   <SkipRule Name="SkipExagoLog4NetConfig" ObjectName="filePath" SkipAction="Update" AbsolutePath=".*\\Exago\\Config\\log4net.config$" />
   <SkipRule Name="SkipExagoWebReportsXmlEnc" ObjectName="filePath" SkipAction="Update" AbsolutePath=".*\\Exago\\Config\\WebReports.xml.enc$" />
   <SkipRule Name="SkipDeleteCustomFolder" ObjectName="dirPath" SkipAction="Delete" AbsolutePath=".*\\Custom$"/>

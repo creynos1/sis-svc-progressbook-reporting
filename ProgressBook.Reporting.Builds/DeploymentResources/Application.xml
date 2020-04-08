@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ApplicationPackage xmlns="http://software-answers.com/ProgressBook/WebDeploy">
+<ApplicationPackage xmlns="http://software-answers.com/ProgressBook/WebDeploy/v4">
   <DisplayName>ProgressBook.Reporting</DisplayName>
   <VersionSearchAssemblyName>ProgressBook.Reporting.Web.dll</VersionSearchAssemblyName>
 </ApplicationPackage>
