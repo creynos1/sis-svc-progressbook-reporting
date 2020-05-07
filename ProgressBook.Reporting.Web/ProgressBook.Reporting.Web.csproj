@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -15,7 +16,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProgressBook.Reporting.Web</RootNamespace>
     <AssemblyName>ProgressBook.Reporting.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
@@ -55,7 +56,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Windsor.4.1.1\lib\net45\Castle.Windsor.dll</HintPath>
@@ -65,10 +66,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="HtmlSanitizationLibrary, Version=4.3.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
       <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
@@ -78,17 +79,17 @@
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.Internal.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.Internal.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.dll</HintPath>
+    <Reference Include="Microsoft.AspNetCore.DataProtection, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.DataProtection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.DataProtection.Extensions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.Extensions.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Extensions.dll</HintPath>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Extensions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.Extensions.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
@@ -102,83 +103,86 @@
     <Reference Include="Microsoft.AspNetCore.Http.Features, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.1.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.3\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Options, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Options.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.5.3.0\lib\net461\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.5.6.0\lib\net461\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.IdentityModel.Logging.5.3.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.5.6.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.IdentityModel.Protocol.Extensions, Version=1.0.3.42, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Protocol.Extensions.1.0.3.308261200\lib\net45\Microsoft.IdentityModel.Protocol.Extensions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Protocols, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.5.3.0\lib\net461\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.5.6.0\lib\net461\Microsoft.IdentityModel.Protocols.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.5.3.0\lib\net461\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.5.6.0\lib\net461\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.3.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.6.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.0\lib\net451\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.4.0.0\lib\net451\Microsoft.Owin.Security.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.0.0\lib\net451\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Interop, Version=2.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Security.Interop.2.1.2\lib\net461\Microsoft.Owin.Security.Interop.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Jwt, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.Jwt.4.0.0\lib\net451\Microsoft.Owin.Security.Jwt.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Jwt, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Jwt.4.1.0\lib\net45\Microsoft.Owin.Security.Jwt.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.0.0\lib\net451\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.OpenIdConnect, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.OpenIdConnect.4.0.0\lib\net451\Microsoft.Owin.Security.OpenIdConnect.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.OpenIdConnect, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OpenIdConnect.4.1.0\lib\net45\Microsoft.Owin.Security.OpenIdConnect.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Win32.Registry, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Win32.Registry.4.5.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    <Reference Include="Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.4.7.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
@@ -187,53 +191,53 @@
     <Reference Include="Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2, processorArchitecture=MSIL">
       <HintPath>..\packages\Pipelines.Sockets.Unofficial.1.0.9\lib\net472\Pipelines.Sockets.Unofficial.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Business.Contracts, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Contracts.19.2.0.5\lib\netstandard2.0\ProgressBook.CentralAdmin.Business.Contracts.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Business.Contracts, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Contracts.20.0.0.6\lib\netstandard2.0\ProgressBook.CentralAdmin.Business.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Business.Services, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Services.19.2.0.5\lib\net461\ProgressBook.CentralAdmin.Business.Services.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Business.Services, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Business.Services.20.0.0.6\lib\net461\ProgressBook.CentralAdmin.Business.Services.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Data.Contracts, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.2.0.5\lib\net472\ProgressBook.CentralAdmin.Data.Contracts.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Data.Contracts, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.20.0.0.6\lib\net48\ProgressBook.CentralAdmin.Data.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Data.Services, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Data.Services.19.2.0.5\lib\net461\ProgressBook.CentralAdmin.Data.Services.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Data.Services, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Data.Services.20.0.0.6\lib\net461\ProgressBook.CentralAdmin.Data.Services.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.CentralAdmin.Security.DataProtection, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.CentralAdmin.Security.DataProtection.19.2.0.5\lib\net461\ProgressBook.CentralAdmin.Security.DataProtection.dll</HintPath>
+    <Reference Include="ProgressBook.CentralAdmin.Security.DataProtection, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.CentralAdmin.Security.DataProtection.20.0.0.6\lib\net461\ProgressBook.CentralAdmin.Security.DataProtection.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Framework.Core, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.2.0.5\lib\net472\ProgressBook.Framework.Core.dll</HintPath>
+    <Reference Include="ProgressBook.Framework.Core, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.20.0.0.6\lib\net48\ProgressBook.Framework.Core.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Infrastructure.Data, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Infrastructure.Data.1.0.7\lib\netstandard2.0\ProgressBook.Infrastructure.Data.dll</HintPath>
+    <Reference Include="ProgressBook.Infrastructure.Data, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Infrastructure.Data.1.1.7\lib\netstandard2.0\ProgressBook.Infrastructure.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Infrastructure.Data.Configuration, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Infrastructure.Data.Configuration.1.0.7\lib\netstandard2.0\ProgressBook.Infrastructure.Data.Configuration.dll</HintPath>
+    <Reference Include="ProgressBook.Infrastructure.Data.Configuration, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Infrastructure.Data.Configuration.1.1.7\lib\netstandard2.0\ProgressBook.Infrastructure.Data.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Infrastructure.Threading, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Infrastructure.Threading.1.0.7\lib\netstandard2.0\ProgressBook.Infrastructure.Threading.dll</HintPath>
+    <Reference Include="ProgressBook.Infrastructure.Threading, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Infrastructure.Threading.1.1.7\lib\netstandard2.0\ProgressBook.Infrastructure.Threading.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Master.Connections, Version=18.9.0.14, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Master.Connections.18.9.0.14\lib\net471\ProgressBook.Master.Connections.dll</HintPath>
+    <Reference Include="ProgressBook.Master.Connections, Version=20.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Master.Connections.20.0.0.2\lib\net48\ProgressBook.Master.Connections.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Master.Data, Version=18.9.0.14, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Master.Data.18.9.0.14\lib\net471\ProgressBook.Master.Data.dll</HintPath>
+    <Reference Include="ProgressBook.Master.Data, Version=20.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Master.Data.20.0.0.2\lib\net48\ProgressBook.Master.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Security.Authentication.Owin, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Security.Authentication.Owin.19.2.0.5\lib\net472\ProgressBook.Security.Authentication.Owin.dll</HintPath>
+    <Reference Include="ProgressBook.Security.Authentication.Owin, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Security.Authentication.Owin.20.0.0.6\lib\net48\ProgressBook.Security.Authentication.Owin.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Shared.Cache.Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Cache.Redis.1.0.0.19\lib\net472\ProgressBook.Shared.Cache.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security, Version=0.2.0.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.19\lib\net472\ProgressBook.Shared.Security.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security, Version=0.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.3.0.1\lib\net48\ProgressBook.Shared.Security.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security.Data, Version=0.2.0.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.19\lib\net472\ProgressBook.Shared.Security.Data.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security.Data, Version=0.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.3.0.1\lib\net48\ProgressBook.Shared.Security.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ProgressBook.Shared.Security.Infrastructure, Version=0.2.0.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.19\lib\net472\ProgressBook.Shared.Security.Infrastructure.dll</HintPath>
+    <Reference Include="ProgressBook.Shared.Security.Infrastructure, Version=0.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.3.0.1\lib\net48\ProgressBook.Shared.Security.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="ProgressBook.Shared.Utilities, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Utilities.1.1.0.0\lib\net452\ProgressBook.Shared.Utilities.dll</HintPath>
@@ -246,29 +250,29 @@
     <Reference Include="ProgressBook.Shared.Utilities.Logging, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ProgressBook.Shared.Utilities.Logging.1.0.0.1\lib\net452\ProgressBook.Shared.Utilities.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Security.Data.CentralAdmin, Version=0.2.0.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Shared.Security.0.2.0.19\lib\net472\Security.Data.CentralAdmin.dll</HintPath>
+    <Reference Include="Security.Data.CentralAdmin, Version=0.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Shared.Security.0.3.0.1\lib\net48\Security.Data.CentralAdmin.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.Common, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Framework.Common.19.2.0.5\lib\net472\SoftwareAnswers.Common.dll</HintPath>
+    <Reference Include="SoftwareAnswers.Common, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.Common.20.0.0.6\lib\net48\SoftwareAnswers.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.Common.Lite, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.2.0.5\lib\net472\SoftwareAnswers.Common.Lite.dll</HintPath>
+    <Reference Include="SoftwareAnswers.Common.Lite, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.20.0.0.6\lib\net48\SoftwareAnswers.Common.Lite.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.CentralAdmin.Models, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.2.0.5\lib\net472\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.CentralAdmin.Models, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.20.0.0.6\lib\net48\SoftwareAnswers.ProgressBook.CentralAdmin.Models.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.Framework, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.19.2.0.5\lib\net472\SoftwareAnswers.ProgressBook.Framework.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.Framework, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.Framework.SingleSignOn.20.0.0.6\lib\net48\SoftwareAnswers.ProgressBook.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Consumer, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.2.0.5\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Consumer.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Consumer, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.20.0.0.6\lib\net48\SoftwareAnswers.ProgressBook.IdentityServer.Consumer.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Core, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.2.0.5\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Core.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Core, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.20.0.0.6\lib\net48\SoftwareAnswers.ProgressBook.IdentityServer.Core.dll</HintPath>
     </Reference>
-    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=19.2.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.19.2.0.5\lib\net472\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
+    <Reference Include="SoftwareAnswers.ProgressBook.IdentityServer.Shared, Version=20.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressBook.IdentityServer.Consumer.20.0.0.6\lib\net48\SoftwareAnswers.ProgressBook.IdentityServer.Shared.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
       <HintPath>..\packages\StackExchange.Redis.2.0.519\lib\net472\StackExchange.Redis.dll</HintPath>
@@ -276,6 +280,9 @@
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Configuration.ConfigurationManager.4.5.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
@@ -288,8 +295,8 @@
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.IdentityModel" />
-    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.3.0\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.6.0\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
@@ -310,23 +317,23 @@
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    <Reference Include="System.Security.AccessControl, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.7.0\lib\net461\System.Security.AccessControl.dll</HintPath>
     </Reference>
-    <Reference Include="System.Security.Cryptography.Xml, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.Cryptography.Xml.4.5.0\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
+    <Reference Include="System.Security.Cryptography.Xml, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Xml.4.7.0\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
     </Reference>
-    <Reference Include="System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.Permissions.4.5.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    <Reference Include="System.Security.Permissions, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.4.7.0\lib\net461\System.Security.Permissions.dll</HintPath>
     </Reference>
-    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -412,8 +419,15 @@
     <Reference Include="WebReportsAsmi">
       <HintPath>Exago\Bin\WebReportsAsmi.dll</HintPath>
     </Reference>
-    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.8.21.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.8.21\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Z.EntityFramework.Extensions, Version=4.0.59.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Extensions.4.0.59\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.12.19.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.12.19\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Z.Expressions.Eval, Version=3.1.8.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Expressions.Eval.3.1.8\lib\net45\Z.Expressions.Eval.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -527,7 +541,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

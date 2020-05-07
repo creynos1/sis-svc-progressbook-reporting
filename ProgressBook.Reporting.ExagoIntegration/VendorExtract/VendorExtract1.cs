@@ -9,7 +9,7 @@
 // The following connection settings were used to generate this file:
 //     Configuration file:     "ProgressBook.Reporting.Web\Web.config"
 //     Connection String Name: "StudentInformation"
-//     Connection String:      "Data Source=SAPC042;Initial Catalog=MAJR;User Id=pbadmin;password=**zapped**;"
+//     Connection String:      "Data Source=.;Initial Catalog=Current_sis_tccsa;User Id=pbadmin;password=**zapped**;"
 // ------------------------------------------------------------------------------------------------
 // Database Edition       : Developer Edition (64-bit)
 // Database Engine Edition: Enterprise
