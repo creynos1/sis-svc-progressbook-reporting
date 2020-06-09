@@ -70,13 +70,15 @@
             api.DataSources.EnsureDataSourceExists("StudentInformation",
                                                    "mssql",
                                                    _connectionStrings.StudentInformation);
-            
+            api.DataSources.EnsureDataSourceExists("SpecialServices",
+                                                   "mssql",
+                                                   _connectionStrings.SpecialServices);
             api.DataSources.EnsureDataSourceExists("DistrictDatabase",
                                                    "mssql",
                                                    _connectionStrings.DistrictTemplate);
             api.DataSources.EnsureDataSourceExists("PbMaster",
-                                   "mssql",
-                                   _connectionStrings.PbMaster);
+                "mssql",
+                _connectionStrings.PbMaster);
 
             using (var districtProfileService = new DistrictProfileService(_connectionStrings.PbMaster))
             {

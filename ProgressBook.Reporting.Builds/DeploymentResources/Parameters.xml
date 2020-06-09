@@ -59,6 +59,16 @@
                     match="/connectionStrings/add[@name='DistrictTemplate']/@connectionString"/>
   </parameter>
 
+  <parameter name="SpecialServices"
+             tags="SqlConnectionString"
+             defaultValue="Application Name=ProgressBook.Reporting"
+             friendlyName="SpecialServices Database Information"
+             description="Please enter the connection information of the SpecialServices database you would like Reporting to use.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\connectionStrings.config$"
+                    match="/connectionStrings/add[@name='SpecialServices']/@connectionString"/>
+  </parameter>
+
   <parameter name="SchedulerHost"
              defaultValue=""
              friendlyName="Scheduler Host Address"
