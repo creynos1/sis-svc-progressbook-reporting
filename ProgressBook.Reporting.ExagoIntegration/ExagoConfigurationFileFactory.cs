@@ -54,15 +54,13 @@
 
         private void PopulateDynamicEntities(XmlDocument doc)
         {
-            var frag = doc.CreateDocumentFragment();
-            var sb = new StringBuilder();
-
             var sisReportViewInfoRepository = new SisReportViewInfoRepository();
             var sisReportColumnMetaDataRepository = new SisReportColumnMetaDataRepository();
             var sisViewInfoList = sisReportViewInfoRepository.GetSisEntities();
             var sisViewMetaData = sisReportColumnMetaDataRepository.GetSisEntityMetadata();
             sisViewInfoList.Merge(sisViewMetaData);
-            
+
+            var sb = new StringBuilder();
             foreach (var viewInfo in sisViewInfoList)
             {
                 sb.AppendLine(_exagoEntitySerializer.ToXml(viewInfo, _sisEntityDataSourceId));
@@ -76,10 +74,24 @@
                 sb.AppendLine(_exagoEntitySerializer.ToXml(viewInfo, _exagoSettings.GradeBookDataSourceId));
             }
 
+            var frag = doc.CreateDocumentFragment();
             frag.InnerXml = sb.ToString();
 
             var rootNode = doc.SelectSingleNode("webreports");
             var firstRoleNode = rootNode.SelectSingleNode("role[1]");
+            rootNode.InsertBefore(frag, firstRoleNode);
+
+            var specialServicesReportViewInfoRepository = new SpecialServicesReportViewInfoRepository();
+            var specialServicesViewInfoList = specialServicesReportViewInfoRepository.GetSpsEntities();
+
+            sb = new StringBuilder();
+            foreach (var viewInfo in specialServicesViewInfoList)
+            {
+                sb.AppendLine(_exagoEntitySerializer.ToXml(viewInfo, _exagoSettings.SpecialServicesDataSourceId));
+            }
+
+            frag = doc.CreateDocumentFragment();
+            frag.InnerXml = sb.ToString();
             rootNode.InsertBefore(frag, firstRoleNode);
         }
     }

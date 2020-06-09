@@ -8,6 +8,7 @@
         string DistrictTemplate { get; }
         string QuickReports { get; }
         string PbMaster { get; }
+        string SpecialServices { get; }
         string IntegrationAssembly { get; }
         string OneRosterIntegrationAssembly { get; }
     }
@@ -31,6 +32,9 @@
             ConfigurationManager.ConnectionStrings["QuickReports"]?.ConnectionString;
 
         public string PbMaster { get; } = ConfigurationManager.ConnectionStrings["PbMasterContext"]?.ConnectionString;
+
+        public string SpecialServices { get; } =
+            ConfigurationManager.ConnectionStrings["SpecialServices"]?.ConnectionString;
 
         public string IntegrationAssembly =>
             $@"assembly={_exagoSettings.IntegrationAssembly};class={_exagoSettings.ServerEventsTypeName}";

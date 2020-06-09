@@ -23,6 +23,7 @@
         string SisDataSourceId { get; }
         string SisReadonlyDataSourceId { get; }
         string GradeBookDataSourceId { get; }
+        string SpecialServicesDataSourceId { get; }
         bool EnableFtpSessionLog { get; }
         int FTPSessionLogDaysHistory { get; }
         string FtpSessionLogPath { get; }
@@ -84,6 +85,7 @@
         public string SisDataSourceId { get; } = "0";
         public string SisReadonlyDataSourceId { get; } = "2";
         public string GradeBookDataSourceId { get; } = "3";
+        public string SpecialServicesDataSourceId { get; } = "6";
 
         public bool EnableFtpSessionLog
         {

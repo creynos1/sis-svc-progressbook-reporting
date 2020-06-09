@@ -233,6 +233,12 @@
     <dbtype>assembly</dbtype>
     <dataconnstr/>
   </datasource>
+  <datasource>
+    <id>6</id>
+    <name>SpecialServices</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
   <parameter>
     <id>SchoolId</id>
     <data_type>string</data_type>
