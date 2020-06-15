@@ -53,6 +53,18 @@
             this.pbMasterUserNameTextBox = new System.Windows.Forms.TextBox();
             this.redXIcon2 = new System.Windows.Forms.PictureBox();
             this.greenCheckIcon2 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.specialServicesServerNameTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.testSpecialServicesConnectionButton = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.specialServicesPasswordTextBox = new System.Windows.Forms.TextBox();
+            this.specialServicesDatabaseNameTextBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.specialServicesUserNameTextBox = new System.Windows.Forms.TextBox();
+            this.redXIcon3 = new System.Windows.Forms.PictureBox();
+            this.greenCheckIcon3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.redXIcon)).BeginInit();
@@ -60,6 +72,9 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.redXIcon2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenCheckIcon2)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.redXIcon3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenCheckIcon3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -296,15 +311,133 @@
             this.greenCheckIcon2.TabStop = false;
             this.greenCheckIcon2.Visible = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.specialServicesServerNameTextBox);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.testSpecialServicesConnectionButton);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.specialServicesPasswordTextBox);
+            this.groupBox3.Controls.Add(this.specialServicesDatabaseNameTextBox);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.specialServicesUserNameTextBox);
+            this.groupBox3.Controls.Add(this.redXIcon3);
+            this.groupBox3.Controls.Add(this.greenCheckIcon3);
+            this.groupBox3.Location = new System.Drawing.Point(0, 383);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(321, 184);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "SpecialServices";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 29);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 15);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Server Name:";
+            // 
+            // specialServicesServerNameTextBox
+            // 
+            this.specialServicesServerNameTextBox.Location = new System.Drawing.Point(119, 25);
+            this.specialServicesServerNameTextBox.Name = "specialServicesServerNameTextBox";
+            this.specialServicesServerNameTextBox.Size = new System.Drawing.Size(186, 21);
+            this.specialServicesServerNameTextBox.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 59);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(101, 15);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Database Name:";
+            // 
+            // testSpecialServicesConnectionButton
+            // 
+            this.testSpecialServicesConnectionButton.Location = new System.Drawing.Point(118, 147);
+            this.testSpecialServicesConnectionButton.Name = "testSpecialServicesConnectionButton";
+            this.testSpecialServicesConnectionButton.Size = new System.Drawing.Size(122, 27);
+            this.testSpecialServicesConnectionButton.TabIndex = 8;
+            this.testSpecialServicesConnectionButton.Text = "Test Connection";
+            this.testSpecialServicesConnectionButton.UseVisualStyleBackColor = true;
+            this.testSpecialServicesConnectionButton.Click += new System.EventHandler(this.testSpecialServicesConnectionButton_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 89);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 15);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "User:";
+            // 
+            // specialServicesPasswordTextBox
+            // 
+            this.specialServicesPasswordTextBox.Location = new System.Drawing.Point(119, 116);
+            this.specialServicesPasswordTextBox.Name = "specialServicesPasswordTextBox";
+            this.specialServicesPasswordTextBox.Size = new System.Drawing.Size(186, 21);
+            this.specialServicesPasswordTextBox.TabIndex = 7;
+            this.specialServicesPasswordTextBox.UseSystemPasswordChar = true;
+            // 
+            // specialServicesDatabaseNameTextBox
+            // 
+            this.specialServicesDatabaseNameTextBox.Location = new System.Drawing.Point(119, 55);
+            this.specialServicesDatabaseNameTextBox.Name = "specialServicesDatabaseNameTextBox";
+            this.specialServicesDatabaseNameTextBox.Size = new System.Drawing.Size(186, 21);
+            this.specialServicesDatabaseNameTextBox.TabIndex = 4;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 119);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(66, 15);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Password:";
+            // 
+            // specialServicesUserNameTextBox
+            // 
+            this.specialServicesUserNameTextBox.Location = new System.Drawing.Point(119, 85);
+            this.specialServicesUserNameTextBox.Name = "specialServicesUserNameTextBox";
+            this.specialServicesUserNameTextBox.Size = new System.Drawing.Size(186, 21);
+            this.specialServicesUserNameTextBox.TabIndex = 5;
+            // 
+            // redXIcon3
+            // 
+            this.redXIcon3.Image = ((System.Drawing.Image)(resources.GetObject("redXIcon3.Image")));
+            this.redXIcon3.InitialImage = null;
+            this.redXIcon3.Location = new System.Drawing.Point(246, 149);
+            this.redXIcon3.Name = "redXIcon3";
+            this.redXIcon3.Size = new System.Drawing.Size(24, 24);
+            this.redXIcon3.TabIndex = 10;
+            this.redXIcon3.TabStop = false;
+            this.redXIcon3.Visible = false;
+            // 
+            // greenCheckIcon3
+            // 
+            this.greenCheckIcon3.Image = ((System.Drawing.Image)(resources.GetObject("greenCheckIcon3.Image")));
+            this.greenCheckIcon3.InitialImage = null;
+            this.greenCheckIcon3.Location = new System.Drawing.Point(246, 149);
+            this.greenCheckIcon3.Name = "greenCheckIcon3";
+            this.greenCheckIcon3.Size = new System.Drawing.Size(24, 24);
+            this.greenCheckIcon3.TabIndex = 9;
+            this.greenCheckIcon3.TabStop = false;
+            this.greenCheckIcon3.Visible = false;
+            // 
             // DatabaseSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "DatabaseSettings";
-            this.Size = new System.Drawing.Size(321, 379);
+            this.Size = new System.Drawing.Size(321, 566);
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -314,6 +447,10 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.redXIcon2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenCheckIcon2)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.redXIcon3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenCheckIcon3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -344,5 +481,17 @@
         private System.Windows.Forms.TextBox pbMasterUserNameTextBox;
         private System.Windows.Forms.PictureBox redXIcon2;
         private System.Windows.Forms.PictureBox greenCheckIcon2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox specialServicesServerNameTextBox;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button testSpecialServicesConnectionButton;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox specialServicesPasswordTextBox;
+        private System.Windows.Forms.TextBox specialServicesDatabaseNameTextBox;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox specialServicesUserNameTextBox;
+        private System.Windows.Forms.PictureBox redXIcon3;
+        private System.Windows.Forms.PictureBox greenCheckIcon3;
     }
 }

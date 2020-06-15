@@ -32,16 +32,16 @@
         {
             this.tabs = new System.Windows.Forms.TabControl();
             this.emailTab = new System.Windows.Forms.TabPage();
-            this.emailSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.EmailSettings();
             this.databaseTab = new System.Windows.Forms.TabPage();
-            this.databaseSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.DatabaseSettings();
             this.serviceTab = new System.Windows.Forms.TabPage();
-            this.serviceAccountSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.ServiceAccountSettings();
             this.advancedTab = new System.Windows.Forms.TabPage();
-            this.advancedSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.AdvancedSettings();
             this.ftpLoggingTab = new System.Windows.Forms.TabPage();
-            this.ftpLoggingSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.FtpLoggingSettings();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.emailSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.EmailSettings();
+            this.databaseSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.DatabaseSettings();
+            this.serviceAccountSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.ServiceAccountSettings();
+            this.advancedSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.AdvancedSettings();
+            this.ftpLoggingSettings = new ProgressBook.Reporting.ExagoScheduler.Common.Controls.FtpLoggingSettings();
             this.tabs.SuspendLayout();
             this.emailTab.SuspendLayout();
             this.databaseTab.SuspendLayout();
@@ -61,7 +61,7 @@
             this.tabs.Name = "tabs";
             this.tabs.Padding = new System.Drawing.Point(10, 5);
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(466, 420);
+            this.tabs.Size = new System.Drawing.Size(466, 610);
             this.tabs.TabIndex = 5;
             // 
             // emailTab
@@ -70,10 +70,56 @@
             this.emailTab.Location = new System.Drawing.Point(4, 28);
             this.emailTab.Name = "emailTab";
             this.emailTab.Padding = new System.Windows.Forms.Padding(3);
-            this.emailTab.Size = new System.Drawing.Size(458, 388);
+            this.emailTab.Size = new System.Drawing.Size(458, 578);
             this.emailTab.TabIndex = 1;
             this.emailTab.Text = "Email";
             this.emailTab.UseVisualStyleBackColor = true;
+            // 
+            // databaseTab
+            // 
+            this.databaseTab.Controls.Add(this.databaseSettings);
+            this.databaseTab.Location = new System.Drawing.Point(4, 28);
+            this.databaseTab.Name = "databaseTab";
+            this.databaseTab.Padding = new System.Windows.Forms.Padding(3);
+            this.databaseTab.Size = new System.Drawing.Size(458, 578);
+            this.databaseTab.TabIndex = 0;
+            this.databaseTab.Text = "Database";
+            this.databaseTab.UseVisualStyleBackColor = true;
+            // 
+            // serviceTab
+            // 
+            this.serviceTab.Controls.Add(this.serviceAccountSettings);
+            this.serviceTab.Location = new System.Drawing.Point(4, 28);
+            this.serviceTab.Name = "serviceTab";
+            this.serviceTab.Padding = new System.Windows.Forms.Padding(3);
+            this.serviceTab.Size = new System.Drawing.Size(458, 578);
+            this.serviceTab.TabIndex = 3;
+            this.serviceTab.Text = "Service";
+            this.serviceTab.UseVisualStyleBackColor = true;
+            // 
+            // advancedTab
+            // 
+            this.advancedTab.AutoScroll = true;
+            this.advancedTab.Controls.Add(this.advancedSettings);
+            this.advancedTab.Location = new System.Drawing.Point(4, 28);
+            this.advancedTab.Name = "advancedTab";
+            this.advancedTab.Padding = new System.Windows.Forms.Padding(3);
+            this.advancedTab.Size = new System.Drawing.Size(458, 578);
+            this.advancedTab.TabIndex = 2;
+            this.advancedTab.Text = "Advanced";
+            this.advancedTab.UseVisualStyleBackColor = true;
+            // 
+            // ftpLoggingTab
+            // 
+            this.ftpLoggingTab.AutoScroll = true;
+            this.ftpLoggingTab.Controls.Add(this.ftpLoggingSettings);
+            this.ftpLoggingTab.Location = new System.Drawing.Point(4, 28);
+            this.ftpLoggingTab.Name = "ftpLoggingTab";
+            this.ftpLoggingTab.Padding = new System.Windows.Forms.Padding(3);
+            this.ftpLoggingTab.Size = new System.Drawing.Size(458, 578);
+            this.ftpLoggingTab.TabIndex = 4;
+            this.ftpLoggingTab.Text = "FTP Logging";
+            this.ftpLoggingTab.UseVisualStyleBackColor = true;
             // 
             // emailSettings
             // 
@@ -91,17 +137,6 @@
             this.emailSettings.TabIndex = 4;
             this.emailSettings.UserName = "";
             // 
-            // databaseTab
-            // 
-            this.databaseTab.Controls.Add(this.databaseSettings);
-            this.databaseTab.Location = new System.Drawing.Point(4, 28);
-            this.databaseTab.Name = "databaseTab";
-            this.databaseTab.Padding = new System.Windows.Forms.Padding(3);
-            this.databaseTab.Size = new System.Drawing.Size(458, 388);
-            this.databaseTab.TabIndex = 0;
-            this.databaseTab.Text = "Database";
-            this.databaseTab.UseVisualStyleBackColor = true;
-            // 
             // databaseSettings
             // 
             this.databaseSettings.ConnectionString = "Data Source=;Initial Catalog=;User ID=;Password=;Application Name=\"Exago Schedule" +
@@ -112,21 +147,22 @@
             this.databaseSettings.Location = new System.Drawing.Point(3, 3);
             this.databaseSettings.Name = "databaseSettings";
             this.databaseSettings.Password = "";
+            this.databaseSettings.PbMasterConnectionString = "Data Source=;Initial Catalog=;User ID=;Password=;Application Name=\"Exago Schedule" +
+    "r\"";
+            this.databaseSettings.PbMasterDatabaseName = "";
+            this.databaseSettings.PbMasterPassword = "";
+            this.databaseSettings.PbMasterServerName = "";
+            this.databaseSettings.PbMasterUserName = "";
             this.databaseSettings.ServerName = "";
-            this.databaseSettings.Size = new System.Drawing.Size(452, 382);
+            this.databaseSettings.Size = new System.Drawing.Size(452, 572);
+            this.databaseSettings.SpecialServicesConnectionString = "Data Source=;Initial Catalog=;User ID=;Password=;Application Name=\"Exago Schedule" +
+    "r\"";
+            this.databaseSettings.SpecialServicesDatabaseName = "";
+            this.databaseSettings.SpecialServicesPassword = "";
+            this.databaseSettings.SpecialServicesServerName = "";
+            this.databaseSettings.SpecialServicesUserName = "";
             this.databaseSettings.TabIndex = 2;
             this.databaseSettings.UserName = "";
-            // 
-            // serviceTab
-            // 
-            this.serviceTab.Controls.Add(this.serviceAccountSettings);
-            this.serviceTab.Location = new System.Drawing.Point(4, 28);
-            this.serviceTab.Name = "serviceTab";
-            this.serviceTab.Padding = new System.Windows.Forms.Padding(3);
-            this.serviceTab.Size = new System.Drawing.Size(458, 388);
-            this.serviceTab.TabIndex = 3;
-            this.serviceTab.Text = "Service";
-            this.serviceTab.UseVisualStyleBackColor = true;
             // 
             // serviceAccountSettings
             // 
@@ -135,20 +171,8 @@
             this.serviceAccountSettings.Name = "serviceAccountSettings";
             this.serviceAccountSettings.ServiceAccount = "";
             this.serviceAccountSettings.ServicePassword = "";
-            this.serviceAccountSettings.Size = new System.Drawing.Size(452, 382);
+            this.serviceAccountSettings.Size = new System.Drawing.Size(452, 574);
             this.serviceAccountSettings.TabIndex = 0;
-            // 
-            // advancedTab
-            // 
-            this.advancedTab.AutoScroll = true;
-            this.advancedTab.Controls.Add(this.advancedSettings);
-            this.advancedTab.Location = new System.Drawing.Point(4, 28);
-            this.advancedTab.Name = "advancedTab";
-            this.advancedTab.Padding = new System.Windows.Forms.Padding(3);
-            this.advancedTab.Size = new System.Drawing.Size(458, 388);
-            this.advancedTab.TabIndex = 2;
-            this.advancedTab.Text = "Advanced";
-            this.advancedTab.UseVisualStyleBackColor = true;
             // 
             // advancedSettings
             // 
@@ -162,22 +186,10 @@
             this.advancedSettings.Name = "advancedSettings";
             this.advancedSettings.ReportPath = "";
             this.advancedSettings.SimultaneousJobMax = 1;
-            this.advancedSettings.Size = new System.Drawing.Size(452, 382);
+            this.advancedSettings.Size = new System.Drawing.Size(452, 574);
             this.advancedSettings.SleepTime = 15;
             this.advancedSettings.StopScheduleOnError = false;
             this.advancedSettings.TabIndex = 5;
-            // 
-            // ftpLoggingTab
-            // 
-            this.ftpLoggingTab.AutoScroll = true;
-            this.ftpLoggingTab.Controls.Add(this.ftpLoggingSettings);
-            this.ftpLoggingTab.Location = new System.Drawing.Point(4, 28);
-            this.ftpLoggingTab.Name = "ftpLoggingTab";
-            this.ftpLoggingTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ftpLoggingTab.Size = new System.Drawing.Size(458, 388);
-            this.ftpLoggingTab.TabIndex = 4;
-            this.ftpLoggingTab.Text = "FTP Logging";
-            this.ftpLoggingTab.UseVisualStyleBackColor = true;
             // 
             // ftpLoggingSettings
             // 
@@ -187,19 +199,20 @@
             this.ftpLoggingSettings.Location = new System.Drawing.Point(3, 3);
             this.ftpLoggingSettings.Name = "ftpLoggingSettings";
             this.ftpLoggingSettings.NumberofLogDaysHistoryToMaintain = 10;
-            this.ftpLoggingSettings.Size = new System.Drawing.Size(452, 382);
+            this.ftpLoggingSettings.Size = new System.Drawing.Size(452, 574);
             this.ftpLoggingSettings.TabIndex = 0;
             // 
             // ConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(492, 445);
+            this.ClientSize = new System.Drawing.Size(492, 636);
             this.Controls.Add(this.tabs);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "ConfigForm";
             this.Text = "Exago Scheduler Settings";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ConfigForm_FormClosing);

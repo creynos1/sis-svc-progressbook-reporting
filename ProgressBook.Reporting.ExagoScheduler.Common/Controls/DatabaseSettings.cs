@@ -16,120 +16,177 @@
             pbMasterServerNameTextBox.Validating += RequiredFieldHandler;
             pbMasterDatabaseNameTextBox.Validating += RequiredFieldHandler;
             pbMasterUserNameTextBox.Validating += RequiredFieldHandler;
+
+            specialServicesServerNameTextBox.Validating += RequiredFieldHandler;
+            specialServicesDatabaseNameTextBox.Validating += RequiredFieldHandler;
+            specialServicesUserNameTextBox.Validating += RequiredFieldHandler;
         }
 
         public string ServerName
         {
-            get { return serverNameTextBox.Text; }
-            set { serverNameTextBox.Text = value; }
+            get => serverNameTextBox.Text;
+            set => serverNameTextBox.Text = value;
         }
 
         public string DatabaseName
         {
-            get { return databaseNameTextBox.Text; }
-            set { databaseNameTextBox.Text = value; }
+            get => databaseNameTextBox.Text;
+            set => databaseNameTextBox.Text = value;
         }
 
         public string UserName
         {
-            get { return userNameTextBox.Text; }
-            set { userNameTextBox.Text = value; }
+            get => userNameTextBox.Text;
+            set => userNameTextBox.Text = value;
         }
 
         public string Password
         {
-            get { return passwordTextBox.Text; }
-            set { passwordTextBox.Text = value; }
+            get => passwordTextBox.Text;
+            set => passwordTextBox.Text = value;
         }
 
         public string ConnectionString
         {
-            get { return BuildConnectionString(true); }
-            set { ParseConnectionString(value, true); }
+            get => BuildConnectionString(Connections.StudentInformation);
+            set => ParseConnectionString(value, Connections.StudentInformation);
         }
 
         public string PbMasterServerName
         {
-            get { return pbMasterServerNameTextBox.Text; }
-            set { pbMasterServerNameTextBox.Text = value; }
+            get => pbMasterServerNameTextBox.Text;
+            set => pbMasterServerNameTextBox.Text = value;
         }
 
         public string PbMasterDatabaseName
         {
-            get { return pbMasterDatabaseNameTextBox.Text; }
-            set { pbMasterDatabaseNameTextBox.Text = value; }
+            get => pbMasterDatabaseNameTextBox.Text;
+            set => pbMasterDatabaseNameTextBox.Text = value;
         }
 
         public string PbMasterUserName
         {
-            get { return pbMasterUserNameTextBox.Text; }
-            set { pbMasterUserNameTextBox.Text = value; }
+            get => pbMasterUserNameTextBox.Text;
+            set => pbMasterUserNameTextBox.Text = value;
         }
 
         public string PbMasterPassword
         {
-            get { return pbMasterPasswordTextBox.Text; }
-            set { pbMasterPasswordTextBox.Text = value; }
+            get => pbMasterPasswordTextBox.Text;
+            set => pbMasterPasswordTextBox.Text = value;
         }
 
         public string PbMasterConnectionString
         {
-            get { return BuildConnectionString(false);
-            }
-            set { ParseConnectionString(value, false);
-            }
+            get => BuildConnectionString(Connections.PbMaster);
+            set => ParseConnectionString(value, Connections.PbMaster);
         }
 
-        private void ParseConnectionString(string connectionString, bool isStudentInformation)
+        public string SpecialServicesServerName
+        {
+            get => pbMasterServerNameTextBox.Text;
+            set => pbMasterServerNameTextBox.Text = value;
+        }
+
+        public string SpecialServicesDatabaseName
+        {
+            get => specialServicesDatabaseNameTextBox.Text;
+            set => specialServicesDatabaseNameTextBox.Text = value;
+        }
+
+        public string SpecialServicesUserName
+        {
+            get => specialServicesUserNameTextBox.Text;
+            set => specialServicesUserNameTextBox.Text = value;
+        }
+
+        public string SpecialServicesPassword
+        {
+            get => specialServicesPasswordTextBox.Text;
+            set => specialServicesPasswordTextBox.Text = value;
+        }
+
+        public string SpecialServicesConnectionString
+        {
+            get => BuildConnectionString(Connections.SpecialServices);
+            set => ParseConnectionString(value, Connections.SpecialServices);
+        }
+
+        private void ParseConnectionString(string connectionString, Connections connection)
         {
             var builder = new SqlConnectionStringBuilder(connectionString);
-            if (isStudentInformation)
+            switch (connection)
             {
-                ServerName = builder.DataSource;
-                DatabaseName = builder.InitialCatalog;
-                UserName = builder.UserID;
-                Password = builder.Password;
-            }
-            else
-            {
-                PbMasterServerName = builder.DataSource;
-                PbMasterDatabaseName = builder.InitialCatalog;
-                PbMasterUserName = builder.UserID;
-                PbMasterPassword = builder.Password;
-            }
-        }
-
-        private string BuildConnectionString(bool isStudentInformation)
-        {
-            if (isStudentInformation)
-            {
-                var builder = new SqlConnectionStringBuilder
-                {
-                    DataSource = ServerName,
-                    InitialCatalog = DatabaseName,
-                    UserID = UserName,
-                    Password = Password,
-                    ApplicationName = "Exago Scheduler"
-                };
-                return builder.ToString();
-            }
-            else
-            {
-                var builder = new SqlConnectionStringBuilder
-                {
-                    DataSource = PbMasterServerName,
-                    InitialCatalog = PbMasterDatabaseName,
-                    UserID = PbMasterUserName,
-                    Password = PbMasterPassword,
-                    ApplicationName = "Exago Scheduler"
-                };
-                return builder.ToString();
+                case Connections.PbMaster:
+                    PbMasterServerName = builder.DataSource;
+                    PbMasterDatabaseName = builder.InitialCatalog;
+                    PbMasterUserName = builder.UserID;
+                    PbMasterPassword = builder.Password;
+                    break;
+                case Connections.SpecialServices:
+                    SpecialServicesServerName = builder.DataSource;
+                    SpecialServicesDatabaseName = builder.InitialCatalog;
+                    SpecialServicesUserName = builder.UserID;
+                    SpecialServicesPassword = builder.Password;
+                    break;
+                default:
+                    ServerName = builder.DataSource;
+                    DatabaseName = builder.InitialCatalog;
+                    UserName = builder.UserID;
+                    Password = builder.Password;
+                    break;
             }
         }
 
-        private bool CheckConnection(bool isStudentInformation)
+        private string BuildConnectionString(Connections connection)
         {
-            var connectionString = isStudentInformation ? ConnectionString : PbMasterConnectionString;
+            switch (connection)
+            {
+                case Connections.PbMaster:
+                    return new SqlConnectionStringBuilder
+                    {
+                        DataSource = PbMasterServerName,
+                        InitialCatalog = PbMasterDatabaseName,
+                        UserID = PbMasterUserName,
+                        Password = PbMasterPassword,
+                        ApplicationName = "Exago Scheduler"
+                    }.ToString();
+                case Connections.SpecialServices:
+                    return new SqlConnectionStringBuilder()
+                    {
+                        DataSource = PbMasterServerName,
+                        InitialCatalog = PbMasterDatabaseName,
+                        UserID = PbMasterUserName,
+                        Password = PbMasterPassword,
+                        ApplicationName = "Exago Scheduler"
+                    }.ToString();
+                default:
+                    return new SqlConnectionStringBuilder
+                    {
+                        DataSource = ServerName,
+                        InitialCatalog = DatabaseName,
+                        UserID = UserName,
+                        Password = Password,
+                        ApplicationName = "Exago Scheduler"
+                    }.ToString();
+            }
+        }
+
+        private bool CheckConnection(Connections connection)
+        {
+            string connectionString;
+            switch (connection)
+            {
+                case Connections.PbMaster:
+                    connectionString = PbMasterConnectionString;
+                    break;
+                case Connections.SpecialServices:
+                    connectionString = SpecialServicesConnectionString;
+                    break;
+                default:
+                    connectionString = ConnectionString;
+                    break;
+            }
 
             using (var conn = new SqlConnection(connectionString))
             {
@@ -147,36 +204,57 @@
             }
         }
 
-        private void ToggleConnectionStatusIcons(bool result, bool isStudentInformation)
+        private void ToggleConnectionStatusIcons(bool result, Connections connection)
         {
-            if (isStudentInformation)
+            switch (connection)
             {
-                redXIcon.Visible = false;
-                greenCheckIcon.Visible = false;
+                case Connections.PbMaster:
+                    redXIcon2.Visible = false;
+                    greenCheckIcon2.Visible = false;
 
-                greenCheckIcon.Visible = result;
-                redXIcon.Visible = !result;
-            }
-            else
-            {
-                redXIcon2.Visible = false;
-                greenCheckIcon2.Visible = false;
+                    greenCheckIcon2.Visible = result;
+                    redXIcon2.Visible = !result;
+                    break;
+                case Connections.SpecialServices:
+                    redXIcon3.Visible = false;
+                    greenCheckIcon3.Visible = false;
 
-                greenCheckIcon2.Visible = result;
-                redXIcon2.Visible = !result;
+                    greenCheckIcon3.Visible = result;
+                    redXIcon3.Visible = !result;
+                    break;
+                default:
+                    redXIcon.Visible = false;
+                    greenCheckIcon.Visible = false;
+
+                    greenCheckIcon.Visible = result;
+                    redXIcon.Visible = !result;
+                    break;
             }
         }
 
         private void testDbConnectionButton_Click(object sender, EventArgs e)
         {
-            var result = CheckConnection(true);
-            ToggleConnectionStatusIcons(result, true);
+            var result = CheckConnection(Connections.StudentInformation);
+            ToggleConnectionStatusIcons(result, Connections.StudentInformation);
         }
 
         private void testPbMasterConnectionButton_Click(object sender, EventArgs e)
         {
-            var result = CheckConnection(false);
-            ToggleConnectionStatusIcons(result, false);
+            var result = CheckConnection(Connections.PbMaster);
+            ToggleConnectionStatusIcons(result, Connections.PbMaster);
         }
+
+        private void testSpecialServicesConnectionButton_Click(object sender, EventArgs e)
+        {
+            var result = CheckConnection(Connections.SpecialServices);
+            ToggleConnectionStatusIcons(result, Connections.SpecialServices);
+        }
+    }
+
+    public enum Connections
+    {
+        PbMaster,
+        SpecialServices,
+        StudentInformation,
     }
 }

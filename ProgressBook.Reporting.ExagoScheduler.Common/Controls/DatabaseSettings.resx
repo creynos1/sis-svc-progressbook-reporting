@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="ErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="redXIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -153,6 +156,28 @@
 </value>
   </data>
   <data name="greenCheckIcon2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOtJREFUSEvt
+        kbEOAUEURRcRhUQioVMTKp+A/RPE52j4OpXoFSqFCGey78kzdieWicpNTmTe3DkvG8k/P013k/agJce4
+        QbyCG1xhKOM4MXLFLRnJ9XdB5MuVC9Sl9lkQLI3Q5wg1qWZhUIGqHIOhF5KfoCPVLAyasIMzDGScG+4X
+        kCd2FMoPUnC4P6kv109hXlpehb0ULC9LOJeTuzBsmJLPYwm/czP3yZdruJyZso9bsvVmlrBcQyk1j97l
+        PbmGcuhLfMrJNTyaGkkRn8k1PA4t+U6uQTIx0rhyDTK7JK5cg3QMa2jL6J+YSZI7vVA2NBLtUI8AAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="redXIcon3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAWJJREFUSEut
+        lcFKw0AQhiNFpeCpL+XBF1C0d19AfIKC4ElR9BG8iGc99Kp4L949FH0I0W/CTrOZzGY3rQMf3cz8M3+a
+        ZJMqjofJ5BS+4By2QjobaPdhCVcwCul2UJjBb8Q9ZE3QHEY9wjO0TUjY4codJE2o2eFKY8JCLosnUlwT
+        cqnhyqMKv03B4xZWJqxzw5UdEZ+ZZIraBEqHv+jZSJM0eyLLwsl5vMJ2bSDBwRCTHG/QDNcg+R8m/nAN
+        ipuY9A/XQLSOyTvkh2sgFpPSG/oD49BaFjQcRQNKkH9c9u5COHS4kjdBcBw1rEPahMJJJNyErgmJaSTo
+        Q26ol7c0JiwOokIf8iiOQZq9uuVSDeRL5AliVs85v0P2Sf02vTZJS2cTcSwmN6GeYqHiEcgXyBP17lBq
+        KZNP2AuypEnR9kdjr0B7uAZJMXkKojkUv1vQXoS+D+gOjwPBblgOCukDs8mq6g9M/5EkM0SwpgAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="greenCheckIcon3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOtJREFUSEvt
         kbEOAUEURRcRhUQioVMTKp+A/RPE52j4OpXoFSqFCGey78kzdieWicpNTmTe3DkvG8k/P013k/agJce4
