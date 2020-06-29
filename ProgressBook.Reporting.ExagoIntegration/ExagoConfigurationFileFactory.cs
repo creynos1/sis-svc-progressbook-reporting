@@ -74,9 +74,6 @@
                 sb.AppendLine(_exagoEntitySerializer.ToXml(viewInfo, _exagoSettings.GradeBookDataSourceId));
             }
 
-            var rootNode = doc.SelectSingleNode("webreports");
-            var firstRoleNode = rootNode.SelectSingleNode("role[1]");
-
             var specialServicesReportViewInfoRepository = new SpecialServicesReportViewInfoRepository();
             var specialServicesViewInfoList = specialServicesReportViewInfoRepository.GetSpsEntities();
 
@@ -87,6 +84,9 @@
 
             var frag = doc.CreateDocumentFragment();
             frag.InnerXml = sb.ToString();
+
+            var rootNode = doc.SelectSingleNode("webreports");
+            var firstRoleNode = rootNode.SelectSingleNode("role[1]");
             rootNode.InsertBefore(frag, firstRoleNode);
         }
     }
