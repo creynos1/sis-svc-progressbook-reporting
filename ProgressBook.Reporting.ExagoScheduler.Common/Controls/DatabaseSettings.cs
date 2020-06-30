@@ -154,10 +154,10 @@
                 case Connections.SpecialServices:
                     return new SqlConnectionStringBuilder()
                     {
-                        DataSource = PbMasterServerName,
-                        InitialCatalog = PbMasterDatabaseName,
-                        UserID = PbMasterUserName,
-                        Password = PbMasterPassword,
+                        DataSource = SpecialServicesServerName,
+                        InitialCatalog = SpecialServicesDatabaseName,
+                        UserID = SpecialServicesUserName,
+                        Password = SpecialServicesPassword,
                         ApplicationName = "Exago Scheduler"
                     }.ToString();
                 default:

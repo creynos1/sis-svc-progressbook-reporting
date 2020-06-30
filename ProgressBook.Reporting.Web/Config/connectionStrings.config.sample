@@ -3,5 +3,6 @@
 	<add name="StudentInformation" connectionString="Data Source=.;Initial Catalog=CRNT;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
 	<add name="DistrictTemplate" connectionString="Data Source=.;Initial Catalog=districtTemplate;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
 	<add name="PbMasterContext" connectionString="Data Source=.;Initial Catalog=pb_master;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
-    <add name="QuickReports" connectionString="Data Source=.;Initial Catalog=CRNT2;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
+  <add name="QuickReports" connectionString="Data Source=.;Initial Catalog=CRNT2;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
+  <add name="SpecialServices" connectionString="Data Source=.;Initial Catalog=SpecialServices;User Id=webappuser;Password=webappuser" providerName="System.Data.SqlClient" />
 </connectionStrings>
