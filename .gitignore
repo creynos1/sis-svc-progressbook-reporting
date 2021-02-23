@@ -292,3 +292,6 @@ __pycache__/
 
 
 *.orig
+
+ProgressBook.Reporting.Web/Config/*.config
+ProgressBook.Reporting.Web/Exago/Temp/WebReportsApiLog.txt
