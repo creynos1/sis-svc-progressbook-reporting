@@ -21,7 +21,7 @@ If not already done, setup the nuget package source in visual studio
 1.	Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution…
 2.	Gear icon next to package source dropdown at the top right
 3.	Create a new source and name it anything
-4.	Source: `https://tfs1.software-answers.com/ProgressBookCollection/_packaging/SA_Nuget/nuget/v3/index.json`
+4.	Source: `https://tfs.software-answers.com/ProgressBookCollection/_packaging/SA_Nuget/nuget/v3/index.json`
 5.	Restore NuGet packages for the solution
 
 There are config files in several projects that need to be manually copied and renamed. For example, `ProgressBook.Reporting.Web\Config\connectionStrings.config.sample` should be copied and renamed to `ProgressBook.Reporting.Web\Config\connectionStrings.config` (keep the sample file). You can use this powershell script to do it automatically
