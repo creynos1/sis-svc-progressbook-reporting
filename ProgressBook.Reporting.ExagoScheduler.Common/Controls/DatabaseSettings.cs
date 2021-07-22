@@ -84,8 +84,8 @@
 
         public string SpecialServicesServerName
         {
-            get => pbMasterServerNameTextBox.Text;
-            set => pbMasterServerNameTextBox.Text = value;
+            get => specialServicesServerNameTextBox.Text;
+            set => specialServicesServerNameTextBox.Text = value;
         }
 
         public string SpecialServicesDatabaseName
