@@ -45,71 +45,19 @@ namespace ProgressBook.Reporting.Client
 
         private string BuildQuery(IEnumerable<ResourceTree> resources)
         {
-            var resourceNames = string.Join(",", resources.Select(x => "'" + x.ResourceName + "'").ToArray());
+            var resourceNames = string.Join(",", resources.Select(x => "'" + x.ResourceName + "'").Append("AdHocReports.ReportFolders.MyReports").ToArray());
 
             var query = @"
                     SELECT
                         rpt.ReportEntityId,
-                        'My Reports' AS ResourceName,
                         REPLACE(rpt.[Path], '.wrx', '') AS Name,
-                        REPLACE(rpt.Name, '.wrx', '') AS DisplayName,
-                        'MyReports' as BaseSecurityString,
-                        re.Description,
-                        re.DateModified,
-                        re.ModifiedBy,
-                        rpt.NestedDisplay,
-                        re.DateCreated
-                    FROM [CoreReports].ReportEntityInfo rpt
-                        LEFT JOIN [CoreReports].ReportEntityInfo fldr ON rpt.ParentId = fldr.ReportEntityId
-                        INNER JOIN [CoreReports].ReportEntity re ON rpt.ReportEntityId = re.ReportEntityId
-                    WHERE
-                        re.EntityType = 1
-                    AND re.IsInternal = 0
-                    AND fldr.[Path] = 'My Reports'
-                    AND (rpt.DistrictId = @placeId OR rpt.DistrictId IS NULL)
+                        rpt.DisplayName,
+                        rpt.Description
+                    FROM [CoreReports].[FlattenedReports] rpt
+                    WHERE (rpt.DistrictId = @placeId OR rpt.DistrictId IS NULL)
                     AND (rpt.UserId = @userId OR rpt.UserId IS NULL)
+                    AND (rpt.BaseSecurityString IN (" + resourceNames + @"))
                 ";
-
-            if (resources.Any())
-            {
-                query += @"
-                    UNION ALL
-
-                    SELECT * FROM (                        
-					    SELECT
-                            rpt.ReportEntityId,
-                            'AdHocReports.ReportFolders.' + REPLACE(REPLACE(fldr.[Path], ' ',''), '\', '.') AS ResourceName,
-                            REPLACE(rpt.[Path], '.wrx', '') AS Name,
-                            REPLACE(rpt.Name, '.wrx', '') AS DisplayName,
-							-- 'BaseSecurityString' finds the SIS security node that this resource is tied to. e.g.-
-							--		AdHocReports.ReportFolders.EMIS uses AdHocReports.ReportFolders.EMIS for security.
-							--		AdHocReports.ReportFolders.EMIS.SomeSubDir.AnotherSubDir uses AdHocReports.ReportFolders.EMIS for security.
-							-- However, reports under admin behave differently. e.g.-						
-							--		AdHocReports.ReportFolders.EMIS.Admin uses AdHocReports.ReportFolders.EMIS.Admin for security.
-							'AdHocReports.ReportFolders.' + REPLACE(REPLACE(
-								case when fldr.[Path] not like '%\ADMIN' and fldr.[Path] not like '%\ADMIN\%' and fldr.[Path] like '%\%' then
-									substring(fldr.[Path], 1, charindex('\', fldr.[Path]) - 1)
-									else fldr.[Path]
-								end 
-							, ' ',''), '\', '.') as BaseSecurityString,
-
-                            re.Description,
-                            re.DateModified,
-                            re.ModifiedBy,
-                            rpt.NestedDisplay,
-                            re.DateCreated
-                        FROM [CoreReports].ReportEntityInfo rpt
-                            LEFT JOIN [CoreReports].ReportEntityInfo fldr ON rpt.ParentId = fldr.ReportEntityId
-                            INNER JOIN [CoreReports].ReportEntity re ON rpt.ReportEntityId = re.ReportEntityId
-                        WHERE
-                            re.EntityType = 1
-                        AND re.IsInternal = 0
-                        AND fldr.[Path] != 'My Reports'
-                        AND (rpt.DistrictId = @placeId OR rpt.DistrictId IS NULL)
-                        AND (rpt.UserId = @userId OR rpt.UserId IS NULL)
-					) x
-                    WHERE (x.BaseSecurityString IN (" + resourceNames + @"))";
-            }
 
             return query;
         }
