@@ -45,7 +45,7 @@ namespace ProgressBook.Reporting.Client
 
         private string BuildQuery(IEnumerable<ResourceTree> resources)
         {
-            var resourceNames = string.Join(",", resources.Select(x => "'" + x.ResourceName + "'").Append("AdHocReports.ReportFolders.MyReports").ToArray());
+            var resourceNames = string.Join(",", resources.Select(x => "'" + x.ResourceName + "'").Append("'AdHocReports.ReportFolders.MyReports'").ToArray());
 
             var query = @"
                     SELECT
