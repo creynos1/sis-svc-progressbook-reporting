@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7" height="16" viewBox="0 0 7 16">
+  <title>
+    MoveGridRowUpDown
+  </title>
+  <g fill="#808080" fill-rule="evenodd">
+    <polygon points="3.5 5.042 5.401 7 7 5.63 3.5 2 0 5.63 1.599 7"/>
+    <polygon points="3.5 10.958 1.599 9 0 10.37 3.5 14 7 10.37 5.401 9"/>
+  </g>
+</svg>

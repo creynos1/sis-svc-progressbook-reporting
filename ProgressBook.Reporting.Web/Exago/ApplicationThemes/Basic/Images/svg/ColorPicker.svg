@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+  <title>
+    ColorPicker
+  </title>
+  <path fill="#C0C0C0" fill-rule="evenodd" d="M0 0h20v18H0V0zm19 1v12h-6v4H1V1h18zm-2.5 16l2.5-3h-5l2.5 3z"/>
+</svg>

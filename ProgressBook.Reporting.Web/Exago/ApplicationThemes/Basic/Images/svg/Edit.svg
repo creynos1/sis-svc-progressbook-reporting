@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    Edit
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M10.192 4.536L8.071 2.414l.707-.707a1 1 0 0 1 1.414 0l.707.707a1 1 0 0 1 0 1.415l-.707.707zm-.707.707L5.242 9.485 2.06 10.546l1.061-3.182 4.243-4.243 2.121 2.122z"/>
+  </g>
+</svg>

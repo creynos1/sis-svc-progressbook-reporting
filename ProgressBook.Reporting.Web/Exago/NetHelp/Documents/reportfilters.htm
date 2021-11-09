@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Filters</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="reportsorts.htm" /><link rel="next" href="generaloptions.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="29ab6fc5-cd52-422c-9602-33ef2eace41d">
+<h2>Filters</h2>
+<p>Sometimes you may only want to see a portion of rows in a data category, 
+rather than its entirety. Filters allow you to narrow the scope of your reports 
+by restricting the amount of data by specified criteria.</p>
+<p>For example, imagine a category containing a row for every single sale your 
+company has ever made. You can use a filter to limit the report to only sales 
+from the past month. This also has the benefit of speeding up your reports.</p>
+<p>There are three types of filters available in the Filters window:</p>
+<p class="horiztoc" style="TEXT-ALIGN: center"><strong><a class="topic-link" href="reportfilters.htm#standard.htm">Standard</a> • <a class="topic-link" href="reportfilters.htm#groupminmax.htm">Group 
+Min/Max</a> • <a class="topic-link" href="reportfilters.htm#topbottom.htm">Top/Bottom</a></strong> </p><a class="_D2HAnchor" name="standard.htm" id="standard.htm"></a>
+<p class="MidTopic">Standard</p>
+<p>Standard filters limit data by only showing rows where the values for a field 
+meet a certain condition.</p>
+<p class="Aside"><strong>Adding filters</strong></p>
+<p>In the Filters window, add data fields to filter.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.reportwizard_drag_filter_field.png" /></p>
+<p class="Caption">Dragging a field to the Filter By pane</p>
+<p>For each data field, select a condition. When the report is run, the field 
+value for each row is checked against the condition for that field. Only the 
+rows where the field satisfies the condition will show on the report.</p>
+<p>To create a filter condition:</p>
+<ol>
+  <li class="list_123">
+  <p>Select an operator from one of the following options. This is the condition 
+  used to match the data values to your specified filter value or values. Some 
+  operators are only available for some data types.</p>
+  <p>The following table describes the filter operators and their applicable 
+  data types:</p>
+  <table style="WIDTH: 90%" border="1">
+    <colgroup>
+    <col />
+    <col />
+    <col />
+    <col />
+    <col /></colgroup>
+    <tbody>
+    <tr>
+      <td>
+        <p><strong>Condition</strong></p></td>
+      <td>
+        <p><strong>Type</strong></p></td>
+      <td>
+        <p><strong>Filter Value(s)</strong></p></td>
+      <td>
+        <p><strong>Matching Value(s)</strong></p></td>
+      <td>
+        <p><strong><em>Not </em>Matching Value(s)</strong></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">Equal To (=)</span></p></td>
+      <td>
+        <p>Any</p></td>
+      <td>
+        <p><span class="Code">July 4, 2016</span></p></td>
+      <td>
+        <p><span class="Code"><span style="COLOR: rgb(0,176,80)">July 4, 
+        2016</span></span></p>
+        <p><span class="Code"><span style="COLOR: rgb(0,176,80)">July 4, 2016 
+        12:00 AM</span></span></p></td>
+      <td>
+        <p><span class="Code">July 4</span></p>
+        <p><span class="Code">July 4, 2016 2:00 PM</span></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">Less Than (&lt;)</span></p></td>
+      <td>
+        <p>Number, Date/Time</p></td>
+      <td>
+        <p><span class="Code">July 4, 2016</span></p></td>
+      <td>
+        <p><span class="Code">July <span style="COLOR: rgb(0,176,80)">3</span>, 
+        2016</span></p></td>
+      <td>
+        <p><span class="Code">July 5, 2016</span></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">Greater Than (&gt;)</span></p></td>
+      <td>
+        <p>Number, Date/Time</p></td>
+      <td>
+        <p><span class="Code">July 4, 2016</span></p></td>
+      <td>
+        <p><span class="Code">July <span style="COLOR: rgb(0,176,80)">5</span>, 
+        2016</span></p>
+        <p><span class="Code">July 4, 2016 <span style="COLOR: rgb(0,176,80)">5:00 
+        PM</span></span></p></td>
+      <td>
+        <p><span class="Code">July 3, 2016</span></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">Starts With</span></p></td>
+      <td>
+        <p>Text, Number</p></td>
+      <td>
+        <p><span class="Code">203</span></p></td>
+      <td>
+        <p><span class="Code"><span style="COLOR: rgb(0,176,80)">203</span>5550224</span></p></td>
+      <td>
+        <p><span class="Code">8458081120</span></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">Ends With</span></p></td>
+      <td>
+        <p>Text, Number</p></td>
+      <td>
+        <p><span class="Code">224</span></p></td>
+      <td>
+        <p><span class="Code">2035550<span style="COLOR: rgb(0,176,80)">224</span></span></p></td>
+      <td>
+        <p><span class="Code">7188044606</span></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">Contains</span></p></td>
+      <td>
+        <p>Text, Number</p></td>
+      <td>
+        <p><span class="Code">555</span></p></td>
+      <td>
+        <p><span class="Code">203<span style="COLOR: rgb(0,176,80)">555</span>0224</span></p></td>
+      <td>
+        <p><span class="Code">2038081120</span></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">Between</span></p></td>
+      <td>
+        <p>Any</p></td>
+      <td>
+        <p><span class="Code">1, 4</span></p></td>
+      <td>
+        <p><span class="Code"><span style="COLOR: rgb(0,176,80)">1</span>, <span style="COLOR: rgb(0,176,80)">1.5</span>, <span style="COLOR: rgb(0,176,80)">3</span>, <span style="COLOR: rgb(0,176,80)">4</span></span></p></td>
+      <td>
+        <p><span class="Code">0.999, 5</span></p></td></tr>
+    <tr>
+      <td>
+        <p><span class="Option">One Of</span></p></td>
+      <td>
+        <p>Any</p></td>
+      <td>
+        <p><span class="Code">1, 2, 3, 4</span></p></td>
+      <td>
+        <p><span class="Code"><span style="COLOR: rgb(0,176,80)">1</span>, <span style="COLOR: rgb(0,176,80)">2</span>, <span style="COLOR: rgb(0,176,80)">3</span>, <span style="COLOR: rgb(0,176,80)">4</span></span></p></td>
+      <td>
+        <p><span class="Code">1.1, 9</span></p></td></tr></tbody></table>
+  </li><li class="list_123">
+  <p>Enter a filter value or values, or select them from the list of existing 
+  values.</p>
+  <p>Type into the filter field to search for data values to filter. Click the 
+  settings icon <img alt="" src="../Media/SettingsMenu.png" /> to select 
+  whether to search for values that either <strong>Start With</strong> or 
+  <strong>Contain</strong> the typed text.</p>
+  <p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.reportwizard_filter_value_menu.png" /></p>
+  <p class="Caption">Choosing a filter value</p>
+  </li><li class="list_123">
+  <p>Optional: If you have multiple filters, you can choose how they should be 
+  grouped. See <a class="topic-link" href="reportfilters.htm#groupingfilterstogether.htm">Grouping filters 
+  together</a>.</p>
+  </li><li class="list_123">
+  <p>Optional: If you want the report to prompt the user to enter a filter value 
+  when the report is run, select <strong>Prompt For Value</strong>. See below 
+  for details.</p>
+  </li><li class="list_123">
+  <p>Optional: To alias the filter, enter a name for the filter in the 
+  <strong>Title </strong>field. The alias will appear instead of the data 
+  field or formula in the filter prompt dialog and the <strong>Summary 
+  </strong>field.</p></li></ol>
+<p class="Aside"><strong>Prompting for values</strong></p>
+<p>If you want to let users select their own filter values when they run the 
+report, you can set filters to <strong>Prompt For Value</strong>. In the <a class="topic-link" href="generaloptions.htm">Report Options</a>, you can choose 
+whether to let users change the operators and delete filters.</p>
+<p>You do not need to enter a value for prompting filters. But if you do, it is 
+entered as the default value for the filter in the prompt dialog.</p><span id="related-topics"></span><a class="_D2HAnchor" name="groupingfilterstogether.htm" id="groupingfilterstogether.htm"></a>
+<p class="MidTopic">Grouping filters together</p>
+<p>When a data row is checked against the report filters, the values for each of 
+its data fields are checked against all of the filters for the data fields. By 
+default, it must satisfy every filter condition to show on the report. The 
+combined statement used to filter the data rows is shown in the <strong>Summary 
+</strong>field.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.reportwizard_filter_summary.png" /> </p>
+<p class="Caption">Example of a combined filter statement</p>
+<p>You can specify that a data row needs only to satisfy one filter, or a 
+selection of filters, to show on the report.</p>
+<p>To specify that a data row needs to satisfy any one of several filters:</p>
+<ol>
+  <li class="list_123">
+  <p>On the Filters page, drag the filter rows next to each other.</p>
+  </li><li class="list_123">
+  <p>Select the first filter.</p>
+  </li><li class="list_123">
+  <p>Select <strong>OR With Next Filter</strong>.</p>
+  <p>You should notice that in the <strong>Summary </strong>field, the <em>And 
+  </em>between this filter and the next has changed to <em>Or</em>.</p>
+  </li><li class="list_123">
+  <p>Repeat steps 2-3 for every filter except the last.</p></li></ol>
+<p>You can group filters together, to specify that a data row can match either 
+one group of filters, or another group of filters, to show on the report.</p>
+<p>To specify that a data row needs to satisfy any one of several groups of 
+filters:</p>
+<ol>
+  <li class="list_123">
+  <p>On the Filters page, drag the filter rows such that the filters are nearest 
+  to their group mates.</p>
+  </li><li class="list_123">
+  <p>Select the first filter in the first group.</p>
+  </li><li class="list_123">
+  <p>Select <strong>Group With Next Filter</strong>.</p>
+  <p>You should notice that in the <strong>Summary </strong>field, there are now 
+  parentheses around this filter and the next.</p>
+  </li><li class="list_123">
+  <p>Repeat steps 2-3 for every filter except the last in the first group.</p>
+  </li><li class="list_123">
+  <p>Select the last filter in the first group.</p>
+  </li><li class="list_123">
+  <p>Select <strong>OR With Next Filter.</strong></p>
+  <p>You should notice that in the <strong>Summary </strong>field, the <em>And 
+  </em>between this filter and the next has changed to <em>Or</em>.</p>
+  </li><li class="list_123">
+  <p>Repeat steps 2-6 for every group of filters. Skip step 6 for the last 
+  filter in the last group.</p></li></ol>
+<p class="Aside"><strong>Nesting filter groups (advanced users)</strong></p>
+<p>Filter groups can be nested arbitrarily. This allows for more detailed 
+control over grouping. The <strong>Summary </strong>field shows the <em>actual 
+</em>statement used to filter the data. You can make arbitrary groupings by 
+inserting parentheses manually at locations in the statement. Use the following 
+keyboard shortcuts:</p>
+<ul>
+  <li class="list_bullets"><span class="Code">Ctrl + [</span> to add an opening 
+  parenthesis before the selected filter 
+  </li><li class="list_bullets"><span class="Code">Ctrl + ]</span> to add a closing 
+  parenthesis after the selected filter 
+  </li><li class="list_bullets"><span class="Code">Ctrl + Shift + [</span> to remove an 
+  opening parenthesis from before the selected filter 
+  </li><li class="list_bullets"><span class="Code">Ctrl + Shift + ]</span> to remove a 
+  closing parenthesis from after the selected filter </li></ul>
+<p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>Make sure to have a 
+closing parenthesis for every opening parenthesis.</p>
+<p class="Aside"><strong>Filter formulas (advanced users)</strong></p>
+<p>You can filter by a formula instead of a data field, for more advanced 
+control over filter criteria.</p>
+<p>To add a filter formula, click <strong><img alt="" src="../Media/Add2.png" /> Add Formula</strong>,<strong> </strong>enter the 
+formula in the Formula Editor, then click <strong>Okay</strong>.</p>
+<p>To edit a filter formula, or change a filter field into a formula, click the 
+formula <img alt="" src="../Media/Formula.png" /> icon.</p>
+<p>Filter functions (e.g. <em>Today</em>, <em>First Day of Last Week</em>) 
+and dropdown interactivity may not be available to select when entering a 
+filter formula.</p><span id="related-topics"></span><a class="_D2HAnchor" name="groupminmax.htm" id="groupminmax.htm"></a>
+<p class="MidTopic">Group Min/Max</p>
+<p>Group Min/Max filters limit groups to a row with only the highest or lowest 
+value in a field. This is useful if you are only interested in viewing the 
+highest or lowest values, such as the most recent hire or highest revenue 
+figure, in a given set.</p>
+<p class="Aside"><strong>Entire Data Set</strong></p>
+<p>The most basic usage of a Group Min/Max filter is to limit the whole report 
+to just the min or max value for a field.</p>
+<p>For example, if you wanted to show only the most recently hired employee then 
+you would only need to add a filter for the "<strong>Maximum</strong> 
+Employees.HireDate for each <strong>Entire Data Set</strong>", that is, the 
+entire report.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.minmax1.png" />     <img alt="" src="../Media/screen.minmax1out.png" /></p>
+<p class="Caption">Showing only the row with the max hire date for the report</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />To see more than one 
+maximum or minimum for a data set, use a <a class="topic-link" href="reportfilters.htm#topbottom.htm">Top/Bottom</a> filter instead.</p>
+<p class="Aside"><strong>Min/Max for each Group</strong></p>
+<p>Another common usage for Group Min/Max filters is to see the min or max value 
+for each instance of a group. For example, say you wanted to see the most recent 
+order date for each employee.</p>
+<p>First, make sure to add a sort on Employees, since we need to group our 
+Orders by each Employee. Since sorts are implicit groups, adding a Group 
+section is optional. (See <a class="topic-link" href="reportsorts.htm">Relationship between sorts and groups</a> for an 
+explanation).</p>
+<p>Then add a filter for the "<strong>Maximum</strong> Orders.OrderDate for each 
+<strong>Employees</strong>".</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.minmax2.png" />     <img alt="" src="../Media/screen.minmax2out.png" /></p>
+<p class="Caption">Showing only the row with the max order date for each 
+employee</p>
+<p class="Aside"><strong>Min/Max with Multiple Groups</strong></p>
+<p>If the Employees group was within an outer group, say "Customers", then each 
+Employee would repeat for each applicable Customer. The previous filter would 
+cause the report to show the latest Order Date for each Employee for each 
+Customer.</p>
+<p>If you only wanted to see the latest Order Date for each Employee, ignoring 
+the Customers group, select the <strong>Ignore other groupings on 
+report</strong> check box. This results in a report showing only the Customers 
+relevant to each max Order Date per Employee.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.minmax3.png" /></p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.minmax3out1.png" />     <img alt="" src="../Media/screen.minmax3out2.png" /></p>
+<p class="Caption">Max per Employee per Customer versus Max per 
+Employee (ignoring Customer)</p>
+<p>Nested groups also allows the opportunity to provide a second Min/Max filter. 
+For example, if you wanted to see every Customer, but only see the Employee with 
+the highest seniority for each Customer, add another filter for the 
+"<strong>Minimum </strong>Employees.HireDate for each 
+<strong>Customers</strong>". Ensure that this filter is lower in precedence than 
+the other, since the Order Date filter should apply first, and then 
+the Hire Date filter.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.minmax3out3.png" /> </p>
+<p class="Caption">Senior-most Employee, of each max per Employee per 
+Customer group</p><span id="related-topics"></span><a class="_D2HAnchor" name="topbottom.htm" id="topbottom.htm"></a>
+<p class="MidTopic">Top/Bottom</p>
+<p>Top/Bottom filters, also known as <em>Top N</em> filters, limit the report to 
+a number of the highest or lowest values in a field or group.</p>
+<p>To use a Top/Bottom filter, the field or formula to filter must be in a cell 
+in a Detail or Group section. Filtering on a Detail cell will filter out data 
+rows, while filtering on a Group cell will filter out entire groups.</p>
+<ol>
+  <li class="list_123">
+  <p>In the Filters window, click the <strong>Top/Bottom </strong>tab.</p>
+  </li><li class="list_123">
+  <p>Select the <strong>Limit the report to the top or bottom values of a 
+  defined dataset</strong> check box.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Top/Bottom</strong> list, select whether you want to show 
+  the top or bottom values.</p>
+  </li><li class="list_123">
+  <p>In the <strong>#</strong> field, enter a number for the maximum number of 
+  values to show.</p>
+  </li><li class="list_123">
+  <p>From the <strong>Value</strong> list, select a cell to filter by.</p>
+  <ul>
+    <li class="list_bullets">
+    <p>Choose a Detail cell to show only rows with the top or bottom values in a 
+    field.</p>
+    </li><li class="list_bullets">
+    <p>Choose a Group cell to show only groups with the top or bottom values in 
+    the report.</p></li></ul>
+  </li><li class="list_123">
+  <p>Optional: To show the top or bottom values for each of a group:</p>
+  <ol>
+    <li class="list_abc">
+    <p>Click <img src="../Media/AddBtn.png" alt="" /><strong> Add Group</strong>.</p>
+    </li><li class="list_abc">
+    <p>Select a group field from the <strong>For Each 
+  </strong>list.</p></li></ol></li></ol>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Top/Bottom filters 
+work after all other filters have been applied. If a Standard or Group Min/Max 
+filter has narrowed down a data field, a Top/Bottom filter will work on the 
+remaining values.</p><span id="related-topics"></span><span id="related-topics"></span></body></html>

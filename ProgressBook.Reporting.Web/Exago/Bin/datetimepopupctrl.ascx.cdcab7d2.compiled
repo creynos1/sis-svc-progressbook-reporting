@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DateTimePopupCtrl.ascx" hash="d4fa39267" filehash="3119309a51dad159" flags="110000" assembly="WebReportsUI" type="ASP.datetimepopupctrl_ascx">
+  <filedeps>
+    <filedep name="/DateTimePopupCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+  </filedeps>
+</preserve>

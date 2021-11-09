@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminCustomOptionMasterCtrl.ascx" hash="d4fa39267" filehash="ffc3c352aad0db76" flags="110000" assembly="WebReportsUI" type="ASP.admincustomoptionmasterctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCustomOptionCtrl.ascx" />
+    <filedep name="/AdminCustomOptionMasterCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

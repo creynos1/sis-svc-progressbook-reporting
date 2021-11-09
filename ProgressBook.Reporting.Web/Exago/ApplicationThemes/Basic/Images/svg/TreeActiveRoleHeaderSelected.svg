@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeActiveRoleHeaderSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <g fill-opacity=".5" transform="translate(5 2)">
+      <path d="M1.998 5h2.004C5.106 5 6 5.894 6 7.005V10H0V7.005C0 5.898.898 5 1.998 5z"/>
+      <circle cx="3" cy="2" r="2"/>
+    </g>
+    <g transform="translate(0 2)">
+      <path d="M1.998 5h2.004C5.106 5 6 5.894 6 7.005V10H0V7.005C0 5.898.898 5 1.998 5z"/>
+      <circle cx="3" cy="2" r="2"/>
+    </g>
+  </g>
+</svg>

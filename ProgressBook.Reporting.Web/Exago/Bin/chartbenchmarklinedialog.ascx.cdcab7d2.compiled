@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChartBenchmarkLineDialog.ascx" hash="d4fa39267" filehash="d6cfafb74e026818" flags="110000" assembly="WebReportsUI" type="ASP.chartbenchmarklinedialog_ascx">
+  <filedeps>
+    <filedep name="/ChartBenchmarkLineDialog.ascx" />
+    <filedep name="/ColorPickerCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

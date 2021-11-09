@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+  <title>
+    CompletionParameter
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M3 4.83V8H1V4.83a2.995 2.995 0 0 0 2 0zM2 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm5 .17V0H5v3.17a2.995 2.995 0 0 1 2 0zM6 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </g>
+</svg>

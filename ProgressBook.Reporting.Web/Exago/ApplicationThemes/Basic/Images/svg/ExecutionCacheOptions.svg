@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    ExecutionCacheOptions
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <path fill="#777777" d="M1 8c1 1.333 2.667 2 5 2s4-.667 5-2v2c-1 1.333-2.667 2-5 2s-4-.667-5-2V8zm0-3c1 1.333 2.667 2 5 2s4-.667 5-2v2c-1 1.333-2.667 2-5 2s-4-.667-5-2V5zm0-3C2 .667 3.667 0 6 0s4 .667 5 2v2c-1 1.333-2.667 2-5 2s-4-.667-5-2V2z"/>
+  </g>
+</svg>

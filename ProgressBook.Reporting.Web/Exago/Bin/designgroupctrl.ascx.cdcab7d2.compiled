@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DesignGroupCtrl.ascx" hash="d4fa39267" filehash="6fd55f9065986653" flags="110000" assembly="WebReportsUI" type="ASP.designgroupctrl_ascx">
+  <filedeps>
+    <filedep name="/BreakSelectCtrl.ascx" />
+    <filedep name="/DesignGroupCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    EVAlignRight
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24" fill="none"/>
+    <path fill="#777777" d="M4 7h16v2H4V7zm6 3h10v2H10v-2zm-6 3h16v2H4v-2zm6 3h10v2H10v-2z"/>
+  </g>
+</svg>

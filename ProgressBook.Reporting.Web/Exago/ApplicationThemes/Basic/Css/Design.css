@@ -1,0 +1,273 @@
+.wrDesignRightPane {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+}
+.wrDesignGridContainer {
+  position: absolute;
+  top: 68px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+}
+.wrDesignGridContainer > .wrGridContainer {
+  border-left: none;
+}
+.wrDesignSubGroupCell {
+  border-left: solid 3px #d7d7d7;
+}
+.wrDesignSubGroupStart {
+  border-top: solid 3px #d7d7d7;
+  color: #000080;
+  font-weight: bold;
+}
+.wrDesignSubGroupEnd {
+  border-top: solid 1px #d7d7d7;
+  border-bottom: solid 2px #d7d7d7;
+  line-height: 0;
+}
+.wrDesignGridDisabledCell {
+  background-color: #c5c5c5;
+}
+.wrDesignGridGroupCell {
+  background-image: url('Images/GroupCell.gif') !important;
+  background-repeat: repeat !important;
+}
+.wrCrossTabPopupTitle {
+  position: absolute;
+  background-color: #ffffff;
+  background-image: url('Images/CrossTabDesignMenu.png');
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CrossTabDesignMenu.svg");
+  background-size: 24px 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 1px;
+  width: 28px;
+  height: 18px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #d7d7d7;
+  border-top: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.06);
+  transition: all 40ms ease-in-out;
+  z-index: 2;
+}
+.wrNoSVG .wrCrossTabPopupTitle {
+  background-image: url("../#ApplicationThemeFolder#/Images/CrossTabDesignMenu.png");
+}
+.wrCrossTabPopupTitle:hover {
+  border-color: #6896ed;
+}
+.wrCrossTabPopupHorizontalBar {
+  position: absolute;
+  height: 2px;
+  background-color: #777777;
+  z-index: 2;
+}
+.wrCrossTabPopupVerticalBar {
+  position: absolute;
+  width: 2px;
+  background-color: #777777;
+  z-index: 2;
+}
+.wrDesignGridCrossTabCell {
+  /* add possible identifier for when a cell is designated a CrossTab cell */
+}
+.wrDesignGridSectionColumn {
+  width: 90px;
+}
+.wrDesignGridRowNumberColumn {
+  width: 30px;
+}
+tr.wrSuppressRow td {
+  /* IE8 bug prevents filter from working properly with fixed row heights; use image instead */
+  /* background-color: #e4e4e4;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+    opacity:0.3; */
+  background-image: url('Images/SuppressRow.gif') !important;
+  background-repeat: repeat !important;
+  font-style: italic !important;
+}
+.wrColumSort {
+  position: absolute;
+  right: 2px;
+  width: 8px;
+  height: 6px;
+  background-repeat: no-repeat;
+}
+.wrColumnSortAscending {
+  bottom: 2px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SortAscending.svg");
+  background-size: 8px 6px;
+}
+.wrNoSVG .wrColumnSortAscending {
+  background-image: url("../#ApplicationThemeFolder#/Images/SortAscending.png");
+}
+.wrColumnSortDescending {
+  top: 2px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/SortDescending.svg");
+  background-size: 8px 6px;
+}
+.wrNoSVG .wrColumnSortDescending {
+  background-image: url("../#ApplicationThemeFolder#/Images/SortDescending.png");
+}
+.wrHiddenColumn {
+  background-image: url('Images/SuppressRow.gif') !important;
+  background-repeat: repeat !important;
+  font-style: italic !important;
+}
+.wrPageBreak {
+  border-top: dashed 2px #000000 !important;
+}
+.wrRepeatRow {
+  border-left: 5px double #6896ed;
+  padding-right: 5px;
+}
+.wrDsgnCellWarningIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrDsgnCellNoticeIcon {
+  position: absolute;
+  top: 0;
+  opacity: 0.75;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+}
+.wrDsgnTbContainer {
+  height: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*Removed this to try box-shadow inset on wrGridContainer*/
+  /*box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0;*/
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrDsgnTbSection {
+  height: 44px;
+  margin-top: 2px;
+}
+.wrDsgnTbSection:last-child {
+  font-size: 0;
+}
+.wrDsgnTbSectionLine {
+  height: 22px;
+}
+/* We don't want whitespace between toolbar elements to affect their spacing,
+    so set the font size to zero and use margin to space the buttons.
+*/
+[id$='DesignToolbarCtrl_WidgetsEtcRow1'],
+[id$='DesignToolbarCtrl_WidgetsEtcRow2'] {
+  font-size: 0;
+}
+[id$='DesignToolbarCtrl_WidgetsEtcRow1'] img,
+[id$='DesignToolbarCtrl_WidgetsEtcRow2'] img {
+  margin-right: 4px;
+}
+.wrDsgnTbImg {
+  top: 2px;
+}
+.wrDsgnTbOptionsImg {
+  top: 12px;
+}
+.wrDsgnTbExecuteContainer {
+  height: 100%;
+}
+.wrDsgnFontContainer {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+}
+.wrDsgnFontName {
+  position: relative;
+  width: 108px;
+  overflow: hidden;
+}
+.wrDsgnFontSize {
+  position: relative;
+  top: 2px;
+  width: 32px;
+}
+.wrDsgnExcelFreezeSize {
+  position: relative;
+  top: 2px;
+  width: 35px;
+}
+.wrDsgnRowRangeLimit {
+  position: relative;
+  top: 2px;
+  width: 100px;
+}
+.wrDsgnForegroundColorContainer {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.wrDsgnForegroundColor {
+  width: 16px;
+  height: 16px;
+}
+.wrDsgnBackgroundColorContainer {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.wrDsgnBackgroundColor {
+  width: 16px;
+  height: 16px;
+}
+.wrFormatPaintbrush td {
+  cursor: url(Images/FormatPaintbrush.cur), default;
+  cursor: url(Images/FormatPaintbrush.cur) 8 24, default;
+  /* For browsers supporting hotspot */
+}
+.DsgnCellSelected {
+  background-color: #eef7ff;
+}
+.DsgnHeaderCellSelected {
+  background: #e9e9e9;
+}
+.wrDesignSectionShadingColorIndicatorContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.wrDesignSectionShadingColorIndicator {
+  height: 6px;
+  width: 6px;
+  border: 1px solid #b3b3b3;
+  float: right;
+  margin-left: -1px;
+}
+.wrDesignDataFieldsAddButtonWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.wrDesignDataFieldsAddButtonWrapper .wrDialogAddButton {
+  position: static;
+}
+/* This acts as a transparent "cover" over widgets in cells in the design grid so they do not respond to user mouse activity. */
+.wrDesignGridContainer [data-widgetdiv]:after {
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

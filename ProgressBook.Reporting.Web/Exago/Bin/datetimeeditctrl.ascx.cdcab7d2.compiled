@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DateTimeEditCtrl.ascx" hash="d4fa39267" filehash="2835ec4b9a9d9670" flags="110000" assembly="WebReportsUI" type="ASP.datetimeeditctrl_ascx">
+  <filedeps>
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+  </filedeps>
+</preserve>

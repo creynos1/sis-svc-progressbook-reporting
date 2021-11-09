@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    FilterButtonTypeNumeric
+  </title>
+  <path fill="#8B8B8B" fill-rule="evenodd" d="M3 7V5H0V3h3V0h2v3h2V0h2v3h3v2H9v2h3v2H9v3H7V9H5v3H3V9H0V7h3zm2 0h2V5H5v2z"/>
+</svg>

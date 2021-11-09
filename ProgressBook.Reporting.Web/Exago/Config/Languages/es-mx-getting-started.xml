@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language>
+    <!--
+	<element id="GettingStartedContent">
+		<style type="text/css">
+			#wrWelcomeContainerOuter { display: table; position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100% }
+			#wrWelcomeContainerInner { display: table-cell; vertical-align: middle; }
+			#wrWelcomeContent   { margin-left: auto; margin-right: auto; width: 800px; white-space: nowrap; }
+			#wrWelcomeText { display: inline-block; white-space: normal; width:400px; padding: 10px; }
+			#wrWelcomeText h1 { font-size:22pt; font-weight:normal; color:#6896ed; margin-bottom:10px; }
+			#wrWelcomeText h2 { font-size:14pt; font-weight:normal; color:#b3b3b3; margin-top:10px; margin-bottom:10px; }
+			#wrWelcomeText p { font-size:11pt; color:#666666; }
+		</style>
+		<div id="wrWelcomeContainerOuter">
+			<div id="wrWelcomeContainerInner">
+				<div id="wrWelcomeContent">
+					<div id="wrWelcomeText">
+						<h1>Bienvenido a Exago</h1>
+						<h2>Esta pestaña es totalmente personalizable.</h2>
+						<p style="margin-top:10px;">
+              Puede añadir contenido estático, interactivo o incrustado a esta ficha. 
+              Muchos clientes de Exago utilizan esta zona para mostrar tableros personalizados,
+              formación y contenido de ayuda y noticias y anuncios.
+            </p>
+						<p>Por favor refiérase a la Guía Técnica Exago para obtener información adicional.</p>
+						<button type="button" class="wrGettingStartedButton" style="height: 30px; width: 100px;" onclick="wrAddTabbedContent('ExampleTab', 'ExampleTabName');">
+							Ejemplos
+						</button>
+					</div>
+					<img alt="Dashboard" src="Config/Images/GettingStartedImg@2x.png" style="height: 250px; width: 360px;" />
+				</div>
+			</div>
+		</div>
+	</element>
+    -->
+
+	<element id="ExampleTabName">Ejemplos</element>
+	
+	<element id="ExampleTab">
+		<style type="text/css">
+			#wrExampleContainer { position:absolute; top:0; left:0; right:0; bottom:0; }
+			#wrExampleContent   { display: table; margin: 0 auto; max-width: 700px; }
+			#wrExampleContent h1 { font-size:22pt; font-weight:normal; color:#6896ed; margin-bottom:0; }
+			#wrExampleContent h2 { font-size:14pt; font-weight:normal; color:#b3b3b3; margin-top:20px; margin-bottom:0; }
+			#wrExampleContent p { font-size:11pt; color:#666666; }
+			a.wrExample:link { color:#666666;text-decoration:underline;font-size:8pt;padding-right: 40px; }
+			a.wrExample:visited { color:#666666;text-decoration:underline;font-size:8pt;padding-right: 40px; }
+			a.wrExample:hover { color:#666666;text-decoration:none;font-size:8pt;padding-right: 40px; }
+			.wrExampleDashboardReport { height:190px; width:335px; margin: 4px;}
+			.wrExampleDashboardVideo {margin: 5px;}
+		</style>
+		<div id="wrExampleContainer">
+			<div id="wrExampleContent">
+				<h1>Ejemplos de contenidos pestaña personalizar</h1>
+				<p>
+					Haga clic en los enlaces de abajo para ver ejemplos de los tipos de contenido que se pueden añadir a las fichas personalizadas.
+          Para obtener información detallada y una lista completa de las funciones de JavaScript Exago ofrece para ayudar en la personalización de este contenido,
+          Consulte al Personalización <i>Cómo empezar de contenido </i> de la Guía Técnica Exago.
+          </p>
+				<p>
+					<a class="wrExample" href="#ReportsExample"><b>Añadir Informes</b></a>
+					<a class="wrExample" href="#VideoExample"><b>Añadir Vídeos</b></a>
+					<a class="wrExample" href="#LinksExample"><b>Añadir Enlaces</b></a>
+				</p>
+				<h2><a name="ReportsExample">Crear un tablero personalizado agregando informes</a></h2>
+				<p style="margin-top:0;">Para cargar un informe, utilice:<i>data-onloadreportname="carpetaDeInforme\\nombreDeInforme".</i></p>
+				<img src="Config/Images/GettingStartedExamplesMap.png" class="wrExampleDashboardReport" alt="Mapa"/>
+				<img src="Config/Images/GettingStartedExamplesChartA.png" class="wrExampleDashboardReport" alt="GráficoA"/>
+				<img src="Config/Images/GettingStartedExamplesChartB.png" class="wrExampleDashboardReport" alt="GráficoB"/>
+				<img src="Config/Images/GettingStartedExamplesTable.png" class="wrExampleDashboardReport" alt="Tabla"/>
+
+				<h2><a name="VideoExample">Añadir videos de sitios externos o directamente con HTML5</a></h2>
+				<video src="Config/Videos/GettingStartedNavigate.mp4" controls="controls" type="video/mp4" class="wrExampleDashboardVideo" height="200px" width="320px"></video>
+				<video src="Config/Videos/GettingStartedCreateReport.mp4" controls="controls" type="video/mp4" class="wrExampleDashboardVideo" height="200px" width="320px"></video>
+
+				<h2><a name="LinksExample">Añadir enlaces que lanzan los informes:</a></h2>
+				<p style="margin-top:0;">
+          Para mostrar los botones o enlaces que ejecutan un informe en el formato especificado al hacer clic, usar <i>wrExecuteReport(string carpetaDeInforme\\nombreDeInforme, string formato)</i>.
+					Formato es uno de "html," "excel," "pdf," "rtf," o "csv."
+				</p>
+			</div>
+		</div>
+	</element>
+</Language>
+

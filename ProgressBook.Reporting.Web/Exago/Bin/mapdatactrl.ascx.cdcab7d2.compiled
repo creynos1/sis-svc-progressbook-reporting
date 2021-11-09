@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MapDataCtrl.ascx" hash="d4fa39267" filehash="32980670b0d5b0de" flags="110000" assembly="WebReportsUI" type="ASP.mapdatactrl_ascx">
+  <filedeps>
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/GridCustomInputCtrl.ascx" />
+    <filedep name="/MapDataCtrl.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

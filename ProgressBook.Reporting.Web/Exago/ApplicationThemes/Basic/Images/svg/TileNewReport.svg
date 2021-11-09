@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    TileNewReport
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="#6896ED" fill-rule="nonzero" d="M6 3h8.586a1 1 0 0 1 .707.293l3.414 3.414a1 1 0 0 1 .293.707V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm8 2v3h3l-3-3zM7 5v14h10v-9h-4a1 1 0 0 1-1-1V5H7z"/>
+  </g>
+</svg>

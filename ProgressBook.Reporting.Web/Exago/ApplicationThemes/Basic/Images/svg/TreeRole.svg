@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeRole
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#808080" d="M4.33 7h2.34C7.955 7 9 7.894 9 9.005V12H2V9.005C2 7.898 3.048 7 4.33 7z"/>
+    <circle cx="5.5" cy="3.5" r="2.5" fill="#808080"/>
+    <path fill="#FFFFFF" d="M4.665 8h1.67C7.255 8 8 8.536 8 9.203V11H3V9.203C3 8.539 3.749 8 4.665 8z"/>
+    <circle cx="5.5" cy="3.5" r="1.5" fill="#FFFFFF"/>
+  </g>
+</svg>

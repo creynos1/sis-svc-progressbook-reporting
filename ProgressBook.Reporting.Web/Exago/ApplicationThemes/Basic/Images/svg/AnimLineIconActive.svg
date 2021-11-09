@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <title>
+    AnimLineIconActive
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#6896ED" fill-rule="nonzero" points="3.594 20.911 2.089 19.594 10.406 10.089 11.911 11.406"/>
+    <polygon fill="#6896ED" fill-rule="nonzero" points="18.914 18.5 17.5 19.914 9.086 11.5 10.5 10.086"/>
+    <polygon fill="#6896ED" fill-rule="nonzero" points="17.807 19.881 16.119 18.807 24.193 6.119 25.881 7.193"/>
+    <circle cx="3.5" cy="19.5" r="2.5" fill="#FFFFFF" stroke="#6896ED" stroke-width="2"/>
+    <circle cx="10.5" cy="11.5" r="2.5" fill="#FFFFFF" stroke="#6896ED" stroke-width="2"/>
+    <circle cx="17.5" cy="18.5" r="2.5" fill="#FFFFFF" stroke="#6896ED" stroke-width="2"/>
+    <circle cx="24.5" cy="7.5" r="2.5" fill="#FFFFFF" stroke="#6896ED" stroke-width="2"/>
+  </g>
+</svg>

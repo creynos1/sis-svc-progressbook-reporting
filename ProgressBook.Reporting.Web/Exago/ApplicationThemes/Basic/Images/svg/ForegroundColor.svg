@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>
+    ForegroundColor
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <text fill="#808080" font-family="TimesNewRomanPSMT, Times New Roman" font-size="15">
+      <tspan x="3" y="13">A</tspan>
+    </text>
+    <text fill="#808080" font-family="TimesNewRomanPSMT, Times New Roman" font-size="15">
+      <tspan x="3" y="13">A</tspan>
+    </text>
+    <rect width="12" height="2" x="2" y="14" fill="#B59DFF"/>
+  </g>
+</svg>

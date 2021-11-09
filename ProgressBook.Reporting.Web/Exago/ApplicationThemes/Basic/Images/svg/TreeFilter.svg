@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeFilter
+  </title>
+  <path fill="#808080" fill-rule="evenodd" d="M1 1v.5s1.28 1.185 1.747 1.71C4.145 4.784 5 6.387 5 8v3h2V8c0-1.614.855-3.217 2.253-4.79C9.72 2.686 11 1.5 11 1.5V1H1zm11-1v2S8 5 8 8v4H4V8c0-3-4-6-4-6V0h12z"/>
+</svg>

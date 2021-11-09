@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/FormulaEditorCtrl.ascx" hash="d4fa39267" filehash="fa526fab33635bb" flags="110000" assembly="WebReportsUI" type="ASP.formulaeditorctrl_ascx">
+  <filedeps>
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/FormulaEditorCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

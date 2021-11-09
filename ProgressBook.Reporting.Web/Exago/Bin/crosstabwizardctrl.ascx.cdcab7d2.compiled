@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CrossTabWizardCtrl.ascx" hash="d4fa39267" filehash="2418457025d8c8cc" flags="110000" assembly="WebReportsUI" type="ASP.crosstabwizardctrl_ascx">
+  <filedeps>
+    <filedep name="/ChartTypeChooserCtrl.ascx" />
+    <filedep name="/ColorChooserCtrl.ascx" />
+    <filedep name="/CrossTabDesignCtrl.ascx" />
+    <filedep name="/CrossTabWizardCtrl.ascx" />
+    <filedep name="/CustomCheckboxCtrl.ascx" />
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/DesignCtrl.ascx" />
+    <filedep name="/DesignToolbarCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/ExportSelectCtrl.ascx" />
+    <filedep name="/FileUploadCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportErrorsCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

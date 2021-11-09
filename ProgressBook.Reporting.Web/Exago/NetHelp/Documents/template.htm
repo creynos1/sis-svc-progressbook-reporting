@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Template</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="executioncaching.htm" /><link rel="next" href="joins.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="c8b58587-606b-4f28-9063-a406dd65d2d9">
+<h2>Template</h2>
+<p>You can use reports to dynamically fill out fields in templates and 
+forms.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.templatereport.png" />     <img alt="" src="../Media/screen.templatepreview.png" />     <img alt="" src="../Media/screen.templateout.png" /></p>
+<p class="Caption">Template report with repeating data fills a set of form 
+templates</p>
+<p>To use a report to fill out a template:</p>
+<ol>
+  <li class="list_123">
+  <p>Enter field data in cells on the report. For repeating data:</p>
+  <ul>
+    <li class="list_bullets">
+    <p>Repeating cells mapped to static template fields make a new instance 
+    of the template for each repeat.</p>
+    </li><li class="list_bullets">
+    <p>Repeating cells mapped to limited-repeating template fields make a new 
+    instance of the template each time the number of values exceeds the limit. 
+    This is often undesirable - ensure that there are appropriate 
+    constraints on your data and enough fields to fit it all.</p>
+    </li><li class="list_bullets">
+    <p>Repeating cells mapped to unlimited-repeating template fields never make 
+    a new instance of the template. Overflowing data is cut off.</p></li></ul>
+  </li><li class="list_123">
+  <p>From the <img alt="" src="../Media/ReportOptions.png" /> <strong>Report 
+  Options </strong>&gt; <img alt="" src="../Media/Template.png" /> <strong>Template</strong> window, select an 
+  existing template or click the <strong>Upload Template </strong><img alt="" src="../Media/Browse.png" /> icon and add a new one.</p>
+  </li><li class="list_123">
+  <p>For each template field, select either:</p>
+  <ul>
+    <li class="list_bullets">
+    <p>A report cell containing text or data. Images, visualizations, and other 
+    widgets are not supported.</p>
+    </li><li class="list_bullets">
+    <p><strong>Leave as is</strong> - Any bookmark text shows as-is in the 
+    output</p>
+    </li><li class="list_bullets">
+    <p><em>Nothing</em> - The field is blank</p></li></ul>
+  </li><li class="list_123">
+  <p>Optional: Choose whether to allow each field to be editable in the exported 
+  PDF file by selecting <strong>Allow Edit</strong>.</p>
+  </li><li class="list_123">
+  <p>Click <strong>Okay</strong>.</p></li></ol>
+<p>To remove a template from a report:</p>
+<ol>
+  <li class="list_123">
+  <p>From the <strong>Template</strong> window, select the <em>blank </em>option 
+  from the template list.</p>
+  </li><li class="list_123">
+  <p>Click <strong>Okay</strong>.</p></li></ol>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Template reports 
+must be exported in the same file type as the template. You may want to limit 
+the export types to only that type using the <img alt="" src="../Media/ReportOptions.png" /><strong>Report Options</strong> &gt; <img alt="" src="../Media/Options.png" /> <strong>General Options 
+</strong>window.</p><a class="_D2HAnchor" name="makingtemplates.htm" id="makingtemplates.htm"></a>
+<p class="MidTopic">Making templates</p>
+<p>The process for making templates differs between the three supported types: 
+PDF, Word, and Excel; as do the available features.</p>
+<p class="Caution"><strong><img alt="" src="../Media/custom.caution.png" /> Caution<br /></strong>Close the template 
+file before running or saving a report that uses it, or you may get an 
+error.</p>
+<p class="Aside"><strong>PDF Templates</strong></p>
+<p>PDF templates support static fields and limited-repeating fields. PDFs are 
+convenient for preexisting and standardized forms, such as for government or 
+businesses.</p>
+<p>To make a PDF template:</p>
+<ol>
+  <li class="list_123">
+  <p>Open a PDF in a PDF editor program, such as Adobe Acrobat or PDFescape.</p>
+  </li><li class="list_123">
+  <p>Add form fields where you will insert report data. For fields where text 
+  may span multiple lines, select the multi-line property.</p>
+  </li><li class="list_123">
+  <p>Give each form field a unique name, as follows:</p>
+  <ul>
+    <li class="list_bullets">
+    <p>For static fields, which appear only once per template instance, use any 
+    name, with the exception of the format reserved for repeating fields.</p>
+    </li><li class="list_bullets">
+    <p>For repeating fields, which are mapped to consecutive values in a 
+    repeating cell, use the following naming format:</p>
+    <p><span class="Code">Name.0, Name.1,    </span></p>
+    <p>Where <span class="Code">Name</span> is shared by the repeating 
+    fields, and <span class="Code">0</span> maps to the first value, <span class="Code">1</span> maps to the next value, and so on.</p></li></ul>
+  </li><li class="list_123">
+  <p>Save the PDF. Then upload it to the report.</p></li></ol>
+<p class="Aside"><strong>Microsoft Word Templates</strong></p>
+<p>Word templates support static fields, limited and unlimited-repeating fields, 
+and conditional suppression.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Supported file types 
+are <span class="Code">.doc</span>, <span class="Code">.docx</span>, and <span class="Code">.rtf</span>. Report templates exported as "RTF" will save to the 
+original file type.</p>
+<p>To make a Word template:</p>
+<ol>
+  <li class="list_123">
+  <p>Open a Word file in Microsoft Word or a compatible document editor.</p>
+  </li><li class="list_123">
+  <p>Add text where you will insert report data.</p>
+  </li><li class="list_123">
+  <p>Select the text and add a bookmark.</p>
+  </li><li class="list_123">
+  <p>Give each bookmark a unique name, as follows:</p>
+  <ul>
+    <li class="list_bullets">
+    <p>For static fields, which appear only once per template instance, use any 
+    name, with the exception of the formats reserved for repeating and 
+    conditional fields.</p>
+    </li><li class="list_bullets">
+    <p>For limited-repeating fields, which are mapped to consecutive values in a 
+    repeating cell, use the following naming format:</p>
+    <p><span class="Code">Name_0, Name_1,    </span></p>
+    <p>Where <span class="Code">Name</span> is shared by the repeating 
+    fields, and <span class="Code">0</span> maps to the first value, <span class="Code">1</span> maps to the next value, and so on.</p>
+    </li><li class="list_bullets">
+    <p>For unlimited-repeating fields, which are mapped to all the values in a 
+    repeating cell, use the following naming format:</p>
+    <p><span class="Code">RepeatForEach_Name</span></p>
+    <p>Where <span class="Code">Name</span> is a unique name.</p></li></ul>
+  </li><li class="list_123">
+  <p>Optional: To conditionally show or hide text:</p>
+  <ol>
+    <li class="list_abc">
+    <p>Select the text and add a bookmark with the following naming format:</p>
+    <p><span class="Code">KeepIF_Name</span></p>
+    <p>Where <span class="Code">Name</span> is a unique name.</p>
+    </li><li class="list_abc">
+    <p>In the report, map this field to a cell with a formula that returns 1 if 
+    the text should be shown, and 0 if the text should be hidden.</p>
+    <p><strong>Example</strong></p>
+    <p><span class="Code">=If ( {Products.ProductName} = "Chai", 1, 0 
+    )</span></p></li></ol>
+  </li><li class="list_123">
+  <p>Save the file. Then upload it to the report.</p></li></ol>
+<p class="Aside"><strong>Microsoft Excel Templates</strong></p>
+<p>Excel templates work differently than other types. Templates are used to fill 
+Excel columns with report data. This is useful for passing data to Excel charts, 
+pivot tables, and macros.</p>
+<p>To make an Excel template:</p>
+<ol>
+  <li class="list_123">
+  <p>Open an Excel file in Microsoft Excel or a compatible spreadsheet 
+  editor.</p>
+  </li><li class="list_123">
+  <p>The first worksheet is used for dynamic report data. Repeating cells are 
+  mapped to columns in the worksheet. For each column where you will add report 
+  data, enter a unique name to the topmost cell in the column. All following 
+  cells must be empty.</p>
+  <p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.exceltemplatefile.png" /></p>
+  <p class="Caption">Formatting an Excel file to be used as a template</p>
+  </li><li class="list_123">
+  <p>Save the file. Then upload it to the report.</p></li></ol><span id="related-topics"></span><span id="related-topics"></span></body></html>

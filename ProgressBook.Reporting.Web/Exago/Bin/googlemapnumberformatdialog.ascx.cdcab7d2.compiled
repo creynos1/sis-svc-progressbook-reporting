@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GoogleMapNumberFormatDialog.ascx" hash="d4fa39267" filehash="4b816e5b5089c2eb" flags="110000" assembly="WebReportsUI" type="ASP.googlemapnumberformatdialog_ascx">
+  <filedeps>
+    <filedep name="/GoogleMapNumberFormatDialog.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

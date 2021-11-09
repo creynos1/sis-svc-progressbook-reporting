@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportTemplatesGridCtrl.ascx" hash="d4fa39267" filehash="fe621d70cda76436" flags="110000" assembly="WebReportsUI" type="ASP.reporttemplatesgridctrl_ascx">
+  <filedeps>
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportTemplatesGridCtrl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChartAxesDialog.ascx" hash="d4fa39267" filehash="36fb865d08cf1f77" flags="110000" assembly="WebReportsUI" type="ASP.chartaxesdialog_ascx">
+  <filedeps>
+    <filedep name="/ChartAxesDialog.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

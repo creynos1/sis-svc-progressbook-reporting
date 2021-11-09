@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ConditionalWidgetFormatDialog.ascx" hash="d4fa39267" filehash="5182b3a0082e9dcb" flags="110000" assembly="WebReportsUI" type="ASP.conditionalwidgetformatdialog_ascx">
+  <filedeps>
+    <filedep name="/ColorChooserCtrl.ascx" />
+    <filedep name="/ConditionalWidgetFormatDialog.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/NumericEditCtrl.ascx" />
+  </filedeps>
+</preserve>

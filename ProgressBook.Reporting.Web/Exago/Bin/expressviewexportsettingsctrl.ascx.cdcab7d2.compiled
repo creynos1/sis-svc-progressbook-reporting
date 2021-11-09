@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ExpressViewExportSettingsCtrl.ascx" hash="d4fa39267" filehash="df112dc9a84188d3" flags="110000" assembly="WebReportsUI" type="ASP.expressviewexportsettingsctrl_ascx">
+  <filedeps>
+    <filedep name="/CustomCheckboxCtrl.ascx" />
+    <filedep name="/ExpressViewExportSettingsCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportsCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

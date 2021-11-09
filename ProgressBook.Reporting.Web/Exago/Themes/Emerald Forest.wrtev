@@ -1,0 +1,156 @@
+{
+  "FormatTheme": null,
+  "GroupHeaderFormats": [
+    {
+      "FontFamily": "Roboto",
+      "FontSize": 9,
+      "FontColor": "#FFFFFF",
+      "BackgroundColor": "#127867",
+      "Weight": 1,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    },
+    {
+      "FontFamily": "Roboto",
+      "FontSize": 9,
+      "FontColor": "#FFFFFF",
+      "BackgroundColor": "#279f7c",
+      "Weight": 1,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "GroupFooterFormats": [
+    [
+      {
+        "FontFamily": "Roboto",
+        "FontSize": 9,
+        "FontColor": "#3abf8f",
+        "BackgroundColor": "#ffffff",
+        "Weight": 0,
+        "Underline": 0,
+        "HorizontalAlign": 1,
+        "VerticalAlign": 1,
+        "WrapText": true,
+        "UniformBorder": true,
+        "BorderFormatting": {
+          "TopColor": "#ededed",
+          "TopWeight": 0,
+          "LeftColor": "#ededed",
+          "LeftWeight": 0,
+          "BottomColor": "#ededed",
+          "BottomWeight": 0,
+          "RightColor": "#ededed",
+          "RightWeight": 0
+        }
+      }
+    ]
+  ],
+  "ColumnHeaderFormats": [
+    {
+      "FontFamily": "Roboto",
+      "FontSize": 9,
+      "FontColor": "#FFFFFF",
+      "BackgroundColor": "#3abf8f",
+      "Weight": 1,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "DetailFormats": [
+    {
+      "FontFamily": "Roboto",
+      "FontSize": 10,
+      "FontColor": "#808080",
+      "BackgroundColor": "#ffffff",
+      "Weight": 0,
+      "Underline": 0,
+      "HorizontalAlign": 0,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "ReportFooterFormats": [
+    {
+      "FontFamily": "Roboto",
+      "FontSize": 9,
+      "FontColor": "#808080",
+      "BackgroundColor": "#FFFFFF",
+      "Weight": 0,
+      "Underline": 0,
+      "HorizontalAlign": 1,
+      "VerticalAlign": 1,
+      "WrapText": true,
+      "UniformBorder": true,
+      "BorderFormatting": {
+        "TopColor": "#ededed",
+        "TopWeight": 0,
+        "LeftColor": "#ededed",
+        "LeftWeight": 0,
+        "BottomColor": "#ededed",
+        "BottomWeight": 0,
+        "RightColor": "#ededed",
+        "RightWeight": 0
+      }
+    }
+  ],
+  "RowShading": [
+    "#F1F1F1",
+    "#ffffff"
+  ],
+  "GroupColors": [
+    "#d1f7e9",
+    "#ace4cf",
+    "#94d7b6"
+  ]
+}

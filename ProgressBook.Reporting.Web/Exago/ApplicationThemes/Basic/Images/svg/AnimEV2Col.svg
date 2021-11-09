@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="88" viewBox="0 0 114 88">
+  <title>
+    EV2Col
+  </title>
+  <defs>
+    <path id="a" d="M2 0h53a2 2 0 0 1 2 2v14H0V2a2 2 0 0 1 2-2z"/>
+    <filter id="b" width="101.8%" height="106.2%" x="-.9%" y="-3.1%" filterUnits="objectBoundingBox">
+      <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.843137255 0 0 0 0 0.843137255 0 0 0 0 0.843137255 0 0 0 1 0"/>
+    </filter>
+    <path id="c" d="M59 0h53a2 2 0 0 1 2 2v14H57V2a2 2 0 0 1 2-2z"/>
+    <filter id="d" width="101.8%" height="106.2%" x="-.9%" y="-3.1%" filterUnits="objectBoundingBox">
+      <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.843137255 0 0 0 0 0.843137255 0 0 0 0 0.843137255 0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="114" height="88" fill="#FFFFFF"/>
+    <rect width="56" height="12" x="1" y="16" fill="#000000" fill-opacity=".05"/>
+    <rect width="56" height="12" x="1" y="40" fill="#000000" fill-opacity=".05"/>
+    <rect width="56" height="12" x="1" y="64" fill="#000000" fill-opacity=".05"/>
+    <rect width="22" height="2" x="6" y="21" fill="#D6D6D6" rx="1"/>
+    <path fill="#D6D6D6" d="M7 33h9a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2z"/>
+    <rect width="16" height="2" x="6" y="45" fill="#D6D6D6" rx="1"/>
+    <rect width="30" height="2" x="6" y="57" fill="#D6D6D6" rx="1"/>
+    <rect width="22" height="2" x="6" y="69" fill="#D6D6D6" rx="1"/>
+    <rect width="12" height="2" x="6" y="81" fill="#D6D6D6" rx="1"/>
+    <use fill="#FFFFFF" xlink:href="#a"/>
+    <use fill="black" filter="url(#b)" xlink:href="#a"/>
+    <rect width="23" height="2" x="17" y="7" fill="#D6D6D6" rx="1"/>
+    <path fill="#6896ED" d="M7.5 12a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+    <rect width="55" height="12" x="58" y="16" fill="#000000" fill-opacity=".05"/>
+    <rect width="55" height="12" x="58" y="40" fill="#000000" fill-opacity=".05"/>
+    <rect width="55" height="12" x="58" y="64" fill="#000000" fill-opacity=".05"/>
+    <rect width="22" height="2" x="63" y="21" fill="#D6D6D6" rx="1"/>
+    <path fill="#D6D6D6" d="M64 33h9a1 1 0 0 1 0 2h-9a1 1 0 0 1 0-2z"/>
+    <rect width="16" height="2" x="63" y="45" fill="#D6D6D6" rx="1"/>
+    <rect width="30" height="2" x="63" y="57" fill="#D6D6D6" rx="1"/>
+    <rect width="22" height="2" x="63" y="69" fill="#D6D6D6" rx="1"/>
+    <rect width="12" height="2" x="63" y="81" fill="#D6D6D6" rx="1"/>
+    <use fill="#FFFFFF" xlink:href="#c"/>
+    <use fill="black" filter="url(#d)" xlink:href="#c"/>
+    <rect width="23" height="2" x="74" y="7" fill="#D6D6D6" rx="1"/>
+    <path fill="#6896ED" d="M64.5 12a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+  </g>
+</svg>

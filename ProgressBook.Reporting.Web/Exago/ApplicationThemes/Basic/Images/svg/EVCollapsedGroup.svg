@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    EVCollapsedGroup
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="#777777" fill-rule="nonzero" d="M16.236 12.118L12 14.236l-4.236-2.118L7 12.5l5 2.5 5-2.5-.764-.382zm0 3L12 17.236l-4.236-2.118L7 15.5l5 2.5 5-2.5-.764-.382zM5.528 11l-3-1.5L12 4.764 21.472 9.5l-3 1.5 3 1.5-3 1.5 3 1.5L12 20.236 2.528 15.5l3-1.5-3-1.5 3-1.5zM12 7L7 9.5l5 2.5 5-2.5L12 7z"/>
+    <polygon fill="#777777" points="23 20 20.5 23 18 20"/>
+  </g>
+</svg>

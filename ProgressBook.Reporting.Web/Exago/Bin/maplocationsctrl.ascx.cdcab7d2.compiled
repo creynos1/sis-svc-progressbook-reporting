@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MapLocationsCtrl.ascx" hash="d4fa39267" filehash="6804f66acc29a631" flags="110000" assembly="WebReportsUI" type="ASP.maplocationsctrl_ascx">
+  <filedeps>
+    <filedep name="/DataDropDownCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/GridCustomInputCtrl.ascx" />
+    <filedep name="/MapLocationsCtrl.ascx" />
+  </filedeps>
+</preserve>

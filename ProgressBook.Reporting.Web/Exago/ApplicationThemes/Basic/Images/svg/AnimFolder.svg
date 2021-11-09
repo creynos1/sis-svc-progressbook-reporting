@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 40 36">
+  <title>
+    AnimFolder
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#777777" d="M0 16h40v19a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V16zM.5 0h11.293a.5.5 0 0 1 .353.146L16 4h23a1 1 0 0 1 1 1v7H0V.5A.5.5 0 0 1 .5 0z"/>
+    <rect width="40" height="4" y="12" fill="#EFEFEF"/>
+  </g>
+</svg>

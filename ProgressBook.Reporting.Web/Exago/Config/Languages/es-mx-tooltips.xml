@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language>
+  <MainMenu>
+    <element id="NewExpressReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Informe expreso&lt;/b&gt; &lt;br&gt; &lt;br&gt; Cree rápidamente informes tabulares con las operaciones esenciales como la clasificación, filtrado y cálculos. Formatear fácilmente y resumir los datos. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/ExpressReport@2x.png&quot; style=&quot;height:190px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+    <element id="NewAdvancedReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Informe avanzado&lt;/b&gt; &lt;br&gt; &lt;br&gt; Crear informes avanzados que contienen gráficos, mapas, indicadores, y las imágenes. Añadir secciones de grupos para proporcionar más flexibilidad en cómo se muestran los datos. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/AdvancedReport@2x.png&quot; style=&quot;height:320px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+    <element id="NewCrossTabReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Tabla cruzada&lt;/b&gt; &lt;br&gt; &lt;br&gt; Crear informes de que los datos de pivote. El número de columnas y filas en la tabla de referencias cruzadas se expande basa en los datos en sí. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/CrossTabReport@2x.png&quot; style=&quot;height:238px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+    <element id="NewDashboardReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Informe tablero&lt;/b&gt; &lt;br&gt; &lt;br&gt; Crear un lienzo interactivo que contiene informes, visualizaciones, imágenes, gráficos, mapas, indicadores, textos y páginas de web. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/Dashboard@2x.png&quot; style=&quot;height:250px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+	<element id="NewExpressView" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Vista Expreso&lt;/b&gt; &lt;br&gt; &lt;br&gt; Explore los datos y obtenga respuestas rápidas utilizando arrastrar y soltar en un diseñador altamente interactivo.&lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/ExpressView@2x.png&quot; style=&quot;height:330px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+	<element id="NewChainedReport" tooltip = "lala &lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Informe Encadenado&lt;/b&gt; &lt;br&gt; &lt;br&gt; Combine varios informes relacionados o dispares en una sola exportación. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/ChainedReport@2x.png&quot; style=&quot;height:84px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+	<element id="DuplicateReportBtn" tooltip="&lt;b&gt;Duplicar Informe: &lt;/b&gt; Hacer una copia idéntica del informe seleccionado. Esto le permitirá tener varias versiones de un informe sin modificar la copia original."></element>
+    <element id="ManageFoldersBtn" tooltip="&lt;b&gt;Administrar Carpetas de Informes: &lt;/b&gt; Crear, renombrar o borrar carpetas y subcarpetas."></element>
+    <element id="ExportTypeMenuHtml" tooltip="&lt;b&gt;HTML:&lt;/b&gt;&lt;br /&gt; Vea el informe en una pestaña del navegador."></element>
+    <element id="ExportTypeMenuExcel" tooltip="&lt;b&gt;Excel: &lt;/b&gt;&lt;br /&gt; Descarga el informe como un archivo de Excel."></element>
+    <element id="ExportTypeMenuPdf" tooltip="&lt;b&gt;PDF: &lt;/b&gt;&lt;br /&gt; Descarga el informe como un archivo de PDF."></element>
+    <element id="ExportTypeMenuRtf" tooltip="&lt;b&gt;RTF: &lt;/b&gt;&lt;br /&gt; Descarga el informe como un archivo de Word."></element>
+    <element id="ExportTypeMenuCsv" tooltip="&lt;b&gt;CSV: &lt;/b&gt;&lt;br /&gt; Descargue el informe como un archivo de valores separados por comas."></element>
+  </MainMenu>
+  <NewReportWizard>
+    <element id="InfoTab" tooltip="Proporcione un nombre único para identificar el informe en el Menú Principal."></element>
+    <element id="ReportDescriptionLbl" tooltip="Proporcionar una descripción del informe. Las descripciones aparecen en la parte inferior del Menú Principal y se utilizan en la búsqueda de informes."></element>
+    <element id="CategoriesTab" tooltip="Seleccione las Categorías de Datos que el informe debería tener acceso."></element>
+    <element id="SortsTab" tooltip="Seleccione qué Campos de Datos debe dictar la orden de la información en su informe."></element>
+    <element id="FiltersTab" tooltip="Aplicar filtros para limitar la cantidad de información que se muestra en su informe."></element>
+    <element id="LayoutTab" tooltip="Seleccionar los Campos de Datos debe mostrar en su informe."></element>
+    <element id="OptionsTab" tooltip="Configurar ajustes de los informes adicionales, tales como el tamaño y la orientación de la página."></element>
+  </NewReportWizard>
+  <ExpressReports>
+    <element id="SimpleLayoutTBOptionsBtn" tooltip="&lt;b&gt;Opciones de Diseño:&lt;/b&gt;&lt;br /&gt;- Prevenir valores duplicados aparezcan.&lt;br /&gt;- Proporcionar fila sombreado alternativo."></element>
+    <element id="SimpleLayoutAddBlankColumnBtn" tooltip="Añadir una columna en blanco con el informe."></element>
+    <element id="FormatCellsBtn" tooltip="&lt;b&gt;Formato de Celdas:&lt;/b&gt;&lt;br /&gt; - Especifique la forma numérica, los valores de fecha y de texto deben mostrar.&lt;br /&gt; - Aplicar las fronteras a las células."></element>
+    <element id="SimpleLayoutTBThemeLbl" tooltip="&lt;b&gt;Temas: &lt;/b&gt;&lt;br /&gt; Peinar rápidamente su informe utilizando un tema predefinido."></element>
+    <element id="ReportStandardLayoutGroupByLbl" tooltip="Después de seleccionar Funciones de resumen en los Campos de Datos anterior, utilice las casillas de verificación para especificar cuales Categorias ordenadas las funciones deben mostrar o si deben usarse para crear totales generales al final del informe.  &lt;br /&gt; &lt;br /&gt;Puede hacer clic en cualquiera de los nombres de las Categorías inferiores, Encabezado de Página, Pie de Página o los totales generales para opciones adicionales."></element>
+    <element id="SimpleLayoutColumnFormulaBtn" tooltip="Crear una fórmula para realizar cálculos en los datos."></element>
+  </ExpressReports>
+  <StandardReports>
+    <ToolbarDropdown>
+      <element id="OptionsMenuRename" tooltip="Proporcione un nombre único para identificar el informe en el Menú Principal."></element>
+      <element id="OptionsMenuDescription" tooltip="Proporcionar una descripción del informe. Las descripciones aparecen en la parte inferior del Menú Principal y se utilizan en la búsqueda de informes."></element>
+      <element id="OptionsMenuCategories" tooltip="Seleccione las Categorías de Datos que el informe debería tener acceso."></element>
+      <element id="OptionsMenuSorts" tooltip="Seleccione qué Campos de Datos debe dictar la orden de la información en su informe."></element>
+      <element id="OptionsMenuFilters" tooltip="Aplicar filtros para limitar la cantidad de información que se muestra en su informe."></element>
+      <element id="OptionsMenuTemplate" tooltip="Añadir una plantilla prediseñada de formato PDF, RTF, o Excel a su informe."></element>
+    </ToolbarDropdown>
+    <ToolbarItems>
+      <element id="AlignTopBtn" tooltip="Alinear contenido de la celda a la parte superior de la célula."></element>
+      <element id="AlignMiddleBtn" tooltip="Alinear contenido de la celda a la mitad de la célula."></element>
+      <element id="AlignBottomBtn" tooltip="Alinear contenido de la celda a la parte inferior de la célula."></element>
+      <element id="AlignLeftBtn" tooltip="Alinear contenido de la celda a la izquierda de la celda."></element>
+      <element id="AlignCenterBtn" tooltip="Alinear contenido de la celda al centro de la célula."></element>
+      <element id="AlignRightBtn" tooltip="Alinear contenido de la celda a la derecha de la celda."></element>
+      <element id="AlignJustifyBtn" tooltip="Justificar contenido de la celda para adaptarse a la anchura de la celda."></element>
+      <element id="MergeCellsBtn" tooltip="&lt;b&gt;Combinar Celdas:&lt;/b&gt;&lt;br /&gt; Únete a las celdas seleccionadas para crear una sola célula grande. Una característica útil para crear gráficos, medidores, imágenes y mapas."></element>
+      <element id="SplitCellsBtn" tooltip="&lt;b&gt;Dividir Celdas:&lt;/b&gt;&lt;br /&gt; Dividir la celda combinada seleccionado."></element>
+      <element id="WrapTextBtn" tooltip="&lt;b&gt;Ajustar Texto:&lt;/b&gt;&lt;br /&gt; Envuelve contenido de la celda en una nueva línea si va más allá de la anchura de la columna. Al cambiar el ancho de columna, el embalaje se ajusta automáticamente."></element>
+      <element id="AutoSumBtn" tooltip=" &lt;b&gt;AutoSuma:&lt;/b&gt;&lt;br /&gt;Calcular el valor total de la celda seleccionada. Sólo la usamos para celdas en los secciones pie de grupop o pie de informe."></element>
+      <element id="SuppressDuplicatesBtn" tooltip="&lt;b&gt;Suprimir Valores Duplicados:&lt;/b&gt;&lt;br /&gt;Evitar que una célula se vuelva a repetir valores duplicados en las filas posteriores del informe."></element>
+      <element id="InsertPictureInput" tooltip="Insertar imagen: Añadir una imagen desde su computadora en una celda."></element>
+      <element id="CrossTabWizardBtn" tooltip="&lt;b&gt;Asistente para Tablas Cruzadas:&lt;/b&gt;&lt;br /&gt; Añadir una tabla de referencias cruzadas que se expande de datos, tanto horizontal como verticalmente. Sólo la usamos para celdas en los secciones pie de grupop o pie de informe."></element>
+      <element id="EditFormulaBtn" tooltip="&lt;b&gt;Editor de Fórmulas:&lt;/b&gt; &lt;br /&gt; Crear fórmulas para realizar cálculos en los datos."></element>
+      <element id="LinkedReportBtn" tooltip="&lt;b&gt;Informes Vinculados:&lt;/b&gt;&lt;br /&gt; Vincular una celda a otro informe para crear una analiza en profundidad en la salida HTML."></element>
+      <element id="ChartToolbarButtonLbl">&lt;b&gt;Asistente para Gráficos:&lt;/b&gt;&lt;br /&gt; Los gráficos proporcionan una representación visual de sus datos.</element>
+	  <element id="MapToolbarButtonLbl">&lt;b&gt;Asistente de Geochart:&lt;/b&gt;&lt;br /&gt; Los Geocharts proporcionan una representación visual de datos geográficos en un mapa simple.</element>
+	  <element id="GoogleMapToolbarButtonLbl">&lt;b&gt;Asistente para Mapas Google:&lt;/b&gt;&lt;br /&gt; Mapas de Google proporcionan una representación visual de los datos geográficos en un mapa, en el estilo de mapeo de Google.</element>
+      <element id="GaugeToolbarButtonLbl"> &lt;b&gt;Asistente para Indicadores:&lt;/b&gt;&lt;br /&gt; Indicadores reflejan un valor de datos escalar.</element>
+    </ToolbarItems>
+    <Sections>
+      <element id="SectionLbl" tooltip="&lt;b&gt;Secciones: &lt;/b&gt;&lt;br /&gt; Secciones dictan cuándo aparecerán filas de un informe. &lt;br /&gt; &lt;br /&gt; &lt;b&gt;Para más información: &lt;/b&gt;Haga clic en cualquier parte de la columna de la sección y se ciernen sobre Agregar Sección. Pase el ratón sobre cada tipo de sección para ver información detallada."></element>
+      <element id="SectionAddMenuPageHeader" tooltip="Las filas de una sección de &lt;b&gt;encabezado de página&lt;/b&gt; aparecen en la parte superior de cada página.&lt;br /&gt; &lt;br /&gt; &lt;b&gt;Ejemplo: &lt;/b&gt; Etiquetas de las columnas que se deben repetir en cada página."></element>
+      <element id="SectionAddMenuReportHeader" tooltip="Las filas de una sección de &lt;b&gt;encabezado de informe&lt;/b&gt; aparecen al principio del informe.&lt;br /&gt; &lt;br /&gt; &lt;b&gt;Ejemplo:&lt;/b&gt; El título del informe."></element>
+      <element id="SectionAddMenuDetail" tooltip="Las filas de una sección de &lt;b&gt;detalle&lt;/b&gt; aparecen una vez para cada fila de datos devueltos durante la ejecución.&lt;br /&gt; &lt;br /&gt;&lt;b&gt;Ejemplo:&lt;/b&gt; La lista detallada de un recibo."></element>
+      <element id="SectionAddMenuReportFooter" tooltip="Las filas de una sección de &lt;b&gt;pie del informe&lt;/b&gt; aparecen al final del informe.&lt;br /&gt; &lt;br /&gt;&lt;b&gt;Ejemplo:&lt;/b&gt; Totales finales o gráficos que muestran las tendencias que ocurren en la sección de detalle."></element>
+      <element id="SectionAddMenuPageFooter" tooltip="Las filas de una sección de &lt;b&gt;pie de página&lt;/b&gt; aparecen en la parte inferior de cada página. &lt;br /&gt; &lt;br /&gt;&lt;b&gt;Ejemplo:&lt;/b&gt; Los números de página o avisos de confidencialidad."></element>
+      <element id="SectionAddMenuGroupHeader" tooltip="Las filas de una sección de &lt;b&gt;encabezado de grupo&lt;/b&gt; aparecen en el inicio de cada nuevo valor de un Campo de Datos ordenado. &lt;br /&gt;&lt;br /&gt; Secciones de encabezado de grupo requieren que exista una ordena.&lt;br /&gt; &lt;br /&gt;&lt;b&gt;Ejemplo:&lt;/b&gt; Visualice cada nuevo nombre clientes por encima de las órdenes que han hecho."></element>
+      <element id="SectionAddMenuGroupFooter" tooltip="Las filas de un grupo de secciones de &lt;b&gt;pie de página&lt;/b&gt; aparecen al final de cada valor de un Campo de Datos ordenado. Se suelen utilizar para calcular los subtotales. &lt;br /&gt;&lt;br /&gt;  Secciones de pie de grupo requieren que exista una ordena..&lt;br /&gt; &lt;br /&gt;&lt;b&gt;Ejemplo:&lt;/b&gt; Muestra el total de cada cliente bajo sus órdenes."></element>
+      <element id="SectionAddMenuRepeatingGroup" tooltip="&lt;b&gt;Grupo de repetición&lt;/b&gt; secciones se deben utilizar en un informe cuando se tienen varios uno-a-muchos relación de uno Categoría de Datos a otras Categorías y desea los datos de cada Categoría que aparezcan por separado.&lt;br /&gt; &lt;br /&gt;&lt;b&gt;Ejemplo:&lt;/b&gt; En un informe es posible que desee mostrar una lista de profesores y para cada profesor, la lista de las clases que enseñan y una lista de todos sus publicaciónes. Cada profesor puede enseñar a múltiples clases y pudo haber hecho múltiples publicaciónes (es decir, múltiples-uno-a-muchos). En este caso, deberá utilizar &lt;b&gt;dos secciones de grupos de repetición&lt;/b&gt; basado en el profesor: uno para mostrar las clases que enseñan y uno para mostrar sus publicaciónes."></element>
+    </Sections>
+    <Widgets>
+      <element id="GaugeTypeTab" tooltip="Seleccione el tipo de indicador y tamaño."></element>
+      <element id="GaugeDataTab" tooltip="Seleccione los valores de datos, rangos y opciones de color."></element>
+      <element id="ChartTypeTab" tooltip="Seleccione el tipo de gráfico, tamaño y color opciones."></element>
+      <element id="ChartDataTab" tooltip="Especifique qué celdas del informe proporcionarán valores de los datos para el gráfico."></element>
+      <element id="ChartLabelsTab" tooltip="Añade un título y otras etiquetas."></element>
+      <element id="MapTypeTab" tooltip="Seleccione el tipo de mapa, tamaño y color opciones."></element>
+      <element id="MapLocationsTab" tooltip="Seleccione Campos de Datos para especificar qué celdas determinarán la información de ubicación."></element>
+      <element id="MapDataTab" tooltip="Especifique qué celdas del informe proporcionarán valores de datos para cada ubicación."></element>
+      <element id="MapWizardInitialViewLbl" tooltip="Para mapas &lt;b&gt;dinámicos&lt;/b&gt;, (sólo disponible en la salida HTML) definir la vista de dirección inicial del mapa. &lt;br /&gt; &lt;br /&gt;  Para mapas &lt;b&gt;estáticos&lt;/b&gt;, definir qué ver la imagen del mapa debe tomar."></element>
+	  <element id="GoogleMapAppearanceShowDropPins" tooltip="La activación de 'los pines de gota de la pantalla' hará que los punzones que representan el tipo de región más granular aparezcan al perforar el nivel métrico más granular. Por ejemplo, si el tipo de región más granular es &quot;Ciudad&quot; y el nivel de métrica más granular es &quot;Estado&quot;, habilitar este ajuste hará que los puntos de inserción marquen puntos de datos de la Ciudad al perforar un estado."></element>
+	  <element id="GoogleMapAppearanceMetricLevelInfo" tooltip="Seleccione todos los tipos de región por los que las métricas deben agregarse. Ex. Si selecciona País y Ciudad, se agregarán valores por País de forma predeterminada y la exploración en País mostrará los valores agregados por Ciudad."></element>		  
+   </Widgets>
+  </StandardReports>
+  <CrosstabReports>
+    <element id="CrossTabDesignRowDataGroupSourceFieldLbl" tooltip="Fuentes de fila expanden la tabla cruzada &lt;b&gt;verticalmente.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Seleccione los Campos de Datos que determinan cuántas filas se encuentran en la tabla cruzada."></element>
+    <element id="CrossTabDesignColumnDataGroupSourceFieldLbl" tooltip="Fuentes de columna expanden la tabla cruzada &lt;b&gt;horizontalmente.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Seleccione los Campos de Datos que determinan cuántas columnas se encuentran en la tabla cruzada."></element>
+    <element id="CrossTabDesignTabulationDataGroupSourceFieldLbl" tooltip="Fuentes de tabulación muestran información resumida donde las fuentes de fila y columna se cruzan.&lt;br /&gt;&lt;br /&gt;Seleccione los Campos de Datos que se resume cuando existen datos para encabezados de fila y de columna."></element>
+    <element id="CrossTabDesignAddRowBtn" tooltip="Agregue el Campo de Datos seleccionada como fuente de fila."></element>
+    <element id="CrossTabDesignAddColumnBtn" tooltip="Agregue el Campo de Datos seleccionada como fuente de columna."></element>
+    <element id="CrossTabDesignAddTabulationBtn" tooltip="Agregue el Campo de Datos seleccionada como fuente de tabulación."></element>
+  </CrosstabReports>
+  <DashboardReports>
+    <element id="DashboardAddReportItem" tooltip="Arrastre este elemento en el lienzo para agregar un &lt;b&gt;informe pre-existente&lt;/b&gt;."></element>
+    <element id="DashboardAddKeywordItem" tooltip="Arrastre este elemento en el lienzo para agregar una &lt;b&gt;nueva visualización de datos&lt;/b&gt;."></element>
+    <element id="DashboardAddTextItem" tooltip="Arrastre este elemento en el lienzo para agregar un &lt;b&gt;texto&lt;/b&gt;."></element>
+    <element id="DashboardAddImageItem" tooltip="Arrastre este elemento en el lienzo para agregar un &lt;b&gt;imagen&lt;/b&gt;."></element>
+    <element id="DashboardAddFilterItem" tooltip="Arrastre este elemento en el lienzo para agregar un &lt;b&gt;fitlro&lt;/b&gt;."></element>
+    <element id="DashboardAddUrlItem" tooltip="Arrastre este elemento en el lienzo para agregar una &lt;b&gt;página web&lt;/b&gt;."></element>
+    <element id="DashboardRoundedEdgesBtn" tooltip="&lt;b&gt;Los bordes redondeados&lt;/b&gt;&lt;br /&gt; Redondear las esquinas de las fronteras del elemento seleccionado."></element>
+  </DashboardReports>
+  <Filters>
+    <element id="ReportFiltersOperatorSelect" tooltip="El operador del filtro determina el procedimiento que se utiliza para comparar el campo de datos para el valor de filtro."></element>
+    <element id="ReportFiltersAndOrSelect" tooltip="Especifique la relación entre los filtros.&lt;/i&gt; &lt;br /&gt; &lt;br /&gt;Seleccione 'Y' para requerir que el filtro seleccionado &lt;b&gt;y&lt;/b&gt; la de abajo son verdaderas. &lt;br /&gt; &lt;br /&gt;Seleccione 'O' de exigir que sea el filtro seleccionado &lt;b&gt;o&lt;/b&gt; la de abajo son ciertas."></element>
+    <element id="ReportFiltersGroupWithLbl" tooltip="Coloque paréntesis alrededor de el filtro seleccionado y el que le sigue."></element>
+    <element id="ReportFiltersPromptLbl" tooltip="Deje que el filtro seleccionado para ser modificado cuando se ejecuta el informe."></element>
+  </Filters>
+  <HTMLOptions>
+    <element id="ShowHtmlToolbarLbl" tooltip="Determinar si es o no mostrar las opciones de búsqueda, paginación y la exportación de salida HTML. &lt;br /&gt; &lt;br /&gt;  &lt;b&gt; Ajustes:&lt;/b&gt;- Auto: ocultar dinámicamente la barra de herramientas si el informe sólo muestra una sección de pie de informe. &lt;br /&gt;- Mostrar: siempre se mostrarán barras de herramientas.&lt;br /&gt;- Ocultar: Barras de herramientas serán siempre oculto.&lt;br /&gt; &lt;br /&gt;  &lt;b&gt; Ejemplo:&lt;/b&gt; Se establece en Auto para ocultar la barra de herramientas de informes que sólo contienen un solo gráfico o mapa en una sección de pie de informe."></element>
+  </HTMLOptions>
+</Language>

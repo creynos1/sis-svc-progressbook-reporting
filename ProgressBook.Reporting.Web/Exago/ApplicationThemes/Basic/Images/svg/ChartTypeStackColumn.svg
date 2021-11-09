@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeStackColumn
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <path fill-opacity=".5" d="M7 20h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1zM17 4h6a1 1 0 0 1 1 1v30a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 10h6a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V15a1 1 0 0 1 1-1z"/>
+    <path fill-opacity=".5" d="M7 27h6a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1zm10-12h6a1 1 0 0 1 1 1v19a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V16a1 1 0 0 1 1-1zm10 8h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V24a1 1 0 0 1 1-1z"/>
+    <path d="M7 32h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm10-9h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V24a1 1 0 0 1 1-1zm10 6h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"/>
+  </g>
+</svg>

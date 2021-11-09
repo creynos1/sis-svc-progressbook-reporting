@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    Rename
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M9 1h2v1H9v8h2v1H9v-1H8v1H6v-1h2V2H6V1h2v1h1V1z"/>
+    <rect width="5" height="4" x="1" y="4" fill="#777777" rx=".5"/>
+  </g>
+</svg>

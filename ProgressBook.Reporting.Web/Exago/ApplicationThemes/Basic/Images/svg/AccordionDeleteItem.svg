@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>AccordionDeleteItem</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-724.000000, -358.000000)" opacity="0.5">
+        <g transform="translate(454.000000, 150.000000)">
+            <g transform="translate(12.000000, 201.000000)">
+                <g transform="translate(258.000000, 7.000000)">
+                    <g>
+                        <rect x="0" y="0" width="12" height="12"></rect>
+                        <polygon fill="#777777" points="6.71428571 6.01557632 11 1.7165109 10.2857143 1 6 5.29906542 1.71428571 1 1 1.7165109 5.28571429 6.01557632 1 10.3146417 1.71428571 11.0311526 6 6.73208723 10.2857143 11.0311526 11 10.3146417 6.71428571 6.01557632"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

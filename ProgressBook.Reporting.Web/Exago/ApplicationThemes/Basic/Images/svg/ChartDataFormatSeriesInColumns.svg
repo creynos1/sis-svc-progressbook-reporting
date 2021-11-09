@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <title>
+    ChartDataFormatSeriesInColumns
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#C1C1C1" points="79 72 71 68 71 42 31 42 31 96 71 96 71 76"/>
+    <rect width="40" height="10" x="31" y="42" fill="#808080"/>
+    <rect width="40" height="24" x="128" y="26" fill="#C1C1C1"/>
+    <rect width="40" height="10" x="128" y="26" fill="#808080"/>
+    <rect width="40" height="24" x="128" y="57" fill="#C1C1C1"/>
+    <rect width="40" height="10" x="128" y="57" fill="#808080"/>
+    <rect width="40" height="24" x="128" y="88" fill="#C1C1C1"/>
+    <rect width="40" height="10" x="128" y="88" fill="#808080"/>
+    <polygon fill="#6896ed" points="115 73 115 77 125 72 115 67 115 71 91 71 91 42 115 42 115 46 125 41 115 36 115 40 90 40 89 40 89 71 82 71 82 73 89 73 89 103 89 104 115 104 115 108 125 103 115 98 115 102 91 102 91 73"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ReportSortsCtrl.ascx" hash="d4fa39267" filehash="cc8e48bc8401a6c7" flags="110000" assembly="WebReportsUI" type="ASP.reportsortsctrl_ascx">
+  <filedeps>
+    <filedep name="/DataFieldsCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/ReportSortsCtrl.ascx" />
+    <filedep name="/SplitterCtrl.ascx" />
+    <filedep name="/TreeCtrl.ascx" />
+  </filedeps>
+</preserve>

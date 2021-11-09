@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>DashboardNewTile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect x="0" y="0" width="24" height="24"></rect>
+            <path d="M14,10 L14,6.00684547 C14,5.44994876 13.5480902,5 12.9906311,5 L11.0093689,5 C10.4433532,5 10,5.45078007 10,6.00684547 L10,10 L6.00684547,10 C5.44994876,10 5,10.4519098 5,11.0093689 L5,12.9906311 C5,13.5566468 5.45078007,14 6.00684547,14 L10,14 L10,17.9931545 C10,18.5500512 10.4519098,19 11.0093689,19 L12.9906311,19 C13.5566468,19 14,18.5492199 14,17.9931545 L14,14 L17.9931545,14 C18.5500512,14 19,13.5480902 19,12.9906311 L19,11.0093689 C19,10.4433532 18.5492199,10 17.9931545,10 L14,10 Z" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

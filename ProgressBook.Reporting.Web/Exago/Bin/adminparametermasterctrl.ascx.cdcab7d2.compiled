@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminParameterMasterCtrl.ascx" hash="d4fa39267" filehash="439a9edf1304e1d8" flags="110000" assembly="WebReportsUI" type="ASP.adminparametermasterctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminCheckableTextInputCtrl.ascx" />
+    <filedep name="/AdminDataObjectParameterCtrl.ascx" />
+    <filedep name="/AdminEditableMenuItemCtrl.ascx" />
+    <filedep name="/AdminParameterCtrl.ascx" />
+    <filedep name="/AdminParameterMasterCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/DateTimeEditCtrl.ascx" />
+    <filedep name="/DropDownCtrl.ascx" />
+    <filedep name="/GridCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

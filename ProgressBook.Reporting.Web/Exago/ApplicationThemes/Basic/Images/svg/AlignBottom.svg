@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    AlignBottom
+  </title>
+  <defs>
+    <rect id="a" width="13" height="1" x="1" y="7"/>
+    <mask id="f" width="13" height="1" x="0" y="0" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+    <rect id="b" width="13" height="1" x="1" y="9"/>
+    <mask id="g" width="13" height="1" x="0" y="0" fill="white">
+      <use xlink:href="#b"/>
+    </mask>
+    <rect id="c" width="13" height="1" x="1" y="11"/>
+    <mask id="h" width="13" height="1" x="0" y="0" fill="white">
+      <use xlink:href="#c"/>
+    </mask>
+    <rect id="d" width="13" height="1" x="1" y="13"/>
+    <mask id="i" width="13" height="1" x="0" y="0" fill="white">
+      <use xlink:href="#d"/>
+    </mask>
+    <rect id="e" width="1" height="4" x="7" y="2"/>
+    <mask id="j" width="1" height="4" x="0" y="0" fill="white">
+      <use xlink:href="#e"/>
+    </mask>
+  </defs>
+  <g fill="#D8D8D8" fill-rule="evenodd" stroke="#808080" stroke-width="2">
+    <use mask="url(#f)" xlink:href="#a"/>
+    <use mask="url(#g)" xlink:href="#b"/>
+    <use mask="url(#h)" xlink:href="#c"/>
+    <use mask="url(#i)" xlink:href="#d"/>
+    <use mask="url(#j)" xlink:href="#e"/>
+  </g>
+</svg>

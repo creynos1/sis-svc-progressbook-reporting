@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    FormatPaintbrushCursor
+  </title>
+  <defs>
+    <path id="a" d="M14.953 1.046C14.346.449 7.626 5.834 5.625 7.8c-.992.976-1.324 1.5-1.628 1.891-.133.17.042.222.12.263.394.2.67.386 1.025.736.356.35.545.62.749 1.006.04.078.094.25.267.12.398-.3.93-.625 1.923-1.601 2.001-1.967 7.479-8.574 6.872-9.17z"/>
+    <filter id="b" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.196756114 0" in="shadowBlurOuter1"/>
+    </filter>
+    <mask id="c" width="11.051" height="10.864" x="0" y="0" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#3C3C3C" d="M1.846 11.127c-1.183 1.162-.184 2.356-1.755 4.125-.71.8 2.92.556 4.718-1.212.763-.75.548-1.843-.27-2.647-.818-.804-1.93-1.016-2.693-.266z"/>
+    <use fill="black" filter="url(#b)" xlink:href="#a"/>
+    <use fill="#FFFFFF" stroke="#3D3D3D" stroke-width="2" mask="url(#c)" xlink:href="#a"/>
+  </g>
+</svg>

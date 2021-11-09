@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    Event
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="10" height="10" x="1" y="1" fill="#777777" rx=".5"/>
+    <rect width="8" height="6" x="2" y="4" fill="#FFFFFF" rx=".25"/>
+    <polygon fill="#777777" points="7 5 9 9 5 9" transform="rotate(90 7 7)"/>
+  </g>
+</svg>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Language>
+  <MainMenu>
+    <element id="NewExpressReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Express Report&lt;/b&gt; &lt;br&gt; &lt;br&gt; Quickly create tabular reports with essential operations like sorting, filtering and calculations. Easily format and summarize data. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/ExpressReport@2x.png&quot; style=&quot;height:190px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+    <element id="NewAdvancedReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Advanced Report&lt;/b&gt; &lt;br&gt; &lt;br&gt; Create reports containing charts, maps, gauges, and images.  Add group sections to provide more flexibility in how data is displayed. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/AdvancedReport@2x.png&quot; style=&quot;height:320px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+    <element id="NewCrossTabReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Crosstab Report&lt;/b&gt; &lt;br&gt; &lt;br&gt; Create reports that pivot data. The number of columns and rows in the crosstab expands based on the data itself. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/CrossTabReport@2x.png&quot; style=&quot;height:238px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+    <element id="NewDashboardReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Dashboard&lt;/b&gt; &lt;br&gt; &lt;br&gt; Create an interactive canvas containing reports, visualizations, images, charts, maps, gauges, text and web pages. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/Dashboard@2x.png&quot; style=&quot;height:250px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+	<element id="NewExpressView" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;ExpressView&lt;/b&gt; &lt;br&gt; &lt;br&gt; Explore data and get quick answers using drag &amp; drop in a highly-interactive designer. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/ExpressView@2x.png&quot; style=&quot;height:330px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+	<element id="NewChainedReport" tooltip = "&lt;div style=&quot;padding:5px&quot;&gt;&lt;b&gt;Chained Report&lt;/b&gt; &lt;br&gt; &lt;br&gt; Combine multiple related or disparate reports into a single export. &lt;br&gt; &lt;br&gt; &lt;img src=&quot;Config/Images/ChainedReport@2x.png&quot; style=&quot;height:84px;width:280px;margin-left:-4px&quot; /&gt;&lt;/div&gt;"></element>
+    <element id="DuplicateReportBtn" tooltip="&lt;b&gt;Duplicate Report: &lt;/b&gt; Make an identical copy of the selected report. This will allow you to have multiple versions of a report without modifying the original copy."></element>
+    <element id="ManageFoldersBtn" tooltip="&lt;b&gt;Manage Folders: &lt;/b&gt; Create, rename or delete folders and sub folders."></element>
+    <element id="ExportTypeMenuHtml" tooltip="&lt;b&gt;HTML:&lt;/b&gt;&lt;br /&gt; Display the report in a tab of the browser."></element>
+    <element id="ExportTypeMenuExcel" tooltip="&lt;b&gt;Excel: &lt;/b&gt;&lt;br /&gt; Download the report as an Excel file."></element>
+    <element id="ExportTypeMenuPdf" tooltip="&lt;b&gt;PDF: &lt;/b&gt;&lt;br /&gt; Download the report as a PDF file."></element>
+    <element id="ExportTypeMenuRtf" tooltip="&lt;b&gt;RTF: &lt;/b&gt;&lt;br /&gt; Download the report as a Word file."></element>
+    <element id="ExportTypeMenuCsv" tooltip="&lt;b&gt;CSV: &lt;/b&gt;&lt;br /&gt; Download the report as a Comma Separated Value file."></element>
+  </MainMenu>
+  <NewReportWizard>
+    <element id="InfoTab" tooltip="Provide a unique name to identify the report in the Main Menu."></element>
+    <element id="ReportDescriptionLbl" tooltip="Provide a description of the report. Descriptions appear at the bottom of the Main Menu and are used when searching for reports."></element>
+    <element id="CategoriesTab" tooltip="Select the Data Categories that the report should access."></element>
+    <element id="SortsTab" tooltip="Select which Data Fields should dictate the order of information on your report."></element>
+    <element id="FiltersTab" tooltip="Apply filters to limit the amount of information displayed on your report."></element>
+    <element id="LayoutTab" tooltip="Select which Data Fields should display on your report."></element>
+    <element id="OptionsTab" tooltip="Configure additional report settings such as page size and orientation."></element>
+  </NewReportWizard>
+  <ExpressReports>
+    <element id="SimpleLayoutTBOptionsBtn" tooltip="&lt;b&gt;Layout Options:&lt;/b&gt;&lt;br /&gt;- Prevent duplicate values from appearing.&lt;br /&gt;- Provide alternate row shading."></element>
+    <element id="SimpleLayoutAddBlankColumnBtn" tooltip="Add a blank column to the report."></element>
+    <element id="FormatCellsBtn" tooltip="&lt;b&gt;Format Cells:&lt;/b&gt;&lt;br /&gt; - Specify how numeric, date and text values should display.&lt;br /&gt; - Apply borders to cells."></element>
+    <element id="SimpleLayoutTBThemeLbl" tooltip="&lt;b&gt;Themes: &lt;/b&gt;&lt;br /&gt; Quickly style your report using a predefined theme."></element>
+    <element id="ReportStandardLayoutGroupByLbl" tooltip="After selecting Summary Functions on the Data Fields above, use the check boxes below to specify which sorted Categories the functions should display on or if they should be used to create Grand Totals at the end of the the report.  &lt;br /&gt; &lt;br /&gt;You can click on any of the category names below or Page Header, Page Footer and Grand Totals for additional options."></element>
+    <element id="SimpleLayoutColumnFormulaBtn" tooltip="Create a formula to perform calculations on data."></element>
+  </ExpressReports>
+  <StandardReports>
+    <ToolbarDropdown>
+      <element id="OptionsMenuRename" tooltip="Provide a unique name to identify the report in the Main Menu."></element>
+      <element id="OptionsMenuDescription" tooltip="Provide a description of the report. Descriptions appear at the bottom of the Main Menu and are used when searching for reports."></element>
+      <element id="OptionsMenuCategories" tooltip="Select the Data Categories that the report should access."></element>
+      <element id="OptionsMenuSorts" tooltip="Select which Data Fields should dictate the order of information on your report."></element>
+      <element id="OptionsMenuFilters" tooltip="Apply filters to limit the amount of information displayed on your report."></element>
+      <element id="OptionsMenuTemplate" tooltip="Add a predesigned PDF, RTF, or Excel template to your report."></element>
+    </ToolbarDropdown>
+    <ToolbarItems>
+      <element id="AlignTopBtn" tooltip="Align cell contents to the top of the cell."></element>
+      <element id="AlignMiddleBtn" tooltip="Align cell contents to the middle of the cell."></element>
+      <element id="AlignBottomBtn" tooltip="Align cell contents to the bottom of the cell."></element>
+      <element id="AlignLeftBtn" tooltip="Align cell contents to the left of the cell."></element>
+      <element id="AlignCenterBtn" tooltip="Align cell contents to the center of the cell."></element>
+      <element id="AlignRightBtn" tooltip="Align cell contents to the right of the cell."></element>
+      <element id="AlignJustifyBtn" tooltip="Justify cell contents to fit to cell's width."></element>
+      <element id="MergeCellsBtn" tooltip="&lt;b&gt;Merge Cells:&lt;/b&gt;&lt;br /&gt; Join the selected cells to create a single large cell. A helpful feature when creating charts, gauges, images and maps."></element>
+      <element id="SplitCellsBtn" tooltip="&lt;b&gt;Split Cells:&lt;/b&gt;&lt;br /&gt; Divide the selected merged cell."></element>
+      <element id="WrapTextBtn" tooltip="&lt;b&gt;Wrap Text:&lt;/b&gt;&lt;br /&gt; Wraps the cell's contents onto a new line if it goes past the column's width. When you change the column width, wrapping adjusts automatically."></element>
+      <element id="AutoSumBtn" tooltip=" &lt;b&gt;AutoSum:&lt;/b&gt;&lt;br /&gt;Calculate the total value of the selected cell. Only use this for cells in group footer or report footer sections."></element>
+      <element id="SuppressDuplicatesBtn" tooltip="&lt;b&gt;Suppress Duplicates:&lt;/b&gt;&lt;br /&gt;Prevent a cell from repeating duplicate values on subsequent rows of the report."></element>
+      <element id="InsertPictureInput" tooltip="Insert Image: Add an image from your computer into a cell."></element>
+      <element id="CrossTabWizardBtn" tooltip="&lt;b&gt;Crosstab Wizard:&lt;/b&gt;&lt;br /&gt; Add a crosstab that expands data both horizontally and vertically. Only use this for cells in group footer or report footer sections."></element>
+      <element id="EditFormulaBtn" tooltip="&lt;b&gt;Formula Editor:&lt;/b&gt; &lt;br /&gt;Create formulas to perform calculations on data."></element>
+      <element id="LinkedReportBtn" tooltip="&lt;b&gt;Link Reports:&lt;/b&gt;&lt;br /&gt;Link a cell to another report to create a drill-down on HTML output."></element>
+      <element id="ChartToolbarButtonLbl">&lt;b&gt;Chart Wizard:&lt;/b&gt;&lt;br /&gt; Charts provide a visual representation of your data.</element>
+      <element id="MapToolbarButtonLbl">&lt;b&gt;Geochart Wizard:&lt;/b&gt;&lt;br /&gt; Geocharts provide a visual representation of geographic data on a simple map.</element>
+	  <element id="GoogleMapToolbarButtonLbl">&lt;b&gt;Google Map Wizard:&lt;/b&gt;&lt;br /&gt; Google Maps provide a visual representation of geographic data on a map, in the style of Google mapping.</element>
+      <element id="GaugeToolbarButtonLbl"> &lt;b&gt;Gauge Wizard:&lt;/b&gt;&lt;br /&gt; Gauges reflect a scalar data value.</element>
+    </ToolbarItems>
+    <Sections>
+      <element id="SectionLbl" tooltip="&lt;b&gt;Sections: &lt;/b&gt;&lt;br /&gt; Sections dictate when rows of a report will appear. &lt;br /&gt; &lt;br /&gt; &lt;b&gt;For more information: &lt;/b&gt;  Click anywhere in the section column and hover over 'Add Section'. Hover over each type of section to see a detailed tooltip."></element>
+      <element id="SectionAddMenuPageHeader" tooltip="The rows of a &lt;b&gt;page header&lt;/b&gt; section appear at the top of each page. &lt;br /&gt; &lt;br /&gt; &lt;b&gt;Example: &lt;/b&gt; Column labels that should repeat on each page."></element>
+      <element id="SectionAddMenuReportHeader" tooltip="The rows of a &lt;b&gt;report header&lt;/b&gt; section appear at the beginning of the report.&lt;br /&gt; &lt;br /&gt; &lt;b&gt;Example:&lt;/b&gt; The title of the report."></element>
+      <element id="SectionAddMenuDetail" tooltip="The rows of a &lt;b&gt;detail&lt;/b&gt; section appear once for each row of data returned during execution. &lt;br /&gt; &lt;br /&gt;&lt;b&gt;Example:&lt;/b&gt; The itemized list of a receipt."></element>
+      <element id="SectionAddMenuReportFooter" tooltip="The rows of a &lt;b&gt;report footer&lt;/b&gt; section appear at the end of the report. &lt;br /&gt; &lt;br /&gt;&lt;b&gt;Example:&lt;/b&gt; Grand totals or charts that show trends occurring in the detail section."></element>
+      <element id="SectionAddMenuPageFooter" tooltip="The rows of a &lt;b&gt;page footer &lt;/b&gt;section appear at the bottom of each page. &lt;br /&gt; &lt;br /&gt;&lt;b&gt;Example:&lt;/b&gt; Page numbers or confidentiality notices."></element>
+      <element id="SectionAddMenuGroupHeader" tooltip="The rows of a &lt;b&gt;group header&lt;/b&gt; section appear at the start of each new value of a sorted Data Field. &lt;br /&gt;&lt;br /&gt; Group header sections require that a sort exists.  &lt;br /&gt; &lt;br /&gt;&lt;b&gt;Example:&lt;/b&gt; Display each new customers name above the orders they have made."></element>
+      <element id="SectionAddMenuGroupFooter" tooltip="The rows of a &lt;b&gt;group footer&lt;/b&gt; sections appear at the end of each value of a sorted Data Field. They are typically used to calculate subtotals. &lt;br /&gt;&lt;br /&gt;  Group footer sections require that a sort exists.&lt;br /&gt; &lt;br /&gt;&lt;b&gt;Example:&lt;/b&gt; Display each customer's total beneath their orders."></element>
+      <element id="SectionAddMenuRepeatingGroup" tooltip="&lt;b&gt;Repeating group &lt;/b&gt; sections should be used on a report when you have multiple one-to-many relationships from one Data Category to other Categories and you want each Category’s data to appear separately. &lt;br /&gt; &lt;br /&gt;&lt;b&gt;Example:&lt;/b&gt; On a report you may want to display a list of professors and for each professor, list the classes they teach and list all of their publishings. Each professor may teach multiple classes and may have made multiple publishings (i.e. multiple one-to-many relationships). In this case, you would use &lt;b&gt;two repeating group sections &lt;/b&gt; based on Professor: one to display the classes they teach and one to display their publishings."></element>
+    </Sections>
+    <Widgets>
+      <element id="GaugeTypeTab" tooltip="Select gauge type and size."></element>
+      <element id="GaugeDataTab" tooltip="Select data values, ranges and color options."></element>
+      <element id="ChartTypeTab" tooltip="Select chart type, size and color options."></element>
+      <element id="ChartDataTab" tooltip="Specify which cells of the report will provide data values for the chart."></element>
+      <element id="ChartLabelsTab" tooltip="Add a title and other labels."></element>
+      <element id="MapTypeTab" tooltip="Select map type, size and color options."></element>
+      <element id="MapLocationsTab" tooltip="Select Data Fields to specify which cells will determine location information."></element>
+      <element id="MapDataTab" tooltip="Specify which cells of the report will provide data values for each location."></element>
+      <element id="MapWizardInitialViewLbl" tooltip="For &lt;b&gt;dynamic&lt;/b&gt; maps, (only available in HTML output) define the initial location view of the map. &lt;br /&gt; &lt;br /&gt;  For &lt;b&gt;static&lt;/b&gt; maps, define which view the map image should take."></element>
+	  <element id="GoogleMapAppearanceShowDropPins" tooltip="Enabling 'Display Drop Pins' will cause pushpins representing the most granular region type to appear when drilling into the most granular metric level. For example, if the most granular region type is 'City' and the most granular metric level is 'State', enabling this setting will cause pushpins to mark City data points when drilling into a State."></element>
+	  <element id="GoogleMapAppearanceMetricLevelInfo" tooltip="Select all region types by which the metrics should aggregate. Ex. Checking Country and City will aggregate values per Country by default, and drilling into Country will display values aggregated per City."></element>		
+	</Widgets>
+  </StandardReports>
+  <CrosstabReports>
+    <element id="CrossTabDesignRowDataGroupSourceFieldLbl" tooltip="Row header sources expand the crosstab &lt;b&gt;vertically.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Select the Data Fields that determine how many rows are in the crosstab."></element>
+    <element id="CrossTabDesignColumnDataGroupSourceFieldLbl" tooltip="Column header sources expand the crosstab &lt;b&gt;horizontally.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Select the Data Fields that determine how many columns are in the crosstab."></element>
+    <element id="CrossTabDesignTabulationDataGroupSourceFieldLbl" tooltip="Tabulation data sources display summary information where row and column header sources intersect.&lt;br /&gt;&lt;br /&gt;Select Data Fields to be summarized when data exists for &lt;b&gt;both &lt;/b&gt; the row and column headers."></element>
+    <element id="CrossTabDesignAddRowBtn" tooltip="Add the selected Data Field as a row header source."></element>
+    <element id="CrossTabDesignAddColumnBtn" tooltip="Add the selected Data Field as a column header source."></element>
+    <element id="CrossTabDesignAddTabulationBtn" tooltip="Add the selected Data Field as a tabulation source."></element>
+  </CrosstabReports>
+  <DashboardReports>
+    <element id="DashboardAddReportItem" tooltip="Drag this item onto the  canvas to add a &lt;b&gt;pre-existing report&lt;/b&gt;."></element>
+    <element id="DashboardAddKeywordItem" tooltip="Drag this item onto the canvas to add a &lt;b&gt;new data visualization&lt;/b&gt;."></element>
+    <element id="DashboardAddTextItem" tooltip="Drag this item onto the canvas to add &lt;b&gt;text&lt;/b&gt;."></element>
+    <element id="DashboardAddImageItem" tooltip="Drag this item onto the canvas to add an &lt;b&gt;image&lt;/b&gt;."></element>
+    <element id="DashboardAddFilterItem" tooltip="Drag this onto item the canvas to add a &lt;b&gt;filter&lt;/b&gt;."></element>
+    <element id="DashboardAddUrlItem" tooltip="Drag this item onto the canvas to add a &lt;b&gt;web page&lt;/b&gt;."></element>
+    <element id="DashboardRoundedEdgesBtn" tooltip="&lt;b&gt;Round Edges&lt;/b&gt;&lt;br /&gt; Round the corners of the selected item's borders."></element>
+  </DashboardReports>
+  <Filters>
+    <element id="ReportFiltersOperatorSelect" tooltip="The filter's operator determines the procedure used to compare the Data Field to the filter value."></element>
+    <element id="ReportFiltersAndOrSelect" tooltip="Specify the relationship between filters.&lt;/i&gt; &lt;br /&gt; &lt;br /&gt;Select AND to require that the selected filter and the one below are &lt;b&gt;both&lt;/b&gt; true. &lt;br /&gt; &lt;br /&gt;Select OR to require that &lt;b&gt;either&lt;b&gt; the selected filter or the one below it are true."></element>
+    <element id="ReportFiltersGroupWithLbl" tooltip="Place parentheses around the selected filter and the one that follows."></element>
+    <element id="ReportFiltersPromptLbl" tooltip="Allow the selected filter to be modified when the report is run."></element>
+  </Filters>
+  <HTMLOptions>
+    <element id="ShowHtmlToolbarLbl" tooltip="Determine whether or not to display the search, paging and export options on HTML output. &lt;br /&gt; &lt;br /&gt;  &lt;b&gt; Settings: &lt;/b&gt;- Auto: Dynamically hide the toolbar if the report only displays a Report Footer Section  &lt;br /&gt;- Show: Toolbars will always be displayed.  &lt;br /&gt;- Hide: Toolbars will always be hidden. &lt;br /&gt; &lt;br /&gt;  &lt;b&gt;Example:&lt;/b&gt; Set to Auto to hide the toolbar for reports that only contain a single Chart or Map in a Report Footer Section."></element>
+  </HTMLOptions>
+</Language>

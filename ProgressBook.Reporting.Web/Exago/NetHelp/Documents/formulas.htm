@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Formulas</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="cellformat.htm" /><link rel="next" href="sections.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="75ea91aa-c117-46bb-8181-8921ab735343">
+<h2>Formulas</h2>
+<p>Formulas allow you to do calculations, make logical comparisons, parse 
+strings, insert images, and more. Formulas are compositions of functions, 
+parameters, data fields, cell references, and number, date, or 
+text values.</p>
+<p>To add a formula to a report cell, select the cell, then click the formula 
+<img src="../Media/Formula.png" alt="" /> icon to open the Formula Editor window. The 
+Formula Editor has a suite of features to help guide you when using 
+formulas.</p>
+<p>You can use the <strong>Search</strong> field to search through the functions 
+by name. Or start typing in the <strong>Formula</strong> field to get a list of 
+functions that match the text.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.formula_typetosearch.png" /></p>
+<p class="Caption">List of functions that match the text</p>
+<p>Click on a function, or use the up and down arrow keys, to highlight a 
+function and see a description of what it does. To add the selected 
+function to the formula, press the <strong>Enter</strong> key.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip<br /></strong>You can search for 
+data fields, report cells, and parameters in the same manner.</p><a class="_D2HAnchor" name="usingfunctions.htm" id="usingfunctions.htm"></a>
+<p class="MidTopic">Using functions</p>
+<p>Formulas work by applying some calculations to a few values that you give 
+them. A basic example of a formula is <span class="Code">1 + 2</span>. In this 
+example, the formula comprises one <em>function</em>, the addition 
+function (<span class="Code">+</span>), and two <em>arguments</em>, the 
+numbers <span class="Code">1</span> and <span class="Code">2</span>. When the report 
+runs, the formula calculates and <em>returns </em>a value of <span class="Code">3</span>.</p>
+<p>Not every function takes two arguments, so functions cannot always 
+be written as<em class="Code">(argument1 function argument2)</em>. In most cases 
+functions instead use the following format:</p>
+<p class="Indent"><em><span class="Code">Function(argument1, argument2, 
+...)</span></em></p>
+<p>The addition example could also be written as <span class="Code">Add(1, 
+2)</span>. This is the style that most formulas in the application use. Most 
+functions are more abstract than simple arithmetic. Each function has a 
+description which tells you exactly what it does and how to use it.<br /></p>
+<p class="Aside"><strong>Arguments</strong></p>
+<p>An argument is a value that a function uses to do a calculation. Functions 
+have different amounts and types of arguments. When a function is first entered 
+into the Formula field, there are placeholder values for each required argument. 
+Click on a placeholder to see the description of the argument.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.formula_argumentdesc.png" /></p>
+<p class="Caption">Description of the <span style="FONT-STYLE: normal">condition</span> argument of the <span style="FONT-STYLE: normal">If</span> function</p>
+<p>Some arguments are optional. Those are surrounded by brackets [ ]. Some 
+arguments are a list of values. Those are followed by an ellipsis (...).</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.formula_optionalarg.png" /> <img alt="" src="../Media/screen.formula_arglist.png" /></p>
+<p class="Caption">The <span style="FONT-STYLE: normal">Today </span>function 
+takes an optional argument. The <span style="FONT-STYLE: normal">And 
+</span>function takes a list of arguments.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Some functions take 
+no arguments. These are formatted with empty parentheses:<br /><span class="Code">Function()</span></p>
+<p>You need to supply values for all of the function's required arguments. Type 
+a value into the argument space, or drag a data field or function over the 
+placeholder.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.formula_dragfield.png" /></p>
+<p class="Caption">Dragging a data field to an argument<br /></p>
+<p>Click <strong>Okay</strong> when you are finished.</p>
+<p>Formulas are used in several areas besides the report design: custom sorts 
+and groups, drilldowns, conditional formatting for cells and charts, and custom 
+crosstab fields, to name a few. In every area where you can use a formula you 
+can click on a formula <img src="../Media/Formula.png" alt="" /> icon to open a Formula 
+Editor window. These areas may require a specific type of data to be returned 
+from the formula. Some built-in functions, such as aggregates, may be 
+unavailable. Consult the relevant topic for the specifics.</p>
+<p class="Aside"><strong>Note about sections</strong></p>
+<p>Formulas which reference data fields or cells, with the exception of 
+aggregate functions, should be in the same report section as the reference data. 
+Detail sections repeat for every data field, group sections repeat for every 
+group, and page sections repeat for every page. Since most formulas expect only 
+one reference value, and not repeated values, referencing a repeated field or 
+cell from outside of its section can return irregular data. Formulas need to 
+repeat alongside their reference values. Aggregate functions are the exception 
+since they are designed to evaluate once for a group of data. For more 
+information, see <a class="topic-link" href="sections.htm">Sections</a>.</p>
+<p> </p><span id="related-topics"></span><a class="_D2HAnchor" name="manuallytypingformulas.htm" id="manuallytypingformulas.htm"></a>
+<p class="MidTopic">Manually typing formulas</p>
+<p>You have the option of typing in your functions, data fields, parameters, and 
+cell references manually. Use the following formatting guidelines.</p>
+<p class="Aside">Text</p>
+<p>Surround text with double or single quotation marks:</p>
+<p class="Indent"><strong><span class="Code">"Hello, World!"</span></strong></p>
+<p class="Indent"><strong><span class="Code">'I am on fire'</span></strong></p>
+<p>If you want to use a quotation mark in the text, then surround the text with 
+the opposite mark:</p>
+<p class="Indent"><strong><span class="Code">"You're on fire"</span></strong></p>
+<p class="Indent"><strong><span class="Code">'He says "like" too 
+often'</span></strong></p>
+<p>Do not use quotation marks around numbers.</p>
+<p class="Aside">Data fields</p>
+<p class="Indent"><strong><span class="Code">{DataCategory.DataField}</span></strong></p>
+<p class="Indent">where <span class="Code">DataCategory</span> is the name of the 
+data category</p>
+<p class="Indent">and <span class="Code">DataField</span> is the name of the 
+data field</p>
+<p class="Aside">Cell references</p>
+<p>To use the value from another cell in a formula, use the following 
+format:</p>
+<p class="Indent"><strong><span class="Code">[C#]</span></strong></p>
+<p class="Indent">where <span class="Code">C</span> is the letter of the cell 
+column</p>
+<p class="Indent">and <span class="Code">#</span> is the number of the cell row</p>
+<p class="Caution"><img alt="" src="../Media/custom.caution.png" /> <strong>Caution</strong><br />Rearranging 
+cells can cause cell references to break.</p>
+<p class="Aside">Parameters</p>
+<p>Parameters return special values depending on some condition. The built-in 
+parameters are:</p>
+<ul>
+  <li class="list"><strong><span class="Code">@pageNumber@</span></strong> gives the 
+  current page of the report 
+  </li><li class="list"><strong><span class="Code">@reportName@</span></strong> gives the 
+  name of the report 
+  </li><li class="list"><strong><span class="Code">@reportFullName@</span></strong> gives 
+  the name and path to the report </li></ul>
+<p>See <a class="topic-link" href="parameters.htm">Parameters</a> for more 
+information.</p>
+<p class="Aside">Syntax checking</p>
+<p>If there are any typos in the function, the Formula Editor will underline the 
+relevant section in red, and show a brief description of the problem. You need 
+to fix the problem before running the report or the result of the formula will 
+be an error.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.formula_syntaxerror.png" /></p>
+<p class="Caption">This formula will not work without a concatenation 
+operator "&amp;"</p><span id="related-topics"></span><a class="_D2HAnchor" name="typesoffunctions.htm" id="typesoffunctions.htm"></a>
+<p class="MidTopic">Types of functions</p>
+<p>There are several types of functions, which are grouped into the following 
+categories:</p>
+<p><span class="Option">Aggregate</span></p>
+<p class="Indent">Aggregate functions act on a group of data, and return a 
+calculation based on that group. Unlike with other functions, aggregate 
+functions return a different value based on the section of the report they are 
+in. To get an aggregate for each group of a grouped data field, place the 
+function in a Group Footer section. To get an aggregate for an entire data 
+field, place the function in a Report Footer section. Aggregate functions will 
+not work in any other report section.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.reportdesigner_aggex.png" /></p>
+<p class="Caption">An aggregate function in a Group Footer and Report Footer 
+(output in following image)</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.reportviewer_aggex.png" /></p>
+<p class="Caption">The aggregate values for groups and for the entire report</p>
+<blockquote>
+  <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Aggregate 
+  functions cannot be used in conditional formulas or ExpressView formula 
+  columns.</p></blockquote>
+<p><span class="Option">Operators</span></p>
+<p class="Indent">Operators perform basic mathematical or logical operations on 
+two arguments. Unlike other functions, operators go between their arguments, and 
+parentheses are not necessary. For example:</p>
+<ul>
+  <li class="list">
+  <p class="Indent"><span class="Code">="Hello "&amp;"world!"</span></p>
+  </li><li class="list">
+  <p class="Indent"><span class="Code">={Order.UnitPrice}-{Order.Discount}</span></p></li></ul>
+<p class="Indent">The operator <span class="Code">^</span> is also available, such 
+that <span class="Code">A^B</span> returns the result of raising <span class="Code">A</span> to the power of <span class="Code">B</span>. This would be 
+written as <span class="Code">A<sup>B</sup></span> on paper.</p>
+<p class="Indent">There are also several logic operators that are listed in the 
+following section.</p>
+<p><span class="Option">Logical</span></p>
+<p class="Indent">Logic functions measure truth conditions, which are used in 
+conditional functions to do different things depending on whether their 
+arguments are true or not. The main conditional functions are the <span class="Code">If()</span> function, the <span class="Code">Switch()</span> function, 
+and the <a class="topic-link" href="cellformat.htm">conditional formatting</a> 
+editors for cells and charts.</p>
+<p class="IndentAside">What is truth? (advanced users)</p>
+<p class="Indent">Functions which measure logical conditions will return a value 
+of either <span class="Code">True</span> or <span class="Code">False</span>, 
+depending on whether the condition is met or not. These values, also called 
+<em>Booleans</em>, are represented implicitly when passing the result of logic 
+conditions to other functions. This means that there is no explicit 
+representation of <span class="Code">True</span> or <span class="Code">False</span> 
+that you can display in a report cell. Rather, if you want to display the result 
+of a logical function, the application will convert <span class="Code">True</span> 
+or <span class="Code">False</span> to strings with the text <span class="Code">"True"</span> or <span class="Code">"False"</span>.</p>
+<blockquote>
+  <p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Strings are 
+  surrounded by double quotation marks (").</p></blockquote>
+<p class="Indent">For example, the formula <span class="Code">=(2 &gt; 1)</span> has 
+an implicit value of <span class="Code">True</span>. In a report cell, this would 
+resolve to the string <span class="Code">"True"</span>. However, for the formula 
+<span class="Code">=If(2 &gt; 1, x, y)</span>, the <span class="Code">If()</span> 
+function evaluates this argument as the Boolean value <span class="Code">True</span>, not as the text string <span class="Code">"True"</span>.</p>
+<p class="Indent">Some functions have Boolean arguments that you simply want to 
+pass a static truth value. To pass a static <span class="Code">True</span> or 
+<span class="Code">False</span> to other functions, use the functions <span class="Code">True()</span> or <span class="Code">False()</span>.</p>
+<p class="IndentAside">Note about conditional formatting</p>
+<p class="Indent">Conditional formatting formulas must evaluate to either <span class="Code">True</span> or <span class="Code">False</span>. Consider these formulas 
+each to be the condition for an invisible <span class="Code">If()</span> function. 
+If the condition is met, then the formatting will take place; and otherwise, it 
+will not. You should not manually put an <span class="Code">If()</span> function 
+inside a conditional formula in most circumstances.</p>
+<p class="IndentAside">Logic operators</p>
+<p class="Indent">The following logical operators are available:</p>
+<ul>
+  <li class="list">
+  <p class="Indent"><span class="Code">= </span>equal</p>
+  </li><li class="list">
+  <p class="Indent"><span class="Code">!= </span>not equal</p>
+  </li><li class="list">
+  <p class="Indent"><span class="Code">&gt; </span>greater</p>
+  </li><li class="list">
+  <p class="Indent"><span class="Code">&lt; </span>less</p>
+  </li><li class="list">
+  <p class="Indent"><span class="Code">&lt;= </span>less or equal</p>
+  </li><li class="list">
+  <p class="Indent"><span class="Code">&gt;= </span>greater or equal</p></li></ul>
+<p class="Indent">Logic operators are used as <span class="Code">A•B,</span> where 
+<span class="Code">A</span> and <span class="Code">B</span> are arguments and <span class="Code">•</span> is the operator. They return <span class="Code">True</span> if 
+the operant condition is met, and <span class="Code">False</span> otherwise.</p>
+<p><span class="Option">Date</span></p>
+<p class="Indent">Date functions do calculations based on Dates, Times, or a type 
+called a <em>DateTime</em>, which is a combination of a date and time.</p>
+<ul>
+  <li class="list">
+  <p class="Indent">Dates can represent a day or month of the year, such as <span class="Code">January</span> or <span class="Code">January 1st</span>, or a 
+  specific date, such as <span class="Code">January 1st, 2017</span>.</p>
+  </li><li class="list">
+  <p class="Indent">Times can represent a quantity of time, such as <span class="Code">one year</span>, or a time of day, such as <span class="Code">12:00 
+  pm</span>.</p>
+  </li><li class="list">
+  <p class="Indent">DateTimes represent a specific date and time, such as <span class="Code">January 1st, 2017 12:00pm</span>. However, sometimes functions will 
+  return only a date or time as a DateTime type. There will be a default or 
+  placeholder value for the other component, which should be 
+ignored.</p></li></ul>
+<p class="Indent">Functions that input a date accept a Date or DateTime argument. 
+Functions that input a time accept a Time or DateTime argument. To pass text as 
+a date or time to a function, first wrap the text in the <span class="Code">DateValue()</span> or <span class="Code">TimeValue()</span> function. 
+Some functions can interpret a date or time as a string, but as a general rule, 
+it is better to convert the value first.</p>
+<p class="IndentAside">How formatting affects date display</p>
+<p class="Indent">By default, the application interprets text strings that "look" 
+like dates or times, as a DateTime. This means that, when your <a class="topic-link" href="cellformat.htm">cell formatting</a> is set to 
+<strong>General</strong> or <strong>Date</strong>, the cell contents will be 
+displayed in the DateTime format. You can test this out by simply typing <span class="Code">"Jan-02"</span> into a report cell, then running the report. Instead 
+of seeing the text <span class="Code">"Jan-02"</span>, you will see a formatted 
+date, and maybe a time attached to the end. Note that since you did not type a 
+year or time, the application uses placeholder values for the year (the current 
+year) and the time (12:00 AM).</p>
+<p class="Indent">You may or may not want this to happen. An example of erroneous 
+behavior could happen if you type a Time, say <span class="Code">"02:00 
+AM"</span>, into a cell formatted as <strong>General</strong>. The application 
+sees this value as a DateTime. If the default formatting for DateTimes omits the 
+time component, you would end up with only a default date value displayed, and 
+no time at all.</p>
+<p class="Indent">Change the cell formatting to <strong>Date</strong> to select 
+how the date or time should display for this cell. For example, if you set the 
+formatting to <span class="Code">MM/dd</span>, and run the report again, the date 
+<span class="Code">"Jan-02"</span> will display as <span class="Code">01/02</span>. 
+This is likely closer to what you would have wanted.</p>
+<p class="Indent">If you do not want to format a date or time cell at all, set the 
+cell formatting to <strong>Text</strong>. The cell text will be displayed as is. 
+However, note that if you pass this cell as an argument to a date function, the 
+text will be interpreted as a DateTime regardless of the formatting.</p>
+<p class="IndentAside">Day/month ambiguity (American versus European style 
+dates)</p>
+<p class="Indent">Americans represent the date <span class="Code">"Jan-02-2017"</span> as <span class="Code">01/02/2017</span> when 
+written with backslashes or hyphens. However, Europeans would write this same 
+date as <span class="Code">02/01/2017</span> instead, with the day and month 
+places switched. Date functions always interpret a date written this way in the 
+American style: Month/Day/Year. To avoid potential ambiguity, dates should be 
+written in a different way, preferably by spelling out the name of the 
+month.</p>
+<p><span class="Option">Financial</span></p>
+<p class="Indent">Financial functions are used for a variety of monetary 
+calculations, such as interest rates or asset depreciation.</p>
+<p><span class="Option">Database and Data Type</span></p>
+<p class="Indent">Data functions are used to check whether values are of a certain 
+type. They are often used within logical formulas to handle conditions where 
+data fields have irregular data. Such formulas are often referred to as 
+<em>sanity checking</em> or <em>error checking</em>. Data functions can be used 
+to display custom error messages instead of the default errors, and to make sure 
+that a report will run even if it has erroneous data.</p>
+<p><span class="Option">Arithmetic and Geometric</span></p>
+<p class="Indent">These functions are used for a variety of mathematical 
+calculations, such as finding the square root of a number, or rounding a number 
+to the nearest decimal place.</p>
+<p><span class="Option">String</span></p>
+<p class="Indent">String functions are used for manipulating text values in 
+different ways. They can be used for extracting parts of strings, combining 
+multiple strings together, or transforming strings into different forms. These 
+are best used on text that follows predictable patterns, such as street names or 
+phone numbers. They can be combined with conditionals to handle less uniform 
+text patterns.</p>
+<p><span class="Option">Formatting</span></p>
+<p class="Indent">Shows the input argument in <strong>bold</strong>, 
+<em>italic</em>, or <span style="TEXT-DECORATION: underline">underlined</span> 
+text. Styles apply alongside any <a class="topic-link" href="cellformat.htm">cell 
+formatting</a>. These can be used to format only some parts of the text.</p>
+<p><span class="Option">Other</span></p>
+<p class="Indent">These are miscellaneous functions that do not fit into any other 
+categories. For more information, see the function descriptions.</p>
+<p class="Aside"><strong>Combining functions</strong></p>
+<p>It is possible to combine multiple functions into one formula calculation. 
+This occurs often when using logical functions, because you will often want to 
+evaluate a function, and then check the value with an <span class="Code">If()</span> function to decide what to display. This is called 
+function <em>nesting</em>, since you are using functions as arguments in the 
+parentheses of other functions.</p>
+<p>The following formula nests a logical comparison of the result of the <span class="Code">AggCount()</span> function inside an <span class="Code">If()</span> 
+function:</p>
+<p class="Indent"><span class="Code">If(AggCount({Products.ProductName}) &gt;= 10, 
+"Okay", Bold("Warning!"))</span></p>
+<p class="Caution"><img alt="" src="../Media/custom.caution.png" /> <strong>Caution</strong><br />Pay extra 
+attention to the parentheses to make sure that every function is closed 
+correctly. This is the most common cause of errors when nesting 
+functions.</p><span id="related-topics"></span><span id="related-topics"></span></body></html>

@@ -1,0 +1,269 @@
+.wrTabContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* IE7 support */
+  overflow: hidden;
+}
+.wrTabStripOuterContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: visible;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+  /* so that bottom border overlays top border of tab content */
+  border-bottom: 1px solid #d7d7d7;
+  height: 24px;
+}
+.wrTabStripOuterContainer:focus {
+  outline: none;
+}
+.wrExpressTabStripOuterContainer,
+.wrChainedTabStripOuterContainer {
+  padding-right: 100px;
+}
+.wrExpressTabStripOuterContainer > .wrTabStripInnerContainer,
+.wrChainedTabStripOuterContainer > .wrTabStripInnerContainer {
+  right: 208px;
+}
+.wrTabStripInnerContainer {
+  overflow: hidden;
+  height: 34px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.wrTabStripDynamicTabs .wrTabStripInnerContainer {
+  right: 58px;
+}
+.wrTabStripInnerContainer.wrCenteredTabs {
+  justify-content: center;
+}
+.wrTabButtonContainer {
+  position: absolute;
+  right: 0;
+  margin-right: 3px;
+  z-index: 1;
+  /* so that buttons are not cut off if taller than tab strip container */
+  height: 34px;
+  line-height: 34px;
+  font-size: 0;
+}
+.wrTabButton {
+  margin-left: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.wrUserPreferencesBtn {
+  border-radius: 50%;
+}
+.wrTabItemUnderline {
+  height: 2px;
+  width: 50px;
+  background-color: #6896ed;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(104, 150, 237, 0.2);
+  transition: width ease-out 0.2s, left ease-out 0.2s;
+}
+.wrEdge .wrTabItemUnderline {
+  transition: none;
+}
+.wrEdge .wrDynamicTabItemUnderline {
+  transition: width, left ease-out 0.2s;
+}
+.wrStaticTabItem {
+  height: 19px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  white-space: nowrap;
+  padding: 2px 7px 0 7px;
+  cursor: pointer;
+  overflow: hidden;
+  color: #888;
+  transition: color 50ms ease-in-out;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+}
+.wrStaticTabItem:hover {
+  color: #6896ed;
+}
+.wrDynamicTabItem {
+  height: 19px;
+  background-color: #ffffff;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 0 24px 0 18px;
+  margin-right: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  color: #777777;
+  max-width: 160px;
+  position: relative;
+}
+.wrDynamicTabItem:hover:not(.wrDynamicTabItemSelected) {
+  background-color: #fafafa;
+}
+.wrDynamicTabItem:not(:last-child):after {
+  content: '';
+  height: 45%;
+  width: 1px;
+  background: #d7d7d7;
+  position: absolute;
+  right: 0;
+}
+.wrDynamicTabItem:only-child:after {
+  content: '';
+  height: 45%;
+  width: 1px;
+  background: #d7d7d7;
+  position: absolute;
+  right: 0;
+}
+.wrIE11 .wrDynamicTabItem:after {
+  top: 9px;
+}
+.wrDynamicTabItem .wrTabText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrStaticTabItem .wrTabText {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.wrDynamicTabItemSelected .wrTabText {
+  margin-right: 0;
+}
+.wrTabImage {
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
+.wrTabContent,
+.wrTabContentWizard {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+.wrTabContentWizard {
+  bottom: 40px;
+  left: 10px;
+}
+.wrTabInnerContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  padding: 10px;
+}
+.wrTabInnerContent2 {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  overflow: hidden;
+}
+.wrTabWizardCancelBtn {
+  position: absolute;
+  left: 10px;
+}
+.wrTabWizardFinishBtn {
+  position: absolute;
+  right: 10px;
+}
+.wrTabWizardBtn {
+  height: 12px;
+  width: 12px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionItemClosedArrow.svg");
+  background-size: 12px 12px;
+  margin-right: 3px;
+  transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transform-origin: 6px center;
+  border: 2px solid transparent;
+  padding: 1px 5px 0 6px;
+}
+.wrNoSVG .wrTabWizardBtn {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionItemClosedArrow.png");
+}
+.wrTabWizardNextBtn {
+  transform: rotate(-90deg);
+}
+.wrTabWizardPrevBtn {
+  transform: rotate(90deg);
+}
+.wrTabWizardButtonStrip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 35px;
+  justify-content: flex-end;
+}
+.wrTabWizardButtonStrip button {
+  margin-left: 1em;
+}
+.wrTabWizardButtonStrip .wrNextButton {
+  margin-right: 2em;
+}
+.wrTabWizardFinishCancelContainer {
+  display: inline-block;
+  height: 100%;
+  margin-right: 50px;
+}
+.wrStaticTabItemSelected {
+  color: #6896ed;
+}
+.wrDynamicTabItemSelected,
+.wrTabContent,
+.wrTabContentWizard {
+  background-color: #ffffff;
+  color: inherit;
+}
+.wrDynamicTabItemSelected {
+  color: #6896ed;
+  background-color: #ffffff;
+}
+.wrTabCloseImage {
+  position: absolute;
+  right: 7px;
+  width: 12px;
+  height: 12px;
+}
+.wrIE11 .wrTabCloseImage {
+  top: 11px;
+}
+.wrTabItemDrag {
+  background-color: #FFFFFF;
+  opacity: 0.7;
+  cursor: default;
+  height: 34px;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="122px" height="24px" viewBox="0 0 122 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>FilterMultiChoice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect x="0" y="0" width="122" height="24"></rect>
+            <g transform="translate(7.000000, 4.000000)" fill="#D5D5D5" fill-rule="nonzero">
+                <path d="M0,1.99406028 L0,14.0059397 C0,15.1054862 0.892771196,16 1.99406028,16 L14.0059397,16 C15.1054862,16 16,15.1072288 16,14.0059397 L16,1.99406028 C16,0.894513756 15.1072288,0 14.0059397,0 L1.99406028,0 C0.894513756,0 0,0.892771196 0,1.99406028 Z M-1,1.99406028 C-1,0.340952784 0.341762215,-1 1.99406028,-1 L14.0059397,-1 C15.6590472,-1 17,0.341762215 17,1.99406028 L17,14.0059397 C17,15.6590472 15.6582378,17 14.0059397,17 L1.99406028,17 C0.340952784,17 -1,15.6582378 -1,14.0059397 L-1,1.99406028 Z"></path>
+            </g>
+            <g transform="translate(98.000000, 3.000000)">
+                <rect fill="#6896ED" x="0" y="0" width="18" height="18" rx="3"></rect>
+                <polyline stroke="#FFFFFF" stroke-width="3" points="4 9 8.5 12.5 14 3"></polyline>
+            </g>
+            <g transform="translate(76.000000, 4.000000)" fill="#D5D5D5" fill-rule="nonzero">
+                <path d="M0,1.99406028 L0,14.0059397 C0,15.1054862 0.892771196,16 1.99406028,16 L14.0059397,16 C15.1054862,16 16,15.1072288 16,14.0059397 L16,1.99406028 C16,0.894513756 15.1072288,0 14.0059397,0 L1.99406028,0 C0.894513756,0 0,0.892771196 0,1.99406028 Z M-1,1.99406028 C-1,0.340952784 0.341762215,-1 1.99406028,-1 L14.0059397,-1 C15.6590472,-1 17,0.341762215 17,1.99406028 L17,14.0059397 C17,15.6590472 15.6582378,17 14.0059397,17 L1.99406028,17 C0.340952784,17 -1,15.6582378 -1,14.0059397 L-1,1.99406028 Z"></path>
+            </g>
+            <g transform="translate(52.000000, 3.000000)">
+                <rect fill="#6896ED" x="0" y="0" width="18" height="18" rx="3"></rect>
+                <polyline stroke="#FFFFFF" stroke-width="3" points="4 9 8.5 12.5 14 3"></polyline>
+            </g>
+            <g transform="translate(29.000000, 3.000000)">
+                <rect fill="#6896ED" x="0" y="0" width="18" height="18" rx="3"></rect>
+                <polyline stroke="#FFFFFF" stroke-width="3" points="4 9 8.5 12.5 14 3"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

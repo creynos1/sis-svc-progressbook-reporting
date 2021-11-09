@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeScatter
+  </title>
+  <g fill="#6896ED" fill-rule="evenodd">
+    <circle cx="12.5" cy="27.5" r="5.5"/>
+    <rect width="10" height="10" x="15.571" y="9.071" fill-opacity=".3" rx="1" transform="rotate(45 20.571 14.071)"/>
+    <path fill-opacity=".5" d="M27.052 22.379c.248-.488.65-.488.898 0l4.947 9.737c.248.488.005.884-.548.884h-9.696c-.55 0-.796-.396-.548-.884l4.947-9.737z"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    MenuChecked
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12"/>
+    <rect width="12" height="12" fill="#6896ED" rx="2"/>
+    <polyline stroke="#FFFFFF" stroke-width="2" points="3 6.8 5.6 8.6 9 3"/>
+  </g>
+</svg>

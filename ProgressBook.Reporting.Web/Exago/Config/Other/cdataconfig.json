@@ -1,0 +1,32 @@
+{
+	"mongodb":
+	{
+		"FriendlyName":"MongoDB",
+		"License":"TRIAL",
+		"DateFormat":"yyyy-MM-dd HH:mm:ss.fff",
+		"Delimiter":"[]",
+		"TopRowLimitSQL":"",
+		"BottomRowLimitSQL":" LIMIT {0}",
+		"dbInfo":{
+				"Provider":"System.Data.CData.MongoDB",
+				"TableSchema":"Collection:\"Tables\", Restrictions:[null], NameColumn:\"TABLE_NAME\", SchemaColumn:\"TABLE_SCHEMA\"",
+				"ViewSchema":"Collection:\"Views\", Restrictions:[null], NameColumn:\"TABLE_NAME\", SchemaColumn:\"TABLE_SCHEMA\"",
+				"ProcedureSchema":"Collection:\"Procedures\", Restrictions:[null], NameColumn:\"ROUTINE_NAME\", SchemaColumn:\"ROUTINE_SCHEMA\""
+		}
+	},
+	"ElasticSearch":
+	{
+	  "FriendlyName":"ElasticSearch",
+	  "License":"TRIAL",
+	  "DateFormat":"yyyy-MM-dd HH:mm:ss.fff'Z'",
+	  "Delimiter":"[]",
+	  "TopRowLimitSQL":"",
+	  "BottomRowLimitSQL":" LIMIT {0}",
+	  "dbInfo":{
+			"Provider":"System.Data.CData.Elasticsearch",
+			"TableSchema":"Collection:\"Tables\", Restrictions:[null], NameColumn:\"TABLE_NAME\", SchemaColumn:\"TABLE_SCHEMA\"",
+			"ViewSchema":"Collection:\"Views\", Restrictions:[null], NameColumn:\"TABLE_NAME\", SchemaColumn:\"TABLE_SCHEMA\"",
+			"ProcedureSchema":"Collection:\"Procedures\", Restrictions:[null], NameColumn:\"ROUTINE_NAME\", SchemaColumn:\"ROUTINE_SCHEMA\""
+		}
+	}
+}

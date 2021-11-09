@@ -1,0 +1,53 @@
+.wrListItem {
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-bottom: 6px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 70ms ease-in-out;
+}
+.wrListItem:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+.wrListItemWithIndicator {
+  background-color: #6896ed;
+  transition: background-color ease-out 2s;
+}
+.wrListItemIndicatorFadingOut {
+  background-color: #ffffff;
+}
+.wrListItemContent {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-style: italic;
+  font-size: 13px;
+  color: #808080;
+}
+.wrListItemDragHandle {
+  height: 26px;
+  width: 14px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/AccordionItemDragHandle.svg");
+  background-size: 4px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f8f8f8;
+  cursor: ns-resize;
+  border-right: 1px solid #d7d7d7;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrNoSVG .wrListItemDragHandle {
+  background-image: url("../#ApplicationThemeFolder#/Images/AccordionItemDragHandle.png");
+}
+.wrListItemDragHandle:hover {
+  background-color: #f0f0f0;
+}

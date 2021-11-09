@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="251" height="732"></rect>
+        <filter x="-0.2%" y="-0.1%" width="100.4%" height="100.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-1" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.835294118   0 0 0 0 0.835294118   0 0 0 0 0.835294118  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-235.000000, -49.000000)">
+            <g transform="translate(37.000000, 73.000000)" fill="#FFFFFF">
+                <rect x="0" y="0" width="1329" height="695"></rect>
+            </g>
+            <g transform="translate(37.000000, 36.000000)">
+                <g>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <g transform="translate(10.000000, 10.000000)">
+                    <rect fill="#F7F7F7" x="0" y="0" width="230" height="42" rx="2"></rect>
+                    <g transform="translate(188.000000, 3.000000)" fill="#C5C5C5">
+                        <path d="M4,17.9999667 C4,17.9999667 10.2703475,8 18,8 C25.6089299,8 32,17.9999667 32,17.9999667 C32,17.9999667 25.7296525,28 18,28 C10.263684,28 4,17.9999667 4,17.9999667 Z M12,17.9999857 C12,21.3126861 14.684436,24 18,24 C21.3127082,24 24,21.3126861 24,17.9999857 C24,14.6872854 21.315564,12 18,12 C14.6872918,12 12,14.6844296 12,17.9999857 Z M18,21 C16.3431458,21 15,19.6568542 15,18 C15,16.3431458 16.3431458,15 18,15 C19.6568542,15 21,16.3431458 21,18 C21,19.6568542 19.6568542,21 18,21 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

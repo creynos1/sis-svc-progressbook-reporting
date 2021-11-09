@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/TabCtrl.ascx" hash="d4fa39267" filehash="684d44eb538ab33f" flags="110000" assembly="WebReportsUI" type="ASP.tabctrl_ascx">
+  <filedeps>
+    <filedep name="/ImageBtn.ascx" />
+    <filedep name="/PopupMenuCtrl.ascx" />
+    <filedep name="/TabCtrl.ascx" />
+  </filedeps>
+</preserve>

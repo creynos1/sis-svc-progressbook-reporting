@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    TreeImageSelected
+  </title>
+  <g fill="#FFFFFF" fill-rule="evenodd">
+    <path d="M2 2h8v8H2V2zm1 4l3 3h3V3H3v3z"/>
+    <circle cx="6.5" cy="5.5" r="1.5"/>
+  </g>
+</svg>

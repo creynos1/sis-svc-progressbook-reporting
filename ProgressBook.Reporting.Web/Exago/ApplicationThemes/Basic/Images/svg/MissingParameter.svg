@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <title>
+    MissingParameter
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="48" fill="none"/>
+    <rect width="19" height="2" x="18" y="14" fill="#D7D7D7"/>
+    <rect width="8" height="2" x="11" y="30" fill="#D7D7D7"/>
+    <rect width="12" height="2" x="25" y="30" fill="#D7D7D7"/>
+    <rect width="19" height="2" x="11" y="22" fill="#D7D7D7"/>
+    <path fill="#D7D7D7" fill-rule="nonzero" d="M15 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm18 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-11 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+  </g>
+</svg>

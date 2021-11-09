@@ -1,0 +1,236 @@
+.wrDockCursor * {
+  cursor: ew-resize;
+}
+.wrDock {
+  position: absolute;
+  background-color: #ffffff;
+  visibility: hidden;
+  overflow: hidden;
+}
+.wrDockLeft {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-right: 1px solid #d7d7d7;
+}
+.wrDockRight {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0;
+}
+.wrDockContents {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.wrDockLeft .wrDockContents {
+  right: 10px;
+}
+.wrDockRight .wrDockContents {
+  left: 10px;
+  right: 2px;
+}
+.wrDockResizerBar {
+  position: absolute;
+  background-color: #ffffff;
+}
+.wrDockLeft .wrDockResizerBar {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 7px;
+  cursor: ew-resize;
+}
+.wrDockRight .wrDockResizerBar {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 7px;
+  cursor: ew-resize;
+}
+.wrDockResizerHandle {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.wrDockResizerHandle img {
+  position: relative;
+  right: 1px;
+}
+.wrDockResizerHandle img:hover {
+  filter: brightness(80%);
+}
+.wrDockResizerHandle img:active {
+  filter: brightness(50%);
+}
+.wrDockGroup {
+  position: relative;
+}
+.wrDockGroup {
+  margin-bottom: 5px;
+}
+.wrDockGroupDrag {
+  border: 1px solid #7cb2c9;
+  border-radius: 4px;
+  margin-left: -1px;
+  /* Account for the border width */
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-right: 4px;
+  min-width: 200px;
+  background-color: #D6E7EE;
+  position: fixed;
+  height: auto;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  z-index: 999;
+}
+.wrDockInsertPlaceHolder {
+  position: relative;
+  margin: 5px;
+  border: 1px dashed #c5c5c5;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+.wrDockGroupTitleArea {
+  position: relative;
+  width: 99%;
+  height: 20px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.wrDockGroupTitle {
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.wrDockGroupAddItem {
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+  height: 16px;
+  width: 16px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/Add.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: solid 1px transparent;
+}
+.wrNoSVG .wrDockGroupAddItem {
+  background-image: url("../#ApplicationThemeFolder#/Images/Add.png");
+}
+.wrDockGroupAddItem:hover {
+  background-color: #F4F6F9;
+  border: solid 1px #a2b3cc;
+}
+.wrDockGroupAddItem:active {
+  background-color: #D8D8D8;
+  border: solid 1px #989898;
+  box-shadow: 0 0 1px 0 #595959 inset;
+}
+.wrDockGroupCollapse {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 16px;
+  width: 16px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/CollapseNode.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.wrNoSVG .wrDockGroupCollapse {
+  background-image: url("../#ApplicationThemeFolder#/Images/CollapseNode.png");
+}
+.wrDockGroupCollapse:hover {
+  filter: brightness(50%);
+}
+.wrDockGroup_Closed .wrDockGroupCollapse {
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/ExpandNode.svg");
+  background-size: 12px 12px;
+}
+.wrNoSVG .wrDockGroup_Closed .wrDockGroupCollapse {
+  background-image: url("../#ApplicationThemeFolder#/Images/ExpandNode.png");
+}
+.wrDockGroupItemArea {
+  position: relative;
+  margin-bottom: 15px;
+}
+.wrDockGroup_Closed .wrDockGroupItemArea {
+  display: none;
+}
+.wrDockGroupNonItem {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+}
+.wrDockItem {
+  position: relative;
+  width: 100%;
+  margin-top: 12px;
+  overflow: hidden;
+}
+.wrDockItemTitleArea {
+  position: relative;
+  width: 100%;
+  height: 18px;
+  border-bottom: 1px solid #c5c5c5;
+}
+.wrDockItemTitle {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  right: 20px;
+  bottom: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.wrDockItemDelete {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  height: 16px;
+  width: 16px;
+  background-image: url("../#ApplicationThemeFolder#/Images/svg/DeleteItem.svg");
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.wrNoSVG .wrDockItemDelete {
+  background-image: url("../#ApplicationThemeFolder#/Images/DeleteItem.png");
+}
+.wrDockItemDelete:hover {
+  background-color: #F4F6F9;
+  border: solid 1px #a2b3cc;
+}
+.wrDockItemDelete:active {
+  background-color: #D8D8D8;
+  border: solid 1px #989898;
+  box-shadow: 0 0 1px 0 #595959 inset;
+}
+.wrDockItemArea {
+  position: relative;
+  margin: 3px;
+}

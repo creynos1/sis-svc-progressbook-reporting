@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    ReportFooter
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M2 0h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+    <path fill="#777777" d="M1 0h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1z"/>
+    <rect width="10" height="10" x="1" y="1" fill="#FFFFFF" rx=".25"/>
+    <rect width="8" height="3" x="2" y="7" fill="#6896ED" rx=".5"/>
+  </g>
+</svg>

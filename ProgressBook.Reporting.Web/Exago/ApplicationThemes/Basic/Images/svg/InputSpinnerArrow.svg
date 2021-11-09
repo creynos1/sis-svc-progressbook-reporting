@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>InputSpinnerArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <rect x="0" y="0" width="12" height="12"></rect>
+                <path d="M6.3904344,3.48804301 L9.35012198,7.18765248 L9.35012198,7.18765248 C9.52262676,7.40328344 9.48766607,7.71792963 9.2720351,7.8904344 C9.18337858,7.96135962 9.07322332,8 8.95968758,8 L3.04031242,8 L3.04031242,8 C2.76417005,8 2.54031242,7.77614237 2.54031242,7.5 C2.54031242,7.38646425 2.5789528,7.276309 2.64987802,7.18765248 L5.6095656,3.48804301 L5.6095656,3.48804301 C5.78207037,3.27241204 6.09671656,3.23745135 6.31234752,3.40995612 C6.34117988,3.43302201 6.36736852,3.45921065 6.3904344,3.48804301 Z" fill="#8B8B8B" transform="translate(6.000000, 5.500000) scale(1, -1) translate(-6.000000, -5.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

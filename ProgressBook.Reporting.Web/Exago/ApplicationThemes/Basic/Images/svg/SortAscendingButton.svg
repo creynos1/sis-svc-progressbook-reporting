@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    SortAscendingButton
+  </title>
+  <path fill="#777777" fill-rule="evenodd" d="M6.999 7h2.48a.25.25 0 0 1 .196.406l-3.484 4.35a.25.25 0 0 1-.39 0l-3.477-4.35A.25.25 0 0 1 2.52 7h2.479V.25a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25V7z"/>
+</svg>

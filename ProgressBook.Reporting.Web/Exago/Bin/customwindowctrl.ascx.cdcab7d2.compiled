@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CustomWindowCtrl.ascx" hash="d4fa39267" filehash="20b60a3a457f" flags="110000" assembly="WebReportsUI" type="ASP.customwindowctrl_ascx">
+  <filedeps>
+    <filedep name="/CustomWindowCtrl.ascx" />
+  </filedeps>
+</preserve>

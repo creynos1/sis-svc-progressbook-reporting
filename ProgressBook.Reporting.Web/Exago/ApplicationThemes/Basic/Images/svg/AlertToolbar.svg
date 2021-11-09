@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    AlertToolbar
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <circle cx="12" cy="12" r="8" fill="#6896ED"/>
+    <rect width="2" height="6" x="11" y="7" fill="#FFFFFF" rx="1"/>
+    <rect width="2" height="2" x="11" y="15" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+﻿<parameters>
+  <parameter name="Application Path"
+             tags="Hidden, IisApp"
+             defaultValue="Default Web Site/ProgressBook.Reporting"
+             description="Full site path to install the Reporting web site.">
+    <parameterEntry type="ProviderPath"
+                    scope="IisApp"
+                    match="ProgressBook.Reporting Website"/>
+  </parameter>
+
+  <parameter name="StudentInformation"
+             tags="SqlConnectionString"
+             defaultValue="Application Name=ProgressBook.Reporting"
+             friendlyName="StudentInformation Database Information"
+             description="Please enter the connection information of the StudentInformation database you would like Reporting to use.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\connectionStrings.config$"
+                    match="/connectionStrings/add[@name='StudentInformation']/@connectionString"/>
+  </parameter>
+
+  <parameter name="ProgressBook"
+             tags="SqlConnectionString"
+             defaultValue="Application Name=ProgressBook.Reporting"
+             friendlyName="CentralAdmin Database Information"
+             description="Please enter the connection information of the CentralAdmin database you would like Reporting to use.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\connectionStrings.config$"
+                    match="/connectionStrings/add[@name='ProgressBook']/@connectionString"/>
+  </parameter>
+
+  <parameter name="PbMasterContext"
+           tags="SqlConnectionString"
+           defaultValue="Application Name=ProgressBook.Reporting"
+           friendlyName="Master Database Information"
+           description="Please enter the connection information of the pb_master database you would like Reporting to use.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\connectionStrings.config$"
+                    match="/connectionStrings/add[@name='PbMasterContext']/@connectionString"/>
+  </parameter>
+
+
+  <parameter name="QuickReports"
+            tags="SqlConnectionString"
+            defaultValue="Application Name=ProgressBook.Reporting"
+            friendlyName="StudentInformation Database Information - Read-Only"
+            description="Please enter the connection information of the StudentInformation Read-Only database you would like Reporting to use.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\connectionStrings.config$"
+                    match="/connectionStrings/add[@name='QuickReports']/@connectionString"/>
+  </parameter>
+
+  <parameter name="DistrictTemplate"
+             tags="SqlConnectionString"
+             defaultValue="Application Name=ProgressBook.Reporting"
+             friendlyName="PB Template Database Information"
+             description="Please enter the connection information of the pb_template database you would like Reporting to use.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\connectionStrings.config$"
+                    match="/connectionStrings/add[@name='DistrictTemplate']/@connectionString"/>
+  </parameter>
+
+  <parameter name="SpecialServices"
+             tags="SqlConnectionString"
+             defaultValue="Application Name=ProgressBook.Reporting"
+             friendlyName="SpecialServices Database Information"
+             description="Please enter the connection information of the SpecialServices database you would like Reporting to use.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\connectionStrings.config$"
+                    match="/connectionStrings/add[@name='SpecialServices']/@connectionString"/>
+  </parameter>
+
+  <parameter name="SchedulerHost"
+             defaultValue=""
+             friendlyName="Scheduler Host Address"
+             description="Please enter the path to your Scheduler Host.">
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\appSettings.config$"
+                    match="/appSettings/add[@key='SchedulerHost']/@value"/>
+  </parameter>
+  <parameter name="UploadEnabled"
+             tags="Hidden"
+             defaultValue="true">
+    <parameterValidation type="AllowEmpty" />
+    <parameterEntry type="XmlFile"
+                    scope="\\Config\\appSettings.config$"
+                    match="/appSettings/add[@key='UploadEnabled']/@value">
+    </parameterEntry>
+  </parameter>
+</parameters>

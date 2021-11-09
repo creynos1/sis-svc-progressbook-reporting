@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>
+    ExpressViewUndo
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="#777777" d="M11.029 13.57v2.991c0 .558-.362.746-.803.425l-5.894-4.294c-.444-.323-.441-.852 0-1.177l5.894-4.352c.444-.327.803-.149.803.417v2.99c3 .03 9.036 1.956 9.036 6.866-1.723-2.561-6.212-3.966-9.036-3.865z"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AdminLoginCtrl.ascx" hash="d4fa39267" filehash="e138196782354c72" flags="110000" assembly="WebReportsUI" type="ASP.adminloginctrl_ascx">
+  <filedeps>
+    <filedep name="/AdminLoginCtrl.ascx" />
+    <filedep name="/AdminWrappedInputCtrl.ascx" />
+    <filedep name="/AdminWrappedPasswordCtrl.ascx" />
+    <filedep name="/ImageBtn.ascx" />
+  </filedeps>
+</preserve>

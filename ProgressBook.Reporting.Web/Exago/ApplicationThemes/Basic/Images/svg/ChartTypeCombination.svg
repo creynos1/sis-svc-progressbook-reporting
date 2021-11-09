@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <title>
+    ChartTypeCombination
+  </title>
+  <defs>
+    <path id="a" d="M8 26l8-17"/>
+    <path id="b" d="M16 9l8 21"/>
+    <path id="c" d="M32 21l-8 9"/>
+    <circle id="d" cx="8" cy="26" r="2"/>
+    <path id="e" d="M16 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+    <path id="f" d="M24 32a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+    <path id="g" d="M32 23a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="6" height="18" x="5" y="18" fill="#6896ED" fill-opacity=".65" rx="1"/>
+    <path fill="#6896ED" fill-opacity=".4" d="M14 26h4a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1z"/>
+    <rect width="6" height="32" x="21" y="4" fill="#6896ED" fill-opacity=".65" rx="1"/>
+    <rect width="6" height="23" x="29" y="13" fill="#6896ED" fill-opacity=".5" rx="1"/>
+    <g stroke-linecap="square">
+      <use fill="#000000" style="mix-blend-mode:color" xlink:href="#a"/>
+      <use stroke="#6896ED" stroke-width="2" xlink:href="#a"/>
+    </g>
+    <g stroke-linecap="square">
+      <use fill="#000000" style="mix-blend-mode:color" xlink:href="#b"/>
+      <use stroke="#6896ED" stroke-width="2" xlink:href="#b"/>
+    </g>
+    <g stroke-linecap="square">
+      <use fill="#000000" style="mix-blend-mode:color" xlink:href="#c"/>
+      <use stroke="#6896ED" stroke-width="2" xlink:href="#c"/>
+    </g>
+    <use fill="#FFFFFF" xlink:href="#d"/>
+    <circle cx="8" cy="26" r="2.5" stroke="#6896ED"/>
+    <use fill="#FFFFFF" xlink:href="#e"/>
+    <path stroke="#6896ED" d="M16 11.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+    <g>
+      <use fill="#FFFFFF" xlink:href="#f"/>
+      <path stroke="#6896ED" d="M24 32.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+    </g>
+    <g>
+      <use fill="#FFFFFF" xlink:href="#g"/>
+      <path stroke="#6896ED" d="M32 23.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+    </g>
+  </g>
+</svg>

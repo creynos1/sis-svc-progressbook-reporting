@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>
+    MoveDown
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="12" height="12" rx="2"/>
+    <path fill="#777777" d="M3.778 2l1.348 2.427a1 1 0 0 0 1.748 0L8.222 2H9.3a1 1 0 0 1 .875 1.486l-3.3 5.94a1 1 0 0 1-1.75 0l-3.3-5.94A1 1 0 0 1 2.7 2h1.078z"/>
+  </g>
+</svg>

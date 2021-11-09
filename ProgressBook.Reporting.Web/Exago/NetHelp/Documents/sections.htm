@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head><title>Sections</title>
+<meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="../Links/additional.css" />
+<link rel="stylesheet" type="text/css" href="../Links/C1H_Internal.css" />
+
+<script src="../js/nethelp.redirector.js" type="text/javascript"></script>
+<link rel="prev" href="formulas.htm" /><link rel="next" href="sectionshading.htm" /><meta name="Generator" content="MadCap Doc-To-Help v.2014.2.0.943" />
+</head>
+<body style="tab-interval: 36.0pt" data-c1-topic-id="a14edce8-0712-48e2-8770-49cf2c4f9d9b">
+<h2>Sections</h2>
+<p>An Advanced Report's sections define the appearance and pattern of 
+the report. Specifically, sections determine how frequently their cell 
+contents are repeated.</p>
+<p>The appearance of a report is based on data that is not 
+necessarily known at the time it is made. The data, and the relationships 
+it describes, are dynamic and mutable. So tabular reports are usually not fixed 
+designs. Instead, you are essentially describing how the report structures 
+itself around a set of unpredictable data. Knowing which sections are suitable 
+for different types of content is crucial for designing the best possible 
+report.</p>
+<p class="Aside">Types of sections</p>
+<p>There are two general types of sections: <a class="topic-link" href="sections.htm#static.htm">Static</a> and <a class="topic-link" href="sections.htm#dynamic.htm">Dynamic</a>. The difference is in the repetition 
+of their cells.</p>
+<p>The cells in a dynamic section repeat according to the data that is returned 
+to the report. Dynamic sections are suitable for showing content related to that 
+data. For example, cells in a Detail section repeat for every composite data row 
+in the report. Therefore it is most suitable for data fields, of which 
+you will want to see each entry per row.</p>
+<p>The cells in a static section do not repeat according to the report 
+data. Static sections are best used for information that is not related to data 
+rows. For example, you could use a Page Header to define column headers that 
+describe the type of data in each field.</p>
+<p style="TEXT-ALIGN: center"><em><img alt="" src="../Media/screen.sections_static_dynamic.png" /></em></p>
+<p class="Caption"><em>Static header cells used to describe the data 
+in dynamic detail cells</em></p>
+<p>Each section type has several subtypes that repeat in different ways. 
+<em>Static </em>and <em>Dynamic </em>are only descriptive keywords. The advanced 
+Report Designer does not use these terms - sections are referred to by 
+their subtype.</p>
+<p>See the following topics, <a class="topic-link" href="sections.htm#static.htm">Static</a> and <a class="topic-link" href="sections.htm#dynamic.htm">Dynamic</a>, for more information.</p>
+<p class="Aside">Manipulating sections</p>
+<p>A report can contain any variety of sections desired. To add, remove, or 
+change sections, click a section title, to the left of the row numbers in the 
+report grid. The section menu will appear.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.sections_menu_full.png" /></p>
+<p class="Caption">The section menu</p>
+<p>To add a section, hover over <img alt="" src="../Media/Add2.png" /> <strong>Add Section</strong>, then choose the 
+section to add. If you add a group section, choose which data category or field 
+to group by.</p>
+<p>To change the category or field for an existing group section, click <img alt="" src="../Media/Edit.png" /> <strong>Modify Section</strong>.</p>
+<p>To change the order of sections, click <img alt="" src="../Media/MoveGridRowUp.png" /> <strong>Move Section Up </strong>or <img alt="" src="../Media/MoveGridRowDown.png" /> <strong>Move Section 
+Down</strong>.</p>
+<p>To delete a section, click <img alt="" src="../Media/DeleteItem.png" /> <strong>Delete Section</strong>. This will 
+delete every row in the section.</p>
+<p>To add alternating background colors for each row in a section, click <img alt="" src="../Media/Shading.png" /> <strong>Section Shading</strong>. See <a class="topic-link" href="sectionshading.htm">Section Shading</a> for 
+details.</p><a class="_D2HAnchor" name="static.htm" id="static.htm"></a>
+<p class="MidTopic">Static<br /></p>
+<p>Sections categorized as <em>static </em>do not repeat according to the data 
+in the report; although they may repeat by other means. These sections are best 
+used for information about the report and about the data in the report. They can 
+also be useful for boilerplate elements, such as logos or disclaimers.</p>
+<p>A typical report may have a report header with the title of the report, a 
+page header with labels for each column, a page footer that uses the <span class="Code">@pageNumber@ </span><a class="topic-link" href="parameters.htm">parameter</a> to number the pages, and a report footer 
+with summary information.</p>
+<p class="Aside">Page Header/Footer</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.page_sections.png" />     <img alt="" src="../Media/custom.page_sections.png" /></p>
+<p class="Caption">Position of Page sections</p>
+<p>Page sections repeat for each page - the Header at the top, the Footer 
+at the bottom. Page breaks are usually caused when the data in dynamic sections 
+overflows the length of a page. The length of pages is determined by the 
+<strong>Page Size</strong> and <strong>Orientation</strong> lists in the Report 
+<a class="topic-link" href="generaloptions.htm">General Options</a> window. The 
+data on each page is consistent between the paged output types.</p>
+<p>You can add page breaks manually by clicking the row number to add a break, 
+then selecting <img alt="" src="../Media/PageBreak.png" /> <strong>Page 
+Break</strong> from the menu. Page breaks added for a row in a dynamic 
+section will make a new page every time the data changes.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Excel and CSV output 
+types have no pages. Page sections function the same as Report sections for 
+these output types.</p>
+<p>Use these sections for information to repeat on every page, such as the title 
+of the report, column headers, and company logos. You can also use the special 
+<span class="Code">@pageNumber@ </span><a class="topic-link" href="parameters.htm">parameter</a> to number each page of the report.</p>
+<p>Even though page sections repeat, they are not considered dynamic sections 
+because their repetition does not directly depend on the data. Thus they are not 
+suitable for displaying data fields. And because there is no way of knowing 
+ahead of time which data will appear on which page, these sections are not 
+suitable for summarizing data with aggregates or visualizations.</p>
+<p class="Aside">Report Header/Footer</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.report_header.png" />     <img alt="" src="../Media/custom.report_footer.png" /></p>
+<p class="Caption">Position of Report Header and Footer sections</p>
+<p>Report header and footer sections appear once each - the Header at the 
+beginning, the Footer at the end. Use these sections for introductory and 
+concluding information.</p>
+<p>The report footer is where you would summarize all of the report data with 
+aggregate formulas and visualizations.</p><span id="related-topics"></span><a class="_D2HAnchor" name="dynamic.htm" id="dynamic.htm"></a>
+<p class="MidTopic">Dynamic</p>
+<p>Sections categorized as <em>dynamic </em>repeat according to the data in the 
+report. These sections are best used for displaying and grouping data from data 
+fields. Dynamic sections comprise the bulk of most tabular reports. Charts, 
+maps, and gauges must reference data fields in dynamic sections.</p>
+<p>The key for knowing how to use dynamic sections is knowing how the data will 
+repeat in relation to the rest of the report.<br /></p>
+<p class="Aside">Detail</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.detail_section.png" />     <img alt="" src="../Media/custom.detail_section.png" /></p>
+<p class="Caption">Position of Detail section</p>
+<p>The rows in the Detail section repeat for each data row retrieved from the 
+database. By default, there are exactly enough Detail rows to show all the data 
+fields in all the categories on the report.</p>
+<p>Detail sections are typically used for showing the actual data values. This 
+is the main area of display for the bare report data. Aggregate 
+formulas usually reference cells in the Detail section.</p>
+<p>You can use <a class="topic-link" href="reportcategories.htm#suppressingduplicatesadvancedusers.htm">duplicate 
+suppression</a> to limit the number of rows to only visible data fields. You can 
+also use <a class="topic-link" href="reportfilters.htm">filters</a> to limit the 
+rows by certain criteria.</p>
+<p>Users with advanced knowledge of the data relationships can also 
+use <a class="topic-link" href="joins.htm">advanced join</a> logic to limit the 
+Detail rows to only the relevant relationships.</p>
+<p class="Aside">Group Header/Footer</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.group_sections.png" />     <img alt="" src="../Media/custom.group_sections.png" /></p>
+<p class="Caption">Position of Group sections</p>
+<p>Group sections are the primary way in which data is grouped into "buckets" 
+that each share a unique attribute. Detail rows are arranged into the 
+groups they belong to. The common attribute is defined by a preexisting sort. In 
+order to make a group, first add a sort in the <a class="topic-link" href="reportsorts.htm">Sort window</a>.</p>
+<p>For example, if you wanted to group a set of rows by each Product, first add 
+a sort on the Products.ProductName field.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.single_sort.png" /></p>
+<p class="Caption">A sort is required for a group</p>
+<p>The main difference between the header and footer is that the data comes 
+after the header, but before the footer. This means that you can only use 
+aggregate formulas in the group footer, since the header is not aware of the 
+data in its group.</p>
+<p>When you add a group section, you are asked which sort to base the group on. 
+For each sort, you can choose to group on either the sort field or the sort 
+category.</p>
+<ul>
+  <li class="list_bullets">
+  <p>If you group on a field, the group breaks at each new value of the 
+  field.</p>
+  </li><li class="list_bullets">
+  <p>If you group on a category, the group breaks at each new instance of the 
+  category's unique identifier.</p></li></ul>
+<p style="TEXT-ALIGN: center"> <img alt="" src="../Media/screen.group_menu.png" /></p>
+<p class="Caption">The group window appears when adding a group section</p>
+<p>For example, instead of grouping by each Product, you may want to instead 
+group by product quantity, so that products that are low or out of stock are 
+grouped together. First add a sort on the Products.Quantity field, then group by 
+that field.</p>
+<p>You can have multiple group sections, if you wanted to add additional levels 
+of stratification to the report. Each group requires a corresponding sort.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />The order of the 
+sorts has an effect on the way the data is arranged. Data is sorted by the first 
+field, then any ambiguities are sorted by the second field, then any remaining 
+ambiguities are sorted by the third, and so on. In general, you should order 
+group headers by their associated sorts, and group footers in inverse order.</p>
+<p><strong>Reprinting Group Headers over page breaks</strong></p>
+<p>By default, group headers will appear once at each instance of the group, 
+followed by the detail rows belonging to that instance. For long groups, you may 
+want to re-print rows in the group header at the top of each new page in the 
+group. To do so, right-click on the row belonging to the group to repeat, and 
+select <strong>Repeat Row</strong>.</p>
+<p>A double blue line will appear to the left of the row number, indicating that 
+this row will repeat after page breaks.</p>
+<p>Multiple contiguous rows in a group can be selected to repeat.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.reportviewer_rowmenu.png" /></p>
+<p class="Caption">Opening the row menu</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />This option only 
+applies to report formats with pages: Report Viewer, PDF, and Microsoft 
+Word.</p>
+<p class="Aside">Repeating Group</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.repeating_groups.png" />     <img alt="" src="../Media/custom.repeating_groups.png" /></p>
+<p class="Caption">Position of Repeating Group sections</p>
+<p>Repeating groups are a way to organize and display data which contains <span style="TEXT-DECORATION: underline">multiple one-to-many relationships</span>. 
+Each repeating group has data from a "many" category, grouped by the 
+"one" category. The following diagrams demonstrate how this works.</p>
+<p>Two categories, X and Y, with a one-to-many relationship from X to Y, 
+will display like so in a Detail section.</p>
+<p class="Tip"><img alt="" src="../Media/custom.tip.png" /> <strong>Tip</strong><br />Category X has 
+duplicates suppressed - this is similar to grouping on X.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.1M_detail.png" /></p>
+<p class="Caption">Each X has 1 or more Y</p>
+<p>If there is a third category, Z, with a one-to-many relationship from X 
+to Z, there is not necessarily a relationship between Y and Z. So there may be 
+blank rows with only Y or only Z.</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.1Mx2_detail.png" /></p>
+<p class="Caption">Each X has 1 or more Y, and 1 or more Z</p>
+<p>There are two potential solutions. If there is a 
+relationship between Y and Z, then you can use Advanced Joins to impose 
+additional constraints so that only the rows with both Y and Z are shown. For 
+more information, see <a class="topic-link" href="joins.htm">Joins</a>.</p>
+<p>On the other hand, there may be no relationship between Y and Z - only 
+between X and Y, X and Z. Or there may be a relationship, but it does not matter 
+for this data set. You can use repeating groups to ignore that relationship and 
+simply organize the data by X instead.</p>
+<p>To do so, create two repeating groups for X, and put Y in the first, and Z in 
+the second:</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/screen.repeating_group_ex.png" /></p>
+<p class="Caption">Organizing Y and Z into repeating groups for X</p>
+<p style="TEXT-ALIGN: center"><img alt="" src="../Media/custom.1Mx2_repeating_group.png" /></p>
+<p style="TEXT-ALIGN: center"><em>Each X repeats twice: once for Y, once for 
+Z</em></p>
+<p style="TEXT-ALIGN: left">Each repeating group section has its own group 
+header, detail, and group footer. These follow the same principles as their 
+general purpose equivalents, but within the repeating groups. For example, to 
+calculate aggregate data for Y for each X, use an aggregate formula in the 
+footer for the repeating group with the Y data.<br /></p><span id="related-topics"></span><span id="related-topics"></span></body></html>
