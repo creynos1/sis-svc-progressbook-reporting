@@ -1,0 +1,10 @@
+api: 
+  url: https://app.contrastsecurity.com/Contrast
+  api_key: qE7gX6u0WsKx1eMEnc0O5jHJ4ktLWCZY
+  service_key: N30Q6OBGR2IIBRB9
+  user_name: agent_ec2f1884-2b31-4000-9525-ccd559a42712@FrontlineEducation
+application:
+  group: ACL_SSO_CONTRAST_ProgressBook
+  name: ExagoReporting
+  metadata: product="OH SIS",customName="sis-svc-progressbook-reporting",slackChannel="#tm-ohsis-tko"
+  tags: ProgressBook
