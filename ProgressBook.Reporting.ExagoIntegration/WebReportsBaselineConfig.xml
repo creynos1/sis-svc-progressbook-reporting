@@ -536,7 +536,7 @@
 		<object_type>procedure</object_type>
 		<schema>dbo</schema>
 		<key>
-			<col_name>Student_StudentId</col_name>
+			<col_name>StudentNumber</col_name>
 		</key>
 		<param>
 			<id>DistrictId</id>
