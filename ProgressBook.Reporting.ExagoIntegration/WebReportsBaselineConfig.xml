@@ -1,956 +1,937 @@
 <?xml version="1.0" standalone="yes"?>
 <webreports>
-	<general>
-		<datefunctionsloaded>False</datefunctionsloaded>
-		<formulafunctionsloaded>False</formulafunctionsloaded>
-		<versionnumber>2018.2.6.123</versionnumber>
-		<userid>exagoadmin</userid>
-		<password>G6mqJ4s4ar925844Q24U65T69R7x652M</password>
-		<reportpath />
-		<aliasallentities>False</aliasallentities>
-		<allowhomedirect>True</allowhomedirect>
-		<allowhtmloutput>True</allowhtmloutput>
-		<reporttreeshortcut>Run</reporttreeshortcut>
-		<allowexceloutput>True</allowexceloutput>
-		<allowpdfoutput>True</allowpdfoutput>
-		<allowrtfoutput>True</allowrtfoutput>
-		<allowcsvoutput>True</allowcsvoutput>
-		<defaultoutputtype>html</defaultoutputtype>
-		<writelog>True</writelog>
-		<logginglevel>INFO</logginglevel>
-		<loggingflags>ffff</loggingflags>
-		<customcode />
-		<dateformat />
-		<timeformat />
-		<datetimeformat />
-		<datetimetreatedas>Date</datetimetreatedas>
-		<readfiltervalues>True</readfiltervalues>
-		<dbtimeout>600</dbtimeout>
-		<dbrowlimit>0</dbrowlimit>
-		<dbrowlimitstepsize>0</dbrowlimitstepsize>
-		<visualizationdbrowlimit>0</visualizationdbrowlimit>
-		<calltypeparamname>callType</calltypeparamname>
-		<columnparamname />
-		<filterparamname />
-		<fullfilterparamname />
-		<sortparamname />
-		<datacategoryparamname />
-		<objectidparamname />
-		<dbrowlimitparamname />
-		<dbrowrangestartparamname />
-		<dbrowrangeendparamname />
-		<showgrid>True</showgrid>
-		<debugging>False</debugging>
-		<performancetesting>False</performancetesting>
-		<debugextractionpassword />
-		<restkey />
-		<allowearlypagebreak>False</allowearlypagebreak>
-		<showpdftemplate>True</showpdftemplate>
-		<dashboardpromptatexecution>False</dashboardpromptatexecution>
-		<dashboardshowurlitembutton>True</dashboardshowurlitembutton>
-		<showchartwizard>True</showchartwizard>
-		<showmapwizard>False</showmapwizard>
-		<showgooglemapwizard>False</showgooglemapwizard>
-		<webrequestkeepalive>True</webrequestkeepalive>
-		<showgaugewizard>True</showgaugewizard>
-		<showlinkreport>True</showlinkreport>
-		<showlinkreportfields>True</showlinkreportfields>
-		<showlinkreportformula>False</showlinkreportformula>
-		<linkedreportdisplay>Cursor</linkedreportdisplay>
-		<showlinkaction>False</showlinkaction>
-		<showinsertimage>True</showinsertimage>
-		<expirationdate />
-		<htmlpaging>True</htmlpaging>
-		<windowheight>0</windowheight>
-		<windowwidth>0</windowwidth>
-		<separatorsymbol>,</separatorsymbol>
-		<currencysymbol>$</currencysymbol>
-		<datamapping>False</datamapping>
-		<showjoinfields>True</showjoinfields>
-		<detectjoinedobjects>False</detectjoinedobjects>
-		<enablespecialcartesianprocessing>False</enablespecialcartesianprocessing>
-		<includenotfilternullvalues>False</includenotfilternullvalues>
-		<temppath />
-		<showschedulereports>False</showschedulereports>
-		<showschedulereportsmanager>False</showschedulereportsmanager>
-		<schedulemanagerviewlevel>User</schedulemanagerviewlevel>
-		<cachevisibilitylevel>User</cachevisibilitylevel>
-		<showschedulereportsemail>False</showschedulereportsemail>
-		<executeremotely>False</executeremotely>
-		<executioncache>False</executioncache>
-		<accessdatasourcesremotely>False</accessdatasourcesremotely>
-		<deleteschedulesuponreportdeletion>True</deleteschedulesuponreportdeletion>
-		<scheduleremotinghost />
-		<synchronousremotinghost />
-		<schedulerqueueservice />
-		<reportscheduleemailsubject>Scheduled Ad Hoc Report</reportscheduleemailsubject>
-		<reportscheduleemailbody />
-		<renewsession>True</renewsession>
-		<decimalsymbol>.</decimalsymbol>
-		<passwordrequirement />
-		<maxtempfileage>1440</maxtempfileage>
-		<allowexecutenewfilters>True</allowexecutenewfilters>
-		<externalinterface />
-		<decimalplaces>-1</decimalplaces>
-		<currencydecimalplaces>-1</currencydecimalplaces>
-		<chartcolors />
-		<geochartmapkey />
-		<mapcolors />
-		<googlemapcolors />
-		<googlemapjsapikey />
-		<googlemapgeocodeapikey />
-		<gaugecolors />
-		<showgroupfilters>True</showgroupfilters>
-		<showtopn>True</showtopn>
-		<showjoinswindow>True</showjoinswindow>
-		<showadvancedjoins>True</showadvancedjoins>
-		<showcomplexjoins>False</showcomplexjoins>
-		<showcategoryalias>False</showcategoryalias>
-		<showeventswindow>False</showeventswindow>
-		<onecategorylimit>False</onecategorylimit>
-		<cacheservices>True</cacheservices>
-		<cacheconfig>False</cacheconfig>
-		<schedulerrecipientwindow />
-		<schedulershowreplyto>False</schedulershowreplyto>
-		<filterexecutionwindow />
-		<showiedownloadbutton>False</showiedownloadbutton>
-		<allowmultiplesessions>True</allowmultiplesessions>
-		<allowmd5onfips>False</allowmd5onfips>
-		<showschedulenoenddate>True</showschedulenoenddate>
-		<tempurl />
-		<userprefstorage>Cookie</userprefstorage>
-		<userstartupreportoverwritegettingstarted>False</userstartupreportoverwritegettingstarted>
-		<userstartupreportmaxnum>1</userstartupreportmaxnum>
-		<excelexporttarget>v2010</excelexporttarget>
-		<allowdependantfilters>True</allowdependantfilters>
-		<loadimageprefix />
-		<languagefile>en-us,en-us-getting-started,en-us-tooltips</languagefile>
-		<emailscheduledreports>True</emailscheduledreports>
-		<enablebatchreports>False</enablebatchreports>
-		<showscheduledeliverytypeoptions>True</showscheduledeliverytypeoptions>
-		<usesecureremotingchannel>False</usesecureremotingchannel>
-		<showtemplateuploadbutton>True</showtemplateuploadbutton>
-		<usesvgforappicons>True</usesvgforappicons>
-		<showhelp>True</showhelp>
-		<customhelpsource />
-		<showexportsintab>True</showexportsintab>
-		<showhtmltoolbar>Auto</showhtmltoolbar>
-		<enablescheduling>True</enablescheduling>
-		<showfilterdescription>False</showfilterdescription>
-		<defaultFilterExecutionWindow>Standard</defaultFilterExecutionWindow>
-		<changeableFilterExecutionWindow>True</changeableFilterExecutionWindow>
-		<ignoreinaccessiblereportfolders>False</ignoreinaccessiblereportfolders>
-		<showcrosstabreports>True</showcrosstabreports>
-		<showcrosstabwizard>True</showcrosstabwizard>
-		<showdashboardreports>False</showdashboardreports>
-		<showchainedreports>True</showchainedreports>
-		<showexpressviews>True</showexpressviews>
-		<allowexpressviewliveedit>False</allowexpressviewliveedit>
-		<showdashboardnewvisualizationbutton>True</showdashboardnewvisualizationbutton>
-		<expressviewdatafieldsdisplay>AnyPath</expressviewdatafieldsdisplay>
-		<expressviewjoinalgorithm>Standard</expressviewjoinalgorithm>
-		<showtutorialexpressview>Enabled</showtutorialexpressview>
-		<showtipsexpressview>Enabled</showtipsexpressview>
-		<datafieldssearchmode>OnSubmit</datafieldssearchmode>
-		<usesampledatafordashboardvisualizationdesign>True</usesampledatafordashboardvisualizationdesign>
-		<showexpressreports>True</showexpressreports>
-		<showexpressreportsstylingtoolbar>True</showexpressreportsstylingtoolbar>
-		<showexpressreportsthemes>True</showexpressreportsthemes>
-		<showexpressreportsgrouping>True</showexpressreportsgrouping>
-		<showexpressreportsformulabutton>True</showexpressreportsformulabutton>
-		<showadvancedreports>True</showadvancedreports>
-		<schemaaccesstype>Datasource</schemaaccesstype>
-		<tempcloudservice />
-		<datacloudservice />
-		<showgroupheadersformulabutton>True</showgroupheadersformulabutton>
-		<allowreportcustomsqlobjects>False</allowreportcustomsqlobjects>
-		<excludedatasourcesreportcustomsql />
-		<servertimezoneoffset />
-		<enhancedtooltips>True</enhancedtooltips>
-		<saveonexecute>False</saveonexecute>
-		<saveonfinish>True</saveonfinish>
-		<enablerightclickmenus>True</enablerightclickmenus>
-		<enablereportstreedraganddrop>True</enablereportstreedraganddrop>
-		<showscheduleintradayrecurrence>True</showscheduleintradayrecurrence>
-		<applygeneralformatdecimalplaces>False</applygeneralformatdecimalplaces>
-		<applygeneralcurrencyrightalignment>True</applygeneralcurrencyrightalignment>
-		<showreportuploaddownloadoptions>True</showreportuploaddownloadoptions>
-		<interactivehtml>True</interactivehtml>
-		<allowhtmlinscheduledemails>False</allowhtmlinscheduledemails>
-		<defaultisdockopen>False</defaultisdockopen>
-		<dockplacement>Left</dockplacement>
-		<csstheme>Custom</csstheme>
-		<executesavetodesign>False</executesavetodesign>
-		<userallowuserreports>True</userallowuserreports>
-		<maxnumberofchartpoints>300</maxnumberofchartpoints>
-		<defaultfont>Arial</defaultfont>
-		<defaultfontsize>8</defaultfontsize>
-		<crosstabmaximumfields>5</crosstabmaximumfields>
-		<defaultchartfont>Arial</defaultchartfont>
-		<webfarmsupport>False</webfarmsupport>
-		<silentdashboardrefresh>False</silentdashboardrefresh>
-		<maxjobexecutionminutes>240</maxjobexecutionminutes>
-		<aggregateandgroupindatabase>False</aggregateandgroupindatabase>
-		<evaluateformulasindatabase>False</evaluateformulasindatabase>
-		<showbrowseroutofdatewarning>True</showbrowseroutofdatewarning>
-		<canjointransformobjectsindb>True</canjointransformobjectsindb>
-		<filterdropdownobjecttenancy>True</filterdropdownobjecttenancy>
-		<reportlistcacheenabled>False</reportlistcacheenabled>
-	</general>
-	<datasource>
-		<id>0</id>
-		<name>StudentInformation</name>
-		<dbtype>mssql</dbtype>
-		<dataconnstr />
-	</datasource>
-	<datasource>
-		<id>1</id>
-		<name>IntegrationAssembly</name>
-		<dbtype>assembly</dbtype>
-		<dataconnstr />
-	</datasource>
-	<datasource>
-		<id>2</id>
-		<name>QuickReports</name>
-		<dbtype>mssql</dbtype>
-		<dataconnstr />
-	</datasource>
-	<datasource>
-		<id>3</id>
-		<name>DistrictDatabase</name>
-		<dbtype>mssql</dbtype>
-		<dataconnstr />
-	</datasource>
-	<datasource>
-		<id>4</id>
-		<name>Pbmaster</name>
-		<dbtype>mssql</dbtype>
-		<dataconnstr />
-	</datasource>
-	<datasource>
-		<id>5</id>
-		<name>OneRosterIntegrationAssembly</name>
-		<dbtype>assembly</dbtype>
-		<dataconnstr/>
-	</datasource>
-	<datasource>
-		<id>6</id>
-		<name>SpecialServices</name>
-		<dbtype>mssql</dbtype>
-		<dataconnstr />
-	</datasource>
-	<parameter>
-		<id>SchoolId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>SchoolYearId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>DisciplineOffenderId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>DistrictId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>UserId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>ModifiedByUserId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>userId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>StartDate</id>
-		<data_type>date</data_type>
-		<value />
-		<hidden>False</hidden>
-		<prompt_text>Please enter the beginning of the date range the report will use.</prompt_text>
-	</parameter>
-	<parameter>
-		<id>StopDate</id>
-		<data_type>date</data_type>
-		<value />
-		<hidden>False</hidden>
-		<prompt_text>Please enter the end of the date range the report will use.</prompt_text>
-	</parameter>
-	<parameter>
-		<id>DistrictIrn</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>StudentId</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text />
-	</parameter>
-	<parameter>
-		<id>SchoolYear</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>True</hidden>
-		<prompt_text>School Year</prompt_text>
-		<parameter_dropdown>
-			<db_name>SchoolYear</db_name>
-			<sql_stmt>
-				SELECT Description as SchoolYear
-				FROM tblSchoolYear
-				WHERE SchoolYearId = (SELECT dbo.DefaultDistrictSchoolYearId('@DistrictId@'))
-			</sql_stmt>
-			<datasource_id>0</datasource_id>
-			<object_type>sql</object_type>
-			<value_field>SchoolYear</value_field>
-			<display_value_field>SchoolYear</display_value_field>
-			<display_data_type>string</display_data_type>
-			<display_value />
-			<sp_params />
-		</parameter_dropdown>
-	</parameter>
-	<parameter>
-		<id>SchoolName</id>
-		<data_type>string</data_type>
-		<value />
-		<hidden>False</hidden>
-		<prompt_text>School Name</prompt_text>
-		<parameter_dropdown>
-			<db_name>SchoolName</db_name>
-			<sql_stmt>
-				SELECT sch.SchoolName
-				FROM tblSchoolConfig sc
-				JOIN tblSchool sch ON sc.SchoolId = sch.SchoolId
-				AND sch.IsSchool = 1
-				AND sc.IsActive = 1
-				WHERE sch.DistrictId = '@DistrictId@'
-				AND sc.SchoolYearId =dbo.DefaultDistrictSchoolYearId('@DistrictId@')
-			</sql_stmt>
-			<datasource_id>0</datasource_id>
-			<object_type>sql</object_type>
-			<value_field>SchoolName</value_field>
-			<display_value_field>SchoolName</display_value_field>
-			<display_data_type>string</display_data_type>
-			<display_value />
-			<sp_params />
-		</parameter_dropdown>
-	</parameter>
-	<parameter>
-		<id>StudentNumber</id>
-		<data_type>integer</data_type>
-		<hidden>False</hidden>
-		<prompt_text>Student Number</prompt_text>
-		<parameter_dropdown>
-			<db_name>StudentNumber</db_name>
-			<sql_stmt>
-				SELECT s.StudentNumber
-				FROM tblCourseSectionStudent css
-				JOIN tblCourseSection cs ON css.CourseSectionId = cs.CourseSectionId
-				AND cs.IsActive = 1
-				JOIN tblCourse c ON c.CourseId = cs.CourseId
-				AND c.IsNCAACoreCourse = 1
-				AND c.IsActive = 1
-				JOIN tblStudent s ON s.StudentId = css.StudentId
-				AND s.DistrictId = '@DistrictId@'
-				JOIN tblStudentAnnual sa ON sa.StudentId = s.StudentId
-				AND sa.SchoolYearId = (SELECT dbo.DefaultDistrictSchoolYearId('@DistrictId@'))
-				JOIN tblSchool sch ON sch.SchoolId = sa.SchoolId
-				AND sch.IsActive = 1
-				AND sch.SchoolName = '@SchoolName@'
-			</sql_stmt>
-			<datasource_id>0</datasource_id>
-			<object_type>sql</object_type>
-			<value_field>StudentNumber</value_field>
-			<display_value_field>StudentNumber</display_value_field>
-			<display_data_type>integer</display_data_type>
-			<display_value />
-			<sp_params />
-		</parameter_dropdown>
-	</parameter>
-	<entity>
-		<entity_name>NCAA Division I Eligibility</entity_name>
-		<affinity>Global</affinity>
-		<db_name>proc_NCAAEligibility_DivI</db_name>
-		<category>Eligibility</category>
-		<datasource_id>0</datasource_id>
-		<object_type>procedure</object_type>
-		<schema>CoreReports</schema>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>DistrictId</col_name>
-		</key>
-		<key>
-			<col_name>SchoolYear</col_name>
-		</key>
-		<key>
-			<col_name>SchoolName</col_name>
-		</key>
-		<key>
-			<col_name>CourseName</col_name>
-		</key>
-		<key>
-			<col_name>NCAASubjectArea</col_name>
-		</key>
-		<key>
-			<col_name>StudentNumber</col_name>
-		</key>
-		<param>
-			<id>DistrictId</id>
-		</param>
-		<param>
-			<id>SchoolYear</id>
-		</param>
-		<param>
-			<id>SchoolName</id>
-		</param>
-		<param>
-			<id>StudentNumber</id>
-		</param>
-	</entity>
-	<entity>
-		<entity_name>NCAA Division II Eligibility</entity_name>
-		<cloned_from />
-		<affinity>Global</affinity>
-		<db_name>proc_NCAAEligibility_DivII</db_name>
-		<category>Eligibility</category>
-		<datasource_id>0</datasource_id>
-		<object_type>procedure</object_type>
-		<schema>CoreReports</schema>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>DistrictId</col_name>
-		</key>
-		<key>
-			<col_name>SchoolYear</col_name>
-		</key>
-		<key>
-			<col_name>SchoolName</col_name>
-		</key>
-		<key>
-			<col_name>CourseName</col_name>
-		</key>
-		<key>
-			<col_name>NCAASubjectArea</col_name>
-		</key>
-		<key>
-			<col_name>StudentNumber</col_name>
-		</key>
-		<param>
-			<id>DistrictId</id>
-		</param>
-		<param>
-			<id>SchoolYear</id>
-		</param>
-		<param>
-			<id>SchoolName</id>
-		</param>
-		<param>
-			<id>StudentNumber</id>
-		</param>
-	</entity>
-	<entity>
-		<entity_name>ITC Student Count Report</entity_name>
-		<db_name>proc_StudentCountReport_ITC</db_name>
-		<category>ITC</category>
-		<datasource_id>0</datasource_id>
-		<object_type>procedure</object_type>
-		<schema>dbo</schema>
-		<key>
-			<col_name>DistrictIRN</col_name>
-		</key>
-		<param>
-			<id>StartDate</id>
-		</param>
-		<param>
-			<id>StopDate</id>
-		</param>
-	</entity>
-	<entity>
-		<entity_name>Student Count Report District Detail</entity_name>
-		<db_name>proc_StudentCountReport_DistrictDetail</db_name>
-		<datasource_id>0</datasource_id>
-		<object_type>procedure</object_type>
-		<schema>dbo</schema>
-		<key>
-			<col_name>SchoolIRN</col_name>
-		</key>
-		<param>
-			<id>DistrictId</id>
-		</param>
-		<param>
-			<id>StartDate</id>
-		</param>
-		<param>
-			<id>StopDate</id>
-		</param>
-	</entity>
-	<entity>
-		<entity_name>Ohio Graduation Plan Template</entity_name>
-		<db_name>proc_OhioGraduationPlan</db_name>
-		<datasource_id>0</datasource_id>
-		<object_type>procedure</object_type>
-		<schema>CoreReports</schema>
-		<key>
-			<col_name>Student_StudentId</col_name>
-		</key>
-		<param>
-			<id>DistrictId</id>
-		</param>
-		<param>
-			<id>StudentNumber</id>
-		</param>
-	</entity>
-	<entity>
-		<entity_name>Student Count Report Student Detail</entity_name>
-		<db_name>proc_StudentCountReport_StudentDetail</db_name>
-		<datasource_id>0</datasource_id>
-		<object_type>procedure</object_type>
-		<schema>dbo</schema>
-		<key>
-			<col_name>StudentNumber</col_name>
-		</key>
-		<param>
-			<id>DistrictId</id>
-		</param>
-		<param>
-			<id>StartDate</id>
-		</param>
-		<param>
-			<id>StopDate</id>
-		</param>
-	</entity>
-	<entity>
-		<entity_name>AcademicSessions</entity_name>
-		<cloned_from />
-		<affinity>Global</affinity>
-		<db_name>GetAcademicSessions</db_name>
-		<category>OneRoster</category>
-		<datasource_id>5</datasource_id>
-		<object_type>assembly</object_type>
-		<schema_access_type>Metadata</schema_access_type>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>sourcedId</col_name>
-		</key>
-		<column_metadata>
-			<col_name>endDate</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>schoolYear</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>sourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>startDate</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>title</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>type</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>status</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>dateLastModified</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-	</entity>
-	<entity>
-		<entity_name>Orgs</entity_name>
-		<cloned_from />
-		<affinity>Global</affinity>
-		<db_name>GetOrgs</db_name>
-		<category>OneRoster</category>
-		<datasource_id>5</datasource_id>
-		<object_type>assembly</object_type>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>sourcedId</col_name>
-		</key>
-		<column_metadata>
-			<col_name>name</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>sourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>type</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>parentSourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>status</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>dateLastModified</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-	</entity>
-	<entity>
-		<entity_name>Courses</entity_name>
-		<cloned_from />
-		<affinity>Global</affinity>
-		<db_name>GetCourses</db_name>
-		<category>OneRoster</category>
-		<datasource_id>5</datasource_id>
-		<object_type>assembly</object_type>
-		<schema_access_type>Metadata</schema_access_type>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>sourcedId</col_name>
-		</key>
-		<column_metadata>
-			<col_name>courseCode</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>grades</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>orgSourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>sourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>title</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>status</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>dateLastModified</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-	</entity>
-	<entity>
-		<entity_name>Classes</entity_name>
-		<cloned_from />
-		<affinity>Global</affinity>
-		<db_name>GetClasses</db_name>
-		<category>OneRoster</category>
-		<datasource_id>5</datasource_id>
-		<object_type>assembly</object_type>
-		<schema_access_type>Metadata</schema_access_type>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>sourcedId</col_name>
-		</key>
-		<column_metadata>
-			<col_name>classCode</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>classType</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>courseSourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>schoolSourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>sourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>termSourcedIds</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>title</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>status</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>dateLastModified</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-	</entity>
-	<entity>
-		<entity_name>Enrollments</entity_name>
-		<cloned_from />
-		<affinity>Global</affinity>
-		<db_name>GetEnrollments</db_name>
-		<category>OneRoster</category>
-		<datasource_id>5</datasource_id>
-		<object_type>assembly</object_type>
-		<schema_access_type>Metadata</schema_access_type>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>sourcedId</col_name>
-		</key>
-		<column_metadata>
-			<col_name>beginDate</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>classSourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>endDate</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>role</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>schoolSourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>sourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>userSourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>status</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>dateLastModified</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-	</entity>
-	<entity>
-		<entity_name>Users</entity_name>
-		<cloned_from />
-		<affinity>Global</affinity>
-		<db_name>GetUsers</db_name>
-		<category>OneRoster</category>
-		<datasource_id>5</datasource_id>
-		<object_type>assembly</object_type>
-		<schema_access_type>Metadata</schema_access_type>
-		<suppress_sort_filter>false</suppress_sort_filter>
-		<key>
-			<col_name>sourcedId</col_name>
-		</key>
-		<column_metadata>
-			<col_name>enabledUser</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>email</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>familyName</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>givenName</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>identifier</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>middleName</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>orgSourcedIds</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>role</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>sourcedId</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>username</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>status</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-		<column_metadata>
-			<col_name>dateLastModified</col_name>
-			<col_type>string</col_type>
-			<filterable>Default</filterable>
-		</column_metadata>
-	</entity>
-	<function>
-		<name>QuarterNumber</name>
-		<description>Returns the fiscal quarter of a date as a number</description>
-		<category>Date</category>
-		<min_args>1</min_args>
-		<max_args>1</max_args>
-		<arguments_json>[{"Name":"inputDate","Required":true,"Description":"A formatted date string, Date value, or DateTime value"}]</arguments_json>
-		<variable_arguments>false</variable_arguments>
-		<available_in>1</available_in>
-		<filter_return_type>Integer</filter_return_type>
-		<weight>101</weight>
-		<language>cs</language>
-		<program_code>
-			DateTime date = DateTime.Parse(args[0].ToString()); int month = date.Month;
-			if (month &gt;= 1 &amp;&amp; month &lt;= 3)
-			return "1";
-			if (month &gt;= 4 &amp;&amp; month &lt;= 6)
-			return "2";
-			if (month &gt;= 7 &amp;&amp; month &lt;= 9)
-			return "3";
-			if (month &gt;= 10 &amp;&amp; month &lt;= 12)
-			return "4";
-			return "0";
-		</program_code>
-	</function>
-	<function>
-		<name>QuarterName</name>
-		<description>Returns the fiscal quarter of a date in the typical Q1, ..., Q4 style</description>
-		<category>Date</category>
-		<min_args>1</min_args>
-		<max_args>1</max_args>
-		<arguments_json>[{"Name":"inputDate","Required":true,"Description":"A formatted date string, Date value, or DateTime value"}]</arguments_json>
-		<variable_arguments>false</variable_arguments>
-		<available_in>1</available_in>
-		<filter_return_type>String</filter_return_type>
-		<weight>101</weight>
-		<language>cs</language>
-		<program_code>
-			DateTime date = DateTime.Parse(args[0].ToString()); int month = date.Month;
-			if (month &gt;= 1 &amp;&amp; month &lt;= 3)
-			return "Q1";
-			if (month &gt;= 4 &amp;&amp; month &lt;= 6)
-			return "Q2";
-			if (month &gt;= 7 &amp;&amp; month &lt;= 9)
-			return "Q3";
-			if (month &gt;= 10 &amp;&amp; month &lt;= 12)
-			return "Q4";
-			return "0";
-		</program_code>
-	</function>
-	<function>
-		<name>MonthName</name>
-		<description>Returns the name of the month. Function can take a formatted date string, a Date or DateTime value, or an integer value as input</description>
-		<category>Date</category>
-		<min_args>1</min_args>
-		<max_args>1</max_args>
-		<arguments_json>[{"Name":"inputDateOrNumber","Required":true,"Description":"A formatted date string, a Date or DateTime value, or an integer value"}]</arguments_json>
-		<variable_arguments>false</variable_arguments>
-		<available_in>1</available_in>
-		<filter_return_type>String</filter_return_type>
-		<weight>101</weight>
-		<language>cs</language>
-		<program_code>
-			//create return value
-			string monthName = "";
+  <general>
+    <datefunctionsloaded>False</datefunctionsloaded>
+    <formulafunctionsloaded>False</formulafunctionsloaded>
+    <versionnumber>2018.2.6.123</versionnumber>
+    <userid>exagoadmin</userid>
+    <password>G6mqJ4s4ar925844Q24U65T69R7x652M</password>
+    <reportpath />
+    <aliasallentities>False</aliasallentities>
+    <allowhomedirect>True</allowhomedirect>
+    <allowhtmloutput>True</allowhtmloutput>
+    <reporttreeshortcut>Run</reporttreeshortcut>
+    <allowexceloutput>True</allowexceloutput>
+    <allowpdfoutput>True</allowpdfoutput>
+    <allowrtfoutput>True</allowrtfoutput>
+    <allowcsvoutput>True</allowcsvoutput>
+    <defaultoutputtype>html</defaultoutputtype>
+    <writelog>True</writelog>
+    <logginglevel>INFO</logginglevel>
+    <loggingflags>ffff</loggingflags>
+    <customcode />
+    <dateformat />
+    <timeformat />
+    <datetimeformat />
+    <datetimetreatedas>Date</datetimetreatedas>
+    <readfiltervalues>True</readfiltervalues>
+    <dbtimeout>600</dbtimeout>
+    <dbrowlimit>0</dbrowlimit>
+    <dbrowlimitstepsize>0</dbrowlimitstepsize>
+    <visualizationdbrowlimit>0</visualizationdbrowlimit>
+    <calltypeparamname>callType</calltypeparamname>
+    <columnparamname />
+    <filterparamname />
+    <fullfilterparamname />
+    <sortparamname />
+    <datacategoryparamname />
+    <objectidparamname />
+    <dbrowlimitparamname />
+    <dbrowrangestartparamname />
+    <dbrowrangeendparamname />
+    <showgrid>True</showgrid>
+    <debugging>False</debugging>
+    <performancetesting>False</performancetesting>
+    <debugextractionpassword />
+    <restkey />
+    <allowearlypagebreak>False</allowearlypagebreak>
+    <showpdftemplate>True</showpdftemplate>
+    <dashboardpromptatexecution>False</dashboardpromptatexecution>
+    <dashboardshowurlitembutton>True</dashboardshowurlitembutton>
+    <showchartwizard>True</showchartwizard>
+    <showmapwizard>False</showmapwizard>
+    <showgooglemapwizard>False</showgooglemapwizard>
+    <webrequestkeepalive>True</webrequestkeepalive>
+    <showgaugewizard>True</showgaugewizard>
+    <showlinkreport>True</showlinkreport>
+    <showlinkreportfields>True</showlinkreportfields>
+    <showlinkreportformula>False</showlinkreportformula>
+    <linkedreportdisplay>Cursor</linkedreportdisplay>
+    <showlinkaction>False</showlinkaction>
+    <showinsertimage>True</showinsertimage>
+    <expirationdate />
+    <htmlpaging>True</htmlpaging>
+    <windowheight>0</windowheight>
+    <windowwidth>0</windowwidth>
+    <separatorsymbol>,</separatorsymbol>
+    <currencysymbol>$</currencysymbol>
+    <datamapping>False</datamapping>
+    <showjoinfields>True</showjoinfields>
+    <detectjoinedobjects>False</detectjoinedobjects>
+    <enablespecialcartesianprocessing>False</enablespecialcartesianprocessing>
+    <includenotfilternullvalues>False</includenotfilternullvalues>
+    <temppath />
+    <showschedulereports>False</showschedulereports>
+    <showschedulereportsmanager>False</showschedulereportsmanager>
+    <schedulemanagerviewlevel>User</schedulemanagerviewlevel>
+    <cachevisibilitylevel>User</cachevisibilitylevel>
+    <showschedulereportsemail>False</showschedulereportsemail>
+    <executeremotely>False</executeremotely>
+    <executioncache>False</executioncache>
+    <accessdatasourcesremotely>False</accessdatasourcesremotely>
+    <deleteschedulesuponreportdeletion>True</deleteschedulesuponreportdeletion>
+    <scheduleremotinghost />
+    <synchronousremotinghost />
+    <schedulerqueueservice>Assembly=C:\ProgramData\Software Answers\Ad Hoc Reports\Integration\ProgressBook.Reporting.ExagoIntegration.dll;class=ProgressBook.Reporting.ExagoIntegration.SchedulerQueue</schedulerqueueservice>
+    <reportscheduleemailsubject>Scheduled Ad Hoc Report</reportscheduleemailsubject>
+    <reportscheduleemailbody />
+    <renewsession>True</renewsession>
+    <decimalsymbol>.</decimalsymbol>
+    <passwordrequirement />
+    <maxtempfileage>1440</maxtempfileage>
+    <allowexecutenewfilters>True</allowexecutenewfilters>
+    <externalinterface />
+    <decimalplaces>-1</decimalplaces>
+    <currencydecimalplaces>-1</currencydecimalplaces>
+    <chartcolors />
+    <geochartmapkey />
+    <mapcolors />
+    <googlemapcolors />
+    <googlemapjsapikey />
+    <googlemapgeocodeapikey />
+    <gaugecolors />
+    <showgroupfilters>True</showgroupfilters>
+    <showtopn>True</showtopn>
+    <showjoinswindow>True</showjoinswindow>
+    <showadvancedjoins>True</showadvancedjoins>
+    <showcomplexjoins>False</showcomplexjoins>
+    <showcategoryalias>False</showcategoryalias>
+    <showeventswindow>False</showeventswindow>
+    <onecategorylimit>False</onecategorylimit>
+    <cacheservices>True</cacheservices>
+    <cacheconfig>False</cacheconfig>
+    <schedulerrecipientwindow />
+    <schedulershowreplyto>False</schedulershowreplyto>
+    <filterexecutionwindow />
+    <showiedownloadbutton>False</showiedownloadbutton>
+    <allowmultiplesessions>True</allowmultiplesessions>
+    <allowmd5onfips>False</allowmd5onfips>
+    <showschedulenoenddate>True</showschedulenoenddate>
+    <tempurl />
+    <userprefstorage>Cookie</userprefstorage>
+    <userstartupreportoverwritegettingstarted>False</userstartupreportoverwritegettingstarted>
+    <userstartupreportmaxnum>1</userstartupreportmaxnum>
+    <excelexporttarget>v2010</excelexporttarget>
+    <allowdependantfilters>True</allowdependantfilters>
+    <loadimageprefix />
+    <languagefile>en-us,en-us-getting-started,en-us-tooltips</languagefile>
+    <emailscheduledreports>True</emailscheduledreports>
+    <enablebatchreports>False</enablebatchreports>
+    <showscheduledeliverytypeoptions>True</showscheduledeliverytypeoptions>
+    <usesecureremotingchannel>False</usesecureremotingchannel>
+    <showtemplateuploadbutton>True</showtemplateuploadbutton>
+    <usesvgforappicons>True</usesvgforappicons>
+    <showhelp>True</showhelp>
+    <customhelpsource />
+    <showexportsintab>True</showexportsintab>
+    <showhtmltoolbar>Auto</showhtmltoolbar>
+    <enablescheduling>True</enablescheduling>
+    <showfilterdescription>False</showfilterdescription>
+    <defaultFilterExecutionWindow>Standard</defaultFilterExecutionWindow>
+    <changeableFilterExecutionWindow>True</changeableFilterExecutionWindow>
+    <ignoreinaccessiblereportfolders>False</ignoreinaccessiblereportfolders>
+    <showcrosstabreports>True</showcrosstabreports>
+    <showcrosstabwizard>True</showcrosstabwizard>
+    <showdashboardreports>False</showdashboardreports>
+    <showchainedreports>True</showchainedreports>
+    <showexpressviews>True</showexpressviews>
+    <allowexpressviewliveedit>False</allowexpressviewliveedit>
+    <showdashboardnewvisualizationbutton>True</showdashboardnewvisualizationbutton>
+    <expressviewdatafieldsdisplay>AnyPath</expressviewdatafieldsdisplay>
+    <expressviewjoinalgorithm>Standard</expressviewjoinalgorithm>
+    <showtutorialexpressview>Enabled</showtutorialexpressview>
+    <showtipsexpressview>Enabled</showtipsexpressview>
+    <datafieldssearchmode>OnSubmit</datafieldssearchmode>
+    <usesampledatafordashboardvisualizationdesign>True</usesampledatafordashboardvisualizationdesign>
+    <showexpressreports>True</showexpressreports>
+    <showexpressreportsstylingtoolbar>True</showexpressreportsstylingtoolbar>
+    <showexpressreportsthemes>True</showexpressreportsthemes>
+    <showexpressreportsgrouping>True</showexpressreportsgrouping>
+    <showexpressreportsformulabutton>True</showexpressreportsformulabutton>
+    <showadvancedreports>True</showadvancedreports>
+    <schemaaccesstype>Datasource</schemaaccesstype>
+    <tempcloudservice />
+    <datacloudservice />
+    <showgroupheadersformulabutton>True</showgroupheadersformulabutton>
+    <allowreportcustomsqlobjects>False</allowreportcustomsqlobjects>
+    <excludedatasourcesreportcustomsql />
+    <servertimezoneoffset />
+    <enhancedtooltips>True</enhancedtooltips>
+    <saveonexecute>False</saveonexecute>
+    <saveonfinish>True</saveonfinish>
+    <enablerightclickmenus>True</enablerightclickmenus>
+    <enablereportstreedraganddrop>True</enablereportstreedraganddrop>
+    <showscheduleintradayrecurrence>True</showscheduleintradayrecurrence>
+    <applygeneralformatdecimalplaces>False</applygeneralformatdecimalplaces>
+    <applygeneralcurrencyrightalignment>True</applygeneralcurrencyrightalignment>
+    <showreportuploaddownloadoptions>True</showreportuploaddownloadoptions>
+    <interactivehtml>True</interactivehtml>
+    <allowhtmlinscheduledemails>False</allowhtmlinscheduledemails>
+    <defaultisdockopen>False</defaultisdockopen>
+    <dockplacement>Left</dockplacement>
+    <csstheme>Custom</csstheme>
+    <executesavetodesign>False</executesavetodesign>
+    <userallowuserreports>True</userallowuserreports>
+    <maxnumberofchartpoints>300</maxnumberofchartpoints>
+    <defaultfont>Arial</defaultfont>
+    <defaultfontsize>8</defaultfontsize>
+    <crosstabmaximumfields>5</crosstabmaximumfields>
+    <defaultchartfont>Arial</defaultchartfont>
+    <webfarmsupport>False</webfarmsupport>
+    <silentdashboardrefresh>False</silentdashboardrefresh>
+    <maxjobexecutionminutes>240</maxjobexecutionminutes>
+    <aggregateandgroupindatabase>False</aggregateandgroupindatabase>
+    <evaluateformulasindatabase>False</evaluateformulasindatabase>
+    <showbrowseroutofdatewarning>True</showbrowseroutofdatewarning>
+    <canjointransformobjectsindb>True</canjointransformobjectsindb>
+    <filterdropdownobjecttenancy>True</filterdropdownobjecttenancy>
+    <reportlistcacheenabled>False</reportlistcacheenabled>
+  </general>
+  <datasource>
+    <id>0</id>
+    <name>StudentInformation</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>1</id>
+    <name>IntegrationAssembly</name>
+    <dbtype>assembly</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>2</id>
+    <name>QuickReports</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>3</id>
+    <name>DistrictDatabase</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>4</id>
+    <name>Pbmaster</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <datasource>
+    <id>5</id>
+    <name>OneRosterIntegrationAssembly</name>
+    <dbtype>assembly</dbtype>
+    <dataconnstr/>
+  </datasource>
+  <datasource>
+    <id>6</id>
+    <name>SpecialServices</name>
+    <dbtype>mssql</dbtype>
+    <dataconnstr />
+  </datasource>
+  <parameter>
+    <id>SchoolId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>SchoolYearId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>DisciplineOffenderId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>DistrictId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>UserId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>ModifiedByUserId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>userId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>StartDate</id>
+    <data_type>date</data_type>
+    <value />
+    <hidden>False</hidden>
+    <prompt_text>Please enter the beginning of the date range the report will use.</prompt_text>
+  </parameter>
+  <parameter>
+    <id>StopDate</id>
+    <data_type>date</data_type>
+    <value />
+    <hidden>False</hidden>
+    <prompt_text>Please enter the end of the date range the report will use.</prompt_text>
+  </parameter>
+  <parameter>
+    <id>DistrictIrn</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+  <parameter>
+    <id>StudentId</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text />
+  </parameter>
+   <parameter>
+    <id>SchoolYear</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>True</hidden>
+    <prompt_text>School Year</prompt_text>
+    <parameter_dropdown>
+      <db_name>SchoolYear</db_name>
+      <sql_stmt>SELECT Description as SchoolYear
+                FROM tblSchoolYear
+	              WHERE SchoolYearId = (SELECT dbo.DefaultDistrictSchoolYearId('@DistrictId@'))
+</sql_stmt>
+      <datasource_id>0</datasource_id>
+      <object_type>sql</object_type>
+      <value_field>SchoolYear</value_field>
+      <display_value_field>SchoolYear</display_value_field>
+      <display_data_type>string</display_data_type>
+      <display_value />
+      <sp_params />
+    </parameter_dropdown>
+  </parameter>
+  <parameter>
+    <id>SchoolName</id>
+    <data_type>string</data_type>
+    <value />
+    <hidden>False</hidden>
+    <prompt_text>School Name</prompt_text>
+    <parameter_dropdown>
+      <db_name>SchoolName</db_name>
+      <sql_stmt>SELECT sch.SchoolName
+                FROM tblSchoolConfig sc
+	                JOIN tblSchool sch ON sc.SchoolId = sch.SchoolId
+		                AND sch.IsSchool = 1
+		                AND sc.IsActive = 1
+	                WHERE sch.DistrictId = '@DistrictId@'
+		                AND sc.SchoolYearId =dbo.DefaultDistrictSchoolYearId('@DistrictId@')
+</sql_stmt>
+      <datasource_id>0</datasource_id>
+      <object_type>sql</object_type>
+      <value_field>SchoolName</value_field>
+      <display_value_field>SchoolName</display_value_field>
+      <display_data_type>string</display_data_type>
+      <display_value />
+      <sp_params />
+    </parameter_dropdown>
+  </parameter>
+  <parameter>
+    <id>StudentNumber</id>
+    <data_type>integer</data_type>
+    <hidden>False</hidden>
+    <prompt_text>Student Number</prompt_text>
+    <parameter_dropdown>
+      <db_name>StudentNumber</db_name>
+      <sql_stmt>SELECT s.StudentNumber
+                FROM tblCourseSectionStudent css
+	                JOIN tblCourseSection cs ON css.CourseSectionId = cs.CourseSectionId
+		                AND cs.IsActive = 1
+	                JOIN tblCourse c ON c.CourseId = cs.CourseId
+		                AND c.IsNCAACoreCourse = 1
+		                AND c.IsActive = 1
+	                JOIN tblStudent s ON s.StudentId = css.StudentId
+		                AND s.DistrictId = '@DistrictId@'
+	                JOIN tblStudentAnnual sa ON sa.StudentId = s.StudentId
+		                AND sa.SchoolYearId = (SELECT dbo.DefaultDistrictSchoolYearId('@DistrictId@'))
+	                JOIN tblSchool sch ON sch.SchoolId = sa.SchoolId
+		                AND sch.IsActive = 1
+		                AND sch.SchoolName = '@SchoolName@'
+		</sql_stmt>
+      <datasource_id>0</datasource_id>
+      <object_type>sql</object_type>
+      <value_field>StudentNumber</value_field>
+      <display_value_field>StudentNumber</display_value_field>
+      <display_data_type>integer</display_data_type>
+      <display_value />
+      <sp_params />
+    </parameter_dropdown>
+  </parameter>
+   <entity>
+    <entity_name>NCAA Division I Eligibility</entity_name>
+    <affinity>Global</affinity>
+    <db_name>proc_NCAAEligibility_DivI</db_name>
+    <category>Eligibility</category>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>CoreReports</schema>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>DistrictId</col_name>
+    </key>
+    <key>
+      <col_name>SchoolYear</col_name>
+    </key>
+    <key>
+      <col_name>SchoolName</col_name>
+    </key>
+    <key>
+      <col_name>CourseName</col_name>
+    </key>
+    <key>
+      <col_name>NCAASubjectArea</col_name>
+    </key>
+    <key>
+      <col_name>StudentNumber</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>SchoolYear</id>
+    </param>
+    <param>
+      <id>SchoolName</id>
+    </param>
+    <param>
+      <id>StudentNumber</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>NCAA Division II Eligibility</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>proc_NCAAEligibility_DivII</db_name>
+    <category>Eligibility</category>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>CoreReports</schema>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>DistrictId</col_name>
+    </key>
+    <key>
+      <col_name>SchoolYear</col_name>
+    </key>
+    <key>
+      <col_name>SchoolName</col_name>
+    </key>
+    <key>
+      <col_name>CourseName</col_name>
+    </key>
+    <key>
+      <col_name>NCAASubjectArea</col_name>
+    </key>
+    <key>
+      <col_name>StudentNumber</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>SchoolYear</id>
+    </param>
+    <param>
+      <id>SchoolName</id>
+    </param>
+    <param>
+      <id>StudentNumber</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>ITC Student Count Report</entity_name>
+    <db_name>proc_StudentCountReport_ITC</db_name>
+    <category>ITC</category>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>dbo</schema>
+    <key>
+      <col_name>DistrictIRN</col_name>
+    </key>
+    <param>
+      <id>StartDate</id>
+    </param>
+    <param>
+      <id>StopDate</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>Student Count Report District Detail</entity_name>
+    <db_name>proc_StudentCountReport_DistrictDetail</db_name>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>dbo</schema>
+    <key>
+      <col_name>SchoolIRN</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>StartDate</id>
+    </param>
+    <param>
+      <id>StopDate</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>Student Count Report Student Detail</entity_name>
+    <db_name>proc_StudentCountReport_StudentDetail</db_name>
+    <datasource_id>0</datasource_id>
+    <object_type>procedure</object_type>
+    <schema>dbo</schema>
+    <key>
+      <col_name>StudentNumber</col_name>
+    </key>
+    <param>
+      <id>DistrictId</id>
+    </param>
+    <param>
+      <id>StartDate</id>
+    </param>
+    <param>
+      <id>StopDate</id>
+    </param>
+  </entity>
+  <entity>
+    <entity_name>AcademicSessions</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>GetAcademicSessions</db_name>
+    <category>OneRoster</category>
+    <datasource_id>5</datasource_id>
+    <object_type>assembly</object_type>
+    <schema_access_type>Metadata</schema_access_type>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>sourcedId</col_name>
+    </key>
+    <column_metadata>
+      <col_name>endDate</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>schoolYear</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>sourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>startDate</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>title</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>type</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>status</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>dateLastModified</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+  </entity>
+  <entity>
+    <entity_name>Orgs</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>GetOrgs</db_name>
+    <category>OneRoster</category>
+    <datasource_id>5</datasource_id>
+    <object_type>assembly</object_type>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>sourcedId</col_name>
+    </key>
+    <column_metadata>
+      <col_name>name</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>sourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>type</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>parentSourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>status</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>dateLastModified</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+  </entity>
+  <entity>
+    <entity_name>Courses</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>GetCourses</db_name>
+    <category>OneRoster</category>
+    <datasource_id>5</datasource_id>
+    <object_type>assembly</object_type>
+    <schema_access_type>Metadata</schema_access_type>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>sourcedId</col_name>
+    </key>
+    <column_metadata>
+      <col_name>courseCode</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>grades</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>orgSourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>sourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>title</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>status</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>dateLastModified</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+  </entity>
+  <entity>
+    <entity_name>Classes</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>GetClasses</db_name>
+    <category>OneRoster</category>
+    <datasource_id>5</datasource_id>
+    <object_type>assembly</object_type>
+    <schema_access_type>Metadata</schema_access_type>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>sourcedId</col_name>
+    </key>
+    <column_metadata>
+      <col_name>classCode</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>classType</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>courseSourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>schoolSourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>sourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>termSourcedIds</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>title</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>status</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>dateLastModified</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+  </entity>
+  <entity>
+    <entity_name>Enrollments</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>GetEnrollments</db_name>
+    <category>OneRoster</category>
+    <datasource_id>5</datasource_id>
+    <object_type>assembly</object_type>
+    <schema_access_type>Metadata</schema_access_type>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>sourcedId</col_name>
+    </key>
+    <column_metadata>
+      <col_name>beginDate</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>classSourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>endDate</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>role</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>schoolSourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>sourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>userSourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>status</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>dateLastModified</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+  </entity>
+  <entity>
+    <entity_name>Users</entity_name>
+    <cloned_from />
+    <affinity>Global</affinity>
+    <db_name>GetUsers</db_name>
+    <category>OneRoster</category>
+    <datasource_id>5</datasource_id>
+    <object_type>assembly</object_type>
+    <schema_access_type>Metadata</schema_access_type>
+    <suppress_sort_filter>false</suppress_sort_filter>
+    <key>
+      <col_name>sourcedId</col_name>
+    </key>
+    <column_metadata>
+      <col_name>enabledUser</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>email</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>familyName</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>givenName</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>identifier</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>middleName</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>orgSourcedIds</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>role</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>sourcedId</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>username</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>status</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+    <column_metadata>
+      <col_name>dateLastModified</col_name>
+      <col_type>string</col_type>
+      <filterable>Default</filterable>
+    </column_metadata>
+  </entity>
+  <function>
+    <name>QuarterNumber</name>
+    <description>Returns the fiscal quarter of a date as a number</description>
+    <category>Date</category>
+    <min_args>1</min_args>
+    <max_args>1</max_args>
+    <arguments_json>[{"Name":"inputDate","Required":true,"Description":"A formatted date string, Date value, or DateTime value"}]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>1</available_in>
+    <filter_return_type>Integer</filter_return_type>
+    <weight>101</weight>
+    <language>cs</language>
+    <program_code>
+      DateTime date = DateTime.Parse(args[0].ToString()); int month = date.Month;
+      if (month &gt;= 1 &amp;&amp; month &lt;= 3)
+      return "1";
+      if (month &gt;= 4 &amp;&amp; month &lt;= 6)
+      return "2";
+      if (month &gt;= 7 &amp;&amp; month &lt;= 9)
+      return "3";
+      if (month &gt;= 10 &amp;&amp; month &lt;= 12)
+      return "4";
+      return "0";
+    </program_code>
+  </function>
+  <function>
+    <name>QuarterName</name>
+    <description>Returns the fiscal quarter of a date in the typical Q1, ..., Q4 style</description>
+    <category>Date</category>
+    <min_args>1</min_args>
+    <max_args>1</max_args>
+    <arguments_json>[{"Name":"inputDate","Required":true,"Description":"A formatted date string, Date value, or DateTime value"}]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>1</available_in>
+    <filter_return_type>String</filter_return_type>
+    <weight>101</weight>
+    <language>cs</language>
+    <program_code>
+      DateTime date = DateTime.Parse(args[0].ToString()); int month = date.Month;
+      if (month &gt;= 1 &amp;&amp; month &lt;= 3)
+      return "Q1";
+      if (month &gt;= 4 &amp;&amp; month &lt;= 6)
+      return "Q2";
+      if (month &gt;= 7 &amp;&amp; month &lt;= 9)
+      return "Q3";
+      if (month &gt;= 10 &amp;&amp; month &lt;= 12)
+      return "Q4";
+      return "0";
+    </program_code>
+  </function>
+  <function>
+    <name>MonthName</name>
+    <description>Returns the name of the month. Function can take a formatted date string, a Date or DateTime value, or an integer value as input</description>
+    <category>Date</category>
+    <min_args>1</min_args>
+    <max_args>1</max_args>
+    <arguments_json>[{"Name":"inputDateOrNumber","Required":true,"Description":"A formatted date string, a Date or DateTime value, or an integer value"}]</arguments_json>
+    <variable_arguments>false</variable_arguments>
+    <available_in>1</available_in>
+    <filter_return_type>String</filter_return_type>
+    <weight>101</weight>
+    <language>cs</language>
+    <program_code>
+      //create return value
+      string monthName = "";
 
 			//create int to hold month num
 			int monthNumber;

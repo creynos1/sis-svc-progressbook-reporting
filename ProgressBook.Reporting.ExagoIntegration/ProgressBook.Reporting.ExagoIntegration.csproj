@@ -190,10 +190,12 @@
     <Compile Include="ConnectionStrings.cs" />
     <Compile Include="ExagoSettings.cs" />
     <Compile Include="IReportFolderManagement.cs" />
+    <Compile Include="JobEntityService.cs" />
     <Compile Include="OneRosterExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportFolderManagement.cs" />
     <Compile Include="ReportHelper.cs" />
+    <Compile Include="SchedulerQueue.cs" />
     <Compile Include="ServerEvents.cs" />
     <Compile Include="ServerPathResolver.cs" />
     <Compile Include="TemplateHelper.cs" />

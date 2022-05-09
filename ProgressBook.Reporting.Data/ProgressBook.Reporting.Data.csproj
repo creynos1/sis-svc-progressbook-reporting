@@ -62,9 +62,13 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebReportsApi">
+      <HintPath>..\ProgressBook.Reporting.Web\Exago\Bin\WebReportsApi.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\FolderConfiguration.cs" />
+    <Compile Include="Configuration\JobEntityConfiguration.cs" />
     <Compile Include="Configuration\JobSchedulingConfiguration.cs" />
     <Compile Include="Configuration\JobSchedulingResultConfiguration.cs" />
     <Compile Include="Configuration\ReportConfiguration.cs" />
@@ -72,6 +76,7 @@
     <Compile Include="Configuration\TemplateConfiguration.cs" />
     <Compile Include="Configuration\ThemeConfiguration.cs" />
     <Compile Include="Entities\Folder.cs" />
+    <Compile Include="Entities\JobEntity.cs" />
     <Compile Include="Entities\JobScheduling.cs" />
     <Compile Include="Entities\JobSchedulingResult.cs" />
     <Compile Include="Entities\Report.cs" />
@@ -81,10 +86,12 @@
     <Compile Include="Entities\Template.cs" />
     <Compile Include="Entities\Theme.cs" />
     <Compile Include="FilteredDbSet.cs" />
+    <Compile Include="JobEntityDbContext .cs" />
     <Compile Include="JobSchedulingDbContext.cs" />
     <Compile Include="ReportEntityDbContext.cs" />
     <Compile Include="ReportEntityDbContextFactory.cs" />
     <Compile Include="Repositories\GradeBookReportViewInfoRepository.cs" />
+    <Compile Include="Repositories\JobEntityDataService.cs" />
     <Compile Include="Repositories\PlaceRepository.cs" />
     <Compile Include="Repositories\ReportEntityManager.cs" />
     <Compile Include="Repositories\SisReportColumnMetaDataRepository.cs" />

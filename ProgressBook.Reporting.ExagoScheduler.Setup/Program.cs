@@ -8,9 +8,9 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
     using System.Reflection;
     using System.Windows.Forms;
     using System.Xml;
-    using ProgressBook.Reporting.Data;
-    using ProgressBook.Reporting.ExagoIntegration;
-    using ProgressBook.Reporting.ExagoScheduler.Common;
+    using Data;
+    using ExagoIntegration;
+    using Common;
 
     internal static class Program
     {
@@ -25,6 +25,9 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
         private const string DEFAULT_LOGGING = "on";
         private const string DEFAULT_FLUSH_TIME = "0";
         private static XmlDocument Existing_Config = new XmlDocument();
+
+        private static Type SCHEDULER_QUEUE_TYPE = typeof(SchedulerQueue);
+        private static readonly string QUEUE_SERVICE_LOCATION = $@"Assembly=C:\ProgramData\Software Answers\Ad Hoc Reports\Integration\{SCHEDULER_QUEUE_TYPE.Assembly.GetName().Name}.dll;class={SCHEDULER_QUEUE_TYPE.FullName}";
 
         /// <summary>
         ///     The main entry point for the application.
@@ -190,6 +193,7 @@ namespace ProgressBook.Reporting.ExagoScheduler.Setup
             xml.SelectSingleNode("//smtp_from_name").InnerText = DEFAULT_SMTP_FROM_NAME;
             xml.SelectSingleNode("//logging").InnerText = DEFAULT_LOGGING;
             xml.SelectSingleNode("//flush_time").InnerText = DEFAULT_FLUSH_TIME;
+            xml.SelectSingleNode("//queue_service").InnerText = QUEUE_SERVICE_LOCATION;
 
             xml = AddElement(xml, "enable_ftp_session_logging", ENABLE_FTP_SESSION_LOGGING);
             xml = AddElement(xml, "number_of_log_days_history_to_maintain", NUMBER_OF_LOG_DAYS_HISTORY_TO_MAINTAIN);
