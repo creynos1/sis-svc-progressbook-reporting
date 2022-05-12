@@ -35,7 +35,7 @@ namespace ProgressBook.Reporting.ExagoIntegration
                 if (job.Status == (byte)JobStatus.Running)
                 {
                     _jobEntityDataService.UpdateStatus(job.JobId.ToString(), (byte)JobStatus.Ready);
-                    logInfo += "Incomplete job status changed to ready: " + job.ScheduleName + System.Environment.NewLine;
+                    logInfo += $"Incomplete job status changed to ready: {job.ScheduleName}{System.Environment.NewLine}";
                 }
             }
             return logInfo;
