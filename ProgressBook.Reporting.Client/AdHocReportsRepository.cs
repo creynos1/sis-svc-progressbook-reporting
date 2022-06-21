@@ -52,7 +52,10 @@ namespace ProgressBook.Reporting.Client
                         rpt.ReportEntityId,
                         REPLACE(rpt.[Path], '.wrx', '') AS Name,
                         rpt.DisplayName,
-                        rpt.Description
+                        rpt.Description,
+                        rpt.DateCreated,
+                        rpt.DateModified,
+                        rpt.ModifiedBy
                     FROM [CoreReports].[FlattenedReports] rpt
                     WHERE (rpt.DistrictId = @placeId OR rpt.DistrictId IS NULL)
                     AND (rpt.UserId = @userId OR rpt.UserId IS NULL)
