@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
+nuget sources Add -Name "Frontline_Artifactory" -Source http://artifactory.ss.frontlineeducation.com/artifactory/api/nuget/fl-nuget-virtual
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Web", "ProgressBook.Reporting.Web\ProgressBook.Reporting.Web.csproj", "{8AB91095-25CB-4203-8F6D-DD1EE1180B1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBook.Reporting.Data", "ProgressBook.Reporting.Data\ProgressBook.Reporting.Data.csproj", "{153EB093-30E8-420D-89A9-4AF8D05AA71B}"
